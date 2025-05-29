@@ -79,7 +79,7 @@
     "currencyFormat": "money_with_currency_format",
     "OPDynTitle": "",
     "BPDynTitle": "",
-    "cartTimer": true,
+    "cartTimer": false,
     "countdown": true,
     "countdownTime": "15",
     "countdownTimeFormat": "minutes",
