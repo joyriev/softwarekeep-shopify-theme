@@ -1,0 +1,208 @@
+{% assign customids = section.settings.secid %} <div id="{{ customids }}">
+  <div class="max-width bundle-description-product"> 
+    {% if section.settings.desc_heading != blank %} 
+      <div class="desc__customs_defult">
+        <h2 class="custom_desc__head">{{ section.settings.desc_heading }}</h2>
+      </div> 
+    {% endif %}
+       {{ product.description }}
+  </div>
+
+
+<style>
+  .table {
+    width: 100%;
+  }
+
+  /* .table *{
+  display:block;
+} */
+  .table tr:hover {
+    background-color: unset;
+  }
+
+  .table thead th {
+    padding: .5rem 1.2rem;
+    text-align: left;
+  }
+
+  .table thead tr:hover {
+    background: #60c659 !important;
+  }
+
+  .table tr:nth-child(even) {
+    background-color: unset;
+    color: unset;
+  }
+
+  .table tbody tr {
+    border-bottom: 1px solid #bdb4b4;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .table tbody td {
+    padding: 6px 10px;
+    font-size: 16px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    color: #000;
+  }
+
+  thead th {
+    padding: 5px;
+  }
+
+  .table .svg-inline--fa.fa-check {
+    width: 22px;
+    display: inline-block;
+    background-color: #60c659;
+    padding: 3px;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+
+  .head_text {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .bundle-description-product h2,
+  .list_bulets li {
+    color: #000;
+  }
+  .bundle-description-product {
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+    padding: 20px;
+    background: #021d33;
+    border-radius: 10px;
+    margin-top: 70px;
+    background: #fafafa;
+  }
+  .bundle-description-product p {
+    color: #000;
+  }
+  .bundle-description-product .custom_desc__head {
+    margin-top: 0px;
+  }
+
+  @media screen and (max-width: 767px) {
+   .bundle-description-product p {
+      font-size: 16px;
+      line-height: 22px;
+   }
+  .bundle-description-product {
+    margin-top: 0px;
+  }
+  .list_bulets li {
+    color: #000;
+    font-size: 16px;
+  }
+    /* Stack table rows on small screens */
+    .table,
+    .tr,
+    .th,
+    .td {
+      display: block;
+      width: 100%;
+    }
+
+    .th {
+      display: none;
+    }
+
+    .tr {
+      margin-bottom: 1rem;
+      background-color: #333;
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    .td {
+      position: relative;
+      padding: 0.5rem 0;
+      font-size: 14px;
+    }
+
+    .td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      color: #60c659;
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 0.3rem;
+    }
+
+    .thead {
+      display: none;
+    }
+
+    .table,
+    .tr,
+    .th,
+    .td {
+      display: block;
+      width: 100%;
+    }
+
+    .tr {
+      margin-bottom: 1rem;
+      background-color: #333;
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    .td {
+      position: relative;
+      padding: 0.5rem 0;
+      font-size: 14px;
+    }
+
+    .td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      color: #60c659;
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 0.3rem;
+    }
+
+    .table tbody td {
+      font-size: 10px;
+    }
+  }
+</style>
+{% schema %}
+  {
+    "name": "Product Description",
+    "settings": [
+        {
+            "type": "text",
+            "id": "secid",
+            "label": "Enter Section ID"
+          },
+         {
+            "type": "text",
+            "id": "desc_heading",
+            "label": "Enter Heading"
+          },
+         {
+           "type": "liquid",
+           "id": "custom_liquid",
+           "label": "Add Custom Liquid Code"
+         }
+      ],
+     "presets": [
+      {
+        "name": "Custom Product Description"
+      }
+    ]
+  }
+{% endschema %}

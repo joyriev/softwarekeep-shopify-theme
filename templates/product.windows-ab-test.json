@@ -1,0 +1,711 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "topicons": {
+      "type": "product-top-icon",
+      "settings": {
+        "tpiconss": true
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {}
+    },
+    "page": {
+      "type": "shopify-us-product",
+      "blocks": {
+        "ppTitle": {
+          "type": "productPageTitle",
+          "settings": {
+            "noMargin": true,
+            "color": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "medium"
+          }
+        },
+        "85274946-6b03-41b3-87b7-e474f2f30fed": {
+          "type": "productPageReviewStars",
+          "settings": {
+            "noMargin": false
+          }
+        },
+        "ppPrice": {
+          "type": "productPagePrice",
+          "settings": {
+            "noMargin": false,
+            "color": "#1d924e",
+            "newPriceColor": "#1d924e",
+            "oldPriceColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "medium"
+          }
+        },
+        "ppATC": {
+          "type": "productPageATC",
+          "settings": {
+            "noMargin": false,
+            "stickyATC": "scroll"
+          }
+        }
+      },
+      "block_order": [
+        "ppTitle",
+        "85274946-6b03-41b3-87b7-e474f2f30fed",
+        "ppPrice",
+        "ppATC"
+      ],
+      "settings": {
+        "disable_sticky": false,
+        "main_prfeaturelist": "<li>\n            <div class=\"features-img\">\n              <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/pdp-devices-icon.svg\" alt=\"computer-mobile\">\n               <span>Install on 1 PC</span>\n            </div>\n           \n          </li>\n          <li>\n            <div class=\"features-img\">\n              <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/pdp-cloud-icon.svg\" alt=\"cloud\">\n               <span>Lifetime Warranty<span>\n            </span></span>\n</div>\n           \n          </li>\n          <li>\n             <div class=\"features-img\">\n              <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/pdp-user-icons.svg?v=1722513521\" alt=\"\">\n               <span>For one person</span>\n             </div>\n           </li>",
+        "discount_text": "Save extra 14% using code: WOMEN14",
+        "view": "marketplace",
+        "layout": "max-width",
+        "galleryStyle": "default",
+        "galleryPosition": "left",
+        "autoZoom": false,
+        "autoChange": false,
+        "galleryImageFit": "cover",
+        "galleryImageGap": 16,
+        "productNavigation": false,
+        "productMainImageSize": "crop",
+        "imageSticky": false,
+        "imageStickyPosition": 100
+      }
+    },
+    "brand_logo_carousel_gQ6QN9": {
+      "type": "brand-logo-carousel",
+      "blocks": {
+        "logo_JFi3Rj": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/kelloggs-logo_monochrome-black.svg"
+          }
+        },
+        "logo_QcnMWq": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/lowes-logo_monochrome-black.svg"
+          }
+        },
+        "logo_Pa3W49": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/nasa-worm-logo_monochrome-black.svg"
+          }
+        },
+        "logo_KxxGHB": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/netflix-logo_monochrome-black.svg"
+          }
+        },
+        "logo_kcGQJY": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/pfizer-logo_monochrome-black.svg"
+          }
+        },
+        "logo_pM87EP": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "logoimage": "shopify://shop_images/qualcomm-logo_monochrome-black.svg"
+          }
+        },
+        "logo_Dpj9gB": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "logoimage": "shopify://shop_images/spotify-logo_monochrome-black.svg"
+          }
+        }
+      },
+      "block_order": [
+        "logo_JFi3Rj",
+        "logo_QcnMWq",
+        "logo_Pa3W49",
+        "logo_KxxGHB",
+        "logo_kcGQJY",
+        "logo_pM87EP",
+        "logo_Dpj9gB"
+      ],
+      "settings": {
+        "secbg": "#ffffff",
+        "margingap": 10,
+        "maxwidth": "",
+        "title": "SoftwareKeep is Trusted by"
+      }
+    },
+    "17b3c4da-6ec2-43f7-b402-382e47a862a0": {
+      "type": "section__icon-with-text",
+      "blocks": {
+        "8e234133-6f92-4889-acb0-7d76313eaa5a": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/cloud-computing.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Instant Digital Download",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#f5f5f5",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "06111a55-1b77-435d-908b-1434dba77499": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/guarantee_9e04d0fa-c00d-4474-957f-651e64b36347.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Lifetime Product Guarantee",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#f5f5f5",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "5bcae1da-9417-402e-9c0e-5614042328c4": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/new-year_1.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Year Round Service",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#f5f5f5",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "4ce468bb-52ee-44e3-919e-6bd516b02e72": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/certified.svg",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Microsoft Certified Partner",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#191d21",
+            "home_guarantee_block_background_color": "#f5f5f5",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "8e234133-6f92-4889-acb0-7d76313eaa5a",
+        "06111a55-1b77-435d-908b-1434dba77499",
+        "5bcae1da-9417-402e-9c0e-5614042328c4",
+        "4ce468bb-52ee-44e3-919e-6bd516b02e72"
+      ],
+      "disabled": true,
+      "settings": {
+        "Slider_enbalemobile": true,
+        "home_guarantee_title": "",
+        "custom_id": "shop_us-prodct",
+        "home_guarantee_title_font_size": 40,
+        "home_guarantee_title_color": "#0067b8",
+        "home_guarantee_subtitle": "",
+        "home_guarantee_subtitle_font_size": 20,
+        "home_guarantee_subtitle_color": "#042338"
+      }
+    },
+    "trustpilot_reviews_TnKWpU": {
+      "type": "trustpilot-reviews",
+      "settings": {
+        "header_title": "What Customers Say About Us",
+        "trustsecbg": "#ffffff",
+        "tpmargingap": 40,
+        "pading_botm": 20
+      }
+    },
+    "section_content_934i9f": {
+      "type": "section__content",
+      "blocks": {
+        "html_UDTFiB": {
+          "type": "html",
+          "settings": {
+            "blockWidth": "col-md-12",
+            "vertPadding": 12,
+            "horPadding": 4,
+            "horAlign": "start",
+            "vertAlign": "top",
+            "html": "<div class=\"details-info\">\n  <div class=\"info-text\">\n    <div class=\"text-header\">\n      <h2>Overview</h2>\n      <p>With layers of security enabled, you can work from anywhere shielded by powerful cybersecurity across hardware, software, identities, and data with Windows Operating System.</p>\n    </div>\n    <div class=\"text-body\">\n      <h4>Features:</h4>\n      <p class=\"body-header\"> Stay ahead of modern business requirements and rethink your workplace with industry-leading Operating system.</p>\n    </div>\n    <ul class=\"product-features\">\n      <li>\n        <div class=\"features-img\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/pdp-devices-icon.svg?v=1722513340\" alt=\"word\">\n        </div>\n        <span>Simpler, more intuitive UI and effortless navigation.</span>\n      </li>\n      <li>\n        <div class=\"features-img\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/pdp-devices-icon.svg?v=1722513340\" alt=\"word\">\n        </div>\n        <span>Use 1 device.</span>\n      </li>\n      <li>\n        <div class=\"features-img\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/pdp-cloud-icon.svg?v=1722513418\" alt=\"\">\n        </div>\n        <span>Lifetime warranty</span>\n      </li>\n      <li>\n        <div class=\"features-img\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/pdp-user-icons.svg?v=1722513521\" alt=\"\">\n        </div>\n        <span>For one person</span>\n      </li>\n    </ul>\n  </div>\n\n      <div class=\"desc-iconimg\">\n       <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/windows_11.png?v=1722925163\" alt=\"icons_slides\">      \n      </div>\n</div>\n\n<h3>System Requirements</h3>\n<ul class=\"product-features\">\n  <li>\n    <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_419.png?v=1722411090\" alt=\"\">\n    <p><span>TPM:</span> Trusted Platform Module 2.0 for Windows 11.</p>\n  </li>\n  <li>\n    <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_420.png?v=1722411791\" alt=\"\">\n    <p><span>Processor:</span> 1 gigahertz or faster with 2 or more cores on a compatible 64-bit processor.</p>\n  </li>\n  <li>\n    <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_420.png?v=1722411791\" alt=\"\">\n    <p><span>Memory:</span> 4 gigabytes.</p>\n  </li>\n  <li>\n    <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/chp.png?v=1722411897\" alt=\"\">\n  <p><span>Hard Disk:</span>\n   64 gigabytes or larger storage device.</p>\n  </li>\n</ul>",
+            "customCSS": ".details-info {\n    display: flex;\n    align-items: center;\n      gap: 30px;\n}\nul.product-features {\n    list-style-type: none;\n    padding: 0;\n}\n.product-features li {\n    display: flex;\n    align-items: center;\n    gap: 30px;\n    line-height: 35px;\n}\n.details-info h2{\n  text-align: left;\n}\n.product-features li p {\n    margin: 0px;\n}"
+          }
+        }
+      },
+      "block_order": [
+        "html_UDTFiB"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "#s--template--15337221324855__section_content_934i9f {\n    margin-top: 20px;\n}",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "#ffffff",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle"
+      }
+    },
+    "shopify_us_make_different_X9WDht": {
+      "type": "shopify-us-make-different",
+      "blocks": {
+        "text_F9Rgaf": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/29.png",
+            "htext": "Complex & Overpriced",
+            "paratext": "High costs and complicated purchasing processes can be a headache."
+          }
+        },
+        "text_rijAHL": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/30.png",
+            "htext": "Limited Support",
+            "paratext": "Limited or no customer support can leave you stuck when you need help the most."
+          }
+        },
+        "text_KCrQbV": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/31.png",
+            "htext": "Risky Downloads",
+            "paratext": "Downloading software from unverified sources risks malware and security breaches."
+          }
+        },
+        "text_h8UqQw": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/32_d6f7e4ae-3435-45e0-98aa-b6b9cbded670.png",
+            "htext": "Slow & Inconvenient",
+            "paratext": "Waiting for physical media delivery can be slow and inconvenient."
+          }
+        },
+        "text_nKNY8X": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/33_0fd31616-01de-411c-ae7c-1e67745bcb67.png",
+            "htext": "Outdated Versions",
+            "paratext": "Buying from unreliable sources can leave you with outdated software versions."
+          }
+        },
+        "text_BBVzca": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/26_b1257240-0b1a-47f9-b358-866d10d53774.png",
+            "htext": "Affordable & Straightforward",
+            "paratext": "Get premium software at unbeatable prices with a smooth, user-friendly purchase experience."
+          }
+        },
+        "text_gmecHH": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/call_center_1.png",
+            "htext": "24/7 Expert Support",
+            "paratext": "Enjoy round-the-clock access to expert support, ready to assist you with any issues or questions."
+          }
+        },
+        "text_inTMFt": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/6.png",
+            "htext": "Secure Downloads",
+            "paratext": "All software from SoftwareKeep is 100% genuine and secure, ensuring peace of mind with every download."
+          }
+        },
+        "text_WmpDrm": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/8.png",
+            "htext": "Instant Access",
+            "paratext": "Purchase and download your software instantly, getting you up and running without delay."
+          }
+        },
+        "text_i8zzfd": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/10_5283b2ad-eec4-48c7-b094-f6f23b28beda.png",
+            "htext": "Up-to-Date Software",
+            "paratext": "Always get the latest versions and updates, ensuring you have the most current and efficient software."
+          }
+        }
+      },
+      "block_order": [
+        "text_F9Rgaf",
+        "text_rijAHL",
+        "text_KCrQbV",
+        "text_h8UqQw",
+        "text_nKNY8X",
+        "text_BBVzca",
+        "text_gmecHH",
+        "text_inTMFt",
+        "text_WmpDrm",
+        "text_i8zzfd"
+      ],
+      "disabled": true,
+      "settings": {
+        "secbg": "#ffffff",
+        "heading": "What makes SoftwareKeep different?",
+        "others": "Others",
+        "image": "shopify://shop_images/logo.svg"
+      }
+    },
+    "shopify-applications-included": {
+      "type": "shopify-applications-included",
+      "blocks": {
+        "image_WkBgXn": {
+          "type": "image",
+          "settings": {
+            "blocksecbg": "#ffffff",
+            "appicimage": "shopify://shop_images/image_415_1.png",
+            "appinchtext": "Microsoft Word",
+            "appincparatext": "<p>Microsoft Word is a widely-used word processing software that enables users to create, edit, and format documents with a variety of tools for text, images, and layout customization.</p>"
+          }
+        },
+        "image_DzRA9A": {
+          "type": "image",
+          "settings": {
+            "blocksecbg": "#ffffff",
+            "appicimage": "shopify://shop_images/image_415_2.png",
+            "appinchtext": "Microsoft Excel",
+            "appincparatext": "<p>Microsoft Excel is a powerful spreadsheet software that allows users to organize, analyze, and visualize data through various tools and functions, including formulas, charts, and pivot tables.</p>"
+          }
+        },
+        "image_eMaGmt": {
+          "type": "image",
+          "settings": {
+            "blocksecbg": "#ffffff",
+            "appicimage": "shopify://shop_images/ms-icon-powerpoint.png",
+            "appinchtext": "Microsoft PowerPoint",
+            "appincparatext": "<p>Microsoft PowerPoint is a versatile presentation software that enables users to create, edit, and deliver visually engaging slideshows with multimedia integration,  and animations.</p>"
+          }
+        },
+        "image_6jz7Ei": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "blocksecbg": "#ffffff",
+            "appicimage": "shopify://shop_images/image_415.png",
+            "appinchtext": "Microsoft Word",
+            "appincparatext": "<p>Elevate your writing, create beautiful documents and collaborate with others – anytime, anywhere.</p>"
+          }
+        },
+        "image_GBpXV4": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "blocksecbg": "#ffffff",
+            "appicimage": "shopify://shop_images/image_415_4.png",
+            "appinchtext": "Microsoft Word",
+            "appincparatext": "<p>Elevate your writing, create beautiful documents and collaborate with others – anytime, anywhere.</p>"
+          }
+        },
+        "image_GxJaDX": {
+          "type": "image",
+          "settings": {
+            "blocksecbg": "#ffffff",
+            "appicimage": "shopify://shop_images/image_415_5.png",
+            "appinchtext": "Microsoft Outlook",
+            "appincparatext": "<p>Microsoft Outlook is a versatile application that helps you manage emails, calendars, contacts, and tasks all in one place. Get your copy today and start sending professional emails.</p>"
+          }
+        },
+        "image_9HidAt": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "blocksecbg": "#ffffff",
+            "appicimage": "shopify://shop_images/image_415_6.png",
+            "appinchtext": "Microsoft Word",
+            "appincparatext": "<p>Elevate your writing, create beautiful documents and collaborate with others – anytime, anywhere.</p>"
+          }
+        },
+        "image_UiMzaU": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "blocksecbg": "#ffffff",
+            "appicimage": "shopify://shop_images/image_415_7.png",
+            "appinchtext": "Microsoft Word",
+            "appincparatext": "<p>Elevate your writing, create beautiful documents and collaborate with others – anytime, anywhere.</p>"
+          }
+        },
+        "image_fkE3fM": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "blocksecbg": "#ffffff",
+            "appicimage": "shopify://shop_images/image_415_8.png",
+            "appinchtext": "Microsoft Word",
+            "appincparatext": "<p>Elevate your writing, create beautiful documents and collaborate with others – anytime, anywhere.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_WkBgXn",
+        "image_DzRA9A",
+        "image_eMaGmt",
+        "image_6jz7Ei",
+        "image_GBpXV4",
+        "image_GxJaDX",
+        "image_9HidAt",
+        "image_UiMzaU",
+        "image_fkE3fM"
+      ],
+      "disabled": true,
+      "settings": {
+        "secbg": "#ffffff",
+        "heading": "Applications Included"
+      }
+    },
+    "custom_windows_products_EParGQ": {
+      "type": "custom-windows-products",
+      "settings": {
+        "title": "Upgrade to Windows 11 Today",
+        "description": "Compare Windows Home, Pro, and Enterprise Editions to Find the Perfect Fit for Your Needs.",
+        "product_1": "windows-11-home",
+        "image_1": "shopify://shop_images/windows_2.png",
+        "product_2": "windows-11-pro",
+        "image_2": "shopify://shop_images/windows_3.png",
+        "product_3": "windows-11-enterprise",
+        "image_3": "shopify://shop_images/windows_1_e20b77e5-44d6-4a46-99a6-3153dafbe6b0.png"
+      }
+    },
+    "summarybenefits": {
+      "type": "summary-benefits",
+      "blocks": {
+        "text_zCKHni": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/image_415_10.png",
+            "ques": "Sign in Securely",
+            "text": "<p>Safeguard your employees with safer sign-in using Windows Hello Enhanced Sign-in Security and NPU. Plus, leverage presence sensing to lock computers when you leave, and sign in with Windows Hello when you approach.</p>"
+          }
+        },
+        "text_mKAVzk": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/image_415_9.png",
+            "ques": "Organized Layouts",
+            "text": "<p>Get work done faster and use snap layouts to easily organize open windows and web pages. Pick up where you left off with seamless redocking</p>"
+          }
+        },
+        "text_6MjKCC": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/image_415_22.png",
+            "ques": "Stay ahead of evolving threats",
+            "text": "<p>With phishing safeguards, password less security, and app control, Windows 11 customers reported a reduction in security incidents by up to 58%—and 2.8 times fewer instances of identity theft. </p>"
+          }
+        },
+        "text_Fw6wX3": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "ques": "Recommended for individuals",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_b7J9nA": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_11.png",
+            "ques": "1 TB of cloud storage",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_bcpc3H": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_12.png",
+            "ques": "Secure photo and file storage",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_i6CBpQ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_13.png",
+            "ques": "Personal data and device protection",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_J3p7aB": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_14.png",
+            "ques": "Find it Faster",
+            "text": "<p>Enjoy effortless navigation and a more intuitive experience with a personalized File Explorer, <a href=\"https://www.microsoft.com/en-us/windows/business/windows-11-pro#sup3\">3</a>Start menu app folders, and a centered Taskbar.</p>"
+          }
+        },
+        "text_URGXp9": {
+          "type": "text",
+          "settings": {
+            "icon": "shopify://shop_images/image_415_15.png",
+            "ques": "Find it Faster",
+            "text": "<p>Enjoy effortless navigation and a more intuitive experience with a personalized File Explorer, Start menu app folders, and a centered Taskbar.</p>"
+          }
+        },
+        "text_yBKtT6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_16.png",
+            "ques": "Video editor with premium filters and effects",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_RHJmm9": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_18.png",
+            "ques": "Publisher (PC only)",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_cetctn": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_17.png",
+            "ques": "Access (PC only)",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_4xLC6i": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_19.png",
+            "ques": "Publisher (PC only)",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_cPVbwm": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_20.png",
+            "ques": "60 minutes of Skype calls",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_BdV9n3": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_21.png",
+            "ques": "All-day video calling with Microsoft Teams",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_QAX34L": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_23.png",
+            "ques": "Applications are always up to date",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_zCKHni",
+        "text_mKAVzk",
+        "text_6MjKCC",
+        "text_Fw6wX3",
+        "text_b7J9nA",
+        "text_bcpc3H",
+        "text_i6CBpQ",
+        "text_J3p7aB",
+        "text_URGXp9",
+        "text_yBKtT6",
+        "text_RHJmm9",
+        "text_cetctn",
+        "text_4xLC6i",
+        "text_cPVbwm",
+        "text_BdV9n3",
+        "text_QAX34L"
+      ],
+      "settings": {
+        "secbg": "#ffffff",
+        "sheading": "Summary of Benefits"
+      }
+    },
+    "recommended": {
+      "type": "product-page__recommended",
+      "settings": {
+        "enabled": true,
+        "personalizedOffers": true,
+        "layout": "max-width",
+        "heading": "",
+        "subheading": "Recommended Products for You",
+        "subheadingPosition": "above",
+        "textAlignment": "center",
+        "defaultCollection": ""
+      }
+    }
+  },
+  "order": [
+    "topicons",
+    "breadcrumbs",
+    "page",
+    "brand_logo_carousel_gQ6QN9",
+    "17b3c4da-6ec2-43f7-b402-382e47a862a0",
+    "trustpilot_reviews_TnKWpU",
+    "section_content_934i9f",
+    "shopify_us_make_different_X9WDht",
+    "shopify-applications-included",
+    "custom_windows_products_EParGQ",
+    "summarybenefits",
+    "recommended"
+  ]
+}

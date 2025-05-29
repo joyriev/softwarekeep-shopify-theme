@@ -1,0 +1,95 @@
+{% comment %} <script>
+{% if section.settings.sticky %}
+(()=>{
+function debounce(func, timeout = 300){
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { func.apply(this, args); }, timeout);
+  };
+}
+const headers = document.querySelectorAll('.page__header')
+const checkHs = ()=>{
+    headers.forEach(h=>{
+        if(window.scrollY > 120){
+            {% if section.settings.transparent and template == "index" %}h.classList.remove('page__header--transparent'){% endif %}
+            if(h.clientHeight) h.parentElement.style.height = h.clientHeight + 'px'
+            return h.classList.add('page__header--sticky')
+        }
+        h.parentElement.style.height = null
+        h.classList.remove('page__header--sticky')
+        {% if section.settings.transparent and template == "index" %}h.classList.add('page__header--transparent'){% endif %}
+    })
+}
+window.addEventListener('scroll', debounce(checkHs, 75))
+window.addEventListener('resize', debounce(checkHs, 150))
+})()
+{% endif %}
+</script> {% endcomment %}
+
+<script>
+  document.querySelector('.search-form input[type="search"]').addEventListener('input', function(e) {
+    const query = e.target.value.trim();
+
+    // Hide suggestions if the query is empty or too short
+    if (query.length < 3) {
+      document.querySelector('.search-suggestions-wrapper').style.display = 'none';
+      return;
+    }
+
+    // Fetch predictive search results only for products
+    fetch(`/search/suggest.json?q=${encodeURIComponent(query)}&resources[type]=product&resources[limit]=6`)
+      .then(response => response.json())
+      .then(data => {
+        const products = data.resources.results.products;
+
+        const notFound = document.querySelector('.search-suggestions-wrapper');
+        const productBox = document.querySelector('.product-suggestions');
+        const queryTextDiv = document.querySelector('.querytext');
+
+        // Clear previous suggestions
+        productBox.innerHTML = '';
+
+        // Show the search keyword in the suggestions
+        queryTextDiv.innerHTML = `<strong>Press enter to search: "<span style="color:#000;">${query}</span>"</strong>`;
+
+        // Display product results
+        if (products.length > 0) {
+          products.forEach(product => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+              <a href="${product.url}">
+                <img src="${product.featured_image.url}" alt="${product.title}" style="width: 50px; height: auto; margin-right: 10px;">
+                <p class="prod_name-title">${product.title}</p>
+                <span class="jsPrice prs_price">${product.price}</span>
+              </a>
+            `;
+            productBox.appendChild(listItem);
+          });
+        }
+
+        // Show the suggestions box if any products were found
+        if (products.length > 0) {
+          document.querySelector('.search-suggestions-wrapper').style.display = 'flex';
+        } else {
+          // Show "No results found" message if no results were returned
+          document.querySelector('.search-suggestions-wrapper').style.display = 'flex';
+          notFound.innerHTML = '<h5 style="text-align:center;width: 100%;"><b>No results found<b></h5>';
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching predictive search results:', error);
+        document.querySelector('.search-suggestions-wrapper').style.display = 'none';
+      });
+  });
+
+  // Hide suggestions when clicking outside of the search form or suggestions
+  document.addEventListener('click', function(e) {
+    const searchForm = document.querySelector('.search-form');
+    const suggestionsWrapper = document.querySelector('.search-suggestions-wrapper');
+    
+    if (!searchForm.contains(e.target) && !suggestionsWrapper.contains(e.target)) {
+      suggestionsWrapper.style.display = 'none';
+    }
+  });
+</script>

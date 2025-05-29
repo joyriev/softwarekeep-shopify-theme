@@ -1,0 +1,499 @@
+{% if page.handle != 'office-2024-best-deals' and page.handle != 'microsoft-best-black-friday-deals' %}
+  {% unless section.settings.enabled == false and section.settings.enabledMobile == false %}
+  
+  {% capture layoutConfig %}{% render 'common-layout' with section as section %}{% endcapture %}
+  <style>
+    #discount__{{ section.id }}{
+      background: {{section.settings.customColors}};
+      padding: {{section.settings.sec_padding}}px;
+    }
+  </style>
+  <div id="discount__{{ section.id }}" class="layout__{{-layoutConfig}} custom_discount_main
+  {% unless section.settings.enabledMobile%}hide-mobile{%endunless%} {% unless section.settings.enabled%}hide-desktop{%endunless%}
+  {% unless section.settings.colorCombo == 'customCombo' %}{{ section.settings.colorCombo}}{% endunless %}
+  colorCombo
+  {{section.settings.fontSize}} info-bar" 
+  style="{% if section.settings.colorCombo == 'customCombo' %}background-color: {{section.settings.customFillColor}}; color: {{section.settings.customContentColor}};{% endif %}"
+  >
+    <div class="inherit middle row layout__content">
+    {% if section.blocks.size > 0 %}
+    {%- for block in section.blocks -%}
+      <div class="{%- unless block.settings.enabledMobile%}hide-mobile{%endunless%} {% unless block.settings.enabled%}hide-desktop{%endunless%} 
+      col-12 col-md middle center 
+      {% if forloop.length > 1 and block.settings.align == 'auto' %}
+      {% if forloop.first %}
+      start-md
+      {% elsif forloop.last %}
+      end-md
+      {% endif %}
+      {% else %}
+      {{block.settings.align}}-md
+      {% endif %} discounttt"
+      {% unless block.type == 'barTextMarquee' %}
+      style="flex-wrap: wrap; line-height: {{section.settings.height}}px; overflow: hidden; min-height: {{section.settings.height}}px;"
+      {% else %}
+      style="height: {{section.settings.height}}px; line-height: {{section.settings.height}}px; overflow: hidden;"
+      {% endunless -%}>
+        {% render 'get-block', block: block, section: section %}
+        </div>
+    {%- endfor -%}
+    {% else %}
+    <div class="col-12" style="height: {{section.settings.height}}px; line-height: {{section.settings.height}}px; overflow: hidden;">
+    </div>
+    {% endif %}
+    </div>
+  </div>
+  {% endunless %}
+{% endif %}
+
+<style>
+#discount__bottom-info-bar {
+  background: linear-gradient(45deg, #3d348b, #3d348b, #9e388b, #df4f79, #df4f79);
+  background-size: 400% 400%;
+  animation: primaryGradient 5s ease infinite;   
+}
+.msg-text a {
+  display: block;
+  margin-left: 5px;
+}
+.msg-text img {
+    width: 20px;
+    height: auto;
+    display: block;
+}  
+
+@keyframes primaryGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}  
+</style>
+  
+{% schema %}
+{
+  "name": {
+    "en": "Bottom bar"
+  },
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Help"
+    },
+    {
+      "type": "paragraph",
+      "content": "[Click here to follow an interactive Tutorial](https://vimeo.com/458159228)"
+    },
+    {
+      "type": "header",
+      "content": "Enable/Disable"
+    },
+    {
+      "type": "color",
+      "id": "customColors",
+      "label": "Section Background Color",
+      "default": "#0084eb"
+    },
+    {
+      "type": "range",
+      "id": "sec_padding",
+      "label": "Section Padding",
+      "default": 10,
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "enabled",
+      "label": "Enable for Desktop",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enabledMobile",
+      "label": "Enable for mobile",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Section layout",
+      "options": [
+        {"value": "default", "label": "Global default"},
+        {"value": "boxed", "label": "Boxed"},
+        {"value": "stretchBg", "label": "Full width background"},
+        {"value": "stretchContent", "label": "Full width"}
+      ],
+      "default": "default"
+    },
+    {
+      "type": "range",
+      "id": "height",
+      "label": "Height",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "label": "Font size",
+      "id": "fontSize",
+      "options": [
+        {"value": "font__size--small", "label": "Small"},
+        {"value": "font__size--base", "label": "Base"},
+        {"value": "font__size--medium", "label": "Medium"}
+      ],
+      "default": "font__size--small"
+    },
+    {
+        "type": "radio",
+        "id": "colorCombo",
+        "label": "Color combination",
+        "default": "primaryCombo",
+        "options": [
+            { "value": "primaryCombo", "label": "Primary combination" },
+            { "value": "secondaryCombo", "label": "Secondary combination" },
+            { "value": "customCombo", "label": "Custom combination"}
+        ]
+    },
+    {
+      "type": "color",
+      "id": "customFillColor",
+      "label": "Custom fill color",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "customContentColor",
+      "label": "Custom content color",
+      "default": "rgba(0,0,0,0)"
+    }
+  ],
+  "blocks": [
+      {
+    "type": "contact",
+    "name": "Contact",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "enabled",
+            "label": "Show for desktop",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "enabledMobile",
+            "label": "Show for mobile",
+            "default": true
+        },
+        {
+            "id": "align",
+            "label": "Alignment",
+            "type": "select",
+            "options": [
+                {"value": "auto", "label": "Auto"},
+                {"value": "start", "label": "Left"},
+                {"value": "center", "label": "Center"},
+                {"value": "end", "label": "Right"}
+            ],
+            "default": "auto"
+        },
+        {
+            "id": "showPhone",
+            "label": "Show phone",
+            "type": "checkbox",
+            "default": true
+        },
+        {
+            "id": "showEmail",
+            "label": "Show email",
+            "type": "checkbox",
+            "default": true
+        }
+    ]
+    },{
+    "type": "linkList",
+    "name": "Links",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "enabled",
+            "label": "Show for desktop",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "enabledMobile",
+            "label": "Show for mobile",
+            "default": true
+        },
+        {
+            "id": "align",
+            "label": "Alignment",
+            "type": "select",
+            "options": [
+                {"value": "auto", "label": "Auto"},
+                {"value": "start", "label": "Left"},
+                {"value": "center", "label": "Center"},
+                {"value": "end", "label": "Right"}
+            ],
+            "default": "auto"
+        },
+        {
+            "id": "links",
+            "label": "Link list",
+            "type": "link_list"
+        }
+    ]
+},{
+    "type": "barTextMarquee",
+    "name": "Scrolling messages",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "enabled",
+            "label": "Show for desktop",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "enabledMobile",
+            "label": "Show for mobile",
+            "default": true
+        },
+        {
+            "id": "align",
+            "label": "Alignment",
+            "type": "select",
+            "options": [
+                {"value": "auto", "label": "Auto"},
+                {"value": "start", "label": "Left"},
+                {"value": "center", "label": "Center"},
+                {"value": "end", "label": "Right"}
+            ],
+            "default": "auto"
+        },
+        {
+            "id": "messages",
+            "type": "richtext",
+            "label": "Messages to scroll",
+            "info": "Separate messages with enter/return (new line)",
+            "default": "<p>This is one message</p><p>This is another one</p>"
+        }
+    ]
+},{
+    "type": "social",
+    "name": "Social media",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "enabled",
+            "label": "Show for desktop",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "enabledMobile",
+            "label": "Show for mobile",
+            "default": true
+        },
+        {
+            "id": "align",
+            "label": "Alignment",
+            "type": "select",
+            "options": [
+                {"value": "auto", "label": "Auto"},
+                {"value": "start", "label": "Left"},
+                {"value": "center", "label": "Center"},
+                {"value": "end", "label": "Right"}
+            ],
+            "default": "auto"
+        }
+    ]
+},
+      {
+          "type": "freeShippingBar",
+          "name": "Free Shipping Bar [APP]",
+          "settings": [
+            {
+                "type": "checkbox",
+                "id": "enabled",
+                "label": "Show for desktop",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "enabledMobile",
+                "label": "Show for mobile",
+                "default": true
+            },
+            {
+                "id": "align",
+                "label": "Alignment",
+                "type": "select",
+                "options": [
+                    {"value": "auto", "label": "Auto"},
+                    {"value": "start", "label": "Left"},
+                    {"value": "center", "label": "Center"},
+                    {"value": "end", "label": "Right"}
+                ],
+                "default": "auto"
+            },
+            {
+        "type": "text",
+        "label": "Free shipping text",
+        "id": "freeText",
+        "default": "Only %AMOUNT% more for free shipping!"
+    },
+    {
+        "type": "text",
+        "label": "Achieved shipping goal",
+        "id": "gotFreeText",
+        "default": "You are eligible for free shipping!"
+    },
+    {
+        "type": "range",
+        "label": "Bar height",
+        "id": "barHeight",
+        "default": 8,
+        "min": 0,
+        "max": 32,
+        "info": "If set to 0, bar will be disabled (hidden).",
+        "step": 1,
+        "unit": "px"
+    }
+          ]
+      },
+      {
+          "type": "geoBlock",
+          "name": "Discount Coupon Text",
+          "settings": [
+            {
+                "type": "checkbox",
+                "id": "enabled",
+                "label": "Show for desktop",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "enabledMobile",
+                "label": "Show for mobile",
+                "default": true
+            },
+            {
+                "id": "align",
+                "label": "Alignment",
+                "type": "select",
+                "options": [
+                    {"value": "auto", "label": "Auto"},
+                    {"value": "start", "label": "Left"},
+                    {"value": "center", "label": "Center"},
+                    {"value": "end", "label": "Right"}
+                ],
+                "default": "auto"
+            },
+            {
+                "id": "text",
+                "label": "Block text",
+                "type": "inline_richtext",
+                "default": "This is an example for your %country% in the city"
+            },
+            {
+                "id": "coupon",
+                "label": "Coupon text",
+                "type": "text",
+                "default": "MSOFFICE"
+            },
+            {
+                "id": "countdown_timer",
+                "label": "CountDown timer Enable",
+                "type": "checkbox",
+                "info": "(If checkbox true then timer count will show otherwise it will not show)"
+            },
+            {
+              "type": "header",
+              "content": "Exculsive PopUp"
+            },
+            {
+                "type": "inline_richtext",
+                "id": "exculsivetext",
+                "label": "Exculsive POPUP Text",
+                "default": "*Promotions while supplies last. Limit (1) per customer. Excludes Open Value, CSP, Bluebeam, physical & subscription products. Rewards points activate 30 days after purchase."
+            },
+          ]
+      },
+      {
+          "type": "minicart",
+          "name": "Minicart",
+          "settings": [
+            {
+                "type": "checkbox",
+                "id": "enabled",
+                "label": "Show for desktop",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "enabledMobile",
+                "label": "Show for mobile",
+                "default": true
+            },
+            {
+                "id": "align",
+                "label": "Alignment",
+                "type": "select",
+                "options": [
+                    {"value": "auto", "label": "Auto"},
+                    {"value": "start", "label": "Left"},
+                    {"value": "center", "label": "Center"},
+                    {"value": "end", "label": "Right"}
+                ],
+                "default": "auto"
+            },
+            {
+        "type": "header",
+        "content": "Cart"
+    },
+    {
+        "type": "select",
+        "label": "Cart icon",
+        "id": "cartIcon",
+        "options": [
+            {
+                "value": "shopping-bag",
+                "label": "Bag"
+            },
+            {
+                "value": "shopping-cart",
+                "label": "Cart"
+            },
+            {
+                "value": "shopping-basket",
+                "label": "Basket"
+            },
+            {
+                "value": "text",
+                "label": "Text only"
+            }
+        ],
+        "default": "shopping-cart"
+    }
+          ]
+      }
+    ]
+}
+{% endschema %}

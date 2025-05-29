@@ -1,0 +1,123 @@
+<div id="ProductSubmitButton-Sticky" class="sticky--mobile sticky--closed sticky-button" style="display:none;">
+  <div class="sticky--container">
+    <!-- <div style="text-align: right">
+      <span class="sticky__close" onclick="BoosterTheme.ELEMENTS.closeSticky(this)"><i class="uil uil-times"></i></span>
+    </div> -->
+    <div class="stick_content-wrap">
+      <div class="stickys_imgs">
+       {{ product.featured_image | image_url: width:'50', height:'50' | image_tag }}
+          <h4 class="h-reset" style="margin-bottom: 1rem;
+            font-size: 18px;
+            font-weight: 600;
+            max-width: 350px;
+            line-height: 30px;">
+           {{ product.title }}</h4>
+      </div>
+     
+      <div class="stickbtn_conatiner">
+        {% render 'sticky-price' with product as product %}
+      </div>
+        <button id="stick_closed"
+          data-original-text="{%- if product.price == 0 and settings.freeShipping  %}{{settings.freeShippingText}}{% else %}{{ 'general.buttons.add_to_cart' | t  }}{% endif -%}"
+          data-buy-button="{{product.id}}"
+          onclick="BoosterTheme.ELEMENTS.stickyBuy(this, event)"
+          class="button button--primary button--{{-settings['primaryButtonStyle']}}  button--primary__{{-settings['primaryButtonStyle']}} sticky--atc__button hithere"
+         >
+        <span data-button-text>
+          {%- if product.price == 0 and settings.freeShipping %}
+            {{ settings.freeShippingText }}
+          {% else %}
+            {{ 'general.buttons.add_to_cart' | t }}
+          {% endif -%}
+        </span>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+<style>
+  /* Sticky Addto Cart */
+    .hithere {
+      animation: blinks 1s ease infinite;
+    }
+    @-webkit-keyframes blinks {
+    0% { background-color: #60c659; -webkit-box-shadow: 0 0 3px #60c659; }
+    50% { background-color: #60c659; -webkit-box-shadow: 0 0 40px #60c659; }
+    100% { background-color: #60c659; -webkit-box-shadow: 0 0 3px #60c659; }
+    }
+    .sticky--closed .sticky--container{
+      display:block;
+      padding: 35px 72px;
+    }
+    .sticky--closed .sticky--atc__button{
+      display:block;
+    }
+    .stick_content-wrap .stickbtn_conatiner {
+      margin: 0 !important;
+    }
+    #ProductSubmitButton-Sticky .stick_content-wrap {
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .stickys_imgs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+    .product .stick_content-wrap .stickbtn_conatiner {
+        margin: 0;
+    }
+    button#stick_closed {
+        width: 25%;
+        padding: 16px 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .sticky-button .product_support {
+        display: none;
+    }
+    .stick_content-wrap .sector{
+      display:none;
+    }
+  .sticky-button .stickbtn_conatiner{
+    margin: 25px 0;
+  }
+  .office_stickyprice {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      gap: 15px;
+  }
+ #ProductSubmitButton-Sticky .office_stickyprice .product__price.product__price--sale {
+    line-height: 1.1em;
+    font-weight: 600;
+    font-size: 24px;
+    color: #0067b8;
+ }
+  @media (max-width: 1024px) {
+  #ProductSubmitButton-Sticky{
+    display:none!important;
+   }
+ }
+/* EndSticky Addto Cart */
+</style>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      var stickyAddToCart = document.getElementById("ProductSubmitButton-Sticky");
+      var originalAddToCart = document.getElementById("defult_template-pdp");
+      window.addEventListener("scroll", function() {
+          if ($(document).scrollTop() >= 1000) {
+              stickyAddToCart.style.display = "block";
+          } else {
+              stickyAddToCart.style.display = "none";
+          }
+      });
+  });
+</script>

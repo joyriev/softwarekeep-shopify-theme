@@ -1,0 +1,243 @@
+<div class="product-block visio-max-width">
+  <div class="product-left">
+      <p>
+      <span>{% render 'green-svg' %}</span>
+        Feature is included</p>
+      <p>
+      {% render 'white-svg' %}
+        Feature is partially included.</p>
+  </div>
+  <div class="product-right">
+        {% for block in section.blocks %}
+         {% assign product = all_products[block.settings.product] %}
+         {% if product != blank and block.type == 'product' %}
+           <div class="v_products">
+             <div class="product_name">{{ product.title }}</div>
+             <div class="main_price">{{ product.price | money }}</div>
+             <p>(one-time purchase)</p>
+              <div class="cart_btn_wrap">
+               {% assign var = product.first_available_variant %}
+               {% form 'product', product, class:'lang_btns' %}
+                  <input name="id" type="hidden" value="{{var.id}}">
+                  {% render 'add-to-cart-button', variant: var.id, quantity: 1, price: product.price %}
+                {% endform %}
+             </div> 
+           </div>
+         {% endif %}
+        {% endfor %}
+  </div> 
+</div>
+<div class="table-accordion visio-max-width">
+  <div class="controls">
+        <button id="expandAll">Expand all</button>
+        <button id="collapseAll">Collapse all</button>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header">
+            <span>User experience and features</span>
+            <span>{% render 'green-svg' %}</span>
+            <span>{% render 'green-svg' %}</span>
+        </div>
+        <div class="accordion-content">
+          <table class="table_wrap">
+             <tbody>
+            <tr>
+                <td class="bullets">Use touch to work more naturally on a touch-enabled device.</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td class="bullets">Use your finger or pen to draw and annotate on a touch-enabled device.</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td class="bullets">Save diagrams locally in PNG or JPEG format with customization options for resolution, background color, transparency, and size.</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td class="bullets">Add hyperlinks to shapes to redirect to external sites, email addresses, files stored online, or pages within the same file.</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td class="bullets">View shapes in full fidelity online with intuitive pan and zoom functionality.</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td class="bullets">Navigate through commands with Tell me integration.</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td class="bullets">Get high DPI and Dark Theme support.</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td class="bullets">Import DWG files, including enhanced file format support.</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td class="bullets">Edit shapes using control points, and easily apply themes to create modern diagrams.</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+            <tr>
+                <td class="bullets">Apply shape effect options, such as shadow, bevel, and glow.</td>
+                <td class="check">✔</td>
+                <td class="check">✔</td>
+            </tr>
+        </tbody>
+          </table>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header">
+            <span>Accessibility, security, and compliance</span>
+            <span>{% render 'white-svg' %}</span>
+            <span>{% render 'green-svg' %}</span>
+        </div>
+        <div class="accordion-content">
+
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header">
+            <span>Intelligent diagramming</span>
+             <span>{% render 'white-svg' %}</span>         
+            <span>{% render 'green-svg' %}</span>
+        </div>
+        <div class="accordion-content">Content for Intelligent diagramming</div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header">
+            <span>Templates and shapes</span>
+            <span>{% render 'white-svg' %}</span>
+            <span>{% render 'green-svg' %}</span>
+        </div>
+        <div class="accordion-content">Content for Templates and shapes</div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header">
+            <span>Collaboration and sharing</span>
+              <span>{% render 'white-svg' %}</span>
+            <span>{% render 'green-svg' %}</span>
+        </div>
+        <div class="accordion-content">Content for Collaboration and sharing</div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header">
+            <span>Connecting diagrams to data</span>
+            <span>{% render 'white-svg' %}</span>
+            <span>{% render 'green-svg' %}</span>
+        </div>
+        <div class="accordion-content">Content for Connecting diagrams to data</div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header">
+            <span>Standards support</span>
+            <span>{% render 'white-svg' %}</span>
+            <span>{% render 'green-svg' %}</span>
+        </div>
+        <div class="accordion-content">Content for Standards support</div>
+    </div>
+</div>
+<div class="product-block visio-max-width second">
+  <div class="product-left">
+  </div>
+  <div class="product-right">
+        {% for block in section.blocks %}
+         {% assign product = all_products[block.settings.product] %}
+         {% if product != blank and block.type == 'product' %}
+           <div class="v_products">
+             <div class="product_name">{{ product.title }}</div>
+             <div class="main_price">{{ product.price | money }}</div>
+             <p>(one-time purchase)</p>
+              <div class="cart_btn_wrap">
+               {% assign var = product.first_available_variant %}
+               {% form 'product', product, class:'lang_btns' %}
+                  <input name="id" type="hidden" value="{{var.id}}">
+                  {% render 'add-to-cart-button', variant: var.id, quantity: 1, price: product.price %}
+                {% endform %}
+             </div> 
+           </div>
+         {% endif %}
+        {% endfor %}
+  </div> 
+</div>  
+<script>
+$(document).ready(function() {
+    $('.accordion-header').click(function() {
+        const content = $(this).next('.accordion-content');
+        const accordion = $(this).parent();
+
+        if (accordion.hasClass('active')) {
+            content.slideUp(300);
+        } else {
+            content.slideDown(300);
+        }
+        accordion.toggleClass('active');
+    });
+
+    $('#expandAll').click(function() {
+        $('.accordion').each(function() {
+            const content = $(this).find('.accordion-content');
+            if (!$(this).hasClass('active')) {
+                content.slideDown(300);
+                $(this).addClass('active');
+            }
+        });
+    });
+
+    $('#collapseAll').click(function() {
+        $('.accordion').each(function() {
+            const content = $(this).find('.accordion-content');
+            if ($(this).hasClass('active')) {
+                content.slideUp(300);
+                $(this).removeClass('active');
+            }
+        });
+    });
+});
+</script>
+{% schema %}
+{
+  "name": "Visio Table",
+  "class": "visio-table",
+  "settings": [],
+    "blocks":[
+      {
+        "type": "product",
+        "name": "Product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          },
+          {
+            "type": "richtext",
+            "id": "product_adds",
+            "label": "Product Additional"
+          }
+        ]
+      }
+    ],
+  "presets": [
+    {
+      "name": "Visio Table"
+    }
+  ]
+}
+{% endschema %}

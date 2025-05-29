@@ -1,0 +1,547 @@
+{{ 'after-rockeet.css' | asset_url | stylesheet_tag: preload: true }}
+{% assign product = all_products[section.settings.product_deals] %}
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign featured_image = current_variant.featured_image | default: product.featured_image %}
+{% assign selectedProduct = product.selected_or_first_available_variant %}
+{% assign seconds = 30 | times: 24 | times: 60 | times: 60 %}
+{% assign promoDates = 'now' | date: '%s' | plus: seconds | date: '%Y-%m-%d' %}
+{% assign centsPrice = selectedProduct.price %}
+{% assign centsPriceIntValueSize = centsPrice | append: '' | size | minus: 2 %}
+<script type="application/ld+json">
+  {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "{{product.title |escape}}",
+        {% if product.featured_image != nil %}
+        "image": [
+          "https:{{product.featured_image | img_url: '960x960'}}",
+          "https:{{product.featured_image | img_url: '960x720'}}",
+          "https:{{product.featured_image | img_url: '960x540'}}"
+         ],
+        {% endif %}
+        "description": "{{ product.description | strip_html | replace: '"', "" | slice: 0, 250 }}",
+        "sku": "{{ product.sku }}",
+        "brand": {
+          "@type": "Brand",
+          "name": "{{product.vendor |escape}}"
+        },
+        "offers": {
+        "@type": "Offer",
+        "description": "New",
+        "priceCurrency": "{{ cart.currency.iso_code }}",
+        "price": "{{ selectedProduct.price | slice: 0, centsPriceIntValueSize }}.{{ selectedProduct.price | slice: -2, 2 }}",
+        "availability" : "https://schema.org/{% if product.available %}InStock{%else%}SoldOut{%endif%}",
+        "itemCondition": "https://schema.org/NewCondition",
+        "priceValidUntil": "{{ promoDates }}",
+        "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "{{ shop.address.country_code }}"
+            },
+            "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": 0,
+                "currency": "{{ cart.currency.iso_code }}"
+            },
+            "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 0,
+                    "maxValue": 1,
+                    "unitCode": "DAY"
+                },
+                "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 0,
+                    "maxValue": 1,
+                    "unitCode": "DAY"
+                }
+            }
+        },
+        "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "{{ shop.address.country_code }}",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 30,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
+        },
+        "url": "{{ product.handle }}",
+        "seller": {
+            "@type": "Organization",
+            "name": "{{ shop.name }}"
+        }
+      },
+        "review": {
+         "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+         },
+         "author": {
+            "@type": "Person",
+            "name": "bill_wadsworth"
+        }
+       },
+      "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "200",
+            "bestRating": "5",
+            "worstRating": "1"
+       }
+  }
+</script>
+
+
+<div class="max-width after-wrapper">
+  <div class="after_rocket-left">
+    <div id="pro_{{section.id}}" class="after_rocket--img-wrpers">
+      <div class="galry--rockeet">
+        {% render 'deal-gallery--default', product: product, section: section %}
+      </div>
+           
+       <div class="see-on-image1">
+          {% if section.settings.asseeon != blank %}
+           {{ section.settings.asseeon | image_url: width :'591', height:'210' | image_tag }}
+            {% else %}
+           <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_1000006698_1.png?v=1720595357" alt="see-on"/>
+          {% endif %}
+
+        </div> 
+    </div>
+  </div>
+
+  <!-- Product content -->
+  <div class="after_rocket-right">
+      {% if section.settings.reviewstext != blank %}
+        <div class="after--sub_title">
+          <p>{{ section.settings.reviewstext }}</p>
+        </div>
+      {% endif %}
+
+    <h1 data-sku="{{ product.selected_or_first_available_variant.sku }}">{{ section.settings.pro_title }} </h1> 
+
+    <img class="customer-choice-img" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/customer-choice.png?v=1731675933" alt="bestchoice">
+    
+    <div class="reviews-img"> 
+      <a href="{{ section.settings.trusturl }}" target="_blank">
+       {{ section.settings.reviews | image_url: width:'431' , height:'27' | image_tag }}
+      </a>
+   </div>
+
+    <div class="price-wrapper">
+      <del><div class="compare-price">$174.99</div></del>
+      <div class="price-wrap">$128.99</div>
+      <div class="offer-price">26% OFF</div>
+    </div>  
+
+    <div class="ilist_item">
+      {% if section.settings.content-list != blank %}
+        <div class="check-list">
+          {{ section.settings.content-list }}
+        </div>
+        {% endif %}
+        <!-- {% render 'deals-product-page--swatch' with product as product %} -->
+        <!-- Tab wraper div -->
+        <div class="pro_nametab">
+          <div class="verison">
+            <p><span>1</span> Select Your Version:</p>
+          </div>
+          <div class="mdeal_scroll">
+            <ul id="dealtab__{{ section.id }}" class="tabs_dels">
+              {% for block in section.blocks %}
+                {% if block.settings.tabnme != blank %}
+                  <li class="ntab" data-id="tab-{{ block.id }}-{{ forloop.index }}">
+                    <a
+                      id="tname_{{ block.id }}"
+                      data-img="{{ block.settings.tab_fetureimg | img_url:'master' }}"
+                      data-version="{{ block.settings.tabnme }}"
+                      data-osname = "{{ block.settings.name1 }}"
+                      href="#tab-{{ block.id }}-{{ forloop.index }}"
+                      class="main-tab {% if forloop.index == 1 %}active{% endif %}"
+                    >
+                      {{ block.settings.tabnme }}
+                    </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+
+          <div class="verison">
+            <p><span>2</span> Choose Your Operating System</p>
+          </div>
+          <!-- tab content -->
+          <div class="deal_pro-wraper">
+            {% for block in section.blocks %}
+              {% assign window_product = all_products[block.settings.productwindow] %}
+              {% assign mac_product = all_products[block.settings.Productmac] %}
+
+              <div
+                id="tab-{{ block.id }}-{{ forloop.index }}"
+                class="dl_wrap"
+                {% unless forloop.first %}
+                  style="display:none;"
+                {% endunless %}
+              >
+                <div class="wm_pro-wrap">
+                  {% if window_product != blank %}
+                  <div class="pro-name windows">
+                    {% assign windowvar_id = window_product.first_available_variant %}
+                    {% if block.settings.name1 != blank %}
+                      <button id="get_img"
+                        class="deal-pname {% if forloop.index == 1 %}active{% endif %}"
+                        type="button"
+                        data-os="{{ block.settings.name1 }}"
+                        data-id="{{ windowvar_id.id }}"
+                        data-name="{{ window_product.title }}"
+                        data-image="{{ window_product.featured_image | img_url: '1280x' }}"
+                      >
+                      <noscript id="gallery-view">
+                        {% render 'deal-gallery--default', product: window_product, section: section %}
+                      </noscript>
+                        <img
+                          alt="Windows"
+                          loading="lazy"
+                          width="18"
+                          height="20"
+                          src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_69.png?v=1720674274"
+                          style="color: transparent;"
+                        >
+                        <span class="dl_til">Windows</span>
+                        <span class="dl_til-price" style="display: none;"
+                          data-save="
+                        {{-
+                          window_product.compare_at_price
+                          | minus: window_product.price
+                          | times: 100.0
+                          | divided_by: window_product.compare_at_price
+                          | round
+                        -}}% OFF
+                          "
+                          data-compare-price="{%- if window_product.compare_at_price > 0 -%}{{ window_product.compare_at_price | money_with_currency | strip_html }}{% endif %}"  data-price="{{- window_product.price | money_with_currency }}">
+                          {{- window_product.price | money_with_currency }} / One-Time Payment</span
+                        >
+                      </button>
+                    {% else %}
+                      <button class="deal-pname" type="button" data-id="{{ windowvar_id.id }}">
+                        {{ window_product.title }}
+                      </button>
+                    {% endif %}
+                  </div>
+                {% endif %}
+                  
+                  {% if mac_product != blank %}
+                  <div class="pro-name macs">
+                    {% assign macvar_id = mac_product.first_available_variant %}
+                    {% if block.settings.name2 != blank %}
+                      <button id="get_img"
+                        class="deal-pname"
+                        type="button"
+                        data-os="{{ block.settings.name2 }}"
+                        data-id="{{ macvar_id.id }}"
+                        data-name="{{ mac_product.title }}"
+                        data-image="{{ mac_product.featured_image | img_url: '1280x' }}"
+                      >
+                      <noscript id="gallery-view">
+                        {% render 'deal-gallery--default', product: mac_product, section: section %}
+                     </noscript>
+                      {% if forloop.index == 3 or forloop.index == 4 %}
+                        <img
+                          alt="Windows"
+                          loading="lazy"
+                          width="21"
+                          height="21"
+                          src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-windows-system.png?v=1703165738"
+                          style="color: transparent;"
+                        >
+                        {% else %}
+                        <img
+                          alt="Mac"
+                          loading="lazy"
+                          width="19"
+                          height="21"
+                          decoding="async"
+                          data-nimg="1"
+                          src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_69_1.png?v=1720674274"
+                          style="color: transparent;"
+                          data-bstr-initd="true"
+                        >
+                        {% endif %}
+                        <span class="dl_til"
+                          >Mac OS</span
+                        >
+                        <span class="dl_til-price"  style="display: none;"
+                          data-save="
+                        {{-
+                          mac_product.compare_at_price
+                          | minus: mac_product.price
+                          | times: 100.0
+                          | divided_by: mac_product.compare_at_price
+                          | round
+                        -}}% OFF
+                          "                          
+                          data-compare-price="{%- if mac_product.compare_at_price > 0 -%}{{ mac_product.compare_at_price | money_with_currency | strip_html }}{% endif %}" data-price="{{- mac_product.price | money_with_currency }}">
+                          {{- mac_product.price | money_with_currency }} / One-Time Payment</span
+                        >
+                      </button>
+                    {% else %}
+                      <button class="deal-pname" type="button" data-id="{{ macvar_id.id }}">
+                        {{ mac_product.title }}
+                      </button>
+                    {% endif %}
+                  </div>
+                {% endif %}
+                </div>
+
+              </div>
+            {% endfor %}
+          </div>
+          
+          <div class="rock_checkouts">
+            {% assign var = '40526256242743' %}
+             {% form 'product', product %}
+                <input name="id" type="hidden" id="varid_hide" value="40526256242743">
+              {% render 'rocket-addto-cart--button', product: product, variant: var, quantity: 1, form: form %}
+             {% endform %}
+      
+          </div>
+          
+          <div class="dirct_checkoutbtns" style="margin: 15px 0;cursor:pointer;">
+            <form method="post" action="/cart/add">
+              <input type="hidden" name="id" id="varid_hide" value="40526256242743">
+              <input type="hidden" name="return_to" value="/checkout">
+              <input min="1" type="number" id="quantity" name="quantity" value="1" style="display:none;">
+              <button id="checkout_page" class="button button--addToCart" class="btn"> <i class="uil uil-lock"></i>CHECKOUT SECURELY & Save</button>
+            </form>
+          </div>
+          
+        {% if section.settings.mback != blank %}
+         <p class="enjoy_text">{{ section.settings.mback }}</p>
+       {% endif %}
+       {% if additional_checkout_buttons and section.settings.paypalenable == true %}
+        <div class="additional-checkout-buttons">
+          {{ content_for_additional_checkout_buttons }}
+        </div>
+      {% endif %}
+         <ul class="list list-payment" role="list">
+        {%- for type in shop.enabled_payment_types -%}
+          <li class="list-payment__item">
+            {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+          </li>
+        {%- endfor -%}
+      </ul>   
+        {% if section.settings.reviews != blank %}
+         <!-- <div class="cust-review"> 
+          {{ section.settings.cust_review | image_url: width: '535', height: '175' | image_tag }}
+         </div> -->
+        {% endif %}
+          <!-- end tab content -->
+
+        </div>
+        <!-- End Tab wraper div -->
+    </div>
+  </div>
+</div>
+
+<script>
+   $(document).ready(function() {
+      $('#dealtab__{{ section.id }} a').click(function(e){
+        e.preventDefault();
+        $(this).closest('.pro_nametab').find('.tabs_dels li a').removeClass('active');
+        $(this).closest('.pro_nametab').find('.dl_wrap').hide();
+        $(this).addClass('active');
+        var id = $(this).attr("href");
+        var osnames = $(this).attr('data-osname')
+        $('#os').text(osnames);
+        var img = $(this).attr('data-img')
+        $('.deals_sildeimg img').attr('src', img);
+        var version = $(this).attr('data-version');
+        var slectedvarId = $('.deal-pname.active').attr('data-id');
+        // alert(slectedvarId);
+        $('#vname').text(version);
+        $(""+id).show();
+        return false;
+      });
+     $('.icon-wrapper').addClass('Student');
+     $('.ntab a').click(function() {
+      var btn_text = $(this).text().trim().replace(/\s+/g, '-'); // Get the text, trim spaces, and replace spaces with hyphens
+      $('.icon-wrapper').removeClass('Student Business');
+      $('.icon-wrapper').addClass(btn_text);
+      });   
+  });
+</script>
+
+<script>
+  $(".deal_pro-wraper .deal-pname").click(function(){
+    var gal_info = $(this).closest(".deal_pro-wraper .deal-pname").find("#gallery-view").html();
+     $(".galry--rockeet").html(gal_info);
+    let osname = $(this).attr("data-os");
+     $('#os').text(osname);
+     var imgs = $(this).attr('data-image');
+     console.log(imgs);
+     $('.deals_sildeimg img').attr('src', imgs);
+     let varId = $(this).attr("data-id");
+     $(this).closest('.deal_pro-wraper').find('.pro-name .deal-pname').removeClass('active');
+     $(this).addClass('active');
+     $('#varid_hide').val(varId)
+
+
+       $(this).closest(".ilist_item").find(".shopify-product-form .button--addToCart").attr("onclick","BoosterTheme.cart.addToCartJSON(event, {items: [{id: "+$(this).attr("data-id")+", quantity: 1}]});")
+
+       var price = $(this).children('.dl_til-price').data('price');
+        var saveData = $(this).children('.dl_til-price').data('save');
+        var compPrice = $(this).children('.dl_til-price').data('compare-price');
+        $('.price-wrap').empty().append(price);
+        $('.compare-price').empty().append(compPrice);
+        $('.offer-price').empty().append(saveData);  
+  });
+
+    $("#checkout_trigr").click(function(){
+      $("#checkout_page").trigger("click");
+    });
+
+  // $(document).ready(function() {
+  //     $('#after-rockeet-accordion').appendTo('.after_rocket-right');
+  // });  
+
+  $(document).ready(function(){
+    $('.deal_pro-wraper .dl_wrap').each(function(){
+        if ($(this).find('.deal-pname').hasClass('active')) {
+            var price = $(this).find('.dl_til-price').data('price');
+            var saveData = $(this).find('.dl_til-price').data('save');
+            var compPrice = $(this).find('.dl_til-price').data('compare-price');
+            $('.price-wrap').empty().append(price);
+            $('.compare-price').empty().append(compPrice);
+            $('.offer-price').empty().append(saveData);
+        }
+    });
+ });  
+</script>
+{% schema %}
+{
+  "name": "After Rockeet product",
+  "class": "bestdeals after-rockeet",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product_deals",
+      "label": "Select Product"
+    },
+    {
+     "type": "image_picker",
+     "id": "reviews",
+     "label": "Select Trust Pilot Review Image"
+    },
+    {
+     "type": "url",
+     "id": "trusturl",
+     "label": "Trust Pilot url link"
+    },
+    {
+     "type": "text",
+     "id": "reviewstext",
+     "label": "Sub Heading"
+    },
+    {
+     "type": "image_picker",
+     "id": "cust_review",
+     "label": "Customer Review"
+    },
+    {
+     "type": "image_picker",
+     "id": "asseeon",
+     "label": "Select As see on Image"
+    },
+    {
+     "type": "html",
+     "id": "content-list",
+     "label": "Content List"
+    },
+    {
+      "type": "html",
+      "id": "pro_title",
+      "label": "Custom Product Title",
+      "default": "Save Up To 67% Today +4 FREE Gifts"
+    },
+    {
+      "type": "liquid",
+      "id": "sub_dates",
+      "label": "Enter Manually date and text"
+    },
+    {
+      "type": "html",
+      "id": "esale",
+      "label": "EXCLUSIVE SALE!",
+      "default": "<b>EXCLUSIVE SALE!</b> FREE Gifts With Your First Order"
+    },
+    {
+      "type": "html",
+      "id": "mback",
+      "label": "90-Day Money Back Guarantee",
+      "default": "Enjoy Softwarekeep Products Risk-Free with 90-Day Money Back Guarantee"
+    },
+    {
+     "type": "header",
+     "content": "Dynamic checkout Button PayPal/ Shoppay Enable"
+    },
+    {
+      "type": "checkbox",
+      "id": "paypalenable",
+      "label": "Button PayPal/ Shoppay Enable",
+      "default":true
+    }
+  ],
+
+ "blocks": [
+   {
+     "name": "tablist",
+     "type": "product",
+     "settings": [
+        {
+          "type": "text",
+          "id": "tabnme",
+          "label": "Tab name"
+        },
+        {
+         "type": "image_picker",
+         "id": "tab_fetureimg",
+         "label": "Tab Feature Image"
+        },
+        {
+         "type": "header",
+         "content": "Window Product"
+        },
+        {
+          "type": "product",
+          "id": "productwindow",
+          "label": "Window Product"
+        },
+        {
+          "type": "text",
+          "id": "name1",
+          "label": "Custom product Window name"
+        },
+       {
+         "type": "header",
+         "content": "Mac Product"
+       },
+        {
+          "type": "product",
+          "id": "Productmac",
+          "label": "Select Mac Product"
+       },
+       {
+          "type": "text",
+          "id": "name2",
+          "label": "Custom product Mac name"
+        }
+     ]
+   }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,145 @@
+{{ 'deal-gallery-slider.css' | asset_url | stylesheet_tag:preload: true  }}
+<div class="allimg_wraper">
+   <div class="thumbnail-slider">
+      {% for image in product.images %}
+        <div>
+          {{ image.src | image_url:width:'75', height:'75' | image_tag }}
+        </div>
+      {% endfor %}
+      <div>
+        {{ product.images[1].src | image_url:width:'75', height:'75' | image_tag }}
+      </div>
+    </div>
+   <div class="main-slider">
+      {% for image in product.images %}
+       <div class="main-slider-item">
+         {% if page.handle == 'office-2021-home-and-student-vs-home-and-business' %}
+         <img class="black-friday-tag" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/BLACK_FRIDAY_TAG-02_1.png?v=1732175841" alt="black friday badage">
+         {% endif %}  
+         {{ image.src | image_url: width:'1280' | image_tag }}
+       </div>
+      {% endfor %}
+  </div>
+  
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('.main-slider').slick({
+      vertical: false,  // Main slider scrolls horizontally
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,  // Ensures main slider loops infinitely
+      asNavFor: '.thumbnail-slider',  // Sync with thumbnail slider
+      autoplaySpeed: 2000,
+      arrows: true,
+      prevArrow:"<button type='button' aria-label='arrow-left' class='slick-prev pull-left'><i class='uil uil-arrow-left'></i></button>",
+      nextArrow:"<button type='button' aria-label='arrow-right' class='slick-next pull-right'><i class='uil uil-arrow-right'></i></button>",
+      dots: false,
+      fade: true
+    });
+
+    $('.thumbnail-slider').slick({
+      vertical: true,  // Thumbnail slider scrolls vertically
+      slidesToShow: 6,  // Show 5 thumbnails at once
+      slidesToScroll: 1,
+      infinite: true,  // Ensure continuous loop for thumbnail slider
+      asNavFor: '.main-slider',  // Sync with main slider
+      focusOnSelect: true,
+      arrows: false,
+      dots: false,
+    });
+
+    $('.main-slider').css("opacity", 1);
+  });
+</script>
+  
+<!-- <style>
+  .allimg_wraper {
+    display: flex;
+    gap: 15px;
+  }
+  .dela_galrys {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+   }
+    .main-slider {
+      width: 85%;
+      height: 100%;
+      margin: 0 auto;
+      opacity: 0;
+    }
+
+    .thumbnail-slider {
+      width: 15%;
+      margin: 20px auto 0;
+    }
+
+    .thumbnail-slider .slick-slide {
+      cursor: pointer;
+    }
+
+    .thumbnail-slider .slick-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 2px solid transparent; /* Default border */
+      transition: border 0.3s ease;  /* Smooth transition when border changes */
+    }
+
+    /* Apply a border to the selected/active thumbnail */
+    .thumbnail-slider .slick-current img {
+      border: 2px solid #3498db;  /* Blue border for the selected thumbnail */
+    }
+   .main-slider .slick-prev:before{
+     display:none;
+   }
+
+   .main-slider .slick-next .uil-arrow-right {
+      font-size: 30px;
+      color: #000;
+      position: relative;
+      top: -14px;
+      right: 13px;
+   }
+  .main-slider .slick-prev .uil-arrow-left {
+      font-size: 30px;
+      color: #000;
+      position: relative;
+      top: -14px;
+      right: 13px;
+    }
+     .main-slider .slick-next{
+      right: 5px;
+     }
+     .main-slider .slick-prev{
+      left:5px;
+     }
+    .main-slider .slick-next{
+      background: #D9D9D99C;
+      border-radius: 50px;
+      padding: 20px;
+      z-index: 9;
+    }
+    .main-slider .slick-prev{
+      background: #D9D9D99C;
+      border-radius: 50px;
+      padding: 20px;
+      z-index: 9;
+    }
+  @media only screen and (max-width:767px) {
+     .main-slider {
+       width: 100%;
+     } 
+    .main-slider .slick-prev{
+      z-index:1;
+    }
+   .main-slider .slick-next{
+     z-index: 1;
+   }
+  .thumbnail-slider {
+    display:none;
+  }
+}
+  </style> -->

@@ -1,0 +1,164 @@
+<style>
+    #colr__{{ section.id }}{
+      color: {{section.settings.color_title}};
+    }
+    .below-green-border-sec h2:before{
+    content: "";
+      background-image: url(/cdn/shop/files/13.png?v=1705660351);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      background-position: bottom;
+      height: 75px;
+      top: -20px;
+      object-position: center center;
+      max-width: 717px;
+    }
+  @media screen and (max-width: 767px){
+    .below-green-border-sec h2:before{
+     content: "";
+      background-image: url(https://cdn.shopify.com/s/files/1/0621/8733/9828/files/13_red.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      background-position: bottom;
+      height: 120px;
+      top: -30px;
+      object-position: center center;
+      max-width: 717px;
+    }
+  }
+</style>
+<div class="max-width">
+  <div class="truely-office-new-parent">
+    <div
+      class="truely-office-inner-content"
+      {% if section.settings.headbg_img != blank %}
+        style="background: url({{ section.settings.headbg_img | img_url:'master' }}) no-repeat center center; background-size: cover;"
+      {% endif %}
+    >
+      <h3>{{ section.settings.sub_title }}</h3>
+      <h2 id="colr__{{ section.id }}">{{ section.settings.title }}</h2>
+    </div>
+    <div class="below-green-border-sec">
+      {% if section.settings.sec_image != blank %}
+        {{ section.settings.sec_image | image_url: width: '755', height: '270' | image_tag }}
+      {% else %}
+        <img
+          src="https://cdn.shopify.com/s/files/1/0621/8733/9828/files/Group_1000004822.png?v=1705646356"
+          alt="child-study"
+          width="377"
+          height="270"
+        >
+      {% endif %}
+      <div class="text-section">
+        {% for block in section.blocks %}
+          {% if block.settings.head_texts != blank %}
+            <h2 style="{% if block.settings.textAlignment == 'start' %}text-align: left;{% else %}text-align: center; position: relative; z-index:1;color:#fff;{% endif %}">
+              {{ block.settings.head_texts }}
+            </h2>
+          {% endif %}
+          {% if block.settings.rich_texts != blank %}
+            {{ block.settings.rich_texts }}
+          {% endif %}
+          {% if block.settings.rich_texts_html != blank %}
+            <p>{{ block.settings.rich_texts_html }}</p>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Rumble Shocking Content",
+  "class": "rumble_shocking_content",
+  "settings": [
+          {
+          "type": "text",
+          "id": "sub_title",
+          "label": "Enter Sub Heading"
+         },
+         {
+          "type": "text",
+          "id": "title",
+          "label": "Enter Heading",
+          "default": "also featured on"
+         },
+        {
+           "type": "color",
+          "id": "color_title",
+          "label": "Heading Color"
+         },
+        {
+          "type": "image_picker",
+          "id": "headbg_img",
+          "label": "Heading Background Image",
+          "info": "Heading Background Image"
+         },
+        {
+          "type": "image_picker",
+          "id": "sec_image",
+          "label": "Select Image"
+         },
+        {
+          "type": "html",
+          "id": "sechtml_content",
+          "label": "Enter Html Content",
+          "info": "For Heading h2 and  para P tag use"
+         }
+  ],
+  "blocks": [
+   {
+     "name": "text",
+     "type": "text",
+     "settings": [
+       {
+         "type": "text",
+         "id": "head_texts",
+         "label": "Enter heading",
+         "default": "What’s more shocking is…"
+       },
+       {
+        "type": "select",
+        "id": "textAlignment",
+        "label": "Heading alignment (left to right)",
+        "options": [
+          {"value": "start", "label": "Left"},
+          {"value": "center", "label": "Center"}
+        ],
+        "default": "start"
+      },
+       {
+         "type":"header",
+         "content": "Paragrapgh Content Section"
+       },
+        {
+         "type": "richtext",
+         "id": "rich_texts",
+         "label": "Enter Paragraph Content",
+         "default": "<p>What’s more shocking is…</p>"
+       },
+      {
+         "type": "html",
+         "id": "rich_texts_html",
+         "label": "Enter Html div Content",
+         "info": "<p>What’s more shocking is…</p>"
+       }
+     ]
+   }
+],
+  "presets": [
+  {
+    "name": "Rumble Shocking Content"
+
+  }
+]
+}
+{% endschema %}

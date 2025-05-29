@@ -1,0 +1,174 @@
+<div id="flist--{{ section.id }}">
+  <div class="max-width">
+     <div class="spdp_list">
+         <div class="new-list_feature border-right">
+           <p class="heading-text">{{ section.settings.st_head }}</p> 
+           {% if section.settings.spflist_para != blank %}
+             <div class="small-content">
+               {{ section.settings.spflist_para }}
+             </div>
+            {% endif %}
+            {% if section.settings.home_pro != blank %}
+              {{ section.settings.home_pro }}
+            {% endif %}
+         </div>
+         <div class="new-list_feature">
+           {% if section.settings.bus_head %}
+             <p class="heading-text">{{ section.settings.bus_head }}</p>
+           {% endif %}
+           {% if section.settings.spflist_para2 != blank %}
+              <div class="small-content">
+               {{ section.settings.spflist_para2 }}
+             </div>
+            {% endif %}
+           {% if section.settings.business_pro != blank %}
+              {{ section.settings.business_pro }}
+           {% endif %}
+         </div>
+     </div>
+
+     {% if section.settings.botm_para != blank %}
+       <div class="ms-para">{{ section.settings.botm_para }}</div>
+     {% endif %}
+    
+  </div>
+</div>
+<style>
+  #flist--{{ section.id }} {
+    background: {{section.settings.bgssec}};
+    padding : 20px 0;
+  }
+  .new-list_feature {
+    padding: 0 25px;
+  }
+  .ms-para {
+    padding-top: 36px;
+    text-align: center;
+    font-size: 28px;
+  }
+  .border-right{
+    border-right: 2px solid #000;
+  }
+ .spdp_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+ }
+  .spdp_list .new-list_feature .heading-text {
+    font-size: 25px;
+    font-weight:600;
+    text-transform: uppercase;
+  }
+  .spdp_list .new-list_feature .small-content p{
+    color:#036ab5;
+  }
+  ul.list-high-products {
+    padding: 0;
+  }
+  .list-high-products li {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #18191f;
+}
+.list-high-products li .img {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    width: 50px;
+}
+.highlight-text{
+  color: #036ab5;
+}
+@media (max-width: 767px) {
+  .spdp_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .ms-para {
+    font-size: 16px;
+  }
+  .border-right{
+    border-right: none;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+  .spdp_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .spdp_list .new-list_feature .heading-text {
+    font-size: 25px;
+  }
+  .spdp_list .new-list_feature p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+</style>
+{% schema %}
+  {
+    "name": "Product Feature List",
+    "settings": [
+        {
+            "type": "color_background",
+            "id": "bgssec",
+            "label": "Section Background Color",
+            "default" : "#fff"
+        },
+        {
+          "type": "html",
+          "id": "st_head",
+          "label": "Enter heading text"
+       },
+       {
+         "type": "richtext",
+         "id": "spflist_para",
+         "label": "Short Content Paragrapgh"
+       },
+       {
+         "type": "html",
+         "label": "Home and Student",
+         "id": "home_pro"
+       },
+       {
+        "type": "header",
+        "content": "Second section"
+       },
+       {
+          "type": "text",
+          "id": "bus_head",
+          "label": "Enter Business heading text"
+       },
+       {
+         "type": "richtext",
+         "id": "spflist_para2",
+         "label": "Short Content Paragrapgh"
+       },
+       {
+         "type": "html",
+         "label": "Home and Business Highlights:",
+         "id": "business_pro"
+       },
+       {
+         "type": "richtext",
+         "label": "Bottom Paragrapgh",
+         "id": "botm_para"
+       }
+    ],
+    "presets": [
+      {
+        "name": "Product Feature List"
+      }
+    ]
+  }
+{% endschema %}

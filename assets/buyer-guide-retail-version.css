@@ -1,0 +1,246 @@
+/******** Editions Products section csss ***********/
+.editions_pro .editons_heading {
+    font-size: 34px;
+    margin-bottom: 5px;
+}
+.editions_pro .buy-btns {
+  margin-top: 15px;
+}
+.editions_pro .sub_content {
+  font-size: 16px;
+  margin-top: 0px;
+}
+.editons_pro-wraps {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.list_pros {
+  flex-basis: 30%; 
+  text-align: center;
+  margin-bottom: 20px; 
+  box-sizing: border-box;
+  background-color: #F7F7F7; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.editons_pro-wraps .list_pros h4 {
+    font-size: 24px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+.editons_pro-wraps .list_pros p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.editons_pro-wraps .software_icons-list {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+/****** ENDS Editions Products section csss ******/
+.main_list-pro {
+  padding: 20px 30px;
+  margin-top: 50px;
+  background: #F7F7F7;
+}
+.retils_version ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  max-width: 790px;
+  justify-content: space-between;
+}
+.retils_version {
+  background: #E6E5E5;
+  padding: 10px 15px;
+}
+.retils_version .lists {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #fff;
+  padding: 5px 0;
+  gap: 15px;
+  align-items: center;
+}
+.retils_version .lists:last-child {
+  border-bottom: none;
+}
+.lists .link_title {
+  font-size: 20px;
+  color: #000;
+}
+.buy-btns .btn {
+  color: #fff;
+  padding: 15px;
+  background: #126337;
+  font-weight: 600;
+  width: 90%;
+  margin: 0 15px;
+}
+.lists .title h4 {
+  margin: 0px;
+}
+.mrgin-zero {
+  margin: 0px;
+}
+.lists .buy-btns {
+  width: 25%;
+}
+.lists .pro-title {
+  width: 33%;
+}
+.lists .title {
+  width: 33.33%;
+}
+.lists .software_icons-list {
+  width: 33.33%;
+  text-align: center;
+}
+.openlc-pro {
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+.buyers_heading{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52.8px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+.buyers_headingsec {
+  margin-top: 40px;
+}
+.container_box-wraper{
+  margin-top: 60px;
+}
+.container_box-wraper h3{
+  font-size:34px;
+}
+.app_listt {
+  background: #F7F7F7;
+  padding: 10px 60px;
+  margin-bottom: 30px;
+}
+.app_content {
+  display: flex;
+}
+.chose_mo .list_feature ul {
+  list-style-type: none;
+}
+.chose_mo .app_content{
+  gap:20px;
+}
+.core_apps .sub-text {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 0px;
+}
+.core_apps .t_head {
+  margin: 6px 0;
+  font-weight: 600;
+  font-size: 24px;
+}
+.chose_mo  .list_feature {
+  width: 90%;
+}
+.chose_mo .app_content .images {
+  width: 10%;
+}
+.list_feature ul {
+  list-style-type: none;
+}
+@media screen and (max-width: 767px) {
+  .retils_version .lists {
+    flex-wrap: wrap;
+  }
+  .editions_pro{
+    padding: 0 20px;
+  }
+ .editons_pro-wraps .software_icons-list {
+    gap: 20px !important;
+  }
+ .editions_pro .buy-btns .btn {
+   font-size: 16px;
+  }
+  .editions_pro .editons_heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .container_box-wraper h3 {
+    font-size: 28px;
+    line-height: 36px;
+   }
+  .buyers_headingsec p{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .main_list-pro {
+    padding: 20px 10px;
+  }
+  .lists .pro-title {
+    width: 100%;
+  }
+  .lists .link_title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .retils_version .lists {
+    padding: 10px 0;
+  }
+  .lists .buy-btns {
+    width: 50%;
+  }
+  .app_listt {
+    padding: 10px 10px;
+  }
+  .core_apps .t_head {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  ul li, p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .app_content .images {
+    max-width: 50px;
+  }
+  .app_content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .list_feature ul {
+    padding: 0 10px;
+  }
+
+}
+@media screen and (max-width:1024px) {
+  .container_box-wraper {
+    margin-top: 30px;
+    padding: 0 10px;
+  } 
+  #comb_inelogo{
+    padding: 0 20px;
+  }
+  .main_list-pro .buy-btns .btn {
+    font-size: 16px;
+  }
+  .container_box-wraper h3 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width:375px) {
+  .main_list-pro .buy-btns .btn {
+    font-size: 12px;
+  }
+  .container_box-wraper h3 {
+    font-size: 24px;
+    line-height: 36px;
+   }
+}

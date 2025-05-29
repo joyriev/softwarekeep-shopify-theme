@@ -1,0 +1,163 @@
+{{ 'bundle-product-form.css' | asset_url | stylesheet_tag : preload: true }}
+{% assign collection_data = product.metafields.custom.bundles_products.value %}
+  <div class="bundle_wrapers">
+     <p class="rcom_heads">Recommended to Purchase With This Product</p>
+    
+      <div class="product-filters">
+        <!-- Product Type Dropdown -->
+          <div class="pro_types-list">
+            <label style="margin-right: 5px;font-weight: 600;">Version:</label>
+            <select id="pro_type" onchange="updateFilters()">
+              {% assign unique_types = "" %}
+              {% for product in collection_data.select_collection.value.products %}
+                {% if product.type == 'Remote Desktop' or product.type == 'Standard' %}
+                  {% unless unique_types contains product.type %}
+                    <option value="{{ product.type | downcase }}" {% if product.type == 'Remote Desktop' %}selected{% endif %}>
+                      {{ product.type }}
+                    </option>
+                    {% assign unique_types = unique_types | append: product.type | append: "," %}
+                  {% endunless %}
+                {% endif %}
+              {% endfor %}
+            </select>
+          </div>
+
+          <!-- Product Tags Dropdown -->
+          <div class="pro_tags_list">
+            <label style="margin-right: 5px;font-weight: 600;">Type:</label>
+              <select id="pro_tags" onchange="updateFilters()">
+                {% assign unique_tags = "" %}
+                {% for product in collection_data.select_collection.value.products %}
+                  {% for tag in product.tags %}
+                    {% if tag == 'User' or tag == 'Device' %}
+                      {% unless unique_tags contains tag %}
+                        <option value="{{ tag | downcase }}" {% if tag == 'User' %}selected{% endif %}>
+                          {{ tag }}
+                        </option>
+                        {% assign unique_tags = unique_tags | append: tag | append: "," %}
+                      {% endunless %}
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              </select>
+          </div>
+      </div>
+
+    <!-- Display Products -->
+      <div class="list_pro-bundle">
+        <div class="pro__list-items">
+          {% for product in collection_data.select_collection.value.products %}
+             <div class="list_items prods_data" data-type="{{ product.type }}" data-tags="{{ product.tags | join: ',' }}" data-price="{{ product.price }}" data-id="{{ product.selected_or_first_available_variant.id }}">
+               <div data-skus="{{ product.selected_or_first_available_variant.sku }}" class="rec-prod-container" name="rec-prod-container">
+                 <div class="prdouct-wrapers">
+                   <div class="image-product">
+                    {{ product.featured_image | image_url: width:'70', height:'70' | image_tag }}
+                   </div>
+                    <div class="products-list-title" >
+                     <p class="title">{{ product.title }}</p>
+                      <div class="price-quantity-wraper">
+                        <div class="bundle--price-wrap">
+                          <p class="bundl_pro-price">
+                           <span class="product__price jsPrice">{{ product.price | money_with_currency }}</span>
+                         </p>
+                        </div>
+                         <div class="bundle-qunatity-box">
+                           <div class="quantity--input bundle_ms-qtys">
+                             <button class="quantity--input__button quantity--input__decr" onclick="updateQuantity(this, false, event)">-</button>
+                              <input class="quantity--input__input text_number" value="0" data-qty-input="" type="number" name="quantity" min="0" aria-label="Quantity input">
+                              <button class="quantity--input__button quantity--input__incr" onclick="updateQuantity(this, true, event)">+</button>
+                            </div>
+                         </div>
+                      </div>
+                  </div>
+                </div>
+                 
+               </div>
+             </div>
+          {% endfor %}
+       </div>
+
+       <!-- Display total & add to cart -->
+        <div class="totls_additems">
+          <div class="total">
+            <p class="totl_wraps">
+              <span class="prod-sub-total-label">TOTAL (Add-ons): </span>$
+              <span class="product__price jsPrice" id="rec-prod-subtotal">0.00</span>
+            </p>
+          </div>
+          <div class="addcart--forms">
+             {% render 'bundle-deal-addto-cart-button', product: product, variant: var, quantity: 1, form: form %}
+          </div>
+        </div>
+     </div>
+  </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    updateFilters(); // Trigger filtering when the page loads
+    updateTotal();   // Calculate initial total price
+  });
+
+  function updateFilters() {
+    var selectedType = document.getElementById('pro_type').value.toLowerCase();
+    var selectedTag = document.getElementById('pro_tags').value.toLowerCase();
+
+    var products = document.querySelectorAll('.prods_data');
+    products.forEach(function(product) {
+      var productType = product.getAttribute('data-type').toLowerCase();
+      var productTags = product.getAttribute('data-tags').toLowerCase().split(',');
+
+      var typeMatch = selectedType === "" || productType === selectedType;
+      var tagMatch = selectedTag === "" || productTags.includes(selectedTag);
+
+      product.style.display = typeMatch && tagMatch ? "block" : "none";
+    });
+
+    updateTotal();
+  }
+
+  function updateQuantity(button, isIncrement, event) {
+    if (event) event.preventDefault();
+
+    var quantityInput = button.closest('.bundle_ms-qtys').querySelector('.text_number');
+    var quantity = parseInt(quantityInput.value);
+
+    quantityInput.value = isIncrement ? quantity + 1 : Math.max(quantity - 1, 0);
+
+    updateTotal();
+  }
+
+  function updateTotal() {
+    var total = 0;
+    var products = document.querySelectorAll('.prods_data');
+    var itemsToAdd = [];
+    var isAddToCartEnabled = false;
+
+    products.forEach(function(product) {
+      if (product.style.display !== "none") {
+        var price = parseFloat(product.getAttribute('data-price')) / 100;
+        var quantity = parseInt(product.querySelector('.text_number').value);
+        var variantId = product.getAttribute('data-id');
+
+        if (quantity > 0) {
+          total += price * quantity;
+          isAddToCartEnabled = true;
+          itemsToAdd.push({ id: variantId, quantity: quantity });
+        }
+      }
+    });
+
+    document.getElementById('rec-prod-subtotal').textContent = total.toFixed(2);
+    document.querySelector('.addcart--forms button').disabled = !isAddToCartEnabled;
+
+    // Update the add-to-cart button with correct items
+    var addToCartButton = document.querySelector('.addcart--forms button');
+    addToCartButton.onclick = function(event) {
+      event.preventDefault();
+      BoosterTheme.cart.addToCartJSON(event, { items: itemsToAdd });
+    };
+  }
+</script>
+
+
+

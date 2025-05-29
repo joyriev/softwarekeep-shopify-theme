@@ -1,0 +1,33 @@
+<div class="cards-wrapper">
+  {% for block in section.blocks %}
+    {% if block.settings.img %}
+      {{ block.settings.img | image_url: width:'65', height:'40' | image_tag }}
+    {% endif %}
+  {% endfor %}
+</div>
+{% schema %}
+  {
+    "name": "Rumble Cards",
+    "class": "rumble-cards",
+    "settings": [
+    ],
+    "blocks": [
+      {
+        "type": "cards",
+        "name": "Add Cards",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets" : [
+      {
+        "name" : "Rumble Cards"
+      }
+    ]
+  }
+{% endschema %}

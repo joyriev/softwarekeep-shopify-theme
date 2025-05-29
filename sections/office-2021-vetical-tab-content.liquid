@@ -1,0 +1,409 @@
+<style>
+  .bg-container-tabs {
+    display: flex;
+    justify-content: space-between;
+}
+  .bg-container-tabs .tab-content-product-apps {
+    max-width: 895px;
+}
+.bg-container-tabs .container-tabs {
+    width: 235px;
+}
+  .tabcontents ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tabcontents ul li{
+    width: 387px;
+    background: #fbfbfb;
+    margin: 0 15px 15px 0;
+    padding: 25px;
+  }
+  .tabcontents ul li.no-application {
+        opacity: .2;
+    }
+  		.tabcontents ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+           border-left: 1px solid rgba(0,0,0,.1);
+		}
+		ul.tabs li{
+			background: none;
+			color: #222;
+			padding: 10px 15px;
+			cursor: pointer;
+		}
+
+		ul.tabs li.active{
+			color: #222;
+            border-left: 3px solid #036ab5;
+            font-weight: 700;
+		}
+
+		.tab-content{
+			display: none;
+			padding: 15px;
+		}
+
+		.tab-content.active{
+			display: inherit;
+		}
+
+</style>
+
+<div class="tabs__content-wrap max-width">
+<div class="title-tabs-applications">
+  <h2>{{ section.settings.title }}</h2>
+  <p>{{ section.settings.subcontent }}</p>
+</div>
+
+ <!-- Tab container --> 
+<div class="bg-container-tabs">
+    <div class="container-tabs">
+    	<ul class="tabs vertical-tabs">
+          {% if section.settings.tabname != blank %}
+    		<li class="tab-link active" data-tab="tab-1">{{ section.settings.tabname }}</li>
+          {% endif %}
+          {% if section.settings.tabname1 != blank %}
+            <li class="tab-link" data-tab="tab-2">{{ section.settings.tabname1 }}</li>
+          {% endif %}
+          {% if section.settings.tabname2 != blank %}
+            <li class="tab-link" data-tab="tab-3">{{ section.settings.tabname2 }}</li>
+          {% endif %}
+    	</ul>
+     </div>
+
+  <div class="tab-content-product-apps tab-content-area">
+    <div class="tabcontents">
+      {% for block in section.blocks %}
+        {% if block.type == 'content' %}
+          
+  	   <div id="tab-{{ forloop.index }}" class="tab-content {% if forloop.index == 2 %} active{% endif %}">
+  	     <ul>
+            <li {% if block.settings.check_app == true %}class="no-application" {% endif %}>
+            {% if block.settings.small_img  != blank %}
+              <div class="img">
+                {{ block.settings.small_img | image_url:width:'48', height:'48' | image_tag }}
+              </div>
+            {% endif %}
+              <strong>{{ block.settings.content_head }}</strong>
+             {% if block.settings.content_para != blank %}
+              <p>{{ block.settings.content_para }}</p>
+             {% endif %}
+            </li>
+            
+           <li {% if block.settings.check_app2 == true %}class="no-application" {% endif %}>
+            {% if block.settings.small_img2  != blank %}
+              <div class="img">
+                {{ block.settings.small_img2 | image_url:width:'48', height:'48' | image_tag }}
+              </div>
+            {% endif %}
+              <strong>{{ block.settings.content_head2 }}</strong>
+             {% if block.settings.content_para2 != blank %}
+              <p>{{ block.settings.content_para2 }}</p>
+             {% endif %}
+            </li>
+            <li {% if block.settings.check_app3 == true %}class="no-application" {% endif %}>
+            {% if block.settings.small_img3  != blank %}
+              <div class="img">
+                {{ block.settings.small_img3 | image_url:width:'48', height:'48' | image_tag }}
+              </div>
+            {% endif %}
+              <strong>{{ block.settings.content_head3 }}</strong>
+             {% if block.settings.content_para3 != blank %}
+              <p>{{ block.settings.content_para3 }}</p>
+             {% endif %}
+            </li>
+            <li {% if block.settings.check_app4 == true %}class="no-application" {% endif %}>
+            {% if block.settings.small_img4  != blank %}
+              <div class="img">
+                {{ block.settings.small_img4 | image_url:width:'48', height:'48' | image_tag }}
+              </div>
+            {% endif %}
+              <strong>{{ block.settings.content_head4 }}</strong>
+             {% if block.settings.content_para4 != blank %}
+              <p>{{ block.settings.content_para4 }}</p>
+             {% endif %}
+            </li>
+            <li {% if block.settings.check_app5 == true %}class="no-application" {% endif %}>
+            {% if block.settings.small_img5  != blank %}
+              <div class="img">
+                {{ block.settings.small_img5 | image_url:width:'48', height:'48' | image_tag }}
+              </div>
+            {% endif %}
+              <strong>{{ block.settings.content_head5 }}</strong>
+             {% if block.settings.content_para5 != blank %}
+              <p>{{ block.settings.content_para5 }}</p>
+             {% endif %}
+            </li>
+            <li {% if block.settings.check_app6 == true %}class="no-application" {% endif %}>
+            {% if block.settings.small_img6  != blank %}
+              <div class="img">
+                {{ block.settings.small_img6 | image_url:width:'48', height:'48' | image_tag }}
+              </div>
+            {% endif %}
+              <strong>{{ block.settings.content_head6 }}</strong>
+             {% if block.settings.content_para6 != blank %}
+              <p>{{ block.settings.content_para6 }}</p>
+             {% endif %}
+            </li>
+         </ul>
+  	 </div>
+        {% endif %}
+    {% endfor %}
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- END tabs -->
+
+<script>
+  // JavaScript to handle tab switching
+  document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll(".vertical-tabs .tab-link");
+    const contents = document.querySelectorAll(".tab-content");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", function () {
+        // Remove active class from all tabs and contents
+        tabs.forEach(t => t.classList.remove("active"));
+        contents.forEach(c => c.classList.remove("active"));
+
+        // Add active class to the clicked tab and corresponding content
+        tab.classList.add("active");
+        const target = document.getElementById(tab.dataset.tab);
+        target.classList.add("active");
+      });
+    });
+  });
+</script>
+
+
+
+{% schema %}
+  {
+    "name": "Office-vartical-tab",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading Text"
+      },
+      {
+        "type": "textarea",
+        "id": "subcontent",
+        "label": "Enter Sub Content"
+      },
+      {
+           "type":"header",
+           "content": "Enter Tab Content"
+      },
+      {
+       "type": "text",
+       "id": "tabname",
+       "label": "Enter Tab Name"
+     },
+            {
+       "type": "text",
+       "id": "tabname1",
+       "label": "Enter Tab Name"
+     },
+    {
+       "type": "text",
+       "id": "tabname2",
+       "label": "Enter Tab Name"
+     },
+    {
+       "type": "text",
+       "id": "tabname3",
+       "label": "Enter Tab Name"
+     }
+    ],
+    "blocks": [
+           {
+             "name": "Tab Content",
+             "type": "content",
+             "settings": [
+              {
+                 "type": "text",
+                 "id": "tabname",
+                 "label": "Enter Tab Name"
+               },
+              {
+                 "type":"header",
+                 "content": "Enter Tab Content"
+               },
+              {
+                 "type": "checkbox",
+                 "id": "check_app",
+                 "label": "Check No Application",
+                 "default" : false
+               },
+              {
+                 "type": "image_picker",
+                 "id": "small_img",
+                 "label": "Select Image"
+               },
+               {
+                 "type": "text",
+                 "id": "content_head",
+                 "label": "Enter Heading"
+               },
+               {
+                    "type": "richtext",
+                    "id": "content_para",
+                    "label": "Content Paragrapgh",
+                    "default": "<p>This is for your text</p>"
+                },
+               {
+                 "type":"header",
+                 "content": "Second Content"
+               },
+              {
+                 "type": "checkbox",
+                 "id": "check_app2",
+                 "label": "Check No Application",
+                 "default" : false
+               },
+              {
+                 "type": "image_picker",
+                 "id": "small_img2",
+                 "label": "Select Image"
+               },
+               {
+                 "type": "text",
+                 "id": "content_head2",
+                 "label": "Enter Heading"
+               },
+               {
+                    "type": "richtext",
+                    "id": "content_para2",
+                    "label": "Content Paragrapgh",
+                    "default": "<p>This is for your text</p>"
+                },
+              {
+                 "type":"header",
+                 "content": "third Content"
+               },
+              {
+                 "type": "checkbox",
+                 "id": "check_app3",
+                 "label": "Check No Application",
+                 "default" : false
+               },
+              {
+                 "type": "image_picker",
+                 "id": "small_img3",
+                 "label": "Select Image"
+               },
+               {
+                 "type": "text",
+                 "id": "content_head3",
+                 "label": "Enter Heading"
+               },
+               {
+                    "type": "richtext",
+                    "id": "content_para3",
+                    "label": "Content Paragrapgh",
+                    "default": "<p>This is for your text</p>"
+                },
+              {
+                 "type":"header",
+                 "content": "Fourth Content"
+               },
+              {
+                 "type": "checkbox",
+                 "id": "check_app4",
+                 "label": "Check No Application",
+                 "default" : false
+               },
+              {
+                 "type": "image_picker",
+                 "id": "small_img4",
+                 "label": "Select Image"
+               },
+               {
+                 "type": "text",
+                 "id": "content_head4",
+                 "label": "Enter Heading"
+               },
+               {
+                    "type": "richtext",
+                    "id": "content_para4",
+                    "label": "Content Paragrapgh",
+                    "default": "<p>This is for your text</p>"
+                },
+               {
+                 "type":"header",
+                 "content": "Fifth Content"
+               },
+              {
+                 "type": "checkbox",
+                 "id": "check_app5",
+                 "label": "Check No Application",
+                 "default" : false
+               },
+              {
+                 "type": "image_picker",
+                 "id": "small_img5",
+                 "label": "Select Image"
+               },
+               {
+                 "type": "text",
+                 "id": "content_head5",
+                 "label": "Enter Heading"
+               },
+               {
+                    "type": "richtext",
+                    "id": "content_para5",
+                    "label": "Content Paragrapgh",
+                    "default": "<p>This is for your text</p>"
+                },
+                     {
+                 "type":"header",
+                 "content": "sixth Content"
+               },
+              {
+                 "type": "checkbox",
+                 "id": "check_app6",
+                 "label": "Check No Application",
+                 "default" : false
+               },
+              {
+                 "type": "image_picker",
+                 "id": "small_img6",
+                 "label": "Select Image"
+               },
+               {
+                 "type": "text",
+                 "id": "content_head6",
+                 "label": "Enter Heading"
+               },
+               {
+                    "type": "richtext",
+                    "id": "content_para6",
+                    "label": "Content Paragrapgh",
+                    "default": "<p>This is for your text</p>"
+                }
+             ]
+           }
+           
+        ],
+      "presets": [
+        {
+          "name": "Office-vartical-tab"
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

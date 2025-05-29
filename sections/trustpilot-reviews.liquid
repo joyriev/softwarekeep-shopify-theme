@@ -1,0 +1,94 @@
+<!-- TrustBox script
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<!-- End TrustBox script -->
+<div id="trustbg__{{ section.id }}">
+  <div class="max-width">
+    {% if section.settings.header_title != blank %}
+      <div class="heading--heading">
+       <h2 class="h-reset" style="text-align:center;">{{ section.settings.header_title }}</h2>
+      </div>
+    {% endif %}
+    <!--div container for ResellerRatings Testimonials Widget -->
+    <script type="application/javascript" src="https://api.resellerratings.com/assets/script/d9c0bcaf8f835ba50bbdf4cdf30f50503"></script>
+    <div id="Testimonials"></div>
+    <!--End ResellerRatings Testimonials Widget -->
+      </div>
+</div>
+<style>
+  #trustbg__{{ section.id }}{
+     background: {{section.settings.trustsecbg}};
+     padding: {{section.settings.tpmargingap}}px 0;
+  }
+ .trust__pilotreview{
+   padding-top: 0px; 
+ }
+ .trust__pilotreview h2.h-reset {
+    text-align: center;
+    margin-bottom: 46px;
+    margin-top: 25px;
+    font-size: 34px;
+    font-weight: 600;
+ }
+@media only screen and (max-width: 768px) {
+  .trust__pilotreview h2.h-reset {
+      text-align: center;
+      padding-top: 20px;
+      margin-bottom: 20px;
+      font-size: 26px;
+      font-weight: 600;
+  }
+  #trustbg__{{ section.id }}{
+    padding: 0 20px;
+  }
+  #Testimonials {
+    max-height: 340px;
+  }
+}
+</style>
+{% schema %}
+{
+  "name": "Trustpilot Reviews",
+  "tag": "section",
+  "class": "trust__pilotreview",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header_title",
+      "label": "Heading",
+      "default" : "What Customers Think"
+    },
+    {
+      "type": "color",
+       "id": "trustsecbg",
+       "label": "Section background Color",
+       "default": "#fff"
+    },
+    {
+        "type": "range",
+        "label": "Padding top and bottom",
+        "id": "tpmargingap",
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "default": 0,
+        "info": "Margin top and bottom section"
+    },
+    {
+        "type": "range",
+        "label": "Padding bottom",
+        "id": "pading_botm",
+        "unit": "px",
+        "min": 0,
+        "max": 100,
+        "default": 60,
+        "info": "For Default Template"
+    },
+    
+   ],
+    "presets": [
+    {
+      "name": "Trustpilot Reviews"
+    }
+  ]
+}
+{% endschema %}

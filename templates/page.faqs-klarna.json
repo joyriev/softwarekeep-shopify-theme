@@ -1,0 +1,270 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "height": 300,
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": "medium",
+        "contentColor": "rgba(0,0,0,0)",
+        "fillColor": "rgba(0,0,0,0)",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "content": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "586e749a-37d4-47ca-bf23-36105aa5bdc2": {
+      "type": "section__image-text",
+      "blocks": {
+        "template--14772528021559__586e749a-37d4-47ca-bf23-36105aa5bdc2-title-1": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "Shop Now, Pay Later With",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "663ad219-b7e6-4da2-8b4d-e2f158f0f974": {
+          "type": "image",
+          "settings": {
+            "fullWidth": true,
+            "image": "shopify://shop_images/logo-klarna_9952ac15-d3c1-46d4-a11e-9e9cda178a0c.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14772528021559__586e749a-37d4-47ca-bf23-36105aa5bdc2-title-1",
+        "663ad219-b7e6-4da2-8b4d-e2f158f0f974"
+      ],
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 360,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "#f4f4f4",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "imagePosition": "left",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/banner-klarna.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "a2110edd-8f4e-4208-95e1-accf8a423539": {
+      "type": "section__icon-with-text",
+      "blocks": {
+        "56c1de75-52c9-440d-9c37-7fe55933f434": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/icon-shop.svg",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "1. Shop",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "Add products to your bag and select Klarna as your payment method at checkout.",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#191d21",
+            "home_guarantee_block_background_color": "#f4f4f4",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "4baf8ab4-1899-4ac3-a610-e8d552aa941d": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/icon-select.svg",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "2. Select Klarna",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "Answer a few questions at checkout and you’ll know instantly if you’re approved.",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#191d21",
+            "home_guarantee_block_background_color": "#f4f4f4",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "4de9acc1-007e-4b9b-9d99-03dba9098c67": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/icon-checkout_ddefcf27-5f9a-436f-a00a-98f744534064.svg",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "3. Checkout",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "Complete your order. You’ll see the first charge when your order ships.",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#191d21",
+            "home_guarantee_block_background_color": "#f4f4f4",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "de8b33e1-6667-432f-b63d-89d628cc488c": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/icon-pay.svg",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "4. Pay",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "The remaining 3 payments will be automatically processed every 2 weeks.",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#191d21",
+            "home_guarantee_block_background_color": "#f4f4f4",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "56c1de75-52c9-440d-9c37-7fe55933f434",
+        "4baf8ab4-1899-4ac3-a610-e8d552aa941d",
+        "4de9acc1-007e-4b9b-9d99-03dba9098c67",
+        "de8b33e1-6667-432f-b63d-89d628cc488c"
+      ],
+      "settings": {
+        "Slider_enbalemobile": false,
+        "home_guarantee_title": "<h1>How To Shop With Klarna?</h1>",
+        "custom_id": "icon-t",
+        "home_guarantee_title_font_size": 72,
+        "home_guarantee_title_color": "#0067b8",
+        "home_guarantee_subtitle": "SoftwareKeep has partnered with Klarna to let you buy Your product now and pay for your purchase in 4 biweekly interest-free payments.",
+        "home_guarantee_subtitle_font_size": 24,
+        "home_guarantee_subtitle_color": "#042338"
+      }
+    },
+    "d98f4fb1-621c-438b-903e-96a09fa5021a": {
+      "type": "section__faq",
+      "blocks": {
+        "9fb61a09-b196-44b3-b330-39c39a05a20a": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>What is Klarna? </p>",
+            "answer": "<p>Klarna is an alternate payment method that allows you to split your purchase into 4 interest-free payments up to a maximum spend of $2500. The first payment will be taken from your credit or debit card when your order is shipped. The remaining 3 payments will be automatically processed every 2 weeks</p>"
+          }
+        },
+        "be41805d-423a-4d48-bd29-9cde0c980640": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>What are the conditions to qualify to Klarna?</p>",
+            "answer": "<p>1. A US/CA-issued debit or credit card</p><p>2. You’re 18 years or older</p><p>3. An SMS-capable phone number</p><p>4. A US/CA residential address</p>"
+          }
+        },
+        "925be5c4-3d98-46e0-8574-d8d9bb60a51d": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How do I sign up for Klarna?</p>",
+            "answer": "<p>If your cart is eligible for 4 interest-free payments with Klarna, you will be able to select Klarna as a payment method during checkout. After confirming your phone number, you’ll be sent an SMS message to confirm your account. After your order is shipped, you will be charged for the first payment. Klarna will send a notification once the payment has been processed. </p>"
+          }
+        },
+        "b92017c6-0d63-42bf-ab3c-b0cf05c7eabe": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Which payment methods are accepted?</p>",
+            "answer": "<p>Klarna currently accepts most debit and credit cards (i.e., Mastercard, Visa, AMEX). Please note, prepaid cards are not accepted.</p>"
+          }
+        },
+        "a9588f3d-4602-422a-83aa-5b7c5a29819d": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>What if I return/cancel my order?</p>",
+            "answer": "<p>If you return your products, we will automatically reduce the amount you owe us. If you already paid us for a refunded order, we will refund the balance back to your original payment method.</p><p>See our <a href=\"/pages/shipping-returns\" title=\"Shipping & Returns\">return policy</a></p>"
+          }
+        },
+        "1315f2c5-ca16-4a04-8ff9-783c4d1edb2f": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>What happens if my payment is late?</p>",
+            "answer": "<p>No late fee will be charged. If we are unable to collect a payment on the scheduled day, we will try again. See <a href=\"https://www.klarna.com/ca/customer-service/\" target=\"_blank\" title=\"https://www.klarna.com/ca/customer-service/\">terms</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "9fb61a09-b196-44b3-b330-39c39a05a20a",
+        "be41805d-423a-4d48-bd29-9cde0c980640",
+        "925be5c4-3d98-46e0-8574-d8d9bb60a51d",
+        "b92017c6-0d63-42bf-ab3c-b0cf05c7eabe",
+        "a9588f3d-4602-422a-83aa-5b7c5a29819d",
+        "1315f2c5-ca16-4a04-8ff9-783c4d1edb2f"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "Frequently asked questions",
+        "headingColor": "#191d21",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "textContent": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "586e749a-37d4-47ca-bf23-36105aa5bdc2",
+    "a2110edd-8f4e-4208-95e1-accf8a423539",
+    "d98f4fb1-621c-438b-903e-96a09fa5021a"
+  ]
+}

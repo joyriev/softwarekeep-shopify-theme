@@ -1,0 +1,282 @@
+{{ 'home-average-cheaper.css' | asset_url | stylesheet_tag }}
+<style>
+  #h2__{{ section.id }} {
+    font-weight: 600;
+    color: #000;   
+  }
+  #h2__{{ section.id }} span{
+    background: linear-gradient(180deg, #099BF3 -20.07%, #2963B5 27.36%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  #timbg__{{ section.id }}{
+    background: {{section.settings.timer_bg}};
+  }
+  #counttimer .color-text{
+    color: {{section.settings.text_color}};
+  }
+
+  .prod_container .plistitm a {
+    position: relative;
+  }
+
+  .plistitm .pimg img {
+    width: 90px;
+    max-width: unset;
+    height: auto;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .prod_container {
+      margin-top: 40px;
+    }
+  }
+</style>
+<div class="max-width avg-prodlist">
+    <div class="col-12 column center section__heading">
+     <div class="section__heading--heading m-tb">
+         {% if section.settings.hheading != blank %}
+          <h2 id="h2__{{ section.id }}" class="h-reset font__family--title">{{ section.settings.hheading }}</h2>
+        {% endif %}
+         {% if section.settings.subheading != blank %}
+           <p class="sec_subheading">{{ section.settings.subheading }}</p>
+         {% endif %}
+          {% if section.settings.timer %}
+            <div id="counttimer" class="count-timer-wrapers">
+               <div id="timbg__{{ section.id }}" class="counttimes">
+                <span id="time-hours" class="main_times color-text">00</span><span class="time-text color-text">HRS</span>
+               </div>
+                <span class="dot_tim">:</span>
+               <div id="timbg__{{ section.id }}" class="counttimes">
+                <span id="time-minutes" class="main_times color-text">00</span><span class="time-text color-text">MIN</span>
+               </div>
+                <span class="dot_tim">:</span>
+               <div id="timbg__{{ section.id }}" class="counttimes">
+                <span id="time-seconds" class="main_times color-text">00</span><span class="time-text color-text">SEC</span>
+               </div>
+            </div>
+          {% endif %}
+        </div>
+      
+      <div class="prod_container">
+        {% for block in section.blocks %}
+          {% assign product = all_products[block.settings.prodlist] %}
+          {% assign saveprice = product.compare_at_price | minus : product.price %}
+          <div class="list">
+             <div class="plistitm">
+               <a href="{{ product.url }}">
+                 <div class="pimg">
+                   {{ product.featured_image | image_url: width:'105', height:'110' | image_tag }}
+                 </div>
+                  <div class="ptitles">
+                   {% if block.settings.prodname != blank %}
+                     <p id="h4__{{ block.id }}">{{ block.settings.prodname }}</p>
+                     {% else %}
+                     {{ product.title }}
+                    {% endif %}
+                  </div>
+
+                  {% if product.tags contains '50-off' %}
+                    <img class="off-50" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/50_off.png?v=1733749759">
+                  {% endif %}
+            
+                  {% if product.tags contains 'hot-stuff' %}
+                    <img class="hot-stuff" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/hot_stuff.png?v=1733807006">
+                  {% endif %}
+               </a>
+             </div>
+            
+              <div class="pric_prodslist">
+                <ul class="prod_plist">
+                  <li id="bg__color__{{ block.id }}">
+                    <p>MSRP</p>
+                    <p id="reg_price__{{ block.id }}">{{ product.compare_at_price | money_with_currency }}</p>
+                  </li>
+                  <li>
+                    <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_8_5.png?v=1719985547" alt="">
+                    <p id="sell_price__{{ block.id }}" class="sells">{{ product.price | money_with_currency }}</p>
+                  </li>
+                  <li id="bg__color__{{ block.id }}">
+                    <p>You’re Saving</p>
+                    <p id="save_price__{{ block.id }}">{{ saveprice | money_with_currency }}</p>
+                  </li>
+                </ul>
+             </div>
+            {% if block.settings.buynow_enable %}
+              <div class="direct_checkout_btns">
+                 <form method="post" action="/cart/add">
+                   <input type="hidden" name="id" id="varid_hide" value="{{ product.first_available_variant.id }}">
+                   <input type="hidden" name="return_to" value="/checkout">
+                   <input min="1" type="number" id="quantity" name="quantity" value="1" style="display:none;">
+                   <button id="checkout_page" class="direct_checkout-btn button .button--addToCart" type="submit" value="Buy Now" class="btn"> Buy Now</button>
+                </form>
+             </div>
+            {% endif %}
+          </div>
+          <style>
+          .ptitles #h4__{{ block.id }} span{
+            color: {{block.settings.tcolor}};
+          }
+          #reg_price__{{ block.id }}{
+            color: {{block.settings.regprice}};
+          }
+          #sell_price__{{ block.id }}{
+            color: {{block.settings.sellprice}};
+            font-size: 18px;
+            font-weight: 600;
+          }
+          #bg__color__{{ block.id }}{
+            background: {{block.settings.bgscolor}}
+          }
+          #save_price__{{ block.id }}{
+            color: {{block.settings.savprice}};
+            font-size: 18px;
+            font-weight: 600; 
+          }
+          </style>
+      {% endfor %}
+      </div>
+  </div>
+</div>
+
+{% if section.settings.timer %}
+  <script>
+    // Function to start the countdown
+    function startCountdown(durationInSeconds) {
+      const hoursEl = document.getElementById('time-hours');
+      const minutesEl = document.getElementById('time-minutes');
+      const secondsEl = document.getElementById('time-seconds');
+
+      let remainingTime = durationInSeconds;
+
+      const timerInterval = setInterval(() => {
+        const hours = Math.floor(remainingTime / 3600);
+        const minutes = Math.floor((remainingTime % 3600) / 60);
+        const seconds = remainingTime % 60;
+
+        // Update the DOM elements
+        hoursEl.textContent = String(hours).padStart(2, '0');
+        minutesEl.textContent = String(minutes).padStart(2, '0');
+        secondsEl.textContent = String(seconds).padStart(2, '0');
+
+        // Stop the timer when it reaches zero
+        if (remainingTime <= 0) {
+          clearInterval(timerInterval);
+          alert('Countdown Finished!');
+        }
+
+        remainingTime -= 1;
+      }, 1000);
+    }
+
+    // Start the countdown for 12 hours (43200 seconds)
+    startCountdown({{section.settings.timer_hours}} * 60 * 60);
+  </script>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Average 50% Cheaper",
+    "settings": [
+      {
+        "type": "html",
+        "id": "hheading",
+        "label": "Enter Heading",
+        "default": "On Average 50% Cheaper"
+     },
+    {
+       "type": "color",
+        "id": "thcolor",
+        "label": "Heading title color"
+     },
+     {
+        "type": "text",
+        "id": "subheading",
+        "label": "Enter Sub Heading"
+     },
+     {
+        "type": "checkbox",
+        "id": "timer",
+        "label": "Count Down Timer Enable"
+     },
+     {
+        "type": "text",
+        "id": "timer_hours",
+        "label": "Enter Hours",
+       "info": "eg:-12"
+     },
+     {
+      "type": "color",
+      "id": "timer_bg",
+      "label": "Timer Background color Change",
+       "default":"#640808"
+     },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color Change",
+       "default":"#fff"
+     }
+    ],
+    "blocks": [
+      {
+        "type": "product",
+        "name" : "Average Product",
+        "settings": [
+          {
+             "type": "product",
+              "id": "prodlist",
+              "label": "Select Product"
+          },
+          {
+            "type": "html",
+            "id": "prodname",
+            "label": "Product Name",
+            "default": "Microsoft Windows 11 Home"
+          },
+          {
+            "type": "checkbox",
+            "id": "buynow_enable",
+            "label": "Enable Buy Now Button",
+            "default": true
+          },
+          {
+             "type": "color",
+              "id": "tcolor",
+              "label": "Product title color",
+              "default": "#000"
+          },
+          {
+             "type": "color",
+              "id": "regprice",
+              "label": "Regular Price Color",
+              "default": "#7E7E7E"
+          },
+          {
+             "type": "color",
+              "id": "sellprice",
+              "label": "Sell Price Color",
+              "default": "#046AB5"
+          },
+          {
+             "type": "color",
+              "id": "savprice",
+              "label": "Saving Price Color",
+              "default": "#13A706"
+          },
+          {
+             "type": "color",
+              "id": "bgscolor",
+              "label": "Regular & Saving Background Color",
+              "default": "#F5F5F5"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Average 50% Cheaper"
+      }
+    ]
+  }
+{% endschema %}

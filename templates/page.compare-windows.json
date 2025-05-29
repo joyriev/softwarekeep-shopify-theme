@@ -1,0 +1,45 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "height": 90,
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "fontSize": "big",
+        "contentColor": "#191d21",
+        "fillColor": "#f2f5f7",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "content": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "compare_windows_hCi9UC": {
+      "type": "compare-windows",
+      "settings": {}
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "compare_windows_hCi9UC"
+  ]
+}

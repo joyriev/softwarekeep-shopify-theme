@@ -1,0 +1,620 @@
+ul{
+  list-style-type:none;
+}
+.office_apps_page {
+    padding: 0;
+    background: #f5f5f5;
+}
+.head-content .tab-heading {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 41.8px;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+.head-content .subtext {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    letter-spacing: .01em;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.best-content ul li {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: .01em;
+    text-align: left;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-left: 35px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+.best-content ul li .green {
+    color: #1d924e;
+    display: block;
+}
+.best-content ul li:before {
+    content: "1x";
+    position: absolute;
+    left: 0;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    letter-spacing: .01em;
+    text-align: left;
+    color: #036ab5;
+}
+.head-content .subtext{
+  margin: 15px 0 0;
+  border-top: 1px solid #fff;
+  padding-top: 15px;
+}
+.office_apps_page h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: center;
+    color: #062a30;
+}
+.title-productivity p{
+  text-align:center;
+}
+.title-productivity .check-extra-para {
+    width: 100%;
+    margin: 32px auto;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+.office_apps_page .bg-tabs-products .tabs-content {
+    display: flex;
+    gap: 15px;
+}
+.office_apps_page .bg-tabs-products .tab-content-product {
+    height: 100%;
+}
+.office_apps_page .bg-tabs-products .tab-content-product:first-child{
+  margin-top: 80px;
+  border-color: #036ab540;
+}
+.office_apps_page .bg-tabs-products .tabs-content .tab-content-product {
+    margin-bottom: 40px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.office_apps_page .bg-tabs-products .tab-content-product {
+    width: calc(33.33% - 8px);
+    background: #fff;
+    box-shadow: 0 0 12px #0000000a;
+    padding: 47px 0 0;
+    position: relative;
+    z-index: 2;
+}
+.office_apps_page .product-note {
+    text-align: left;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 50px 0;
+}
+.office_apps_page .text-tabs-products .list-high-products {
+    margin: 0 0 55px;
+    padding-left: 0;
+    text-align: left;
+    max-height: 160px;
+}
+.office_apps_page .text-tabs-products .list-high-products li {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #18191f;
+}
+.office_apps_page .text-tabs-products .list-high-products li .img {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    width: 20px;
+}
+.office_apps_page .tab-content-product .text-tabs-products strong {
+    display: block;
+    margin: 0 0 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: .01em;
+    color: #062a30;
+    text-align: left;
+}
+.office_apps_page .product-img-box {
+    max-height: 120px;
+    max-width: 120px;
+}
+.text-name-tabs-products .name-apps-tabs-products h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.tab-content-product .text-name-tabs-products {
+    display: flex;
+    gap: 10px;
+    height: 210px;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.head-content .tab-heading {
+    line-height: 60px;
+}
+.apps_grids .head-content .subtext {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    letter-spacing: .01em;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.bestseller-tab .product-img-box {
+    width: 100%;
+    height: 100%;
+    max-width: unset;
+    max-height: unset;
+}
+.office_apps_page .tab-content-product .text-name-tabs-products .name-apps-tabs-products h4 .abs-title-link {
+    color: #101828;
+    text-decoration: none;
+}
+.office_apps_page .tab-content-product.bestseller-tab:before {
+    content: "";
+    background-image: url('https://softwarekeep.com/cdn/shop/files/11bg.png');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.office_apps_page .bestseller-tab .product-img-box img {
+    max-height: 210px;
+    object-fit: contain;
+}
+.office_apps_page .conditional_icon_one img {
+    margin: 0 !important;
+    max-height: 24px;
+    max-width: 27px;
+}
+.office_apps_page ul.mac_window_icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 0;
+    margin: 20px 0 0;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.office_apps_page .mac, .window {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.office_apps_page ul.mac_window_icon li .icon_wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.office_apps_page .bestseller-tab .prices-info-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 0;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+.office_apps_page .bestseller-tab .prices-info-products .green-bg {
+    background: #f78b1a !important;
+    width: 100%;
+    display: block;
+}
+ .prices-info-products .green-bg p small {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: .01em;
+    text-align: left;
+    color: #fff;
+}
+.bs_price_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 8px;
+}
+.bs_price_wrapper>div {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.purchase {
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    margin: 0 0 20px;
+    padding: 20px;
+}
+.counter {
+    text-align: center;
+}
+.counter-box .grey-box {
+    display: flex;
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+.counter-box .grey-box p {
+    font-family: Ubuntu;
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    margin: 0;
+}
+.list-high-products {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.list-high-products li {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #18191f;
+}
+.list-high-products li .img {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    width: 20px;
+}
+.list-high-products li span {
+    text-align: left;
+}
+.bs_price_wrapper>.left-price {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border-right: 1px solid #000;
+}
+.bs_price_wrapper>div span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+}
+.bs_price_wrapper>.right-price {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+.bs_price_wrapper>.right-price span {
+    color: #e10000;
+}
+.office_apps_page .prices-info-products {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.office_apps_page .abs-action {
+    margin: 30px 0 0;
+}
+.office_apps_page .abs-action button {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #126337 !important;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.office_apps_page .abs-action button :nth-child(2) {
+    font-family: Ubuntu;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 18.38px !important;
+    letter-spacing: .08em !important;
+    text-transform: uppercase;
+    text-align: center;
+}
+.office_apps_page .abs-action button small {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .08em;
+}
+.office_apps_page .bestseller-tab .abs-action button.button--addToCart {
+    background: #f78b1a !important;
+    color: #fff !important;
+}
+.office_apps_page .counter-box .grey-box {
+    display: flex;
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    justify-content: space-around;
+}
+.office_apps_page .counter-box .grey-box p.high-rick:after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background: #000;
+    right: -33px;
+}
+.office_apps_page .bg-tabs-products .tab-content-product:last-child {
+    margin-top: 80px;
+}
+.office_apps_page .tab-content-product .info-tabs-products {
+    padding: 25px 0 40px;
+}
+.office_apps_page .prices-info-products.row-num-1 .price.jsPrice.only-price {
+    width: 100% !important;
+}
+.office_apps_page .prices-info-products {
+    flex-wrap: wrap;
+    row-gap: 0;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.office_apps_page .tab-content-product .info-tabs-products {
+    padding-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+.per-year {
+    font-size: 20px;
+}
+.office_apps_page .tag-discount {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25.5px;
+    text-align: left;
+    text-transform: capitalize;
+    padding: 4px;
+    height: 25px;
+    background: #b30000;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.office_apps_page .info-tabs-products .prices-info-products .price {
+    width: 190px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: left;
+}
+.office_apps_page .head-content .subtext span {
+    color: #fff;
+    font-family: Ubuntu;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 28.6px;
+    letter-spacing: .01em;
+    text-align: center;
+    display: inline-block;
+}
+.office_apps_page .info-tabs-products .prices-info-products .price small {
+    display: block;
+    margin: 5px 0 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    -webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through;
+    color: #575757;
+}
+.office-apps .home-guarantees-container {
+    background: #f5f5f5;
+    margin-top: 8px;
+    margin-bottom : 50px;
+}
+.office-apps .home-guarantees-container .h-g-c-body {
+    padding: 15px 15px 15px;
+}
+.office-apps .home-guarantees-container .h-g-c-body .h-g-c-b-block {
+    padding: 0px;
+}
+.apps_grids .version_name .verison p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.38px;
+    text-align: left;
+}
+.apps_grids .version_name .verison p span {
+    background: #1480c9;
+    padding: 5px 10px;
+    border-radius: 100%;
+    color: #fff;
+    margin-right: 15px;
+}
+.apps_grids ul.tabs_dels{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
+.apps_grids ul.tabs_dels li{
+  width:50%;
+}
+.apps_grids .version_name ul.tabs_dels li a.active {
+    border: 2px solid #1480c9;
+    box-shadow: 0 0 14px #089df633;
+    background: #f5fdff;
+}
+.apps_grids ul.tabs_dels li a {
+    padding: 15px 10px 15px 15px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    display: block;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #000;
+    border-radius: 6px;
+    text-align: left;
+}
+.apps_grids .word_excelwrap {
+    margin-bottom: 20px;
+}
+.apps_grids .deal_pro-wraper .pro-name {
+    width: 50%;
+}
+.apps_grids .deal_pro-wraper button.deal-pname.active {
+    border: 2px solid #1480c9;
+    box-shadow: 0 0 14px #089df633;
+    background: #f5fdff;
+}
+.apps_grids .deal_pro-wraper button.deal-pname {
+    background: #fff;
+    border: 1px solid #c5c3bec7;
+    color: #000;
+    border-radius: 5px;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.apps_grids .deal_pro-wraper .pro-name button {
+    width: 100%;
+    flex-direction: unset;
+    justify-content: flex-start;
+    position: relative;
+}
+.apps_grids .deal_pro-wraper .dl_wrap .wm_pro-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.apps_grids .deal_pro-wraper {
+    padding-top: 24px;
+    padding-bottom: 2px;
+}
+.apps_grids .deal_pro-wraper .pro-name {
+    width: 50%;
+}
+.apps_grids .prices-info-products .green-bg p {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: .01em;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 5px;
+}
+@media screen and (max-width: 767px) {
+  .office_apps_page h1 {
+        font-family: Ubuntu;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 33px;
+        text-align: center;
+  }
+  .check-extra-para {
+    flex-direction: column;
+  }
+  .check-extra-para p {
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .apps_grids .defults--desc, ul li, p {
+      font-size: 14px;
+      line-height: 32px;
+  }
+  .title-productivity .check-extra-para {
+    align-items: center;
+    gap: 5px;
+  }
+  .mySlider .slick-next {
+    width: 50px;
+    height: 50px;
+    right: 8px;
+    background: url('https://softwarekeep.com/cdn/shop/files/arrow-next.png') no-repeat center center #fff;
+    background-size: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
+  }
+  .mySlider .slick-prev {
+    width: 50px;
+    height: 50px;
+    left: 8px;
+    background: url('https://softwarekeep.com/cdn/shop/files/prev-arrow.png') no-repeat center center #fff;
+    background-size: 100%;
+    border-radius: 50%;
+    z-index: 99;
+    box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
+ }
+  .mySlider .slick-prev:before {
+    display:none;
+    color: #000;
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,602 @@
+<style>
+.c-win-p {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 60px auto;
+  margin-top: 0;
+}
+.c-win-p th, .c-win-p td {
+  border: none;
+  padding: 8px;
+  text-align: left;
+  width: 28%;
+  vertical-align: middle;
+}
+.c-win-p th {
+  background-color: transparent;
+  padding: 0; 
+  border-left: 10px solid #fff;
+}
+.c-win-p tr>th:first-child, .c-win-p tr>td:first-child {
+  text-align: right;
+  padding-right: 1vw;
+  width: 14%;
+}
+.c-win-p td {
+  color: #3B3B3B;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 114.286% */
+  letter-spacing: 0.56px;
+  padding-left: 3vw;
+  position: relative;
+  box-sizing: border-box;
+}
+.c-win-p td>img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5vw;
+  height: auto;
+}
+.c-win-p tr>td:first-child {
+  color: #10097D;
+  text-align: right;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 114.286% */
+  letter-spacing: 0.56px;
+}  
+.c-win-p tr>td:nth-child(2) {
+  border-left: 10px solid #fff;
+}
+.c-win-p tr>th:first-child {
+  vertical-align: bottom;
+  color: #3B3B3B;
+  text-align: right;
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 114.286% */
+  letter-spacing: 0.56px;
+  background: #fff !important;
+}
+.c-win-p th img {
+  display: block;
+  width: 100%;
+}
+.c-win-p tr:nth-child(even) {
+  background: #FAFAFA;
+}
+.c-win-p tr:nth-child(odd) {
+  background: #F1F1F1;
+}  
+.c-win-p tr {
+  border-bottom: 5px solid #fff;
+}
+.product-pricing {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.product-item {
+  text-align: center;
+}
+.product-item button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.product-item button:hover {
+  background-color: #0056b3;
+}
+.c-win-p tbody>tr:last-child>td{
+  background-color: #fff;
+}
+  
+.info-tabs-products {
+
+}
+.prices-info-products {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.prices-info-products .price.jsPrice {
+    width: 190px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 26px;
+    color: #1d924e;
+    text-align: left;
+}
+.prices-info-products .price.comp_pric.jsPrice {
+    display: block;
+    margin: 5px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through;
+    color: #7f7f7f;
+}
+.prices-info-products .price.comp_pric.jsPrice small {
+    display: block;
+    margin: 5px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through;
+    color: #575757;
+}
+.prices-info-products .tag-discount {
+    padding: 4px;
+    height: 25px;
+    background: #B30000;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 13px;
+    color: #fff;
+}
+.info-tabs-products .abs-action {
+    margin: 30px 0 0;
+}
+.info-tabs-products .abs-action button {
+    height: 56px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #126337 !important;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    width: 100%;
+}
+.info-tabs-products .button--icon .uil {
+    font-size: 1.1em;
+    margin: 0px !important;
+    margin-right: 4px !important;
+}
+.info-tabs-products .uil-shopping-cart:before {
+    font-family: unicons-line;
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.info-tabs-products span.text-onetime {
+    position: relative;
+    top: 15px;
+    font-size: 14px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+.custom-win-p-section .page-width-lp {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 20px 20px;
+}
+.custom-win-p-section .page-width-lp .title-productivity {
+  
+}
+.custom-win-p-section .page-width-lp .title-productivity h2 {
+    font-family: Ubuntu;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: center;
+    color: #062A30;
+}
+.custom-win-p-section .page-width-lp .title-productivity p {
+    text-align: center;
+}
+.abs-action small {
+    display: none;
+}
+  
+@media only screen and (max-width: 768px) {
+  .c-win-p {
+    margin: 60px auto;
+    margin-top: 0;
+    overflow-x: auto;
+    padding-bottom: 20px;
+  }
+  .c-win-p table {
+    min-width: 600px;
+  }
+  .c-win-p th, .c-win-p td {
+    padding: 5px;
+    text-align: left;
+    width: 28%;
+    vertical-align: middle;
+  }
+  .c-win-p th {
+    border-left: 10px solid #fff;
+    padding: 0;
+  }
+  .c-win-p tr>th:first-child, .c-win-p tr>td:first-child {
+    text-align: right;
+    padding-right: 1vw;
+    width: 14%;
+  }
+  .c-win-p td {
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: 0;
+    padding-left: 30px;
+  }
+  .c-win-p td>img {
+    width: 25px;
+    height: auto;
+  }
+  .c-win-p tr>td:first-child {
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: 0;
+  }  
+  .c-win-p tr>td:nth-child(2) {
+    border-left: 5px solid #fff;
+  }
+  .c-win-p tr>th:first-child {
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: 0px;
+  }
+  .c-win-p th img {
+    display: block;
+    width: 100%;
+  }
+  .c-win-p tr:nth-child(even) {
+    background: #FAFAFA;
+  }
+  .c-win-p tr:nth-child(odd) {
+    background: #F1F1F1;
+  }  
+  .c-win-p tr {
+    border-bottom: 5px solid #fff;
+  }
+  .product-pricing {
+    margin-top: 10px;
+  }
+  .product-item {
+  }
+  .product-item button {
+    padding: 8px 15px;
+  }
+  .product-item button:hover {
+    background-color: #0056b3;
+  }
+  .c-win-p tbody>tr:last-child>td{
+    background-color: #fff;
+  }
+    
+  .info-tabs-products {
+  
+  }
+  .prices-info-products {
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+  }
+  .prices-info-products .price.jsPrice {
+        width: fit-content;
+        font-size: 20px;
+        text-align: left;
+        margin: 0;
+  }
+  .prices-info-products .price.comp_pric.jsPrice {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+  }
+  .prices-info-products .price.comp_pric.jsPrice small {
+      font-size: 14px;
+      line-height: 18px;
+  }
+  .prices-info-products .tag-discount {
+        height: 20px;
+        font-size: 12px;
+        width: fit-content;
+  }
+  .info-tabs-products .abs-action {
+        margin: 20px 0 0;
+  }
+  .info-tabs-products .abs-action button {
+      height: 40px;
+      font-size: 14px;
+      width: max-content !important;
+  }
+  .info-tabs-products .button--icon .uil {
+      font-size: 14px;
+      margin: 0px !important;
+      margin-right: 4px !important;
+  }
+  .info-tabs-products .uil-shopping-cart:before {
+  }
+  .info-tabs-products span.text-onetime {
+        position: relative;
+        top: 10px;
+        font-size: 14px;
+        margin: auto;
+        display: block;
+        text-align: center;
+  }
+  .custom-win-p-section .page-width-lp .title-productivity h2 {
+    font-size: 28px;
+    line-height: 120%;
+    color: #062A30;
+  }
+  .custom-win-p-section .page-width-lp .title-productivity p {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+</style>
+
+<div class="page-width-lp">
+  <div class="title-productivity">
+    <h2>{{ section.settings.title }}</h2>
+    
+    <p>{{ section.settings.description }}</p>
+    
+  </div>
+</div>
+<div class="c-win-p max-width">
+  <table>
+    <thead>
+      <tr>
+        <th>FEATURES</th>
+        <th><img src="{{ section.settings.image_1 | img_url: 'master' }}" alt="Windows 11 Home"></th>
+        <th><img src="{{ section.settings.image_2 | img_url: 'master' }}" alt="Windows 11 Professional"></th>
+        <th><img src="{{ section.settings.image_3 | img_url: 'master' }}" alt="Windows 11 Enterprise"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>User Profile</td>
+        <td>Best for personal use and home users</td>
+        <td>Ideal for professionals and small businesses</td>
+        <td>Tailored for large organizations & IT admins</td>
+      </tr>
+      <tr>
+        <td>Security</td>
+        <td>Standard security features (Windows Defender)</td>
+        <td>Adds BitLocker encryption for data protection</td>
+        <td>Advanced security: Device Guard, Credential Guard</td>
+      </tr>
+      <tr>
+        <td>Remote Desktop</td>
+        <td><img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/no_1.png?v=1732718925"> Not available</td>
+        <td><img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/yes.png?v=1732718925"> Host remote sessions</td>
+        <td><img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/yes.png?v=1732718925">Enhanced remote access capabilities</td>
+      </tr>
+      <tr>
+        <td>Virtualization</td>
+        <td><img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/no_1.png?v=1732718925"> No Hyper-V support</td>
+        <td><img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/yes.png?v=1732718925"> Includes Hyper-V and Windows Sandbox</td>
+        <td><img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/yes.png?v=1732718925"> Advanced virtualization and deployment tools</td>
+      </tr>
+      <tr>
+        <td>Collaboration Tools</td>
+        <td>Basic Microsoft Teams integration</td>
+        <td>Advanced Teams features for work collaboration</td>
+        <td>Enterprise-grade tools (e.g., Autopilot)</td>
+      </tr>
+      <tr>
+        <td>Networking</td>
+        <td>Basic network management</td>
+        <td>Domain Join for business networks</td>
+        <td>Azure Active Directory and group policy management</td>
+      </tr>
+      <tr>
+        <td>Administrative Controls</td>
+        <td>Minimal parental controls</td>
+        <td>Group Policy and device management</td>
+        <td>Advanced tools like Endpoint Manager and Intune</td>
+      </tr>
+      <tr>
+        <td>Pricing</td>
+        <td>Starting at $94.99 (one-time purchase)</td>
+        <td>$108.99 (one-time purchase)</td>
+        <td>$289 for Volume licensing contact for pricing</td>
+      </tr>
+      <tr>
+        <td>System Requirements</td>
+        <td>Standard specs (4GB RAM, 64GB storage)</td>
+        <td>Standard specs</td>
+        <td>May require higher IT configurations</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          {% assign c_product_1 = section.settings.product_1 %}
+          <div class="info-tabs-products">
+            <div class="prices-info-products">
+              <span class="price jsPrice">
+                {{ c_product_1.price | money }}
+              </span>
+              <span class="price comp_pric jsPrice">
+                <small>{{ c_product_1.compare_at_price | money }}</small>
+              </span>
+              <span class="tag-discount">
+                {% if c_product_1.compare_at_price > c_product_1.price %}
+                  {% assign price = c_product_1.price %}
+                  {% assign compare_at_price = c_product_1.compare_at_price %}
+                  {% assign percentage_saved = price | times: 100 | divided_by: compare_at_price %}
+                  {% assign discount_percentage = 100 | minus: percentage_saved %}
+                  Save: {{ discount_percentage | round }}%
+                {% endif %}
+              </span>
+            </div>
+
+            <div class="abs-action">
+              {% assign var = c_product_1.first_available_variant %}
+              {% if c_product_1.available %}
+                {% form 'product', c_product_1 %}
+                  <input name="id" type="hidden" value="{{ var.id }}">
+                  {% render 'custom-add-to-cart-button', variant: var.id, quantity: 1, price: c_product_1.price %}
+                {% endform %}
+              {% else %}
+                {% render 'sold-out-button', disabled: 'disabled' %}
+              {% endif %}
+            </div>
+            <span class="text-onetime">One-time purchase</span>
+          </div>
+        </td>
+        <td>
+          {% assign c_product_2 = section.settings.product_2 %}
+          <div class="info-tabs-products">
+            <div class="prices-info-products">
+              <span class="price jsPrice">
+                {{ c_product_2.price | money }}
+              </span>
+              <span class="price comp_pric jsPrice">
+                <small>{{ c_product_2.compare_at_price | money }}</small>
+              </span>
+              <span class="tag-discount">
+                {% if c_product_2.compare_at_price > c_product_2.price %}
+                  {% assign price = c_product_2.price %}
+                  {% assign compare_at_price = c_product_2.compare_at_price %}
+                  {% assign percentage_saved = price | times: 100 | divided_by: compare_at_price %}
+                  {% assign discount_percentage = 100 | minus: percentage_saved %}
+                  Save: {{ discount_percentage | round }}%
+                {% endif %}
+              </span>
+            </div>
+
+            <div class="abs-action">
+              {% assign var = c_product_2.first_available_variant %}
+              {% if c_product_2.available %}
+                {% form 'product', c_product_2 %}
+                  <input name="id" type="hidden" value="{{ var.id }}">
+                  {% render 'custom-add-to-cart-button', variant: var.id, quantity: 1, price: c_product_2.price %}
+                {% endform %}
+              {% else %}
+                {% render 'sold-out-button', disabled: 'disabled' %}
+              {% endif %}
+            </div>
+            <span class="text-onetime">One-time purchase</span>
+          </div>
+        </td>
+        <td>
+          {% assign c_product_3 = section.settings.product_3 %}
+          <div class="info-tabs-products">
+            <div class="prices-info-products">
+              <span class="price jsPrice">
+                {{ c_product_3.price | money }}
+              </span>
+              <span class="price comp_pric jsPrice">
+                <small>{{ c_product_3.compare_at_price | money }}</small>
+              </span>
+              <span class="tag-discount">
+                {% if c_product_3.compare_at_price > c_product_3.price %}
+                  {% assign price = c_product_3.price %}
+                  {% assign compare_at_price = c_product_3.compare_at_price %}
+                  {% assign percentage_saved = price | times: 100 | divided_by: compare_at_price %}
+                  {% assign discount_percentage = 100 | minus: percentage_saved %}
+                  Save: {{ discount_percentage | round }}%
+                {% endif %}
+              </span>
+            </div>
+
+            <div class="abs-action">
+              {% assign var = c_product_3.first_available_variant %}
+              {% if c_product_3.available %}
+                {% form 'product', c_product_3 %}
+                  <input name="id" type="hidden" value="{{ var.id }}">
+                  {% render 'custom-add-to-cart-button', variant: var.id, quantity: 1, price: c_product_3.price %}
+                {% endform %}
+              {% else %}
+                {% render 'sold-out-button', disabled: 'disabled' %}
+              {% endif %}
+            </div>
+            <span class="text-onetime">One-time purchase</span>
+          </div>          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+{% schema %}
+{
+  "name": "Custom Win P Comparison",
+  "class": "custom-win-p-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "product",
+      "id": "product_1",
+      "label": "Product 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Product image 1"
+    },
+    {
+      "type": "product",
+      "id": "product_2",
+      "label": "Product 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "product",
+      "id": "product_3",
+      "label": "Product 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Product image 3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Win P Comparison"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,99 @@
+<div id="sb__{{ section.id }}">
+  <div class="max-width">
+      <div class="headings">
+       <h2 class="diff-heads">{{ section.settings.sheading }}</h2>
+      </div>
+    <div class="summary-benefits">
+         {% for block in section.blocks %}
+          <div class="acc_wrap">
+             <h3 class="acc-head">
+               {% if block.settings.icon != blank %}
+                {{ block.settings.icon | image_url: width:'64', height:'64' | image_tag }} 
+               {% endif %}
+                {% if  block.settings.ques != blank %}
+                 {{ block.settings.ques }}
+               {% endif %}
+              </h3>
+          
+            <div class="acc-text">
+             {{ block.settings.text }}
+            </div>
+         </div>
+         {% endfor %}
+    </div>
+  </div>
+ </div>
+ 
+<script>
+$(document).ready(function() {
+    $('.acc-text').hide(); // Hide all .acc-text elements
+    $('.acc-text:first').show(); // Show the first .acc-text element
+    $('.acc-head:first').addClass('active'); // Add 'active' class to the first .acc-head element
+
+    $('.acc-head').click(function() {
+        var content = $(this).next('.acc-text'); // Get the next .acc-text element
+
+        if (content.is(':visible')) {
+            content.slideUp(); // Slide up the visible content
+            $(this).removeClass('active'); // Remove the 'active' class from the clicked .acc-head
+        } else {
+            $('.acc-text').slideUp(); // Slide up all .acc-text elements
+            $('.acc-head').removeClass('active'); // Remove the 'active' class from all .acc-head elements
+            content.slideDown(); // Slide down the clicked content
+            $(this).addClass('active'); // Add the 'active' class to the clicked .acc-head
+        }
+    });
+});
+
+</script>
+ <style>
+  #sb__{{ section.id }}{
+    background: {{section.settings.secbg}};
+    margin: 10px 0;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Summary Benefits",
+    "settings": [
+      {
+        "type": "color",
+         "id": "secbg",
+         "label": "Section background Color",
+         "default": "#fff"
+       },
+      {
+        "type": "text",
+         "id": "sheading",
+         "label": "Section Heading",
+         "default": "Summary of Benefits"
+       },
+    ],
+    "blocks": [
+      {
+        "name": "benefit",
+        "type": "text",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon Image"
+          },
+          {
+            "type": "text",
+            "id": "ques",
+            "label": "Title",
+            "default": "Recommended for individuals"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text Content",
+            "default": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        ]
+      }
+    ],
+  }
+{% endschema %}

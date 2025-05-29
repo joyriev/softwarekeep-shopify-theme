@@ -1,0 +1,647 @@
+{{ 'office-app-page.css' | asset_url | stylesheet_tag }}
+
+<div class="apps_grids">
+  <div class="max-width page-offcice_apps-products">
+    <div class="page-width-lp">
+      <div class="title-productivity">
+        {% if section.settings.title != blank %}
+          
+        <h1>{{ section.settings.title }}</h1>
+          {% else %}
+         <h1>{{ page.title }}</h1>
+        {% endif %}
+        
+        {% if section.settings.subtitle != blank %}
+          <p>{{ section.settings.subtitle }}</p>
+        {% endif %}
+        
+        <div class="check-extra-para">
+          <p>{% render 'check-green' %}100% Genuine Products </p>
+          <p>{% render 'check-green' %}Easy Installation</p> 
+          <p> {% render 'check-green' %}Lifetime support </p>              
+        </div>
+      </div>
+    </div>
+    <!-- --- product block section --- -->
+    <div class="bg-tabs-products">
+      <div class="page-width-lp">
+        <div class="tabs-content mySlider">
+          
+          {% for block in section.blocks %}
+     
+             {% assign product = all_products[block.settings.product_blocks] %}
+              {% assign textcolor = block.settings.btntext_colors %} 
+            
+            {% if product.tags contains 'Border_Bestseller' %}
+               <div class="tab-content-product abs-active bestseller-tab cc-{{ textcolor }}">
+                 <div class="head-content"> 
+                  <h3 class="tab-heading">Bestseller</h3>
+                     <p class="subtext">Microsoft Office 2021 <span>Home & Student</span></p>
+                 </div>
+                 
+                   <div class="image-wrap">
+                      <a href="{{ product.url }}">
+                        <div class="product-img-box">
+                          {% if block.settings.product_image != blank %}
+                            {{ block.settings.product_image | image_url: width: '643', height: '434' | image_tag }}
+                            {% else %}
+                            {{ product.featured_image | image_url: width: '643', height: '434' | image_tag }}
+                          {% endif %}
+                        </div>
+                      </a>
+                   </div>
+                 
+                 {% if block.settings.html_best != blank %}
+                   <div class="best-content">
+                     {{ block.settings.html_best }}
+                   </div>
+                 {% endif %}
+                 
+                  {% if product.metafields.custom.link_of_pc != blank %}                                  
+                    <div class="sector">
+                      <div class="product-toggle-os-selector">
+                        <div class="toggle-os--selected-info">
+                          <div class="icon_selected">
+                            <p><strong>Select Operating System:</strong></p>
+                          </div>
+  
+                          <div class="conditional_icon_img">
+                            {% if product.title contains 'PC' or product.handle contains 'pc' %}
+                              <span class="conditional_icon_one">
+                                <h4>Window PC</h4>
+                                <img
+                                  class="windows_icon"
+                                  src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/windows.png?v=1718694268"
+                                  width="60px"
+                                  height="60px"
+                              ></span>
+                            {% else %}
+                              <span class="conditional_icon">
+                                <h4>Mac</h4>
+                                <img
+                                  width="60px"
+                                  height="60px"
+                                  class="apple_icon"
+                                  src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/box_mac.png?v=1706086795"
+                              ></span>
+                            {% endif %}
+                          </div>
+                        </div>
+  
+                        <ul class="mac_window_icon">
+                          {% assign product_rec_1 = all_products[product.metafields.custom.link_of_pc] %}
+  
+                          <li class="window {% if product_rec_1.url == product.url %}active{% endif %}" data-varid="{{ product_rec_1.selected_or_first_available_variant.id }}">
+                            <div class="icon_wrap"> 
+                              <div class="img-box-system">
+                                <img
+                                  alt="Windows"
+                                  loading="lazy"
+                                  width="21"
+                                  height="21"
+                                  decoding="async"
+                                  data-nimg="1"
+                                  src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-windows-system.png?v=1703165738"
+                                  style="color: transparent;"
+                                >
+                              </div>
+                              <p>Windows (PC)</p>
+                            </div>
+                          </li>
+  
+                          {% assign product_rec_2 = all_products[product.metafields.custom.link_of_mac] %}
+  
+                          {% if product.title != 'Microsoft Office 2021 Professional for PC' %}
+                            <li class="mac {% if product_rec_2.url == product.url %}active{% endif %}" data-varid="{{ product_rec_2.selected_or_first_available_variant.id }}">
+                              <div class="icon_wrap"> 
+                                <div class="img-box-system">
+                                  <img
+                                    alt="Mac"
+                                    loading="lazy"
+                                    width="23"
+                                    height="23"
+                                    decoding="async"
+                                    data-nimg="1"
+                                    src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-apple-system.png?v=1703165737"
+                                    style="color: transparent;"
+                                  >
+                                </div>
+                                <p>Mac</p>
+                              </div>
+                            </li>
+                          {% endif %}
+                        </ul>
+                      </div>
+                    </div>
+                  {% endif %}
+                 
+                <div class="prices-info-products">
+                  <div class="green-bg">
+                     <p>Total Value: <small>{{ product.compare_at_price | money_with_currency | strip_html }}</small></p>
+                  </div>
+                  <div class="bs_price_wrapper">
+                    <div class="left-price">
+                      Your Price
+                    <span>{{- product.price | money | strip_html}}</span>
+                    </div>
+                    <div class="right-price">
+                      {%- if product.compare_at_price > product.price -%}
+                          You Save: 
+                          <span>{{ product.compare_at_price | minus: product.price | money }}</span>
+                      {%- endif -%}
+                    </div>
+                  </div>                  
+                  </div>
+  
+                  <div class="abs-action">
+                    {% assign var = product.first_available_variant %}
+                    {% if product.available %}
+                      {% form 'product', product %}
+                        <input name="id" type="hidden" value="" id="vairant-change" data-color="{{ textcolor }}">
+                         {% render 'custom-add-to-cart-button', quantity: 1, price: product.price,  productid: product.id, textcolor: block.settings.btntext_colors,bgcolor: block.settings.btn_colors,fontsize: block.settings.fontsize %}
+                      {% endform %}
+                    {% else %}
+                      {% render 'sold-out-button', disabled: 'disabled' %}
+                    {% endif %}
+                  </div>
+                 <p class="purchase">Lifetime Purchase</p>
+                 <div class="counter-box">
+                   <p class="counter">DEAL ENDING IN: <span id="timer"></span></p>
+                   <div class="grey-box">
+                     <p class="high-rick">Sell-Out Risk: <span>High</span></p>
+                     <p class="freeship"><strong>FREE</strong> Shipping</p>
+                   </div>
+                 </div>
+                  <h5>More Details</h5>
+                  {% if block.settings.html_content != blank %}
+                    {{ block.settings.html_content }}
+                  {% endif %}
+                 
+               </div>
+              
+            {% else %}  
+         
+            <div class="tab-content-product {% if forloop.index == 1 %}tab-content-product-first {% else %} tab-content-product_third{% endif %} abs-active">
+              <div class="text-tabs-products">
+                <div class="text-name-tabs-products">
+                    <div class="product-img-box">
+                      <a href="{{ product.url }}" data-title="{{ product.title }}">
+                        {% if block.settings.product_image != blank %}
+                          {{ block.settings.product_image | image_url: width: '150', height: '150' | image_tag : class:'new-imgs_change' }}
+                          {% else %}
+                          <img class="new-imgs_change" src="{{ product.featured_image | img_url:'643x434' }}" alt="{{ product.title }}" width="643" height="434">
+                         
+                        {% endif %}
+                      </a>
+                    </div>
+              
+                  <div class="name-apps-tabs-products">
+                    <h4 class="heading-{{ forloop.index }}"> 
+                      <a class="abs-title-link" href="{{ product.url }}">{{ block.settings.titles }}</a>
+                    </h4>   
+
+                    <!---- APPLIST ICONS ------->
+                     <div class="list-includes-products">
+                        <ul class="office-apps">
+                          {% for data in product.metafields.custom.select_list_icon.value %}
+                            <li>{{ data.select_icon_image | image_url: width:'27' , height:'27' | image_tag }}</li>
+                           {% endfor %}
+                        </ul>
+                     </div>
+                   <!---- END APPLIST ICONS ------->
+                  </div>
+                </div>
+                
+              <div class="tab_content_wrapper"> 
+                {% if block.settings.content != blank %}
+                  {{ block.settings.content }}
+                {% endif %}
+                {% if block.settings.titles != blank %}
+                  <strong>{{ block.settings.titles }}</strong>
+                {% endif %}
+                {% if block.settings.html_content != blank %}
+                  {{ block.settings.html_content }}
+                {% endif %}
+                </div>    
+              </div>
+              
+              {% if forloop.index == 1 %}
+                  <!-- <div class="product-note">
+                    <p> Note: This product works on PC, Mac, iPhone, iPad, and Android phones and tablets, but you will renew the license after every year.</p>
+                 </div> -->
+                
+                 <!---- word excel -------->
+                  <div class="word_excelwrap">
+                      <div class="version_name">
+                          <div class="verison">
+                            <p><span>1</span> Select Your Version:</p>
+                          </div>
+                  
+                             <div class="mdeal_scroll">
+                               <ul id="dealtablist" class="tabs_dels">
+                                  {% if block.settings.wordtabname != blank %}
+                                    <li class="ntab" data-id="tab-product_{{ block.id }}">
+                                      <a id="tname_product_{{ block.id }}"  href="#tab-product_word" data-osname="{{ block.settings.wordtabname }}"  class="main-tab active">{{ block.settings.wordtabname }}</a>
+                                    </li>
+                                  {% endif %}
+                                  
+                                   {% if block.settings.exceltabname != blank %}
+                                      <li class="ntab" data-id="tab-product_{{ block.id }}">
+                                        <a id="tname_product_{{ block.id }}"  href="#tab-product_excel"  data-osname="{{ block.settings.exceltabname }}" class="main-tab ">{{ block.settings.exceltabname }}</a>
+                                      </li>
+                                   {% endif %}
+                                </ul>
+                             </div>
+    
+                             <div class="verison">
+                              <p><span>2</span> Choose Your Operating System</p>
+                            </div>
+
+                   
+                            <div class="deal_pro-wraper">
+                               <!-- Word product assign -->
+                              {% assign wordwindow = all_products[block.settings.word_pro_win] %}
+                                <div id="tab-product_word" class="dl_wrap">
+     
+                                    <div class="wm_pro-wrap">
+                                      {% if block.settings.word_pro_win != blank %}
+                                        <div class="pro-name windows">
+                                            <button id="get_img" class="deal-pname active" type="button" data-compare="{{ wordwindow.compare_at_price | money_with_currency }}" data-imgs="{{ wordwindow.featured_image | img_url:'master' }}"  data-price="{{ wordwindow.price | money_with_currency }}"  data-id="{{ wordwindow.first_available_variant.id }}" data-name="{{ wordwindow.title }}" >
+                                                <img alt="Windows" loading="lazy" width="18" height="20" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_69.png?v=1720674274" style="color: transparent;">
+                                                <span class="dl_til">Windows</span>
+                                            </button>
+                                        </div>
+                                      {% endif %}
+                                      
+                                        {% assign wordmac = all_products[block.settings.word_pro_mac] %}
+                                         {% if block.settings.word_pro_mac != blank %}
+                                           <div class="pro-name macs">
+                                              <button id="get_img" class="deal-pname" type="button" data-compare="{{ wordmac.compare_at_price | money_with_currency }}" data-imgs="{{ wordmac.featured_image | img_url:'master' }}" data-price="{{ wordmac.price | money_with_currency }}" data-id="{{ wordmac.first_available_variant.id }}" data-name="{{ wordmac.title }}">
+                                                  <img alt="Mac" loading="lazy" width="19" height="21" decoding="async" data-nimg="1" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_69_1.png?v=1720674274" style="color: transparent;">
+                                                  <span class="dl_til">Mac OS</span>
+                                              </button>
+                                           </div>
+                                         {% endif %}
+                                    </div>
+                                </div>
+                            <!-- End Word product assign -->
+
+                          <!-- Excel prdocuts assigned -->
+                            <div id="tab-product_excel" class="dl_wrap" style="display:none;">
+                                <div class="wm_pro-wrap">
+                                  {% assign excelwindow = all_products[block.settings.excel_pro_win] %}
+                                    <div class="pro-name windows">
+                                        <button id="get_img" class="deal-pname " type="button" data-compare="{{ excelwindow.compare_at_price | money_with_currency }}" data-imgs="{{ excelwindow.featured_image | img_url:'master' }}"  data-price="{{ excelwindow.price | money_with_currency }}" data-id="{{ excelwindow.first_available_variant.id }}" data-name="{{ excelwindow.title }}" >
+                                            <img alt="Windows" loading="lazy" width="18" height="20" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_69.png?v=1720674274" style="color: transparent;">
+                                            <span class="dl_til">Windows</span>
+                                        </button>
+                                    </div>
+                                  {% assign excelmac = all_products[block.settings.excel_pro_mac] %}
+                                     <div class="pro-name macs">
+                                        <button id="get_img" class="deal-pname" type="button" data-compare="{{ excelmac.compare_at_price | money_with_currency }}" data-imgs="{{ excelmac.featured_image | img_url:'master' }}" data-price="{{ excelmac.price | money_with_currency }}" data-id="{{ excelmac.first_available_variant.id }}" data-name="{{ excelmac.title }}" >
+                                            <img alt="Mac" loading="lazy" width="19" height="21" decoding="async" data-nimg="1" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_69_1.png?v=1720674274" style="color: transparent;">
+                                            <span class="dl_til">Mac OS</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- END Excel prdocuts assigned -->
+                       </div>
+                         </div>
+                     </div>
+              {% endif %}
+              
+              <div class="info-tabs-products">
+                <div class="prices-info-products row-num-{{ forloop.index }}">
+                   <span class="price jsPrice only-price">
+                    {{ product.price | money_with_currency }}
+                  </span> 
+                  
+                  <span class="price comp_pric jsPrice">
+                    <small>{{ product.compare_at_price | money_with_currency }}</small>
+                  </span> 
+                  
+                  {% if product.compare_at_price_min > 0  %}
+                    <span class="tag-discount">
+                      Save: {{
+                            product.compare_at_price_max 
+                            | minus: product.price
+                            | times: 100
+                            | divided_by: product.compare_at_price_max
+                          -}} %
+                    </span>
+                  {% endif %}
+               </div>
+
+              {% comment %}
+                {% if product.metafields.custom.link_of_pc != blank %}                                  
+                  <div class="sector">
+                    <div class="product-toggle-os-selector">
+                      <div class="toggle-os--selected-info">
+                        <div class="icon_selected">
+                          <p><strong>Select Operating System:</strong></p>
+                        </div>
+
+                        <div class="conditional_icon_img">
+                          {% if product.title contains 'PC' or product.handle contains 'pc' %}
+                            <span class="conditional_icon_one">
+                              <h4>Window PC</h4>
+                              <img class="windows_icon" width="60px" height="60px"
+                                src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/windows.png?v=1718694268">
+                            </span>
+                          {% else %}
+                            <span class="conditional_icon">
+                              <h4>Mac</h4>
+                              <img width="60px" height="60px" class="apple_icon"
+                                src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/box_mac.png?v=1706086795">
+                            </span>
+                          {% endif %}
+                        </div>
+                      </div>
+
+                      <ul class="mac_window_icon">
+                        {% assign product_rec_1 = all_products[product.metafields.custom.link_of_pc] %}
+                        <li class="window {% if product_rec_1 == product.url %}active{% endif %}" data-varid="{{ product_rec_1.selected_or_first_available_variant.id }}">
+                          <div class="icon_wrap"> 
+                            <div class="img-box-system">
+                              <img
+                                alt="Windows"
+                                loading="lazy"
+                                width="21"
+                                height="21"
+                                decoding="async"
+                                data-nimg="1"
+                                src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-windows-system.png?v=1703165738"
+                                style="color: transparent;"
+                              >
+                            </div>
+                            <p>Windows (PC)</p>
+                          </div>
+                        </li>
+
+                        {% assign product_rec_2 = all_products[product.metafields.custom.link_of_mac] %}
+                        {% if product.title != 'Microsoft Office 2021 Professional for PC' %}
+                          <li class="mac {% if product_rec_2 == product.url %}active{% endif %}" data-varid="{{ product_rec_2.selected_or_first_available_variant.id }}">
+                            <div class="icon_wrap"> 
+                              <div class="img-box-system">
+                                <img alt="Mac" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-apple-system.png?v=1703165737" style="color: transparent;">
+                              </div>
+                              <p>Mac</p>
+                            </div>
+                          </li>
+                        {% endif %}
+                      </ul>
+                    </div>
+                  </div>
+                {% endif %}
+           {% endcomment %}
+   
+                <div class="abs-action  news_btns-add">
+                  {% assign var = product.first_available_variant %}
+                  {% assign varid = wordwindow.first_available_variant %}
+                  {% if product.available %}
+                    {% form 'product', product %}
+                      {% if forloop.index == 1 %}
+                        <input name="id" type="hidden" value="{{ varid.id }}" id="vairant-change" data-color="{{ block.settings.btntext_colors }}">
+                       {% render 'custom-add-to-cart-button', quantity: 1, price: wordwindow.price, loop: forloop.index  productid: wordwindow.id, textcolor:block.settings.btntext_colors,bgcolor: block.settings.btn_colors,fontsize: block.settings.fontsize %}
+                      {% else %}
+                      <input name="id" type="hidden" value="{{ var.id }}" id="vairant-change" data-color="{{ block.settings.btntext_colors }}">
+                      {% render 'custom-add-to-cart-button', quantity: 1, price: product.price,  productid: product.id, textcolor:block.settings.btntext_colors,bgcolor: block.settings.btn_colors,fontsize: block.settings.fontsize %}
+                        {% endif %}
+                      {% endform %}
+                  {% else %}
+                    {% render 'sold-out-button', disabled: 'disabled' %}
+                  {% endif %}
+                </div>
+      
+                <p class="text-onetime" style="text-align:center;">One-time purchase</p>
+              </div>
+            </div>
+            {% endif %}  
+          {% endfor %}
+        </div>
+      </div>
+      <!-- Product section end -->
+    </div>
+  </div>
+</div>
+
+<script>
+ $('.tab-content-product').each(function() {
+      var defaultID = $(this).find('.sector .window.active').data('varid');
+      console.log('Default ID for this sector:', defaultID);
+    $(this).find('#vairant-change').attr('value', defaultID);
+  });
+  $('.mac_window_icon li').on('click', function() {
+      var dataVarId = $(this).data('varid');
+     console.log(dataVarId);
+      $('.mac_window_icon li').removeClass('active');
+        $(this).addClass('active');
+      $(this).parent().parent().parent().parent().find('#vairant-change').attr('value', dataVarId);
+  });
+  $(".product_tile_color_holder ul li input").change(function(){
+    let vTitle = $(this).attr("data-title")
+    let vImgs = $(this).attr("data-img")
+    $(this).closest(".tab-content-product").find(".vtile").text(vTitle);
+    $(this).closest(".tab-content-product").find(".varimgs").attr('src', vImgs);
+    $(this).parents(".abs-selected-os").find('.vtile').text(vTitle);
+    console.log(vTitle);
+    $(this).closest(".tab-content-product_third").find(".shopify-product-form .button--addToCart").attr("onclick","BoosterTheme.cart.addToCartJSON(event, {items: [{id: "+$(this).attr("data-varid")+", quantity: 1}]});")
+  })
+
+   //Tab hide and show
+      $('#dealtablist a').click(function(e){
+        e.preventDefault();
+        $(this).closest('.word_excelwrap').find('.tabs_dels li a').removeClass('active');
+        $(this).closest('.word_excelwrap').find('.dl_wrap').hide();
+        $(this).addClass('active');
+        var id = $(this).attr("href");
+        $(""+id).show();
+        return false;
+      });
+
+  //first product tabsvariants products add to cart function
+     $(".deal_pro-wraper .deal-pname").click(function(){
+       let varId = $(this).attr("data-id");
+      // alert(varId);
+       $(this).closest('.deal_pro-wraper').find('.deal-pname').removeClass('active');
+       $(this).addClass('active');
+       $('#varid_hide').val(varId)
+       //price change
+       var price = $(this).attr('data-price');
+        $(this).closest('.tab-content-product-first').find('.only-price').text(price)
+       //comapre price change
+        var comparePrice = $(this).attr('data-compare');
+        $(this).closest('.tab-content-product-first').find('.comp_pric small').text(price)
+       //Images changes
+        var proimgs = $(this).attr('data-imgs');
+        $(this).closest('.tab-content-product-first').find('.new-imgs_change').attr('src', proimgs)
+       $(this).closest(".tab-content-product-first").find(".first_btns").attr("onclick","BoosterTheme.cart.addToCartJSON(event, {items: [{id: "+$(this).attr("data-id")+", quantity: 1}]});")
+
+    });
+  
+</script>
+
+<script type="text/javascript">
+mobileOnlySlider(".mySlider", false, true, 767);
+
+function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
+  var slider = $($slidername);
+  var settings = {
+    mobileFirst: true,
+    dots: $dots,
+    accessibility: false,
+    autoplay: false,
+    arrows: $arrows,
+    adaptiveHeight: true,
+    centerMode: true,
+    centerPadding: '20px',
+    responsive: [
+      {
+        breakpoint: $breakpoint,
+        settings: "unslick"
+      }
+    ]
+  };
+
+  slider.slick(settings);
+
+  $(window).on("resize", function () {
+    if ($(window).width() > $breakpoint) {
+      return;
+    }
+    if (!slider.hasClass("slick-initialized")) {
+      return slider.slick(settings);
+    }
+  });
+} // Mobile Only Slider
+</script>
+
+{% schema %}
+{
+  "name": "Office Apps",
+  "class": "office_apps_page",
+  "settings": [
+      {
+      "type": "text",
+      "id": "title",
+      "label": "Heading Text"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub Heading"
+    }
+  ],
+  "max_blocks": 4,
+    "blocks": [
+       {
+         "name": "product",
+         "type": "product",
+         "settings": [
+           {
+             "type": "product",
+             "id": "product_blocks",
+             "label": "Select Product"
+           },
+            {
+                "type": "richtext",
+                "id": "content",
+                "label": "Content Paragrapgh",
+                "default": "<h6>This is for your text</h6>"
+            },
+            {
+              "type": "text",
+              "id": "titles",
+              "label": "Heading Text"
+            },
+            {
+              "type": "html",
+              "id": "html_content",
+              "label": "Content"
+            },
+            {
+              "type": "image_picker",
+              "id": "product_image",
+              "label": "Product Image"
+            },
+            {
+              "type": "html",
+              "id": "html_best",
+              "label": "Bestseller Content"
+            },
+           {
+             "type": "header",
+             "content": "Tab excel content product"
+           },
+           {
+              "type": "text",
+              "id": "exceltabname",
+              "label": "Enter Excel Tab Name",
+              "default": "Excel"
+           },
+           {
+             "type": "product",
+             "id": "excel_pro_win",
+             "label": "Excel Window Product"
+           },
+           {
+             "type": "product",
+             "id": "excel_pro_mac",
+             "label": "Excel Mac Product"
+           },
+           {
+             "type": "header",
+             "content": "Tab Word content product"
+           },
+           {
+             "type": "text",
+             "id": "wordtabname",
+             "label": "Enter Word Tab Name",
+             "default": "Word"
+           },
+           {
+             "type": "product",
+             "id": "word_pro_win",
+             "label": "Word Window Product"
+           },
+           {
+             "type": "product",
+             "id": "word_pro_mac",
+             "label": "Word Mac Product"
+           },
+           {
+             "type": "header",
+             "content": "button font and color change"
+           },
+           {
+             "type": "color_background",
+             "id": "btn_colors",
+             "label": "Button Background Color"
+           },
+          {
+             "type": "color_background",
+             "id": "btntext_colors",
+             "label": "Button Text Color"
+           },
+            {
+              "type": "range",
+              "label": "Button Font-Size",
+              "id": "fontsize",
+              "min": 16,
+              "max": 50,
+              "step": 1,
+              "unit": "px",
+              "default": 16
+          }
+         ]
+       }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

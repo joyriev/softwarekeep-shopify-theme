@@ -1,0 +1,151 @@
+ {{ 'rocket-make-different.css' | asset_url | stylesheet_tag: preload: true }}
+ 
+<div id="usmake-diff__{{ section.id }}">
+  <div class="max-width">
+    <div class="headings">
+      <h2 class="diff-heads">{{ section.settings.heading }}</h2>
+    </div>
+      <div class="difflist-conatiner">
+
+          <ul class="text-list">
+            {% if section.settings.others != blank %}
+             <li class="other-diff" style="margin-bottom:0px;">
+              <b>{{ section.settings.others }}</b>
+             </li>
+            {% endif %}
+            {% for block in section.blocks  limit:5 %}
+              {% if block.settings.image != blank %}
+                <li id="blocks__{{ block.id }}">
+                  <div class="itms">
+                     {{ block.settings.image | image_url: width:'82', height:'82' | image_tag }}
+                     <div class="wraper_cols">
+                       <p class="new_headings"><b>{{ block.settings.htext }}</b></p>
+                       <p>{{ block.settings.paratext }}</p>
+                     </div>
+                  </div>
+                 </li>
+                {% else %}
+                  <li>
+                     <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/29.png?v=1722417114" alt="image" width="82" height="82">
+                     <div class="wraper_cols">
+                       <p class="new_headings"><b>Complex & Overpriced</b></p>
+                       <p>High costs and complicated purchasing processes can be a headache.</p>
+                     </div>
+                   </li>
+                 {% endif %}
+                <style>
+                 #blocks__{{ block.id }}{
+                    background: {{block.settings.blocksecbg}};
+                 }
+                </style>
+              {% endfor %}
+          </ul>
+
+          <ul class="text-list">
+            {% if section.settings.image != blank %}
+              <li class="skeep_logo" style="padding: 12px; margin: 0px;">
+               {{ section.settings.image | image_url: width:'207' , height:'43' | image_tag }}
+              </li>
+            {% endif %}
+            {% for block in section.blocks offset:5 %}
+              {% if block.settings.image != blank %}
+                <li id="blocks__{{ block.id }}">
+                  <div class="itms">
+                     {{ block.settings.image | image_url: width:'82', height:'82' | image_tag }}
+                     <div class="wraper_cols">
+                       <p class="new_headings"><b>{{ block.settings.htext }}</b></p>
+                       <p>{{ block.settings.paratext }}</p>
+                     </div>
+                  </div>
+                 </li>
+                {% else %}
+                  <li>
+                     <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/29.png?v=1722417114" alt="image" width="82" height="82">
+                     <div class="wraper_cols">
+                       <h4>Complex & Overpriced</h4>
+                       <p>High costs and complicated purchasing processes can be a headache.</p>
+                     </div>
+                   </li>
+                 {% endif %}
+                <style>
+                 #blocks__{{ block.id }}{
+                    background: {{block.settings.blocksecbg}};
+                 }
+                </style>
+              {% endfor %}
+          </ul>
+      </div>
+  </div>
+</div>
+<style>
+  #usmake-diff__{{ section.id }}{
+    background: {{section.settings.secbg}};
+  }
+</style>
+{% schema %}
+  {
+    "name": "shopify us Product",
+    "settings": [
+      {
+        "type": "color",
+         "id": "secbg",
+         "label": "Section background Color",
+         "default": "#fff"
+       },
+      {
+        "type": "text",
+         "id": "heading",
+         "label": "Section Heading",
+         "default": "What makes us different?"
+       },
+      {
+        "type": "header",
+        "content": "Top Diiference logo and text"
+      },
+      {
+        "type": "text",
+         "id": "others",
+         "label": "Section Heading"
+       },
+      {
+         "type": "image_picker",
+         "id": "image",
+         "label": "Softwarekeep Logo Image"
+      },
+    ],
+    "blocks": [
+     {
+       "name": "list text",
+       "type": "text",
+       "settings": [
+         {
+          "type": "color",
+           "id": "blocksecbg",
+           "label": "Background Color",
+           "default": "#F7F7F7"
+         },
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         },
+         {
+           "type": "text",
+           "id": "htext",
+           "label": "Heading"
+         },
+         {
+           "type": "inline_richtext",
+           "id": "paratext",
+           "label": "Smaal Paragrapgh Text"
+         }
+       ]
+     }
+  ],
+    "presets": [
+      {
+        "name": "Rocket Different Product"
+      }
+    ]
+  }
+{% endschema %}

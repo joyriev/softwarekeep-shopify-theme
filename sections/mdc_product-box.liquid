@@ -1,0 +1,171 @@
+<div class="main-products-box custom-max-width" id="{{ section.settings.custom_id }}">
+  {% assign heading = section.settings.heading | strip_html | downcase %}
+  <div class="box-head {% if heading contains 'windows' %}windows{% endif %}{% if heading contains 'mac' %}mac-os{% endif %}">
+    {{ section.settings.heading }}
+  </div> 
+  <div class="mp_box_wrapper">
+    <div class="box_l_side">
+      <div class="l_content_wrap">
+        <div class="image_wrap">
+          {{ section.settings.logo_image | image_url: width:'796', height:'794' | image_tag }}
+        </div>
+        <div class="additionals_wrap">
+          <p class="secure"><i class="fa fa-lock fa-fw" style="color: rgb(96, 96, 96);"></i> {{ section.settings.secure }}</p>
+          <p class="license"><i class="fa fa-certificate fa-fw" style="color: rgb(96, 96, 96);"></i> {{ section.settings.license }}</p>
+          <p class="moneyback"><i class="fa fa-calendar" aria-hidden="true" style="color: rgb(96, 96, 96);"></i> {{ section.settings.moneyback }}</p>
+        </div>
+        <div class="mcfee"> 
+          {{ section.settings.mcafee_image | image_url: width:'640', height:'80' | image_tag }}
+        </div>
+      </div>
+    </div>
+    <div class="box_r_side">
+       <div class="sep-product-box">
+         {% for block in section.blocks %}
+           {% assign product = all_products[block.settings.product] %}
+           {% if product != blank and block.type == 'product' %}
+            <div class="product-box {% if block.settings.best %}best-deals-box{% endif %}">
+              <div class="product_name">{{ block.settings.product_name }}</div>
+              <div class="addon">{{ block.settings.product_adds }}</div>
+              {% if block.settings.best %}
+                <div class="best-deals">
+                  <p class="elButtonMain"><i class="fa_prepended fa fa-trophy"></i> BEST DEAL</p>
+                </div>
+              {% endif %}
+              {% comment %} 
+              <div class="gftst_prdt_img">
+                {% if product.featured_image != blank %}
+                 <a href="{{ product.url }}"><img src="{{ product.featured_image | img_url: '680x' }}" alt="{{ product.featured_image.alt | escape }}" /></a>
+                {% endif %}
+               </div>
+                {% endcomment %}
+               
+               <div class="product_info">
+                 <div class="price_wrapper">
+                   <div class="compare_price"><del>{{ product.compare_at_price | money }}</del></div>
+                   <div class="main_price">{{ product.price | money }}</div>
+
+                   {% if product.selected_or_first_available_variant.inventory_quantity > 0 %}
+                    <div class="box_inventory_quantity">
+                      Only {{ block.settings.invent }} left in stock!
+                    </div>
+                  {% else %}
+                    <div class="box_inventory_quantity">
+                      Out of stock
+                    </div>
+                  {% endif %}
+                   
+                 </div>
+                 <div class="cart_btn_wrap">
+                   {% assign var = product.first_available_variant %}
+                   {% form 'product', product, class:'lang_btns' %}
+                      <input name="id" type="hidden" value="{{var.id}}">
+                      {% render 'custom-add-to-cart-button', variant: var.id, quantity: 1, price: product.price %}
+                    {% endform %}
+                    <p><i class="fa_prepended fa fa-bolt" contenteditable="false"></i> Instant Download</p>
+                 </div>
+               </div>
+              {% if block.settings.payonce %}
+                <div class="payonce">
+                  <p><i class="fa_prepended fa fa-check" contenteditable="false" style="color: rgb(0, 170, 0);"></i> Pay once, use forever</p>
+                </div>
+              {% endif %}
+            </div>
+           {% endif %}
+         {% endfor %}
+       </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Box",
+    "class": "section-product-box",
+    "settings": [
+      {
+        "type": "text",
+        "id": "custom_id",
+        "label": "Custom ID"
+      },
+      {
+        "type": "richtext",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "logo_image",
+        "label": "Logo Image"
+      },
+      {
+        "type": "text",
+        "id": "secure",
+        "label": "Secure Text",
+        "default": "Secure Download Link"
+      },
+      {
+        "type": "text",
+        "id": "license",
+        "label": "License Text",
+        "default": "New License Key"
+      },
+      {
+        "type": "text",
+        "id": "moneyback",
+        "label": "Money Back Text",
+        "default": "90 Day Money-Back Guarantee"
+      },
+      {
+        "type": "image_picker",
+        "id": "mcafee_image",
+        "label": "McaFee Image"
+      }
+    ],
+    "blocks":[
+      {
+        "type": "product",
+        "name": "Product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          },
+          {
+            "type": "richtext",
+            "id": "product_name",
+            "label": "Product Name"
+          },
+          {
+            "type": "richtext",
+            "id": "product_adds",
+            "label": "Product Additional"
+          },
+          {
+            "type": "checkbox",
+            "id": "payonce",
+            "label": "Check If need Pay Once Line",
+            "default": true
+          },
+          {
+            "type": "checkbox",
+            "id": "best",
+            "label": "Check If Product on Best Deals",
+            "default": false
+          },
+          {
+            "type": "text",
+            "id": "invent",
+            "label": "Product Inventory"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name": "Product Box"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,65 @@
+<div id="secid__{{ section.id }}">
+  <div class="max-width">
+    {% for data in product.metafields.custom.product_description.value %}
+      {% if  data.description_html != blank %}
+        {{ data.description_html }}
+      {% endif %}
+    {% endfor %}
+  </div>
+ </div>
+
+
+<style>
+#secid__{{ section.id }}{
+  background: {{section.settings.descbg}};
+  margin: 20px 0;
+  padding: 20px 0;
+}
+#secid__{{ section.id }} .details-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#secid__{{ section.id }} ul.product-features {
+    list-style-type: none;
+    padding: 0px 20px;
+}
+#secid__{{ section.id }} .product-features li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    line-height: 35px;
+}
+#secid__{{ section.id }} .details-info h2{
+  text-align: left;
+  font-size: 34px;
+  font-weight: 600;
+}
+#secid__{{ section.id }} .product-features li p {
+    margin: 0px;
+}
+@media screen and (max-width: 1024px) {
+  #secid__{{ section.id }} .systm_head{
+    padding : 0 24px;
+  }
+}
+</style>
+
+{% schema %}
+  {
+    "name": "Products Description",
+    "settings": [
+      {
+        "type": "color_background",
+        "id": "descbg",
+        "label": "Section Background Color",
+        "default" : "#fff"
+      },
+      {
+        "type": "textarea",
+        "id": "descbgx",
+        "label": "Description"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,286 @@
+<script>
+  $(".price-btn-top .custm_btns").click(function(event) {
+  	event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $(".rumble-subscription").offset().top + 200
+    }, 500);
+});
+
+</script>
+<style>
+  
+  .rumble-subscription .rum_h_center p.t-subs {
+    {% if section.settings.colorcheck %}
+      background:linear-gradient(180deg, #1A307E 0%, #B90000 100%);
+      background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    {% else %}
+     color: #000;
+    {% endif %}
+  }
+   
+</style>
+<div class="max-width {{ template | replace: 'page.', '' }}" id="products_scrolls">
+  <div class="rum_h_center">
+    <p class="t-subs">{{ section.settings.sub_title }}</p>
+    <h2>{{ section.settings.m_title }}</h2>
+    <p class="extr_off">{{ section.settings.get_extra }}</p>
+  </div>
+
+  <!-- Tab content -->
+  <div class="subs-warpper">
+    <ul id="tab__{{ section.id }}" class="tabs">
+     <li>
+        <a id="tname_{{ section.id }}" href="#tab-{{ section.id }}-1" class="active">
+          <img src="https://cdn.shopify.com/s/files/1/0621/8733/9828/files/w_icons.png" alt="mac" width="60" height="60">
+            {{ section.settings.tab_win }}
+        </a>
+      </li>
+      <li>
+        <a id="tname_{{ section.id }}" href="#tab-{{ section.id }}-2" >
+        <img src="https://cdn.shopify.com/s/files/1/0621/8733/9828/files/m_icons.png?v=1705662321" alt="mac" width="60" height="60">
+        {{ section.settings.tab_mac }}
+        </a>
+      </li>
+    </ul>
+    <!-- start content -->
+    <div class="tc_wrps pricing-tables-content var-c" id="anchor-link">
+      {% for block in section.blocks %}
+        <div id="tab-{{ section.id }}-{{ forloop.index }}" class="div-block-32 row" {% unless forloop.first %}style="display:none;"{% endunless %}>
+          {% for product in collections[block.settings.tab_collection].products limit: 3 %}
+            <div class="order-table-price" >
+              <div class="{% if product.tags contains 'Border_Bestseller' %}div-block-31{% else %}price-card-main-sec{% endif %}">
+                {% render 'image', src: product.featured_image, size: '350x', class: 'p_imgs' %}
+                {% if product.tags contains 'Border_Bestseller' %}
+                <div class="bst_sler-icon">
+                 <img src="https://cdn.shopify.com/s/files/1/0621/8733/9828/files/best_seller.png?v=1706007707" alt="bestseller" width="63" height="91">
+                </div>
+                {% endif %}
+              {% if product.metafields.custom.custom_product_name != blank %}
+                <div class="pricing-tabs-product-name"> {{ product.metafields.custom.custom_product_name }}</div>
+               {% else %}
+                <div class="pricing-tabs-product-name">{{ product.title }}</div>
+              {% endif %}
+                {% if product.metafields.custom.rumble_page_product_info != blank %}
+                  {{ product.metafields.custom.rumble_page_product_info }}
+                {% endif %}
+          
+                 <div>
+                    <div class="columns-5 w-row">
+                       <div class="column-11 w-col w-col-6">
+                            {% for data in product.metafields.custom.select_list_icon.value %}
+                              <div class="price-icon-text-sec">
+                               <img src="{{ data.select_icon_image | file_url }}" loading="lazy" alt="" class="image-41" width="41" height="42">
+                               <div class="text-block-53">{{ data.text }}</div>
+                              </div>
+   
+                           {% endfor %}
+                       </div>
+                    </div>
+                 </div>
+
+                <div class="price-sec-main">
+                  <div class="text-block-45">{{ product.price | money_with_currency }}</div>
+                   <div class="text-block-45" style="color: gray;"><del>{{ product.compare_at_price | money_with_currency }}</del></div>
+                 </div>
+                {% if section.settings.enbale_code %}
+                <p class="p_dave">
+                  with code <span>{{ section.settings.coupon_code }}</span>
+                </p>
+                  {% endif %}
+                {% if block.settings.tab_collection != blank %}
+                 {% assign var = product.first_available_variant %}
+                  {% if product.available %}
+                    {% form 'product', product %}
+                      <input name="id" type="hidden" value="{{ var.id }}">
+                      {% render 'rumble-addto-cart',
+                        variant: var.id,
+                        quantity: 1,
+                        blockId: block.id,
+                        button_text: block.settings.btnname,
+                        btnbg: block.settings.win_color,
+                        btntext: block.settings.win_color_text
+                      %}
+                    {% endform %}
+                  {% else %}
+                    {% render 'sold-out-button', disabled: 'disabled' %}
+                  {% endif %}
+                {% endif %}
+
+                {% if block.settings.secure_text != blank %}
+                  <div class="div-block-8-copy">
+                    {% if block.settings.secure_icon  != blank %}
+                      {{ block.settings.secure_icon | image_url: width:'22', height:'22' | image_tag }}
+                      {% else %}
+                      <img src="{{ 'icon-secure.png' | asset_url }}" alt="Icon secure" width="22" height="22">
+                      {% endif %}
+                    <div class="text-block-6">{{ block.settings.secure_text }}</div>
+                  </div>
+                {% endif %}
+                {% if product.tags contains 'Border_Bestseller' %}
+                  <div class="bestseller-txt">Bestseller</div>
+                {% endif %}
+              </div>
+            </div>
+          {% else %}
+            {% assign maxi = 3 | at_most: 6 %}
+            {% for i in (1..maxi) %}
+              <div class="col-{{mobile}} col-md-{{-desktop}} card--holder">
+                {% render 'product-card-fake', 'i:i' %}
+              </div>
+            {% endfor %}
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+    <!-- End content -->
+  </div>
+  <!-- End Tab content -->
+  {% if  section.settings.shopallbtn != blank %}
+    <a class="shop_all-btns" href="{{ section.settings.shopallurl }}">{{ section.settings.shopallbtn }}</a>
+  {% endif %}
+</div>
+
+<script>
+   $(document).ready(function() {
+      $('#tab__{{ section.id }} a').click(function(e){
+        e.preventDefault();
+        $(this).closest('.subs-warpper').find('.tabs li a').removeClass('active');
+        $(this).closest('.subs-warpper').find('.div-block-32').hide();
+        $(this).addClass('active');
+        var id = $(this).attr("href");
+        $(""+id).show();
+        return false;
+      });
+  });
+</script>
+{% schema %}
+{
+  "name": "Rumble Subscription",
+  "class": "rumble-subscription",
+  "settings": [
+        {
+          "type": "text",
+          "id": "sub_title",
+          "label": "Enter Sub Heading"
+         },
+        {
+          "type": "checkbox",
+          "id": "colorcheck",
+          "label": "Text Color Gridient Enable/disable",
+          "info" : "default text color will be Black"
+         },
+        {
+          "type": "text",
+          "id": "m_title",
+          "label": "Enter Main Heading"
+         },
+         {
+          "type": "text",
+          "id": "get_extra",
+          "label": "Extra off content"
+         },
+         {
+           "type": "header",
+           "content": "Product Tab Section"
+         },
+          {
+          "type": "text",
+          "id": "tab_mac",
+          "label": "Enter Tab Name Mac",
+          "default" : " Shop Mac"
+         },
+          {
+          "type": "text",
+          "id": "tab_win",
+          "label": "Enter Tab Name Window",
+           "default" : "Shop Windows"
+         },
+        {
+           "type": "header",
+           "content": "Coupon Code"
+         },
+          {
+          "type": "checkbox",
+          "id": "enbale_code",
+          "label": "Enable Coupon Code"
+         },
+          {
+          "type": "text",
+          "id": "coupon_code",
+          "label": "Extra Coupon Code",
+          "default" : "RUMBLE30"
+         },
+         {
+           "type": "header",
+           "content": "Bottom Shop All Products"
+         },
+        {
+          "type": "text",
+          "id": "shopallbtn",
+          "label": "Shop All CTA"
+        },
+        {
+          "type": "url",
+          "id": "shopallurl",
+          "label": "Enter Shop All CTA Url"
+        },
+  ],
+  "blocks": [
+     {
+       "name": "tab collection",
+       "type": "collection",
+       "settings": [
+        {
+          "type": "text",
+          "id": "tab_name",
+          "label": "Extra Tab Name"
+         },
+         {
+           "type": "collection",
+           "id": "tab_collection",
+           "label": "Select Collection"
+         },
+        {
+           "type": "image_picker",
+           "id": "secure_icon",
+           "label": "Select Icon Image"
+         },
+        {
+           "type": "text",
+           "id": "secure_text",
+           "label": "Enter Secure text"
+         },
+         {
+           "type": "header",
+           "content": "Button Color Change"
+         },
+        {
+           "type": "text",
+           "id": "btnname",
+           "label": "Button text",
+           "default": "Buy Now"
+         },
+         {
+           "type": "color",
+           "id": "win_color",
+           "label": "Button Background",
+          "default": "#1390D6"
+         },
+         {
+           "type": "color",
+           "id": "mac_color",
+           "label": "Button Text Color",
+          "default": "#fff"
+         }
+       ]
+     }
+  ],
+  "presets": [
+  {
+    "name": "Rumble Subscription"
+  }
+]
+}
+{% endschema %}

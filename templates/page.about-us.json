@@ -1,0 +1,649 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "height": 300,
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": "medium",
+        "contentColor": "rgba(0,0,0,0)",
+        "fillColor": "rgba(0,0,0,0)",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "content": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "cf42d245-72aa-4ebd-bc63-fca6dcb2681c": {
+      "type": "section__columns",
+      "blocks": {
+        "b80bdc63-e325-46ac-9784-f22b32a07064": {
+          "type": "columnIcon",
+          "settings": {
+            "icon": "",
+            "iconSize": 40,
+            "iconColor": "rgba(0,0,0,0)",
+            "heading": "<h1>Power to the PC</h1>",
+            "content": "<h1><strong>Service to the People</strong></h1>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "0e6968e9-9596-4501-8c9f-58266484b71a": {
+          "type": "columnIcon",
+          "settings": {
+            "icon": "",
+            "iconSize": 40,
+            "iconColor": "rgba(0,0,0,0)",
+            "heading": "",
+            "content": "<p>If you're looking for a software company you can trust, for its integrity and honest business practices, look no further thanSoftwareKeep.We care about bringing you a reliable, satisfying experience on the software products that you need. We'll be with you before, during, and after-sales. That's our 360 DegreeSoftwareKeepGuarantee. Try us Today!</p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        }
+      },
+      "block_order": [
+        "b80bdc63-e325-46ac-9784-f22b32a07064",
+        "0e6968e9-9596-4501-8c9f-58266484b71a"
+      ],
+      "settings": {
+        "custom_id": "power_service",
+        "displayFor": "display--both",
+        "layout": "stretchBg",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "bottom",
+        "backgroundFilter": "none",
+        "backdropIntensity": 40,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 0,
+        "colGap": 10,
+        "textAlign": "start",
+        "contentAlign": "top",
+        "colCount": "col-md-6"
+      }
+    },
+    "e780ddd2-3fad-43cf-ba93-d66241cbed35": {
+      "type": "section__columns",
+      "blocks": {
+        "6f50cfee-f09f-4673-a37f-cd4c221551b6": {
+          "type": "columnIcon",
+          "settings": {
+            "icon": "",
+            "iconSize": 40,
+            "iconColor": "rgba(0,0,0,0)",
+            "heading": "<h1>800K+</h1>",
+            "content": "<p>Customers served</p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "ea990f89-e812-475c-a4f0-a0113f4bf12d": {
+          "type": "columnIcon",
+          "settings": {
+            "icon": "",
+            "iconSize": 40,
+            "iconColor": "rgba(0,0,0,0)",
+            "heading": "<h1>100K+</h1>",
+            "content": "<p>Reviews worldwide</p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "38735d6c-edab-40da-964c-c5cd3aee7939": {
+          "type": "columnIcon",
+          "settings": {
+            "icon": "",
+            "iconSize": 40,
+            "iconColor": "rgba(0,0,0,0)",
+            "heading": "<h1>22K+</h1>",
+            "content": "<p>5 stars reviews</p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        }
+      },
+      "block_order": [
+        "6f50cfee-f09f-4673-a37f-cd4c221551b6",
+        "ea990f89-e812-475c-a4f0-a0113f4bf12d",
+        "38735d6c-edab-40da-964c-c5cd3aee7939"
+      ],
+      "settings": {
+        "custom_id": "customer_reviews",
+        "displayFor": "display--both",
+        "layout": "stretchBg",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 250,
+        "padding": 10,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 50,
+        "colGap": 20,
+        "textAlign": "center",
+        "contentAlign": "top",
+        "colCount": "col-md-4"
+      }
+    },
+    "e15e7922-e7ab-4914-ab24-5ce05f7f5be7": {
+      "type": "section__image-text",
+      "blocks": {
+        "template--14807614881847__e15e7922-e7ab-4914-ab24-5ce05f7f5be7-title-1": {
+          "type": "title",
+          "settings": {
+            "fullWidth": false,
+            "content": "Why we started SoftwareKeep",
+            "textColor": "#1266cc",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "template--14807614881847__e15e7922-e7ab-4914-ab24-5ce05f7f5be7-richText-1": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>When we started, our number 1 priority was to create a go-to source for our software-purchasing public. We knew from day 1 that we wanted to be more than a company that just sell software. We wanted to be a software company that stood with our customers through all phases of the buying process. We are there to help our customers every step of the way and even after the sale. Our goal has always been to offer a full-service 360 Degree software buying experience. That’s why we put power to the pc, service to the people as our motto.</p>",
+            "detectLists": true,
+            "textColor": "#6d8fa0",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        }
+      },
+      "block_order": [
+        "template--14807614881847__e15e7922-e7ab-4914-ab24-5ce05f7f5be7-title-1",
+        "template--14807614881847__e15e7922-e7ab-4914-ab24-5ce05f7f5be7-richText-1"
+      ],
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "boxed",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 5,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "imagePosition": "right",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/MicrosoftTeams-image__19_-removebg-preview.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "0aa9a39b-699e-4db2-978a-af2995146085": {
+      "type": "section__image-text",
+      "blocks": {
+        "73193f38-227d-4f8f-aa5c-88d1d28cea4f": {
+          "type": "title",
+          "settings": {
+            "fullWidth": false,
+            "content": "What’s our mission",
+            "textColor": "#1266cc",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "fc894410-af78-4306-b6df-22f153e1b053": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>We offer our customers the best customer in the industry, around-the-clock support before, during, and after the sale. We walk our customers through finding the right products, ensuring a smooth purchase process, and making sure your software is installed and registered without any issues after the sale. This is the 360 SoftwareKeep Experience. We appreciate our customers and believe in the products we sell, so you will always have the best shopping experience with a personal touch.<br/><br/></p>",
+            "detectLists": true,
+            "textColor": "#6d8fa0",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        }
+      },
+      "block_order": [
+        "73193f38-227d-4f8f-aa5c-88d1d28cea4f",
+        "fc894410-af78-4306-b6df-22f153e1b053"
+      ],
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "boxed",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 5,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "imagePosition": "left",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/MicrosoftTeams-image__20_-removebg-preview.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "44c91974-02cb-4e17-a5a3-d53f8dbbf671": {
+      "type": "section__image-text",
+      "blocks": {
+        "a59928de-b7df-49e1-bab2-d4d9f57d767f": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "How we became a BBB Accredited Business",
+            "textColor": "#1266cc",
+            "fontFamily": "title",
+            "fontSize": "big"
+          }
+        },
+        "8d4aa35c-185e-4540-9a86-6ee46ebf0741": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>When any business has been accredited by the BBB, it means the BBB has verified that the business meets accreditation standards. These standards include a commitment to make a good faith effort to resolve any consumer complaints. BBB accredited businesses pay a fee for accreditation review and for continued monitoring to ensure compliance. At SoftwareKeep, we have gone through this BBB Accreditation process because we want to hold our company to the highest standards of best business practices. It's our number one goal to give our customers the very best service, genuine products, and some of the best prices.</p><p>The BBB Code of Business Practices represents standards for business accreditation by BBB. Businesses based in the United States and Canada meeting these standards and completing all application procedures will be accredited by BBB. This code is based on the BBB Standards for trust in commerce, which includes eight principles of a high standard that summarize the factors and actions for building and maintaining trust in business. SoftwareKeep takes these eight principles seriously. At SoftwareKeep, we meet all of the standards and consider each of the eight principles into account with everything we do. This is because we want our customers to understand that building trust with them and maintaining it is one of our business's fundamental characteristics.</p>",
+            "detectLists": true,
+            "textColor": "#6d8fa0",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        }
+      },
+      "block_order": [
+        "a59928de-b7df-49e1-bab2-d4d9f57d767f",
+        "8d4aa35c-185e-4540-9a86-6ee46ebf0741"
+      ],
+      "disabled": true,
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "boxed",
+        "nomargin": false,
+        "scopedCSS": "h2{\ntext-align:left !important;\n}",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 5,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "imagePosition": "right",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/finance-about.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "d5a43874-dda6-48da-9cb4-f4af6c1329fe": {
+      "type": "section__columns",
+      "blocks": {
+        "a7ec87bf-1f3a-4d82-8b78-1e29c53da565": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/icon-rating-google.png",
+            "imageSize": 100,
+            "heading": "",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "dc03feb7-ce0a-435c-a3b5-aee215e693f8": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/icon-rating-reseller.png",
+            "imageSize": 100,
+            "heading": "",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "30ae23fe-5cad-41ee-941a-07dd845426c2": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/icon-trustpilot.png",
+            "imageSize": 100,
+            "heading": "",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "c8149e6c-5904-4696-aad1-3e8bcce6b646": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/reviewsio-logo.png",
+            "imageSize": 100,
+            "heading": "",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "499ac966-2abc-4758-bc51-da98453e3d34": {
+          "type": "columnImage",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/icon-bbb.png",
+            "imageSize": 100,
+            "heading": "",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        }
+      },
+      "block_order": [
+        "a7ec87bf-1f3a-4d82-8b78-1e29c53da565",
+        "dc03feb7-ce0a-435c-a3b5-aee215e693f8",
+        "30ae23fe-5cad-41ee-941a-07dd845426c2",
+        "c8149e6c-5904-4696-aad1-3e8bcce6b646",
+        "499ac966-2abc-4758-bc51-da98453e3d34"
+      ],
+      "settings": {
+        "custom_id": "customer_icon",
+        "displayFor": "display--both",
+        "layout": "boxed",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "Over 800K+ Downloads Served",
+        "headingColor": "#1266cc",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 0,
+        "colGap": 20,
+        "textAlign": "center",
+        "contentAlign": "top",
+        "colCount": "col-md-1-5"
+      }
+    },
+    "c47de3ff-128a-485c-9dd1-cf283f0b2b1a": {
+      "type": "section__columns",
+      "blocks": {
+        "b40b21f5-84de-4cc4-982a-9cbd75cfbef1": {
+          "type": "columnImage",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/feature.png",
+            "imageSize": 100,
+            "heading": "<p>Our 360 Softwarekeep Experience</p>",
+            "content": "",
+            "buttonText": "Read More",
+            "buttonURL": "shopify://blogs/news/our-360-softwarekeep-experience",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "underlined"
+          }
+        },
+        "a821b94c-be19-4ce3-b2e0-d8af0bd48234": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/distributed_teams.png",
+            "imageSize": 100,
+            "heading": "<p>Tools to help you Boost Your Productivity</p>",
+            "content": "",
+            "buttonText": "Read More",
+            "buttonURL": "shopify://blogs/product-guides/9-effective-tools-to-help-boost-your-productivity-while-working-from-home",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "underlined"
+          }
+        }
+      },
+      "block_order": [
+        "b40b21f5-84de-4cc4-982a-9cbd75cfbef1",
+        "a821b94c-be19-4ce3-b2e0-d8af0bd48234"
+      ],
+      "settings": {
+        "custom_id": "blog__software",
+        "displayFor": "display--both",
+        "layout": "stretchBg",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "What’s inside SoftwareKeep",
+        "headingColor": "#1266cc",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 50,
+        "colGap": 25,
+        "textAlign": "center",
+        "contentAlign": "top",
+        "colCount": "col-md-6"
+      }
+    },
+    "e4864b5f-4565-47f8-ad36-649344b73e59": {
+      "type": "section__cta",
+      "blocks": {
+        "template--14807614881847__e4864b5f-4565-47f8-ad36-649344b73e59-title-1": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "Start browsing the softwares we offer",
+            "textColor": "#ffffff",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "template--14807614881847__e4864b5f-4565-47f8-ad36-649344b73e59-button-1": {
+          "type": "button",
+          "settings": {
+            "fullWidth": true,
+            "text": "Show me what you got",
+            "url": "shopify://collections/microsoft-office",
+            "icon": "",
+            "iconPosition": "icon--left",
+            "wideButton": false,
+            "buttonStyle": "primary",
+            "buttonType": "default",
+            "fontSize": "base",
+            "fontFamily": "base",
+            "animation": "none",
+            "animationDuration": 1000,
+            "animationInfinite": true
+          }
+        }
+      },
+      "block_order": [
+        "template--14807614881847__e4864b5f-4565-47f8-ad36-649344b73e59-title-1",
+        "template--14807614881847__e4864b5f-4565-47f8-ad36-649344b73e59-button-1"
+      ],
+      "settings": {
+        "acc-content": "",
+        "custom_id": "browsing_software",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 290,
+        "padding": 25,
+        "lineMargin": 12,
+        "backgroundColor": "#1266cc",
+        "backgroundImage": "shopify://shop_images/bg-offer-about.png",
+        "backgroundImageUrl": "",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "cf42d245-72aa-4ebd-bc63-fca6dcb2681c",
+    "e780ddd2-3fad-43cf-ba93-d66241cbed35",
+    "e15e7922-e7ab-4914-ab24-5ce05f7f5be7",
+    "0aa9a39b-699e-4db2-978a-af2995146085",
+    "44c91974-02cb-4e17-a5a3-d53f8dbbf671",
+    "d5a43874-dda6-48da-9cb4-f4af6c1329fe",
+    "c47de3ff-128a-485c-9dd1-cf283f0b2b1a",
+    "e4864b5f-4565-47f8-ad36-649344b73e59"
+  ]
+}

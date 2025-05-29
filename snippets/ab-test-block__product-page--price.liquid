@@ -1,0 +1,179 @@
+<style>
+  {%- unless block.settings.color contains "rgba(0,0,0,0)" -%}
+  .product__price--{{block.id}} .product__price {
+      color: {{block.settings.color}};
+  }
+  {%- endunless -%}
+
+  {%- unless block.settings.newPriceColor contains "rgba(0,0,0,0)" -%}
+  .product__price--{{block.id}} .product__price.product__price--sale {
+      color: {{block.settings.newPriceColor}};
+  }
+  {%- endunless -%}
+
+  {%- unless block.settings.oldPriceColor contains "rgba(0,0,0,0)" -%}
+  .product__price--{{block.id}} .product__price--old {
+      color: {{block.settings.oldPriceColor}};
+  }
+  {%- endunless -%}
+</style>
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign s_type = settings.saleType | default: 'percent' %}
+<div
+  class="
+    product__price--holder product__price--{{block.id}}
+    font__family--{{-block.settings.fontFamily}} font__size--{{-block.settings.fontSize}}
+    {% if block.settings.noMargin or noMargin %}margin__bottom--reduced{%endif-%}
+  "
+  {{ block.shopify_attributes }}
+>
+  {% if product.compare_at_price_min > 0 %}
+    {% assign sale = true %}
+    {% if current_variant.compare_at_price > 0 %}
+      {% assign currsale = true %}
+    {% else %}
+      {% assign currsale = false %}
+    {% endif %}
+  {% else %}
+    {% assign sale = false %}
+    {% assign currsale = false %}
+  {% endif %}
+  <span
+    data-product-price="{{product.id}}"
+    class="product__price {% if currsale %}{% unless current_variant.price >= current_variant.compare_at_price %}product__price--sale{% endunless %}{% endif %} jsPrice"
+  >
+    {% if settings.currencyFormat == 'money_with_currency_format' %}
+      {{ current_variant.price | money_with_currency | strip_html }}
+    {% else %}
+      {{ current_variant.price | money | strip_html }}
+    {% endif %}
+  </span>
+  {% unless current_variant.price >= current_variant.compare_at_price %}
+    <span data-product-price-sale="{{product.id}}" class="product__price--old jsPrice">
+      {%- if currsale %}{{ current_variant.compare_at_price | money | strip_html }}{% endif -%}
+    </span>
+    {% if sale %}
+      {%- unless s_type == 'none' or sale == false %}
+        <span
+          data-tag-product="{{product.id}}"
+          data-tag-type="{{s_type}}"
+          class="tag tag--sale {% unless currsale %}hide{% endunless %} {% if s_type == 'amount' %}jsPrice{% endif %}"
+        >
+          {% if currsale %}
+            {%- case s_type %}
+              {% when 'percent' %}
+                {{
+                  current_variant.price
+                  | minus: current_variant.compare_at_price
+                  | times: 100
+                  | divided_by: current_variant.compare_at_price
+                -}}
+                % {{ 'general.tags.off' | t }}
+              {% when 'amount' %}
+                {{ current_variant.compare_at_price | minus: current_variant.price | money | strip_html }}
+              {% when 'text' %}
+                {{ 'general.tags.sale' | t }}
+            {%- endcase -%}
+          {% endif %}
+        </span>
+      {%- endunless -%}
+    {% endif %}
+  {% endunless %}
+</div>
+
+{% if product.metafields.custom.link_of_pc != blank %}
+  <div class="sector">
+    <div class="product-toggle-os-selector">
+      <div class="toggle-os--selected-info">
+        <div class="icon_selected">
+          <p><strong>Select Operating System:</strong></p>
+        </div>
+        <div class="conditional_icon_img">
+          {% if product.title contains 'PC' or product.handle contains 'pc' %}
+            <span class="conditional_icon_one">
+              <h4>Windows</h4>
+              <img
+                class="windows_icon"
+                src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/box_windows.png?v=1706086795"
+                width="60px"
+                height="60px"
+            ></span>
+          {% else %}
+            <span class="conditional_icon">
+              <h4>Mac</h4>
+              <img
+                width="60px"
+                height="60px"
+                class="apple_icon"
+                src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/box_mac.png?v=1706086795"
+            ></span>
+          {% endif %}
+        </div>
+      </div>
+
+      <ul class="prods-versionlist">
+        {% assign product_rec_1 = all_products[product.metafields.custom.link_of_pc] %}
+        {% assign product_rec_1_url = product_rec_1.url %}
+        {% if product_rec_1 != blank %}
+          <li class="window {% if product_rec_1_url == product.url %}active{% endif %}">
+            <a href="{{ product_rec_1_url }}" class="wpers_versins">
+              <div class="img-box-system">
+                <img
+                  alt="Windows"
+                  loading="lazy"
+                  width="21"
+                  height="21"
+                  decoding="async"
+                  data-nimg="1"
+                  src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-windows-system.png?v=1703165738"
+                  style="color: transparent; display:block;"
+                >
+              </div>
+              <p>Windows PC</p>
+            </a>
+          </li>
+        {% endif %}
+        {% assign product_rec_2 = all_products[product.metafields.custom.link_of_mac] %}
+        {% assign product_rec_2_url = product_rec_2.url %}
+        {% if product_rec_2 != blank %}
+          <li class="mac {% if product_rec_2_url == product.url %}active{% endif %}">
+            <a href="{{ product_rec_2_url }}" class="wpers_versins">
+              <div class="img-box-system">
+                <img
+                  alt="Mac"
+                  loading="lazy"
+                  width="23"
+                  height="23"
+                  decoding="async"
+                  data-nimg="1"
+                  src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-apple-system.png?v=1703165737"
+                  style="color: transparent; display:block;"
+                >
+              </div>
+              <p>MacOS</p>
+            </a>
+          </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+{% endif %}
+<div class="product_support">
+    <ul class="support_points">
+     {% for datas in product.metafields.custom.product_better_selections.value %}
+      <li>{{ datas.text }}</li>
+     {% endfor %}
+    </ul>
+</div>
+ <div class="mpayment-sec">
+  <div class="mobile-payment">
+    <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-info.svg?v=1706852733">
+    <p style="font-size: 15px;line-height: 20px;">Your <span style="color:#046AB5;font-weight: 600;">product activation code</span> will be <br><span style="text-decoration: underline;">emailed to you 15-30 minutes</span> after checkout.</p>
+  </div>
+ </div>
+{% comment %}
+  {% blockdef %}
+
+  {% endblockdef %}
+{% endcomment %}

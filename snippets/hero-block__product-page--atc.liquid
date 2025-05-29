@@ -1,0 +1,96 @@
+    <p class="btn_mback_text"><img src="//preparedhero.com/cdn/shop/files/ta_btn_mbk_icon-icon.png?v=14338924654581729941" alt="icon">Get it Risk Free- 180 Day Money Back Guarantee</p>
+<div
+  class="product__atc {% if block.settings.noMargin or noMargin %}margin__bottom--reduced{%endif-%}"
+  {{ block.shopify_attributes }}
+>
+  {% if product.available %}
+    <input
+      style="display: none;"
+      name="id"
+      data-bstr-variant-input="{{product.id}}"
+      value="{{product.selected_or_first_available_variant.id}}"
+    >
+    <div class="quantity--input">
+      <button
+        class="quantity--input__button quantity--input__incr"
+        onclick="BoosterTheme.cart.quantityHandler(event, false, false)"
+      >
+        -
+      </button>
+      <input
+        {% if product.selected_or_first_available_variant.inventory_policy != 'continue' %}
+          max="{{ product.selected_or_first_available_variant.inventory_quantity }}"
+        {% endif %}
+        class="quantity--input__input"
+        value="1"
+        data-qty-input
+        type="number"
+        name="quantity"
+        min="1"
+        aria-label="Quantity input"
+      >
+      <!--  -->
+      <button
+        class="quantity--input__button quantity--input__decr"
+        onclick="BoosterTheme.cart.quantityHandler(event, true, false)"
+      >
+        +
+      </button>
+    </div>
+    {% render 'add-to-cart-button', type: 'secondary', price: product.price %}
+  {% else %}
+    {% render 'sold-out-button', disabled: 'disabled' %}
+  {% endif %}
+    <div class="pay_icons">
+      <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/ta_pay_card.png?v=1727354840" class="pay_card" width="800" height="80" alt="card">
+    </div>
+  <div class="payment-section">
+    <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-info.svg?v=1706852733" alt="Mail Message">
+    <p>An electronic code will be emailed to you 15-30 minutes after checkout.</p>
+  </div>
+
+</div>
+
+{% if block.settings.stickyATC == 'scroll' %}
+  <script>
+    document.addEventListener('booster:initialized', (e)=>{
+        let bt = event.detail.BoosterTheme
+        let sticky = document.querySelector('.sticky--mobile:not([data-bstr-initd])')
+        if(!sticky) return
+        sticky.dataset.bstrInitd = "true"
+        document.addEventListener('scroll', debounce(()=>{
+            if(window.innerWidth > 768) return
+            let patc = document.querySelector('.product__atc')
+            if(!patc) return
+            if(patc.offsetTop + patc.clientHeight < window.scrollY){
+                sticky.classList.remove('hide')
+            } else {
+                sticky.classList.add('hide')
+                sticky.classList.add('sticky--closed')
+            }
+        }, 150))
+    })
+  </script>
+{% elsif block.settings.stickyATC == 'always' %}
+  <style>
+    @media screen and (max-width: 767px){
+        .sticky--mobile {
+            display: block !important;
+        }
+    }
+  </style>
+{% endif %}
+    
+<!-- <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      var stickyAddToCart = document.getElementById("ProductSubmitButton-Sticky");
+      var originalAddToCart = document.getElementById("defult_template-pdp");
+      window.addEventListener("scroll", function() {
+          if ($(document).scrollTop() >= 800) {
+              stickyAddToCart.style.display = "block";
+          } else {
+              stickyAddToCart.style.display = "none";
+          }
+      });
+  });
+</script> -->

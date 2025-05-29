@@ -1,0 +1,188 @@
+<div id="sec_bgs__{{ section.id }}">
+  <div class="max-width">
+    {% if section.settings.htext != blank %}
+      {{ section.settings.htext }}
+    {% endif %}
+    <div class="hro_conatinrs">
+      {% for block in section.blocks %}
+        {% capture align_img %}
+             {{ block.settings.image | image_url: width:'462', height:'344' | image_tag }}
+        {% endcapture %}
+        <div class="pdp_s5_row">
+            {% if block.settings.imgpositions == 'left' %}
+              <div class="pdp_s5_row_imgbx">
+                {% if block.settings.image  != blank %}
+                  {{ align_img }}
+                  {% else %}
+                  <img src="//preparedhero.com/cdn/shop/files/ta_pdp_s5_row_img1.jpg?v=1542025598746328461" class="pdp_s5_row_img" width="462" height="344" alt="img">
+                {% endif %}
+             </div>
+           {% endif %}
+           <div class="pdp_s5_row_content"> 
+              {% if block.settings.htext != blank %}
+                <div class="pdp_s5_row_head">
+                  <div class="number_tag">
+                    <div class="circle"></div>
+                    <div class="num">{{ forloop.index }}</div>
+                  </div>
+                    {{ block.settings.htext }}
+                </div>
+               {% endif %}
+             
+              {% if block.settings.paratext != blank %}
+                <p class="pdp_s5_row_text">
+                  {{ block.settings.paratext }}
+                </p>
+              {% endif %}
+           </div>
+            {% unless block.settings.imgpositions == 'left' %}
+              <div class="pdp_s5_row_imgbx">
+                {% if block.settings.image  != blank %}
+                  {{ align_img }}
+                  {% else %}
+                  <img src="//preparedhero.com/cdn/shop/files/ta_pdp_s5_row_img1.jpg?v=1542025598746328461" class="pdp_s5_row_img" width="462" height="344" alt="img">
+                {% endif %}
+             </div>
+            {% endunless %}
+        </div>
+       {% endfor %} 
+    </div>
+  </div>
+</div>
+<style>
+#sec_bgs__{{ section.id }}{
+  background: {{section.settings.textsecbg}};
+  padding: 10px 0;
+}
+.hro_conatinrs {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.pdp_s5_row {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 45px;
+    border-bottom: 1px solid #c7c7c7;
+    margin-top: 40px;
+}
+.pdp_s5_row:last-child {
+   border-bottom: none;
+}
+.pdp_s5_row_content {
+    width: 45%;
+    text-align: left;
+    padding: 0 60px 0 0;
+}
+.pdp_s5_row_imgbx {
+    width: 462px;
+    max-width: 49%;
+}
+.pdp_s5_row_head {
+    width: 100%;
+    font-size: 27px;
+    line-height: 34px;
+    color: #000;
+    font-weight: 700;
+    padding: 10px 0 7px 65px;
+    position: relative;
+}
+.number_tag {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #fff;
+    border-radius: 50%;
+    margin-top: -25px;
+}
+.number_tag .num {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+    background: #e32d2c;
+    border-radius: 50%;
+    height: 100%;
+}
+@media screen and (max-width: 767px) {
+    .pdp_s5_row {
+      flex-direction: column;
+      padding: 0 20px;
+      margin-top: 0px;
+    }
+    .pdp_s5_row_imgbx {
+      width: 100%;
+      max-width: 100%;
+    }
+    .pdp_s5_row_content {
+        width: 100%;
+        text-align: left;
+        padding: 20px 0;
+    } 
+}
+@media screen and (max-width: 1024px) {
+  .pdp_s5_row {
+    padding: 0 20px;
+  }
+}
+</style>
+{% schema %}
+  {
+    "name": "Hero image text step",
+    "settings": [
+        {
+           "type": "html",
+           "id": "htext",
+           "label": "Heading",
+          "default": "How do I download?"
+        },
+        {
+          "type": "color",
+           "id": "textsecbg",
+           "label": "Section Background",
+           "default": "#fff"
+        }
+    ],
+    "blocks": [
+     {
+       "name": "steo downloads",
+       "type": "image",
+       "settings": [
+         {
+            "type": "select",
+            "id": "imgpositions",
+            "label": "Select Image Positions",
+            "options": [
+              {"value": "left", "label": "Left"},
+              {"value": "right", "label": "Right"}
+            ],
+          "default": "left"
+         },
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         },
+        {
+           "type": "text",
+           "id": "htext",
+           "label": "Heading",
+          "default":" Stops Fire Quickly <br>&amp; Safely"
+         },
+         {
+           "type": "textarea",
+           "id": "paratext",
+           "label": "Smaal Paragrapgh Text",
+           "default": "Use the quick browsing function to search for the software you need. Make your selection and add to your cart."
+         }
+       ]
+     }
+  ],
+    "presets": [{"name": "Hero image text step"}]
+  }
+{% endschema %}

@@ -1,0 +1,384 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "height": 300,
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": "medium",
+        "contentColor": "rgba(0,0,0,0)",
+        "fillColor": "rgba(0,0,0,0)",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "content": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "2e81a6c6-f5f5-4e28-8cde-078db635b518": {
+      "type": "banner",
+      "blocks": {
+        "template--14807676387383__2e81a6c6-f5f5-4e28-8cde-078db635b518-sectionBanner-1": {
+          "type": "sectionBanner",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "cardLink": "",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/denis.png",
+            "backgroundPosition": "middle",
+            "imageFit": "cover",
+            "overlayOpacity": 0,
+            "overlayColor": "#a7bcc6",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "template--14807676387383__2e81a6c6-f5f5-4e28-8cde-078db635b518-sectionBanner-2": {
+          "type": "sectionBanner",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "cardLink": "",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/allan.png",
+            "backgroundPosition": "middle",
+            "imageFit": "cover",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "50d6c6bd-158a-4824-8878-96e30805f2b7": {
+          "type": "sectionBanner",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "cardLink": "",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/calvince.png",
+            "backgroundPosition": "middle",
+            "imageFit": "cover",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "496cc364-9dfd-476f-8d6f-5c1d086d4765": {
+          "type": "sectionBanner",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "cardLink": "",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/gustavo.png",
+            "backgroundPosition": "middle",
+            "imageFit": "cover",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "f0333db8-50b4-42fd-87ad-05fcad997ae9": {
+          "type": "sectionBanner",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "cardLink": "",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/anne.png",
+            "backgroundPosition": "middle",
+            "imageFit": "cover",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "66f4e51d-a3d6-4003-8bfa-f8d570f0e03c": {
+          "type": "sectionBanner",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "cardLink": "",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/julien.png",
+            "backgroundPosition": "middle",
+            "imageFit": "cover",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "db6a70ea-b249-43e9-80bb-f446bfe160dc": {
+          "type": "sectionBanner",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "cardLink": "",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/emir.png",
+            "backgroundPosition": "middle",
+            "imageFit": "cover",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "404dc806-1ba3-4231-9a80-df35cca6125b": {
+          "type": "sectionBanner",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "cardLink": "",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/quir.png",
+            "backgroundPosition": "middle",
+            "imageFit": "cover",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "6ccbc1fc-f460-4312-b9e3-ba0a2f269302": {
+          "type": "sectionBanner",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "cardLink": "",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/ray.png",
+            "backgroundPosition": "middle",
+            "imageFit": "cover",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "74e80b76-1d57-4ecb-9f7f-f030b8b5072d": {
+          "type": "sectionBanner",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "cardLink": "",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/david.png",
+            "backgroundPosition": "middle",
+            "imageFit": "cover",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "864b05b0-3a72-41ca-a380-134cd2b95378": {
+          "type": "sectionBanner",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "cardLink": "",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/paul.png",
+            "backgroundPosition": "middle",
+            "imageFit": "cover",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        }
+      },
+      "block_order": [
+        "template--14807676387383__2e81a6c6-f5f5-4e28-8cde-078db635b518-sectionBanner-1",
+        "template--14807676387383__2e81a6c6-f5f5-4e28-8cde-078db635b518-sectionBanner-2",
+        "50d6c6bd-158a-4824-8878-96e30805f2b7",
+        "496cc364-9dfd-476f-8d6f-5c1d086d4765",
+        "f0333db8-50b4-42fd-87ad-05fcad997ae9",
+        "66f4e51d-a3d6-4003-8bfa-f8d570f0e03c",
+        "db6a70ea-b249-43e9-80bb-f446bfe160dc",
+        "404dc806-1ba3-4231-9a80-df35cca6125b",
+        "6ccbc1fc-f460-4312-b9e3-ba0a2f269302",
+        "74e80b76-1d57-4ecb-9f7f-f030b8b5072d",
+        "864b05b0-3a72-41ca-a380-134cd2b95378"
+      ],
+      "settings": {
+        "custom_id": "meet-team",
+        "heading": "Meet the Amazing Team Behind SoftwareKeep",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "colCount": "col-md-4",
+        "mobileColCount": "col-12",
+        "columnAlignment": "start"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "2e81a6c6-f5f5-4e28-8cde-078db635b518"
+  ]
+}

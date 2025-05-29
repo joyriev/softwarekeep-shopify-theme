@@ -1,0 +1,270 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "height": 40,
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "fontSize": "big",
+        "contentColor": "#191d21",
+        "fillColor": "rgba(0,0,0,0)",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "content": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "section_columns_3rmDRC": {
+      "type": "section__columns",
+      "blocks": {
+        "column_image_bgCXUD": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/icon-how-to.png",
+            "imageSize": 100,
+            "heading": "<h1>How To</h1>",
+            "content": "<p>How to install, uninstall, change office apps</p>",
+            "buttonText": "View More",
+            "buttonURL": "/blogs/how-to",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "filled"
+          }
+        },
+        "column_image_MCtHEA": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/icon-comparisons.png",
+            "imageSize": 100,
+            "heading": "<p>Comparisons</p>",
+            "content": "<p>Helpful comparisons from Softwarekeep to help you choose your new software better</p>",
+            "buttonText": "View More",
+            "buttonURL": "/blogs/comparaisons",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "filled"
+          }
+        },
+        "column_image_fdqUAJ": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/icon-tips-and-tricks.png",
+            "imageSize": 100,
+            "heading": "<p>Tips and Tricks</p>",
+            "content": "<p>Helpful tips and tricks from Softwarekeep to level up on your software</p>",
+            "buttonText": "View More",
+            "buttonURL": "/blogs/tips-and-tricks",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "filled"
+          }
+        },
+        "column_image_KCnft6": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/icon-troubleshooting.png",
+            "imageSize": 100,
+            "heading": "<p>Troubleshooting</p>",
+            "content": "<p>In-depth guide to help with your technical issues and troubleshooting</p>",
+            "buttonText": "View More",
+            "buttonURL": "/blogs/troubleshooting",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "filled"
+          }
+        },
+        "column_image_WiDFFg": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/icon-product-guides.png",
+            "imageSize": 100,
+            "heading": "<p>Product guides</p>",
+            "content": "<p>Helpful guides for you to understand your software better</p>",
+            "buttonText": "View More",
+            "buttonURL": "/blogs/product-guides",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "filled"
+          }
+        },
+        "column_image_nznCaY": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/icon-what-is.png",
+            "imageSize": 100,
+            "heading": "<p>What is?</p>",
+            "content": "<p>Step-by-step guides from Softwarekeep for your software.</p>",
+            "buttonText": "View More",
+            "buttonURL": "/blogs/what-is",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "filled"
+          }
+        },
+        "column_image_KYzh6r": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/icon-reviews.png",
+            "imageSize": 100,
+            "heading": "<p>Reviews</p>",
+            "content": "<p>Softwarekeeps helpful reviews on what software best fits your needs</p>",
+            "buttonText": "View More",
+            "buttonURL": "/blogs/reviews",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "filled"
+          }
+        }
+      },
+      "block_order": [
+        "column_image_bgCXUD",
+        "column_image_MCtHEA",
+        "column_image_fdqUAJ",
+        "column_image_KCnft6",
+        "column_image_WiDFFg",
+        "column_image_nznCaY",
+        "column_image_KYzh6r"
+      ],
+      "settings": {
+        "custom_id": "mt-40",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "#ffffff",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "#000000",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 240,
+        "colGap": 20,
+        "textAlign": "center",
+        "contentAlign": "top",
+        "colCount": "col-md-4"
+      }
+    },
+    "section_columns_9tcqzL": {
+      "type": "section__columns",
+      "blocks": {
+        "column_image_Npn6yk": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/icon-chat-help.png",
+            "imageSize": 100,
+            "heading": "<p>Live Chat</p>",
+            "content": "<p>Chat with us</p>",
+            "buttonText": "Start Chat",
+            "buttonURL": "javascript:zE.activate();",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "filled"
+          }
+        },
+        "column_image_hnMMR3": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/customerSupport.png",
+            "imageSize": 100,
+            "heading": "<p>Contact Us</p>",
+            "content": "<p>Send us a message</p>",
+            "buttonText": "Message Us",
+            "buttonURL": "/pages/contact-us",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "filled"
+          }
+        },
+        "column_image_JpM7Aw": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/share.png",
+            "imageSize": 100,
+            "heading": "<p>Follow Us</p>",
+            "content": "<p>Find us on social media</p>",
+            "buttonText": "Facebook",
+            "buttonURL": "https://www.facebook.com/softwarekeep",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "filled"
+          }
+        }
+      },
+      "block_order": [
+        "column_image_Npn6yk",
+        "column_image_hnMMR3",
+        "column_image_JpM7Aw"
+      ],
+      "settings": {
+        "custom_id": "cstm-need",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "Still need help?",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 240,
+        "colGap": 20,
+        "textAlign": "center",
+        "contentAlign": "top",
+        "colCount": "col-md-4"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "section_columns_3rmDRC",
+    "section_columns_9tcqzL"
+  ]
+}

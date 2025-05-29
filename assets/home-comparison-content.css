@@ -1,0 +1,100 @@
+.comparison-item-header{
+  display:flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.compare-heading-text{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  padding: 30px 0;
+}
+.comparison-item-wraps {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 0;
+}
+.background {
+  font-size: 20px;
+  color:#fff;
+  font-weight:600;
+  background: #0f1367;
+  padding: 20px 20px;
+  text-align: center;
+}
+.comparison-item {
+  display: flex;
+  gap: 20px;
+  width: 25%;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+.comparison-item .item{
+  font-size: 18px;
+  font-weight:600;
+  background: #d1f2ff;
+  padding: 20px 20px;
+  text-align: center;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-comparioson-list-content {
+  margin: 40px 0;
+}
+.comparison-item-wraps .bg-two{
+  background: #d3d3d3;
+}
+.comparison-item-wraps .bg-three{
+  background: #F0F0F0;
+}
+.comparison-item-wraps .bg-four{
+  background: #d3d3d3;
+}
+@media screen and (max-width: 980px) {
+ .comparison-item .item {
+    margin-bottom: 10px;
+ }
+ .home-comparioson-list-content {
+    margin:0;
+   }
+ .compare-heading-text {
+    text-align: center;
+    font-size: 27px;
+    padding-top:10px;
+ }
+ .comparison-container {
+    padding: 0 20px;
+ }
+  .comparison-item {
+    margin-left: 1px;
+    margin-bottom: 0px;
+  }
+ .comparison-item-wraps.mySlider .slick-next {
+    width: 50px;
+    height: 50px;
+    right: 0px;
+    background: url(/cdn/shop/files/arrow-next.png?v=1722251072) no-repeat center center #fff;
+    background-size: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+ }
+ .comparison-item-wraps.mySlider .slick-prev {
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    background: url(/cdn/shop/files/prev-arrow.png?v=1722251072) no-repeat center center #fff;
+    background-size: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+ }
+ .comparison-item-wraps.mySlider .slick-prev:before {
+   display:none;
+ }
+}

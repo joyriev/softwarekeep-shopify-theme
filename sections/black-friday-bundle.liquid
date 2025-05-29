@@ -1,0 +1,922 @@
+{{ 'black-friday.css' | asset_url | stylesheet_tag }}
+
+<div id="s-bundle-top-wrap" class="s-bundle-top-wrap">
+  <div class="s-bundle-top">
+    <div class="s-bundle-top-left">
+      You’re $50 away from <strong>Free VPN</strong>!
+    </div>
+    <div class="s-bundle-top-steps">
+      <div class="sb-top-step sb-free-support-step">
+        <div class="sb-top-step-check"></div>
+        Free Support
+        <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/support.png?v=1730574719">
+      </div>
+  
+      <div class="sb-top-step sb-free-vpn-step">
+        <div class="sb-top-step-check"></div>
+        Free VPN
+        <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/VPN_icon_71235c4e-fd2e-4ff2-9f5f-4529cd71bf65.png?v=1730968393">
+      </div>
+  
+      <div class="sb-top-step sb-free-gift-step">
+        <div class="sb-top-step-check"></div>
+        Free Mystery Gift
+        <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/gift_box_icon_dd673231-cfd6-42af-8419-47c9d78bc0f6.png?v=1730968401">
+      </div>
+    </div>
+
+    <div class="custom-currency">
+      <div class="i18n__button">
+         <div class="abs-localization-country">
+           {%- form 'localization', class: 'localization-form' -%}
+              <div class="localization-form__select">
+                <select class="localization-selector link" aria-label="currency" id="localization-country" name="country_code">
+                  {%- for country in localization.available_countries -%}
+                    <option value="{{ country.iso_code }}" {%- if country.iso_code == localization.country.iso_code %} selected{% endif %} style="background:##efefef; color:#000;">
+                   {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+                    </option>
+                  {%- endfor -%}
+                </select>
+              </div>
+            {%- endform -%}
+         </div>  
+      </div>
+      <script>
+          document.addEventListener('DOMContentLoaded', function(event) {
+          let lc = document.getElementById('localization-country');
+          if (lc) {
+            lc.addEventListener('change', function(event) {
+              event.currentTarget.parentNode.parentNode.submit();
+            });
+          }
+          let ll = document.getElementById('localization-language');
+          if (ll) {
+            ll.addEventListener('change', function(event) {
+              event.currentTarget.parentNode.parentNode.submit();
+            });
+          }
+        });
+      </script>  
+    </div>
+  </div>  
+</div>
+
+<div class="s-bundle-banner">
+  
+  <div class="s-bundle-banner-body">
+    <div class="s-bundle-banner-logo">
+      <img style="cursor: pointer"; onclick="document.location = '/';" src="{{ section.settings.logo | img_url: 'master' }}">
+      <div class="coupon_text_container">
+        <span class="cod_sale">Code: </span>
+        <div class="promo-bar-coupon">
+          <span id="fbm-text">CM21</span>
+          <span id="fbm-copy-btn" class="copy_text"><i class="uil uil-copy"></i></span>
+        </div>    
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const copyButton = document.querySelector('#fbm-copy-btn');
+        
+        if (copyButton) {
+          copyButton.addEventListener('click', e => {
+            console.log("123");
+            
+            var text = document.querySelector('#fbm-text').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+              copyButton.style.display = 'none';
+              document.querySelector('#fbm-text').innerHTML = 'Copied <i class="uil uil-check-circle"></i>';
+              setTimeout(() => {
+                  document.querySelector('#fbm-text').innerHTML = text;
+                  copyButton.style.display = 'block';
+              }, 4000);
+            }).catch(err => {
+              console.error('Failed to copy text: ', err);
+            });
+          });
+        } else {
+          console.error('Copy button not found');
+        }
+      });
+
+    </script>
+    
+    <h1 class="d-only">{{ section.settings.title_desktop }}</h1>
+    <h1 class="m-only">{{ section.settings.title_mobile }}</h1>
+    {% if section.settings.subtitle != blank %}
+      <h3 class="d-only">{{ section.settings.subtitle }}</h3>
+    {% endif %}
+    <p class="d-only">{{ section.settings.description }}</p>
+  </div>
+
+  <div class="s-bundle-banner-label">
+    {{ section.settings.label }}
+  </div>
+</div>
+
+<div id="s-bundle-nav-container" class="s-bundle-nav-container s-bundle-container">
+  <div class="sb-nav-title">
+    <div class="line"></div>
+    <span>SHOP BY CATEGORY</span>
+    <div class="line"></div>
+  </div>
+  
+  <div id="s-bundle-nav" class="s-bundle-nav">
+  {% for block in section.blocks %}
+    {% if block.type == 'collection' %}
+      <a href="#{{ block.settings.collection.handle }}">
+        <img src="{{ block.settings.image | img_url: 'master'}}">
+        <label data-collection="{{ block.settings.collection.handle }}">
+          {{ block.settings.title }}
+        </label>
+      </a>
+    {% endif %}
+  {% endfor %}  
+  </div>  
+</div>
+
+<div class="s-bundle-body s-bundle-container">
+  <!-- Collection Navigation and Products -->
+  <div class="s-bundle-category">
+    <div class="s-bundle-collections">
+      {% assign first_index = 0 %}
+      {% for block in section.blocks %}
+        {% if block.type == 'collection' %}
+          {% assign first_index = first_index | plus: 1 %}
+          <div id="{{ block.settings.collection.handle }}" class="s-bundle-collection-wrap">
+            <h2 class="s-bundle-collection-title">{{ block.settings.collection.title }} <div class="line"></div></h2>
+            <div class="s-bundle-collection {% if first_index == 1 %}active{% endif %}" data-collection="{{ block.settings.collection.handle }}">
+              {% for product in block.settings.collection.products %}
+                <div class="s-bundle-product {% if block.settings.collection.handle == 'microsoft-office-black-friday-deals'%}{% if  forloop.index > 8  %}d-none{% endif %}{% elsif forloop.index > 4 %}d-none{% endif %}" 
+                  data-product-id="{{ product.variants[0].id }}" 
+                  data-unique-id="{{ block.settings.collection.handle }}-{{ product.variants[0].id }}"
+                  data-product-price="{{ product.price | divided_by: 100 }}" 
+                  data-handle="{{ product.handle }}">
+
+                  {% if product.handle == 'microsoft-office-2021-home-and-student-pc' or product.handle == 'windows-11-home' or product.handle == 'microsoft-word-2024-pc' %}
+                    <img class="s-bundle-customer-choose-img" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/customer-choice.png?v=1731675933">
+                  {% endif %}
+                
+                  <div class="s-bundle-product-image" data-image="{{ product.featured_image | img_url: 'master' }}">
+                    <img src="{{ product.featured_image | img_url: 'master' }}">
+                    {% if product.title contains 'Microsoft Office 2021 Home & Student (PC)' or product.title contains 'Microsoft Office 2024 Home & Business for Mac' %}
+                      <div class="s-hot-stuff" {% if product.handle == 'microsoft-office-2021-home-and-student-pc' or product.handle == 'windows-11-home' or product.handle == 'microsoft-word-2024-pc' %}style="top: 40px;"{% endif %}>HOT STUFF  </div>
+                    {% endif %}
+                  </div>
+                  <div class="s-bundle-product-des">
+                    <h3>{{ product.title }}</h3>
+                    {% comment %}
+                    {% if product.handle contains 'office' %}
+                      <img class="s-bundle-product-hot" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_419_fc898209-37fb-4a7f-83b7-d91020a883d1.png?v=1730732900">
+                    {% endif %}
+                    {% endcomment %}  
+                    <div class="s-bundle-price">
+                      {% if product.compare_at_price > product.price %}
+                        <div class="s-bundle-prices">
+                          <span class="discounted-price">{{ product.price | money }}</span>
+                          <div class="s-discount-content">
+                            <span class="s-bundle-price-off">Save {{ product.compare_at_price | minus: product.price | money }}</span>    
+                            Was <span class="original-price">{{ product.compare_at_price | money }}</span>         
+                          </div>
+                          
+                        </div>
+
+                        {% assign percentage = product.price | times: 100 | divided_by: product.compare_at_price %}
+                        {% assign discount_percentage = 100 | minus: percentage  %}
+                        
+                        
+                      {% else %}
+                        <span class="current-price">{{ product.price | money }}</span>
+                      {% endif %}
+                    </div>
+                  </div>
+                  <button class="add-to-bundle">Add +</button>
+
+                  <!-- Quantity box (initially hidden) -->
+                  <div class="quantity-box" style="display: none;">
+                    <button class="quantity-decrease" data-product-id="{{ block.settings.collection.handle }}-{{ product.variants[0].id }}">-</button>
+                    <div class="quantity-display" data-product-id="{{ block.settings.collection.handle }}-{{ product.variants[0].id }}">1</div>
+                    <button class="quantity-increase" data-product-id="{{ block.settings.collection.handle }}-{{ product.variants[0].id }}">+</button>
+                  </div>
+
+                  <div class="s-bundle-product-guarantee">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none"><path d="M12.9552 5.0514C12.8581 4.50109 12.569 4.00015 12.1409 3.64094C11.898 3.43714 11.7339 3.15297 11.6788 2.84074C11.5818 2.29043 11.2926 1.7895 10.8645 1.43029C10.4364 1.07108 9.89293 0.87323 9.3341 0.87323C9.01707 0.87323 8.70866 0.760984 8.46578 0.557182C8.03767 0.197975 7.49419 0.00012207 6.93536 0.00012207C6.37652 0.00012207 5.83305 0.197975 5.40493 0.557182C5.16206 0.760984 4.85373 0.87323 4.53662 0.87323C3.97778 0.87323 3.43431 1.07108 3.00619 1.43029C2.57808 1.7895 2.28893 2.29043 2.19187 2.84074C2.13681 3.15297 1.9728 3.43714 1.72983 3.64094C1.30171 4.00015 1.01257 4.50109 0.915511 5.0514C0.818449 5.60171 0.918885 6.17138 1.19835 6.65526C1.35686 6.92984 1.41387 7.25299 1.35881 7.56523C1.26175 8.11554 1.36219 8.68521 1.64165 9.16909C1.92102 9.65307 2.36415 10.0248 2.88924 10.216C3.18717 10.3244 3.43857 10.5353 3.59709 10.8099C3.87646 11.2939 4.31958 11.6656 4.84468 11.8568C5.36977 12.0479 5.94823 12.0479 6.47332 11.8568C6.77125 11.7484 7.09938 11.7484 7.39731 11.8568C7.6599 11.9523 7.93572 12.0001 8.21163 12.0001C8.48754 12.0001 8.76336 11.9523 9.02595 11.8568C9.55104 11.6657 9.99417 11.2939 10.2735 10.8099C10.4321 10.5353 10.6835 10.3244 10.9814 10.216C11.5065 10.0249 11.9496 9.65307 12.229 9.16909C12.5083 8.68512 12.6088 8.11554 12.5118 7.56523C12.4568 7.25299 12.5138 6.92984 12.6723 6.65526C12.9517 6.17129 13.0521 5.60171 12.9551 5.0514H12.9552ZM9.37699 5.2544L6.82213 7.7788C6.70607 7.89344 6.54862 7.95791 6.38451 7.95791C6.22041 7.95791 6.06296 7.89344 5.94689 7.7788L4.74522 6.59142C4.50349 6.35262 4.50349 5.96536 4.74522 5.72656C4.98694 5.48777 5.37882 5.48777 5.62054 5.72656L6.3846 6.48148L8.50184 4.38946C8.74356 4.15067 9.13544 4.15067 9.37717 4.38946C9.61889 4.62825 9.61889 5.01552 9.37717 5.25431L9.37699 5.2544Z" fill="black"/></svg>
+                    <span>Lowest price guarantee</span>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+
+            <p class="s-bundle-collection-count">Showing {% if block.settings.collection.handle == 'microsoft-office-black-friday-deals'%}8{% else %}4{% endif %}/{{ block.settings.collection.products_count }}</p>
+            <button class="see-more">See More</button>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="s-bundle-bottom-wrap">
+  <div class="s-bundle-bottom">
+    <div class="total-price-wrap">Total: <span><span id="total-price">0.00</span></span></div>
+    <div class="s-bundle-products-wrap">
+      <!-- Selected bundle items with 5 placeholders -->
+      <div class="s-bundle-products">
+        <div class="s-bundle-item">
+          <div class="s-bundle-item-image"></div>
+        </div>
+        <div class="s-bundle-item">
+          <div class="s-bundle-item-image"></div>
+        </div>
+        <div class="s-bundle-item">
+          <div class="s-bundle-item-image"></div>
+        </div>
+        <div class="s-bundle-item">
+          <div class="s-bundle-item-image"></div>
+        </div>
+        <div class="s-bundle-item">
+          <div class="s-bundle-item-image"></div>
+        </div>
+      </div>
+      <div class="more-items d-none"></div>
+    </div>
+    <div class="s-bundle-checkout-wrap">
+      <button id="s-bundle-checkout" class="s-bundle-checkout">Checkout</button>
+    </div>  
+  </div>  
+</div>
+
+
+<div id="free-gift-popup" class="popup d-none">
+  <div class="popup-content">
+    <button class="popup-close" onclick="closeGiftPopup()">×</button>
+    
+    <h3>Choose Your Free Gift</h3>
+    <div class="free-gift-items">
+      {% for block in section.blocks %}
+        {% if block.type == 'gift' %}
+          <div class="free-gift-item" data-product-id="{{ block.settings.product.variants[0].id }}" data-product-price="{{ block.settings.product.price | divided_by: 100 }}" data-image="{{ block.settings.product.featured_image | img_url: 'medium' }}">
+            <div class="free-gift-item-image" style="background-image: url({{ block.settings.product.featured_image | img_url: 'medium' }})"></div>
+            <div class="free-gift-item-des">
+              <span>{{ block.settings.product.title }}</span>  
+              <button class="free-gift-item-add">Add</button>
+            </div>            
+          </div>
+        {% endif %}  
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+// Global variables
+let totalAmount = 0;
+const bundleItems = new Map();
+let isFirstClick = true;
+const initialStickyHeight = 200;
+
+// Core functionality
+const BundleManager = {
+  // Price management
+  updateTotalPrice() {
+    const totalPriceElement = document.getElementById('total-price');
+    const totalPriceWrap = document.querySelector('.total-price-wrap');
+    
+    if (totalPriceElement && totalPriceWrap) {
+      // Get currency format from any product price
+      const priceElement = document.querySelector('.discounted-price');
+      let currencyFormat = '$';
+      
+      if (priceElement) {
+        // Get the full currency format (e.g., "€", "£", "$", "kr", etc.)
+        const currencyMatch = priceElement.textContent.trim().match(/[^0-9,.]/);
+        if (currencyMatch) {
+          currencyFormat = currencyMatch[0];
+        }
+      }
+
+      // Format the total price with the same currency format as products
+      totalPriceElement.textContent = totalAmount.toFixed(2);
+      totalPriceWrap.innerHTML = `Total: <span id="total-price">${currencyFormat}${totalAmount.toFixed(2)}</span>`;
+    }
+  },
+
+  // Banner management
+  updateTopBanner() {
+    const topLeftMessage = document.querySelector('.s-bundle-top-left');
+    const steps = document.querySelectorAll('.sb-top-step');
+    const checkImage = `<img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_48098334.png?v=1730574219" alt="Check" style="width: 26px; height: 26px;">`;
+    
+    // Get currency format from any product price
+    const priceElement = document.querySelector('.discounted-price');
+    let currencyFormat = '$';
+    if (priceElement) {
+      const currencyMatch = priceElement.textContent.trim().match(/[^0-9,.]/);
+      if (currencyMatch) {
+        currencyFormat = currencyMatch[0];
+      }
+    }
+    
+    // Add support step by default
+    steps[0].classList.add('active');
+    steps[0].querySelector('.sb-top-step-check').innerHTML = checkImage;
+    
+    if (totalAmount === 0) {
+      // Initial state
+      topLeftMessage.innerHTML = `You're {{ 5000 | money }} away from <strong>Free VPN</strong> worth ${currencyFormat}79!`;
+      steps[1].classList.remove('active');
+      steps[1].querySelector('.sb-top-step-check').innerHTML = '';
+      steps[2].classList.remove('active');
+      steps[2].querySelector('.sb-top-step-check').innerHTML = '';
+    } else if (totalAmount < 50) {
+      topLeftMessage.innerHTML = `You're ${currencyFormat}${(50 - totalAmount).toFixed(2)} away from <strong>Free VPN</strong> worth ${currencyFormat}79!`;
+      steps[1].classList.remove('active');
+      steps[1].querySelector('.sb-top-step-check').innerHTML = '';
+      steps[2].classList.remove('active');
+      steps[2].querySelector('.sb-top-step-check').innerHTML = '';
+    } else if (totalAmount < 150) {
+      topLeftMessage.innerHTML = `You're ${currencyFormat}${(150 - totalAmount).toFixed(2)} away from <strong>Free Mystery Gift</strong>!`;
+      steps[1].classList.add('active');
+      steps[1].querySelector('.sb-top-step-check').innerHTML = checkImage;
+      steps[2].classList.remove('active');
+      steps[2].querySelector('.sb-top-step-check').innerHTML = '';
+    } else {
+      topLeftMessage.innerHTML = `You've unlocked all benefits!`;
+      steps.forEach(step => {
+        step.classList.add('active');
+        step.querySelector('.sb-top-step-check').innerHTML = checkImage;
+      });
+    }
+  },
+
+  // Bundle items management
+  updateBundleItems() {
+    const bundleContainer = document.querySelector('.s-bundle-products');
+    const moreItems = document.querySelector('.more-items');
+    
+    if (bundleContainer) {
+      // Create array of 5 placeholder items
+      const placeholders = Array(5).fill(null);
+      let itemCount = 0;
+
+      // Fill placeholders with actual items
+      bundleItems.forEach((item, id) => {
+        if (itemCount < 5) {
+          placeholders[itemCount] = {
+            id: id,
+            item: item
+          };
+        }
+        itemCount++;
+      });
+
+      // Clear container
+      bundleContainer.innerHTML = '';
+
+      // Render all 5 slots (filled or empty)
+      placeholders.forEach((placeholder, index) => {
+        if (placeholder) {
+          // Render filled slot
+          const removeIconHTML = (!placeholder.item.gift && !placeholder.item.vpn) ? 
+            `<span class="remove-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9.14408" cy="8.71342" r="8.71354" fill="#E2181C"/> <line x1="5.70282" y1="5.51556" x2="12.3417" y2="12.1544" stroke="white" stroke-width="0.829861"/> <line y1="-0.414931" x2="9.38881" y2="-0.414931" transform="matrix(-0.707107 0.707107 0.707107 0.707107 12.7859 5.80896)" stroke="white" stroke-width="0.829861"/></svg></span>` : '';
+          
+          bundleContainer.insertAdjacentHTML('beforeend', `
+            <div class="s-bundle-item" data-product-id="${placeholder.id}">
+              <div class="s-bundle-item-image" style="background-image: url('${placeholder.item.imageUrl}');">
+                ${removeIconHTML}
+              </div>
+            </div>
+          `);
+        } else {
+          // Render empty slot
+          bundleContainer.insertAdjacentHTML('beforeend', `
+            <div class="s-bundle-item">
+              <div class="s-bundle-item-image"></div>
+            </div>
+          `);
+        }
+      });
+
+      // Update more items indicator
+      if (itemCount > 5) {
+        moreItems.classList.remove('d-none');
+        moreItems.textContent = `+${itemCount - 5} more items`;
+      } else {
+        moreItems.classList.add('d-none');
+      }
+
+      this.attachRemoveListeners();
+    }
+  },
+
+  // Progress and rewards
+  updateProgressBar() {
+    this.handleVPNReward();
+    this.handleGiftReward();
+    this.updateTopBanner();
+    this.updateBundleItems();
+  },
+
+  handleVPNReward() {
+    if (totalAmount >= 50) {
+      let hasVPN = false;
+      bundleItems.forEach(item => {
+        if (item.vpn) hasVPN = true;
+      });
+      
+      if (!hasVPN) {
+        // Get VPN product data from the section settings
+        const vpnVariant = {{ section.settings.vpn.variants[0].id | json }};
+        const vpnTitle = {{ section.settings.vpn.title | json }};
+        const vpnImage = {{ section.settings.vpn.featured_image | img_url: 'medium' | json }};
+        
+        // Add VPN to bundle items
+        bundleItems.set(`vpn-${vpnVariant}`, {
+          id: vpnVariant,
+          title: vpnTitle,
+          imageUrl: vpnImage,
+          price: 0,
+          gift: false,
+          vpn: true
+        });
+
+        // Update UI
+        this.updateBundleItems();
+        this.updateTotalPrice();
+      }
+    } else {
+      // Remove VPN if total drops below threshold
+      bundleItems.forEach((item, id) => {
+        if (item.vpn) {
+          bundleItems.delete(id);
+          this.updateBundleItems();
+          this.updateTotalPrice();
+        }
+      });
+    }
+  },
+
+  handleGiftReward() {
+    if (totalAmount >= 150) {
+      let hasGift = false;
+      bundleItems.forEach(item => {
+        if (item.gift) hasGift = true;
+      });
+      
+      if (!hasGift) {
+        this.showGiftPopup();
+      }
+    } else {
+      bundleItems.forEach((item, id) => {
+        if (item.gift) bundleItems.delete(id);
+      });
+    }
+  },
+
+  // Event listeners
+  attachRemoveListeners() {
+    document.querySelectorAll('.remove-icon').forEach(icon => {
+      icon.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const productElement = icon.closest('.s-bundle-item');
+        if (productElement) {
+          const uniqueId = productElement.getAttribute('data-product-id');
+          if (bundleItems.has(uniqueId)) {
+            const itemData = bundleItems.get(uniqueId);
+            totalAmount -= itemData.price * (itemData.quantity || 1);
+            bundleItems.delete(uniqueId);
+
+            // Find and update the original product's UI
+            const originalProduct = document.querySelector(`.s-bundle-product[data-unique-id="${uniqueId}"]`);
+            if (originalProduct) {
+              const addButton = originalProduct.querySelector('.add-to-bundle');
+              const quantityBox = originalProduct.querySelector('.quantity-box');
+              
+              if (addButton && quantityBox) {
+                addButton.style.display = 'block';
+                quantityBox.style.display = 'none';
+                
+                const quantityDisplay = quantityBox.querySelector('.quantity-display');
+                if (quantityDisplay) {
+                  quantityDisplay.textContent = '1';
+                }
+              }
+            }
+
+            this.updateProgressBar();
+            this.updateTotalPrice();
+            this.updateBundleItems();
+          }
+        }
+      });
+    });
+  },
+
+  attachQuantityControlEvents() {
+    this.handleQuantityIncrease();
+    this.handleQuantityDecrease();
+  },
+
+  handleQuantityIncrease() {
+    // Remove existing event listeners first
+    document.querySelectorAll('.quantity-increase').forEach(button => {
+      button.removeEventListener('click', this.increaseQuantityHandler);
+    });
+
+    // Add new event listeners
+    document.querySelectorAll('.quantity-increase').forEach(button => {
+      button.addEventListener('click', this.increaseQuantityHandler.bind(this));
+    });
+  },
+
+  handleQuantityDecrease() {
+    // Remove existing event listeners first
+    document.querySelectorAll('.quantity-decrease').forEach(button => {
+      button.removeEventListener('click', this.decreaseQuantityHandler);
+    });
+
+    // Add new event listeners
+    document.querySelectorAll('.quantity-decrease').forEach(button => {
+      button.addEventListener('click', this.decreaseQuantityHandler.bind(this));
+    });
+  },
+
+  // Add these new methods to handle the quantity changes
+  increaseQuantityHandler(event) {
+    const button = event.currentTarget;
+    const uniqueId = button.getAttribute('data-product-id');
+    const item = bundleItems.get(uniqueId);
+
+    if (item) {
+      item.quantity = (item.quantity || 1) + 1;
+      totalAmount += item.price;
+      
+      // Update quantity display
+      const quantityDisplay = document.querySelector(`.quantity-display[data-product-id="${uniqueId}"]`);
+      if (quantityDisplay) {
+        quantityDisplay.textContent = item.quantity;
+      }
+      
+      this.updateTotalPrice();
+      this.updateProgressBar();
+      this.updateBundleItems();
+    }
+  },
+
+  decreaseQuantityHandler(event) {
+    const button = event.currentTarget;
+    const uniqueId = button.getAttribute('data-product-id');
+    const item = bundleItems.get(uniqueId);
+    const productElement = button.closest('.s-bundle-product');
+
+    if (item && productElement) {
+      if ((item.quantity || 1) > 1) {
+        // Decrease quantity
+        item.quantity -= 1;
+        totalAmount -= item.price;
+        
+        // Update quantity display
+        const quantityDisplay = document.querySelector(`.quantity-display[data-product-id="${uniqueId}"]`);
+        if (quantityDisplay) {
+          quantityDisplay.textContent = item.quantity;
+        }
+      } else {
+        // Remove item if quantity would become 0
+        totalAmount -= item.price;
+        bundleItems.delete(uniqueId);
+        
+        // Update UI
+        const quantityBox = productElement.querySelector('.quantity-box');
+        const addButton = productElement.querySelector('.add-to-bundle');
+        
+        if (quantityBox && addButton) {
+          quantityBox.style.display = 'none';
+          addButton.style.display = 'block';
+          
+          // Reset quantity display to 1
+          const quantityDisplay = quantityBox.querySelector('.quantity-display');
+          if (quantityDisplay) {
+            quantityDisplay.textContent = '1';
+          }
+        }
+      }
+      
+      this.updateTotalPrice();
+      this.updateProgressBar();
+      this.updateBundleItems();
+    }
+  },
+
+  // UI Helpers
+  resetProductUI(productId) {
+    const originalProduct = document.querySelector(`.s-bundle-product[data-product-id="${productId}"]`);
+    if (originalProduct) {
+      const addButton = originalProduct.querySelector('.add-to-bundle');
+      const quantityBox = originalProduct.querySelector('.quantity-box');
+      if (addButton && quantityBox) {
+        addButton.style.display = 'block';
+        quantityBox.style.display = 'none';
+      }
+    }
+  },
+
+  decreaseQuantity(productId, item) {
+    item.quantity -= 1;
+    totalAmount -= item.price;
+    const quantityDisplay = document.querySelector(`.quantity-display[data-product-id="${productId}"]`);
+    if (quantityDisplay) {
+      quantityDisplay.textContent = item.quantity;
+    }
+    this.updateTotalPrice();
+    this.updateProgressBar();
+  },
+
+  // Popup management
+  showGiftPopup() {
+    document.getElementById('free-gift-popup').classList.remove('d-none');
+  },
+
+  closeGiftPopup() {
+    document.getElementById('free-gift-popup').classList.add('d-none');
+  }
+};
+
+// Add to bundle click handlers
+function initializeAddToBundle() {
+  document.querySelectorAll('.add-to-bundle').forEach(button => {
+    button.addEventListener('click', () => {
+      const productElement = button.closest('.s-bundle-product');
+      
+      if (productElement) {
+        const uniqueId = productElement.getAttribute('data-unique-id');
+        const productId = productElement.getAttribute('data-product-id');
+        const productPrice = parseFloat(productElement.getAttribute('data-product-price'));
+        const productTitle = productElement.querySelector('h3').textContent;
+        const imageUrl = productElement.querySelector('.s-bundle-product-image').getAttribute('data-image');
+
+        if (!bundleItems.has(uniqueId)) {
+          bundleItems.set(uniqueId, { 
+            id: productId, // Store the actual product ID for cart submission
+            title: productTitle, 
+            imageUrl, 
+            price: productPrice, 
+            quantity: 1, 
+            gift: false, 
+            vpn: false 
+          });
+          
+          totalAmount += productPrice;
+          button.style.display = 'none';
+          
+          const quantityBox = productElement.querySelector('.quantity-box');
+          if (quantityBox) {
+            quantityBox.style.display = 'flex';
+          }
+          
+          BundleManager.updateProgressBar();
+          BundleManager.updateBundleItems();
+          BundleManager.updateTotalPrice();
+        }
+      }
+    });
+  });
+}
+
+// Initialize on DOM load
+document.addEventListener('DOMContentLoaded', () => {
+  BundleManager.attachQuantityControlEvents();
+  BundleManager.updateTopBanner();
+  
+  // Initialize all functionality
+  initializeAddToBundle();
+  initializeCategoryNavigation();
+  initializeSeeMore();
+});
+
+// Helper functions
+function initializeCategoryNavigation() {
+  // Remove any existing click handlers first
+  document.querySelectorAll('.s-bundle-nav a').forEach(link => {
+    link.removeEventListener('click', handleCategoryClick);
+  });
+
+  // Add new click handlers
+  document.querySelectorAll('.s-bundle-nav a').forEach(link => {
+    link.addEventListener('click', handleCategoryClick);
+  });
+}
+
+// Add this new function to handle the category click event
+function handleCategoryClick(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  
+  const link = e.currentTarget;
+  const targetId = link.getAttribute('href');
+  
+  // Remove active class from all links
+  document.querySelectorAll('.s-bundle-nav a').forEach(a => {
+    a.classList.remove('active');
+  });
+  
+  // Add active class to clicked link
+  link.classList.add('active');
+  
+  // Check if this is the first click globally
+  let totalStickyHeight;
+    // Calculate dynamic height for subsequent clicks
+    const stickyHeader1 = document.querySelector('#shopify-section-bottom-info-bar');
+    const stickyHeader2 = document.querySelector('#s-bundle-top-wrap');
+    const stickyHeader3 = document.querySelector('#desktop_headers');
+    const stickyHeader4 = document.querySelector('#s-bundle-nav-container');
+    
+    const stickyHeaderHeight1 = stickyHeader1 ? stickyHeader1.offsetHeight : 0;
+    const stickyHeaderHeight2 = stickyHeader2 ? stickyHeader2.offsetHeight : 0;
+    const stickyHeaderHeight3 = stickyHeader3 ? stickyHeader3.offsetHeight : 0;
+    let stickyHeaderHeight4;
+
+    if (window.innerWidth < 768) {
+        stickyHeaderHeight4 = stickyHeader4 ? stickyHeader4.offsetHeight - 40 : 0;
+    } else {
+        stickyHeaderHeight4 = stickyHeader4 ? stickyHeader4.offsetHeight : 0;
+    }
+
+    
+    totalStickyHeight = stickyHeaderHeight1 + stickyHeaderHeight2 + stickyHeaderHeight3 + stickyHeaderHeight4;
+  
+  // Get target section and scroll
+  const targetSection = document.querySelector(targetId);
+  if (targetSection) {
+    const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset - totalStickyHeight;
+    window.scrollTo({
+      top: targetPosition,
+      behavior: 'smooth'
+    });
+  }
+}
+
+function initializeSeeMore() {
+  document.querySelectorAll('.see-more').forEach(button => {
+    button.addEventListener('click', function() {
+      const collectionWrap = this.closest('.s-bundle-collection-wrap');
+      if (collectionWrap) {
+        const products = collectionWrap.querySelectorAll('.s-bundle-product.d-none');
+        products.forEach(product => product.classList.remove('d-none'));
+        
+        this.style.display = 'none';
+        collectionWrap.querySelector('.s-bundle-collection-count').style.display = 'none';
+      }
+    });
+  });
+}
+
+// Add these functions before the DOMContentLoaded event
+
+// Gift item click handler
+document.querySelectorAll('.free-gift-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const selectedGiftId = item.getAttribute('data-product-id');
+    const selectedGiftPrice = parseFloat(item.getAttribute('data-product-price'));
+    const imageUrl = item.getAttribute('data-image');
+
+    // Add the gift to the bundle
+    bundleItems.set(selectedGiftId, { 
+      id: selectedGiftId,
+      title: item.querySelector('span').innerText, 
+      imageUrl, 
+      quantity: 1, 
+      price: selectedGiftPrice, 
+      gift: true, 
+      vpn: false 
+    });
+
+    // Hide the popup
+    BundleManager.closeGiftPopup();
+    BundleManager.updateBundleItems();
+  });
+});
+
+// Checkout handler
+document.getElementById('s-bundle-checkout').addEventListener('click', () => {
+  if (bundleItems.size === 0) {
+    alert("Please add at least one product to proceed to checkout.");
+    return;
+  }
+
+  const checkoutItems = Array.from(bundleItems.entries()).map(([uniqueId, productDetails]) => ({
+    id: productDetails.id, // Use the actual product ID stored in the item data
+    quantity: productDetails.quantity || 1
+  }));
+
+  fetch('/cart/add.js', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ items: checkoutItems })
+  })
+  .then(response => response.json())
+  .then(data => {
+    // window.location.href = '/cart';
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert('There was an error adding items to cart. Please try again.');
+  });
+});
+
+// Close popup functions
+function closeVPNPopup() {
+  alert("Please choose 1 item before closing.");
+}
+
+function closeGiftPopup() {
+  document.getElementById("free-gift-popup").classList.add("d-none");
+}
+</script>                
+                      
+{% schema %}
+{
+  "name": "Custom Bundle Discount",
+  "class": "s-bundle-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "text",
+      "id": "title_desktop",
+      "label": "Desktop Title",
+      "default": "Build Your Own Bundle"
+    },
+    {
+      "type": "text",
+      "id": "title_mobile",
+      "label": "Mobile Title",
+      "default": "Build Your Own Bundle"
+    },    
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "html",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label text"
+    },
+    {
+      "type": "product",
+      "id": "vpn",
+      "label": "Free VPN Product"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "gift",
+      "name": "Free Gift",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Icon image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Category label"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Bundle Discount"
+    }
+  ]
+}
+{% endschema %}

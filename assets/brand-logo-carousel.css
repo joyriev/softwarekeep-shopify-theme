@@ -1,0 +1,104 @@
+.brand-logo-slide .logc_list{
+   margin-top:20px;
+}
+/* .slide_crosl_wraps .item {
+   animation: animate 35s linear infinite;
+} */
+.brand-logo-slide .slide_crosl_wraps .item img{
+  min-width: 150px;
+  padding: 0px;
+}
+.brand-logo-slide .slide_crosl_wraps:hover .item {
+  animation-play-state: paused;
+}
+/* @keyframes animate {
+0% {
+  transform: translate3d(0, 0, 0);
+ }
+100% {
+  transform: translate3d(-1800px, 0, 0);
+ }
+} */
+.brand-logo-slide .slide_crosl_wraps {
+    display: flex;
+    padding: 10px 0 20px;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+}
+.logo_listing {
+    display: flex;
+}
+.brand-logo-slide .slide_crosl_wraps img {
+  max-width: 96px;
+  height: 30px;
+  margin:0px 2px;
+}
+.brand-logo-slide .smal_heads {
+  text-align: center;
+  font-size: 20px;
+  color: #343333; 
+}
+.slide_crosl_wraps .smal_heads {
+  position:relative;
+}
+.slide_crosl_wraps .smal_heads:after {
+    content: "";
+    border-right: 1px solid #000;
+    right: -31px;
+    top: 0;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+@media screen and (max-width: 767px) {
+  .brand-logo-slide .slide_crosl_wraps .item img {
+     min-width: 130px;
+     margin: 0;
+     height: 20px;
+   }
+  .slide_crosl_wraps .smal_heads {
+    margin-bottom: 5px;
+  }
+  .brand-logo-slide .smal_heads {
+    margin-top: 5px;
+  }
+  .brand-logo-slide .item {
+     width: 40%;
+  }
+  .slide_crosl_wraps {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 20px;
+  }
+  .brand-logo-slide .logc_list {
+    margin: 20px 0px;
+  }
+  .smal_heads {
+     margin-top: 45px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .brand-logo-slide .item:nth-child(5) {
+    display:none;
+  }
+  .brand-logo-slide .item:nth-child(6) {
+    display:none;
+  }
+     .logo_listing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+  .slide_crosl_wraps .smal_heads:after {
+    display:none;
+  }
+  .brand-logo-slide .slide_crosl_wraps {
+    gap: 12px;
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+}

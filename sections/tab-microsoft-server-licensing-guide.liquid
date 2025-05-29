@@ -1,0 +1,190 @@
+{{ "microsoft windows server licensing guide.css" | asset_url | stylesheet_tag }}
+<div class="max-width ms-0ffice_license">
+  <div class="radio-box">
+    <div class="row justify-between">
+      
+      <div class="w-auto title-wrapper"> {% if section.settings.head != blank %} <h1 class="h1title">{{ section.settings.head }}</h1> {% else %} <h1 class="h1title">{{ page.title }}</h1> {% endif %} {% if section.settings.subtext != blank %} <p>{{ section.settings.subtext }}</p> {% endif %} <div class="server-button">
+          <a class="btn btn-lg btn-primary with-color" href="{{ section.settings.cat_link }}">{{ section.settings.cat_link_text }}</a>
+          <a class="btn btn-lg btn-secondary mt-3 mt-md-0 transparent-color" href="#">{{ section.settings.rqtext }}</a>
+        </div>
+      </div>
+      
+      <div class="matrix-toggles mb-0" style="">
+        <table id="table-switches-table">
+          <tbody>
+            <tr>
+              <td colspan="4">
+                <div class="btn-container">
+                  {% if section.settings.alltab != blank %}
+                    <button class="btn btn-md btn-primary" id="select-all">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                        <rect x="0.369141" width="18" height="18" rx="9" fill="white" />
+                        <rect x="2.36914" y="2" width="14" height="14" rx="7" fill="#05AA16" />
+                        <path d="M6.36914 10.1667L7.99076 12L12.3691 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg> 
+                        {{ section.settings.alltab }}
+                    </button>
+                  {% endif %}  
+                          
+                  {% if section.settings.alltabone != blank %}
+                    <button class="btn btn-md btn-secondary" id="select-none">
+                      <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8" cy="8" r="8" fill="white" />
+                      </svg> 
+                        {{ section.settings.alltabone }}
+                    </button>
+                  {% endif %}
+                          
+                </div>
+              </td>
+            </tr>
+
+          {% for block in section.blocks %}
+            <tr class="light-border-bottom">
+              <td class="main-toggle">
+                <input type="checkbox" id="{{ block.settings.tabid1 }}" checked="" onclick="toggleGroup('{{ block.settings.tabid1 }}')">
+                <label class="customCheckbox"></label> {{ block.settings.tab1 }}
+              </td>
+              <td>
+                <input type="checkbox" id="{{ block.settings.tabid2 }}" checked="">
+                <label class="customCheckbox"></label>
+                <label>{{ block.settings.tab2 }}</label>
+              </td>
+              <td>
+                <input type="checkbox" id="{{ block.settings.tabid3 }}" checked="">
+                <label class="customCheckbox"></label>
+                <label>{{ block.settings.tab3 }}</label>
+              </td>
+              
+              <td>
+                {% if block.settings.tab4 != blank %}
+                  <input type="checkbox" id="{{ block.settings.tabid4 }}" checked="">
+                  <label class="customCheckbox"></label>
+                  <label>{{ block.settings.tab4 }}</label>
+                {% endif %}
+              </td>
+            </tr>
+          {% endfor %}    
+                                                 
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Tab Licensing Guide",
+    "settings": [
+      {
+        "type": "text",
+        "id": "head",
+        "label": "Page Heading text",
+        "default": "Microsoft Windows Server at a Glance"
+      },
+      {
+        "type": "textarea",
+        "id": "subtext",
+        "label": "Page Sub paragrapgh text",
+        "default": "Explore the key features, benefits, and specifications of different Microsoft Windows Server editions in one glance."
+      },
+      {
+        "type": "header",
+        "content": "Button Name and link"
+      },
+      {
+        "type": "url",
+        "id": "cat_link",
+        "label": "Button link shpop window server"
+      },
+      {
+        "type": "text",
+        "id": "cat_link_text",
+        "label": "Button shpop window server"
+      },
+      {
+        "type": "header",
+        "content": "Request Quote"
+      },
+      {
+        "type": "text",
+        "id": "rqtext",
+        "label": "Request Quote Button text"
+      },
+      {
+        "type": "text",
+        "id": "rqlink",
+        "label": "Button Link"
+      },
+      {
+        "type": "header",
+        "content": "Select Tab"
+      },
+      {
+        "type": "text",
+        "id": "alltab",
+        "label": "Select all Tab",
+        "default": " Select All"
+      },
+      {
+        "type": "text",
+        "id": "alltabone",
+        "label": "Select all Tab",
+        "default": " Select One"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "tabname",
+        "name": "Tab Name",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab1",
+            "label": "Enter Tab name",
+            "default": "2020"
+          },
+          {
+            "type": "text",
+            "id": "tabid1",
+            "label": "Enter Tab ID"
+          },
+          {
+            "type": "text",
+            "id": "tab2",
+            "label": "Enter Tab name",
+            "default": "Standard"
+          },
+          {
+            "type": "text",
+            "id": "tabid2",
+            "label": "Enter Tab ID"
+          },
+          {
+            "type": "text",
+            "id": "tab3",
+            "label": "Enter Tab name",
+            "default": "Datacenter"
+          },
+          {
+            "type": "text",
+            "id": "tabid3",
+            "label": "Enter Tab ID"
+          },
+          {
+            "type": "text",
+            "id": "tab4",
+            "label": "Enter Tab name",
+            "default": "Essentials"
+          },
+          {
+            "type": "text",
+            "id": "tabid4",
+            "label": "Enter Tab ID"
+          },
+        ]
+      }
+    ]
+  }
+{% endschema %}

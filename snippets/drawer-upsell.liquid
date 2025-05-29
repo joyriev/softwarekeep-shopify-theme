@@ -1,0 +1,64 @@
+  <!-- CartUPsell Feature Start -->
+    {% assign product = all_products[settings.drawerupsell_products] %}
+    {% assign cart_prodss =''%}
+    {% for item in cart.items %}
+      {% assign cart_prodss = cart_prodss |append:item.product.handle|append:"," %}
+    {% endfor %}
+
+      {% unless cart_prodss contains product.handle %}
+       <div class="hs-frequently-bought  {{ cart_prodss.size }}"> 
+         <h4>{{ settings.upsell_heading }}</h4>
+       </div>
+      {% endunless %}
+
+    
+     <div class="mini-upsell_prod upsell-offer">
+       
+        <div class="slide-upsell" class="upsell-offer jitu">
+          
+          {% for product in settings.drawerupsell_products limit:4 %}
+              {% unless cart_prodss contains product.handle %}
+           <div class="list_items" data-id="{{ product.first_available_variant.id }}">
+             <div class="wraper_slide">
+             <div class="prodcard__img">
+               {{ product.featured_image | image_url: width:'90', height:'90' | image_tag }}
+               <!-- <img  src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.featured_image.alt | escape }}"> -->
+             </div>
+            
+               <div class="cartfrom_wraper">
+                    <div class="sells--title">
+                      <a href="{{ product.url }}" class="selltitle">{{product.title}}</a>
+                    </div>
+                 
+                  <div class="up-prices">
+                     <div class="sellprice">
+                       <span class="upsell--price jsPrice {% if product.compare_at_price_max > 0 %}product__price--sale{% endif %}" data-product-price="{{product.id}}">
+                          {{product.price | money | strip_html}}
+                        </span>
+                        <span data-product-price-sale="{{product.id}}" class="jsPrice upsell--sale">
+                          {% if product.compare_at_price_max > 0 %}{{product.compare_at_price_max | money | strip_html }}{% endif %}
+                       </span>
+                     </div>
+                    
+                      <div class="sellcart_from">
+                        {% form "product", product %}
+                           {% if product.available %}
+                              <input style="display: none;" name="id" data-bstr-variant-input="{{product.id}}" data-variant-id="{{product.selected_or_first_available_variant.id}}" value="{{product.selected_or_first_available_variant.id}}">  
+                              <div class="quantity--input" style="display: none;">  <button class="quantity--input__button quantity--input__incr" onclick="BoosterTheme.cart.quantityHandler(event, false, false)">-</button>
+                              <input class="quantity--input__input" value="1" data-qty-input type="number" name="quantity" min="1"> 
+                              <button class="quantity--input__button quantity--input__decr" onclick="BoosterTheme.cart.quantityHandler(event, true, false)">+</button>
+                              </div>
+                              {% render 'upsell-addtocart', price: product.price %}
+                                  {% else %}
+                              {% render 'sold-out-button', disabled: 'disabled' %}
+                           {% endif %}
+                        {% endform %}
+                      </div>
+                   </div>
+                 </div>
+              </div>
+           </div>
+                  {% endunless %}
+          {% endfor %}
+        </div>
+    </div>

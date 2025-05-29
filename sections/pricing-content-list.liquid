@@ -1,0 +1,132 @@
+<style>
+  #sec_idss__{{ section.id }}{
+    background: {{section.settings.sec_bckground}};
+  }
+  #btn_bg__{{ section.id }}{
+   background: {{section.settings.but_Background}};
+   color: {{section.settings.color_btext}};
+  }
+  
+</style>
+<div id="sec_idss__{{ section.id }}">
+<div class="row max-width _best-txt-section">
+  <div class="mainlist_contents">
+    {% for block in section.blocks %}
+     <div class="list_itm">
+      <h6 id="heads__{{ block.id }}">{{ block.settings.heading }}</h6>
+      <div id="ptext__{{ block.id }}">{{ block.settings.text }}</div>
+     </div>
+      <style>
+        #heads__{{ block.id }}{
+          color: {{ block.settings.ht_color }};
+        }
+        #ptext__{{ block.id }} p{
+          color: {{ block.settings.para_color }};
+        }
+      </style>
+    {% endfor %}
+  </div>
+  {% if section.settings.btext != blank %}
+  <a id="btn_bg__{{ section.id }}" href="{{ section.settings.urls }}" class="button button--addToCart _btn-best-sec button--primary button--filled button--primary__filled" >
+   <span data-button-text="">{{ section.settings.btext }}</span> 
+  </a>
+  {% endif %}
+</div>
+</div>
+{% schema %}
+  {
+    "name": "Content List",
+    "settings": [
+    {
+        "type": "header",
+        "content": "Section Background"
+      },
+      {
+        "type": "color",
+        "id": "sec_bckground",
+        "label": "Section Background",
+        "default":"#fff"
+      },
+     {
+        "type": "header",
+        "content": "Section Content"
+      },
+      {
+        "id": "heads",
+        "type": "text",
+        "label": "Section Heading"
+      },
+      {
+        "id": "btext",
+        "type": "text",
+        "label": "Button Text",
+        "default" : "Choose Option"
+      },
+      {
+        "id": "urls",
+        "type": "url",
+        "label": "Button Url"
+      },
+      {
+        "type": "header",
+        "content": "Change Button Background and Text"
+      },
+      {
+        "type": "color",
+        "id": "but_Background",
+        "label": "Button Background",
+        "default":"#0064DD"
+      },
+      {
+        "id": "color_btext",
+        "type": "color",
+        "label": "Button Text Color",
+        "default":"#000"
+      }
+    ],
+     "blocks": [
+     {
+       "name": "Content List",
+       "type": "text",
+       "settings": [
+        {
+            "type": "text",
+            "label": "Heading",
+            "id": "heading",
+            "default": "Microsoft Office Compatible"
+          },
+          {
+            "type": "richtext",
+            "label": "Text",
+            "id": "text",
+            "default": "<p>Unlike other office app suites, Truly Office is completely free of any ads or pop-ups. Stay focused on your work without distractions.</p>"
+          },
+          {
+            "type": "header",
+            "content": "Block Color Text"
+          },
+          {
+          "type": "color",
+          "id": "ht_color",
+          "label": "Heading Text Color",
+          "default":"#1471b5"
+         },
+        {
+          "type": "color",
+          "id": "para_color",
+          "label": "Paragraph Text Color",
+          "default":"#000"
+         }
+         
+         
+       ]
+     }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

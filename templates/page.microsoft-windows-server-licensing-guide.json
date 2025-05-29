@@ -1,0 +1,722 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "tabcontent": {
+      "type": "tab-microsoft-server-licensing-guide",
+      "blocks": {
+        "tabname_n6xNWC": {
+          "type": "tabname",
+          "settings": {
+            "tab1": "2022",
+            "tabid1": "2022",
+            "tab2": "Standard",
+            "tabid2": "2022-standard",
+            "tab3": "Datacenter",
+            "tabid3": "2022-datacenter",
+            "tab4": "",
+            "tabid4": ""
+          }
+        },
+        "tabname_cHreNJ": {
+          "type": "tabname",
+          "settings": {
+            "tab1": "2019",
+            "tabid1": "2019",
+            "tab2": "Standard",
+            "tabid2": "2019-standard",
+            "tab3": "Datacenter",
+            "tabid3": "2019-datacenter",
+            "tab4": "Essentials",
+            "tabid4": "2019-essentials"
+          }
+        },
+        "tabname_XmmXKw": {
+          "type": "tabname",
+          "settings": {
+            "tab1": "2016",
+            "tabid1": "2016",
+            "tab2": "Standard",
+            "tabid2": "2016-standard",
+            "tab3": "Datacenter",
+            "tabid3": "2016-datacenter",
+            "tab4": "Essentials",
+            "tabid4": "2016-essentials"
+          }
+        }
+      },
+      "block_order": [
+        "tabname_n6xNWC",
+        "tabname_cHreNJ",
+        "tabname_XmmXKw"
+      ],
+      "settings": {
+        "head": "Microsoft Windows Server at a Glance",
+        "subtext": "Explore the key features, benefits, and specifications of different Microsoft Windows Server editions in one glance.",
+        "cat_link": "/collections/microsoft-windows-server",
+        "cat_link_text": "Shop Windows Server",
+        "rqtext": "Request a quote",
+        "rqlink": "",
+        "tableheadingone": "Windows Server",
+        "tableheadingtwo": "Version/Edition",
+        "tableheadingtwourl": "",
+        "alltab": "Select All",
+        "alltabone": "Select One"
+      }
+    },
+    "content": {
+      "type": "microsoft-windows-server-licensing-guide",
+      "blocks": {
+        "product_q8n7Vf": {
+          "type": "product",
+          "settings": {
+            "product": "windows-server-2022-standard-16-core-plus-5-cals",
+            "name": "2022 Standard"
+          }
+        },
+        "product_TMADnh": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-windows-server-2022-datacenter-16-core-open-license",
+            "name": "2022 Datacenter"
+          }
+        },
+        "product_w9xmiW": {
+          "type": "product",
+          "settings": {
+            "product": "windows-server-2019-standard-16-core-10-device-cals",
+            "name": "2019 Standard"
+          }
+        },
+        "product_XQjkwR": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-windows-server-2019-datacenter-24-core-open-license-software-assurance",
+            "name": "2019 Datacenter"
+          }
+        },
+        "product_AUJBPz": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-windows-server-2019-essentials-open-license",
+            "name": "2019 Essentials"
+          }
+        },
+        "product_CfTeta": {
+          "type": "product",
+          "settings": {
+            "product": "sql-server-2016-standard-5-cals",
+            "name": "2016 Standard"
+          }
+        },
+        "product_PXE6t8": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-windows-server-2016-datacenter-2-core-license-open-academic",
+            "name": "2016 Datacenter"
+          }
+        },
+        "product_xJXTWG": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-windows-server-2016-essentials",
+            "name": "2016 Essentials"
+          }
+        },
+        "text_yXh7H8": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "Processing Power",
+            "feature_text2": "16 core minimum",
+            "check2": false,
+            "feature_text3": "16 core minimum",
+            "check3": false,
+            "feature_text4": "16 core minimum",
+            "check4": false,
+            "feature_text5": "16 core minimum",
+            "check5": false,
+            "feature_text6": "1-2 CPU",
+            "check6": false,
+            "feature_text7": "16 core minimum",
+            "check7": false,
+            "feature_text8": "16 core minimum",
+            "check8": false,
+            "feature_text9": "1-2 CPU",
+            "check9": false
+          }
+        },
+        "text_mDcRmU": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "CALs",
+            "feature_text2": "Per User/Device",
+            "check2": false,
+            "feature_text3": "Per User/Device",
+            "check3": false,
+            "feature_text4": "Per User/Device",
+            "check4": false,
+            "feature_text5": "Per User/Device",
+            "check5": false,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "Per User/Device",
+            "check7": false,
+            "feature_text8": "Per User/Device",
+            "check8": false,
+            "feature_text9": "",
+            "check9": false
+          }
+        },
+        "text_fi7iLg": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "VM Support",
+            "feature_text2": "2 VMs (per fully licensed host)",
+            "check2": false,
+            "feature_text3": "Unlimited",
+            "check3": false,
+            "feature_text4": "2 VMs (per fully licensed host)",
+            "check4": false,
+            "feature_text5": "Unlimited",
+            "check5": false,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "Unlimited",
+            "check7": false,
+            "feature_text8": "2 VMs (per fully licensed host)",
+            "check8": false,
+            "feature_text9": "",
+            "check9": false
+          }
+        },
+        "text_7jVAYJ": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "Core Functionality",
+            "feature_text2": "",
+            "check2": true,
+            "feature_text3": "",
+            "check3": true,
+            "feature_text4": "",
+            "check4": true,
+            "feature_text5": "",
+            "check5": true,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "",
+            "check7": true,
+            "feature_text8": "",
+            "check8": true,
+            "feature_text9": "",
+            "check9": false
+          }
+        },
+        "text_za9VAQ": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "Hybrid integration",
+            "feature_text2": "",
+            "check2": true,
+            "feature_text3": "",
+            "check3": true,
+            "feature_text4": "",
+            "check4": false,
+            "feature_text5": "",
+            "check5": false,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "",
+            "check7": false,
+            "feature_text8": "",
+            "check8": false,
+            "feature_text9": "",
+            "check9": false
+          }
+        },
+        "text_P8XiHL": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "OSEs/Hyper-V isolated containers",
+            "feature_text2": "2",
+            "check2": false,
+            "feature_text3": "Unlimited",
+            "check3": false,
+            "feature_text4": "2",
+            "check4": false,
+            "feature_text5": "Unlimited",
+            "check5": false,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "2",
+            "check7": false,
+            "feature_text8": "Unlimited",
+            "check8": false,
+            "feature_text9": "",
+            "check9": false
+          }
+        },
+        "text_XLr6zJ": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "Windows Server Containers",
+            "feature_text2": "Unlimited",
+            "check2": false,
+            "feature_text3": "Unlimited",
+            "check3": false,
+            "feature_text4": "",
+            "check4": true,
+            "feature_text5": "",
+            "check5": true,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "",
+            "check7": true,
+            "feature_text8": "",
+            "check8": true,
+            "feature_text9": "",
+            "check9": false
+          }
+        },
+        "text_H6HnFz": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "Storage Migration Service",
+            "feature_text2": "",
+            "check2": true,
+            "feature_text3": "",
+            "check3": true,
+            "feature_text4": "",
+            "check4": true,
+            "feature_text5": "",
+            "check5": true,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "",
+            "check7": false,
+            "feature_text8": "",
+            "check8": false,
+            "feature_text9": "",
+            "check9": false
+          }
+        },
+        "text_E6NGMJ": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "Storage Replica",
+            "feature_text2": "Limited to single Storage Replica volume up to 2TB",
+            "check2": false,
+            "feature_text3": "",
+            "check3": true,
+            "feature_text4": "",
+            "check4": false,
+            "feature_text5": "",
+            "check5": true,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "",
+            "check7": false,
+            "feature_text8": "",
+            "check8": true,
+            "feature_text9": "",
+            "check9": false
+          }
+        },
+        "text_3bwpVb": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "Software-defined Networking",
+            "feature_text2": "",
+            "check2": false,
+            "feature_text3": "",
+            "check3": true,
+            "feature_text4": "",
+            "check4": false,
+            "feature_text5": "",
+            "check5": false,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "",
+            "check7": false,
+            "feature_text8": "",
+            "check8": false,
+            "feature_text9": "",
+            "check9": false
+          }
+        },
+        "text_UTnwbB": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "Software-defined storage",
+            "feature_text2": "",
+            "check2": false,
+            "feature_text3": "",
+            "check3": true,
+            "feature_text4": "",
+            "check4": false,
+            "feature_text5": "",
+            "check5": false,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "",
+            "check7": false,
+            "feature_text8": "",
+            "check8": false,
+            "feature_text9": "",
+            "check9": false
+          }
+        },
+        "text_VwGian": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "Host Guardian Service",
+            "feature_text2": "",
+            "check2": true,
+            "feature_text3": "",
+            "check3": true,
+            "feature_text4": "",
+            "check4": true,
+            "feature_text5": "",
+            "check5": true,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "",
+            "check7": true,
+            "feature_text8": "",
+            "check8": true,
+            "feature_text9": "",
+            "check9": false
+          }
+        },
+        "text_e6ELVr": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "Nano Server",
+            "feature_text2": "",
+            "check2": true,
+            "feature_text3": "",
+            "check3": true,
+            "feature_text4": "",
+            "check4": true,
+            "feature_text5": "",
+            "check5": true,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "",
+            "check7": true,
+            "feature_text8": "",
+            "check8": true,
+            "feature_text9": "",
+            "check9": false
+          }
+        },
+        "text_BitCDk": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "Shielded Virtual Machines",
+            "feature_text2": "",
+            "check2": false,
+            "feature_text3": "",
+            "check3": true,
+            "feature_text4": "",
+            "check4": false,
+            "feature_text5": "",
+            "check5": true,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "",
+            "check7": false,
+            "feature_text8": "",
+            "check8": true,
+            "feature_text9": "",
+            "check9": false
+          }
+        },
+        "text_8y8BpY": {
+          "type": "text",
+          "settings": {
+            "feature_text1": "Networking stack",
+            "feature_text2": "",
+            "check2": false,
+            "feature_text3": "",
+            "check3": true,
+            "feature_text4": "",
+            "check4": false,
+            "feature_text5": "",
+            "check5": true,
+            "feature_text6": "",
+            "check6": false,
+            "feature_text7": "",
+            "check7": false,
+            "feature_text8": "",
+            "check8": false,
+            "feature_text9": "",
+            "check9": false
+          }
+        }
+      },
+      "block_order": [
+        "product_q8n7Vf",
+        "product_TMADnh",
+        "product_w9xmiW",
+        "product_XQjkwR",
+        "product_AUJBPz",
+        "product_CfTeta",
+        "product_PXE6t8",
+        "product_xJXTWG",
+        "text_yXh7H8",
+        "text_mDcRmU",
+        "text_fi7iLg",
+        "text_7jVAYJ",
+        "text_za9VAQ",
+        "text_P8XiHL",
+        "text_XLr6zJ",
+        "text_H6HnFz",
+        "text_E6NGMJ",
+        "text_3bwpVb",
+        "text_UTnwbB",
+        "text_VwGian",
+        "text_e6ELVr",
+        "text_BitCDk",
+        "text_8y8BpY"
+      ],
+      "settings": {
+        "head1": "Windows Server",
+        "head2": "Version/Edition",
+        "hurl": ""
+      }
+    },
+    "section_cta_gQcNqq": {
+      "type": "section__cta",
+      "blocks": {
+        "title_xqHUk7": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "Curious about Windows Server licensing?",
+            "textColor": "#000000",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "rich_text_iUaaYK": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>Set up a call with our licensing experts to get all your questions answered.</p>",
+            "detectLists": true,
+            "textColor": "#000000",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        },
+        "button_zcgbAy": {
+          "type": "button",
+          "settings": {
+            "fullWidth": true,
+            "text": "Book a Call",
+            "url": "",
+            "icon": "",
+            "iconPosition": "icon--left",
+            "wideButton": false,
+            "buttonStyle": "primary",
+            "buttonType": "default",
+            "fontSize": "base",
+            "fontFamily": "base",
+            "animation": "none",
+            "animationDuration": 1000,
+            "animationInfinite": true
+          }
+        }
+      },
+      "block_order": [
+        "title_xqHUk7",
+        "rich_text_iUaaYK",
+        "button_zcgbAy"
+      ],
+      "settings": {
+        "acc-content": "",
+        "custom_id": "book-a-call",
+        "displayFor": "display--both",
+        "layout": "boxed",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 290,
+        "padding": 25,
+        "lineMargin": 12,
+        "backgroundColor": "#effaff",
+        "backgroundImageUrl": "",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center"
+      }
+    },
+    "custom_contact_aXDJzh": {
+      "type": "custom-contact",
+      "blocks": {
+        "contact_form_text_Pqd89n": {
+          "type": "contactFormText",
+          "settings": {
+            "required": true,
+            "name": "First Name*",
+            "placeholder": "What is your first Name?",
+            "type": "text"
+          }
+        },
+        "contact_form_text_dW6ybd": {
+          "type": "contactFormText",
+          "settings": {
+            "required": true,
+            "name": "Last Name*",
+            "placeholder": "What is your last Name?",
+            "type": "text"
+          }
+        },
+        "contact_form_email_7XUrLt": {
+          "type": "contactFormEmail",
+          "settings": {
+            "name": "Email*",
+            "placeholder": "What Email do you want to use?"
+          }
+        },
+        "contact_form_text_qr694z": {
+          "type": "contactFormText",
+          "settings": {
+            "required": true,
+            "name": "Phone Number*",
+            "placeholder": "Where can we reach you?",
+            "type": "tel"
+          }
+        },
+        "contact_form_checkbox_e8M7AV": {
+          "type": "contactFormCheckbox",
+          "settings": {
+            "required": true,
+            "name": "Request a call",
+            "checked": true
+          }
+        }
+      },
+      "block_order": [
+        "contact_form_text_Pqd89n",
+        "contact_form_text_dW6ybd",
+        "contact_form_email_7XUrLt",
+        "contact_form_text_qr694z",
+        "contact_form_checkbox_e8M7AV"
+      ],
+      "settings": {
+        "heading": "Tailored Quotes for Maximum Savings",
+        "copy": "<p>Take advantage of our custom quote service to secure the best deals on the licenses you need. Fill out the form with your contact information and the products you’re interested in. Our team will analyze your request and send you a personalized quote with potential savings.</p><p><br/>Act now—request your quote and start saving on your licenses today!</p>",
+        "bg_image": "shopify://shop_images/Artboard_3__1.png"
+      }
+    },
+    "section_cta_jgFeMz": {
+      "type": "section__cta",
+      "blocks": {
+        "title_GfNUJc": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "In-Depth Windows Server Licensing Guide",
+            "textColor": "#ffffff",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "rich_text_inkEn8": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>Click Here for Detailed Information on Licensing Options and Requirements</p>",
+            "detectLists": true,
+            "textColor": "#ffffff",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        },
+        "button_GPgKPx": {
+          "type": "button",
+          "settings": {
+            "fullWidth": true,
+            "text": "Detailed Guide",
+            "url": "",
+            "icon": "",
+            "iconPosition": "icon--left",
+            "wideButton": false,
+            "buttonStyle": "primary",
+            "buttonType": "default",
+            "fontSize": "base",
+            "fontFamily": "base",
+            "animation": "none",
+            "animationDuration": 1000,
+            "animationInfinite": true
+          }
+        }
+      },
+      "block_order": [
+        "title_GfNUJc",
+        "rich_text_inkEn8",
+        "button_GPgKPx"
+      ],
+      "settings": {
+        "acc-content": "<p>Windows Server is a critical component in enterprise environments, providing the necessary infrastructure for various applications and services. This robust server platform has evolved significantly since its inception, adapting to the ever-changing demands of modern IT landscapes.</p>\n<p>In this article, we explore the origins of Windows Server and its various versions and editions and highlight their unique features and contributions to the IT world.</p>\n<h2>Windows Server: An Evolution</h2>\n<img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Picture1.png?v=1719981319\" alt=\"windows-server\">\n<h3>Origin with Windows NT</h3>\n<p>The history of Windows Server originates with <strong>Windows NT</strong>, Microsoft's first server operating system, introduced in 1993. Windows NT Server 3.1 marked a significant technological advancement with its 32-bit architecture, establishing a foundation for future server OS innovations.</p>\n<p>This server aimed to deliver a high-performance, secure, and reliable platform for enterprise applications. Compared to DOS-based systems, it offered substantial improvements, including preemptive multitasking, advanced networking capabilities, and enhanced memory management.</p>\n<h3>Evolution into a Robust Server Platform</h3>\n<p>Over the years, Windows Server has transformed into a comprehensive server solution catering to diverse enterprise needs. Each version brought new features, improvements, and enhancements, making Windows Server a preferred choice for businesses worldwide. </p>\n<p>Microsoft's commitment to innovation has led to integrating advanced security features, virtualization technologies, and cloud integration, ensuring that Windows Server remains at the forefront of enterprise server solutions.</p>\n<p>Today, Windows Server is a robust and versatile platform supporting a wide range of enterprise applications and services. It offers advanced features like Hyper-V for virtualization, extensive container support, and seamless integration with Microsoft's Azure cloud services. The platform's scalability, flexibility, and management tools meet the evolving demands of businesses across the globe.</p>\n<h2>Windows Server Versions</h2>\n<img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Picture2.png?v=1719981319\" alt=\"mswindows-nt\">\n<h3>Windows NT Server 3.1 (1993)</h3>\n<p>The first server version, Windows NT Server 3.1, introduced a 32-bit architecture, offering a stable and secure platform for enterprise applications. It was a groundbreaking release that provided the foundation for modern enterprise computing. With features like a robust file system (NTFS), support for multiple processors, and enhanced security, Windows NT Server 3.1 set a new standard for server operating systems.</p>\n<h3>Windows NT Server 3.5 (1994)</h3>\n<p>Building on its predecessor, Windows NT Server 3.5 added support for Unix and Novell NetWare connectivity, enhancing interoperability in mixed environments. This version improved network performance and introduced remote connectivity features like Remote Access Service (RAS). The Windows Internet Name Service (WINS) integration helped manage IP addresses and streamlined network administration.</p>\n<h3>Windows NT Server 3.51 (1995)</h3>\n<p>This version improved support for Windows 95 and introduced remote software license management, streamlining administrative tasks. Windows NT Server 3.51 was notable for its enhanced stability and performance, making it a reliable choice for enterprise environments. The version also included support for the newer hardware and improved the scalability of applications.</p>\n<h3>Windows NT Server 4.0 (1996)</h3>\n<p>Windows NT Server 4.0 included Internet Information Services (IIS) and a user interface similar to Windows 95, making it more user-friendly and versatile. IIS provided a powerful platform for web hosting, while the updated interface improved usability. This version also introduced the concept of the Active Directory, although it was not fully implemented until Windows Server 2000. The integration of the DirectX API supported multimedia applications, enhancing the server's capabilities.</p>\n<h3>Windows Server 2000 (2000)</h3>\n<p>With the integration of Active Directory and support for Extensible Markup Language (XML), Windows Server 2000 marked a significant leap in directory services and web technologies. Active Directory allowed for centralized domain management, improving security and ease of administration. XML support facilitated better data exchange between applications. Other features included enhanced security protocols and the Microsoft Management Console (MMC) introduction for a unified management interface.</p>\n<h3>Windows Server 2003 (2003)</h3>\n<p>Defining server roles and features, Windows Server 2003 introduced the .NET framework, enhancing application development and deployment capabilities. This version improved scalability and performance, making it suitable for small and large enterprises. It also featured improved security with the introduction of the Security Configuration Wizard and the ability to create multiple server roles streamlined the management of services and resources.</p>\n<h3>Windows Server 2003 R2 (2005)</h3>\n<p>This release added Active Directory Federation Services and improved data compression capabilities, boosting security and efficiency in data management. The enhanced Active Directory features allowed better integration with web services and cloud applications. Windows Server 2003 R2 also included the DFS Replication service, which improved file replication and management across distributed networks.</p>\n<h3>Windows Server 2008</h3>\n<p>Windows Server 2008 brought several key innovations, including Hyper-V virtualization, Server Core, and BitLocker, providing enhanced security and virtualization options. Hyper-V allowed for creating and managing virtual machines, promoting better resource utilization and cost savings. Server Core offered a minimal installation option that reduced the attack surface and improved performance. BitLocker provided full-disk encryption, protecting data from unauthorized access.</p>\n<h3>Windows Server 2012</h3>\n<p>With the introduction of Windows Containers and significant improvements to Hyper-V, Windows Server 2012 offered advanced virtualization and containerization features. This version focused on cloud integration, enabling seamless hybrid cloud scenarios. The new Storage Spaces feature allowed for the creation of flexible and resilient storage solutions. Enhanced management tools and the introduction of PowerShell 3.0 improved automation and efficiency.</p>\n<h3>Windows Server 2016</h3>\n<p>Released in October 2016, Windows Server 2016 was a significant upgrade from its predecessors, introducing numerous new features to improve security, performance, and scalability.</p>\n<p>Released in October 2016, Windows Server 2016 was a significant upgrade from its predecessors, introducing numerous new features aimed at improving security, performance, and scalability.</p>\n<h4>Windows Server 2016 Key Features</h4>\n<ul>\n    <li>\n<strong>Nano Server</strong>: A lightweight installation option designed for running cloud-native applications and microservices, with a significantly smaller footprint than the Server Core installation.</li>\n    <li>\n<strong>Windows Containers</strong>: Introduced support for Docker-based containers, enabling easier deployment and management of applications in isolated environments.</li>\n    <li>\n<strong>Hyper-V Enhancements</strong>: Improved virtualization features, including nested virtualization (running Hyper-V within a VM), shielded VMs for enhanced security, and discrete device assignment.</li>\n    <li>\n<strong>Software-Defined Networking (SDN)</strong>: Advanced networking features, including the Network Controller, to automate network configuration and management.</li>\n    <li>\n<strong>Storage Spaces Direct (S2D)</strong>: Enabled building of highly available and scalable storage solutions using locally attached disks, providing a cost-effective alternative to traditional SANs.</li>\n    <li>\n<strong>Active Directory Federation Services (ADFS) Improvements</strong>: Enhanced security features, including conditional access policies and support for modern authentication protocols.</li>\n</ul>\n<h3>Windows Server 2019</h3>\n<p>Launched in October 2018, Windows Server 2019 built upon the foundation of Server 2016, introducing new features and improvements focused on hybrid cloud scenarios, security, and application platform enhancements.</p>\n<h4>Windows Server 2019 Key Features</h4>\n<ul>\n    <li>\n<strong>Hybrid Cloud Integration</strong>: Enhanced integration with Azure services, including Azure Backup, Azure Site Recovery, and Azure File Sync, facilitating a seamless hybrid cloud environment.</li>\n    <li>\n<strong>Windows Admin Center</strong>: A modern, web-based management interface for managing servers, clusters, hyper-converged infrastructure, and Windows 10 PCs, providing a unified experience.</li>\n    <li>\n<strong>Advanced Threat Protection (ATP)</strong>: Improved security features, including Windows Defender ATP, which provides deep platform sensors and response actions to detect and mitigate advanced threats.</li>\n    <li>\n<strong>System Insights</strong>: Predictive analytics capabilities built into Windows Server, using machine learning to analyze system data and provide insights for proactive issue resolution.</li>\n    <li>\n<strong>Storage Migration Service</strong>: Simplified migration of servers and data to newer versions of Windows Server or Azure, reducing downtime and complexity.</li>\n    <li>\n<strong>Kubernetes Support</strong>: Improved support for running Kubernetes clusters on Windows Server, enabling better orchestration of containerized applications.</li>\n</ul>\n<h3>Windows Server 2022</h3>\n<p>Released in August 2021, Windows Server 2022 represents the latest evolution in Microsoft's server operating system lineup, emphasizing security, hybrid cloud capabilities, and application modernization.</p>\n<h4>Windows Server 2022 Key Features</h4>\n<ul>\n    <li>\n<strong>Secured-core Server</strong>: Enhanced security features, including hardware root-of-trust, firmware protection, and virtualization-based security providing comprehensive protection against sophisticated threats.</li>\n    <li>\n<strong>Azure Arc Integration</strong>: Extended hybrid cloud capabilities, allowing management of Windows Servers from Azure, regardless of their location, with consistent governance and compliance.</li>\n    <li>\n<strong>Azure Automanage</strong>: Simplified server management with automated best practices for configuration, monitoring, and backup, reducing operational overhead.</li>\n    <li>\n<strong>Hotpatch</strong>: Enabled applying updates to Windows Server VMs in Azure without requiring a reboot, minimizing downtime and improving availability.</li>\n    <li>\n<strong>Storage Enhancements</strong>: Improved performance and scalability of Storage Spaces Direct, support for SMB Compression, and better integration with Azure Storage services.</li>\n    <li>\n<strong>Edge Infrastructure</strong>: Optimized for use in edge environments, providing enhanced performance, reliability, and management capabilities for distributed workloads.</li>\n</ul>\n<h2>Windows Server Editions</h2>\n<p>Windows Server editions are various versions of Microsoft's server operating system, tailored to meet different business and IT infrastructure needs. Each edition has specific features and capabilities to support a range of enterprise environments, from small businesses to large-scale data centers.</p>\n<p>These editions provide consistent core functionalities while offering specialized tools and services to optimize performance, security, and management for diverse use cases.</p>\n<h3>Datacenter</h3>\n<p>The Datacenter edition is designed for highly virtualized data centers and cloud environments, offering unlimited virtualization rights and advanced features like Shielded Virtual Machines and Software-Defined Networking. Key features include:</p>\n<ul>\n    <li>\n<strong>Unlimited Virtualization Rights</strong>: Allowing for an unlimited number of virtual instances, maximizing resource utilization.</li>\n    <li>\n<strong>Shielded Virtual Machines</strong>: Protecting VMs from unauthorized access with encryption and robust security measures.</li>\n    <li>\n<strong>Software-Defined Networking (SDN)</strong>: Enabling flexible network configuration and management, improving network performance and security.</li>\n    <li>\n<strong>Storage Spaces Direct</strong>: Providing high availability and scalability with software-defined storage.</li>\n</ul>\n<h3>Standard</h3>\n<p>The Standard edition is ideal for physical or minimally virtualized environments, providing essential features and two virtual machine instances. Key features include:</p>\n<ul>\n    <li>\n<strong>Two Virtual Machine Instances</strong>: Supporting basic virtualization needs without additional licensing costs.</li>\n    <li>\n<strong>Storage Replica</strong>: Enabling block-level replication between servers for disaster recovery and high availability.</li>\n    <li>\n<strong>Windows Server Core</strong>: Offering a minimal installation option that reduces maintenance and attack surface.</li>\n    <li>\n<strong>Essential Management Tools</strong>: Including Windows Admin Center for simplified server management and monitoring.</li>\n</ul>\n<h3>Essentials</h3>\n<p>Targeted at small businesses with up to 25 users and 50 devices, the Essentials edition offers a simplified management interface and integration with cloud services. Key features include:</p>\n<ul>\n    <li>\n<strong>Simplified Management Interface</strong>: Easy-to-use dashboard for managing users, devices, and applications.</li>\n    <li>\n<strong>Integration with Microsoft 365</strong>: Seamless integration with Microsoft's cloud services for email, file sharing, and collaboration.</li>\n    <li>\n<strong>Built-in Data Protection</strong>: Automated backups and data recovery options to safeguard critical business information.</li>\n    <li>\n<strong>Limited User and Device Count</strong>: Optimized for small businesses with straightforward licensing and setup.</li>\n</ul>\n<h3>Features Across Windows Server Editions</h3>\n<p>Discover the shared features and capabilities across all editions of Windows Server. Each edition provides robust security, efficient management tools, and seamless integration, ensuring a reliable and scalable solution for diverse enterprise needs:</p>\n<ul>\n    <li>\n<strong>Core-based licensing model</strong>: Ensures flexible and cost-effective licensing options based on the number of cores in the server, allowing businesses to scale their licenses according to their needs.</li>\n    <li>\n<strong>Container support with Kubernetes</strong>: Facilitates modern application development and deployment using container orchestration, enhancing the agility and efficiency of IT operations.</li>\n    <li>\n<strong>Advanced multi-layer security</strong>: Includes features like Windows Defender Advanced Threat Protection and Secure Core Server, enhancing security against sophisticated threats and ensuring data integrity.</li>\n    <li>\n<strong>Hybrid integration with Azure services</strong>: Enables seamless hybrid cloud scenarios with Azure Arc and Azure Site Recovery, providing extended capabilities and disaster recovery solutions, ensuring business continuity.</li>\n</ul>\n<h2>Windows Server Licensing and Pricing</h2>\n<p>Windows Server follows a core-based licensing model, where the number of licenses required depends on the number of physical cores in the server. Each server requires a minimum of 16 core licenses, and additional licenses can be added based on the server's core count. This model provides flexibility and allows businesses to optimize costs based on their infrastructure needs.</p>\n<h3>Windows Server Licensing Model Explanation</h3>\n<p>Windows Server follows a core-based licensing model, where the number of licenses required depends on the number of physical cores in the server. Each server requires a minimum of 16 core licenses, and additional licenses can be added based on the server's core count. This model provides flexibility and allows businesses to optimize costs based on their infrastructure needs.</p>\n<h3>Cost Comparison Between Windows Server Editions</h3>\n<ul>\n    <li>\n<strong>Datacenter Edition</strong>: The most expensive, reflecting its extensive feature set and unlimited virtualization rights. It is ideal for large enterprises with extensive virtualization requirements.</li>\n    <li>\n<strong>Standard Edition</strong>: More affordable, suitable for businesses with moderate virtualization needs. It provides essential features at a lower cost, making it a cost-effective solution for many enterprises.</li>\n    <li>\n<strong>Essentials Edition</strong>: The most cost-effective, designed for small businesses with limited user and device requirements. It offers essential server functionalities at a very competitive price point, making it accessible for small businesses.</li>\n</ul>\n<h3>What is a Windows Server Client Access License (CAL)?</h3>\n<p>A Windows Server Client Access License (CAL) is a licensing requirement introduced by Microsoft to allow legal access to server software. A CAL is not a software product but rather a license that gives a user or device the right to access the services of the Windows Server.</p>\n<p>A Windows Server CAL allows a user or a device to connect to a Windows Server and utilize its services. These licenses are necessary to ensure that each connection to the server is appropriately licensed, adhering to Microsoft's licensing policies.</p>\n<p>There are two main types of CALs: <strong>User CALs</strong> and <strong>Remote Desktop Services (RDS) CALs</strong>. Each serves different purposes and functions within a network. Here’s a detailed explanation of both types and how they work.</p>\n<h4>User CALs</h4>\n<p>User Client Access Licenses (User CALs) are designed to license individual users to access the server software. Here’s a breakdown of how User CALs work:</p>\n<p>How User CALs work:</p>\n<ul>\n    <li>\n<strong>Per User Licensing</strong>: Each User CAL allows a single user to access the server from any device. This is beneficial in environments where users need to access the server from multiple devices, such as desktops, laptops, tablets, or mobile phones.</li>\n    <li>\n<strong>Authentication and Access:</strong> When a user attempts to access the server, the system checks if the user has a valid CAL. If the user has a valid User CAL, they are granted access to the server’s resources.</li>\n    <li>\n<strong>Flexibility</strong>: User CALs are ideal for companies where employees need flexible access to the server from various locations or devices. This type of CAL is cost-effective when the number of devices per user is high.</li>\n</ul>\n<p>Example scenario:</p>\n<p>A company with 100 employees, each using multiple devices (e.g., a desktop at work, a laptop at home, and a mobile device), would benefit from purchasing 100 User CALs. Each user can access the server from any of their devices without requiring additional licenses.</p>\n<h4>RDS CALs</h4>\n<p>Remote Desktop Services Client Access Licenses (RDS CALs) are required for users or devices that need to connect to a server to use Remote Desktop Services. RDS CALs come in two forms: User RDS CALs and Device RDS CALs.</p>\n<p>How RDS CALs work:</p>\n<div>\n    <ul>\n        <li>\n<strong>Remote Desktop Access</strong>: RDS CALs are specifically for accessing the server using Remote Desktop Services. This allows users to remotely access a virtual desktop or applications hosted on the server.</li>\n    </ul>\n</div>\n<p>Types of RDS CALs:</p>\n<ul>\n    <li>\n<strong>User RDS CALs</strong>: Similar to standard User CALs, User RDS CALs are assigned to a specific user, allowing them to access the server from any device via Remote Desktop.</li>\n    <li>\n<strong>Device RDS CALs</strong>: Assigned to a specific device, allowing any number of users to access the server from that device via Remote Desktop.</li>\n</ul>\n<p>Example scenario:</p>\n<p>A company with 50 employees, each needing remote access to the server from various devices, might purchase 50 User RDS CALs. Alternatively, if the company has 20 shared workstations used by multiple employees for remote access, they might purchase 20 Device RDS CALs.</p>\n<h3>Differences Between User CALs and RDS CALs</h3>\n<h4>Purpose</h4>\n<ul>\n    <li>\n<strong>User CALs</strong>: Provide access to the server’s resources, such as file sharing, printing, and application hosting.</li>\n    <li>\n<strong>RDS CALs</strong>: Provide access to Remote Desktop Services only, enabling remote desktop or application sessions.</li>\n</ul>\n<h4>Access</h4>\n<ul>\n    <li>\n<strong>User CALs</strong>: License an individual user to access the server from any device.</li>\n    <li>\n<strong>RDS CALs</strong>: License an individual user or a specific device to access the server via Remote Desktop Services.</li>\n</ul>\n<h4>Usage Scenarios</h4>\n<ul>\n    <li>\n<strong>User CALs</strong>: Ideal for environments where users need to connect to the server using multiple devices.</li>\n    <li>\n<strong>RDS CALs</strong>: Necessary for environments where remote desktop access or remote application access is required.</li>\n</ul>\n<h4>Flexibility</h4>\n<ul>\n    <li>\n<strong>User CALs</strong>: Offer flexibility in device usage, allowing users to connect from multiple devices.</li>\n    <li>\n<strong>RDS CALs</strong>: Offer flexibility based on the chosen licensing model (User vs. Device), allowing tailored solutions based on the organization’s needs.</li>\n</ul>\n<h3>Choosing the Right CALs</h3>\n<p>When deciding between User CALs and RDS CALs, consider the following factors:</p>\n<ul>\n    <li>\n<strong>Number of Users vs. Devices</strong>: Determine whether your organization has more users or devices that need access to the server or Remote Desktop Services.</li>\n    <li>\n<strong>Access Patterns</strong>: Assess how users access the server and whether they need to connect from multiple devices or just one.</li>\n    <li>\n<strong>Cost</strong>: Evaluate the cost-effectiveness based on your organization’s specific needs. User CALs may be more cost-effective for environments with many devices per user, while Device CALs might be better for shared workstation scenarios.</li>\n</ul>",
+        "custom_id": "detailed-guide",
+        "displayFor": "display--both",
+        "layout": "boxed",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 290,
+        "padding": 25,
+        "lineMargin": 12,
+        "backgroundColor": "#036ab5",
+        "backgroundImageUrl": "",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "start"
+      }
+    }
+  },
+  "order": [
+    "tabcontent",
+    "content",
+    "section_cta_gQcNqq",
+    "custom_contact_aXDJzh",
+    "section_cta_jgFeMz"
+  ]
+}

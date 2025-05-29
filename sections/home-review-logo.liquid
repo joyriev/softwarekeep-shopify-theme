@@ -1,0 +1,70 @@
+<div class="hom_logo-conatiner">
+  <div class="max-width">
+    <div class="reviewlogo_wrap">
+      <div class="logo_lists">
+        {% if section.settings.review_img != blank %}
+        {{ section.settings.review_img | image_url: width:'275', height: '88' | image_tag }}
+          {% else %}
+         <img src="//softwarekeep.com/cdn/shop/files/Group_188.png?crop=center&amp;height=88&amp;v=1719923991&amp;width=275" alt="" srcset="//softwarekeep.com/cdn/shop/files/Group_188.png?crop=center&amp;height=88&amp;v=1719923991&amp;width=275 275w" width="275" height="88" loading="lazy" data-bstr-initd="true">
+        {% endif %}
+      </div>
+        <div class="logo_lists">
+        {% if section.settings.review_img1 != blank %}
+          {{ section.settings.review_img1 | image_url: width:'275', height: '88' | image_tag }}
+          {% else %}
+         <img src="//softwarekeep.com/cdn/shop/files/Group_188.png?crop=center&amp;height=88&amp;v=1719923991&amp;width=275" alt="" srcset="//softwarekeep.com/cdn/shop/files/Group_188.png?crop=center&amp;height=88&amp;v=1719923991&amp;width=275 275w" width="275" height="88" loading="lazy" data-bstr-initd="true">
+        {% endif %}
+      </div>
+      <div class="logo_lists">
+        {% if section.settings.review_img2 != blank %}
+          {{ section.settings.review_img2 | image_url: width:'275', height: '88' | image_tag }}
+          {% else %}
+        <img src="//softwarekeep.com/cdn/shop/files/Group_188.png?crop=center&amp;height=88&amp;v=1719923991&amp;width=275" alt="" srcset="//softwarekeep.com/cdn/shop/files/Group_188.png?crop=center&amp;height=88&amp;v=1719923991&amp;width=275 275w" width="275" height="88" loading="lazy" data-bstr-initd="true">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+.reviewlogo_wrap {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.hom_logo-conatiner {
+    background: #F5F5F5;
+    padding: 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .hom_logo-conatiner {
+    padding: 10px 10px;
+  } 
+  }
+</style>
+{% schema %}
+  {
+    "name": "Home Review Logo",
+    "settings": [
+    {
+       "type": "image_picker",
+        "id": "review_img",
+        "label": "Select Review Image"
+     },
+     {
+       "type": "image_picker",
+        "id": "review_img1",
+        "label": "Select Review Image"
+     },
+    {
+       "type": "image_picker",
+        "id": "review_img2",
+        "label": "Select Review Image"
+     },
+    ],
+    "presets": [
+      {
+        "name": "Home Review Logo"
+      }
+    ]
+  }
+{% endschema %}

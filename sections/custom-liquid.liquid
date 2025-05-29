@@ -1,0 +1,60 @@
+{% assign customids = section.settings.secid %}
+<div id="{{ customids }}">
+ <div class="max-width defults--desc">
+   {% if section.settings.desc_heading != blank %}
+     <div class="desc__customs_defult">
+       <h2 class="custom_desc__head">{{ section.settings.desc_heading }}</h2>
+     </div>
+   {% endif %}
+   {{ product.description }}
+ </div>
+</div>
+<style>
+  .desc__customs_defult .custom_desc__head {
+    border-bottom: 1px solid;
+    margin-bottom: 1.5rem;
+    padding: .75rem 0;
+    font-weight: 600;
+    font-size: 34px;
+}
+.defults--desc, ul li, p{
+    font-size: 20px;
+    font-family: 'DM Sans';
+    line-height: 32px;
+  }
+  .defults--desc{
+      padding: 0 20px;
+    }
+ @media only screen and (max-width: 1024px) {
+    .defults--desc{
+      padding: 0 20px;
+    }
+  }
+</style>
+{% schema %}
+  {
+    "name": "Custom Liquid",
+    "settings": [
+        {
+            "type": "text",
+            "id": "secid",
+            "label": "Enter Section ID"
+          },
+         {
+            "type": "text",
+            "id": "desc_heading",
+            "label": "Enter Heading"
+          },
+         {
+           "type": "liquid",
+           "id": "custom_liquid",
+           "label": "Add Custom Liquid Code"
+         }
+      ],
+     "presets": [
+      {
+        "name": "Custom Product Description"
+      }
+    ]
+  }
+{% endschema %}

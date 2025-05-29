@@ -1,0 +1,654 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "content": {
+      "type": "microsoft-publisher",
+      "blocks": {
+        "52062c6f-baab-49e7-848d-c22b05ef1922": {
+          "type": "product",
+          "settings": {
+            "product_block": "windows-11-pro",
+            "content": "<p>Microsoft Windows 11 Pro is designed for business professionals . </p><p>Get the most out of your work with enhanced management tools, flexible deployment options & performance. </p>",
+            "titles": "Windows 11 Pro Highlights:",
+            "html_content": "<ul class=\"list-high-products\">\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/UserCircle.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span>Install on 1 device, for one person</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span>One-time purchase, no monthly costs</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span>Licensed for home and businesses</span>\n   </li>\n   <li>\n      \n</li>\n</ul>"
+          }
+        },
+        "74e6c125-2b19-4b81-a930-b95f62529fd2": {
+          "type": "product",
+          "settings": {
+            "product_block": "windows-11-home",
+            "content": "<p>Upgrade to Microsoft Windows 11 Home, the best choice for personal use. </p><p>Buy once & enjoy lifetime updates on your device with a digital license perfect for home and school use.</p>",
+            "titles": "Windows 11 Home Highlights:",
+            "html_content": "<ul class=\"list-high-products\">\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/UserCircle.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span>Install on 1 device, for one person</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span>One-time purchase, no monthly costs</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span>Licensed for home and school use</span>\n   </li>\n   <li>\n      </li>\n</ul>"
+          }
+        },
+        "a0246f8d-9858-4658-9c9f-f604c9efb9f5": {
+          "type": "product",
+          "settings": {
+            "product_block": "windows-11-enterprise",
+            "content": "<p>Windows 11 Enterprise is tailored for large-scale organizations.</p><p>With a digital key and easy activation, this product offers a seamless experience for businesses at scale.</p>",
+            "titles": "Windows 11 Enterprise Highlights:",
+            "html_content": "<ul class=\"list-high-products\">\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/UserCircle.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span>Install on 1 device, for one person</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span>One-time purchase, no monthly costs</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span>Licensed for home and professionals</span>\n   </li>\n   <li>\n      \n \n</li>\n</ul>"
+          }
+        }
+      },
+      "block_order": [
+        "52062c6f-baab-49e7-848d-c22b05ef1922",
+        "74e6c125-2b19-4b81-a930-b95f62529fd2",
+        "a0246f8d-9858-4658-9c9f-f604c9efb9f5"
+      ],
+      "settings": {
+        "disable_sticky": false,
+        "title": "Microsoft Office 2021 Products",
+        "subtitle": "Get more done with Windows – Performance, security, and flexibility at your fingertips."
+      }
+    },
+    "home_review_logo_FrJa3K": {
+      "type": "home-review-logo",
+      "settings": {
+        "review_img": "shopify://shop_images/Group_188.png",
+        "review_img1": "shopify://shop_images/Group_189.png",
+        "review_img2": "shopify://shop_images/ResellerRatings_1.png"
+      }
+    },
+    "trustpilot_reviews_APPKc7": {
+      "type": "trustpilot-reviews",
+      "settings": {
+        "header_title": "What Customers Say About Us:",
+        "trustsecbg": "#ffffff",
+        "tpmargingap": 0,
+        "pading_botm": 0
+      }
+    },
+    "efea7753-045e-4eb2-9410-1692b828761a": {
+      "type": "office-2021-vetical-tab-content",
+      "blocks": {
+        "5ecef4de-adc1-45e7-883d-a4a29c2dc7a7": {
+          "type": "content",
+          "settings": {
+            "tabname": "Home & Student",
+            "check_app": false,
+            "small_img": "shopify://shop_images/ms-excel-icon.png",
+            "content_head": "Excel",
+            "content_para": "<p>Analyze, visualize and share your data with helpful formulas and tools.</p>",
+            "check_app2": false,
+            "small_img2": "shopify://shop_images/ms-icon-ppt.png",
+            "content_head2": "PowerPoint",
+            "content_para2": "<p>Create and organize mind-blowing presentations in just a few clicks.</p>",
+            "check_app3": false,
+            "small_img3": "shopify://shop_images/ms-icon-word.png",
+            "content_head3": "Word",
+            "content_para3": "<p>Create simple and powerful documents. Clean, sleek and easy on the eyes.</p>",
+            "check_app4": true,
+            "small_img4": "shopify://shop_images/ms-icon-outlook.png",
+            "content_head4": "Outlook",
+            "content_para4": "<p>Organize email, coordinate schedules, and stay up to date quickly.</p>",
+            "check_app5": true,
+            "small_img5": "shopify://shop_images/ms-icon-access.png",
+            "content_head5": "Access",
+            "content_para5": "<p>Create custom database apps fast, and harness the power of your data.</p>",
+            "check_app6": true,
+            "small_img6": "shopify://shop_images/ms-icon-publisher.png",
+            "content_head6": "Publisher",
+            "content_para6": "<p>Print and share professional-looking publications with easy-to-use tools.</p>"
+          }
+        },
+        "d8f93552-e090-4113-bae2-917be00d8d00": {
+          "type": "content",
+          "settings": {
+            "tabname": "Home & Business",
+            "check_app": false,
+            "small_img": "shopify://shop_images/ms-excel-icon.png",
+            "content_head": "Excel",
+            "content_para": "<p>Analyze, visualize and share your data with helpful formulas and tools.</p>",
+            "check_app2": false,
+            "small_img2": "shopify://shop_images/ms-icon-ppt.png",
+            "content_head2": "PowerPoint",
+            "content_para2": "<p>Create and organize mind-blowing presentations in just a few clicks.</p>",
+            "check_app3": false,
+            "small_img3": "shopify://shop_images/ms-icon-word.png",
+            "content_head3": "Word",
+            "content_para3": "<p>Create simple and powerful documents. Clean, sleek and easy on the eyes.</p>",
+            "check_app4": false,
+            "small_img4": "shopify://shop_images/ms-icon-outlook.png",
+            "content_head4": "Outlook",
+            "content_para4": "<p>Organize email, coordinate schedules, and stay up to date quickly.</p>",
+            "check_app5": true,
+            "small_img5": "shopify://shop_images/ms-icon-access.png",
+            "content_head5": "Access",
+            "content_para5": "<p>Create custom database apps fast, and harness the power of your data.</p>",
+            "check_app6": true,
+            "small_img6": "shopify://shop_images/ms-icon-publisher.png",
+            "content_head6": "Publisher",
+            "content_para6": "<p>Print and share professional-looking publications with easy-to-use tools.</p>"
+          }
+        },
+        "c2ad80d5-ccef-4404-991b-246ff9067105": {
+          "type": "content",
+          "settings": {
+            "tabname": "Professional",
+            "check_app": false,
+            "small_img": "shopify://shop_images/ms-excel-icon.png",
+            "content_head": "Excel",
+            "content_para": "<p>Analyze, visualize and share your data with helpful formulas and tools.</p>",
+            "check_app2": false,
+            "small_img2": "shopify://shop_images/ms-icon-ppt.png",
+            "content_head2": "PowerPoint",
+            "content_para2": "<p>Create and organize mind-blowing presentations in just a few clicks.</p>",
+            "check_app3": false,
+            "small_img3": "shopify://shop_images/ms-icon-word.png",
+            "content_head3": "Word",
+            "content_para3": "<p>Create simple and powerful documents. Clean, sleek and easy on the eyes.</p>",
+            "check_app4": false,
+            "small_img4": "shopify://shop_images/ms-icon-outlook.png",
+            "content_head4": "Outlook",
+            "content_para4": "<p>Organize email, coordinate schedules, and stay up to date quickly.</p>",
+            "check_app5": false,
+            "small_img5": "shopify://shop_images/ms-icon-access.png",
+            "content_head5": "Access",
+            "content_para5": "<p>Create custom database apps fast, and harness the power of your data.</p>",
+            "check_app6": false,
+            "small_img6": "shopify://shop_images/ms-icon-publisher.png",
+            "content_head6": "Publisher",
+            "content_para6": "<p>Print and share professional-looking publications with easy-to-use tools.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "5ecef4de-adc1-45e7-883d-a4a29c2dc7a7",
+        "d8f93552-e090-4113-bae2-917be00d8d00",
+        "c2ad80d5-ccef-4404-991b-246ff9067105"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Powerful Microsoft Applications",
+        "subcontent": "Microsoft Office 2021 comes with a suite of tools that help you do your best work. Explore the applications that come with each license type.",
+        "tabname": "Home & Student",
+        "tabname1": "Home & Business",
+        "tabname2": "Professional",
+        "tabname3": ""
+      }
+    },
+    "228f324b-7f0e-4811-9994-efa9272214d3": {
+      "type": "section__image-text",
+      "blocks": {
+        "template--14795820367927__228f324b-7f0e-4811-9994-efa9272214d3-title-1": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "Not sure what Microsoft Windows Suit your needs?",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "template--14795820367927__228f324b-7f0e-4811-9994-efa9272214d3-richText-1": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>Take a short quiz, or contact us, and we'll help you<br/>find the best Microsoft Windows OS for your needs.</p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        },
+        "template--14795820367927__228f324b-7f0e-4811-9994-efa9272214d3-button-1": {
+          "type": "button",
+          "settings": {
+            "fullWidth": true,
+            "text": "TAKE THE QUIZ",
+            "url": "https://msofficesoftware.typeform.com/to/PaDxWjte",
+            "icon": "",
+            "iconPosition": "icon--left",
+            "wideButton": false,
+            "buttonStyle": "primary",
+            "buttonType": "default",
+            "fontSize": "base",
+            "fontFamily": "base",
+            "animation": "none",
+            "animationDuration": 1000,
+            "animationInfinite": true
+          }
+        }
+      },
+      "block_order": [
+        "template--14795820367927__228f324b-7f0e-4811-9994-efa9272214d3-title-1",
+        "template--14795820367927__228f324b-7f0e-4811-9994-efa9272214d3-richText-1",
+        "template--14795820367927__228f324b-7f0e-4811-9994-efa9272214d3-button-1"
+      ],
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "#f4f5f7",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "imagePosition": "right",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/2.webp",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "7f12ae19-51b7-4736-bc8d-e13a25b15641": {
+      "type": "office-2021-compare",
+      "blocks": {
+        "51cc4a56-f35e-4c3b-9bef-a3cdd4918391": {
+          "type": "product",
+          "settings": {
+            "product_blocks": "windows-11-pro"
+          }
+        },
+        "4c7f0d6a-eef9-4034-a935-0d238e8906d7": {
+          "type": "product",
+          "settings": {
+            "product_blocks": "windows-11-home"
+          }
+        },
+        "453d32ad-6429-4cd5-bc5f-366259b08e36": {
+          "type": "product",
+          "settings": {
+            "product_blocks": "windows-11-enterprise"
+          }
+        }
+      },
+      "block_order": [
+        "51cc4a56-f35e-4c3b-9bef-a3cdd4918391",
+        "4c7f0d6a-eef9-4034-a935-0d238e8906d7",
+        "453d32ad-6429-4cd5-bc5f-366259b08e36"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "content_para": ""
+      }
+    },
+    "windows_product_compare_NX9MiK": {
+      "type": "windows-product-compare",
+      "blocks": {
+        "product_ynWTFU": {
+          "type": "product",
+          "settings": {
+            "product_blocks": "windows-11-pro"
+          }
+        },
+        "product_DMDHr4": {
+          "type": "product",
+          "settings": {
+            "product_blocks": "windows-11-home"
+          }
+        },
+        "product_YqccGk": {
+          "type": "product",
+          "settings": {
+            "product_blocks": "windows-11-enterprise"
+          }
+        }
+      },
+      "block_order": [
+        "product_ynWTFU",
+        "product_DMDHr4",
+        "product_YqccGk"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "content_para": ""
+      }
+    },
+    "custom_windows_products_8hHyjF": {
+      "type": "custom-windows-products",
+      "settings": {
+        "title": "Discover the Best Windows 11 Edition for You",
+        "description": "Compare Windows Home, Pro, and Enterprise Editions to Find the Perfect Fit for Your Needs.",
+        "product_1": "windows-11-home",
+        "image_1": "shopify://shop_images/windows_2.png",
+        "product_2": "windows-11-pro",
+        "image_2": "shopify://shop_images/windows_3.png",
+        "product_3": "windows-11-enterprise",
+        "image_3": "shopify://shop_images/windows_1_e20b77e5-44d6-4a46-99a6-3153dafbe6b0.png"
+      }
+    },
+    "a05d5ff3-abd5-4c03-af99-40096dd56824": {
+      "type": "section__faq",
+      "blocks": {
+        "9a7e015e-f036-4cfd-9927-f44f98622155": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>How long does it take to receive my SoftwareKeep order?</p>",
+            "answer": "As soon as we are able to successfully process your payment, you will receive a download link for your product and a Product Key from SoftwareKeep. This process is usually between 15-20 minutes. If your SoftwareKeep order is delayed longer than this, please refer to your SoftwareKeep account for the details of your purchase."
+          }
+        },
+        "18459490-d9d8-4894-9042-425b49ef2c0f": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>How can I be certain that my copy of Microsoft Office is genuine?</p>",
+            "answer": "SoftwareKeep is a proud Microsoft Certified Partner, and as such, all our software products are 100% legitimate and authentic. In addition, any software you purchase from SoftwareKeep is covered by our hassle-free money-back guarantee. We encourage all our SoftwareKeep customers to register their specific Microsoft Office Product key via Microsoft online activation to ensure verification and tracking of their authentic software products."
+          }
+        },
+        "cd87f49c-d688-4480-be1d-6bae412fc0e3": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>How long does a genuine software license from SoftwareKeep last?</p>",
+            "answer": "The license for any product purchased from SoftwareKeep is a lifetime (perpetual) license. You may be required to purchase a new license with a new version of the product. In some cases, you might be eligible for an upgrade license from SoftwareKeep that will allow you to upgrade at a discount price."
+          }
+        },
+        "91908238-3007-44d1-a267-e234c37bc584": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>Can I buy a single-use license software and install on multiple computers?</p>",
+            "answer": "As soon as we are able to successfully process your payment, you will receive a download link for your product and a Product Key from SoftwareKeep. This process is usually between 15-20 minutes. If your SoftwareKeep order is delayed longer than this, please refer to your SoftwareKeep account for the details of your purchase."
+          }
+        },
+        "baa01f80-dd91-4f00-95b5-65acca6ea51e": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>How can I be certain that my copy of Microsoft Office is genuine?</p>",
+            "answer": "SoftwareKeep is a proud Microsoft Certified Partner, and as such, all our software products are 100% legitimate and authentic. In addition, any software you purchase from SoftwareKeep is covered by our hassle-free money-back guarantee. We encourage all our SoftwareKeep customers to register their specific Microsoft Office Product key via Microsoft online activation to ensure verification and tracking of their authentic software products."
+          }
+        },
+        "81955599-bfde-4f22-b5a9-dd9b07a946f2": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>How long does a genuine software license from SoftwareKeep last?</p>",
+            "answer": "The license for any product purchased from SoftwareKeep is a lifetime (perpetual) license. You may be required to purchase a new license with a new version of the product. In some cases, you might be eligible for an upgrade license from SoftwareKeep that will allow you to upgrade at a discount price."
+          }
+        },
+        "fdb90bb4-9026-47ea-8bdc-fa344377f648": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>Can I buy a single-use license software and install on multiple computers?</p>",
+            "answer": "The software licenses sold by SoftwareKeep are intended for installation and activation on one computer only, unless otherwise specified for that particular product. Retail and OEM software licenses we provide are designed and licensed for use on a single computer. Installing a single-use license from SoftwareKeep on multiple computers is not permitted under the license terms and conditions."
+          }
+        },
+        "50007e6f-9e51-4303-b8bf-af33e8b60c91": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>What is a digital download and how does it work?</p>",
+            "answer": "A digital download is an electronic version of your software product, giving you access to download and use your new software immediately. This means that a physical CD or DVD disc is not included with your purchase. The software install program is downloaded through cloud-based storage."
+          }
+        },
+        "91c6a82a-8fa4-47c6-a9b6-6b6ca0b0aa85": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>What are retail software products?</p>",
+            "answer": "SoftwareKeep Retail software products are the same physical items you would purchase at your local software stores. They are packaged for retail sale and usually include the original box, physical CD or DVD disk(s), a manual, the paper license agreement, and an Activation Key/Code. Similar to OEM software, a Retail Product is licensed for use on one computer only."
+          }
+        },
+        "7ae3b139-863e-4ae0-bf46-b14e512999a6": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>Can I update my software over the Internet? (not needed as there's no update after 2021)</p>",
+            "answer": "Since these are genuine Microsoft products, you will be able to obtain regular updates from Microsoft using an Internet connection."
+          }
+        },
+        "accordion_LmRFfR": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>What are the system requirements for Windows 11?</p>",
+            "answer": "<p>To install Windows 11, your PC must meet the following minimum requirements:</p>\n<ul>\n  <li><strong>Processor:</strong> 1 GHz or faster with 2 or more cores on a compatible 64-bit processor or system on a chip (SoC).</li>\n  <li><strong>Memory (RAM):</strong> 4 GB or more.</li>\n  <li><strong>Storage:</strong> 64 GB or larger storage device.</li>\n  <li><strong>System Firmware:</strong> UEFI, Secure Boot capable.</li>\n  <li><strong>TPM:</strong> Trusted Platform Module (TPM) version 2.0.</li>\n  <li><strong>Graphics Card:</strong> DirectX 12 compatible with WDDM 2.0 driver.</li>\n  <li><strong>Display:</strong> 720p resolution or higher, with a monitor larger than 9 inches diagonally.</li>\n  <li><strong>Internet Connection:</strong> Required for Windows 11 Home setup.</li>\n</ul>\n<p>For more details, you can check compatibility using the <a href=\"https://www.microsoft.com/en-us/windows/windows-11#pchealthcheck\">PC Health Check Tool</a>.</p>"
+          }
+        },
+        "accordion_4jiD9R": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Can I upgrade from Windows 10 to Windows 11 Pro?</p>",
+            "answer": "<p>Yes, you can upgrade from Windows 10 to Windows 11 Pro, provided your device meets the system requirements. Here's how:</p>\n<ol>\n  <li><strong>Check Compatibility:</strong> Use the PC Health Check Tool to ensure your device supports Windows 11.</li>\n  <li><strong>Purchase the Upgrade:</strong> If you are on Windows 10 Home, you will need to purchase the Windows 11 Pro license.</li>\n  <li><strong>Perform the Upgrade:</strong>\n    <ul>\n      <li>Go to <strong>Settings &gt; Update & Security &gt; Windows Update.</strong></li>\n      <li>Click <strong>Check for Updates</strong>, and you’ll see the Windows 11 upgrade option.</li>\n      <li>Follow the instructions to upgrade.</li>\n    </ul>\n  </li>\n</ol>\n<p>If you are already using Windows 10 Pro, the upgrade to Windows 11 Pro is free.</p>"
+          }
+        },
+        "accordion_Nzt6yz": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>What is the difference between Pro and Enterprise?</p>",
+            "answer": "<table border=\"1\" cellpadding=\"10\" cellspacing=\"0\">\n  <thead>\n    <tr>\n      <th>Feature</th>\n      <th>Windows 11 Pro</th>\n      <th>Windows 11 Enterprise</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><strong>Target Audience</strong></td>\n      <td>Small businesses and advanced users.</td>\n      <td>Medium to large enterprises.</td>\n    </tr>\n    <tr>\n      <td><strong>Security</strong></td>\n      <td>Includes BitLocker, device encryption, and remote management tools.</td>\n      <td>Adds advanced threat protection and device control.</td>\n    </tr>\n    <tr>\n      <td><strong>Remote Access</strong></td>\n      <td>Includes Remote Desktop and Azure support.</td>\n      <td>Enhanced Remote Desktop with enterprise-grade tools.</td>\n    </tr>\n    <tr>\n      <td><strong>Collaboration Tools</strong></td>\n      <td>Advanced Teams integration.</td>\n      <td>Enterprise-grade collaboration and management.</td>\n    </tr>\n    <tr>\n      <td><strong>Virtualization</strong></td>\n      <td>Supports Hyper-V and Sandbox.</td>\n      <td>Includes enhanced deployment and management tools.</td>\n    </tr>\n    <tr>\n      <td><strong>Cost</strong></td>\n      <td>One-time license fee (lower).</td>\n      <td>Subscription-based (custom pricing).</td>\n    </tr>\n  </tbody>\n</table>\n<p>Windows 11 Enterprise is designed for larger organizations with specific IT needs, offering greater control and management options compared to Pro.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "9a7e015e-f036-4cfd-9927-f44f98622155",
+        "18459490-d9d8-4894-9042-425b49ef2c0f",
+        "cd87f49c-d688-4480-be1d-6bae412fc0e3",
+        "91908238-3007-44d1-a267-e234c37bc584",
+        "baa01f80-dd91-4f00-95b5-65acca6ea51e",
+        "81955599-bfde-4f22-b5a9-dd9b07a946f2",
+        "fdb90bb4-9026-47ea-8bdc-fa344377f648",
+        "50007e6f-9e51-4303-b8bf-af33e8b60c91",
+        "91c6a82a-8fa4-47c6-a9b6-6b6ca0b0aa85",
+        "7ae3b139-863e-4ae0-bf46-b14e512999a6",
+        "accordion_LmRFfR",
+        "accordion_4jiD9R",
+        "accordion_Nzt6yz"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "stretchBg",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "Frequently asked questions",
+        "headingColor": "#000000",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "textContent": ""
+      }
+    },
+    "section_testimonials_WAThnE": {
+      "type": "section__testimonials",
+      "blocks": {
+        "testimonial_fH7jWp": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Joe was a great technician. I got a response to my initial message right away. He asked good questions and gave quick, clear answers. I am awaiting resolution of the issue (a refund) within the 24-72 hours stated. Thank you, Joe!</p>",
+            "authorName": "Jenny Cool",
+            "fakeImageSex": "men",
+            "imageAlt": ""
+          }
+        },
+        "testimonial_JxURJz": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Coincidentally, this was my second call with Emre. Exceptional and very helpful even when it was my mistake.</p>",
+            "authorName": "Glenn",
+            "fakeImageSex": "men",
+            "imageAlt": ""
+          }
+        },
+        "testimonial_VtzHaX": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "text": "<p>I called for two things... I only meant to purchase Microsoft suite and I mistakenly purchased something along with my purchase. Daniel was my customer service rep. He reversed my charges immediately and walked me through how to install my product. He was very kind and patient. A person like myself who isn't tech savvy needed a kind person like Daniel to help me with my concerns. Daniel is an asset to your company. Kudos to you Daniel and Thanks a Mil</p>",
+            "authorName": "Naa-Diane Green",
+            "fakeImageSex": "men",
+            "imageAlt": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_fH7jWp",
+        "testimonial_JxURJz",
+        "testimonial_VtzHaX"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 40,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "heading": "Testimonials",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "What others have to say",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "blockStyle": "author-below",
+        "blockBackground": "rgba(0,0,0,0)",
+        "blockText": "#000000",
+        "testimonialAlign": "left",
+        "blockBottomBackground": "#ffffff",
+        "blockBottomText": "#000000",
+        "useFakeImages": false,
+        "roundedImages": false
+      }
+    },
+    "2fd01095-e820-494b-bbed-ba7009fe404e": {
+      "type": "section__icon-with-text",
+      "blocks": {
+        "cfa1949f-0958-4789-82f4-346641f892f4": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/cloud-computing.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Instant Digital Download",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#f2f5f7",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "04e6c5a7-2c9a-4faa-afb5-60fff2fc06b0": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/guarantee.svg",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Lifetime Product Guarantee",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#f2f5f7",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "409aa85d-632b-42a0-b87a-75fede7fca2f": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/new-year.svg",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Year Round Service",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#f2f5f7",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "9998e13e-3731-4448-8619-c26d87044cbe": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/certified_c5b6470d-8c77-41c8-9e75-dc1af0878342.svg",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Microsoft Certified Partner",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#f2f5f7",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "cfa1949f-0958-4789-82f4-346641f892f4",
+        "04e6c5a7-2c9a-4faa-afb5-60fff2fc06b0",
+        "409aa85d-632b-42a0-b87a-75fede7fca2f",
+        "9998e13e-3731-4448-8619-c26d87044cbe"
+      ],
+      "settings": {
+        "Slider_enbalemobile": false,
+        "home_guarantee_title": "",
+        "custom_id": "",
+        "home_guarantee_title_font_size": 40,
+        "home_guarantee_title_color": "#0067b8",
+        "home_guarantee_subtitle": "",
+        "home_guarantee_subtitle_font_size": 20,
+        "home_guarantee_subtitle_color": "#042338"
+      }
+    }
+  },
+  "order": [
+    "content",
+    "home_review_logo_FrJa3K",
+    "trustpilot_reviews_APPKc7",
+    "efea7753-045e-4eb2-9410-1692b828761a",
+    "228f324b-7f0e-4811-9994-efa9272214d3",
+    "7f12ae19-51b7-4736-bc8d-e13a25b15641",
+    "windows_product_compare_NX9MiK",
+    "custom_windows_products_8hHyjF",
+    "a05d5ff3-abd5-4c03-af99-40096dd56824",
+    "section_testimonials_WAThnE",
+    "2fd01095-e820-494b-bbed-ba7009fe404e"
+  ]
+}

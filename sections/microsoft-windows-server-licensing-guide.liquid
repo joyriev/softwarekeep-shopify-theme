@@ -1,0 +1,424 @@
+<div class="max-width row m-0 ms-0ffice_license mrgn_top">
+  <div class="box feature-matrix-content mw-100">
+    <div id="table-container-error" style="display: none">
+      <p class="text-center my-6">Please select at least one option</p>
+    </div>
+    <div id="table-container" class="h-auto content-table">
+      <table id="features-table">
+        <colgroup>
+          <col>
+          <col class="column-2022">
+          <col class="column-2022">
+          <col class="column-2019">
+          <col class="column-2019">
+          <col class="column-2019">
+          <col class="column-2016">
+          <col class="column-2016">
+          <col class="column-2016">
+        </colgroup>
+        <tbody>
+          
+          <tr class="sticky-row-1">
+            <th rowspan="1">{{ section.settings.head1 }}</th>
+            <th colspan="8" class="column-header">
+              <a href="{{ section.settings.hurl }}" style="color: var(--dynamic-black)">
+               {{ section.settings.head2 }}
+              </a>
+            </th>
+          </tr>
+
+           <tr class="sticky-row-2">
+              <th>Feature</th>
+              <!-- WS 2022 -->
+                {% for block in section.blocks %}
+                  {% if block.type == 'product' %}
+                    {% assign text = block.settings.name | split: ' ' | join: '-' | downcase  %}
+                    {% assign product = all_products[block.settings.product] %}
+                    <th class="column-2022 {{ text }}">
+                      <a href="{{ product.url }}">{{ block.settings.name }}</a>
+                    </th>
+                  {% endif %}
+                {% endfor %}
+             </tr>
+          
+              {% for block in section.blocks %}
+                {% if block.type == 'text' %}
+                    <tr>
+                      {% if block.settings.feature_text1 != blank %}
+                       <td>{{ block.settings.feature_text1 }}</td>
+                      {% endif %}
+                      
+                      {% if block.settings.check2 == true %}
+                        <td class="column-2022 2022-standard">
+                          {% render 'check-tick' %}
+                        </td>
+                        {% else %}
+                          {% if block.settings.feature_text2 != blank %}
+                           <td class="column-2022 2022-standard">{{ block.settings.feature_text2 }}</td>
+                            {% else %}
+                           <td class="column-2022 2022-standard"></td>
+                          {% endif %}
+                      {% endif %}
+  
+
+                      {% if block.settings.check3 == true %}
+                        <td class="column-2022 2022-datacenter">
+                          {% render 'check-tick' %}
+                        </td>
+                        {% else %}
+                          {% if block.settings.feature_text3 != blank %}
+                           <td class="column-2022 2022-datacenter">{{ block.settings.feature_text3 }}</td>
+                            {% else %}
+                           <td class="column-2022 2022-datacenter"></td>
+                          {% endif %}
+                      {% endif %}
+  
+
+                      {% if block.settings.check4 == true %}
+                        <td class="column-2022 2019-standard">
+                          {% render 'check-tick' %}
+                        </td>
+                        {% else %}
+                          {% if block.settings.feature_text4 != blank %}
+                           <td class="column-2022 2019-standard">{{ block.settings.feature_text4 }}</td>
+                            {% else %}
+                           <td class="column-2022 2019-standard"></td>
+                          {% endif %}
+                      {% endif %}
+  
+                      {% if block.settings.check5 == true %}
+                        <td class="column-2022 2019-datacenter">
+                          {% render 'check-tick' %}
+                        </td>
+                        {% else %}
+                        {% if block.settings.feature_text5 != blank %}
+                         <td class="column-2022 2019-datacenter">{{ block.settings.feature_text5 }}</td>
+                          {% else %}
+                         <td class="column-2022 2019-datacenter"></td>
+                        {% endif %}
+                      {% endif %}
+  
+
+                      {% if block.settings.check6 == true %}
+                        <td class="column-2022 2019-essentials">
+                          {% render 'check-tick' %}
+                        </td>
+                        {% else %}
+                          {% if block.settings.feature_text6 != blank %}
+                           <td class="column-2022 2019-essentials">{{ block.settings.feature_text6 }}</td>
+                            {% else %}
+                           <td class="column-2022 2019-essentials"></td>
+                          {% endif %}
+                      {% endif %}
+  
+
+                      {% if block.settings.check7 == true %}
+                        <td class="column-2022 2016-standard">
+                          {% render 'check-tick' %}
+                        </td>
+                        {% else %}
+                          {% if block.settings.feature_text7 != blank %}
+                           <td class="column-2022 2016-standard">{{ block.settings.feature_text7 }}</td>
+                            {% else %}
+                           <td class="column-2022 2016-standard"></td>
+                          {% endif %}
+                      {% endif %}
+  
+                      {% if block.settings.check8 == true %}
+                        <td class="column-2022 2016-datacenter">
+                          {% render 'check-tick' %}
+                        </td>
+                        {% else %}
+                          {% if block.settings.feature_text8 != blank %}
+                           <td class="column-2022 2016-datacenter">{{ block.settings.feature_text8 }}</td>
+                            {% else %}
+                           <td class="column-2022 2016-datacenter"></td>
+                          {% endif %}
+                      {% endif %}
+  
+
+                      {% if block.settings.check9 == true %}
+                        <td class="column-2022 2016-essentials">
+                          {% render 'check-tick' %}
+                        </td>
+                        {% else %}
+                          {% if block.settings.feature_text9 != blank %}
+                           <td class="column-2022 2016-essentials">{{ block.settings.feature_text9 }}</td>
+                            {% else %}
+                           <td class="column-2022 2016-essentials"></td>
+                          {% endif %}
+                      {% endif %}
+                    </tr>
+                  {% endif %}
+                {% endfor %}
+
+              <tr class="last">
+                <td></td>
+                 {% for block in section.blocks %}
+                   {% assign product = all_products[block.settings.product] %}
+                   {% if product != blank %}
+                       <td class="cart_btn_wrap {% if forloop.index == 6 %}column-2016 2016-standard{% endif %}{% if forloop.index == 5 %}column-2019 2019-essentials{% endif %}{% if forloop.index == 4 %}column-2019 2019-datacenter{% endif %}{% if forloop.index == 3 %}column-2019 2019-standard{% endif %}{% if forloop.index == 2 %}column-2022 2022-datacenter{% endif %}{% if forloop.index == 1 %}column-2022 2022-standard{% endif %}">
+                           {% assign var = product.first_available_variant %}
+                           {% form 'product', product, class:'lang_btns' %}
+                              <input name="id" type="hidden" value="{{var.id}}">
+                              {% render 'custom-buy-now', variant: var.id, quantity: 1, price: product.price %}
+                            {% endform %}
+                         </td>
+                   {% endif %}
+                {% endfor %}            
+              </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+
+<style>
+  .mrgn_top{
+    margin-top: 0px;
+  }  
+  [data-theme="light"] {
+    --border-color-faded: RGB(163, 221, 161);
+  }
+  [data-theme="dark"] {
+    --border-color-faded: RGB(38, 161, 127);
+  }
+/*  .main-toggle {
+    border-right: 1px solid #a9a9a921 !important;
+  }*/
+  .column-header {
+    background-color: var(--border-color) !important;
+  }
+  #features-table th a {
+    color: white;
+  }
+
+  @media screen and (max-width: 767px) {
+    #table-switches-table {
+      font-size: var(--font-size-xxs);
+    }
+  }
+</style>
+<script>
+
+$(".server-button .btn-secondary").click(function(event) {
+  	event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $(".custom-contact-form").offset().top - 150
+    }, 1000);
+});
+
+$(document).on('click', '#detailed-guide .button', function(event) {
+  	event.preventDefault();
+    $(this).parent().next('.detailed-guide-content').slideToggle('active');
+    console.log('btn-clicked');
+});
+  
+$(document).ready(function() {
+    $('.last .button--addToCart').hover(
+        function() {
+            var colIndex = $(this).closest('td').index();
+            $('table tr:nth-child(n+2)').each(function() {
+                $(this).children().eq(colIndex).addClass('hovered');
+            });
+        },
+        function() {
+            var colIndex = $(this).closest('td').index();
+            $('table tr:nth-child(n+2)').each(function() {
+                $(this).children().eq(colIndex).removeClass('hovered');
+            });
+        }
+    );
+});
+ 
+
+  
+  $(function() {
+    $("#2022-standard").click(function() {
+        $(".2022-standard").is(":visible") ? $(".2022-datacenter").is(":visible") ? ($("#2022").prop("disabled") && $("#2022-datacenter").prop("checked") && $("#2022-datacenter").prop("disabled", !0), $(".column-2022.column-header").attr("colspan", 1), $(".2022-standard").hide()) : ($("#2022").prop("checked", !1), $(".column-2022.column-header").attr("colspan", 1), $(".column-2022").hide(), toggleTableView()) : $(".2022-datacenter").is(":visible") ? ($("#2022").prop("disabled") && $("#2022-datacenter").prop("checked") && $("#2022-datacenter").prop("disabled", !1), $(".column-2022.column-header").attr("colspan", 2), $(".2022-standard").show()) : ($("#2022").prop("checked", !0), $(".column-2022.column-header").show(), $(".column-2022.column-header").attr("colspan", 1), $(".2022-standard").show(), toggleTableView())
+    }), $("#2022-datacenter").click(function() {
+        $(".2022-datacenter").is(":visible") ? $(".2022-standard").is(":visible") ? ($("#2022").prop("disabled") && $("#2022-standard").prop("checked") && $("#2022-standard").prop("disabled", !0), $(".column-2022.column-header").attr("colspan", 1), $(".2022-datacenter").hide()) : ($("#2022").prop("checked", !1), $(".column-2022.column-header").attr("colspan", 1), $(".column-2022").hide(), toggleTableView()) : $(".2022-standard").is(":visible") ? ($("#2022").prop("disabled") && $("#2022-standard").prop("checked") && $("#2022-standard").prop("disabled", !1), $(".column-2022.column-header").attr("colspan", 2), $(".2022-datacenter").show()) : ($("#2022").prop("checked", !0), $(".column-2022.column-header").show(), $(".column-2022.column-header").attr("colspan", 1), $(".2022-datacenter").show(), toggleTableView())
+    }), $("#2019-standard").click(function() {
+        $(".2019-standard").is(":visible") ? $(".2019-datacenter").is(":visible") ? $(".2019-essentials").is(":visible") ? ($(".column-2019.column-header").attr("colspan", 2), $(".2019-standard").hide()) : ($("#2019").prop("disabled") && $("#2019-datacenter").prop("disabled", !0), $(".column-2019.column-header").attr("colspan", 1), $(".2019-standard").hide()) : $(".2019-essentials").is(":visible") ? ($("#2019").prop("disabled") && $("#2019-essentials").prop("disabled", !0), $(".column-2019.column-header").attr("colspan", 1), $(".2019-standard").hide()) : ($("#2019").prop("checked", !1), $(".column-2019.column-header").attr("colspan", 1), $(".column-2019").hide(), toggleTableView()) : $(".2019-datacenter").is(":visible") ? $(".2019-essentials").is(":visible") ? ($(".column-2019.column-header").attr("colspan", 3), $(".2019-standard").show()) : ($(".column-2019.column-header").attr("colspan", 2), $(".2019-standard").show()) : $(".2019-essentials").is(":visible") ? ($(".column-2019.column-header").attr("colspan", 2), $(".2019-standard").show()) : ($("#2019").prop("checked", !0), $(".column-2019.column-header").show(), $(".column-2019.column-header").attr("colspan", 1), $(".2019-standard").show(), toggleTableView())
+    }), $("#2019-datacenter").click(function() {
+        $(".2019-datacenter").is(":visible") ? $(".2019-standard").is(":visible") ? $(".2019-essentials").is(":visible") ? ($(".column-2019.column-header").attr("colspan", 2), $(".2019-datacenter").hide()) : ($("#2019").prop("disabled") && $("#2019-standard").prop("disabled", !0), $(".column-2019.column-header").attr("colspan", 1), $(".2019-datacenter").hide()) : $(".2019-essentials").is(":visible") ? ($("#2019").prop("disabled") && $("#2019-essentials").prop("disabled", !0), $(".column-2019.column-header").attr("colspan", 1), $(".2019-datacenter").hide()) : ($("#2019").prop("checked", !1), $(".column-2019.column-header").attr("colspan", 1), $(".column-2019").hide(), toggleTableView()) : $(".2019-standard").is(":visible") ? $(".2019-essentials").is(":visible") ? ($(".column-2019.column-header").attr("colspan", 3), $(".2019-datacenter").show()) : ($(".column-2019.column-header").attr("colspan", 2), $(".2019-datacenter").show()) : $(".2019-essentials").is(":visible") ? ($(".column-2019.column-header").attr("colspan", 2), $(".2019-datacenter").show()) : ($("#2019").prop("checked", !0), $(".column-2019.column-header").show(), $(".column-2019.column-header").attr("colspan", 1), $(".2019-datacenter").show(), toggleTableView())
+    }), $("#2019-essentials").click(function() {
+        $(".2019-essentials").is(":visible") ? $(".2019-datacenter").is(":visible") ? $(".2019-standard").is(":visible") ? ($(".column-2019.column-header").attr("colspan", 2), $(".2019-essentials").hide()) : ($("#2019").prop("disabled") && $("#2019-datacenter").prop("disabled", !0), $(".column-2019.column-header").attr("colspan", 1), $(".2019-essentials").hide()) : $(".2019-standard").is(":visible") ? ($("#2019").prop("disabled") && $("#2019-standard").prop("disabled", !0), $(".column-2019.column-header").attr("colspan", 1), $(".2019-essentials").hide()) : ($("#2019").prop("checked", !1), $(".column-2019.column-header").attr("colspan", 1), $(".column-2019").hide(), toggleTableView()) : $(".2019-datacenter").is(":visible") ? $(".2019-standard").is(":visible") ? ($(".column-2019.column-header").attr("colspan", 3), $(".2019-essentials").show()) : ($(".column-2019.column-header").attr("colspan", 2), $(".2019-essentials").show()) : $(".2019-standard").is(":visible") ? ($(".column-2019.column-header").attr("colspan", 2), $(".2019-essentials").show()) : ($("#2019").prop("checked", !0), $(".column-2019.column-header").show(), $(".column-2019.column-header").attr("colspan", 1), $(".2019-essentials").show(), toggleTableView())
+    }), $("#2016-standard").click(function() {
+        $(".2016-standard").is(":visible") ? $(".2016-datacenter").is(":visible") ? $(".2016-essentials").is(":visible") ? ($(".column-2016.column-header").attr("colspan", 2), $(".2016-standard").hide()) : ($("#2016").prop("disabled") && $("#2016-datacenter").prop("disabled", !0), $(".column-2016.column-header").attr("colspan", 1), $(".2016-standard").hide()) : $(".2016-essentials").is(":visible") ? ($("#2016").prop("disabled") && $("#2016-essentials").prop("disabled", !0), $(".column-2016.column-header").attr("colspan", 1), $(".2016-standard").hide()) : ($("#2016").prop("checked", !1), $(".column-2016.column-header").attr("colspan", 1), $(".column-2016").hide(), toggleTableView()) : $(".2016-datacenter").is(":visible") ? $(".2016-essentials").is(":visible") ? ($(".column-2016.column-header").attr("colspan", 3), $(".2016-standard").show()) : ($(".column-2016.column-header").attr("colspan", 2), $(".2016-standard").show()) : $(".2016-essentials").is(":visible") ? ($(".column-2016.column-header").attr("colspan", 2), $(".2016-standard").show()) : ($("#2016").prop("checked", !0), $(".column-2016.column-header").show(), $(".column-2016.column-header").attr("colspan", 1), $(".2016-standard").show(), toggleTableView())
+    }), $("#2016-datacenter").click(function() {
+        $(".2016-datacenter").is(":visible") ? $(".2016-standard").is(":visible") ? $(".2016-essentials").is(":visible") ? ($(".column-2016.column-header").attr("colspan", 2), $(".2016-datacenter").hide()) : ($("#2016").prop("disabled") && $("#2016-standard").prop("disabled", !0), $(".column-2016.column-header").attr("colspan", 1), $(".2016-datacenter").hide()) : $(".2016-essentials").is(":visible") ? ($("#2016").prop("disabled") && $("#2016-essentials").prop("disabled", !0), $(".column-2016.column-header").attr("colspan", 1), $(".2016-datacenter").hide()) : ($("#2016").prop("checked", !1), $(".column-2016.column-header").attr("colspan", 1), $(".column-2016").hide(), toggleTableView()) : $(".2016-standard").is(":visible") ? $(".2016-essentials").is(":visible") ? ($(".column-2016.column-header").attr("colspan", 3), $(".2016-datacenter").show()) : ($(".column-2016.column-header").attr("colspan", 2), $(".2016-datacenter").show()) : $(".2016-essentials").is(":visible") ? ($(".column-2016.column-header").attr("colspan", 2), $(".2016-datacenter").show()) : ($("#2016").prop("checked", !0), $(".column-2016.column-header").show(), $(".column-2016.column-header").attr("colspan", 1), $(".2016-datacenter").show(), toggleTableView())
+    }), $("#2016-essentials").click(function() {
+        $(".2016-essentials").is(":visible") ? $(".2016-datacenter").is(":visible") ? $(".2016-standard").is(":visible") ? ($(".column-2016.column-header").attr("colspan", 2), $(".2016-essentials").hide()) : ($("#2016").prop("disabled") && $("#2016-datacenter").prop("disabled", !0), $(".column-2016.column-header").attr("colspan", 1), $(".2016-essentials").hide()) : $(".2016-standard").is(":visible") ? ($("#2016").prop("disabled") && $("#2016-standard").prop("disabled", !0), $(".column-2016.column-header").attr("colspan", 1), $(".2016-essentials").hide()) : ($("#2016").prop("checked", !1), $(".column-2016.column-header").attr("colspan", 1), $(".column-2016").hide(), toggleTableView()) : $(".2016-datacenter").is(":visible") ? $(".2016-standard").is(":visible") ? ($(".column-2016.column-header").attr("colspan", 3), $(".2016-essentials").show()) : ($(".column-2016.column-header").attr("colspan", 2), $(".2016-essentials").show()) : $(".2016-standard").is(":visible") ? ($(".column-2016.column-header").attr("colspan", 2), $(".2016-essentials").show()) : ($("#2016").prop("checked", !0), $(".column-2016.column-header").show(), $(".column-2016.column-header").attr("colspan", 1), $(".2016-essentials").show(), toggleTableView())
+    }), $("#select-all").click(function() {
+        $("#2022").prop("checked", !0), $("#2019").prop("checked", !0), $("#2016").prop("checked", !0), $("#2022-standard").prop("checked", !0), $("#2022-datacenter").prop("checked", !0), $("#2019-standard").prop("checked", !0), $("#2019-datacenter").prop("checked", !0), $("#2019-essentials").prop("checked", !0), $("#2016-standard").prop("checked", !0), $("#2016-datacenter").prop("checked", !0), $("#2016-essentials").prop("checked", !0), $(".column-2022.column-header").attr("colspan", 2), $(".column-2022").show(), $(".column-2019.column-header").attr("colspan", 3), $(".column-2019").show(), $(".column-2016.column-header").attr("colspan", 3), $(".column-2016").show(), toggleTableView()
+    }), $("#select-none").click(function() {
+        $("#2022").prop("checked", !1), $("#2019").prop("checked", !1), $("#2016").prop("checked", !1), $("#2022-standard").prop("checked", !1), $("#2022-datacenter").prop("checked", !1), $("#2019-standard").prop("checked", !1), $("#2019-datacenter").prop("checked", !1), $("#2019-essentials").prop("checked", !1), $("#2016-standard").prop("checked", !1), $("#2016-datacenter").prop("checked", !1), $("#2016-essentials").prop("checked", !1), $(".column-2022").hide(), $(".column-2019").hide(), $(".column-2016").hide(), toggleTableView()
+    }), $(".matrix-toggles").show()
+});
+
+function uncheckToggle(toggle) {
+    $(toggle).prop("checked") == !0 && $(toggle).click()
+}
+
+function checkToggle(toggle) {
+    $(toggle).prop("checked") == !1 && $(toggle).click()
+}
+
+function toggleGroup(group) {
+    group == "2022" ? $("#2022").prop("checked") == !1 ? (uncheckToggle("#2022-standard"), uncheckToggle("#2022-datacenter")) : (checkToggle("#2022-standard"), checkToggle("#2022-datacenter")) : group == "2019" ? $("#2019").prop("checked") == !1 ? (uncheckToggle("#2019-standard"), uncheckToggle("#2019-datacenter"), uncheckToggle("#2019-essentials")) : (checkToggle("#2019-standard"), checkToggle("#2019-datacenter"), checkToggle("#2019-essentials")) : group == "2016" && ($("#2016").prop("checked") == !1 ? (uncheckToggle("#2016-standard"), uncheckToggle("#2016-datacenter"), uncheckToggle("#2016-essentials")) : (checkToggle("#2016-standard"), checkToggle("#2016-datacenter"), checkToggle("#2016-essentials")))
+}
+
+function toggleTableView() {
+    $("#2022").prop("checked") == !1 && $("#2019").prop("checked") == !1 && $("#2016").prop("checked") == !1 ? ($("#table-container").hide(), $("#table-container-error").show()) : ($("#table-container-error").hide(), $("#table-container").show())
+}
+//# sourceMappingURL=/cdn/shop/t/70/assets/ws-comparison-matrix.js.map?v=126090576399411648811682533618
+</script>
+{% schema %}
+  {
+    "name": "Server Licensing Guide",
+    "settings": [
+      {
+        "type": "text",
+        "id": "head1",
+        "label": "Page Heading text",
+        "default": "Windows Server"
+      },
+      {
+        "type": "text",
+        "id": "head2",
+        "label": "Page Heading text",
+        "default": "Version/Edition"
+      },
+      {
+        "type": "url",
+        "id": "hurl",
+        "label": "Link Table Heading Two "
+      }
+    ],
+    "blocks":[
+      {
+        "type": "product",
+        "name": "product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "product"
+          },
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Enter Table Custom Heading",
+            "default": "2022 Standard"
+          },
+        ]
+      },
+      {
+        "type": "text",
+        "name": "Feature",
+        "settings": [
+          {
+            "type": "header",
+            "content": "feature List Content",
+            "info": "If checkbox is disabled then text will be show "
+          },
+          {
+            "type": "text",
+            "id": "feature_text1",
+            "label": "Enter Text One",
+            "default": "Processing Power"
+          },
+          {
+            "type": "text",
+            "id": "feature_text2",
+            "label": "Enter Text Two"
+          },
+          {
+            "type": "checkbox",
+            "id": "check2",
+            "label": "Enbale check sign"
+          },
+          {
+            "type": "text",
+            "id": "feature_text3",
+            "label": "Enter Text Three"
+          },
+          {
+            "type": "checkbox",
+            "id": "check3",
+            "label": "Enbale check sign"
+          },
+          {
+            "type": "text",
+            "id": "feature_text4",
+            "label": "Enter Text Four"
+          },
+          {
+            "type": "checkbox",
+            "id": "check4",
+            "label": "Enbale check sign"
+          },
+          {
+            "type": "text",
+            "id": "feature_text5",
+            "label": "Enter Text Five"
+          },
+          {
+            "type": "checkbox",
+            "id": "check5",
+            "label": "Enbale check sign"
+          },
+          {
+            "type": "text",
+            "id": "feature_text6",
+            "label": "Enter Text Six"
+          },
+          {
+            "type": "checkbox",
+            "id": "check6",
+            "label": "Enbale check sign"
+          },
+          {
+            "type": "text",
+            "id": "feature_text7",
+            "label": "Enter Text Seven"
+          },
+          {
+            "type": "checkbox",
+            "id": "check7",
+            "label": "Enbale check sign"
+          },
+          {
+            "type": "text",
+            "id": "feature_text8",
+            "label": "Enter Text Eight"
+          },
+          {
+            "type": "checkbox",
+            "id": "check8",
+            "label": "Enbale check sign"
+          },
+          {
+            "type": "text",
+            "id": "feature_text9",
+            "label": "Enter Text Nine"
+          },
+          {
+            "type": "checkbox",
+            "id": "check9",
+            "label": "Enbale check sign"
+          },
+        ]
+      },
+      
+    ],
+    "presets":[
+      {
+        "name": "Server Licensing Guide"
+      }
+    ]
+  }
+{% endschema %}

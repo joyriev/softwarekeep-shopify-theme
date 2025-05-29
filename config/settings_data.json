@@ -1,0 +1,520 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "demo": false,
+    "pop_text": "<div class=\"js-popup-content popupContent\">\n         <div class=\"papPopup_container\">\n            <h3 class=\"papPopup_title\" id=\"popup-title\">\n               <b><font color=\"#cc0033\">UP TO 50% OFF</font></b><br> Buy Windows 11 Home &amp; Get Office 2021 Home &amp; Student at 50% Off Use CODE: B50<br>\n            </h3>\n            <div class=\"papPopup_text\">\n              \n               <p>*some exclusions may apply*</p>\n            </div>\n            <a href=\"/pages/microsoft-windows-products\" class=\"papPopup_link\" data-popup-link=\"SHOP NOW\">SHOP NOW</a>\n         </div>\n         <button type=\"button\" class=\"epopupClose\">\n            <svg class=\"epopupCloseSVG\" width=\"22\" height=\"22\" viewbox=\"-3 -4 20 20\" xmlns=\"http://www.w3.org/2000/svg\">\n               <path d=\"M8.414 7l5.293-5.293c.391-.391.391-1.023 0-1.414s-1.023-.391-1.414 0l-5.293 5.293-5.293-5.293c-.391-.391-1.023-.391-1.414 0s-.391 1.023 0 1.414l5.293 5.293-5.293 5.293c-.391.391-.391 1.023 0 1.414.195.195.451.293.707.293.256 0 .512-.098.707-.293l5.293-5.293 5.293 5.293c.195.195.451.293.707.293.256 0 .512-.098.707-.293.391-.391.391-1.023 0-1.414l-5.293-5.293\"></path>\n            </svg>\n         </button>\n      </div>",
+    "defaultLogo": "shopify://shop_images/logo.png",
+    "favicon": "shopify://shop_images/FavIcon.png",
+    "storePhone": "",
+    "sFacebook": "https://www.facebook.com/softwarekeep",
+    "sInstagram": "https://www.instagram.com/softwarekeep/",
+    "sTwitter": "https://twitter.com/i/flow/login?redirect_after_login=%2Fsoftwarekeep",
+    "sWhatsapp": "",
+    "sWe": "",
+    "sYoutube": "https://www.youtube.com/SoftwareKeep",
+    "sPinterest": "https://www.pinterest.com/softwarekeepusa/",
+    "sLinkedin": "https://ca.linkedin.com/company/softwarekeep",
+    "baseLayout": "stretchBg",
+    "baseSectionMargin": 38,
+    "pagination": "loadmore",
+    "emptySearch": "microsoft-office-2024",
+    "baseText": "#202020",
+    "baseTitle": "#093160",
+    "baseLink": "#0067b8",
+    "primaryAccentBackground": "#126337",
+    "secondaryAccentText": "#514bbf",
+    "mobileFilter": "#1e1f21",
+    "primaryFont": "ubuntu_n4",
+    "secondaryFont": "ubuntu_n4",
+    "smallFontSize": 16,
+    "baseFontSize": 18,
+    "bigFontSize": 44,
+    "headingFontSize": 34,
+    "subHeadingFontSize": 18,
+    "primaryButtonStyle": "filled",
+    "freeShipping": false,
+    "addToCartType": "text",
+    "addToCartIcon": "shopping-cart",
+    "checkout_offering_url": "shopify://collections/microsoft-office",
+    "headerType": "inline-search",
+    "cardDesktop": "3",
+    "cardMobile": "12",
+    "baseCardPadding": 20,
+    "cardImageFit": "contain",
+    "cardImageRatio": "100",
+    "cardStyle": "none",
+    "cardShowGallery": false,
+    "cardShowSecondary": false,
+    "cardShowRating": false,
+    "cardPriceColor": "#514bbf",
+    "cardOldPriceColor": "#093160",
+    "cardNewPriceColor": "#514bbf",
+    "tagEnabled": false,
+    "tagSale": false,
+    "tagSaleColor": "#b30000",
+    "collectionCardTextAlign": "center",
+    "variantShowImage": true,
+    "defaultSelector": "swatch",
+    "swatchLogic": "aliexpress",
+    "disableSOSwatch": true,
+    "disabledSwatchStyle": "hide",
+    "colorSwatches": "",
+    "cartStyle": "none",
+    "quickBuy": false,
+    "ajaxType": "form",
+    "cartAction": "minicart",
+    "lazyLoadSvg": true,
+    "nativeLazyLoad": true,
+    "geolocation": false,
+    "shopCurrency": "convert",
+    "enabledCurrencies": "",
+    "currencyFormat": "money_with_currency_format",
+    "OPDynTitle": "",
+    "BPDynTitle": "",
+    "cartTimer": true,
+    "countdown": true,
+    "countdownTime": "15",
+    "countdownTimeFormat": "minutes",
+    "recentlyBought": false,
+    "recentlyBoughtMobile": false,
+    "recentlyBoughtCollection": "best-sellers",
+    "recentlyBoughtInterval": 30,
+    "recentlyBoughtRemain": 15,
+    "recentlyBoughtPosition": "left",
+    "recentlyBoughtBorderRadius": 10,
+    "upsell_heading": "You May Also Like",
+    "drawerupsell_products": [
+      "windows-11-home",
+      "add-a-usb-software-backup",
+      "premium-software-protection"
+    ],
+    "freeShippingAmount": "0",
+    "messenger": false,
+    "optimizedMessenger": false,
+    "messengerID": "#",
+    "gdpr": false,
+    "jQuery": true,
+    "drawerupsell_product": "add-a-usb-software-backup",
+    "sections": {
+      "top-info-bar": {
+        "type": "top-info-bar",
+        "settings": {
+          "country_flag": "",
+          "helpline": "24/7 Live Chat",
+          "help_line": "javascript:zE.activate();",
+          "phone_no": "877 315 1713",
+          "chat": "+1 877 315 1713",
+          "button_label": "Why Softwarekeep?",
+          "button_link": "shopify://pages/why-softwarekeep",
+          "button__label": "Reviews",
+          "button__link": "shopify://pages/review",
+          "button-label": "Blogs",
+          "button-link": "shopify://blogs/news",
+          "quiz_label": "Take Our Quiz",
+          "quiz_link": "https://softwarekeep.com/pages/what-version-of-office-is-right-for-you-quiz",
+          "bestseller_label": "Bestsellers",
+          "bestseller_link": "shopify://collections/bestsellers",
+          "account": "Account",
+          "account_link": "/account",
+          "help_center": "Help Center",
+          "help_link": "shopify://pages/help-center"
+        }
+      },
+      "info-badges": {
+        "type": "info-badges",
+        "blocks": {
+          "fd5af8ef-fb9f-490a-b4da-4144a48a519d": {
+            "type": "infoBadge",
+            "disabled": true,
+            "settings": {
+              "icon": "parcel",
+              "heading": "<b>Free Shipping</b>",
+              "subheading": "Free shipping on orders over $99*"
+            }
+          },
+          "8f34a1fd-57f1-476d-b533-de18777ba59d": {
+            "type": "infoBadge",
+            "disabled": true,
+            "settings": {
+              "icon": "truck",
+              "heading": "<b>Fast Delivery</b>",
+              "subheading": "Overnight to Same-Day options available."
+            }
+          },
+          "8f34a1fd-b533-de18777ba59d": {
+            "type": "infoBadge",
+            "disabled": true,
+            "settings": {
+              "icon": "star",
+              "heading": "<b>Top-notch service</b>",
+              "subheading": "We strive to offer you the best."
+            }
+          },
+          "d1bd7d63-4d29-4ca1-9ead-282a3694ee4e": {
+            "type": "infoBadge",
+            "disabled": true,
+            "settings": {
+              "icon": "shield",
+              "heading": "<b>Secure payments</b>",
+              "subheading": "Safe and reliable industry leading website."
+            }
+          }
+        },
+        "block_order": [
+          "fd5af8ef-fb9f-490a-b4da-4144a48a519d",
+          "8f34a1fd-57f1-476d-b533-de18777ba59d",
+          "8f34a1fd-b533-de18777ba59d",
+          "d1bd7d63-4d29-4ca1-9ead-282a3694ee4e"
+        ],
+        "settings": {
+          "enabled": true,
+          "displayFor": "display--both",
+          "layout": "default",
+          "nomargin": true,
+          "scopedCSS": "##scoped b {\n    font-size: 16px;\n}\n##scoped .info-badge__subheading {\n    font-size: 12px;\n}",
+          "height": 0,
+          "padding": 0,
+          "lineMargin": 0,
+          "backgroundColor": "#eafaff",
+          "backgroundPosition": "middle",
+          "backgroundFilter": "none",
+          "backdropIntensity": 50,
+          "parallax": false,
+          "backgroundPattern": false,
+          "overlayOpacity": 0,
+          "overlayColor": "#000000",
+          "contentColor": "#093160",
+          "horizontalAlignment": "end",
+          "verticalAlignment": "middle",
+          "iconPosition": "icon--left"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "bbaa1228-04f8-405a-ab4f-558d242b720e": {
+            "type": "footerLinks",
+            "settings": {
+              "width": "auto",
+              "horizontalAlignment": "start",
+              "verticalAlignment": "middle",
+              "heading": "Company",
+              "links": "my-softwarekeep"
+            }
+          },
+          "22070fc6-9052-49fc-83ce-705e6c580f91": {
+            "type": "footerLinks",
+            "settings": {
+              "width": "auto",
+              "horizontalAlignment": "start",
+              "verticalAlignment": "middle",
+              "heading": "Why choose Softwarekeep",
+              "links": "software-keep"
+            }
+          },
+          "5ddd03ea-4baa-474b-ab7b-4dc9545e1f96": {
+            "type": "footerLinks",
+            "settings": {
+              "width": "auto",
+              "horizontalAlignment": "start",
+              "verticalAlignment": "middle",
+              "heading": "Resources",
+              "links": "services"
+            }
+          },
+          "7770b292-6d3f-4dcf-a30e-c2e0f7ccf32f": {
+            "type": "footerText",
+            "settings": {
+              "width": "auto",
+              "horizontalAlignment": "start",
+              "verticalAlignment": "middle",
+              "heading": "Address",
+              "text": "<p>1591 McKenzie Way, Point<br/>Roberts, WA 98281, United States</p><p>+1 888 851 6548</p><p>sales@softwarekeep.com</p>"
+            }
+          },
+          "63f79a72-b881-4357-9de2-f528b984d4c3": {
+            "type": "footerSocial",
+            "settings": {
+              "width": "12",
+              "horizontalAlignment": "center",
+              "verticalAlignment": "top",
+              "heading": ""
+            }
+          }
+        },
+        "block_order": [
+          "bbaa1228-04f8-405a-ab4f-558d242b720e",
+          "22070fc6-9052-49fc-83ce-705e6c580f91",
+          "5ddd03ea-4baa-474b-ab7b-4dc9545e1f96",
+          "7770b292-6d3f-4dcf-a30e-c2e0f7ccf32f",
+          "63f79a72-b881-4357-9de2-f528b984d4c3"
+        ],
+        "settings": {
+          "footer_image": "shopify://shop_images/flag-usa.png",
+          "flag_text": "English - United States",
+          "term-text": "Terms & Conditions",
+          "term-link": "shopify://pages/terms-and-conditions",
+          "privacy-text": "Privacy & Cookies",
+          "privacy-link": "shopify://pages/privacy-policy",
+          "eula-text": "EULA",
+          "eula-link": "https://cdn.shopify.com/s/files/1/0090/2125/9831/files/EULA_Microsoft_v052012.pdf?v=1702894484",
+          "layout": "stretchBg",
+          "fillColor": "#f2f5f7",
+          "contentColor": "#191d21",
+          "spacing": 16
+        }
+      },
+      "subfooter": {
+        "type": "subfooter",
+        "blocks": {
+          "text-01": {
+            "type": "footerText",
+            "disabled": true,
+            "settings": {
+              "width": "auto",
+              "horizontalAlignment": "center",
+              "verticalAlignment": "middle",
+              "heading": "",
+              "text": "<p>Designed and developed by <a target=\"_blank\" href=\"https://boostertheme.com/\">BoosterTheme™</a></p>"
+            }
+          }
+        },
+        "block_order": [
+          "text-01"
+        ],
+        "settings": {
+          "layout": "default",
+          "fillColor": "#093160",
+          "contentColor": "#ffffff",
+          "spacing": 0
+        }
+      },
+      "header--default": {
+        "type": "header--default",
+        "settings": {
+          "layout": "stretchBg",
+          "minHeight": 75,
+          "borderRadius": 0,
+          "shadow": false,
+          "menuLinks": "main-menu",
+          "megamenu": false,
+          "logoWidth": 165,
+          "logoHeight": 0,
+          "sticky": true,
+          "contentMargin": 0,
+          "desktopCart": true,
+          "headerBg": "rgba(0,0,0,0)",
+          "linkColor": "#727272",
+          "accentColor": "#514bbf",
+          "softwarekeep": "Why Softwarekeep?",
+          "softwarekeep_link": "shopify://pages/why-softwarekeep",
+          "reviews": "Reviews",
+          "reviews_link": "shopify://pages/review",
+          "blogs": "Blogs",
+          "blogs_link": "/blogs/news",
+          "hoverStyle": "fill",
+          "tagBgColor": "#000000",
+          "tagTextColor": "#ffffff",
+          "transparent": false,
+          "linkColorT": "#ffffff",
+          "accentColorT": "#efefef",
+          "fontSize": "base",
+          "customFont": false,
+          "fontFamily": "work_sans_n6",
+          "cartIcon": "shopping-cart",
+          "mobileLogoPosition": "left",
+          "mobileCart": true
+        }
+      },
+      "bottom-info-bar": {
+        "type": "bottom-info-bar",
+        "blocks": {
+          "geo_block_gpiT7J": {
+            "type": "geoBlock",
+            "settings": {
+              "enabled": true,
+              "enabledMobile": true,
+              "align": "auto",
+              "text": "Get More for Less! 🎉<a href=\"https://softwarekeep.com/collections/bestsellers\" title=\"https://softwarekeep.com/collections/bestsellers\">  <span style=\"text-decoration:underline\"><strong>Save Up to 50% Off Our Best Sellers</strong></span></a>",
+              "coupon": "SAVVY15",
+              "countdown_timer": true,
+              "exculsivetext": "*Promotions while supplies last. Subscription products do not apply."
+            }
+          }
+        },
+        "block_order": [
+          "geo_block_gpiT7J"
+        ],
+        "settings": {
+          "customColors": "#07013a",
+          "sec_padding": 10,
+          "enabled": true,
+          "enabledMobile": true,
+          "layout": "default",
+          "height": 20,
+          "fontSize": "font__size--small",
+          "colorCombo": "primaryCombo",
+          "customFillColor": "rgba(0,0,0,0)",
+          "customContentColor": "rgba(0,0,0,0)"
+        }
+      },
+      "api__upsell": {
+        "type": "api__upsell",
+        "settings": {
+          "defaultCollection": "aquarium-essentials"
+        }
+      },
+      "banner--login": {
+        "type": "banner--login",
+        "settings": {
+          "layout": "default",
+          "height": 80,
+          "horizontalAlignment": "center",
+          "verticalAlignment": "middle",
+          "fontSize": "medium",
+          "contentColor": "#0067b8",
+          "fillColor": "#efefef",
+          "overlayOpacity": 0,
+          "overlayColor": "#000000"
+        }
+      },
+      "banner--register": {
+        "type": "banner--register",
+        "settings": {
+          "layout": "default",
+          "height": 80,
+          "horizontalAlignment": "center",
+          "verticalAlignment": "middle",
+          "fontSize": "medium",
+          "contentColor": "#0067b8",
+          "fillColor": "#EFEFEF",
+          "overlayOpacity": 0,
+          "overlayColor": "#000000"
+        }
+      },
+      "banner--account": {
+        "type": "banner--account",
+        "settings": {
+          "layout": "default",
+          "height": 70,
+          "horizontalAlignment": "center",
+          "verticalAlignment": "middle",
+          "fontSize": "big",
+          "contentColor": "#191d21",
+          "fillColor": "rgba(0,0,0,0)",
+          "overlayOpacity": 0,
+          "overlayColor": "#000000"
+        }
+      },
+      "header--logo-top": {
+        "type": "header--logo-top",
+        "settings": {
+          "layout": "default",
+          "minHeight": 0,
+          "borderRadius": 0,
+          "shadow": true,
+          "menuLinks": "",
+          "megamenu": true,
+          "linkPosition": "center",
+          "logoWidth": 160,
+          "logoHeight": 0,
+          "desktopLogoPosition": "left",
+          "sticky": true,
+          "contentMargin": 0,
+          "desktopCart": true,
+          "headerBg": "rgba(0,0,0,0)",
+          "linkColor": "#000000",
+          "accentColor": "#000000",
+          "hoverStyle": "fill",
+          "tagBgColor": "#000",
+          "tagTextColor": "#FFF",
+          "transparent": false,
+          "linkColorT": "#FFF",
+          "accentColorT": "#EFEFEF",
+          "fontSize": "base",
+          "customFont": false,
+          "fontFamily": "work_sans_n6",
+          "cartIcon": "shopping-cart",
+          "mobileLogoPosition": "left",
+          "mobileCart": true
+        }
+      },
+      "header--inline-search": {
+        "type": "header--inline-search",
+        "settings": {
+          "layout": "default",
+          "minHeight": 0,
+          "borderRadius": 0,
+          "shadow": false,
+          "menuLinks": "main-menu",
+          "megamenu": false,
+          "linkPosition": "center",
+          "logoWidth": 220,
+          "logoHeight": 0,
+          "desktopLogoPosition": "left",
+          "sticky": false,
+          "contentMargin": 0,
+          "desktopCart": true,
+          "headerBg": "rgba(0,0,0,0)",
+          "linkColor": "#000000",
+          "accentColor": "#000000",
+          "hoverStyle": "fill",
+          "tagBgColor": "#000000",
+          "tagTextColor": "#ffffff",
+          "transparent": false,
+          "linkColorT": "#ffffff",
+          "accentColorT": "#efefef",
+          "searchBg": "rgba(0,0,0,0)",
+          "searchText": "rgba(0,0,0,0)",
+          "fontSize": "base",
+          "customFont": false,
+          "fontFamily": "work_sans_n6",
+          "cartIcon": "shopping-cart",
+          "mobileLogoPosition": "left",
+          "mobileCart": true
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "10312807297210203588": {
+        "type": "shopify://apps/aftersell/blocks/utm-triggers/509ec35d-0632-4dfc-a105-fa799cd9d149",
+        "disabled": false,
+        "settings": {}
+      },
+      "10840395464443086010": {
+        "type": "shopify://apps/alia/blocks/customer-app-frame/51f1d398-3e41-44da-b81e-defd5804b292",
+        "disabled": false,
+        "settings": {}
+      },
+      "9431293036029666034": {
+        "type": "shopify://apps/veeper-stop-coupon-leaks/blocks/app-embed/701f59c5-5a05-41c0-ad15-29147f0a6331",
+        "disabled": false,
+        "settings": {}
+      },
+      "5746972944742151934": {
+        "type": "shopify://apps/smart-shopping-cart/blocks/sidecart/46ea881b-1796-4666-99b6-760f24c65937",
+        "disabled": false,
+        "settings": {}
+      },
+      "45135510166488240000": {
+        "type": "shopify://apps/gdpr-cookie-consent/blocks/banner/58c0baa2-6cc1-480c-9ea6-38d6d559556a",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  }
+}

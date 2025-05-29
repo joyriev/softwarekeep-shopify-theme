@@ -1,0 +1,66 @@
+<style>
+.wrps_delimg:after{
+  content:'';
+  {% if section.settings.secbg != blank %}
+  background-image: url('{{ section.settings.secbg | img_url:'master' }}');
+ {% endif %}
+  background-repeat: no-repeat;
+    width: 217px;
+    height: 388px;
+  position: absolute;
+  right: 0;
+  top: -140px;
+}
+</style>
+<div class="wrps_delimg">
+<div class="max-width">
+  <div class="bd_wraps">
+    <div class="bd_txt">
+     <p>{{ section.settings.thead }}</p>
+    </div>
+   <div class="bd_imgs">
+     {% for block in section.blocks %}
+     <div class="lis_cons">
+      {% if block.settings.smallmage != blank %}
+         {{ block.settings.smallmage | image_url: width:834 , height:292 | image_tag }}
+      {% else %}
+      <img src="https://softwarekeep.com/cdn/shop/files/Mashable_transparent.png" alt="{{ page.title }}">
+    {% endif %}
+     </div>
+     {% endfor %}
+   </div>
+  </div>
+</div>
+</div>
+{% schema %}
+  {
+    "name": "Deals Image",
+    "class":"delas_imags",
+    "settings": [
+          {
+            "type": "text",
+            "id": "thead",
+            "label": "Text Heading",
+            "default": "Feature In"
+          },
+          {
+            "type": "image_picker",
+            "id": "iconimgs",
+            "label": "Select Icons Image"
+          }
+      ],
+        "blocks": [
+     {
+       "name": "image",
+       "type": "image",
+       "settings": [
+          {
+            "type": "image_picker",
+            "id": "smallmage",
+            "label": "Select Icon"
+         }
+       ]
+     }
+    ]
+  }
+{% endschema %}

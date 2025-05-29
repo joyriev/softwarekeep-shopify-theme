@@ -1,0 +1,669 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {}
+    },
+    "page": {
+      "type": "product-page__product",
+      "blocks": {
+        "ppTitle": {
+          "type": "productPageTitle",
+          "settings": {
+            "noMargin": true,
+            "color": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "medium"
+          }
+        },
+        "85274946-6b03-41b3-87b7-e474f2f30fed": {
+          "type": "productPageReviewStars",
+          "settings": {
+            "noMargin": false
+          }
+        },
+        "ppPrice": {
+          "type": "productPagePrice",
+          "settings": {
+            "noMargin": false,
+            "color": "rgba(0,0,0,0)",
+            "newPriceColor": "#1d924e",
+            "oldPriceColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "medium"
+          }
+        },
+        "621c0c0f-e416-48cb-8d64-60c2b8624590": {
+          "type": "productPageDelivery",
+          "disabled": true,
+          "settings": {
+            "noMargin": false,
+            "icon": "none",
+            "iconColor": "rgba(0,0,0,0)",
+            "text": "<p>This is a Demo Store created for booster theme. If you would like to buy the products in this store you may buy them on <a href=\"https://aquariumdepot.ca/\" target=\"_blank\" title=\"https://aquariumdepot.ca/\"><em><strong>Aquarium Depot Website</strong></em></a></p>",
+            "textColor": "#514bbf"
+          }
+        },
+        "f4a8a90d-2733-461c-b677-0cd3aaa29919": {
+          "type": "productPageCountdown",
+          "disabled": true,
+          "settings": {
+            "noMargin": false,
+            "style": "compact",
+            "title": "LIMITED TIME OFFER",
+            "text": "The price of this item will revert back to %price% at the end of this countdown."
+          }
+        },
+        "ppSwatch": {
+          "type": "productPageSwatch",
+          "disabled": true,
+          "settings": {
+            "noMargin": false
+          }
+        },
+        "a669d9a4-fce1-4194-a7ca-dcfe991c5a27": {
+          "type": "productPageLDelivery",
+          "disabled": true,
+          "settings": {
+            "noMargin": true,
+            "icon": "",
+            "iconColor": "rgba(0,0,0,0)",
+            "text": "<p>Products will be delivered between %start% and %end%.</p>",
+            "start": "1",
+            "end": "5",
+            "textColor": "rgba(0,0,0,0)"
+          }
+        },
+        "ppStock": {
+          "type": "productPageStock",
+          "disabled": true,
+          "settings": {
+            "noMargin": true,
+            "stockLeft": "10",
+            "reduce": 8
+          }
+        },
+        "ppATC": {
+          "type": "productPageATC",
+          "settings": {
+            "noMargin": false,
+            "stickyATC": "scroll"
+          }
+        },
+        "024d3771-8881-4563-b406-e54effa6da02": {
+          "type": "productPageWatching",
+          "disabled": true,
+          "settings": {
+            "noMargin": true,
+            "max": "100",
+            "customMax": "",
+            "interval": 8,
+            "iconColor": "rgba(0,0,0,0)",
+            "textColor": "rgba(0,0,0,0)"
+          }
+        },
+        "e0e5c639-1909-4d06-b368-a3271f8eea20": {
+          "type": "productPageInCart",
+          "disabled": true,
+          "settings": {
+            "noMargin": false,
+            "max": "100",
+            "customMax": "",
+            "interval": 8,
+            "iconColor": "rgba(0,0,0,0)",
+            "textColor": "rgba(0,0,0,0)"
+          }
+        },
+        "4e841f62-dda6-4f3f-8175-3dd8f67d4923": {
+          "type": "productPageBadge",
+          "disabled": true,
+          "settings": {
+            "noMargin": false,
+            "imageAlt": ""
+          }
+        },
+        "67a793c2-1620-4d57-9867-c659de1358c1": {
+          "type": "productPageDescription",
+          "disabled": true,
+          "settings": {
+            "heading": "Product description",
+            "noMargin": false
+          }
+        },
+        "7850a57d-73f7-4dbc-82bd-ea4e3bef52bf": {
+          "type": "productPageShare",
+          "disabled": true,
+          "settings": {
+            "noMargin": false
+          }
+        },
+        "f5640691-1d8e-402d-9a90-4efa6202b856": {
+          "type": "productPageTags",
+          "disabled": true,
+          "settings": {
+            "noMargin": false,
+            "style": "swatch",
+            "exclude": ""
+          }
+        }
+      },
+      "block_order": [
+        "ppTitle",
+        "85274946-6b03-41b3-87b7-e474f2f30fed",
+        "ppPrice",
+        "621c0c0f-e416-48cb-8d64-60c2b8624590",
+        "f4a8a90d-2733-461c-b677-0cd3aaa29919",
+        "ppSwatch",
+        "a669d9a4-fce1-4194-a7ca-dcfe991c5a27",
+        "ppStock",
+        "ppATC",
+        "024d3771-8881-4563-b406-e54effa6da02",
+        "e0e5c639-1909-4d06-b368-a3271f8eea20",
+        "4e841f62-dda6-4f3f-8175-3dd8f67d4923",
+        "67a793c2-1620-4d57-9867-c659de1358c1",
+        "7850a57d-73f7-4dbc-82bd-ea4e3bef52bf",
+        "f5640691-1d8e-402d-9a90-4efa6202b856"
+      ],
+      "settings": {
+        "view": "marketplace",
+        "layout": "max-width",
+        "galleryStyle": "default",
+        "galleryPosition": "left",
+        "autoZoom": false,
+        "autoChange": false,
+        "galleryImageFit": "cover",
+        "galleryImageGap": 16,
+        "productNavigation": true,
+        "productMainImageSize": "crop",
+        "imageSticky": true,
+        "imageStickyPosition": 100
+      }
+    },
+    "upsell": {
+      "type": "api__upsell--inline",
+      "blocks": {
+        "a25bb15f-ba83-4bce-a950-ef84e05e7c20": {
+          "type": "productSpecific",
+          "disabled": true,
+          "settings": {
+            "handle": "microsoft-office-2019-home-and-student",
+            "upsellProduct1": "microsoft-office-2019-home-and-student-for-mac",
+            "upsellProduct2": "",
+            "upsellProduct3": "",
+            "heading": "",
+            "subheading": ""
+          }
+        },
+        "1a4b9efd-632a-4590-848d-143cadf54c9c": {
+          "type": "priceSpecific",
+          "settings": {
+            "conditionType": "mt",
+            "condition": "4",
+            "upsellProduct1": "microsoft-office-2021-home-and-student-pc",
+            "upsellProduct2": "",
+            "upsellProduct3": "",
+            "heading": "Bundle and Save 15%",
+            "subheading": ""
+          }
+        },
+        "bc417c44-cf20-4719-a8fb-7645e17d2c7c": {
+          "type": "collectionSpecific",
+          "disabled": true,
+          "settings": {
+            "handle": "",
+            "upsellProduct1": "",
+            "upsellProduct2": "",
+            "upsellProduct3": "",
+            "heading": "",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "a25bb15f-ba83-4bce-a950-ef84e05e7c20",
+        "1a4b9efd-632a-4590-848d-143cadf54c9c",
+        "bc417c44-cf20-4719-a8fb-7645e17d2c7c"
+      ],
+      "settings": {}
+    },
+    "trustpilot_reviews_xwKdBb": {
+      "type": "trustpilot-reviews",
+      "settings": {
+        "header_title": "What Customers Think"
+      }
+    },
+    "17b3c4da-6ec2-43f7-b402-382e47a862a0": {
+      "type": "section__icon-with-text",
+      "blocks": {
+        "8e234133-6f92-4889-acb0-7d76313eaa5a": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/cloud-computing.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Instant Digital Download",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#f5f5f5",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "06111a55-1b77-435d-908b-1434dba77499": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/guarantee_9e04d0fa-c00d-4474-957f-651e64b36347.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Lifetime Product Guarantee",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#f5f5f5",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "5bcae1da-9417-402e-9c0e-5614042328c4": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/new-year_1.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Year Round Service",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#f5f5f5",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "4ce468bb-52ee-44e3-919e-6bd516b02e72": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/certified.svg",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Microsoft Certified Partner",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#191d21",
+            "home_guarantee_block_background_color": "#f5f5f5",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "8e234133-6f92-4889-acb0-7d76313eaa5a",
+        "06111a55-1b77-435d-908b-1434dba77499",
+        "5bcae1da-9417-402e-9c0e-5614042328c4",
+        "4ce468bb-52ee-44e3-919e-6bd516b02e72"
+      ],
+      "settings": {
+        "Slider_enbalemobile": true,
+        "home_guarantee_title": "",
+        "custom_id": "",
+        "home_guarantee_title_font_size": 40,
+        "home_guarantee_title_color": "#0067b8",
+        "home_guarantee_subtitle": "",
+        "home_guarantee_subtitle_font_size": 20,
+        "home_guarantee_subtitle_color": "#042338"
+      }
+    },
+    "0852396a-917e-423d-ad1d-41419fb83f6d": {
+      "type": "accordian",
+      "settings": {
+        "home_guarantee_title": ""
+      }
+    },
+    "recommended": {
+      "type": "product-page__recommended",
+      "settings": {
+        "enabled": true,
+        "personalizedOffers": true,
+        "layout": "max-width",
+        "heading": "",
+        "subheading": "Recommended Products for You",
+        "subheadingPosition": "above",
+        "textAlignment": "center",
+        "defaultCollection": ""
+      }
+    },
+    "6ed83521-85f4-4561-b385-3916e199ddb3": {
+      "type": "section__faq",
+      "blocks": {
+        "b1f58587-d38a-4706-8579-ee6ecedcc633": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>PRODUCT INFORMATION</p>",
+            "answer": "{{ product.metafields.custom.description }}"
+          }
+        },
+        "3f79a292-9246-4094-a847-c41cac616172": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>FEATURES</p>",
+            "answer": "{{ product.metafields.custom.features }}"
+          }
+        },
+        "274ea288-6935-489f-9e41-2ef4f0abf88e": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>SYSTEM REQUIREMENTS</p>",
+            "answer": "{{ product.metafields.custom.system_requirement }}"
+          }
+        }
+      },
+      "block_order": [
+        "b1f58587-d38a-4706-8579-ee6ecedcc633",
+        "3f79a292-9246-4094-a847-c41cac616172",
+        "274ea288-6935-489f-9e41-2ef4f0abf88e"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "textContent": ""
+      }
+    },
+    "f1009b21-4bbe-42e3-9fea-64630eee6147": {
+      "type": "section__faq",
+      "blocks": {
+        "50e8bf0b-3202-4d8b-b644-83babb5087fe": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How long does it take to receive my SoftwareKeep order?</p>",
+            "answer": "As soon as we are able to successfully process your payment, you will receive a download link for your product and a Product Key from SoftwareKeep. This process is usually between 15-20 minutes. If your SoftwareKeep order is delayed longer than this, please refer to your SoftwareKeep account for the details of your purchase."
+          }
+        },
+        "90ce5404-68ea-4aeb-a654-eabc29887090": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How can I be certain that my copy of Microsoft Office is genuine?</p>",
+            "answer": "SoftwareKeep is a proud Microsoft Certified Partner, and as such, all our software products are 100% legitimate and authentic. In addition, any software you purchase from SoftwareKeep is covered by our hassle-free money-back guarantee. We encourage all our SoftwareKeep customers to register their specific Microsoft Office Product key via Microsoft online activation to ensure verification and tracking of their authentic software products."
+          }
+        },
+        "cb791651-6d47-48d6-a8ba-25b825cddfab": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How long does a genuine software license from SoftwareKeep last?</p>",
+            "answer": "The license for any product purchased from SoftwareKeep is a lifetime (perpetual) license. You may be required to purchase a new license with a new version of the product. In some cases, you might be eligible for an upgrade license from SoftwareKeep that will allow you to upgrade at a discount price."
+          }
+        },
+        "8d6959d0-2758-4040-8cfb-b5ff1cc49850": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Can I buy a single-use license software and install on multiple computers?</p>",
+            "answer": "The software licenses sold by SoftwareKeep are intended for installation and activation on one computer only, unless otherwise specified for that particular product. Retail and OEM software licenses we provide are designed and licensed for use on a single computer. Installing a single-use license from SoftwareKeep on multiple computers is not permitted under the license terms and conditions."
+          }
+        },
+        "7b28ddcb-09a4-4e25-92f1-be5960c65b30": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>What is a digital download and how does it work?</p>",
+            "answer": "A digital download is an electronic version of your software product, giving you access to download and use your new software immediately. This means that a physical CD or DVD disc is not included with your purchase. The software install program is downloaded through cloud-based storage."
+          }
+        },
+        "ce0cb108-36f4-4e65-ab62-17dfe2eba284": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>What are retail software products?</p>",
+            "answer": "Softwarekeep Retail software products are the same physical items you would purchase at your local software stores. They are packaged for retail sale and usually include the original box, physical CD or DVD disk(s), a manual, the paper license agreement, and an Activation Key/Code. Similar to OEM software, a Retail Product is licensed for use on one computer only."
+          }
+        },
+        "bcfd3300-9f6b-4d48-bcf8-ea4bfe756f66": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Can I update my software over the Internet? (not needed as there's no update after 2021)</p>",
+            "answer": "Since these are genuine Microsoft products, you will be able to obtain regular updates from Microsoft using an Internet connection."
+          }
+        }
+      },
+      "block_order": [
+        "50e8bf0b-3202-4d8b-b644-83babb5087fe",
+        "90ce5404-68ea-4aeb-a654-eabc29887090",
+        "cb791651-6d47-48d6-a8ba-25b825cddfab",
+        "8d6959d0-2758-4040-8cfb-b5ff1cc49850",
+        "7b28ddcb-09a4-4e25-92f1-be5960c65b30",
+        "ce0cb108-36f4-4e65-ab62-17dfe2eba284",
+        "bcfd3300-9f6b-4d48-bcf8-ea4bfe756f66"
+      ],
+      "settings": {
+        "custom_id": "faq_section",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "Frequently asked questions",
+        "headingColor": "#191d21",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "textContent": ""
+      }
+    },
+    "3b3fc2bd-a9e0-4b63-af78-31144dc4ed37": {
+      "type": "section__cta",
+      "blocks": {
+        "f2da6cea-c207-4ae5-8308-325aacd71c01": {
+          "type": "html",
+          "disabled": true,
+          "settings": {
+            "fullWidth": true,
+            "html": "<div id=\"upsell\"></div>",
+            "customCSS": ""
+          }
+        }
+      },
+      "block_order": [
+        "f2da6cea-c207-4ae5-8308-325aacd71c01"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": true,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 0,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundImageUrl": "",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center"
+      }
+    },
+    "ee84df0a-e10e-42b6-8910-e4a3ab7632b4": {
+      "type": "section__testimonials",
+      "blocks": {
+        "template--14747686404151__ee84df0a-e10e-42b6-8910-e4a3ab7632b4-testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>I love this product</p>",
+            "authorName": "John Doe",
+            "fakeImageSex": "men",
+            "imageAlt": ""
+          }
+        },
+        "template--14747686404151__ee84df0a-e10e-42b6-8910-e4a3ab7632b4-testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>I love this product</p>",
+            "authorName": "John Doe",
+            "fakeImageSex": "men",
+            "imageAlt": ""
+          }
+        },
+        "template--14747686404151__ee84df0a-e10e-42b6-8910-e4a3ab7632b4-testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "text": "<p>I love this product</p>",
+            "authorName": "John Doe",
+            "fakeImageSex": "men",
+            "imageAlt": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14747686404151__ee84df0a-e10e-42b6-8910-e4a3ab7632b4-testimonial-1",
+        "template--14747686404151__ee84df0a-e10e-42b6-8910-e4a3ab7632b4-testimonial-2",
+        "template--14747686404151__ee84df0a-e10e-42b6-8910-e4a3ab7632b4-testimonial-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 40,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "heading": "Testimonials",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "blockStyle": "author-below",
+        "blockBackground": "rgba(0,0,0,0)",
+        "blockText": "#000000",
+        "testimonialAlign": "left",
+        "blockBottomBackground": "#000000",
+        "blockBottomText": "#ffffff",
+        "useFakeImages": true,
+        "roundedImages": true
+      }
+    },
+    "fd785db5-97df-4032-b0f9-0b1f97a7a36a": {
+      "type": "section__cta",
+      "blocks": {
+        "95698769-adce-4263-ba97-691b9b266a9c": {
+          "type": "html",
+          "settings": {
+            "fullWidth": true,
+            "html": "<div id=\"reco\"> </div>",
+            "customCSS": ""
+          }
+        }
+      },
+      "block_order": [
+        "95698769-adce-4263-ba97-691b9b266a9c"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": true,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 0,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundImageUrl": "",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "page",
+    "upsell",
+    "trustpilot_reviews_xwKdBb",
+    "17b3c4da-6ec2-43f7-b402-382e47a862a0",
+    "0852396a-917e-423d-ad1d-41419fb83f6d",
+    "recommended",
+    "6ed83521-85f4-4561-b385-3916e199ddb3",
+    "f1009b21-4bbe-42e3-9fea-64630eee6147",
+    "3b3fc2bd-a9e0-4b63-af78-31144dc4ed37",
+    "ee84df0a-e10e-42b6-8910-e4a3ab7632b4",
+    "fd785db5-97df-4032-b0f9-0b1f97a7a36a"
+  ]
+}

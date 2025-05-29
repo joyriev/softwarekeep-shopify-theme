@@ -1,0 +1,255 @@
+{% if section.settings.Slider_enbalemobile == true %}
+   <script src="{{ 'slick.min.js' | asset_url }}"></script>
+  {{ 'slick.css' | asset_url | stylesheet_tag }}
+{% endif %}
+{% assign customID = section.settings.custom_id %}
+<div class="home-guarantees-container {% if template.name == 'product' %}prod_icon-lists{% endif %}" id="s--{{customID}}">
+   {% if section.settings.home_guarantee_title != blank %}
+    <div class="h-g-c-heading">
+      <div class="h-g-c-h-title">
+        <span>{{ section.settings.home_guarantee_title }}</span>
+      </div>
+      {% if section.settings.home_guarantee_subtitle %}
+      <div class="h-g-c-h-subtitle">
+        <span>{{ section.settings.home_guarantee_subtitle }}</span>
+      </div>
+      {% endif %}
+    </div>
+  {% endif %}
+  <div class="max-width h-g-c-body {% if section.settings.Slider_enbalemobile == true %}mySlider{% endif %}">
+    {% for block in section.blocks %}
+      <div
+        class="h-g-c-b-block"
+        style="background:{{ block.settings.home_guarantee_block_background_color }};"
+      >
+        <div {% if block.settings.tile_oneline %} class="on-line_titles" {% endif %}>
+        <div class="h-g-c-b-b-image">
+            {% render 'image', src: block.settings.home_guarantee_block_image, size: '50x', alt: alt %}
+   
+        </div>
+        <div class="h-g-c-b-b-title">
+          <span>{{ block.settings.home_guarantee_block_title }}</span>
+        </div>
+        </div>
+        {% if block.settings.home_guarantee_block_subtitle != blank %}
+        <div class="h-g-c-b-b-subtitle">
+          <span
+            style="
+              font-size:{{ block.settings.home_guarantee_block_subtitle_font_size }}px;
+              color: {{ block.settings.home_guarantee_block_subtitle_text_color }};
+            "
+          >
+            {{- block.settings.home_guarantee_block_subtitle -}}
+          </span>
+        </div>
+        {% endif %}
+        {% if block.settings.home_guarantee_block_button != blank %}
+          <div class="h-g-c-b-b-button">
+            <a href="{{- block.settings.home_guarantee_block_url -}}">
+              {{- block.settings.home_guarantee_block_button -}}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% style %}
+  :root {
+      --guarantee-title-font-size-var: {{ section.settings.home_guarantee_title_font_size }}px;
+      --guarantee-subtitle-font-size-var: {{ section.settings.home_guarantee_subtitle_font_size }}px;
+      --guarantee-title-color-var: {{ section.settings.home_guarantee_title_color }};
+      --guarantee-subtitle-color-var: {{ section.settings.home_guarantee_subtitle_color }};
+  }
+{% endstyle %}
+
+{% if section.settings.Slider_enbalemobile == true %}
+<script type="text/javascript">
+mobileOnlySlider(".mySlider", false, false, 767);
+
+function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
+  var slider = $($slidername);
+  var settings = {
+    mobileFirst: true,
+    dots: $dots,
+    accessibility: false,
+    autoplay: false,
+    arrows: $arrows,
+    responsive: [
+      {
+        breakpoint: $breakpoint,
+        settings: "unslick"
+      }
+    ]
+  };
+
+  slider.slick(settings);
+
+  $(window).on("resize", function () {
+    if ($(window).width() > $breakpoint) {
+      return;
+    }
+    if (!slider.hasClass("slick-initialized")) {
+      return slider.slick(settings);
+    }
+  });
+} // Mobile Only Slider
+</script>
+{% endif %}
+
+{% schema %}
+{
+  "name": "icon-with-text",
+  "settings": [
+    {
+      "type": "header",
+      "content": "name"
+    },
+    {
+      "type": "checkbox",
+      "id": "Slider_enbalemobile",
+      "label": "Slider Enable in Mobile view"
+    },
+    {
+      "type": "text",
+      "id": "home_guarantee_title",
+      "label": "title"
+    },
+    {
+      "type": "header",
+      "content": "Section ID"
+    },
+    {
+        "type": "text",
+        "id": "custom_id",
+        "label": "Add custom section ID"
+    },
+    {
+      "type": "range",
+      "id": "home_guarantee_title_font_size",
+      "min": 12,
+      "max": 72,
+      "step": 1,
+      "unit": "px",
+      "label": "font size",
+      "default": 40
+    },
+    {
+      "type": "color",
+      "id": "home_guarantee_title_color",
+      "label": "color",
+      "default": "#0067B8"
+    },
+    {
+      "type": "text",
+      "id": "home_guarantee_subtitle",
+      "label": "subtitle"
+    },
+    {
+      "type": "range",
+      "id": "home_guarantee_subtitle_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "font size",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "home_guarantee_subtitle_color",
+      "label": "color",
+      "default": "#042338"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "icon-with-text",
+      "type": "home_guarantee_block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "home_guarantee_block_image",
+          "label": "image"
+        },
+        {
+          "type": "header",
+          "content": "icon and title one line"
+        },
+        {
+          "type": "checkbox",
+          "id" : "tile_oneline",
+          "label": "Enable/Disable icon and title one line",
+          "default" :false
+        },
+        {
+          "type": "text",
+          "id": "home_guarantee_block_title",
+          "label": "title"
+        },
+        {
+          "type": "range",
+          "id": "home_guarantee_block_title_font_size",
+          "min": 12,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "font size",
+          "default": 20
+        },
+        {
+          "type": "color",
+          "id": "home_guarantee_block_title_text_color",
+          "label": "color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "text",
+          "id": "home_guarantee_block_subtitle",
+          "label": "subtitle"
+        },
+        {
+          "type": "range",
+          "id": "home_guarantee_block_subtitle_font_size",
+          "min": 12,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "font size",
+          "default": 18
+        },
+        {
+          "type": "color",
+          "id": "home_guarantee_block_subtitle_text_color",
+          "label": "color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "home_guarantee_block_background_color",
+          "label": "background color",
+          "default": "#61C98C"
+        },
+        {
+        "id": "home_guarantee_block_button",
+        "label": "Button text",
+        "type": "text",
+        "default": "Get this now!"
+    },
+    {
+        "id": "home_guarantee_block_url",
+        "type": "text",
+        "label": "Links to"
+    }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Content",
+      "name": "icon-with-text"
+      }
+  ]
+}
+{% endschema %}

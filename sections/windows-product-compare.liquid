@@ -1,0 +1,199 @@
+<div class="title-tabs-applications">
+  {% if  section.settings.title  != blank %}
+   <h2>{{ section.settings.title }}</h2>
+  {% endif %}
+  {% if section.settings.content_para  != blank %}
+   <p>{{ section.settings.content_para }}</p>
+  {% endif %}
+</div>
+<div class="compare__content-wrap">
+  <div class="product_wrap">
+    {% for block in section.blocks %}
+      {% assign product = all_products[block.settings.product_blocks] %}
+
+      <div class="prod_list">
+        <h3>{{ product.title }}</h3>
+
+        <div class="prices-info-products">
+          <span class="actual_price">
+            {{- product.price | money_with_currency -}}
+            {%- if product.compare_at_price > 1 -%}
+              <small>{{ product.compare_at_price | money_with_currency }}</small>
+            {% endif -%}
+          </span>
+          {% if product.compare_at_price > 1 %}
+            <span class="tag-discount"
+              >Save: 
+              {{
+                product.compare_at_price
+                | minus: product.price
+                | times: 100.0
+                | divided_by: product.compare_at_price
+                | round
+              -}}
+              %
+            </span>
+          {% endif %}
+        </div>
+
+        <div class="abs-action">
+          {% assign var = product.first_available_variant %}
+          {% if product.available %}
+            {% form 'product', product %}
+              <input name="id" type="hidden" value="{{ var.id }}">
+              {% render 'custom-add-to-cart-button', variant: var.id, quantity: 1, price: product.price %}
+            {% endform %}
+          {% else %}
+            {% render 'sold-out-button', disabled: 'disabled' %}
+          {% endif %}
+        </div>
+        <div class="learn_more">
+          <a class="link-table-compare" href="{{ product.url }}">LEARN MORE</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="compare-products max-width">
+  <table class="compare-table">
+    <tbody>
+      <tr class="tr-include">
+        <td colspan="4">Overview</td>
+      </tr>
+      <tr class="tr-align-center">
+        <td class="title-options-table-compare {{ page.template_suffix }}">Purchase type</td>
+        <td>One-time purchase</td>
+        <td>One-time purchase</td>
+        <td>One-time purchase</td>
+      </tr>
+      <tr class="tr-align-center">
+        <td class="title-options-table-compare">Number of users</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr class="tr-align-center">
+        <td class="title-options-table-compare">Works with PC</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <!-- <tr class="tr-align-center">
+        <td class="title-options-table-compare">Works with Mac</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>No</td>
+      </tr>
+      <tr class="tr-align-center">
+        <td class="title-options-table-compare">Compatible with</td>
+        <td>Windows 11, Windows 10, Mac OS</td>
+        <td>Windows 11, Windows 10, Mac OS</td>
+        <td>Windows 11, Windows 10</td>
+      </tr> -->
+      <tr class="tr-align-center">
+        <td class="title-options-table-compare">Licensed for</td>
+        <td>Personal</td>
+        <td>Corporate</td>
+        <td>Commercial</td>
+      </tr>
+      <tr class="tr-align-center">
+        <td class="title-options-table-compare">License type</td>
+        <td>Retail</td>
+        <td>Retail</td>
+        <td>Retail</td>
+      </tr>
+      <tr class="tr-align-center">
+        <td class="title-options-table-compare">Technical support</td>
+        <td>
+          <div class="img">
+            <img
+              alt="Cms pages"
+              title="Cms pages"
+              loading="lazy"
+              width="22"
+              height="22"
+              decoding="async"
+              data-nimg="1"
+
+              src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-correct-table-compare.png?v=1704342701"
+              style="color: transparent;"
+            >
+          </div>
+          24/7
+        </td>
+        <td>
+          <div class="img">
+            <img
+              alt="Cms pages"
+              title="Cms pages"
+              loading="lazy"
+              width="22"
+              height="22"
+              decoding="async"
+              data-nimg="1"
+
+              src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-correct-table-compare.png?v=1704342701"
+              style="color: transparent;"
+            >
+          </div>
+          24/7
+        </td>
+        <td>
+          <div class="img">
+            <img
+              alt="Cms pages"
+              title="Cms pages"
+              loading="lazy"
+              width="22"
+              height="22"
+              decoding="async"
+              data-nimg="1"
+
+              src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-correct-table-compare.png?v=1704342701"
+              style="color: transparent;"
+            >
+          </div>
+          24/7
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% schema %}
+{
+  "name": "windows-product-compare",
+  "settings": [
+      {
+      "type": "text",
+      "id": "title",
+      "label": "Heading Text",
+      "default": "Compare Microsoft Windows Products"
+    },
+    {
+      "type": "textarea",
+      "id": "content_para",
+      "label": "Enter Sub Paragraph",
+     "default": "  Not sure which one is right for you? See what's included in each license option below. If you still need help, contact us."
+    }
+  ],
+  "max_blocks": 4,
+    "blocks": [
+       {
+         "name": "product",
+         "type": "product",
+         "settings": [
+           {
+             "type": "product",
+             "id": "product_blocks",
+             "label": "Select Product"
+           }
+         ]
+       }
+    ],
+    "presets": [
+      {
+        "name": "Windows Product Compare"
+      }
+    ]
+}
+{% endschema %}

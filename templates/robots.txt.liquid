@@ -1,0 +1,20 @@
+{%- comment -%}
+# Custom robots.txt for Shopify
+# Adds allowance for OAI-SearchBot while keeping Shopify defaults
+{%- endcomment -%}
+
+# Allow OAI-SearchBot
+User-agent: OAI-SearchBot
+Disallow:
+
+{%- for group in robots.default_groups %}
+  {{- group.user_agent -}}
+
+  {% for rule in group.rules %}
+    {{- rule -}}
+  {% endfor %}
+
+  {%- if group.sitemap != blank -%}
+    {{ group.sitemap }}
+  {%- endif -%}
+{% endfor %}

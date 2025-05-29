@@ -1,0 +1,528 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "height": 90,
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "fontSize": "big",
+        "contentColor": "#191d21",
+        "fillColor": "#f2f5f7",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "content": {
+      "type": "page",
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "mdc_menu_tabs_q8ATH3": {
+      "type": "mdc_menu-tabs",
+      "blocks": {
+        "tabs_NeWCPC": {
+          "type": "tabs",
+          "settings": {
+            "tab_text": "Office For Mac",
+            "tab_id": "office-for-mac"
+          }
+        },
+        "tabs_aBPNaw": {
+          "type": "tabs",
+          "settings": {
+            "tab_text": "Office 2021",
+            "tab_id": "office-2021"
+          }
+        },
+        "tabs_YfV89r": {
+          "type": "tabs",
+          "settings": {
+            "tab_text": "Office 2019",
+            "tab_id": "office-2019"
+          }
+        },
+        "tabs_AyMM7x": {
+          "type": "tabs",
+          "settings": {
+            "tab_text": "Office 2016",
+            "tab_id": "office-2016"
+          }
+        },
+        "tabs_djwEEH": {
+          "type": "tabs",
+          "settings": {
+            "tab_text": "How It Works",
+            "tab_id": "how-it-works"
+          }
+        },
+        "tabs_geJMwg": {
+          "type": "tabs",
+          "settings": {
+            "tab_text": "Why Choose Us",
+            "tab_id": "why-choose-us"
+          }
+        }
+      },
+      "block_order": [
+        "tabs_NeWCPC",
+        "tabs_aBPNaw",
+        "tabs_YfV89r",
+        "tabs_AyMM7x",
+        "tabs_djwEEH",
+        "tabs_geJMwg"
+      ],
+      "settings": {}
+    },
+    "mdc_product_box_qC6jLA": {
+      "type": "mdc_product-box",
+      "blocks": {
+        "product_XpipEg": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-office-2021-home-and-student-pc",
+            "product_name": "<p><strong>Home & Student 2021 for Windows | </strong>Win 10 and newer</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote</p>",
+            "payonce": true,
+            "best": false,
+            "invent": "5"
+          }
+        },
+        "product_VPDVtV": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-office-2021-home-and-business-for-pc",
+            "product_name": "<p><strong>Home & Business 2021 for Windows | </strong>Win 10 and newer</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote | Outlook</p>",
+            "payonce": true,
+            "best": true,
+            "invent": "3"
+          }
+        },
+        "product_Mgy9N7": {
+          "type": "product",
+          "settings": {
+            "product": "office-2021-professional-plus",
+            "product_name": "<p><strong>Professional Plus 2021 for Windows | </strong>Win 10 and newer</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote | Outlook | Access | Publisher</p>",
+            "payonce": true,
+            "best": false,
+            "invent": "6"
+          }
+        }
+      },
+      "block_order": [
+        "product_XpipEg",
+        "product_VPDVtV",
+        "product_Mgy9N7"
+      ],
+      "settings": {
+        "custom_id": "office-2021",
+        "heading": "<p><strong>Microsoft Office </strong><span style=\"text-decoration:underline\"><strong>2021</strong></span><strong> | for </strong><span style=\"text-decoration:underline\"><strong>Windows</strong></span></p>",
+        "logo_image": "shopify://shop_images/office-2021-with-icons-final.png",
+        "secure": "Secure Download Link",
+        "license": "New License Key",
+        "moneyback": "180 Day Money-Back Guarantee",
+        "mcafee_image": "shopify://shop_images/identity-protection-trustmark.png"
+      }
+    },
+    "mdc_product_box_AXUFp7": {
+      "type": "mdc_product-box",
+      "blocks": {
+        "product_XaTJ3d": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-office-2021-home-and-student-for-mac",
+            "product_name": "<p><strong>Home & Student 2021 | </strong>for<strong> </strong>Mac</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote</p>",
+            "payonce": true,
+            "best": false,
+            "invent": "2"
+          }
+        },
+        "product_DAUYLd": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-office-2021-home-and-business-for-mac",
+            "product_name": "<p><strong>Home & Business 2021 |</strong>for<strong> </strong>Mac</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote | Outlook</p>",
+            "payonce": true,
+            "best": true,
+            "invent": "5"
+          }
+        }
+      },
+      "block_order": [
+        "product_XaTJ3d",
+        "product_DAUYLd"
+      ],
+      "settings": {
+        "custom_id": "office-for-mac",
+        "heading": "<p><strong>Microsoft Office 2021 | For Mac</strong></p>",
+        "logo_image": "shopify://shop_images/office-2021-mac-final.png",
+        "secure": "Secure Download Link",
+        "license": "New License Key",
+        "moneyback": "180 Day Money-Back Guarantee",
+        "mcafee_image": "shopify://shop_images/identity-protection-trustmark.png"
+      }
+    },
+    "mdc_product_box_xE7Q6h": {
+      "type": "mdc_product-box",
+      "blocks": {
+        "product_KY4RgY": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-office-2019-home-and-student",
+            "product_name": "<p><strong>Home & Student 2019 for Windows | </strong>Win 10 and newer</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote</p>",
+            "payonce": true,
+            "best": false,
+            "invent": ""
+          }
+        },
+        "product_xTfdwY": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-office-2019-home-and-business",
+            "product_name": "<p><strong>Home & Business 2019 for Windows | </strong>Win 10 and newer</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote | Outlook</p>",
+            "payonce": true,
+            "best": true,
+            "invent": ""
+          }
+        },
+        "product_DrJYVU": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-2019-professional-plus",
+            "product_name": "<p><strong>Professional Plus 2019 for Windows | </strong>Win 10 and newer</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote | Outlook | Access | Publisher</p>",
+            "payonce": true,
+            "best": false,
+            "invent": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_KY4RgY",
+        "product_xTfdwY",
+        "product_DrJYVU"
+      ],
+      "settings": {
+        "custom_id": "office-2019",
+        "heading": "<p><strong>Microsoft Office </strong><span style=\"text-decoration:underline\"><strong>2019 </strong></span><strong>| for </strong><span style=\"text-decoration:underline\"><strong>Windows</strong></span></p>",
+        "logo_image": "shopify://shop_images/Office2019WIN.png",
+        "secure": "Secure Download Link",
+        "license": "New License Key",
+        "moneyback": "180 Day Money-Back Guarantee",
+        "mcafee_image": "shopify://shop_images/identity-protection-trustmark.png"
+      }
+    },
+    "mdc_product_box_ezWTdz": {
+      "type": "mdc_product-box",
+      "blocks": {
+        "product_CM7C8G": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-office-2019-home-and-student-for-mac",
+            "product_name": "<p><strong>Home & Student 2019 | </strong>for<strong> </strong>Mac</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote</p>",
+            "payonce": true,
+            "best": false,
+            "invent": "7"
+          }
+        },
+        "product_cXNDDL": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-office-2019-home-and-business-for-mac",
+            "product_name": "<p><strong>Home & Business 2019 | </strong>for<strong> </strong>Mac</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote | Outlook</p>",
+            "payonce": true,
+            "best": true,
+            "invent": "4"
+          }
+        }
+      },
+      "block_order": [
+        "product_CM7C8G",
+        "product_cXNDDL"
+      ],
+      "settings": {
+        "custom_id": "",
+        "heading": "<p><strong>Microsoft Office 2019 | For Mac</strong></p>",
+        "logo_image": "shopify://shop_images/N_Officehs19macc.png",
+        "secure": "Secure Download Link",
+        "license": "New License Key",
+        "moneyback": "180 Day Money-Back Guarantee",
+        "mcafee_image": "shopify://shop_images/identity-protection-trustmark.png"
+      }
+    },
+    "mdc_product_box_x8j8gz": {
+      "type": "mdc_product-box",
+      "blocks": {
+        "product_4rqcY4": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-office-2016-home-student-2016-pc-download",
+            "product_name": "<p><strong>Home & Student 2016 for Windows |  </strong>Win 7 and newer</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote</p>",
+            "payonce": true,
+            "best": false,
+            "invent": "3"
+          }
+        },
+        "product_3zfMFh": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-office-2016-home-and-business-for-windows-for-windows",
+            "product_name": "<p><strong>Home & Business 2016 for Windows | </strong>Win 7 and newer</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote | Outlook</p>",
+            "payonce": true,
+            "best": true,
+            "invent": "5"
+          }
+        },
+        "product_9FB3gK": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-office-2016-professional-for-windows",
+            "product_name": "<p><strong>Professional 2016 for Windows | </strong>forWin 7 and newer</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote | Outlook | Access | Publisher</p>",
+            "payonce": true,
+            "best": false,
+            "invent": "3"
+          }
+        }
+      },
+      "block_order": [
+        "product_4rqcY4",
+        "product_3zfMFh",
+        "product_9FB3gK"
+      ],
+      "settings": {
+        "custom_id": "office-2016",
+        "heading": "<p><strong>Microsoft Office </strong><span style=\"text-decoration:underline\"><strong>2016 </strong></span><strong>| for </strong><span style=\"text-decoration:underline\"><strong>Windows</strong></span></p>",
+        "logo_image": "shopify://shop_images/Office2016WIN.png",
+        "secure": "Secure Download Link",
+        "license": "New License Key",
+        "moneyback": "180 Day Money-Back Guarantee",
+        "mcafee_image": "shopify://shop_images/identity-protection-trustmark.png"
+      }
+    },
+    "mdc_product_box_kVWNd3": {
+      "type": "mdc_product-box",
+      "blocks": {
+        "product_9MRTbj": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-office-2016-home-student-mac-download",
+            "product_name": "<p><strong>Home & Student 2016 | </strong>for Mac </p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote</p>",
+            "payonce": true,
+            "best": false,
+            "invent": ""
+          }
+        },
+        "product_xJqktj": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-office-2016-home-and-business-for-mac",
+            "product_name": "<p><strong>Home & Business 2016 | </strong>for<strong> </strong>Mac</p>",
+            "product_adds": "<p>Word | Excel | PowerPoint | OneNote | Outlook</p>",
+            "payonce": true,
+            "best": true,
+            "invent": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_9MRTbj",
+        "product_xJqktj"
+      ],
+      "settings": {
+        "custom_id": "",
+        "heading": "<p><strong>Microsoft Office 2016 | For Mac</strong></p>",
+        "logo_image": "shopify://shop_images/N_Officehs16mac-copy-2.png",
+        "secure": "Secure Download Link",
+        "license": "New License Key",
+        "moneyback": "180 Day Money-Back Guarantee",
+        "mcafee_image": "shopify://shop_images/identity-protection-trustmark.png"
+      }
+    },
+    "mdc_image_with_icon_FP3NFW": {
+      "type": "mdc_image-with-icon",
+      "blocks": {
+        "home_guarantee_block_DbHyBg": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/1.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "BUY",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "<p>Here's the first step... select a product and checkout securely (We use military grade encryption to charge your card and NEVER store your payment information).</p>",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#ffffff",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "home_guarantee_block_YMA6Lb": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/2_c7aa3105-3cf8-4b49-a746-fcdf85c9d170.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "DOWNLOAD",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "<p>This part is easy!<br/>Our system automatically emails your download link & license key(s) to you right after checkout.</p>",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#ffffff",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "home_guarantee_block_gPUzXH": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/3.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "USE",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "<p>Need we say more?<br/>Your software will stay on your computer for as long as your computer continues to operate with no need to pay renewal. </p>",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#ffffff",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "home_guarantee_block_DbHyBg",
+        "home_guarantee_block_YMA6Lb",
+        "home_guarantee_block_gPUzXH"
+      ],
+      "settings": {
+        "home_guarantee_title": "How it works.",
+        "custom_id": "how-it-works",
+        "home_guarantee_title_font_size": 40,
+        "home_guarantee_title_color": "#007aff",
+        "home_guarantee_subtitle": "",
+        "home_guarantee_subtitle_font_size": 20,
+        "home_guarantee_subtitle_color": "#042338",
+        "btn_text": "Select Product & Checkout",
+        "btn_url": "#"
+      }
+    },
+    "mdc_icon_heading_DdYxeC": {
+      "type": "mdc_icon-heading",
+      "blocks": {
+        "icon_head_block_7cQXQk": {
+          "type": "icon_head_block",
+          "settings": {
+            "image": "shopify://shop_images/Key_f8b7f1bb-b28a-44a7-b2fb-7ba3393ce9d9.png",
+            "block_title": "Digital Delivery",
+            "block_text": "<p>Receive your product <strong>in 15 minutes or less</strong>, thanks to our streamlined digital delivery system, ensuring no waiting time.</p>"
+          }
+        },
+        "icon_head_block_C96iEn": {
+          "type": "icon_head_block",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Download-Computer-128.png",
+            "block_title": "Microsoft® Gold Partner",
+            "block_text": "<p>As a certified <strong>Microsoft® Gold Partner</strong>, we uphold the highest standards of quality and expertise in technology solutions.</p>"
+          }
+        },
+        "icon_head_block_d6Xewe": {
+          "type": "icon_head_block",
+          "settings": {
+            "image": "shopify://shop_images/calendar-128.png",
+            "block_title": "Valid For Life",
+            "block_text": "<p>Once installed, your software never expires. It's not a subscription that you have to renew monthly or yearly, it's a permanent lifetime license. </p>"
+          }
+        },
+        "icon_head_block_icfMJh": {
+          "type": "icon_head_block",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Purple-Transfer.png",
+            "block_title": "Transferable",
+            "block_text": "<p>Our dedicated customer support team are 24/7 around the clock, ready to assist you with any inquiries or issues.</p>"
+          }
+        },
+        "icon_head_block_efRYYr": {
+          "type": "icon_head_block",
+          "settings": {
+            "image": "shopify://shop_images/supportfemale-128.png",
+            "block_title": "24/7 Customer Support",
+            "block_text": "<p>Our dedicated customer support team are available 24/7 around the clock, ready to assist you with any inquiries or issues.</p>"
+          }
+        },
+        "icon_head_block_ba9JBM": {
+          "type": "icon_head_block",
+          "settings": {
+            "image": "shopify://shop_images/Star-128.png",
+            "block_title": "180- Day-Money-Back Guarantee",
+            "block_text": "<p>We stand behind our products with a robust <strong>180-day-money-back guarantee</strong>, providing you with a risk-free purchasing experience.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_head_block_7cQXQk",
+        "icon_head_block_C96iEn",
+        "icon_head_block_d6Xewe",
+        "icon_head_block_icfMJh",
+        "icon_head_block_efRYYr",
+        "icon_head_block_ba9JBM"
+      ],
+      "settings": {
+        "custom_id": "why-choose-us",
+        "title": "4 Reasons to choose us.",
+        "title_color": "#007aff",
+        "btn_text": "Select Product & Checkout",
+        "btn_url": "#"
+      }
+    },
+    "mdc_we_different_MYXMnK": {
+      "type": "mdc_we-different",
+      "disabled": true,
+      "settings": {
+        "heading": "How we're different.",
+        "image": "shopify://shop_images/tab_5ba5af0e-fb7e-46cf-bd38-45ef2844e9dd.png"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "mdc_menu_tabs_q8ATH3",
+    "mdc_product_box_qC6jLA",
+    "mdc_product_box_AXUFp7",
+    "mdc_product_box_xE7Q6h",
+    "mdc_product_box_ezWTdz",
+    "mdc_product_box_x8j8gz",
+    "mdc_product_box_kVWNd3",
+    "mdc_image_with_icon_FP3NFW",
+    "mdc_icon_heading_DdYxeC",
+    "mdc_we_different_MYXMnK"
+  ]
+}

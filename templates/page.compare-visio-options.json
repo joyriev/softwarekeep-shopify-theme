@@ -1,0 +1,77 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "visio_banner_Ea6M9h": {
+      "type": "visio-banner",
+      "settings": {
+        "image": "shopify://shop_images/Photo_Microsoft_visio_1.png",
+        "heading": "Microsoft Visio 2021 Standard Vs Professional.",
+        "copy": "Transform the way you use and visualize data so you can bring your best ideas to life. With dozens of ready-to-use templates and thousands of customizable shapes, Visio makes it easy—and fun—to create powerful visuals.Microsoft Visio 2021 is more than just a diagramming tool; it is a platform that empowers visual communication. By transforming complex information into clear, actionable visuals, Visio helps you communicate more effectively, collaborate more efficiently, and make better decisions.>",
+        "btn_text": "Buy Now",
+        "btn_url": "shopify://products/microsoft-project-2021-standard",
+        "learn_url": "#"
+      }
+    },
+    "visio_product_box_fwzBcg": {
+      "type": "visio-product-box",
+      "blocks": {
+        "product_34U7qr": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-visio-2021-standard",
+            "product_adds": "<ul><li>On-premises diagramming solution, licensed for one PC</li><li>Get started quickly on professional diagrams with ready-made templates and shapes.</li><li>Use your finger or pen to draw and take notes on touch-enabled devices.</li></ul>"
+          }
+        },
+        "product_6378EY": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-visio-2021-professional",
+            "product_adds": "<ul><li>On-premises diagramming solution, licensed for one PC.​</li><li>Enjoy all the features of Visio Standard, plus additional templates, shapes, and collaboration features.​</li><li>Build and validate diagrams that support industry standards, including BPMN 2.0, IEEE, and UML 2.5.​</li><li>Link diagrams to live data from internal and external sources.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "product_34U7qr",
+        "product_6378EY"
+      ],
+      "settings": {}
+    },
+    "visio_table_wArc4H": {
+      "type": "visio-table",
+      "blocks": {
+        "product_WXtF8C": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-visio-2021-standard",
+            "product_adds": ""
+          }
+        },
+        "product_Uzj9at": {
+          "type": "product",
+          "settings": {
+            "product": "microsoft-visio-2021-professional",
+            "product_adds": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_WXtF8C",
+        "product_Uzj9at"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "visio_banner_Ea6M9h",
+    "visio_product_box_fwzBcg",
+    "visio_table_wArc4H"
+  ]
+}

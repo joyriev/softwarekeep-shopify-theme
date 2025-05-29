@@ -1,0 +1,107 @@
+<div class="v_product_wrapper visio-max-width">
+   <div class="v-product-box">
+     {% for block in section.blocks %}
+       {% assign product = all_products[block.settings.product] %}
+       {% if product != blank and block.type == 'product' %}
+        <div class="product-box {% if forloop.index == 1 %}green{% else %}blue{% endif %}">
+          <div class="product_name">{{ product.title }}</div>
+          {% if block.settings.best %}
+            <div class="best-deals">
+              <p class="elButtonMain"><i class="fa_prepended fa fa-trophy"></i> BEST DEAL</p>
+            </div>
+          {% endif %}
+          {% comment %} 
+          <div class="gftst_prdt_img">
+            {% if product.featured_image != blank %}
+             <a href="{{ product.url }}"><img src="{{ product.featured_image | img_url: '680x' }}" alt="{{ product.featured_image.alt | escape }}" /></a>
+            {% endif %}
+           </div>
+            {% endcomment %}
+           
+           <div class="product_info">
+             <div class="price_wrapper">
+               {% comment %}
+               <div class="compare_price"><del>{{ product.compare_at_price | money }}</del></div>
+               {% endcomment %}
+               <div class="main_price">{{ product.price | money }}</div>
+               <p>(one-time purchase)</p>
+               {% if forloop.index == 2 %}
+                {%- if product.compare_at_price > 0 -%}
+                <span class="tag-discount">
+                  Save:
+                  {{-
+                    product.compare_at_price
+                    | minus: product.price
+                    | times: 100.0
+                    | divided_by: product.compare_at_price
+                    | round
+                  -}}
+                  %
+                </span>
+                {%- endif %}  
+               {% endif %}
+
+               {% if product.selected_or_first_available_variant.inventory_quantity > 0 %}
+                {% comment %} 
+                <div class="box_inventory_quantity">
+                  Only {{ block.settings.invent }} left in stock!
+                </div>
+                 {% endcomment %}
+              {% else %}
+                <div class="box_inventory_quantity">
+                  Out of stock
+                </div>
+              {% endif %}
+                
+             </div>
+             <div class="cart_btn_wrap">
+               {% assign var = product.first_available_variant %}
+               {% form 'product', product, class:'lang_btns' %}
+                  <input name="id" type="hidden" value="{{var.id}}">
+                  {% render 'add-to-cart-button', variant: var.id, quantity: 1, price: product.price %}
+                {% endform %}
+             </div>
+           </div>
+          {% comment %}
+          {% if block.settings.payonce %}
+            <div class="payonce">
+              <p><i class="fa_prepended fa fa-check" contenteditable="false" style="color: rgb(0, 170, 0);"></i> Pay once, use forever</p>
+            </div>
+          {% endif %}
+       {% endcomment %}
+         <div class="addon">{{ block.settings.product_adds }}</div> 
+        </div>
+       {% endif %}
+     {% endfor %}
+   </div>
+</div>
+{% schema %}
+{
+  "name": "Visio Product Box",
+  "class": "visio-product-box",
+  "settings": [],
+    "blocks":[
+      {
+        "type": "product",
+        "name": "Product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          },
+          {
+            "type": "richtext",
+            "id": "product_adds",
+            "label": "Product Additional"
+          }
+        ]
+      }
+    ],
+  "presets": [
+    {
+      "name": "Visio Product Box"
+    }
+  ]
+}
+{% endschema %}

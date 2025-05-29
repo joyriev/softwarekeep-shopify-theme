@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{{ 'microsoft-download-center.css' | asset_url | stylesheet_tag: preload: true }}
+<div class="mdc_tabs_wrapper custom-max-width">
+  <ul>
+    {% for block in section.blocks %}
+      <li>
+        <a href="#{{ block.settings.tab_id }}">{{ block.settings.tab_text }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+<script>
+  
+$(document).ready(function() {
+    $(window).scroll(function() {
+    console.log('scroll valid');
+        var scrollPosition = $(window).scrollTop();
+        var scrollThreshold = 125;
+
+        if (scrollPosition > scrollThreshold) {
+          $('.menu-tabs').addClass('fixed-tab');
+        } else {
+          $('.menu-tabs').removeClass('fixed-tab');
+        }
+    });
+  if ($('body').hasClass('microsoft-download-center')) {
+    $('.mdc_tabs_wrapper').clone().insertBefore('.main__navigation');
+  } 
+  });
+</script>
+{% schema %}
+  {
+    "name": "Menu Tabs",
+    "class": "menu-tabs",
+    "settings": [
+    ],
+    "blocks":[
+      {
+        "type": "tabs",
+        "name": "Tab",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_text",
+            "label": "Tab Name"
+          },
+          {
+            "type": "text",
+            "id": "tab_id",
+            "label": "Tab ID"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name": "Menu Tabs"
+      }
+    ]
+  }
+{% endschema %}

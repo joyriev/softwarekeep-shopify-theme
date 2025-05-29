@@ -1,0 +1,216 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "banner--contact",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "height": 300,
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": "medium",
+        "contentColor": "rgba(0,0,0,0)",
+        "fillColor": "rgba(0,0,0,0)",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "2ed8fa74-07cf-4910-8a4e-d316023f3d40": {
+      "type": "section__icon-with-text",
+      "blocks": {
+        "39723409-9849-46c4-9bc9-2e35e3543a1c": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/phone.svg",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Call",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "Est wait time 15 mins",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#191d21",
+            "home_guarantee_block_background_color": "#ffffff",
+            "home_guarantee_block_button": "+1 888 851 6548",
+            "home_guarantee_block_url": "tel:+1 888 851 6548"
+          }
+        },
+        "01783033-0903-482c-88c4-c70c3167d306": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/chat.svg",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Live Chat",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "Est wait time <2 mins",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#000000",
+            "home_guarantee_block_background_color": "#ffffff",
+            "home_guarantee_block_button": "Start Conversation",
+            "home_guarantee_block_url": "javascript:zE.activate();"
+          }
+        },
+        "39a286d0-4c5a-4669-b4b3-78d2b9424fa4": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/mail.svg",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Email",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "Est wait time 1.5 hours",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#000000",
+            "home_guarantee_block_background_color": "#ffffff",
+            "home_guarantee_block_button": "Send Message",
+            "home_guarantee_block_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "39723409-9849-46c4-9bc9-2e35e3543a1c",
+        "01783033-0903-482c-88c4-c70c3167d306",
+        "39a286d0-4c5a-4669-b4b3-78d2b9424fa4"
+      ],
+      "settings": {
+        "Slider_enbalemobile": false,
+        "home_guarantee_title": "Need Any Help? Contact US Now.",
+        "custom_id": "contact-pag",
+        "home_guarantee_title_font_size": 40,
+        "home_guarantee_title_color": "#0067b8",
+        "home_guarantee_subtitle": "We're here for you 24/7. For immediate assistance on any issue LiveChat with us Now!",
+        "home_guarantee_subtitle_font_size": 20,
+        "home_guarantee_subtitle_color": "#042338"
+      }
+    },
+    "contact": {
+      "type": "contact",
+      "blocks": {
+        "84d5868a-cff9-4037-9777-ff0c7f4be074": {
+          "type": "contactFormText",
+          "settings": {
+            "required": true,
+            "name": "Full Name",
+            "placeholder": "Enter your Full Name",
+            "type": "text"
+          }
+        },
+        "add72778-ab29-4adb-a21f-69e42e3f2f5e": {
+          "type": "contactFormEmail",
+          "settings": {
+            "name": "Email",
+            "placeholder": "Enter your Email Address"
+          }
+        },
+        "b95d80b1-a7dd-4284-a2ea-9129a097910c": {
+          "type": "contactFormTextarea",
+          "settings": {
+            "name": "Message",
+            "required": true,
+            "placeholder": "Write Your Message"
+          }
+        }
+      },
+      "block_order": [
+        "84d5868a-cff9-4037-9777-ff0c7f4be074",
+        "add72778-ab29-4adb-a21f-69e42e3f2f5e",
+        "b95d80b1-a7dd-4284-a2ea-9129a097910c"
+      ],
+      "settings": {}
+    },
+    "content": {
+      "type": "page--content",
+      "settings": {}
+    },
+    "84937534-6ecc-40c5-b5cb-f34a390364f4": {
+      "type": "section__logolist",
+      "blocks": {
+        "1cbb0eb2-94b1-4aca-b268-0c3486b3974b": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/icon-rating-google_f038c219-c95e-481a-8ca7-c3ce055a7b88.png",
+            "logoLink": ""
+          }
+        },
+        "83afefad-32f3-4079-bc66-a50f323be0d9": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/icon-rating-reseller_d9af2c48-b688-4d07-afba-5e3421dd63a7.png",
+            "logoLink": ""
+          }
+        },
+        "5db2d511-b27a-4c44-9842-e9d1c824bc90": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/icon-trustpilot_d9380a8c-8845-48da-ba36-45abd3dcdeb4.png",
+            "logoLink": ""
+          }
+        },
+        "8223b0e1-5778-43f5-be9f-f34ae7f87631": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/reviewsio-logo_56dd3c06-1560-4f65-9da4-f20ed219124a.png",
+            "logoLink": ""
+          }
+        },
+        "eb157d6d-1135-4bee-a2d2-65fcb3a4d543": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/icon-bbb_4c560af7-cdef-4b86-8e01-49a72e61ac1f.png",
+            "logoLink": ""
+          }
+        }
+      },
+      "block_order": [
+        "1cbb0eb2-94b1-4aca-b268-0c3486b3974b",
+        "83afefad-32f3-4079-bc66-a50f323be0d9",
+        "5db2d511-b27a-4c44-9842-e9d1c824bc90",
+        "8223b0e1-5778-43f5-be9f-f34ae7f87631",
+        "eb157d6d-1135-4bee-a2d2-65fcb3a4d543"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 240,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "Hear What Our Happy Customers Have to Say",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "TESTIMONIALS",
+        "subheadingColor": "#0067b8",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "hover": "opacitybw"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "2ed8fa74-07cf-4910-8a4e-d316023f3d40",
+    "contact",
+    "content",
+    "84937534-6ecc-40c5-b5cb-f34a390364f4"
+  ]
+}

@@ -1,0 +1,1713 @@
+<style>
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+.desktop_btoms_nav {
+  display: none;
+}
+#discount__bottom-info-bar {
+  background: linear-gradient(45deg, #3d348b, #3d348b, #9e388b, #df4f79, #df4f79);
+  background-size: 400% 400%;
+  animation: primaryGradient 5s ease infinite; 
+}
+.s-hot-stuff {
+  border-radius: 40px;
+  background: #FFF200;
+  padding: 5px 10px;
+  color: var(--Primary-Base-Black, #000);
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 166.667% */
+  text-transform: uppercase;
+  display: block;
+  width: fit-content;  
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+
+@keyframes primaryGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#desktop_headers{
+  top: 53px;
+  animation: none !important;
+}
+.s-bundle-section {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background: #000;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.s-bundle-container {
+    max-width: 1028px;
+    padding: 0 12px;
+    margin: auto;
+}
+.s-bundle {
+
+}
+#shopify-section-bottom-info-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    z-index: 99;
+    animation: slide-up 0.4s ease-out;
+}  
+.s-bundle-top-sticky {
+    position: sticky;
+    top: 130px;
+    background: #000;
+    padding: 30px 0 10px;
+    z-index: 3;
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 10px 10px -10px;
+}
+.s-bundle-top-sticky h3 {
+    text-align: center;
+    /* text-transform: uppercase; */
+    margin-bottom: 40px;
+    margin-top: -20px;
+    /* display: none; */
+}
+.s-bundle-heading img {
+    height: 20vw;
+    display: block;
+    margin: auto;
+    margin-top: -1vw;
+}
+.s-bundle-heading>h2 {
+	text-align: center;
+    font-size: 40px;
+
+    font-size: 3.5rem; /* Larger heading size */
+    text-align: center; /* Center the heading */
+
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+.s-bundle-heading>p {
+	text-align: center;
+    margin: 0;
+    color: #00ffcc;
+    text-shadow: 0px 0px 10px #00ffcc, 0px 0px 20px #00ffcc, 0px 0px 30px #00ffcc;
+}
+p {
+    font-size: 1.5rem; /* Larger text for readability */
+    text-align: center; /* Center the paragraph */
+    color: #e0e0e0; /* Light gray color for text */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+}
+span {
+  color: #fff;
+}
+.s-bundle-body {
+
+}
+.s-bundle-top {
+    /* padding-top: 20px; */
+    /* padding-bottom: 10px; */
+    /* margin-bottom: 20px; */
+}
+.s-bundle-top-wrap {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	margin-bottom: 60px;
+	text-align: Center;
+	justify-content: center;
+    width: 100%;
+}
+#s-progress-bar {
+    width: calc(100% - 340px);
+}
+.s-bundle-checkout {
+	display: inline-flex;
+    height: 60px;
+    padding: 21px 74px 21px 75px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #51e22d;
+    color: var(--Primary-Base-Black, #000);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 100% */
+}
+.shop-category-title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  
+.shop-category-title {
+  
+}
+.s-bundle-checkout:hover {
+    /* background: linear-gradient(to right, #ffcc00, #ff3d00); /* Reverse the gradient on hover */
+    transform: scale(1.1);
+}
+.s-bundle-products {
+	width: 100%;
+	display: flex;
+    padding: 0;
+	/* margin-bottom: 40px; */
+    /* padding-top: 40px; */
+}
+.s-bundle-category {
+
+}
+.s-bundle-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+.s-bundle-nav>a {
+    display: block;
+    text-decoration: none;
+}
+.s-bundle-nav label {
+	/* background: #0067b8;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 30px;
+    text-align: center;
+    width: fit-content;
+    display: block;
+    font-weight: 600;
+    min-width: 150px;
+    cursor: pointer;
+
+    display: inline-block; 
+    font-size: 1.5rem; 
+    color: #ffffff; 
+    background: #000;
+    border: 1px solid #fff;
+    transition: background 0.3s ease, transform 0.3s ease; */
+    line-height: 0;
+}
+.s-bundle-nav label:hover {
+    /* background: linear-gradient(to right, #ffcc00, #ff3d00); /* Reverse the gradient on hover */ */
+    transform: scale(1.05);
+}
+.s-bundle-nav label img {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}  
+.s-bundle-collections {
+    min-height: 500px;
+}
+.s-bundle-collection-wrap {
+    padding-top: 0px;
+}  
+.s-bundle-collection-wrap>h2 {
+    font-weight: 800;
+    text-align: center;
+    margin: 10px auto 0;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+.s-bundle-collection {
+    display: flex;
+    align-items: stretch;
+    gap: 60px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border-top: 1px solid #fff; */
+    /* border-left: 1px solid #fff; */
+}
+.s-bundle-collection.active {
+    
+}
+.s-bundle-product {
+    width: calc(25% - 15px);
+    text-align: center;
+    padding: 16px 16px;
+    /* border-bottom: 1px solid #fff; */
+    /* border-right: 1px solid #fff; */
+    display: grid;
+    background-image: url(https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Polygon_1_1355962c-6983-4965-9f96-4b1548f0dc4f.png?v=1730795301);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #fff;
+    min-width: 225px;
+}
+.s-bundle-price {
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 9px;
+}
+.s-bundle-product-image {
+    width: 100%;
+    /* min-height: 300px; */
+    /* background-size: 100%;
+    background-repeat: no-repeat; */
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+.s-bundle-product-image>img {
+  width: 100%;
+  display: block;
+}
+.s-bundle-product-des {
+	margin-bottom: 20px;
+}
+.s-bundle-product-des>h3 {
+  color: #142432;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  text-align: left;
+}
+.s-bundle-product-des>span {
+	color: #fff !important;
+    font-size: 22px;
+}
+.s-bundle-product button.add-to-bundle {
+    border-radius: 8px;
+    background: #0261AA;
+    border: none;
+    display: block;
+    margin: auto;
+    font-size: 24px;
+    width: 100%;
+    height: 53px;
+    color: var(--Primary-Base-White, #FFF);
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 100% */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.s-bundle-product button.add-to-bundle:hover {
+    transform: scale(1.05);
+}
+.total-price-wrap {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#total-price, #total-price span, .total-price-wrap>span {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.s-bundle-products {
+  display: flex;
+  /* justify-content: center; */
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.s-bundle-item {
+  text-align: center;
+}
+.s-bundle-item>span img {
+  display: none !important;
+}
+.s-bundle-item-image {
+  display: block !important;
+  height: 67px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2px;
+}
+.s-bundle-item>p {
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 5px 1px;
+}
+.s-bundle-prev {
+  width: 50px;
+  height: 50px;
+  left: 15px;
+  top: 120px;
+  background: url(/cdn/shop/files/prev-arrow.png?v=1722251072) no-repeat center center #fff;
+  background-size: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+.s-bundle-next {
+  width: 50px;
+  height: 50px;
+  right: 15px;
+  top: 120px;
+  background: url(/cdn/shop/files/arrow-next.png?v=1722251072) no-repeat center center #fff;
+  background-size: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.slick-prev:before, .slick-next:before {
+  display: none !important;
+}
+/* Additional styling for active label and remove button */
+.s-bundle-nav label.active {
+  background-color: #004a87; /* Darker color for active state */
+}
+
+.s-bundle-item {
+  width: 67px;
+  position: relative;
+}
+.s-bundle-item-image {
+  display: block !important;
+  height: 67px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* X icon styling */
+.s-bundle-item .remove-icon {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background-color: #cc3333;
+  color: #fff;
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+}
+
+.s-bundle-products {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.s-progress-bar {
+  width: calc(100% - 280px);
+  position: relative;
+}
+.s-progress-bar-line {
+    height: 7px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    width: calc(100% - 60px);
+    /* margin: auto; */
+    display: block;
+}
+.s-progress-bar-body {
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+    background: #51e22d;
+    transition: width 0.4s ease; /* Smooth transition effect */
+}
+.s-progress-bar-steps {
+	display: flex;
+	justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: -25px;
+}
+.s-progress-bar-steps>div {
+	/* width: 40px; */
+}
+.s-start {
+	opacity: 0;
+}
+.s-progress-bar-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.s-progress-bar-step label {
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    color: #000;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+.s-progress-bar-step span {
+	
+}
+.d-none {
+  display: none !important;
+}
+.s-step-checked svg {
+    color: #000;
+    width: 40px;
+    height: auto;
+}  
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 600px;
+  text-align: center;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.free-gift-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.free-gift-item, .free-vpn-item {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 160px;
+}
+.free-gift-item-image {
+  height: 160px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.free-gift-item-des {
+  padding: 0 10px 10px;
+}
+.free-gift-item-des span {
+  font-size: 15px;
+  min-height: 50px;
+  display: block;
+  color: #000;
+}
+.free-gift-item-add {
+  background: #0067b8;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 30px;
+  text-align: center;
+  width: fit-content;
+  display: block;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+main {
+  background: #000;
+}  
+#launcher {
+  display: none;
+}
+.s-bundle-side-back {
+  display: none;
+}
+.wrapper--bottom {
+  padding-top: 0;
+}
+  
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}  
+
+.popup-content h3 {
+  color: #0261AA;
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.s-bundle-side-back {
+  position: absolute;
+  left: -36px;
+  max-width: 400px;
+  top: -150px;
+  display: none;
+}
+.s-bundle-side-1 {
+  position: absolute;
+  left: -50px;
+  width: 250px;
+  bottom: -130px;
+  display: none;
+} 
+.s-bundle-side-2 {
+  position: absolute;
+  width: 250px;
+  right: -92px;
+  top: 20px;  
+  display: none;
+}
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+.popup-close:hover {
+  color: #000;
+}
+.popup-content {
+  position: relative;
+}  
+.s-bundle-price .original-price {
+  color: #A6A6A6;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: strikethrough;
+}
+.s-bundle-price .discounted-price {
+  color: #0261AA;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.s-bundle-product .quantity-box {
+  font-weight: 600;
+  color: #000 !important;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 100%;
+  margin: auto;
+  font-size: 24px;
+  width: 100%;
+  height: 53px;
+  overflow: hidden;
+  background: #F3F3F3;
+}
+.s-bundle-product .quantity-decrease, .s-bundle-product .quantity-increase {
+  width: 30%;
+  background: #0261AA;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  border-radius: 0;
+}
+.s-bundle-product .quantity-display {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s-bundle-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    box-shadow: rgba(255, 255, 255, 0.8) 0px -10px 10px -10px;
+    padding: 15px 12px;
+    position: sticky;
+    bottom: 0;
+    background: #000;
+}
+#merchantwidget-iframe-wrapper, #___ratingbadge_0, #_GUARANTEE_SealSpan, #alia-iframe {
+    display: none !important;
+}
+.s-bundle-product-guarantee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.s-bundle-product-guarantee svg path {
+  fill: var(--Primary-Base-Black, #000);
+}
+.s-bundle-product-guarantee span {
+  color: var(--Primary-Base-Black, #000);
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 166.667% */
+  text-transform: uppercase;
+}
+.s-bundle-prices {
+    display: grid;
+    gap: 2px;
+    text-align: left;
+}
+.s-bundle-price-off {
+  border-radius: 40px;
+  background: #E2181C;
+  padding: 6px 12px;
+  color: var(--Primary-Base-White, #FFF);
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.shop-category-title {
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #E2181C;
+  display: block !important;
+  margin: 0 !important;
+  width: 400px;
+  text-align: left !important;
+}
+.see-more {
+    display: inline-flex;
+    /* height: 60px; */
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    /* font-weight: 700; */
+    line-height: 18px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+  
+@media only screen and (max-width: 768px) {
+  .s-bundle-heading>h2 {
+    margin-top: 60px;
+    font-size: 2.8rem;
+  }
+  .shop-category-title {
+    width: 100%;
+  }
+  .shop-category-title-wrap {
+    flex-wrap: wrap;
+  }
+  .s-bundle-collection {
+    gap: 40px 10px;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .s-bundle-top-wrap {
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+  .s-progress-bar {
+    width: 100%;
+  }
+  .s-progress-bar-step span {
+    font-size: 16px;
+    max-width: 100px;
+  }
+  .s-bundle-products {
+    padding: 0;
+    margin: 0;
+  }
+  .s-bundle-nav {
+    /* flex-wrap: wrap; */
+    gap: 10px;
+    width: calc(100vw - 20px);
+    overflow: auto;
+    justify-content: flex-start;
+  }
+  .shop-category-title {
+    text-align: center !important;
+  }
+  .s-bundle-nav>a {
+    width: calc(25% - 7px);
+    min-width: 120px;
+  }
+  .s-bundle-collection-wrap>h2 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+  .s-bundle-product {
+    width: calc(50% - 5px);
+    min-width: 160px;
+  }
+  .s-bundle-product-image {
+    min-height: 160px;
+    margin-bottom: 0;
+  }
+  .s-bundle-product-des>h3 {
+    padding: 0;
+    font-size: 15px;
+  }
+  .popup-content {
+    background: white;
+    padding: 0 20px 20px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+  }
+  #free-gift-popup {
+    overflow: auto;
+  }
+  #free-vpn-popup {
+    overflow: auto;
+  }
+  
+  #shopify-section-bottom-info-bar {
+    
+  }
+  .s-bundle-heading img {
+    height: 300px;
+    display: block;
+    margin: auto;
+    margin-top: -40px;
+  }
+  #sticky_mobs-view {
+    max-height: 80px;
+  }
+  .s-progress-bar-steps .s-progress-bar-step:first-child {
+    display: none;
+  }
+  .s-progress-bar-steps .s-progress-bar-step:nth-child(2) {
+    align-items: flex-start;
+  }
+  .s-progress-bar-steps .s-progress-bar-step:nth-child(4) {
+    align-items: flex-end;
+  }
+  .s-progress-bar-line {
+    width: 100%;
+  }
+  .sticky_mobs-view {
+    max-width: 
+  }
+  .mob_wrapers .mbole_btom_heads {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  .s-bundle-top-sticky {
+    top: 85px;
+  }
+  .s-bundle-price {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .s-bundle-product button.add-to-bundle {
+    height: 40px;
+  }
+  .s-bundle-product-guarantee {
+    display: block;
+  }
+  .s-bundle-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .s-bundle-checkout {
+    height: 50px;
+    padding: 8px 20px;
+    margin: auto;
+  }
+  .free-gift-items {
+    gap: 5px;
+  }
+  .free-gift-item, .free-vpn-item {
+    width: 100px;
+  }
+  .free-gift-item-des {
+    padding: 0 5px 5px;
+  }
+  .free-gift-item-des span {
+    min-height: 100px;
+  }
+  .s-bundle-top-sticky h3 {
+    font-size: 18px;
+  }
+  .s-bundle-top-sticky h3 {
+    margin-bottom: 32px;
+  }
+  .s-step-label {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+  }
+  .s-progress-bar-step span {
+    font-size: 14px;
+  }
+  .s-progress-bar-step label {
+    width: 40px;
+    height: 40px;
+  }
+  .s-progress-bar-steps {
+    top: -17px;
+  }
+}
+  
+</style>
+
+<div class="s-bundle">
+  <div class="s-bundle-heading s-bundle-container">
+    <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/2_388e7b51-47b9-4cb9-b82b-fa60c099271d.png?v=1730716760">
+  </div>
+
+  <div id="s-bundle-top-sticky" class="s-bundle-top-sticky">
+    <img class="s-bundle-side-back" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/shine_1.png?v=1730472829">
+    <img class="s-bundle-side-1" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/4.png?v=1730473876">
+    <img class="s-bundle-side-2" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/7.png?v=1730473876">
+    <h3>SPEND <span class="fill-amount">$50</span> to GET <span class="discount-title">Free Support</span></h3>
+    <div class="s-bundle-top-wrap s-bundle-container">
+      <!-- Progress Bar -->
+      <div class="s-progress-bar">
+        <div class="s-progress-bar-line">
+          <div class="s-progress-bar-body"></div>
+        </div>
+        
+        <div class="s-progress-bar-steps">
+          <div class="s-progress-bar-step s-start">
+            
+          </div>
+
+          <div class="s-progress-bar-step s-free-support">
+            <label class="s-step-label" data-price="50">$50</label>
+            <label class="s-step-checked d-none">
+              <svg class="byo-tier__indicator byo-tier__indicator--active" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+              </svg>
+            </label>
+            <span>Free Support</span>
+          </div>
+
+          <div class="s-progress-bar-step s-free-support">
+            <label class="s-step-label"  data-price="120">$120</label>
+            <label class="s-step-checked d-none">
+              <svg class="byo-tier__indicator byo-tier__indicator--active" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+              </svg>
+            </label>
+            <span>Free VPN</span>
+          </div>
+
+          <div class="s-progress-bar-step s-free-support">
+            <label class="s-step-label"  data-price="180">$180</label>
+            <label class="s-step-checked d-none">
+              <svg class="byo-tier__indicator byo-tier__indicator--active" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+              </svg>
+            </label>
+            <span>Choose Your Free Gift</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop-category-title-wrap s-bundle-container">
+      <h3 class="shop-category-title">Shop By Category</h3>
+      
+      <div class="s-bundle-nav">
+        {% for block in section.blocks %}
+          {% if block.type == 'collection' %}
+            <a href="#{{ block.settings.collection.handle }}">
+              <label data-collection="{{ block.settings.collection.handle }}">
+                <img src="{{ block.settings.image | img_url: 'master' }}">
+              </label>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>  
+    </div>    
+  </div>
+
+  <div class="s-bundle-body">
+    <!-- Collection Navigation and Products -->
+    <div class="s-bundle-category s-bundle-container">
+      <div class="s-bundle-collections">
+        {% assign first_index = 0 %}
+        {% for block in section.blocks %}
+          {% if block.type == 'collection' %}
+            {% assign first_index = first_index | plus: 1 %}
+            <div id="{{ block.settings.collection.handle }}" class="s-bundle-collection-wrap">
+              <h2 class="s-bundle-collection-title">{{ block.settings.collection.title }}</h2>
+              <div class="s-bundle-collection {% if first_index == 1 %}active{% endif %}" data-collection="{{ block.settings.collection.handle }}">
+                {% for product in block.settings.collection.products %}
+                  <div class="s-bundle-product {% if block.settings.collection.handle == 'microsoft-office-black-friday-deals'%}{% if  forloop.index > 8  %}d-none{% endif %}{% elsif forloop.index > 4 %}d-none{% endif %}" data-product-id="{{ product.variants[0].id }}" data-product-price="{{ product.price | divided_by: 100 }}" data-handle="{{ product.handle }}">
+                    <div class="s-bundle-product-image" data-image="{{ product.featured_image | img_url: 'master' }}">
+                      <img src="{{ product.featured_image | img_url: 'master' }}">
+                      {% if product.title contains 'Office 2024 Home & Student' or product.title contains 'Office 2021 Home & Student' or product.title contains 'Windows 11 Professional' or product.title contains 'Excel 2024 PC' or product.title contains 'Microsoft Word 2024 for Mac' %}
+                        <div class="s-hot-stuff">HOT STUFF 🔥</div>
+                      {% endif %}
+                    </div>
+                    <div class="s-bundle-product-des">
+                      <h3>{{ product.title }}</h3>
+                      {% comment %}
+                      {% if product.handle contains 'office' %}
+                        <img class="s-bundle-product-hot" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_419_fc898209-37fb-4a7f-83b7-d91020a883d1.png?v=1730732900">
+                      {% endif %}
+                      {% endcomment %}  
+                      <div class="s-bundle-price">
+                        {% if product.compare_at_price > product.price %}
+                          <div class="s-bundle-prices">
+                            <span class="discounted-price">{{ product.price | money }}</span>
+                            <span class="original-price">{{ product.compare_at_price | money }}</span>                          
+                          </div>
+
+                          {% assign percentage = product.price | times: 100 | divided_by: product.compare_at_price %}
+                          {% assign discount_percentage = 100 | minus: percentage  %}
+                          <span class="s-bundle-price-off">{{ discount_percentage | round }}% off</span>
+                          
+                        {% else %}
+                          <span class="current-price">{{ product.price | money }}</span>
+                        {% endif %}
+                      </div>
+                    </div>
+                    <button class="add-to-bundle">Add +</button>
+
+                    <!-- Quantity box (initially hidden) -->
+                    <div class="quantity-box" style="display: none;">
+                      <button class="quantity-decrease" data-product-id="{{ product.variants[0].id }}">-</button>
+                      <div class="quantity-display" data-product-id="{{ product.variants[0].id }}">1</div>
+                      <button class="quantity-increase" data-product-id="{{ product.variants[0].id }}">+</button>
+                    </div>
+
+                    <div class="s-bundle-product-guarantee">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none"><path d="M12.9552 5.0514C12.8581 4.50109 12.569 4.00015 12.1409 3.64094C11.898 3.43714 11.7339 3.15297 11.6788 2.84074C11.5818 2.29043 11.2926 1.7895 10.8645 1.43029C10.4364 1.07108 9.89293 0.87323 9.3341 0.87323C9.01707 0.87323 8.70866 0.760984 8.46578 0.557182C8.03767 0.197975 7.49419 0.00012207 6.93536 0.00012207C6.37652 0.00012207 5.83305 0.197975 5.40493 0.557182C5.16206 0.760984 4.85373 0.87323 4.53662 0.87323C3.97778 0.87323 3.43431 1.07108 3.00619 1.43029C2.57808 1.7895 2.28893 2.29043 2.19187 2.84074C2.13681 3.15297 1.9728 3.43714 1.72983 3.64094C1.30171 4.00015 1.01257 4.50109 0.915511 5.0514C0.818449 5.60171 0.918885 6.17138 1.19835 6.65526C1.35686 6.92984 1.41387 7.25299 1.35881 7.56523C1.26175 8.11554 1.36219 8.68521 1.64165 9.16909C1.92102 9.65307 2.36415 10.0248 2.88924 10.216C3.18717 10.3244 3.43857 10.5353 3.59709 10.8099C3.87646 11.2939 4.31958 11.6656 4.84468 11.8568C5.36977 12.0479 5.94823 12.0479 6.47332 11.8568C6.77125 11.7484 7.09938 11.7484 7.39731 11.8568C7.6599 11.9523 7.93572 12.0001 8.21163 12.0001C8.48754 12.0001 8.76336 11.9523 9.02595 11.8568C9.55104 11.6657 9.99417 11.2939 10.2735 10.8099C10.4321 10.5353 10.6835 10.3244 10.9814 10.216C11.5065 10.0249 11.9496 9.65307 12.229 9.16909C12.5083 8.68512 12.6088 8.11554 12.5118 7.56523C12.4568 7.25299 12.5138 6.92984 12.6723 6.65526C12.9517 6.17129 13.0521 5.60171 12.9551 5.0514H12.9552ZM9.37699 5.2544L6.82213 7.7788C6.70607 7.89344 6.54862 7.95791 6.38451 7.95791C6.22041 7.95791 6.06296 7.89344 5.94689 7.7788L4.74522 6.59142C4.50349 6.35262 4.50349 5.96536 4.74522 5.72656C4.98694 5.48777 5.37882 5.48777 5.62054 5.72656L6.3846 6.48148L8.50184 4.38946C8.74356 4.15067 9.13544 4.15067 9.37717 4.38946C9.61889 4.62825 9.61889 5.01552 9.37717 5.25431L9.37699 5.2544Z" fill="black"/></svg>
+                      <span>Lowest price guarantee</span>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+
+              <button class="see-more">See More</button>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="s-bundle-bottom s-bundle-container">
+    <div class="total-price-wrap">Total: <span><span id="total-price">0.00</span></span></div>
+    <div class="s-bundle-top">
+      <!-- Selected bundle items -->
+      <div class="s-bundle-products s-bundle-container"></div>
+    </div>
+    <div class="s-bundle-checkout-wrap">
+      <button id="s-bundle-checkout" class="s-bundle-checkout">Review Order</button>
+    </div>
+  </div>
+</div>
+
+<div id="free-gift-popup" class="popup d-none">
+  <div class="popup-content">
+    <button class="popup-close" onclick="closeGiftPopup()">×</button>
+    
+    <h3>Choose Your Free Gift</h3>
+    <div class="free-gift-items">
+      {% for block in section.blocks %}
+        {% if block.type == 'gift' %}
+          <div class="free-gift-item" data-product-id="{{ block.settings.product.variants[0].id }}" data-product-price="{{ block.settings.product.price | divided_by: 100 }}" data-image="{{ block.settings.product.featured_image | img_url: 'medium' }}">
+            <div class="free-gift-item-image" style="background-image: url({{ block.settings.product.featured_image | img_url: 'medium' }})"></div>
+            <div class="free-gift-item-des">
+              <span>{{ block.settings.product.title }}</span>  
+              <button class="free-gift-item-add">Add</button>
+            </div>            
+          </div>
+        {% endif %}  
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% comment %}
+<div id="free-vpn-popup" class="popup d-none">
+  <div class="popup-content">
+    <button class="popup-close" onclick="closeVPNPopup()">×</button>
+    
+    <h3>Choose Your Free VPN</h3>
+    <div class="free-gift-items">
+      {% for block in section.blocks %}
+        {% if block.type == 'vpn' %}
+          <div class="free-vpn-item" data-product-id="{{ block.settings.product.variants[0].id }}" data-product-price="{{ block.settings.product.price | divided_by: 100 }}">
+            <div class="free-gift-item-image" style="background-image: url({{ block.settings.product.featured_image | img_url: 'medium' }})"></div>
+            <div class="free-gift-item-des">
+              <span>{{ block.settings.product.title }}</span>  
+              <button class="free-gift-item-add">Add</button>
+            </div>            
+          </div>
+        {% endif %}  
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endcomment %}
+
+<script>
+  let totalAmount = 0;
+  const bundleItems = new Map();
+// Track first click globally across all anchor elements
+let isFirstClick = true;
+const initialStickyHeight = 400; // Adjust this value based on the approximate height of all sticky headers combined
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    // Set the totalStickyHeight based on whether it's the first click globally
+    let totalStickyHeight;
+    if (isFirstClick) {
+      // Use the fixed height on the very first click, regardless of which anchor
+      totalStickyHeight = initialStickyHeight;
+      isFirstClick = false; // Mark that the first click has occurred
+    } else {
+      // On subsequent clicks, calculate heights dynamically
+      const stickyHeader1 = document.querySelector('#shopify-section-bottom-info-bar');
+      const stickyHeader2 = document.querySelector('#s-bundle-top-sticky');
+      const stickyHeader3 = document.querySelector('#desktop_headers');
+      
+      const stickyHeaderHeight1 = stickyHeader1 ? stickyHeader1.offsetHeight : 0;
+      const stickyHeaderHeight2 = stickyHeader2 ? stickyHeader2.offsetHeight : 0;
+      const stickyHeaderHeight3 = stickyHeader3 ? stickyHeader3.offsetHeight : 0;
+
+      console.log("Sticky Header Heights:", stickyHeaderHeight1, stickyHeaderHeight2, stickyHeaderHeight3);
+      
+      totalStickyHeight = stickyHeaderHeight1 + stickyHeaderHeight2 + stickyHeaderHeight3;
+    }
+
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    // Proceed only if the target element is found
+    if (targetElement) {
+      const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - totalStickyHeight;
+
+      // Smoothly scroll to the adjusted position
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    } else {
+      console.warn(`Target element ${targetId} not found.`);
+    }
+  });
+});
+
+  function closeVPNPopup() {
+    alert("Please choose 1 item before closing.");
+    // document.getElementById("free-vpn-popup").classList.add("d-none");
+  }
+
+  function closeGiftPopup() {
+    // alert("Please choose 1 item before closing.");
+    document.getElementById("free-gift-popup").classList.add("d-none");
+  }
+  
+  // Function to display the gift popup
+  function showGiftPopup() {
+    const popup = document.getElementById("free-gift-popup");
+    popup.classList.remove("d-none");
+  }
+
+  function showVPNPopup() {
+    const popup = document.getElementById("free-vpn-popup");
+    popup.classList.remove("d-none");
+  }
+
+  // Function to hide the gift popup
+  function hideGiftPopup() {
+    const popup = document.getElementById("free-gift-popup");
+    popup.classList.add("d-none");
+  }
+
+  function hideVPNPopup() {
+    const popup = document.getElementById("free-vpn-popup");
+    popup.classList.add("d-none");
+  }
+
+  // Event listener for selecting a gift
+  document.querySelectorAll('.free-gift-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const selectedGiftId = item.getAttribute('data-product-id');
+      const selectedGiftPrice = parseFloat(item.getAttribute('data-product-price'));
+      const imageUrl = item.getAttribute('data-image');
+
+      // Add the gift to the bundle
+      bundleItems.set(selectedGiftId, { title: item.querySelector('span').innerText, imageUrl, price: selectedGiftPrice, gift: true, vpn: false });
+
+      // Update total amount and close the popup
+      {% comment %}
+      totalAmount += selectedGiftPrice;
+      const totalPriceElement = document.getElementById("total-price");
+      if (totalPriceElement) {
+        totalPriceElement.textContent = totalAmount.toFixed(2);
+      }
+      {% endcomment %}
+
+      // Hide the popup
+      hideGiftPopup();
+
+      updateBundleItems();
+    });
+  });
+
+  // Event listener for selecting a vpn
+  document.querySelectorAll('.free-vpn-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const selectedGiftId = item.getAttribute('data-product-id');
+      const selectedGiftPrice = parseFloat(item.getAttribute('data-product-price'));
+
+      // Add the gift to the bundle
+      bundleItems.set(selectedGiftId, { title: item.querySelector('span').innerText, price: selectedGiftPrice, gift: false, vpn: true });
+
+      // Update total amount and close the popup
+      totalAmount += selectedGiftPrice;
+      const totalPriceElement = document.getElementById("total-price");
+      if (totalPriceElement) {
+        totalPriceElement.textContent = totalAmount.toFixed(2);
+      }
+
+      // Hide the popup
+      hideVPNPopup();
+    });
+  });
+
+  // Function to update heading based on the next target
+  function updateHeading() {
+    const fillAmountElement = document.querySelector('.fill-amount');
+    const discountTitleElement = document.querySelector('.discount-title');
+    const headingElement = document.querySelector('.s-bundle-top-sticky h3'); // Select the heading element
+  
+    // Define tier thresholds
+    const tiers = [
+      { amount: 50, title: "Free Support" },
+      { amount: 120, title: "Free VPN" },
+      { amount: 180, title: "Free Gift" },
+    ];
+  
+    // Find the next tier based on totalAmount
+    const nextTier = tiers.find(tier => totalAmount < tier.amount);
+  
+    if (nextTier) {
+      // Update the heading with remaining amount to reach the next tier
+      const remainingAmount = Math.round(nextTier.amount - totalAmount);
+
+      if(nextTier.amount >= 120) {
+        fillAmountElement.textContent = `$${remainingAmount}` + ' More ';  
+      }
+      else {
+        fillAmountElement.textContent = `$${remainingAmount}`;
+      }
+
+      discountTitleElement.textContent = nextTier.title;
+      headingElement.style.display = "block"; // Show the heading when there's a next tier
+    } else {
+      // If totalAmount meets or exceeds the highest tier, hide the heading
+      fillAmountElement.textContent = "";
+      discountTitleElement.textContent = "Maximum Benefit Achieved!";
+      headingElement.style.display = "none"; // Hide the heading if over the maximum threshold
+    }
+  }
+
+  
+  // Update the progress bar function to show the gift popup if total exceeds $120
+  function updateProgressBar() {
+    const progressBarBody = document.querySelector(".s-progress-bar-body");
+    const progressBarSteps = document.querySelectorAll(".s-progress-bar-step");
+  
+    let progressPercentage = Math.min((totalAmount / 180) * 100, 100);
+    if (progressBarBody) {
+      progressBarBody.style.width = progressPercentage + "%";
+    }
+  
+    progressBarSteps.forEach(step => {
+      const stepLabel = step.querySelector(".s-step-label");
+      const stepChecked = step.querySelector(".s-step-checked");
+      const threshold = stepLabel ? parseInt(stepLabel.getAttribute("data-price")) : null;
+  
+      if (threshold !== null && totalAmount >= threshold) {
+        if (stepLabel) stepLabel.classList.add("d-none");
+        if (stepChecked) stepChecked.classList.remove("d-none");
+      } else {
+        if (stepLabel) stepLabel.classList.remove("d-none");
+        if (stepChecked) stepChecked.classList.add("d-none");
+      }
+    });
+
+    console.log('total amount');
+    console.log(totalAmount);
+    console.log(bundleItems);
+    
+    if (totalAmount > 120) {
+    let hasVPN = false;
+
+    // Check if any VPN item already exists
+    bundleItems.forEach(item => {
+      if (item.vpn) {
+        hasVPN = true;
+      }
+    });
+
+    // Add the VPN item if it doesn't exist
+    if (!hasVPN) {
+      bundleItems.set('{{section.settings.vpn.variants[0].id}}', { title: '{{section.settings.vpn.title}}', imageUrl: "{{ section.settings.vpn.featured_image | img_url: 'medium' }}", price: {{section.settings.vpn.price | divided_by: 100}}, gift: false, vpn: true });
+    }
+  } else {
+    // Remove VPN item if totalAmount drops below 120
+    bundleItems.forEach((item, id) => {
+      if (item.vpn) {
+        bundleItems.delete(id);
+      }
+    });
+  }
+
+  if (totalAmount > 180) {
+    let hasGift = false;
+
+    // Check if any gift item already exists
+    bundleItems.forEach(item => {
+      if (item.gift) {
+        hasGift = true;
+      }
+    });
+
+    // Show the gift popup and add the gift item if it doesn't exist
+    if (!hasGift) {
+      showGiftPopup();
+    }
+  } else {
+    // Remove gift item if totalAmount drops below 180
+    bundleItems.forEach((item, id) => {
+      if (item.gift) {
+        bundleItems.delete(id);
+      }
+    });
+  }
+    
+    updateHeading();
+  }
+  
+  document.querySelectorAll('.add-to-bundle').forEach(button => {
+    button.addEventListener('click', () => {
+      const productElement = button.closest('.s-bundle-product');
+      
+      if (productElement) {
+        const productId = productElement.getAttribute('data-product-id');
+        const productPrice = parseFloat(productElement.getAttribute('data-product-price'));
+        const productTitleElement = productElement.querySelector('h3');
+        const productImageElement = productElement.querySelector('.s-bundle-product-image');
+  
+        const productTitle = productTitleElement ? productTitleElement.textContent : "Unknown Product";
+        const imageUrl = productImageElement ? productImageElement.getAttribute('data-image') : "";
+  
+        // Add product to bundleItems and set initial quantity to 1
+        if (!bundleItems.has(productId)) {
+          bundleItems.set(productId, { title: productTitle, imageUrl, price: productPrice, quantity: 1, gift: false, vpn: false });
+          totalAmount += productPrice;
+  
+          // Hide the "Add to Bundle" button and show the quantity box
+          button.style.display = "none";
+          const quantityBox = productElement.querySelector('.quantity-box');
+          quantityBox.style.display = "flex";
+          
+          updateProgressBar();
+          updateBundleItems();
+  
+          const totalPriceElement = document.getElementById("total-price");
+          if (totalPriceElement) {
+            totalPriceElement.textContent = totalAmount.toFixed(2);
+          }
+        }
+      }
+    });
+  });
+  
+  // Function to handle quantity increase/decrease
+  function attachQuantityControlEvents() {
+    document.querySelectorAll('.quantity-increase').forEach(button => {
+      button.addEventListener('click', () => {
+        const productId = button.getAttribute('data-product-id');
+        const item = bundleItems.get(productId);
+  
+        if (item) {
+          item.quantity += 1;
+          totalAmount += item.price;
+          document.querySelector(`.quantity-display[data-product-id="${productId}"]`).textContent = item.quantity;
+  
+          const totalPriceElement = document.getElementById("total-price");
+          if (totalPriceElement) {
+            totalPriceElement.textContent = totalAmount.toFixed(2);
+          }
+  
+          updateBundleItems();
+          updateProgressBar();
+        }
+      });
+    });
+  
+    document.querySelectorAll('.quantity-decrease').forEach(button => {
+      button.addEventListener('click', () => {
+        const productId = button.getAttribute('data-product-id');
+        const item = bundleItems.get(productId);
+  
+        if (item && item.quantity > 1) {
+          item.quantity -= 1;
+          totalAmount -= item.price;
+          document.querySelector(`.quantity-display[data-product-id="${productId}"]`).textContent = item.quantity;
+  
+          const totalPriceElement = document.getElementById("total-price");
+          if (totalPriceElement) {
+            totalPriceElement.textContent = totalAmount.toFixed(2);
+          }
+  
+          updateBundleItems();
+          updateProgressBar();
+        } else if (item && item.quantity === 1) {
+          // Hide the quantity box and show the "Add to Bundle" button when quantity is 0
+          bundleItems.delete(productId);
+          totalAmount -= item.price;
+          
+          const quantityBox = button.closest('.quantity-box');
+          const addToBundleButton = quantityBox.closest('.s-bundle-product').querySelector('.add-to-bundle');
+          
+          quantityBox.style.display = "none";
+          addToBundleButton.style.display = "inline-block";
+  
+          const totalPriceElement = document.getElementById("total-price");
+          if (totalPriceElement) {
+            totalPriceElement.textContent = totalAmount.toFixed(2);
+          }
+  
+          updateBundleItems();
+          updateProgressBar();
+        }
+      });
+    });
+  }
+  
+  // Initial call to set up event listeners for quantity controls
+  attachQuantityControlEvents();
+
+  
+  function updateBundleItems() {
+    const bundleContainer = document.querySelector('.s-bundle-products');
+    if (bundleContainer) {
+      bundleContainer.innerHTML = '';
+  
+      bundleItems.forEach((item, id) => {
+        // Check if the item is a gift or VPN, and conditionally include the remove icon
+        const removeIconHTML = (!item.gift && !item.vpn) ? `<span class="remove-icon">×</span>` : '';
+      
+        const itemHTML = `
+          <div class="s-bundle-item" data-product-id="${id}">
+            <div class="s-bundle-item-image" style="background-image: url('${item.imageUrl}');">
+              ${removeIconHTML}
+            </div>
+          </div>
+        `;
+        bundleContainer.insertAdjacentHTML('beforeend', itemHTML);
+      });
+  
+      document.querySelectorAll('.remove-icon').forEach(icon => {
+        icon.addEventListener('click', () => {
+          const productElement = icon.closest('.s-bundle-item');
+          if (productElement) {
+            const productId = productElement.getAttribute('data-product-id');
+            if (bundleItems.has(productId)) {
+              const itemData = bundleItems.get(productId);
+              const productPrice = itemData.price;
+              const quantity = itemData.quantity || 1; // Check quantity, default to 1 if not set
+      
+              // Remove the total price for the quantity of items
+              totalAmount -= productPrice * quantity;
+              bundleItems.delete(productId); // Remove the item from the bundle map
+      
+              const totalPriceElement = document.getElementById("total-price");
+              if (totalPriceElement) {
+                totalPriceElement.textContent = totalAmount.toFixed(2);
+              }
+      
+              updateProgressBar();
+              updateBundleItems();
+      
+              // Find and reset the Add To Bundle button
+              const addButton = document.querySelector(`.s-bundle-product[data-product-id="${productId}"] .add-to-bundle`);
+              if (addButton) {
+                addButton.textContent = "Add +";
+                addButton.disabled = false;
+                addButton.style.display = "inline-block"; // Show the button again
+              }
+      
+              // Find and reset the quantity box
+              const quantityBox = document.querySelector(`.quantity-box [data-product-id="${productId}"]`).closest('.quantity-box');
+              if (quantityBox) {
+                // Hide the quantity box and reset the quantity display to 1
+                quantityBox.style.display = "none";
+                const quantityDisplay = quantityBox.querySelector('.quantity-display');
+                if (quantityDisplay) {
+                  quantityDisplay.textContent = "1";
+                }
+              }
+            }
+          }
+        });
+      });
+
+    }
+  }
+  
+  document.querySelectorAll('.s-bundle-nav label').forEach(label => {
+    label.addEventListener('click', () => {
+      const selectedCollection = label.getAttribute('data-collection');
+  
+      document.querySelectorAll('.s-bundle-nav label').forEach(l => l.classList.remove('active'));
+      label.classList.add('active');
+    });
+  });
+
+  document.getElementById('s-bundle-checkout').addEventListener('click', () => {
+    console.log(bundleItems);
+  
+    // Check if bundleItems has any entries
+    if (bundleItems.size === 0) {
+      alert("Please add at least one product to proceed to checkout.");
+      return;
+    }
+  
+    // Convert bundleItems from a Map to an array for checkoutItems with correct quantities
+    const checkoutItems = Array.from(bundleItems.entries()).map(([productId, productDetails]) => ({
+      id: productId,                  // Use the product ID from the Map key
+      quantity: productDetails.quantity || 1 // Use the correct quantity, default to 1 if not set
+    }));
+  
+    // Check the contents of checkoutItems for debugging
+    console.log("checkoutItems:", checkoutItems);
+  
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ items: checkoutItems })
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Uncomment the line below if you want to redirect to the checkout page
+      // window.location.href = '/checkout';
+    })
+    .catch(error => console.error('Error:', error));
+  });
+
+
+  // Update currency
+  document.addEventListener('DOMContentLoaded', () => {
+    // Get the currency symbol from the .discounted-price element
+    const discountedPriceElement = document.querySelector('.discounted-price');
+    let currencySymbol = '$'; // Default currency symbol
+    
+    if (discountedPriceElement) {
+      // Extract the first character, which is the currency symbol
+      currencySymbol = discountedPriceElement.textContent.trim().charAt(0);
+    }
+  
+    // Update all elements that should use the correct currency symbol
+    const totalPriceWrap = document.querySelector('.total-price-wrap');
+    // if (totalPriceWrap) {
+    //   // Replace the static $ symbol with the detected currency symbol
+    //   totalPriceWrap.innerHTML = totalPriceWrap.innerHTML.replace('$', currencySymbol);
+    // }
+  
+    // Update any other necessary elements if needed
+    const totalPriceElement = document.getElementById("total-price");
+    if (totalPriceElement) {
+      // Insert the detected currency symbol before the total price amount
+      totalPriceElement.insertAdjacentHTML('beforebegin', `<span>${currencySymbol}</span>`);
+    }
+  });
+
+
+  // See more
+  document.addEventListener('DOMContentLoaded', function() {
+    // Select all "See More" buttons
+    const seeMoreButtons = document.querySelectorAll('.see-more');
+
+    // Add click event listeners to each button
+    seeMoreButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Get the parent collection wrapper
+            const collectionWrap = button.closest('.s-bundle-collection-wrap');
+            if (collectionWrap) {
+                // Find all products within the current collection
+                const products = collectionWrap.querySelectorAll('.s-bundle-product.d-none');
+                
+                // Remove the 'd-none' class from each hidden product
+                products.forEach(product => {
+                    product.classList.remove('d-none');
+                });
+
+                // Optionally hide the "See More" button after clicking
+                button.style.display = 'none';
+            }
+        });
+    });
+    
+  });
+  
+</script>
+
+{% schema %}
+{
+  "name": "Custom Bundle Discount",
+  "class": "s-bundle-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Build Your Own Bundle"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "product",
+      "id": "vpn",
+      "label": "Free VPN Product"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "gift",
+      "name": "Free Gift",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Category label"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Bundle Discount"
+    }
+  ]
+}
+{% endschema %}

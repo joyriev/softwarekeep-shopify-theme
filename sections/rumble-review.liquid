@@ -1,0 +1,56 @@
+<div class="review-wrap max-width">
+  <div class="img_block">
+    <img src="{{ section.settings.img | img_url: 'master' }}" alt="{{ block.settings.img.alt }}" class="author" />
+    <div class="r_name">
+      <img src="{{ section.settings.star_img | img_url: 'master' }}" alt="{{ section.settings.star_img.alt }}" class="star" />
+      <p class="name">{{ section.settings.name }}</p>
+      <p class="varified">{{ section.settings.veryfied }}</p>
+    </div>
+  </div>
+  <h2 class="r_review">{{ section.settings.heading }}</h2>
+  <p class="r_text">{{ section.settings.copy }}</p>
+</div>
+{% schema %}
+{
+  "name": "Rumble Review",
+  "class": "rumble_review",
+  "settings": [
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "img"
+    },
+    {
+      "type": "image_picker",
+      "label": "Star Image",
+      "id": "star_img"
+    },
+    {
+      "type": "text",
+      "label": "Name",
+      "id": "name"
+    },
+    {
+      "type": "text",
+      "label": "Veryfied Text",
+      "id": "veryfied"
+    },
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading"
+    },
+    {
+      "type": "text",
+      "label": "Copy Text",
+      "id": "copy"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rumble Review"
+    }
+  ]
+}
+
+{% endschema %}

@@ -1,0 +1,265 @@
+{% if block.settings.text != blank %}
+  <div class="bigsale_offer">
+    <div class="msg-text">
+      {{block.settings.text}}
+      <img src="https://cdn.shopify.com/s/files/1/0086/7932/5753/files/point.gif?v=1731488183" alt="finger-point" width="20" height="24">
+    </div>
+    <div class="coupon_text_container">
+      {% if block.settings.coupon != blank %}
+      <span class="cod_sale">Code</span>
+      <div class="promo-bar-coupon">
+        <span id="fbm-text">{{ block.settings.coupon }}</span>
+        <span id="fbm-copy-btn" class="copy_text"><i class="uil uil-copy"></i></span>
+      </div>
+      {% endif %}
+      
+      {% if block.settings.countdown_timer %}
+        <div class="tw-flex-col">
+         <div id="timer" class="selltimers">
+           <div class="counttimes">
+            <span id="hours" class="main_times">00</span><span class="time-text">HRS</span>
+           </div>
+            <span class="dot_tim">:</span>
+    
+          <div class="counttimes">
+            <span id="minutes" class="main_times">00</span><span class="time-text">MIN</span>
+          </div>
+            <span class="dot_tim">:</span>
+   
+           <div class="counttimes">
+            <span id="seconds" class="main_times">00</span><span class="time-text">SEC</span>
+           </div>
+          </div>
+        </div>
+      {% endif %}
+      
+    </div>
+  </div>
+{% else %}
+  <div>
+    <p>Back-to-School SALE: Save BIG On All Office Products</p>
+  </div>
+{% endif %}
+
+{% if block.settings.coupon != blank %}
+  <script>
+    document.querySelector('#fbm-copy-btn').addEventListener('click', e => {
+      var text = document.querySelector('#fbm-text').innerText;
+      window.navigator.clipboard.writeText(text).then(x => {
+        document.getElementById('fbm-copy-btn').style.display = 'none'
+          document.querySelector('#fbm-text').innerHTML = 'Copied <i class="uil uil-check-circle"></i>';
+          setTimeout(() => {
+              document.querySelector('#fbm-text').innerHTML = text;
+              document.getElementById('fbm-copy-btn').style.display = 'block'
+          }, 4000);
+      });
+  });
+  </script>
+{% endif %}
+
+{% if block.settings.countdown_timer %}
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    const hoursElement = document.getElementById('hours');
+    const minutesElement = document.getElementById('minutes');
+    const secondsElement = document.getElementById('seconds');
+ 
+    const dealDuration = 12 * 60 * 60; // Duration of the deal in seconds (e.g., 24 hour)
+    let dealStartTime = localStorage.getItem('dealStartTime');
+    let dealEndTime;
+    let timerInterval;
+ 
+    // Format time function
+    function formatTime(seconds) {
+        const hrs = Math.floor(seconds / 3600);
+        const mins = Math.floor((seconds % 3600) / 60);
+        const secs = seconds % 60;
+        return {
+            hrs: hrs.toString().padStart(2, '0'),
+            mins: mins.toString().padStart(2, '0'),
+            secs: secs.toString().padStart(2, '0')
+        };
+    }
+ 
+    // Update timer function
+    function updateTimer() {
+        const now = Date.now();
+        const timeRemaining = Math.floor((dealEndTime - now) / 1000);
+ 
+        if (timeRemaining <= 0) {
+            clearInterval(timerInterval);
+            hoursElement.textContent = "00";
+            minutesElement.textContent = "00";
+            secondsElement.textContent = "00";
+            localStorage.removeItem('dealStartTime');
+           // alert("The special deal has ended!");
+        } else {
+            const formattedTime = formatTime(timeRemaining);
+            hoursElement.textContent = formattedTime.hrs;
+            minutesElement.textContent = formattedTime.mins;
+            secondsElement.textContent = formattedTime.secs;
+        }
+    }
+ 
+    // Initialize or continue timer
+    if (dealStartTime) {
+        dealEndTime = parseInt(dealStartTime) + dealDuration * 1000;
+        updateTimer(); // Initial call to display the timer immediately
+        timerInterval = setInterval(updateTimer, 1000);
+    } else {
+        const now = Date.now();
+        dealEndTime = now + dealDuration * 1000;
+        localStorage.setItem('dealStartTime', now);
+        updateTimer(); // Initial call to display the timer immediately
+        timerInterval = setInterval(updateTimer, 1000);
+    }
+});
+ 
+</script>
+{% endif %}
+<style>
+  div#timer {
+    padding: 4px 0;
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    max-width: 100%;
+    background: unset;
+ }
+  .counttimes {
+    background: #fff;
+    border-radius: 5px;
+    padding: 3px 6px;
+    color: #000;
+    display: flex;
+    gap: 5px;
+    /* flex-direction: column; */
+ }
+  .time-text{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  .main_times{
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+  }
+  .bigsale_offer{
+    display:flex;
+    align-item:center;
+    justify-content: center;
+    column-gap: 30px;
+  }
+  .msg-text {
+    display: flex;
+    align-items: center;
+  }
+  .cod_sale{
+    font-size:15px;
+  }
+  .coupon_text_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+  }
+ .tw-flex-col {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14px;
+ }
+ .promo-bar-coupon {
+    border: 1px solid;
+    padding: 7px;
+    font-size: 16px;
+    letter-spacing: -.03em;
+    font-weight: 500;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    margin-left: 14px;
+ }
+.bigsale_offer .exclusion-modal-button {
+    font-size: 9px;
+    letter-spacing: -.03em;
+    font-weight: 400;
+    text-decoration: underline;
+    background: transparent;
+    border: navajowhite;
+}
+.copy_text{
+  cursor: pointer;
+}
+.bigsale_offer p.coupon_name {
+    margin: 0;
+}
+@media (max-width: 767px) {
+  .bigsale_offer {
+    gap: 10px;
+    flex-direction: column;
+   }
+  .msg-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .msg-text>span {
+    display: none;
+  }
+  .tw-flex-col {
+    margin-left: 0px;
+  }
+ .promo-bar-coupon {
+    margin-left: 0px;
+  }
+ .main_times {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+ .msg-text a, .cod_sale {
+   font-size: 12px;
+ }
+ .promo-bar-coupon {
+    font-size: 14px;
+ }
+</style>
+
+{% comment %}
+{% blockdef %}
+{
+    "type": "geoBlock",
+    "name": "Geo Block",
+    "settings": [
+    {
+        "type": "checkbox",
+        "id": "fullWidth",
+        "default": true,
+        "label": "Single in row"
+    },
+    {
+        "id": "text",
+        "label": "Block text",
+        "type": "textarea",
+        "default": "%flag_emoji% This is an example for your %country% in the city of %city% %flag_svg%"
+    },
+    {
+        "type": "paragraph",
+        "content": "Available variables:, %country%, %city%, %zip%, %flag_svg%, %flag_emoji%, %language_name%, %language_native%, %language_code%, %currency_code%, %currency_name%, %currency_symbol%"
+    },
+    {
+        "type": "paragraph",
+        "content": "Location is determined based on IP address. Accuracy of precise data (city - usually first bigger city, zip - matches city) can't be 100% trusted. We are continuously working on improving data accuracy for city and zip code information."
+    },
+    {
+        "id": "url",
+        "type": "url",
+        "label": "Block link"
+    }
+    ]
+}
+{% endblockdef %}
+{% endcomment %}

@@ -1,0 +1,125 @@
+{% style %}
+  .main-container-accordian {
+   margin: auto;
+   padding-top: 35px;
+  }
+.product_discription_accordion {
+    color: #444;
+    background: transparent;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+}
+.accordian_content {
+    border-bottom: 2px solid #eee;
+    position: relative;
+}
+.panel li {
+    font-size: 15px;
+    list-style: disc;
+}
+.panel span {
+    font-size: 15px;
+}
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+  }
+.main-container-accordian .panel p{
+    font-size:18px;
+    line-height : 25px;
+}
+.main-container-accordian .panel span, ul li {
+    font-size: 18px;
+    line-height: 30px;
+}
+.main-container-accordian .panel li {
+    font-size: 18px;
+    list-style: disc;
+}
+@media only screen and (max-width: 768px) {
+  .product_discription_accordion{
+    padding: 15px 10px;
+  }
+  .accordian_content ul{
+    padding: 0px;
+  }
+  .accordian_content .panel {
+    overflow: initial;
+  }
+}
+{% endstyle %}
+  {% assign my_description = product.description | split: '<!-- split -->' %}
+<div class="max-width main-container-accordian">
+  <div class="accordian_content">
+<button class="product_discription_accordion">PRODUCT INFORMATION</button>
+<div class="panel">
+  {% assign my_description = product.description | split: '<!-- split -->' %}
+  <span>{{ my_description[0] }}</span>
+</div>
+</div>
+  
+{% if my_description[1] != blank %}
+ <div class="accordian_content">
+  <button class="product_discription_accordion">FEATURES</button>
+  <div class="panel">
+    {% assign my_description = product.description | split: '<!-- split -->' %}
+    <span>{{ my_description[1] }}</span>
+  </div>
+ </div>
+{% endif %}
+  {% if my_description[2] != blank %}
+ <div class="accordian_content">
+  <button class="product_discription_accordion">SYSTEM REQUIREMENTS</button>
+  <div class="panel">
+    {% assign my_description = product.description | split: '<!-- split -->' %}
+    <span>{{ my_description[2] }}</span>
+  </div>
+ </div>
+{% endif %}
+</div>
+<script>
+  var acc = document.getElementsByClassName("product_discription_accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+</script>
+
+{% schema %}
+{
+  "name": "accordian",
+  "settings": [
+    {
+      "type": "header",
+      "content": "name"
+    },
+    {
+      "type": "text",
+      "id": "home_guarantee_title",
+      "label": "title"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Content",
+      "name": "accordian"
+      }
+  ]
+}
+{% endschema %}

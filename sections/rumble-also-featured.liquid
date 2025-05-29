@@ -1,0 +1,102 @@
+{% comment %}<style>
+  #rf__{{ section.id }}{
+    background:{{section.settings.seccolor}};
+  }
+</style>{% endcomment %}
+<div id="rf__{{ section.id }}" class="section-also-feature">
+  <div class="max-width">
+    <div class="rumbl_feature">
+      <div class="rum_content_lft">
+         <h2>{{ section.settings.title }}</h2>
+      </div>
+      <div class="img_r-list">
+        <ul class="list-img_txt">
+          {% for block in section.blocks %}
+            <li class="list-sec">
+            {% if block.settings.t_image != blank %}
+                {{ block.settings.t_image | image_url: width:'125', height:'132' | image_tag }}
+              {% else %}
+              <img src="https://cdn.shopify.com/s/files/1/0621/8733/9828/files/Group_13070.png?v=1705646355" alt="test_icon" width="125" height="132">
+              {% endif %}
+            <div class="img-text-block">
+                <h4>{{ block.settings.t_text }}</h4>
+                <p>{{ block.settings.t_subtext }}</p>
+            </div>
+            </li>
+          <style>
+            #text__{{ block.settings.id }}{
+              color: {{block.settings.hcolor}};
+            }
+            #subtxt__{{ block.settings.id }}{
+              color:{{block.settings.sub_color}}
+            }
+          </style>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Rumble Featured List",
+    "class": "rumble_featured_list",
+    "settings": [
+      {
+      "type": "text",
+      "id": "title",
+      "label": "Enter Heading",
+      "default": "also featured on"
+     },
+    {
+      "type": "color",
+      "id": "seccolor",
+      "label": "Section Background Color",
+      "default": "#000"
+     }
+    ],
+    "blocks": [
+     {
+       "name": "text",
+       "type": "image-list",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "t_image",
+           "label": "Select Image"
+         },
+        {
+           "type": "text",
+           "id": "t_text",
+           "label": "Enter Heading Text",
+          "default" : "Rusell Brand"
+         },
+          {
+            "type": "color",
+            "id": "hcolor",
+            "label": "Heading Color",
+            "default": "#fff"
+           },
+          {
+           "type": "text",
+           "id": "t_subtext",
+           "label": "Enter Sub heading Text",
+           "default" : "229K Followers"
+         },
+          {
+            "type": "color",
+            "id": "sub_color",
+            "label": "Sub text Color",
+            "default": "#9F9F9F"
+           }
+       ]
+     }
+  ],
+      "presets": [
+    {
+      "name": "Rumble Featured List"
+ 
+    }
+  ]
+  }
+{% endschema %}

@@ -1,0 +1,205 @@
+{{ 'home-comparison-content.css' | asset_url | stylesheet_tag }}
+ <div class="max-width home-comparioson-content-conatiner">
+    <div class="home-comparioson-list-content">
+      <div class="comparison-container">
+      {% if section.settings.title != blank %}
+       <h2 class="compare-heading-text">{{ section.settings.title }}</h2>
+      {% endif %}
+<div class="comparison-item-wraps mySlider desktop">
+  <div class="comparison-item" style="">
+    <div class="comparison-brand background"> Brand</div>
+    <div class="comparison-brand item ">
+      <img src="//softwarekeep.com/cdn/shop/files/logo-keep.svg?crop=center&amp;height=50&amp;v=1706156672&amp;width=150" alt="icons" srcset="//softwarekeep.com/cdn/shop/files/logo-keep.svg?crop=center&amp;height=50&amp;v=1706156672&amp;width=150 150w" width="150" height="50" loading="lazy" data-bstr-initd="true">
+    </div>
+    <div class="comparison-brand item bg-two">
+      <img src="//softwarekeep.com/cdn/shop/files/icons8-microsoft-48.png?crop=center&amp;height=30&amp;v=1730357072&amp;width=30" alt="icon" srcset="//softwarekeep.com/cdn/shop/files/icons8-microsoft-48.png?crop=center&amp;height=30&amp;v=1730357072&amp;width=30 30w" width="30" height="30" loading="lazy" data-bstr-initd="true">
+    </div>
+    <div class="comparison-service item bg-three "> Big Box Retailers </div>
+    <div class="comparison-service item  bg-four"> Low Priced E-tailers </div>
+  </div>
+  <div class="comparison-item" style="">
+    <div class="comparison-brand background"> Price</div>
+    <div class="comparison-price item  "> Best Value Guaranteed <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/1.gif?v=1730719797" height="25px" width="25px" alt="icons"> 💰 </div>
+    <div class="comparison-price item bg-two  "> Expensive Monthly Subscriptions 💸😓 </div>
+    <div class="comparison-price item bg-three "> Expensive Monthly Subscriptions 💸💔 </div>
+    <div class="comparison-price item  bg-four"> High Price, Low Value 😤😡 </div>
+  </div>
+  <div class="comparison-item" style="">
+    <div class="comparison-brand background"> Customer Service</div>
+    <div class="comparison-service item  "> Unmatched 24/7/365 LIVE Support <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/2.gif?v=1730719797" height="25px" width="25px" alt="icons"> 🎉 </div>
+    <div class="comparison-service item bg-two  "> Limited 9-5 Hours ⏰😴 </div>
+    <div class="comparison-service item bg-three "> Restricted 9-5 Support ⌛😢 </div>
+    <div class="comparison-service item  bg-four"> No Dedicated Support ☎️ </div>
+  </div>
+  <div class="comparison-item" style="">
+    <div class="comparison-brand background"> Lifetime Warranty</div>
+    <div class="comparison-warranty item  ">Exclusive Lifetime Product Warranty <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/3.gif?v=1730719797" height="25px" width="25px" alt="icons"> 😊 </div>
+    <div class="comparison-warranty item bg-two  "> No Warranty — You’re On Your Own 😟😢 </div>
+    <div class="comparison-warranty item bg-three "> No Warranty — You’re On Your Own 📞❌ </div>
+    <div class="comparison-warranty item  bg-four"> No Warranty — You’re On Your Own 💀💔 </div>
+  </div>
+</div>
+
+     {% comment %} 
+        <div class="comparison-item-wraps mySlider mobile">
+          {% for block in section.blocks %}  
+            <div class="comparison-item">
+              {% if block.settings.header != blank %}
+               <div class="comparison-brand background"> {{ block.settings.header }}</div>
+                {% else %}
+                <div class="comparison-brand background">Brand</div>
+              {% endif %}
+
+                  {% if block.settings.logo != blank %}
+                    <div class="comparison-brand item {% if forloop.index == 2 %}bg-two{% endif %}">
+                       {% if forloop.index == 1 %}
+                         {{ block.settings.logo | image_url:width:'150', height:'50' | image_tag }}
+                       {% endif %}
+                       {% if forloop.index == 2 %}
+                         {{ block.settings.logo | image_url:width:'30', height:'30' | image_tag }}
+                       {% endif %}
+                    </div>
+                    {% endif %}
+              
+                    {% if forloop.index == 3 or forloop.index == 4 %}
+                      <div class="comparison-service item {% if forloop.index == 3 %}bg-three{% endif %} {% if forloop.index == 4 %}bg-four{% endif %}"> 
+                        {% if block.settings.customer_service != blank %}
+                            {{ block.settings.customer_service }}
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  <div class="comparison-price item {% if forloop.index == 2 %}bg-two {% endif %}{% if forloop.index == 3 %}bg-three{% endif %} {% if forloop.index == 4 %}bg-four{% endif %}">
+                    {% if block.settings.price != blank %}
+                        {{ block.settings.price }}
+                    {% endif %}
+                  </div>
+                    
+                <div class="comparison-service item {% if forloop.index == 2 %}bg-two {% endif %}{% if forloop.index == 3 %}bg-three{% endif %} {% if forloop.index == 4 %}bg-four{% endif %}">
+                   {% if block.settings.service1 != blank %}
+                       {{ block.settings.service1 }}
+                   {% endif %}
+                </div>
+                <div class="comparison-warranty item {% if forloop.index == 2 %}bg-two {% endif %}{% if forloop.index == 3 %}bg-three{% endif %} {% if forloop.index == 4 %}bg-four{% endif %}">
+                  {% if block.settings.warranty != blank %}
+                      {{ block.settings.warranty }}
+                  {% endif %}
+                </div>
+            </div>
+          {% endfor %}
+      </div>
+    {% endcomment %}      
+      </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  mobileOnlySlider(".mySlider", false, false, 980);
+  
+  function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
+    var slider = $($slidername);
+    var settings = {
+      mobileFirst: true,
+      dots: $dots,
+      accessibility: false,
+      autoplay: false,
+      slidesToShow: 1,
+      centerMode: true,
+      centerPadding: '20px',
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: $breakpoint,
+          settings: "unslick"
+        }
+      ]
+    };
+  
+    slider.slick(settings);
+  
+    $(window).on("resize", function () {
+      if ($(window).width() > $breakpoint) {
+        return;
+      }
+      if (!slider.hasClass("slick-initialized")) {
+        return slider.slick(settings);
+      }
+    });
+  } // Mobile Only Slider
+</script>
+<style>
+  .comparison-item-wraps.mobile{
+    display:none;
+  }
+  @media (max-width:767px){
+    .comparison-item-wraps.desktop{
+      display:block;
+    }
+    .home-comparioson-list-content .slick-slide img.gif-image{
+      display: inline-block;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Home Comparison Content",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "What Makes SoftwareKeep Different?"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "comparison_item",
+      "name": "Comparison Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "header",
+          "label": "Header Text",
+          "default": "Brand"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Brand Logo"
+        },
+        {
+          "type": "text",
+          "id": "customer_service",
+          "label": "Customer Service Text"
+        },
+        {
+          "type": "html",
+          "id": "price",
+          "label": "Price Information"
+        },
+        {
+          "type": "html",
+          "id": "service1",
+          "label": "Service Information",
+        },
+        {
+          "type": "html",
+          "id": "warranty",
+          "label": "Warranty Information"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Color",
+          "default": "#f5f5f5"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Home Comparison Content"
+    }
+  ]
+}
+{% endschema %}

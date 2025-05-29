@@ -1,0 +1,165 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "height": 300,
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": "medium",
+        "contentColor": "rgba(0,0,0,0)",
+        "fillColor": "rgba(0,0,0,0)",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "5a0cb476-062f-4f8a-b28a-b582506690e2": {
+      "type": "section__heading",
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "heading": "<h1>Year-Round Service Guaranteed</h1>",
+        "headingColor": "#000000",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "button_label": "",
+        "button_link": "",
+        "headingAlignment": "center"
+      }
+    },
+    "4fac8e3f-e97b-4123-9d67-5fec8ac4e74b": {
+      "type": "banner",
+      "blocks": {
+        "template--14814870405175__4fac8e3f-e97b-4123-9d67-5fec8ac4e74b-sectionBanner-3": {
+          "type": "sectionBanner",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "cardLink": "",
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/customer-service.png",
+            "backgroundPosition": "middle",
+            "imageFit": "cover",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "customRichText": "",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        }
+      },
+      "block_order": [
+        "template--14814870405175__4fac8e3f-e97b-4123-9d67-5fec8ac4e74b-sectionBanner-3"
+      ],
+      "settings": {
+        "custom_id": "",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 460,
+        "colCount": "col-md-12",
+        "mobileColCount": "col-12",
+        "columnAlignment": "center"
+      }
+    },
+    "content": {
+      "type": "page",
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "section_content_yzrr3g": {
+      "type": "section__content",
+      "blocks": {
+        "html_3iTwQF": {
+          "type": "html",
+          "settings": {
+            "blockWidth": "col-md-12",
+            "vertPadding": 0,
+            "horPadding": 0,
+            "horAlign": "center",
+            "vertAlign": "middle",
+            "html": "<div class=\"statistics-main-container\">\n    <div class=\"statistics-content-container\">\n        \n        <div class=\"left-content\">\n            <h2>Statistics</h2>\n        <span class=\"graph\">\n            <div class=\"graph-image\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/MicrosoftTeams-image_19_000c2286-12fd-4e02-bd4e-7a64b6ba7261.png?v=1706079714\" alt=\"\">\n          <h4>Customer Satisfaction</h4>\n          </div>\n          <div class=\"graph-image\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/MicrosoftTeams-image_20_5f050902-f74e-4c59-a383-bc39b5166b0a.png?v=1706079718\" alt=\"\">\n          <h4>Average Reply Time</h4>\n        </div>\n          </span>\n        </div>\n\n        <div class=\"right-content\">\n          <span class=\"content-right\">\n            <h3>177</h3>\n            <p>Customer Satisfaction</p>\n          </span>\n          <span class=\"content-right\">\n            <h3>80</h3>\n            <p>Average E-Mail per Day</p>\n          </span>\n          <span class=\"content-right\">\n            <h3>104</h3>\n            <p>Average Inbounds Calls Per Day</p>\n          </span>\n          <span class=\"content-right\">\n            <h3>71</h3>\n            <p>Average Outbound Calls per day</p>\n          </span>\n          <span class=\"content-right\">\n            <h3>19</h3>\n            <p>Average Remote Assistance Per Day</p>\n          </span>\n        </div>\n    </div>\n    </div>",
+            "customCSS": ".statistics-content-container {\n    display: flex;\n    justify-content: space-evenly;\n    background: #fff;\n    height: 500px;\n}\n\nspan.graph {\n    display: flex;\n    gap: 20px;\n}\n\n.right-content {\n    display: grid;\n    grid-template-columns: auto auto auto;\n    align-items: center;\n    justify-items: start;\n    grid-gap: 0 20px;\n}\n.graph-image h4, .content-right p {\n    font-size: 12px;\n    color: #6d8fa0 !important;\n}\n\n.content-right h3 {\n    font-size: 40px;\n    font-weight: 400 ;\n}\n\n.left-content {\n    display: flex;\n    flex-direction: column;\njustify-content: space-evenly !important;\n    justify-content: center;\n}\n.left-content h2 {\n    font-size: 40px;\n    font-weight: 400;\n}"
+          }
+        }
+      },
+      "block_order": [
+        "html_3iTwQF"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 670,
+        "padding": 0,
+        "lineMargin": 0,
+        "backgroundColor": "#f2f5f7",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "5a0cb476-062f-4f8a-b28a-b582506690e2",
+    "4fac8e3f-e97b-4123-9d67-5fec8ac4e74b",
+    "content",
+    "section_content_yzrr3g"
+  ]
+}

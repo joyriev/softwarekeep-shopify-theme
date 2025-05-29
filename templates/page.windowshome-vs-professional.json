@@ -1,0 +1,668 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "topheader": {
+      "type": "deals-header",
+      "disabled": true,
+      "settings": {
+        "toptext": "🕐 SAVE 26% - Offer Ends Today!",
+        "botomtext": ""
+      }
+    },
+    "BestDeals_product": {
+      "type": "section__featured-product",
+      "disabled": true,
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "boxed",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "product": "family-lifetime",
+        "showDescription": true
+      }
+    },
+    "product": {
+      "type": "windowhome-vs-professional",
+      "blocks": {
+        "product_4aNLBG": {
+          "type": "product",
+          "settings": {
+            "tabnme": "Win 11 Home",
+            "tab_fetureimg": "shopify://shop_images/softwarekeep-windows-don-t-delete-32080666886199.png",
+            "productwindow": "windows-11-home",
+            "name1": "Win Home"
+          }
+        },
+        "product_KDwGKH": {
+          "type": "product",
+          "settings": {
+            "tabnme": "Win 11 Pro",
+            "tab_fetureimg": "shopify://shop_images/softwarekeep-windows-don-t-delete-32080667181111.png",
+            "productwindow": "windows-11-pro",
+            "name1": "Business 2021"
+          }
+        },
+        "product_LG8hyF": {
+          "type": "product",
+          "settings": {
+            "tabnme": "Win 10 Home",
+            "tab_fetureimg": "shopify://shop_images/window_10_covers-13_123-09.png",
+            "productwindow": "microsoft-windows-10-home-edition-32-bit",
+            "name1": ""
+          }
+        },
+        "product_qUFtWy": {
+          "type": "product",
+          "settings": {
+            "tabnme": "Win 10 Pro",
+            "tab_fetureimg": "shopify://shop_images/window_10_covers-13_123-13.png",
+            "productwindow": "microsoft-windows-10-pro-edition-32-bit",
+            "name1": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_4aNLBG",
+        "product_KDwGKH",
+        "product_LG8hyF",
+        "product_qUFtWy"
+      ],
+      "settings": {
+        "product_deals": "windows-dont-delete",
+        "pro_title": "Save 50% Today + Lifetime Warranty on Windows Product Keys",
+        "versiontext": "Select  your Editions:",
+        "reviews": "shopify://shop_images/ResellerRatings_2.png",
+        "trusturl": "https://www.resellerratings.com/store/Softwarekeep_com",
+        "asseeon": "shopify://shop_images/trusted_by.png",
+        "content-list": "<ul>\n<li>One-time payment, no subscriptions</li>\n<li>Lifetime support at no extra cost</li>\n<li>Best prices guaranteed.</li>\n<li>      <div class=\"new-popcalls\">\n         <p class=\"make_diff\" id=\"newwhere\" style=\"margin: 5px;\"><span style=\"font-size:30px;\"></span><span style=\"text-decoration:underline;font-weight:600;\">WHAT MAKE US DIFFERENT</span></p>\n      </div>\n</li>\n</ul>",
+        "mback": "Enjoy Softwarekeep Products Risk-Free with 180-Day Money Back Guarantee",
+        "paypalenable": true
+      }
+    },
+    "trustpilot_reviews_EmHzyk": {
+      "type": "trustpilot-reviews",
+      "settings": {
+        "header_title": "What Customers Say About Us",
+        "trustsecbg": "#ffffff",
+        "tpmargingap": 0,
+        "pading_botm": 60
+      }
+    },
+    "section_icon_with_text_8axejx": {
+      "type": "section__icon-with-text",
+      "blocks": {
+        "home_guarantee_block_nxfhmz": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/lifetime-warranty.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Lifetime Warranty",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "rgba(0,0,0,0)",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "home_guarantee_block_ETzbr8": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/Year-Round_service.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Microsoft Certified Partner",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "rgba(0,0,0,0)",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "home_guarantee_block_FTMhjn": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/money-back.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "180 - Day Refund Guarantee",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "rgba(0,0,0,0)",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "home_guarantee_block_hgBbx3": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/Genuine-products.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "100% Genuine Products",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "rgba(0,0,0,0)",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "home_guarantee_block_FLhHPm": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/247_cutsomer_service.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "24/7 Customer Service",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "rgba(0,0,0,0)",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "home_guarantee_block_nxfhmz",
+        "home_guarantee_block_ETzbr8",
+        "home_guarantee_block_FTMhjn",
+        "home_guarantee_block_hgBbx3",
+        "home_guarantee_block_FLhHPm"
+      ],
+      "settings": {
+        "Slider_enbalemobile": true,
+        "home_guarantee_title": "",
+        "custom_id": "after-icons_rockt",
+        "home_guarantee_title_font_size": 40,
+        "home_guarantee_title_color": "#0067b8",
+        "home_guarantee_subtitle": "",
+        "home_guarantee_subtitle_font_size": 20,
+        "home_guarantee_subtitle_color": "#042338"
+      }
+    },
+    "shopify_udp_featurelist_KH6ihR": {
+      "type": "shopify-udp-featurelist",
+      "settings": {
+        "bgssec": "#fff",
+        "st_head": "Windows 11 Home Highlights:",
+        "spflist_para": "",
+        "home_pro": "Upgrade to Windows 11 Home, the next-generation OS designed for the modern user with seamless productivity and enhanced productivity.\n<ul class=\"list-high-products\">\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/UserCircle.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span><b>For 1 Device:</b> Get the best deals for your OS from SoftwareKeep.</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span><b>One-Time Purchase:</b> Buy once &amp; enjoy lifetime updates on your device.</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span><b>Enhanced Security:</b> Built-in security features to protect your data and privacy.</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Devices.svg?v=1703751908\" style=\"color: transparent;\"></div>\n      <span><b>User-Friendly Interface:</b> Redesigned Start menu &amp; taskbar for intuitive navigation.</span><b>\n   </b>\n</li>\n<b>\n</b>\n</ul>",
+        "bus_head": "Windows 11 Professional Highlights:",
+        "spflist_para2": "",
+        "business_pro": "Buy to Windows 11 Professional, the all new advanced OS built for professional, business and power users with enterprise grate security\n<ul class=\"list-high-products\">\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/UserCircle.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span><b>Install on 1 Device:</b> Download genuine Windows 11 keys from SoftwareKeep </span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span><b>One-Time Purchase:</b> Invest once &amp; receive lifetime updates on your device.</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span><b>Unbeatable Deals:</b> Best license key deals guaranteed.</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Devices.svg?v=1703751908\" style=\"color: transparent;\"></div>\n      <span><b>Security:</b> Enhanced security features to safeguard your business data and privacy.</span><b>\n   </b>\n</li>\n<b>\n</b>\n</ul>",
+        "botm_para": "<p>Download <strong>genuine Windows keys </strong>from SoftwareKeep at competitive prices for reliable performance, seamless activation, and enhanced security—keeping your devices protected from malware & virus risks.</p>"
+      }
+    },
+    "afterrocketdownload": {
+      "type": "after-rocket-download",
+      "blocks": {
+        "image_WCUQmK": {
+          "type": "image",
+          "settings": {
+            "textsecbg": "#2963b5",
+            "htext": "Add product to cart",
+            "image": "shopify://shop_images/1_Add_to_Cart_SK.png",
+            "content": "bottom",
+            "paratext": "Use the quick browsing function to search for the software you need. Make your selection and add to your cart.",
+            "blink_count": true
+          }
+        },
+        "image_6K6gwa": {
+          "type": "image",
+          "settings": {
+            "textsecbg": "#2963b5",
+            "htext": "Unlock Extra Savings",
+            "image": "shopify://shop_images/2_Add_Code_to_Cart_SK.png",
+            "content": "bottom",
+            "paratext": "For extra savings, remember to check the homepage for any discount codes Often special promotions are running.",
+            "blink_count": true
+          }
+        },
+        "image_8TyDqY": {
+          "type": "image",
+          "settings": {
+            "textsecbg": "#2963b5",
+            "htext": "Instant download",
+            "image": "shopify://shop_images/3_Download_Now.png",
+            "content": "bottom",
+            "paratext": "No frustrating shipping delays, or queuing in a shop. Instead, get a download link in your email. Install and start using your product right away.",
+            "blink_count": true
+          }
+        }
+      },
+      "block_order": [
+        "image_WCUQmK",
+        "image_6K6gwa",
+        "image_8TyDqY"
+      ],
+      "disabled": true,
+      "settings": {
+        "htext": "We Have Made The Download Process Easy."
+      }
+    },
+    "home_comparison_content_BpzdVW": {
+      "type": "home-comparison-content",
+      "settings": {
+        "title": "Comparison Content"
+      }
+    },
+    "shopify_us_make_different_TtrxbR": {
+      "type": "shopify-us-make-different",
+      "blocks": {
+        "text_qn8rhV": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/25.png",
+            "htext": "Complex & Overpriced",
+            "paratext": "High costs and complicated purchasing processes can be a headache."
+          }
+        },
+        "text_zPpaVL": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/3_1.png",
+            "htext": "Limited Support",
+            "paratext": "Limited or no customer support can leave you stuck when you need help the most."
+          }
+        },
+        "text_GKBLYC": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/5.png",
+            "htext": "Risky Downloads",
+            "paratext": "Downloading software from unverified sources risks malware and security breaches."
+          }
+        },
+        "text_QhqyiX": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/32_d6f7e4ae-3435-45e0-98aa-b6b9cbded670.png",
+            "htext": "Slow & Inconvenient",
+            "paratext": "Waiting for physical media delivery can be slow and inconvenient."
+          }
+        },
+        "text_FLfXYg": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/33_0fd31616-01de-411c-ae7c-1e67745bcb67.png",
+            "htext": "Outdated Versions",
+            "paratext": "Buying from unreliable sources can leave you with outdated software versions."
+          }
+        },
+        "text_hnhyUQ": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/26.png",
+            "htext": "Affordable & Straightforward",
+            "paratext": "Get premium <strong>Windows Keys</strong> at unbeatable prices with a smooth, user-friendly purchase experience."
+          }
+        },
+        "text_xkn34G": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/call_center_1.png",
+            "htext": "24/7 Expert Support",
+            "paratext": "Enjoy round-the-clock access to expert support, ready to assist you with any issues or questions."
+          }
+        },
+        "text_Qw6i8A": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/6.png",
+            "htext": "Secure Downloads",
+            "paratext": "All software from SoftwareKeep is 100% genuine and secure, ensuring peace of mind with every download."
+          }
+        },
+        "text_hQtTe9": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/8.png",
+            "htext": "Instant Access",
+            "paratext": "Purchase and download your software instantly, getting you up and running without delay."
+          }
+        },
+        "text_7EwmHB": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/10_5283b2ad-eec4-48c7-b094-f6f23b28beda.png",
+            "htext": "Up-to-Date Software",
+            "paratext": "Always get the latest versions and updates, ensuring you have the most current and efficient software."
+          }
+        }
+      },
+      "block_order": [
+        "text_qn8rhV",
+        "text_zPpaVL",
+        "text_GKBLYC",
+        "text_QhqyiX",
+        "text_FLfXYg",
+        "text_hnhyUQ",
+        "text_xkn34G",
+        "text_Qw6i8A",
+        "text_hQtTe9",
+        "text_7EwmHB"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "secbg": "#ffffff",
+        "heading": "What makes Softwarekeep different?",
+        "others": "Others",
+        "image": "shopify://shop_images/logo.svg"
+      }
+    },
+    "section_faq_d3DGJQ": {
+      "type": "section__faq",
+      "blocks": {
+        "accordion_cm4R8V": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>What Makes SoftwareKeep Different?</p>",
+            "answer": "#US1000236013"
+          }
+        },
+        "accordion_qHYJqz": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>How do I install my software?</p>",
+            "answer": "We will send you an email wit the specific instructions on how to install your software."
+          }
+        },
+        "accordion_r6fMMH": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Product Information</p>",
+            "answer": "Windows 11: Your Path to a Productive, Secure, and Intuitive Experience\n\n    <p>Upgrade to Windows 11, the next-generation operating system designed for seamless productivity and a modern, intuitive interface. Whether you’re looking to upgrade from an older version or need to buy a new license, Windows 11 delivers unmatched performance, enhanced security, and features that help you get more done across all your devices.</p>\n\n    <b>Key Features and Benefits</b>\n    <ol>\n        <li>\n            <strong>Enhanced Productivity with Multitasking</strong><br>\n            Manage tasks more efficiently with Snap Layouts, Desktops, and a revamped Start menu. Whether you’re working on a Word document, browsing multiple windows, or organizing your digital workspace, Windows 11’s improved interface lets you stay focused and accomplish more.\n        </li>\n        <li>\n            <strong>Advanced Security for Peace of Mind</strong><br>\n            With built-in tools like Windows Hello and secure boot, Windows 11 offers robust protection against threats. Seamless activation and reliable updates keep your software and license secure. By choosing a genuine Windows key, you ensure uninterrupted use of your device without the risk of counterfeit software.\n        </li>\n        <li>\n            <strong>User-Friendly and Intuitive Interface</strong><br>\n            The redesigned Start menu and centered taskbar offer a cleaner, more intuitive experience. Whether you’re on a PC, laptop, or tablet, Windows 11’s touch-friendly controls and smooth animations make navigation effortless. The software is compatible across devices, ensuring an easy setup when you download and activate your new license.\n        </li>\n    </ol>\n\n    <b>Why Buy Windows 11?</b>\n    <p>When you buy a Windows 11 product, you’re investing in a software that combines powerful performance with user-friendly design. Ideal for both personal use and professional applications, Windows 11 is built to support your daily needs with lifetime updates and no recurring fees. Stay ahead without the hassle of subscription costs.</p>\n\n    <b>Effortless Installation and Activation</b>\n    <p>After your purchase, you can instantly download your digital key for quick and easy activation. The straightforward setup process ensures that your software is ready to use in minutes, whether you’re installing on a new device or upgrading from an older version.</p>\n\n    <b>Upgrade with Confidence</b>\n    <p>Windows 11 is perfect for users looking to enhance their software experience. With continuous updates and comprehensive support, you can trust that your operating system will remain reliable and secure. From enhanced performance to better compatibility and improved gaming, this version delivers everything you need in one complete package.</p>\n\n    <b>Get Started with Windows 11 Today</b>\n    <p>Don’t miss out on the improved features and performance. Buy your Windows 11 license today and experience a more productive and secure digital environment.</p>"
+          }
+        },
+        "accordion_yFbdeF": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Features</p>",
+            "answer": "<p>Windows 11, Microsoft’s latest operating system, is packed with modern features designed to enhance productivity,\n        improve security, and deliver a more intuitive user experience. Whether you’re upgrading from a previous version\n        or exploring Windows for the first time, this new OS combines powerful performance with sleek design. Below, we\n        break down the key features that make Windows 11 stand out.</p>\n\n    <b>1. A Fresh, Modern Interface</b>\n    <p>One of the most noticeable changes in Windows 11 is the redesigned user interface. The new Start menu and centered\n        taskbar provide a cleaner, more organized look. With smooth animations and rounded corners, Windows 11 delivers a\n        visually appealing experience that feels both modern and user-friendly.</p>\n    <ol>\n        <li><strong>Centered Start Menu:</strong> Unlike previous versions, the Start menu is now centered, offering quick access to\n            your most-used apps and documents.</li>\n        <li><strong>Redesigned Icons:</strong> Icons have been updated to match the fresh look of the OS, contributing to a more cohesive and visually pleasing design.</li>\n        <li><strong>Customizable Widgets:</strong> Windows 11 introduces widgets that can be tailored to show personalized news, weather updates, and more, all with a single swipe.</li>\n    </ol>\n\n    <b>2. Enhanced Productivity with Snap Layouts and Desktops</b>\n    <p>Multitasking has always been a strength of Windows, and with Windows 11, it’s taken to a whole new level. The\n        introduction of Snap Layouts and improved virtual desktops allow users to manage multiple tasks more efficiently.</p>\n    <ol>\n        <li><strong>Snap Layouts:</strong> Organize your screen by snapping multiple windows into pre-set layouts. Whether you need a side-by-side view or a grid, Snap Layouts make it easy to stay organized.</li>\n        <li><strong>Virtual Desktops:</strong> Windows 11 allows you to create and customize virtual desktops for different tasks or projects, making it simpler to separate work from leisure.</li>\n    </ol>\n\n    <b>3. Advanced Security Features</b>\n    <p>Security is a priority with Windows 11, offering built-in tools to protect your data and devices from modern threats. With more advanced and integrated security features, you can be confident that your information is safe.</p>\n    <ol>\n        <li><strong>Windows Hello:</strong> The enhanced Windows Hello provides faster and more secure login options using facial recognition, fingerprint, or PIN.</li>\n        <li><strong>Secure Boot and TPM 2.0:</strong> Windows 11 requires TPM 2.0, ensuring your device has a hardware root of trust. Secure Boot helps prevent malware attacks during startup.</li>\n        <li><strong>Automatic Updates:</strong> Regular security updates keep your system protected from the latest threats without requiring manual intervention.</li>\n    </ol>\n\n    <b>4. Optimized for Performance and Gaming</b>\n    <p>Windows 11 is built to offer top-tier performance, whether you’re working or gaming. With optimized resource\n        management and features aimed at gamers, this OS is designed for seamless, high-performance experiences.</p>\n    <ol>\n        <li><strong>DirectStorage Support:</strong> Games load faster with DirectStorage, which optimizes data transfer between the SSD and GPU.</li>\n        <li><strong>Auto HDR:</strong> Windows 11 enhances visuals by automatically upgrading supported games to high dynamic range (HDR), delivering brighter colors and more vivid images.</li>\n        <li><strong>Xbox Game Pass Integration:</strong> The OS seamlessly integrates with Xbox Game Pass, giving gamers access to a vast library of games at an affordable subscription rate.</li>\n    </ol>\n\n    <b>5. Compatibility and Seamless Integration</b>\n    <p>Windows 11 is designed for flexibility, offering compatibility with a wide range of devices and software. Whether\n        you’re on a PC, laptop, or tablet, Windows 11 adapts seamlessly.</p>\n    <ol>\n        <li><strong>Multi-Device Support:</strong> Windows 11 works smoothly across different device types, including desktops, laptops, tablets, and even 2-in-1 devices.</li>\n        <li><strong>Touch and Pen Support:</strong> The OS offers enhanced touch, pen, and voice input capabilities, making it a versatile choice for artists, designers, and students.</li>\n        <li><strong>App Compatibility:</strong> Windows 11 maintains compatibility with most Windows 10 apps, ensuring that your existing software continues to work seamlessly.</li>\n    </ol>\n\n    <b>6. Streamlined Installation and Updates</b>\n    <p>Windows 11 has been optimized for easier installation and smoother updates. With faster installation processes and\n        automatic updates, getting started is quick and convenient.</p>\n    <ol>\n        <li><strong>Quick Installation:</strong> The streamlined setup process allows users to get up and running with Windows 11 in no time.</li>\n        <li><strong>Background Updates:</strong> Windows 11 updates automatically in the background, minimizing disruptions to your workflow.</li>\n    </ol>\n\n    <b>Why Upgrade to Windows 11?</b>\n    <p>Windows 11 isn’t just an aesthetic upgrade—it’s packed with features that cater to both casual users and professionals. From improved multitasking to enhanced gaming capabilities, this OS is built to keep you productive, secure, and connected. Whether you’re buying a new device or looking to upgrade, Windows 11 provides a comprehensive solution for today’s digital needs.</p>\n\n    <b>Get Started with Windows 11 Today</b>\n    <p>Ready to experience the next level of Windows? Upgrade to Windows 11 and enjoy a faster, more secure, and more intuitive operating system designed for the future.</p>"
+          }
+        },
+        "accordion_RVz8R9": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>System Requirements</p>",
+            "answer": "<p>To install Windows 11, your system must meet the following minimum requirements:</p>\n\n    <ol>\n        <li><strong>Processor:</strong> 1 gigahertz (GHz) or faster with at least 2 cores on a compatible 64-bit processor or system on a chip (SoC).</li>\n        <li><strong>RAM:</strong> 4 GB or more.</li>\n        <li><strong>Storage:</strong> 64 GB or larger storage device.</li>\n        <li><strong>System Firmware:</strong> UEFI, Secure Boot capable.</li>\n        <li><strong>TPM:</strong> Trusted Platform Module (TPM) version 2.0.</li>\n        <li><strong>Graphics Card:</strong> DirectX 12 compatible graphics / WDDM 2.x.</li>\n        <li><strong>Display:</strong> >9” with HD Resolution (720p).</li>\n        <li><strong>Internet Connection:</strong> Internet connectivity is necessary to perform updates and to download and take advantage of some features.</li>\n    </ol>\n\n    <b>Additional Requirements</b>\n    <p>Certain features of Windows 11 have additional requirements. For example, to use Cortana, a microphone and speaker are required; for gaming with DirectStorage and Auto HDR, a compatible graphics card and a game that supports these features are needed.</p>\n\n    <p>Ensure your PC meets these specifications before attempting to install Windows 11 to guarantee compatibility and performance.</p>"
+          }
+        },
+        "accordion_EENUCj": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>How do I download?</p>",
+            "answer": "As soon as we are able to successfully process your payment, you will receive a download link for your product and a Product Key from SoftwareKeep. This process is usually between 15-20 minutes. If your SoftwareKeep order is delayed longer than this, please refer to your SoftwareKeep account for the details of your purchase."
+          }
+        }
+      },
+      "block_order": [
+        "accordion_cm4R8V",
+        "accordion_qHYJqz",
+        "accordion_r6fMMH",
+        "accordion_yFbdeF",
+        "accordion_RVz8R9",
+        "accordion_EENUCj"
+      ],
+      "settings": {
+        "custom_id": "after-rockeet-accordion",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "textContent": ""
+      }
+    },
+    "section_image_text_bbg9Bt": {
+      "type": "section__image-text",
+      "blocks": {
+        "title_YyNCUr": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "<span style=\"color:#0167B8\">More costs</span>, \nmore problems",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "big"
+          }
+        },
+        "rich_text_KWRWxi": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>Feel like your <strong>software subscriptions are adding up too fast?</strong><br/><br/>Microsoft Windows, Adobe Suite, antivirus programs, and more – they all pile on, <strong>causing your renewal fees to skyrocket.</strong></p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "title_YyNCUr",
+        "rich_text_KWRWxi"
+      ],
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "after-rock-imgtext",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "imagePosition": "right",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/Screenshot_2023-08-10_at_10.01_1.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "section_image_text_P4kinc": {
+      "type": "section__image-text",
+      "blocks": {
+        "title_KYeDbp": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "<span style=\"color:#0167B8\n\">Own your software </span>, save your money",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "big"
+          }
+        },
+        "rich_text_UkeP6y": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>With SoftwareKeep, a single purchase ensures you get 100% genuine software for life. </p><p><strong>Lifetime product</strong> with No ongoing renewals or unpredictable price hikes. Save hundreds annually and benefit from continuous, secure access to your software. </p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "title_KYeDbp",
+        "rich_text_UkeP6y"
+      ],
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "after-rock-imgtext",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "imagePosition": "left",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/Illustration_ScreenRez_99ee24bc-336c-4357-b459-ad9ae070188b.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "section_lookbook_jt3Jyc": {
+      "type": "section__lookbook",
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "stretchContent",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "Check out this section's heading",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "THIS IS A SUBHEADING",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "image": "shopify://shop_images/Group_136.png"
+      }
+    },
+    "section_lookbook_XCNdNC": {
+      "type": "section__lookbook",
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "image": "shopify://shop_images/Group_35.png"
+      }
+    }
+  },
+  "order": [
+    "topheader",
+    "BestDeals_product",
+    "product",
+    "trustpilot_reviews_EmHzyk",
+    "section_icon_with_text_8axejx",
+    "shopify_udp_featurelist_KH6ihR",
+    "afterrocketdownload",
+    "home_comparison_content_BpzdVW",
+    "shopify_us_make_different_TtrxbR",
+    "section_faq_d3DGJQ",
+    "section_image_text_bbg9Bt",
+    "section_image_text_P4kinc",
+    "section_lookbook_jt3Jyc",
+    "section_lookbook_XCNdNC"
+  ]
+}

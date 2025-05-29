@@ -1,0 +1,114 @@
+<div class="max-width">
+  <div class="section-heading">
+    <h2 class="h-title">{{ section.settings.copy2 }}</h2>
+  </div>
+ 
+    <div class="quickesy_wraps">
+
+         <div class="esy-wrap">
+                 {% for block in section.blocks %}
+                    <div class="esy-box">
+                       <span>STEP<br><strong style="font-size:25px; font-weight:600;">0{{ forloop.index }}</strong></span>
+                      <div class="es_content">
+                        {% if block.settings.htext != blank %}
+                         <h3>{{ block.settings.htext }}</h3>
+                        {% endif %}
+                       {% if block.settings.subtext != blank %}
+                        <p>{{ block.settings.subtext }}</p>
+                      {% endif %}
+                      </div>
+                    </div>
+               {% endfor %}
+
+                </div>
+
+      
+      <div class="esy-support">
+        {% if section.settings.iconsupport != blank %}
+          <div>
+          {{ section.settings.iconsupport | image_url: width:'150', height:'100' | image_tag }}
+          </div>
+        {% endif %}
+        
+        {% if section.settings.copy21 != blank %}
+          <div class="suprt_content">
+            <p>{{ section.settings.copy21 }}</p>    
+            <p>{{ section.settings.paras }}</p>
+          </div>
+       {% endif %}
+        
+      </div>
+      
+  </div>
+  
+      {% if section.settings.shopnowtext != blank %}
+        <div class="bt_wraps">
+          <a class="bestdl_btn" href="{{ section.settings.shoplink }}">{{ section.settings.shopnowtext }}</a>
+        </div>
+      {% endif %}
+  
+</div>
+{% schema %}
+  {
+    "name": "Deals Quick Eeasy",
+    "settings": [
+      {
+        "type": "text",
+        "id": "copy2",
+        "label": "Heading Text",
+        "default": "Quick & Easy"
+      },
+
+      {
+        "type": "header",
+        "content": "Bottom Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "iconsupport",
+        "label": "Select Image"
+      },
+      {
+        "type": "text",
+        "id": "copy21",
+        "label": "Text",
+        "default": "Encounter any hiccups?"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "paras",
+        "label": "Enter Paragrapgh",
+        "default": "Our  24/7 exceptional customer service is here to help, free of charge!"
+      },
+      {
+        "type": "url",
+        "id": "shoplink",
+        "label": "Select Shop Now url"
+      },
+      {
+        "type": "text",
+        "id": "shopnowtext",
+        "label": "Enter text Shop Now",
+        "default": "Shop Now"
+      }
+    ],
+     "blocks": [
+     {
+       "name": "text",
+       "type": "text",
+       "settings": [
+          {
+            "type": "text",
+            "id": "htext",
+            "label": "Enter Heading Text"
+         },
+        {
+            "type": "inline_richtext",
+            "id": "subtext",
+            "label": "Enter SubText"
+         }
+       ]
+     }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,1108 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "rumble-page",
+      "settings": {
+        "custom_id": "",
+        "subHeading_txt": "",
+        "Heading_txt": "Say NO to Paying Retail Prices!",
+        "rumble_content": "",
+        "rumble_content2": "",
+        "list_contents": "",
+        "pric_txt": "<p class=\"cpric\">Microsoft Office 2021 starting at <span class=\"top_price\">$114.99</span> \n<span class=\"top_price\" style=\"color:gray;\"><del>$161.99</del></span> <span class=\"green_text\"></span></p>",
+        "extraoff": "GET 20% OFF WITH CODE: PAKMAN",
+        "b_txt": "Buy Once, Use Forever",
+        "b_url": "#products_scrolls",
+        "secure": "180-Day Money-Back Guarantee",
+        "imagePosition": "right",
+        "leftimg": "shopify://shop_images/Pakman.png",
+        "mobile_img": "shopify://shop_images/Pakman.png"
+      }
+    },
+    "brand_logo_carousel_ftWXHp": {
+      "type": "brand-logo-carousel",
+      "blocks": {
+        "logo_AdFDVU": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/kelloggs-logo_monochrome-black.svg"
+          }
+        },
+        "logo_VAtCWC": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/lowes-logo_monochrome-black.svg"
+          }
+        },
+        "logo_e3xm6e": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/netflix-logo_monochrome-black.svg"
+          }
+        },
+        "logo_PdLD7T": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/pfizer-logo_monochrome-black.svg"
+          }
+        },
+        "logo_ab84gt": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/qualcomm-logo_monochrome-black.svg"
+          }
+        },
+        "logo_BYMwGY": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/spotify-logo_monochrome-black.svg"
+          }
+        }
+      },
+      "block_order": [
+        "logo_AdFDVU",
+        "logo_VAtCWC",
+        "logo_e3xm6e",
+        "logo_PdLD7T",
+        "logo_ab84gt",
+        "logo_BYMwGY"
+      ],
+      "settings": {
+        "secbg": "#ffffff",
+        "margingap": 0,
+        "maxwidth": "logc_list",
+        "title": "SoftwareKeep is Trusted By:"
+      }
+    },
+    "rumble_office_subscription_kE8fDh": {
+      "type": "rumble-office-subscription",
+      "blocks": {
+        "collection_QqmXNT": {
+          "type": "collection",
+          "settings": {
+            "tab_name": "Shop Window",
+            "tab_collection": "pakman-windows",
+            "secure_icon": "shopify://shop_images/icon-secure.webp",
+            "secure_text": "Secure & encrypted connection",
+            "btnname": "Buy Now",
+            "win_color": "#1390d6",
+            "mac_color": "#ffffff"
+          }
+        },
+        "collection_gpcwnD": {
+          "type": "collection",
+          "settings": {
+            "tab_name": "Shop Mac",
+            "tab_collection": "rumble-mac",
+            "secure_icon": "shopify://shop_images/icon-secure.webp",
+            "secure_text": "Secure & encrypted connection",
+            "btnname": "Buy Now",
+            "win_color": "#1390d6",
+            "mac_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "collection_QqmXNT",
+        "collection_gpcwnD"
+      ],
+      "settings": {
+        "sub_title": "Powerful Office Apps Don’t Have to Be Expensive",
+        "colorcheck": false,
+        "m_title": "",
+        "get_extra": "Get extra 20% off with code PAKMAN",
+        "tab_mac": "Shop Mac",
+        "tab_win": "Shop Windows",
+        "enbale_code": true,
+        "coupon_code": "PAKMAN",
+        "shopallbtn": "Shop All Products",
+        "shopallurl": "https://softwarekeep.com/collections/best-sellers"
+      }
+    },
+    "shopify_us_make_different_4HNigX": {
+      "type": "shopify-us-make-different",
+      "blocks": {
+        "text_qn8rhV": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/25.png",
+            "htext": "Complex & Overpriced",
+            "paratext": "High costs and complicated purchasing processes can be a headache."
+          }
+        },
+        "text_zPpaVL": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/3_1.png",
+            "htext": "Limited Support",
+            "paratext": "Limited or no customer support can leave you stuck when you need help the most."
+          }
+        },
+        "text_GKBLYC": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/5.png",
+            "htext": "Risky Downloads",
+            "paratext": "Downloading software from unverified sources risks malware and security breaches."
+          }
+        },
+        "text_QhqyiX": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/32_d6f7e4ae-3435-45e0-98aa-b6b9cbded670.png",
+            "htext": "Slow & Inconvenient",
+            "paratext": "Waiting for physical media delivery can be slow and inconvenient."
+          }
+        },
+        "text_FLfXYg": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/33_0fd31616-01de-411c-ae7c-1e67745bcb67.png",
+            "htext": "Outdated Versions",
+            "paratext": "Buying from unreliable sources can leave you with outdated software versions."
+          }
+        },
+        "text_hnhyUQ": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/26.png",
+            "htext": "Affordable & Straightforward",
+            "paratext": "Get premium software at unbeatable prices with a smooth, user-friendly purchase experience."
+          }
+        },
+        "text_xkn34G": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/26_b1257240-0b1a-47f9-b358-866d10d53774.png",
+            "htext": "24/7 Expert Support",
+            "paratext": "Enjoy round-the-clock access to expert support, ready to assist you with any issues or questions."
+          }
+        },
+        "text_Qw6i8A": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/6.png",
+            "htext": "Secure Downloads",
+            "paratext": "All software from SoftwareKeep is 100% genuine and secure, ensuring peace of mind with every download."
+          }
+        },
+        "text_hQtTe9": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/8.png",
+            "htext": "Instant Access",
+            "paratext": "Purchase and download your software instantly, getting you up and running without delay."
+          }
+        },
+        "text_7EwmHB": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/10_5283b2ad-eec4-48c7-b094-f6f23b28beda.png",
+            "htext": "Up-to-Date Software",
+            "paratext": "Always get the latest versions and updates, ensuring you have the most current and efficient software."
+          }
+        }
+      },
+      "block_order": [
+        "text_qn8rhV",
+        "text_zPpaVL",
+        "text_GKBLYC",
+        "text_QhqyiX",
+        "text_FLfXYg",
+        "text_hnhyUQ",
+        "text_xkn34G",
+        "text_Qw6i8A",
+        "text_hQtTe9",
+        "text_7EwmHB"
+      ],
+      "custom_css": [],
+      "settings": {
+        "secbg": "#ffffff",
+        "heading": "What makes Softwarekeep different?",
+        "others": "Others",
+        "image": "shopify://shop_images/logo.svg"
+      }
+    },
+    "mdc_icon_heading_DdYxeC": {
+      "type": "mdc_icon-heading",
+      "blocks": {
+        "icon_head_block_efRYYr": {
+          "type": "icon_head_block",
+          "settings": {
+            "image": "shopify://shop_images/supportfemale-128.png",
+            "block_title": "24/7/365 Customer Support",
+            "block_text": "<p>Our dedicated customer support team are available 24/7/365 around the clock, ready to assist you with any inquiries or issues.</p>"
+          }
+        },
+        "icon_head_block_7cQXQk": {
+          "type": "icon_head_block",
+          "settings": {
+            "image": "shopify://shop_images/Key_f8b7f1bb-b28a-44a7-b2fb-7ba3393ce9d9.png",
+            "block_title": "Digital Delivery",
+            "block_text": "<p>Receive your product <strong>in 15 minutes or less</strong>, thanks to our streamlined digital delivery system, ensuring no waiting time.</p>"
+          }
+        },
+        "icon_head_block_C96iEn": {
+          "type": "icon_head_block",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Download-Computer-128.png",
+            "block_title": "Microsoft® Gold Partner",
+            "block_text": "<p>As a certified <strong>Microsoft® Gold Partner</strong>, we uphold the highest standards of quality and expertise in technology solutions.</p>"
+          }
+        },
+        "icon_head_block_ba9JBM": {
+          "type": "icon_head_block",
+          "settings": {
+            "image": "shopify://shop_images/Star-128.png",
+            "block_title": "180-Day Money-Back Guarantee",
+            "block_text": "<p>We stand behind our products with a robust <strong>180-day money-back guarantee</strong>, providing you with a risk-free purchasing experience.</p>"
+          }
+        },
+        "icon_head_block_d6Xewe": {
+          "type": "icon_head_block",
+          "settings": {
+            "image": "shopify://shop_images/calendar-128.png",
+            "block_title": "Valid For Life",
+            "block_text": "<p>Once installed, your software never expires. It's not a subscription that you have to renew monthly or yearly, it's a permanent lifetime license. </p>"
+          }
+        },
+        "icon_head_block_icfMJh": {
+          "type": "icon_head_block",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Purple-Transfer.png",
+            "block_title": "Transferable",
+            "block_text": "<p>You may transfer your software to a different computer if your original computer breaks or gets upgraded. All you need to do is login to your Microsoft account to access your download.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_head_block_efRYYr",
+        "icon_head_block_7cQXQk",
+        "icon_head_block_C96iEn",
+        "icon_head_block_ba9JBM",
+        "icon_head_block_d6Xewe",
+        "icon_head_block_icfMJh"
+      ],
+      "settings": {
+        "custom_id": "why-choose-us",
+        "title": "4 Reasons to choose us.",
+        "title_color": "#007aff",
+        "btn_text": "",
+        "btn_url": "#"
+      }
+    },
+    "section_logolist_NHChhB": {
+      "type": "section__logolist",
+      "blocks": {
+        "logo_list_logo_K8hJJ4": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/Mashable_transparent.png",
+            "logoLink": ""
+          }
+        },
+        "logo_list_logo_7PNhje": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/Forbes_transparent.png",
+            "logoLink": ""
+          }
+        },
+        "logo_list_logo_iVGhJ9": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/TechCrunch_transparent.png",
+            "logoLink": ""
+          }
+        },
+        "logo_list_logo_FVkng4": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/BloomBerg.png",
+            "logoLink": ""
+          }
+        },
+        "logo_list_logo_WDQC83": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/WikiHow_transparent.png",
+            "logoLink": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_list_logo_K8hJJ4",
+        "logo_list_logo_7PNhje",
+        "logo_list_logo_iVGhJ9",
+        "logo_list_logo_FVkng4",
+        "logo_list_logo_WDQC83"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "As Seen On:",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "hover": "none"
+      }
+    },
+    "mdc_image_with_icon_FP3NFW": {
+      "type": "mdc_image-with-icon",
+      "blocks": {
+        "home_guarantee_block_DbHyBg": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/1.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "BUY",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "<p>Here's the first step... select a product and checkout securely (We use military grade encryption to charge your card and NEVER store your payment information).</p>",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#ffffff",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "home_guarantee_block_YMA6Lb": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/2_c7aa3105-3cf8-4b49-a746-fcdf85c9d170.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "DOWNLOAD",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "<p>This part is easy!<br/>Our system automatically emails your download link & license key(s) to you right after checkout.</p>",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#ffffff",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "home_guarantee_block_gPUzXH": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/3.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "USE",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "<p>Need we say more?<br/>Your software will stay on your computer for as long as your computer continues to operate with no need to pay renewal. </p>",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#ffffff",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "home_guarantee_block_DbHyBg",
+        "home_guarantee_block_YMA6Lb",
+        "home_guarantee_block_gPUzXH"
+      ],
+      "disabled": true,
+      "settings": {
+        "home_guarantee_title": "How it works.",
+        "custom_id": "how-it-works",
+        "home_guarantee_title_font_size": 40,
+        "home_guarantee_title_color": "#007aff",
+        "home_guarantee_subtitle": "",
+        "home_guarantee_subtitle_font_size": 20,
+        "home_guarantee_subtitle_color": "#042338",
+        "btn_text": "Select Product & Checkout",
+        "btn_url": "#"
+      }
+    },
+    "section_image_text_3H8FAt": {
+      "type": "section__image-text",
+      "blocks": {
+        "title_pGeLMm": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "fullWidth": true,
+            "content": "Hey check this out!",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "rich_text_cm8DUW": {
+          "type": "richText",
+          "disabled": true,
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>This is for your text</p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        },
+        "button_CJJe4b": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "fullWidth": true,
+            "text": "Get this now!",
+            "url": "",
+            "icon": "",
+            "iconPosition": "icon--left",
+            "wideButton": false,
+            "buttonStyle": "primary",
+            "buttonType": "default",
+            "fontSize": "base",
+            "fontFamily": "base",
+            "animation": "none",
+            "animationDuration": 1000,
+            "animationInfinite": true
+          }
+        }
+      },
+      "block_order": [
+        "title_pGeLMm",
+        "rich_text_cm8DUW",
+        "button_CJJe4b"
+      ],
+      "disabled": true,
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "custom-center-image",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "imagePosition": "left",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/us_vs_them.webp",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "rumble_shocking_truth_ktXDhd": {
+      "type": "rumble-shocking-truth",
+      "blocks": {
+        "text_dn4yia": {
+          "type": "text",
+          "settings": {
+            "head_texts": "",
+            "textAlignment": "start",
+            "rich_texts": "<p>That’s right…<br/><br/>Every time your children opens Word to do school work, scammers and predators have an open door to your home.<br/><br/>Each time a work colleague sends you a PDF, you could download ransomware or some other disruptive virus.</p>",
+            "rich_texts_html": ""
+          }
+        },
+        "text_PWNxxf": {
+          "type": "text",
+          "settings": {
+            "head_texts": "What’s more shocking is…",
+            "textAlignment": "start",
+            "rich_texts": "<p>What’s more shocking is…</p>",
+            "rich_texts_html": ""
+          }
+        },
+        "text_DVaUmg": {
+          "type": "text",
+          "settings": {
+            "head_texts": "What’s more shocking is… YOU unwittingly agreed to it!",
+            "textAlignment": "start",
+            "rich_texts": "<p>Microsoft’s privacy policy gives them the right and ability to track your every click and keystroke under the guise of, “enhancing user experience.”<br/><br/>But what this really means is Microsoft collects a ton of personal data on you and your family. This includes identities, locations, interests, and browsing histories.<br/><br/>All it takes is one hack of Microsoft's systems for this data to fall into the hands of criminals.<br/><br/>Identity thieves can steal your personal details.<br/><br/>Scammers can use your interests to target you with phishing attacks.</p>",
+            "rich_texts_html": ""
+          }
+        },
+        "text_NGpzqQ": {
+          "type": "text",
+          "settings": {
+            "head_texts": "And disturbingly, child predators can look at your child's online behavior and locations to gain access.",
+            "textAlignment": "start",
+            "rich_texts": "<p>By using Microsoft Office, you and your family are giving big tech full visibility into your digital lives. This creates big privacy and security risks.<br/><br/>Do you really want Microsoft and Google SPYING ON YOUR CHILDREN while they do homework?<br/><br/>Especially when you’re paying an expensive yearly subscription for the privilege!</p>",
+            "rich_texts_html": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_dn4yia",
+        "text_PWNxxf",
+        "text_DVaUmg",
+        "text_NGpzqQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "sub_title": "SHOCKING TRUTH:",
+        "title": "Your Child Could Be Letting Scammers, Thieves, & Predators into Your Home While They’re Doing SCHOOL WORK!",
+        "color_title": "",
+        "sechtml_content": ""
+      }
+    },
+    "section_slider_tAKCAF": {
+      "type": "section__slider",
+      "blocks": {
+        "image_slide_e4UF6N": {
+          "type": "imageSlide",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/Trustpilot_Review_-_Steven_T._Smith.png",
+            "backgroundPosition": "middle",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "image_slide_dwNqeq": {
+          "type": "imageSlide",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/Trustpilot_Review_-_Mike_Hulett_1.png",
+            "backgroundPosition": "middle",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "image_slide_TTpAzX": {
+          "type": "imageSlide",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "padding": 16,
+            "contentSpacing": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/Trustpilot_Review_-_Steven_T._Smith.png",
+            "backgroundPosition": "middle",
+            "overlayOpacity": 40,
+            "overlayColor": "#000000",
+            "heading": "",
+            "headingColor": "rgba(0,0,0,0)",
+            "content": "",
+            "contentColor": "rgba(0,0,0,0)",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_e4UF6N",
+        "image_slide_dwNqeq",
+        "image_slide_TTpAzX"
+      ],
+      "disabled": true,
+      "settings": {
+        "main-heading": "What Our Customer Says About Us",
+        "custom_id": "review-slideshow",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 600,
+        "contentColor": "rgba(0,0,0,0)",
+        "autoplay": true,
+        "slideSpeed": 4,
+        "animation": "none",
+        "delayAnimation": false
+      }
+    },
+    "rumble_review_jEVcVi": {
+      "type": "rumble-review",
+      "disabled": true,
+      "settings": {
+        "img": "shopify://shop_images/juliaimage_79_1.webp",
+        "star_img": "shopify://shop_images/starGroup_2765.png",
+        "name": "Julie Laura Fortuna",
+        "veryfied": "Verified Review",
+        "heading": "My ultimate productivity companion",
+        "copy": "“As someone who relies heavily on office software for both work and personal projects, I've had my fair share of experiences with various productivity suites. However, I recently stumbled upon Truly Office, and I must say, it's been a game-changer in the way I work and collaborate. Here's why I can't stop raving about it.”"
+      }
+    },
+    "rumble_who_is_FMHmQd": {
+      "type": "rumble-who-is",
+      "blocks": {
+        "block_LNHBDW": {
+          "type": "block",
+          "settings": {
+            "img": "shopify://shop_images/icon-tired.svg",
+            "block_head": "You are tired of monthly subscriptions eating up your hard-earned money",
+            "block_copy": "Save over $100 per year compared to Microsoft Office."
+          }
+        },
+        "block_NFMyyV": {
+          "type": "block",
+          "settings": {
+            "img": "shopify://shop_images/icon-safeguard_430x_774e2eb6-d8cc-4145-9efd-7b944311d59c.svg",
+            "block_head": "You want to safeguard your family's privacy",
+            "block_copy": "Truly Office never collects personal data that could end up in the wrong hands. Your work stays with you."
+          }
+        },
+        "block_BNBRQa": {
+          "type": "block",
+          "settings": {
+            "img": "shopify://shop_images/icon-control.svg",
+            "block_head": "You want full ownership & control",
+            "block_copy": "With Truly Office's lifetime license, the software is yours forever with free lifetime updates."
+          }
+        },
+        "block_W8Nhqj": {
+          "type": "block",
+          "settings": {
+            "img": "shopify://shop_images/icon-anytime.svg",
+            "block_head": "You want the ability to work anytime, anywhere",
+            "block_copy": "No internet? No problem. Truly Office works offline and syncs seamlessly when back online."
+          }
+        },
+        "block_aDEgYj": {
+          "type": "block",
+          "settings": {
+            "img": "shopify://shop_images/icon-maximize.svg",
+            "block_head": "You want an intuitive interface to maximize productivity",
+            "block_copy": "Truly Office's clean, familiar interface allows you to get more done faster. No learning curve here!"
+          }
+        },
+        "block_NQWckn": {
+          "type": "block",
+          "settings": {
+            "img": "shopify://shop_images/icon-support_430x_4274c2c5-23e1-4041-9d38-f242bef8ad47.svg",
+            "block_head": "You expect real customer support",
+            "block_copy": "Get 24/7 help from real humans. Our experts are here for you, day and night."
+          }
+        }
+      },
+      "block_order": [
+        "block_LNHBDW",
+        "block_NFMyyV",
+        "block_BNBRQa",
+        "block_W8Nhqj",
+        "block_aDEgYj",
+        "block_NQWckn"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Who Is Truly Office For?",
+        "sub_heading": "Whether you’re a parent, student, professional, or a business owner, Truly Office is for you if…",
+        "get_extra": "GET 15% OFF WITH CODE:        RUMBLE30",
+        "button": "get lifetime license",
+        "button_urls": "#products_scrolls",
+        "secure_text": "90 Day Money-Back Guarantee"
+      }
+    },
+    "rumble_card_AmWf7K": {
+      "type": "rumble-card",
+      "blocks": {
+        "cards_Q3p9Wd": {
+          "type": "cards",
+          "settings": {
+            "img": "shopify://shop_images/image_57.webp"
+          }
+        },
+        "cards_UqTz6Q": {
+          "type": "cards",
+          "settings": {
+            "img": "shopify://shop_images/image_64.webp"
+          }
+        },
+        "cards_KTwepe": {
+          "type": "cards",
+          "settings": {
+            "img": "shopify://shop_images/image_58.webp"
+          }
+        },
+        "cards_cYJkGT": {
+          "type": "cards",
+          "settings": {
+            "img": "shopify://shop_images/image_59_1.png"
+          }
+        },
+        "cards_CpgKUL": {
+          "type": "cards",
+          "settings": {
+            "img": "shopify://shop_images/image_60.webp"
+          }
+        },
+        "cards_tYwmtA": {
+          "type": "cards",
+          "settings": {
+            "img": "shopify://shop_images/image_61.webp"
+          }
+        },
+        "cards_adgeHe": {
+          "type": "cards",
+          "settings": {
+            "img": "shopify://shop_images/image_65.webp"
+          }
+        }
+      },
+      "block_order": [
+        "cards_Q3p9Wd",
+        "cards_UqTz6Q",
+        "cards_KTwepe",
+        "cards_cYJkGT",
+        "cards_CpgKUL",
+        "cards_tYwmtA",
+        "cards_adgeHe"
+      ],
+      "settings": {}
+    },
+    "rumble_money_back_HJU6te": {
+      "type": "rumble-money-back",
+      "settings": {
+        "top_padding": 5,
+        "botm_padding": 10,
+        "monyback_img": "shopify://shop_images/180_DAY.png",
+        "monyback_txt": "180-Day Money-Back Guarantee",
+        "monyback_content": "<p>Take Your Productivity Game for a test drive. You've got 180-money-back-guarantee. We think you'll love having all the office apps and features you’re used to, plus more – for less and forever!<br/><br/></p>"
+      }
+    },
+    "pricing_content_list_URBkKq": {
+      "type": "pricing-content-list",
+      "blocks": {
+        "text_zKpjd7": {
+          "type": "text",
+          "settings": {
+            "heading": "Best-in-Class Data Privacy",
+            "text": "<p>Unlike many other office suites, Truly Office never collects your usage data or sells it to third parties. Your work stays private.</p>",
+            "ht_color": "#1471b5",
+            "para_color": "#000000"
+          }
+        },
+        "text_WziWY8": {
+          "type": "text",
+          "settings": {
+            "heading": "24/7 Customer Support",
+            "text": "<p>No tracking. No monitoring. No selling data. Truly Office doesn't monitor your activity, so your work stays private and more secure.</p>",
+            "ht_color": "#1471b5",
+            "para_color": "#000000"
+          }
+        },
+        "text_nJyPWt": {
+          "type": "text",
+          "settings": {
+            "heading": "Microsoft Office Compatible",
+            "text": "<p>Truly Office flawlessly opens and saves to Microsoft's proprietary .docx, .xlsx, and .pptx formats. You'll never miss a beat switching between the two.</p>",
+            "ht_color": "#1471b5",
+            "para_color": "#000000"
+          }
+        },
+        "text_Pwhmt7": {
+          "type": "text",
+          "settings": {
+            "heading": "Best-in-class Privacy & Security",
+            "text": "<p>No tracking. No monitoring. No selling data. Truly Office doesn't monitor your activity, so your work stays private and more secure.</p>",
+            "ht_color": "#1471b5",
+            "para_color": "#000000"
+          }
+        },
+        "text_QjQYQU": {
+          "type": "text",
+          "settings": {
+            "heading": "Zero Ads",
+            "text": "<p>Unlike other office app suites, Truly Office is completely free of any ads or pop-ups. Stay focused on your work without distractions.</p>",
+            "ht_color": "#1471b5",
+            "para_color": "#000000"
+          }
+        },
+        "text_nGdWfj": {
+          "type": "text",
+          "settings": {
+            "heading": "Works Offline",
+            "text": "<p>No internet? No worries! Truly Office is fully functional offline, and syncs when back online, ensuring work can happen anytime, anywhere.</p>",
+            "ht_color": "#1471b5",
+            "para_color": "#000000"
+          }
+        },
+        "text_mBz7rL": {
+          "type": "text",
+          "settings": {
+            "heading": "Available on Windows & Mac",
+            "text": "<p>Use Truly Office on desktop (Windows, Mac, ),<strong> mobile version </strong>(iOS, Android) <strong>coming soon end of Q1 2024</strong>, and <strong>web version end of Q2 2024</strong>. Simultaneously, for entire family.</p>",
+            "ht_color": "#1471b5",
+            "para_color": "#000000"
+          }
+        },
+        "text_U3U99Y": {
+          "type": "text",
+          "settings": {
+            "heading": "Extensive Template Library",
+            "text": "<p>Jumpstart projects with thousands of professionally designed templates for documents, spreadsheets, presentations, and more.</p>",
+            "ht_color": "#1471b5",
+            "para_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "text_zKpjd7",
+        "text_WziWY8",
+        "text_nJyPWt",
+        "text_Pwhmt7",
+        "text_QjQYQU",
+        "text_nGdWfj",
+        "text_mBz7rL",
+        "text_U3U99Y"
+      ],
+      "disabled": true,
+      "settings": {
+        "sec_bckground": "#f5f5f5",
+        "heads": "",
+        "btext": "",
+        "urls": "",
+        "but_Background": "#0064dd",
+        "color_btext": "#000000"
+      }
+    },
+    "a05d5ff3-abd5-4c03-af99-40096dd56824": {
+      "type": "section__faq",
+      "blocks": {
+        "9a7e015e-f036-4cfd-9927-f44f98622155": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How long does it take to receive my SoftwareKeep order?</p>",
+            "answer": "As soon as we are able to successfully process your payment, you will receive a download link for your product and a Product Key from SoftwareKeep. This process is usually between 15-20 minutes. If your SoftwareKeep order is delayed longer than this, please refer to your SoftwareKeep account for the details of your purchase."
+          }
+        },
+        "18459490-d9d8-4894-9042-425b49ef2c0f": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How can I be certain that my copy of Microsoft Office is genuine?</p>",
+            "answer": "SoftwareKeep is a proud Microsoft Certified Partner, and as such, all our software products are 100% legitimate and authentic. In addition, any software you purchase from SoftwareKeep is covered by our hassle-free money-back guarantee. We encourage all our SoftwareKeep customers to register their specific Microsoft Office Product key via Microsoft online activation to ensure verification and tracking of their authentic software products."
+          }
+        },
+        "cd87f49c-d688-4480-be1d-6bae412fc0e3": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How long does a genuine software license from SoftwareKeep last?</p>",
+            "answer": "The license for any product purchased from SoftwareKeep is a lifetime (perpetual) license. You may be required to purchase a new license with a new version of the product. In some cases, you might be eligible for an upgrade license from SoftwareKeep that will allow you to upgrade at a discount price."
+          }
+        },
+        "91908238-3007-44d1-a267-e234c37bc584": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Can I buy a single-use license software and install on multiple computers?</p>",
+            "answer": "As soon as we are able to successfully process your payment, you will receive a download link for your product and a Product Key from SoftwareKeep. This process is usually between 15-20 minutes. If your SoftwareKeep order is delayed longer than this, please refer to your SoftwareKeep account for the details of your purchase."
+          }
+        },
+        "baa01f80-dd91-4f00-95b5-65acca6ea51e": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How can I be certain that my copy of Microsoft Office is genuine?</p>",
+            "answer": "SoftwareKeep is a proud Microsoft Certified Partner, and as such, all our software products are 100% legitimate and authentic. In addition, any software you purchase from SoftwareKeep is covered by our hassle-free money-back guarantee. We encourage all our SoftwareKeep customers to register their specific Microsoft Office Product key via Microsoft online activation to ensure verification and tracking of their authentic software products."
+          }
+        },
+        "81955599-bfde-4f22-b5a9-dd9b07a946f2": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How long does a genuine software license from SoftwareKeep last?</p>",
+            "answer": "The license for any product purchased from SoftwareKeep is a lifetime (perpetual) license. You may be required to purchase a new license with a new version of the product. In some cases, you might be eligible for an upgrade license from SoftwareKeep that will allow you to upgrade at a discount price."
+          }
+        },
+        "fdb90bb4-9026-47ea-8bdc-fa344377f648": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Can I buy a single-use license software and install on multiple computers?</p>",
+            "answer": "The software licenses sold by SoftwareKeep are intended for installation and activation on one computer only, unless otherwise specified for that particular product. Retail and OEM software licenses we provide are designed and licensed for use on a single computer. Installing a single-use license from SoftwareKeep on multiple computers is not permitted under the license terms and conditions."
+          }
+        },
+        "50007e6f-9e51-4303-b8bf-af33e8b60c91": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>What is a digital download and how does it work?</p>",
+            "answer": "A digital download is an electronic version of your software product, giving you access to download and use your new software immediately. This means that a physical CD or DVD disc is not included with your purchase. The software install program is downloaded through cloud-based storage."
+          }
+        },
+        "91c6a82a-8fa4-47c6-a9b6-6b6ca0b0aa85": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>What are retail software products?</p>",
+            "answer": "SoftwareKeep Retail software products are the same physical items you would purchase at your local software stores. They are packaged for retail sale and usually include the original box, physical CD or DVD disk(s), a manual, the paper license agreement, and an Activation Key/Code. Similar to OEM software, a Retail Product is licensed for use on one computer only."
+          }
+        },
+        "7ae3b139-863e-4ae0-bf46-b14e512999a6": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Can I update my software over the Internet? (not needed as there's no update after 2021)</p>",
+            "answer": "Since these are genuine Microsoft products, you will be able to obtain regular updates from Microsoft using an Internet connection."
+          }
+        }
+      },
+      "block_order": [
+        "9a7e015e-f036-4cfd-9927-f44f98622155",
+        "18459490-d9d8-4894-9042-425b49ef2c0f",
+        "cd87f49c-d688-4480-be1d-6bae412fc0e3",
+        "91908238-3007-44d1-a267-e234c37bc584",
+        "baa01f80-dd91-4f00-95b5-65acca6ea51e",
+        "81955599-bfde-4f22-b5a9-dd9b07a946f2",
+        "fdb90bb4-9026-47ea-8bdc-fa344377f648",
+        "50007e6f-9e51-4303-b8bf-af33e8b60c91",
+        "91c6a82a-8fa4-47c6-a9b6-6b6ca0b0aa85",
+        "7ae3b139-863e-4ae0-bf46-b14e512999a6"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "stretchBg",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "Frequently asked questions",
+        "headingColor": "#000000",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "textContent": ""
+      }
+    },
+    "rumble_text_image_NQimwg": {
+      "type": "rumble-text-image",
+      "disabled": true,
+      "settings": {
+        "custom_id1": "",
+        "subHeading_txt1": "Ready To Protect Your Privacy & Save Hundreds Every Year?",
+        "Heading_txt1": "Get Microsoft Office Today!",
+        "areacontents1": "<ul class=\"c_lists\">\n        <li>Save up to 82% compared to Microsoft Office\n        </li>\n        <li>100% private - we never track your data\n        </li>\n        <li> Fully compatible with all major formats\n        </li>\n    </ul>",
+        "pric_txt1": "<p class=\"cpric\">Microsoft Office 2021 starting at <span class=\"top_price\">$118.99</span> \n<span class=\"top_price\"><del>$149.99</del></span> <span class=\"green_text\"></span></p>",
+        "extraoff1": "GET 15% OFF WITH CODE: RUMBLE15",
+        "b_txt1": "Buy Once, Use Forever",
+        "b_url1": "#products_scrolls",
+        "secure1": "90 Day Money-Back Guarantee",
+        "imagePosition1": "left",
+        "leftimg1": "shopify://shop_images/Group_1000004692.webp"
+      }
+    },
+    "content": {
+      "type": "page",
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "brand_logo_carousel_ftWXHp",
+    "rumble_office_subscription_kE8fDh",
+    "shopify_us_make_different_4HNigX",
+    "mdc_icon_heading_DdYxeC",
+    "section_logolist_NHChhB",
+    "mdc_image_with_icon_FP3NFW",
+    "section_image_text_3H8FAt",
+    "rumble_shocking_truth_ktXDhd",
+    "section_slider_tAKCAF",
+    "rumble_review_jEVcVi",
+    "rumble_who_is_FMHmQd",
+    "rumble_card_AmWf7K",
+    "rumble_money_back_HJU6te",
+    "pricing_content_list_URBkKq",
+    "a05d5ff3-abd5-4c03-af99-40096dd56824",
+    "rumble_text_image_NQimwg",
+    "content"
+  ]
+}

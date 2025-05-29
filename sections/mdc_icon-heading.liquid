@@ -1,0 +1,92 @@
+{% assign customID = section.settings.custom_id %}
+<div class="custom-max-width icon_heading_wrapper" id="{{ customID }}">
+  <h2 style="color:{{ section.settings.title_color }}">{{ section.settings.title }}</h2>
+  <div class="block_grid">
+    {% for block in section.blocks %}
+      <div class="ih_block">
+        <div class="ih_image">
+          {{ block.settings.image | image_url: width:'45', height:'45' | image_tag }}
+        </div>
+        <div class="ih_content">
+          <h4>{{ block.settings.block_title }}</h4>
+          <div class="ih_text">
+            {{ block.settings.block_text }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+   {% if section.settings.btn_text != "blank" %}
+    <a href="{{ section.settings.btn_url }}" class="green-btn">{{ section.settings.btn_text }}</a>
+  {% endif %} 
+</div>
+{% schema %}
+{
+  "name": "MDC_Icon With Heading",
+  "class": "mdc_icon-with-heading",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_id",
+      "label": "Custom ID"
+    },    
+    {
+      "type": "header",
+      "content": "name"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color"
+    },
+    {
+      "type": "header",
+      "content": "Section ID"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "icon-with-head",
+      "type": "icon_head_block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "block_title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "block_text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Content",
+      "name": "MDC_Icon With Heading"
+      }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,72 @@
+<style>
+  #secs__{{ section.id }}{
+    padding-top: {{section.settings.top_padding}}px;
+    padding-bottom: {{section.settings.botm_padding}}px;
+  }
+</style>
+<div id="secs__{{ section.id }}">
+<div class="max-width">
+  <div class="mback_wraps">
+     <div class="mback_imgs">
+       {% if section.settings.monyback_img != blank %}
+         {{ section.settings.monyback_img | image_url: width:'216', height:'180' | image_tag }}
+        {% else %}
+         <img src="https://cdn.shopify.com/s/files/1/0621/8733/9828/files/Group_1000004649.png?v=1705688464" alt="tabimage" width="216" height="180">
+       {% endif %}
+     </div>
+      <div class="mback-tt">
+        <h3>{{ section.settings.monyback_txt }}</h3>
+        {{ section.settings.monyback_content }}
+      </div>
+  </div>
+</div>
+</div>
+{% schema %}
+  {
+    "name": "Rumble Money Back",
+    "class": "rmony_back",
+    "settings": [
+      {
+        "type": "range",
+        "id": "top_padding",
+        "label": "Section padding Top",
+        "default": 5,
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "botm_padding",
+        "label": "Section padding Bottom",
+        "default": 10,
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+          "type": "image_picker",
+          "id": "monyback_img",
+          "label": "Select Image"
+      },
+      {
+          "type": "text",
+          "id": "monyback_txt",
+          "label": "Main heading"
+      },
+      {
+        "type": "richtext",
+        "id": "monyback_content",
+        "label": "Paragraph Content",
+        "default":"<p>Take Truly Office for a test drive. You've got 90 full days to decide if it's right for you.</p>"
+      }
+    ],
+    "presets": [
+    {
+      "name": "Rumble Money Back"
+    }
+  ]
+  }
+{% endschema %}

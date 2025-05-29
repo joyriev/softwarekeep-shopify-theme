@@ -1,0 +1,542 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "topheader": {
+      "type": "deals-header",
+      "settings": {
+        "toptext": "SAVE UP TO 50% WITH SOFTWAREKEEP",
+        "botomtext": "LIMITED TIME CYBER MONDAY SALE!"
+      }
+    },
+    "product": {
+      "type": "best-deals-product",
+      "blocks": {
+        "product_4aNLBG": {
+          "type": "product",
+          "settings": {
+            "tab_fetureimg": "shopify://shop_images/microsoft-software-microsoft-office-2021-home-and-student-license-31503628828727.png",
+            "productwindow": "microsoft-office-2021-home-and-student-pc",
+            "deals_nam": "BEST DEAL",
+            "bg_color": "#f06930",
+            "name1": "<p class=\"pro_titles\"><b>Office 2021</b> Home &amp; Student</p>",
+            "icon_enable": true,
+            "freegift1": "add-a-usb-software-backup",
+            "first_icon": "shopify://shop_images/image_24.png",
+            "text11": "$49.99",
+            "text12": "10 GB USB Stick",
+            "freegift2": "premium-tech-support",
+            "second_icon": "shopify://shop_images/Group_1000006741.png",
+            "text21": "$59.99",
+            "text22": "24/ 7 VIP Customer Service",
+            "freegift3": "truly-vpn",
+            "third_icon": "shopify://shop_images/image_26.png",
+            "text31": "$74.99",
+            "text32": "6 Months Free VPN",
+            "text41": "",
+            "text42": ""
+          }
+        },
+        "product_KDwGKH": {
+          "type": "product",
+          "settings": {
+            "tab_fetureimg": "shopify://shop_images/microsoft-software-microsoft-office-2021-home-and-business-31310960853047.png",
+            "productwindow": "microsoft-office-2021-home-and-business-for-pc",
+            "deals_nam": "POPULAR",
+            "bg_color": "#2789ff",
+            "name1": "<p class=\"pro_titles\"><b>Office 2024</b> Home &amp; Business</p>",
+            "icon_enable": true,
+            "freegift1": "add-a-usb-software-backup",
+            "first_icon": "shopify://shop_images/image_24.png",
+            "text11": "49.99",
+            "text12": "10 GB USB Stick",
+            "freegift2": "premium-tech-support",
+            "second_icon": "shopify://shop_images/Group_1000006741.png",
+            "text21": "$59.99",
+            "text22": "24/7 VIP Customer Service",
+            "freegift3": "",
+            "third_icon": "shopify://shop_images/image_41.png",
+            "text31": "$74.99",
+            "text32": "6 Months Free VPN",
+            "text41": "",
+            "text42": ""
+          }
+        },
+        "product_NnTENY": {
+          "type": "product",
+          "settings": {
+            "tab_fetureimg": "shopify://shop_images/microsoft-software-microsoft-office-2021-home-student-pc-31311051554871.png",
+            "productwindow": "microsoft-office-2021-professional",
+            "deals_nam": "",
+            "bg_color": "#2789ff",
+            "name1": "<p class=\"pro_titles\"><b>MS Office 2021</b> Professional</p>",
+            "icon_enable": true,
+            "freegift1": "",
+            "first_icon": "shopify://shop_images/image_41.png",
+            "text11": "$49.99",
+            "text12": "10 GB USB Stick",
+            "freegift2": "premium-tech-support",
+            "second_icon": "shopify://shop_images/Group_1000006741.png",
+            "text21": "$59.99",
+            "text22": "24/7 VIP Customer Service",
+            "freegift3": "",
+            "third_icon": "shopify://shop_images/image_41.png",
+            "text31": "$74.99",
+            "text32": "6 Months Free VPN",
+            "text41": "",
+            "text42": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_4aNLBG",
+        "product_KDwGKH",
+        "product_NnTENY"
+      ],
+      "settings": {
+        "product_deals": "microsoft-office-2021-home-and-business-for-pc",
+        "reviews": "shopify://shop_images/ResellerRatings_2.png",
+        "contentlist": "<ul>\n<li>One-time payment, no subscriptions</li>\n<li>Lifetime support at no extra cost</li>\n<li>      <div class=\"new-popcalls\">\n         <p class=\"make_diff\" id=\"newwhere\" style=\"margin: 5px;\"><span style=\"font-size:30px;\"></span><span style=\"text-decoration:underline;font-weight:600;\">WHAT MAKE US DIFFERENT</span></p>\n      </div>\n</li>\n</ul>",
+        "pro_title": "Save Up To 36% Today on \nMicrosoft Office 2021 + FREE Gifts",
+        "sub_dates": "Order by: &nbsp; {{ 'now' | date: '%b %d' }} for instant digital download",
+        "mback": "Enjoy Softwarekeep Products Risk-Free with a 180-Day Money Back Guarantee",
+        "review_texts": "<p>\"I can’t describe How Much Daniel helped me in 600 words, So I’ll be brief, he helped me on a product I didn’t buy there but it needed to be fixed so he jumped in and worked on it--for 3 hours!!!! who does that? I will NEVER go anywhere to buy software again but at Softwarekeep... the service is unbelievable! Daniel IS the reason I’ll go back; these people ARE THE REAL DEAL when it comes to service! I bought another product just because I couldnt leave without doing something for the help I received\"</p>",
+        "paypalenable": true
+      }
+    },
+    "dealsImage": {
+      "type": "deals-image",
+      "blocks": {
+        "image_YEPVJT": {
+          "type": "image",
+          "settings": {
+            "smallmage": "shopify://shop_images/1-01_9bec12c4-e89b-4844-86fc-a46b474b231f.png"
+          }
+        },
+        "image_KyF8jn": {
+          "type": "image",
+          "settings": {
+            "smallmage": "shopify://shop_images/1-02_1e7111d3-f2eb-44ec-b4ca-67c31a724867.png"
+          }
+        },
+        "image_aGiQkm": {
+          "type": "image",
+          "settings": {
+            "smallmage": "shopify://shop_images/1-03_5cba5c0e-6c66-4c40-8c93-57e152eb48cc.png"
+          }
+        },
+        "image_z4RYLB": {
+          "type": "image",
+          "settings": {
+            "smallmage": "shopify://shop_images/1-04_64c836d2-a374-4120-bbef-69928068d174.png"
+          }
+        },
+        "image_nQzLDX": {
+          "type": "image",
+          "settings": {
+            "smallmage": "shopify://shop_images/1-05.png"
+          }
+        },
+        "image_jq4LKQ": {
+          "type": "image",
+          "settings": {
+            "smallmage": "shopify://shop_images/1-06.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_YEPVJT",
+        "image_KyF8jn",
+        "image_aGiQkm",
+        "image_z4RYLB",
+        "image_nQzLDX",
+        "image_jq4LKQ"
+      ],
+      "settings": {
+        "thead": "Featured In"
+      }
+    },
+    "dealsAbout": {
+      "type": "deals-about",
+      "blocks": {
+        "text_Yqkh4e": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/1_-02.png",
+            "test_text": "Instant Digital Download",
+            "test_text_para": "<p>Begin working in 5 minutes or less.</p>"
+          }
+        },
+        "text_66YhN3": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/1_-04.png",
+            "test_text": "Lifetime Product Guarantee",
+            "test_text_para": "<p>One Time Purchase, Lifetime Access - Enjoy Hassle-Free Software Ownership.</p>"
+          }
+        },
+        "text_nwp6VA": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/1_-05.png",
+            "test_text": "24/7/365 Customer Service",
+            "test_text_para": "<p>We offer exceptional 24/7 Customer Service.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Yqkh4e",
+        "text_66YhN3",
+        "text_nwp6VA"
+      ],
+      "settings": {
+        "bgcolor": "linear-gradient(84deg, rgba(30, 53, 90, 1) 99%, rgba(168, 255, 251, 1) 100%)",
+        "heading": "Why choose Softwarekeep?",
+        "subparas": "<p>At SoftwareKeep, we believe that you deserve access to quality software without breaking the bank. Our mission is to provide <strong>affordable and accessible Microsoft solutions </strong>backed by exceptional 24/7/365 customer service. Shop with us Today.</p>",
+        "imgs_link": "shopify://shop_images/Illustration_1.png"
+      }
+    },
+    "dealfeaturelist": {
+      "type": "deals-featurelist",
+      "blocks": {
+        "list_BijyYJ": {
+          "type": "list",
+          "settings": {
+            "heading": "Genuine Microsoft Products",
+            "hcolor": "#1a2843",
+            "fimage": "shopify://shop_images/badge_of_authenticity.png",
+            "test_text1": "100% genuine Microsoft software keys with lifetime access.",
+            "test_text2": "Trusted licenses for Windows, Office, and more, ensuring security and performance.",
+            "test_text3": "Enjoy seamless updates and continuous support without the risk of counterfeit products."
+          }
+        },
+        "list_N9tq4m": {
+          "type": "list",
+          "settings": {
+            "heading": "Cost-Effective Solutions",
+            "hcolor": "#1a2843",
+            "fimage": "shopify://shop_images/theux5470_coins_illustration_sleek_design_masculine_blue_gradie_63782e0e-4c3d-4f1e-8ed2-6b9d4309f7e7_1.png",
+            "test_text1": "Say goodbye to recurring subscription fees.",
+            "test_text2": "SoftwareKeep offers cost-effective lifetime licenses, saving you money while ensuring premium software access.",
+            "test_text3": "Get more value with competitive pricing and no hidden costs."
+          }
+        },
+        "list_TXH4wz": {
+          "type": "list",
+          "settings": {
+            "heading": "24/7 Customer Support",
+            "hcolor": "#1a2843",
+            "fimage": "shopify://shop_images/theux5470_costumer_service_call_center_logo_blue_gradients_59a78bf7-e44b-4e17-8804-5cd116cc8520_1.png",
+            "test_text1": "Round-the-clock customer service to assist with downloads, installations, and troubleshooting.",
+            "test_text2": "Our dedicated team ensures you're never stuck, with lifetime support for all your software needs.",
+            "test_text3": "Simplify your software experience with our reliable and knowledgeable support team."
+          }
+        },
+        "list_YtFFHd": {
+          "type": "list",
+          "settings": {
+            "heading": "Wide Range of Products",
+            "hcolor": "#1a2843",
+            "fimage": "shopify://shop_images/theux5470_3_boxes_vertical_standing_up_next_to_each_other_illus_93a66394-bff2-4c5c-a429-8f29c5b0a5f1-2_1.png",
+            "test_text1": "From Microsoft Office to Windows Server and security tools, find software for business, personal, and educational use.",
+            "test_text2": "Compatible with both PC and Mac for optimal performance.",
+            "test_text3": "Choose from a variety of productivity and security tools."
+          }
+        }
+      },
+      "block_order": [
+        "list_BijyYJ",
+        "list_N9tq4m",
+        "list_TXH4wz",
+        "list_YtFFHd"
+      ],
+      "settings": {
+        "htext": "How SoftwareKeep Compares to Microsoft"
+      }
+    },
+    "section_image_text_HeHafC": {
+      "type": "section__image-text",
+      "blocks": {
+        "title_VLpRCm": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "What makes",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "big"
+          }
+        },
+        "title_pKj3yK": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "<span id=\"colrs\">SoftwareKeep</span> different?",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "big"
+          }
+        },
+        "rich_text_iYrD7i": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>At SoftwareKeep, we don’t get special deals from Microsoft. Like other retailers, we operate within the same framework. Microsoft develops software like Office and relies on retail partners to sell them.<br/><strong><br/>So why choose us?</strong><br/><br/>We offer competitive prices because, unlike retailers with high overheads like Best Buy, we operate online with lower costs. This allows us to pass on the same discounts from Microsoft directly to you. Our transparent model ensures you get official Microsoft products at great prices, reflecting the same offers available to larger retailers, without extra costs.</p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "title_VLpRCm",
+        "title_pKj3yK",
+        "rich_text_iYrD7i"
+      ],
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "dels_diff",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "end",
+        "verticalAlignment": "middle",
+        "imagePosition": "left",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/7_1_1.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "deals_testimonials": {
+      "type": "best-deals-testimonials",
+      "blocks": {
+        "text_JnGWkw": {
+          "type": "text",
+          "settings": {
+            "headtext": "Downloaded software & no coupon required",
+            "test_text": "<p>First, I had to confirm it was a real company. The reviews online from trusted resources accomplished that. My order was completed quickly, saved me money, and within a couple of hours I had software downloaded and was working on an important project again.</p>",
+            "authorName": "Miranda Dale"
+          }
+        },
+        "text_JeQJwD": {
+          "type": "text",
+          "settings": {
+            "headtext": "Fast and efficient service",
+            "test_text": "<p>Fast and efficient service. I have made 4 or 5 purchases from Softwarekeep over the past 3 years. Windows OS products to Microsoft Office products purchased without any activation issues, at a reasonable price. Would consider purchasing from in the future!</p>",
+            "authorName": "Neil G."
+          }
+        },
+        "text_8L6RfF": {
+          "type": "text",
+          "settings": {
+            "headtext": "Really good communication",
+            "test_text": "<p>Really good communication and an excellent product that was easily downloaded. Really pleased with the project.</p>",
+            "authorName": "Peter M."
+          }
+        },
+        "text_iLctza": {
+          "type": "text",
+          "settings": {
+            "headtext": "Highly Recommend",
+            "test_text": "<p>I got Microsoft office without having to pay for a subscription! Highly recommend!</p>",
+            "authorName": "Edith C."
+          }
+        },
+        "text_MmwppC": {
+          "type": "text",
+          "settings": {
+            "headtext": "Exemplary Customer Service",
+            "test_text": "<p>I wish there were more customer service companies like Softwarekeep and representatives like Emre. He solved my problem in one leap, quite literally, immediately after I reached out to them. He followed through when I encountered a further problem. In short order, I was up and running. Oh what a fine world this would be if other companies followed suit with this kind of service.</p>",
+            "authorName": "Sandra K."
+          }
+        }
+      },
+      "block_order": [
+        "text_JnGWkw",
+        "text_JeQJwD",
+        "text_8L6RfF",
+        "text_iLctza",
+        "text_MmwppC"
+      ],
+      "disabled": true,
+      "settings": {
+        "sec_bckground": "#ffffff",
+        "headings": "What Clients say about SoftwareKeep.",
+        "blink": ""
+      }
+    },
+    "dealssteps": {
+      "type": "after-rocket-download",
+      "blocks": {
+        "image_WCUQmK": {
+          "type": "image",
+          "settings": {
+            "textsecbg": "#2963b5",
+            "htext": "Add product to cart",
+            "image": "shopify://shop_images/1_Add_to_Cart_SK.png",
+            "content": "bottom",
+            "paratext": "Use the quick browsing function to search for the software you need. Make your selection and add to your cart.",
+            "blink_count": true
+          }
+        },
+        "image_6K6gwa": {
+          "type": "image",
+          "settings": {
+            "textsecbg": "#2963b5",
+            "htext": "Unlock Extra Savings",
+            "image": "shopify://shop_images/2_Add_Code_to_Cart_SK.png",
+            "content": "bottom",
+            "paratext": "For extra savings, remember to check the homepage for any discount codes Often special promotions are running.",
+            "blink_count": true
+          }
+        },
+        "image_8TyDqY": {
+          "type": "image",
+          "settings": {
+            "textsecbg": "#2963b5",
+            "htext": "Instant download",
+            "image": "shopify://shop_images/3_Download_Now.png",
+            "content": "bottom",
+            "paratext": "No frustrating shipping delays, or queuing in a shop. Instead, get a download link in your email. Install and start using your product right away.",
+            "blink_count": true
+          }
+        }
+      },
+      "block_order": [
+        "image_WCUQmK",
+        "image_6K6gwa",
+        "image_8TyDqY"
+      ],
+      "settings": {
+        "htext": "Quick &amp; Easy Installation"
+      }
+    },
+    "dealsquickeasy": {
+      "type": "deals-quick-easy",
+      "blocks": {
+        "text_ekCd6w": {
+          "type": "text",
+          "settings": {
+            "htext": "BUY NOW",
+            "subtext": "and say goodbye to monthly bills!"
+          }
+        },
+        "text_7WeHnR": {
+          "type": "text",
+          "settings": {
+            "htext": "Receive Licence Key",
+            "subtext": "Check your email!"
+          }
+        },
+        "text_TExQcr": {
+          "type": "text",
+          "settings": {
+            "htext": "Download & Install",
+            "subtext": "Follow the prompts and the installation wizard will guide you through the process!"
+          }
+        }
+      },
+      "block_order": [
+        "text_ekCd6w",
+        "text_7WeHnR",
+        "text_TExQcr"
+      ],
+      "disabled": true,
+      "settings": {
+        "copy2": "Quick & Easy Installation",
+        "copy21": "",
+        "paras": "",
+        "shoplink": "",
+        "shopnowtext": ""
+      }
+    },
+    "section_image_text_DMpfFp": {
+      "type": "section__image-text",
+      "blocks": {
+        "html_TUCUpP": {
+          "type": "html",
+          "settings": {
+            "fullWidth": true,
+            "html": "<div class=\"left_wraps\">\n\t <img style=\"width:100%\" src=\"https://softwarekeep.com/cdn/shop/files/ResellerRatings_2.png\" alt=\"reseller-rating\" width=\"435\" height=\"30\">\n\t  <h2 class=\"lheadings\">Say “No” to Subscriptions.<span id=\"bgcolors\"> Once and For All.</span>\n</h2>\n\t  <div class=\"imgs_icon\" style=\"text-align:left\">\n\t  <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Frame_397.png?v=1728044325\" alt=\"\">\n\t </div>\n\t <div class=\"btns_click\">\n\t  <a href=\"/products/microsoft-office-2021-home-and-business-windows-11-home\" class=\"shop_save\">SHOP & SAVE</a>\n\t  <p style=\"text-align: left;\"><img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Frame_651201.png?v=1728045482\" alt=\"support\"></p>\n\t </div>\n\t</div>",
+            "customCSS": ""
+          }
+        }
+      },
+      "block_order": [
+        "html_TUCUpP"
+      ],
+      "settings": {
+        "main-heading": "",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "lr_img-sec",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "imagePosition": "right",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/Group_651239_1.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    }
+  },
+  "order": [
+    "topheader",
+    "product",
+    "dealsImage",
+    "dealsAbout",
+    "dealfeaturelist",
+    "section_image_text_HeHafC",
+    "deals_testimonials",
+    "dealssteps",
+    "dealsquickeasy",
+    "section_image_text_DMpfFp"
+  ]
+}

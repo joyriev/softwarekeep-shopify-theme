@@ -1,0 +1,32 @@
+{% comment %}
+  Renders product breadcrumbs
+
+  Accepts:
+  - product: {Object} Product Liquid object (required)
+
+  Usage:
+  {% render 'product-breadcrumbs', product: product %}
+{% endcomment %}
+{% if product %}
+  <ul class="site-breadcrumbs">
+    <li class="bc-item">
+      <a href="/">Home</a>
+    </li>
+    <li class="bc-arrow">
+      <span>
+        <img src="{{ 'angle-right.svg' | asset_url }}" alt=">" />
+      </span>
+    </li>
+    <li class="bc-item">
+      <a href="/products">Products</a>
+    </li>
+    <li class="bc-arrow">
+      <span>
+        <img src="{{ 'angle-right.svg' | asset_url }}" alt=">" />
+      </span>
+    </li>
+    <li class="bc-item">
+      <span>{{ product.title }}</span>
+    </li>
+  </ul>
+{% endif %}

@@ -1,0 +1,715 @@
+<div class="top-bar-main-container">
+  <div class="max-width">
+    <div class="top_wrpers">
+    <ul class="contact-menu">
+        {%- if section.settings.helpline != blank -%}
+          <li class="top_h-list">
+            <div class="contact-icon svgs_icon">
+            <a href="{{ section.settings.help_line }}">
+              {% render 'contactsvg' %}
+                <span class="link">{{ section.settings.helpline | escape }}</span>
+             </a>
+            </div>
+         
+          </li>
+       {%- endif -%}
+
+       {%- if section.settings.chat != blank -%} 
+        <li class="top_h-list">
+          <div class="contact-icon svgs_icon">
+            <a href="tel:{{ section.settings.chat }}">
+            {% render 'phonesvg' %}
+            <span class="link">{{ section.settings.chat }}</span>
+           </a>
+          </div>
+        </li>
+      {%- endif -%}
+            
+    </ul>
+    
+      <div class="trust_p-wraps">
+        <!-- TrustBox widget - Micro Combo -->
+        <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="574d4e690000ff00058d9a36" data-style-height="20px" data-style-width="100%" data-theme="light">
+          <a href="https://www.trustpilot.com/review/softwarekeep.com" target="_blank" rel="noopener">Trustpilot</a>
+        </div>
+        <!-- End TrustBox widget -->
+      </div>
+
+      <div class="tp_acc-link">
+                <span class="right-side-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+            <g clip-path="url(#clip0_20_2)">
+              <path d="M6.40736 6.26214C7.26767 6.26214 8.01263 5.95358 8.62131 5.3448C9.22999 4.73613 9.53854 3.99137 9.53854 3.13097C9.53854 2.27086 9.22999 1.52601 8.62121 0.917134C8.01243 0.308554 7.26757 0 6.40736 0C5.54696 0 4.8022 0.308554 4.19352 0.917233C3.58484 1.52591 3.27618 2.27077 3.27618 3.13097C3.27618 3.99137 3.58484 4.73623 4.19362 5.3449C4.8024 5.95348 5.54726 6.26214 6.40736 6.26214Z" fill="#607181"/>
+              <path d="M11.5844 9.99635C11.5668 9.74304 11.5313 9.46671 11.4791 9.17492C11.4263 8.88095 11.3584 8.60304 11.277 8.34904C11.193 8.0865 11.0788 7.82724 10.9375 7.57879C10.7909 7.32092 10.6188 7.09637 10.4255 6.9116C10.2235 6.71829 9.97615 6.56287 9.69011 6.44951C9.40506 6.33674 9.08916 6.27961 8.75125 6.27961C8.61855 6.27961 8.4902 6.33406 8.24235 6.49543C8.08981 6.59491 7.91138 6.70996 7.71222 6.83721C7.54192 6.94571 7.31123 7.04738 7.02628 7.13942C6.74827 7.22937 6.466 7.275 6.18739 7.275C5.90879 7.275 5.62662 7.22937 5.34831 7.13942C5.06366 7.04747 4.83296 6.94581 4.66286 6.83731C4.46559 6.71125 4.28706 6.5962 4.13224 6.49533C3.88468 6.33396 3.75624 6.27951 3.62354 6.27951C3.28552 6.27951 2.96973 6.33674 2.68478 6.44961C2.39893 6.56277 2.15147 6.71819 1.94924 6.91169C1.75613 7.09657 1.58385 7.32102 1.43746 7.57879C1.29633 7.82724 1.18207 8.0864 1.09796 8.34914C1.01673 8.60314 0.948792 8.88095 0.896027 9.17492C0.843758 9.46632 0.80825 9.74274 0.790695 9.99664C0.773438 10.2454 0.764709 10.5036 0.764709 10.7643C0.764709 11.4429 0.980431 11.9923 1.40582 12.3974C1.82596 12.7972 2.38187 13.0001 3.0579 13.0001H9.31748C9.99351 13.0001 10.5492 12.7973 10.9695 12.3974C11.395 11.9926 11.6107 11.4431 11.6107 10.7642C11.6106 10.5023 11.6017 10.2439 11.5844 9.99635Z" fill="#607181"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_20_2">
+                <rect width="13" height="13" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          {% if section.settings.account != blank %}
+            <a href="{{ section.settings.account_link }}" class="link">{{ section.settings.account | escape }}</a>
+          {% endif %}
+        </span>
+      </div>
+    </div>
+  </div>       
+</div>
+{% schema %}
+{
+  "name": {
+    "en": "Top bar"
+  },
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Help"
+    },
+    {
+      "type": "image_picker",
+      "label": "Mobile Image",
+      "id": "top_banner_image_mobile",
+      "info": "Upload images to display in this section in Mobile."
+    },
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "top_banner_image",
+      "info": "Upload images to display in this section."
+    },
+    {
+      "type": "image_picker",
+      "label": "Flag Image Icon",
+      "id": "flag_image"
+    },
+    {
+      "type": "text",
+      "id": "country_flag",
+      "label": "Flag Country Name"
+    },
+
+    {
+      "type": "text",
+      "id": "helpline",
+      "label": "label"
+    },
+    {
+      "type": "text",
+      "id": "help_line",
+      "label": "link"
+    },
+    {
+      "type": "text",
+      "id": "phone_no",
+      "label": "label"
+    },
+    {
+      "type": "text",
+      "id": "chat",
+      "label": "label"
+    },
+     {
+      "type": "text",
+      "id": "button_label",
+      "label": "label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "link"
+    },
+    {
+      "type": "text",
+      "id": "button__label",
+      "label": "label"
+    },
+    {
+      "type": "url",
+      "id": "button__link",
+      "label": "link"
+    },
+    {
+      "type": "text",
+      "id": "button-label",
+      "label": "label"
+    },
+    {
+      "type": "url",
+      "id": "button-link",
+      "label": "link"
+    },
+    {
+      "type": "text",
+      "id": "quiz_label",
+      "label": "label"
+    },
+    {
+      "type": "url",
+      "id": "quiz_link",
+      "label": "link"
+    },
+    {
+      "type": "text",
+      "id": "bestseller_label",
+      "label": "label"
+    },
+    {
+      "type": "url",
+      "id": "bestseller_link",
+      "label": "link"
+    },
+    {
+      "type": "text",
+      "id": "account",
+      "label": "View more label"
+    },
+    {
+      "type": "url",
+      "id": "account_link",
+      "label": "View more link"
+    },
+    {
+      "type": "text",
+      "id": "help_center",
+      "label": "View more label"
+    },
+    {
+      "type": "url",
+      "id": "help_link",
+      "label": "View more link"
+    }
+
+
+  ],
+  "blocks": [
+      {
+    "type": "contact",
+    "name": "Contact",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "enabled",
+            "label": "Show for desktop",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "enabledMobile",
+            "label": "Show for mobile",
+            "default": true
+        },
+        {
+            "id": "align",
+            "label": "Alignment",
+            "type": "select",
+            "options": [
+                {"value": "auto", "label": "Auto"},
+                {"value": "start", "label": "Left"},
+                {"value": "center", "label": "Center"},
+                {"value": "end", "label": "Right"}
+            ],
+            "default": "auto"
+        },
+        {
+            "id": "showPhone",
+            "label": "Show phone",
+            "type": "checkbox",
+            "default": true
+        },
+        {
+            "id": "showEmail",
+            "label": "Show email",
+            "type": "checkbox",
+            "default": true
+        }
+    ]
+    },{
+    "type": "linkList",
+    "name": "Links",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "enabled",
+            "label": "Show for desktop",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "enabledMobile",
+            "label": "Show for mobile",
+            "default": true
+        },
+        {
+            "id": "align",
+            "label": "Alignment",
+            "type": "select",
+            "options": [
+                {"value": "auto", "label": "Auto"},
+                {"value": "start", "label": "Left"},
+                {"value": "center", "label": "Center"},
+                {"value": "end", "label": "Right"}
+            ],
+            "default": "auto"
+        },
+        {
+            "id": "links",
+            "label": "Link list",
+            "type": "link_list"
+        }
+    ]
+    },{
+    "type": "barTextMarquee",
+    "name": "Scrolling messages",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "enabled",
+            "label": "Show for desktop",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "enabledMobile",
+            "label": "Show for mobile",
+            "default": true
+        },
+        {
+            "id": "align",
+            "label": "Alignment",
+            "type": "select",
+            "options": [
+                {"value": "auto", "label": "Auto"},
+                {"value": "start", "label": "Left"},
+                {"value": "center", "label": "Center"},
+                {"value": "end", "label": "Right"}
+            ],
+            "default": "auto"
+        },
+        {
+            "id": "messages",
+            "type": "richtext",
+            "label": "Messages to scroll",
+            "info": "Separate messages with enter/return (new line)",
+            "default": "<p>This is one message</p><p>This is another one</p>"
+        }
+    ]
+},{
+    "type": "topNewsletter",
+    "name": "Newsletter",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Bar Settings"
+        },
+        {
+            "id": "bar_title",
+            "type": "text",
+            "label": "Bar title",
+            "default": "Subscribe to Newsletter"
+        },
+        {
+            "id": "sub_btn_title",
+            "type": "text",
+            "label": "Subscribe button title",
+            "default": "Subscribe"
+        },
+        {
+            "type": "radio",
+            "id": "subColorCombo",
+            "label": "Subscription button color",
+            "default": "sectionColors",
+            "options": [
+                { "value": "sectionColors", "label": "Section combination" },
+                { "value": "customColors", "label": "Custom combination" }
+            ]
+        },
+        {
+          "type": "color",
+          "id": "subColor",
+          "label": "Subscription fill color",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "subBorder",
+          "label": "Subscription border color",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "range",
+          "id": "subRadius",
+          "label": "Subscription button radius",
+          "default": 0,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "subPaddingX",
+          "label": "Subscription button padding X",
+          "default": 6,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "subPaddingY",
+          "label": "Subscription button padding Y",
+          "default": 1,
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+            "type": "checkbox",
+            "id": "enabled",
+            "label": "Show for desktop",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "enabledMobile",
+            "label": "Show for mobile",
+            "default": true
+        },
+        {
+            "id": "align",
+            "label": "Alignment",
+            "type": "select",
+            "options": [
+                {"value": "auto", "label": "Auto"},
+                {"value": "start", "label": "Left"},
+                {"value": "center", "label": "Center"},
+                {"value": "end", "label": "Right"}
+            ],
+            "default": "auto"
+        },
+        {
+            "type": "header",
+            "content": "Popup Settings"
+        },
+        {
+            "type": "select",
+            "label": "Newsletter provider",
+            "options": [
+                {"value": "shopify", "label": "Shopify"},
+                {"value": "mailchimp", "label": "Mailchimp"}
+            ],
+            "default": "shopify",
+            "id": "newsletter"
+        },
+        {
+            "id": "heading",
+            "type": "text",
+            "label": "Heading",
+            "default": "Newsletter"
+        },
+        {
+          "type": "range",
+          "id": "headingSize",
+          "label": "Heading font size",
+          "default": 40,
+          "min": 24,
+          "max": 120,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+            "id": "desc",
+            "type": "textarea",
+            "label": "Description",
+            "default": "Lorem ipsum dolor sit amet consectetur . Pharetra nullam etiam aenean eusmod enim"
+        },
+        {
+          "type": "range",
+          "id": "descFontSize",
+          "label": "Description font size",
+          "default": 16,
+          "min": 12,
+          "max": 50,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+            "type": "image_picker",
+            "id": "newsletter_img",
+            "label": "Custom image"
+        },
+        {
+            "type": "url",
+            "id": "newsletter_img_link",
+            "label": "Image link"
+        },
+        {
+            "type": "radio",
+            "id": "colorCombo",
+            "label": "Color combination",
+            "default": "primaryCombo",
+            "options": [
+                { "value": "primaryCombo", "label": "Primary combination" },
+                { "value": "secondaryCombo", "label": "Secondary combination" },
+                { "value": "customCombo", "label": "Custom combination"}
+            ]
+        },
+        {
+          "type": "color",
+          "id": "customFillColor",
+          "label": "Custom fill color",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+            "type": "radio",
+            "default": "secondary",
+            "label": "Button type",
+            "options": [
+                {"value": "primary", "label": "Primary combination"},
+                {"value": "secondary", "label": "Secondary combination"},
+                {"value": "custom", "label": "Custom combination"}
+            ],
+            "id": "buttonType"
+        },
+        {
+          "type": "color",
+          "id": "buttonColor",
+          "label": "Button fill color",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "color",
+          "id": "buttonBorder",
+          "label": "Button border color",
+          "default": "rgba(0,0,0,0)"
+        },
+        {
+          "type": "range",
+          "id": "subBtnSize",
+          "label": "Exit button Size",
+          "default": 30,
+          "min": 12,
+          "max": 100,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+          "type": "color",
+          "id": "subBtnColor",
+          "label": "Exit button color",
+          "default": "#fff"
+        }
+    ]
+    },{
+    "type": "social",
+    "name": "Social media",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "enabled",
+            "label": "Show for desktop",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "enabledMobile",
+            "label": "Show for mobile",
+            "default": true
+        },
+        {
+            "id": "align",
+            "label": "Alignment",
+            "type": "select",
+            "options": [
+                {"value": "auto", "label": "Auto"},
+                {"value": "start", "label": "Left"},
+                {"value": "center", "label": "Center"},
+                {"value": "end", "label": "Right"}
+            ],
+            "default": "auto"
+        }
+    ]
+},
+      {
+          "type": "freeShippingBar",
+          "name": "Free Shipping Bar [APP]",
+          "settings": [
+            {
+                "type": "checkbox",
+                "id": "enabled",
+                "label": "Show for desktop",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "enabledMobile",
+                "label": "Show for mobile",
+                "default": true
+            },
+            {
+                "id": "align",
+                "label": "Alignment",
+                "type": "select",
+                "options": [
+                    {"value": "auto", "label": "Auto"},
+                    {"value": "start", "label": "Left"},
+                    {"value": "center", "label": "Center"},
+                    {"value": "end", "label": "Right"}
+                ],
+                "default": "auto"
+            },
+            {
+        "type": "text",
+        "label": "Free shipping text",
+        "id": "freeText",
+        "default": "Only %AMOUNT% more for free shipping!"
+    },
+    {
+        "type": "text",
+        "label": "Achieved shipping goal",
+        "id": "gotFreeText",
+        "default": "You are eligible for free shipping!"
+    },
+    {
+        "type": "range",
+        "label": "Bar height",
+        "id": "barHeight",
+        "default": 8,
+        "min": 0,
+        "max": 32,
+        "info": "If set to 0, bar will be disabled (hidden).",
+        "step": 1,
+        "unit": "px"
+    }
+          ]
+      },
+      {
+          "type": "geoBlock",
+          "name": "Geo Block",
+          "settings": [
+            {
+                "type": "checkbox",
+                "id": "enabled",
+                "label": "Show for desktop",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "enabledMobile",
+                "label": "Show for mobile",
+                "default": true
+            },
+            {
+                "id": "align",
+                "label": "Alignment",
+                "type": "select",
+                "options": [
+                    {"value": "auto", "label": "Auto"},
+                    {"value": "start", "label": "Left"},
+                    {"value": "center", "label": "Center"},
+                    {"value": "end", "label": "Right"}
+                ],
+                "default": "auto"
+            },
+            {
+        "id": "text",
+        "label": "Block text",
+        "type": "textarea",
+        "default": "%flag_emoji% This is an example for your %country% in the city of %city% %flag_svg%"
+    },
+    {
+        "type": "paragraph",
+        "content": "Available variables:, %country%, %city%, %zip%, %flag_svg%, %flag_emoji%, %language_name%, %language_native%, %language_code%, %currency_code%, %currency_name%, %currency_symbol%"
+    },
+    {
+        "type": "paragraph",
+        "content": "Location is determined based on IP address. Accuracy of precise data (city - usually first bigger city, zip - matches city) can't be 100% trusted. We are continuously working on improving data accuracy for city and zip code information."
+    },
+    {
+        "id": "url",
+        "type": "url",
+        "label": "Block link"
+    }
+          ]
+      },
+      {
+          "type": "minicart",
+          "name": "Minicart",
+          "settings": [
+            {
+                "type": "checkbox",
+                "id": "enabled",
+                "label": "Show for desktop",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "enabledMobile",
+                "label": "Show for mobile",
+                "default": true
+            },
+            {
+                "id": "align",
+                "label": "Alignment",
+                "type": "select",
+                "options": [
+                    {"value": "auto", "label": "Auto"},
+                    {"value": "start", "label": "Left"},
+                    {"value": "center", "label": "Center"},
+                    {"value": "end", "label": "Right"}
+                ],
+                "default": "auto"
+            },
+            {
+        "type": "header",
+        "content": "Cart"
+    },
+    {
+        "type": "select",
+        "label": "Cart icon",
+        "id": "cartIcon",
+        "options": [
+            {
+                "value": "shopping-bag",
+                "label": "Bag"
+            },
+            {
+                "value": "shopping-cart",
+                "label": "Cart"
+            },
+            {
+                "value": "shopping-basket",
+                "label": "Basket"
+            },
+            {
+                "value": "text",
+                "label": "Text only"
+            }
+        ],
+        "default": "shopping-cart"
+    }
+          ]
+      }
+    ]
+}
+{% endschema %}
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function(event) {
+    let lc = document.getElementById('localization-country');
+    if (lc) {
+      lc.addEventListener('change', function(event) {
+        event.currentTarget.parentNode.parentNode.submit();
+      });
+    }
+    let ll = document.getElementById('localization-language');
+    if (ll) {
+      ll.addEventListener('change', function(event) {
+        event.currentTarget.parentNode.parentNode.submit();
+      });
+    }
+  });
+</script>

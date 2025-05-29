@@ -1,0 +1,309 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "height": 300,
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": "medium",
+        "contentColor": "rgba(0,0,0,0)",
+        "fillColor": "rgba(0,0,0,0)",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "content": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "cf42d245-72aa-4ebd-bc63-fca6dcb2681c": {
+      "type": "section__columns",
+      "blocks": {
+        "b80bdc63-e325-46ac-9784-f22b32a07064": {
+          "type": "columnIcon",
+          "settings": {
+            "icon": "",
+            "iconSize": 15,
+            "iconColor": "rgba(0,0,0,0)",
+            "heading": "",
+            "content": "<div class=\"trusted_business\">\n<h4>Trusted by <span>100,000+</span>\nindividuals &amp; businesses in USA</h4>\n</div>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "0e6968e9-9596-4501-8c9f-58266484b71a": {
+          "type": "columnIcon",
+          "settings": {
+            "icon": "",
+            "iconSize": 40,
+            "iconColor": "rgba(0,0,0,0)",
+            "heading": "",
+            "content": "<p>We exist to make technology easily accessible by helping people (like you) choose the right product, at some of the best prices. If you're looking for genuine Microsoft software partner, then you're in the right place. Shop with us Today! But don't take our WORD for it. Here's what others are saying.</p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        }
+      },
+      "block_order": [
+        "b80bdc63-e325-46ac-9784-f22b32a07064",
+        "0e6968e9-9596-4501-8c9f-58266484b71a"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_id": "power_service_reviw",
+        "displayFor": "display--both",
+        "layout": "stretchBg",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "bottom",
+        "backgroundFilter": "none",
+        "backdropIntensity": 40,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 0,
+        "colGap": 10,
+        "textAlign": "start",
+        "contentAlign": "top",
+        "colCount": "col-md-6"
+      }
+    },
+    "e780ddd2-3fad-43cf-ba93-d66241cbed35": {
+      "type": "section__columns",
+      "blocks": {
+        "6f50cfee-f09f-4673-a37f-cd4c221551b6": {
+          "type": "columnIcon",
+          "settings": {
+            "icon": "",
+            "iconSize": 40,
+            "iconColor": "rgba(0,0,0,0)",
+            "heading": "<h1><strong>96%</strong></h1>",
+            "content": "<p>of customers recommend us</p><p></p>\n<div class=\"review_logo\"><img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/logo-trustpilot.png?v=1706524776\"></div>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "ea990f89-e812-475c-a4f0-a0113f4bf12d": {
+          "type": "columnIcon",
+          "settings": {
+            "icon": "",
+            "iconSize": 40,
+            "iconColor": "rgba(0,0,0,0)",
+            "heading": "<h1><strong>98.68%</strong></h1>",
+            "content": "<p>positive reviews on</p>\n<div class=\"review_logo\"><img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/logo-trustpilot.png?v=1706524776\"></div>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "38735d6c-edab-40da-964c-c5cd3aee7939": {
+          "type": "columnIcon",
+          "settings": {
+            "icon": "",
+            "iconSize": 40,
+            "iconColor": "rgba(0,0,0,0)",
+            "heading": "<h1><strong>94%</strong></h1>",
+            "content": "<p>rated us excellent on</p>\n<div class=\"review_logo\"><img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/resellerratings.png?v=1706524776\"></div>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "column_icon_Ajjdqf": {
+          "type": "columnIcon",
+          "settings": {
+            "icon": "",
+            "iconSize": 40,
+            "iconColor": "rgba(0,0,0,0)",
+            "heading": "<h1><strong>237k+</strong></h1>",
+            "content": "<p>customers served</p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "column_icon_gwLAmz": {
+          "type": "columnIcon",
+          "settings": {
+            "icon": "",
+            "iconSize": 40,
+            "iconColor": "rgba(0,0,0,0)",
+            "heading": "<h1><strong>115K+</strong></h1>",
+            "content": "<p>reviews worldwide</p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        }
+      },
+      "block_order": [
+        "6f50cfee-f09f-4673-a37f-cd4c221551b6",
+        "ea990f89-e812-475c-a4f0-a0113f4bf12d",
+        "38735d6c-edab-40da-964c-c5cd3aee7939",
+        "column_icon_Ajjdqf",
+        "column_icon_gwLAmz"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_id": "customer_reviews",
+        "displayFor": "display--both",
+        "layout": "stretchBg",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 250,
+        "padding": 10,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 50,
+        "colGap": 20,
+        "textAlign": "center",
+        "contentAlign": "top",
+        "colCount": "col-md-4"
+      }
+    },
+    "review_page_video_UM3qWt": {
+      "type": "review-page-video",
+      "settings": {
+        "sec_title": ""
+      }
+    },
+    "e4864b5f-4565-47f8-ad36-649344b73e59": {
+      "type": "section__cta",
+      "blocks": {
+        "template--14807614881847__e4864b5f-4565-47f8-ad36-649344b73e59-title-1": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "Start browsing the softwares we offer",
+            "textColor": "#ffffff",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "template--14807614881847__e4864b5f-4565-47f8-ad36-649344b73e59-button-1": {
+          "type": "button",
+          "settings": {
+            "fullWidth": true,
+            "text": "Show me what you got",
+            "url": "shopify://collections/microsoft-office",
+            "icon": "",
+            "iconPosition": "icon--left",
+            "wideButton": false,
+            "buttonStyle": "primary",
+            "buttonType": "default",
+            "fontSize": "base",
+            "fontFamily": "base",
+            "animation": "none",
+            "animationDuration": 1000,
+            "animationInfinite": true
+          }
+        }
+      },
+      "block_order": [
+        "template--14807614881847__e4864b5f-4565-47f8-ad36-649344b73e59-title-1",
+        "template--14807614881847__e4864b5f-4565-47f8-ad36-649344b73e59-button-1"
+      ],
+      "settings": {
+        "custom_id": "browsing_software",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 290,
+        "padding": 25,
+        "lineMargin": 12,
+        "backgroundColor": "#1266cc",
+        "backgroundImage": "shopify://shop_images/bg-offer-about.png",
+        "backgroundImageUrl": "",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "cf42d245-72aa-4ebd-bc63-fca6dcb2681c",
+    "e780ddd2-3fad-43cf-ba93-d66241cbed35",
+    "review_page_video_UM3qWt",
+    "e4864b5f-4565-47f8-ad36-649344b73e59"
+  ]
+}

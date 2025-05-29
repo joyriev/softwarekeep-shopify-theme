@@ -1,0 +1,535 @@
+.visio-max-width{
+  max-width: 1490px;
+  margin: 0 auto;
+}
+
+.visio-banner-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #EEF0F0;
+}
+.v_content{
+  padding: 55px;
+  width: 64%;
+}
+.v_image{
+  width: 36%;
+  max-width: 536px;
+}
+.v_image img{
+  display: block;
+  width: 100%;
+  object-fit:cover;
+  height: 100%;
+}
+.v_content_wrap{
+  max-width: 588px;
+}
+.v_content_wrap h1{
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+.v_content_wrap p{
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 20px 0;
+}
+.v_content_wrap .button{
+  background: #1A4685;
+  padding: 8px 15px;
+  color: #FFF;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150.412%;
+  width: 100%;
+  max-width: 124px;
+}
+.v_content_wrap .learn{
+      color: #354DE6;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 45px;
+}
+.v-product-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 820px;
+  margin: 0 auto;
+}
+.product-box{
+  padding: 55px 40px 20px;
+  width: calc(50% - 15px);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;  
+}
+.product-box.green .addon li:before{
+  background-image: url('https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_55_1.svg?v=1719490403');
+}
+.product-box .price_wrapper{
+  position: relative;
+}
+.visio-product-box .product-box.green .button--addToCart{
+  background: #05AA16;
+}
+.visio-product-box .product-box.blue .button--addToCart{
+  background: #1a4685;
+}
+.visio-product-box .product-box.blue .button--addToCart:hover{
+  background: #1a4685;
+}
+.tag-discount{
+  position: absolute;
+  right: 0;
+  top: -25px;
+  color: #FFF;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 2px;
+  background: #F00;
+  padding: 4px 6px;
+}
+.product-box:before{
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    border: 4px solid rgba(0, 0, 0, .25);
+    filter: blur(2px);
+    z-index: -1;
+}
+.visio-product-box{
+  margin: 100px 0;
+}
+.visio-product-box .product_name{
+  color: #000;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%;
+  margin: 0 0 30px 0;
+}
+.visio-product-box .main_price{
+      color: #036AB5;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 123%;
+}
+.visio-product-box .main_price+p{
+  color: #000;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 10px 0;
+}
+.visio-product-box .button--addToCart{
+  background: #1A4685;
+  color: #fff;
+  width: 100%;
+  max-width: 173px;
+  margin: 30px auto;  
+}
+.visio-product-box .uil-shopping-cart, .v_products .uil-shopping-cart{
+  display: none;
+}
+.addon ul{
+list-style-type: none;
+padding: 0 0 0 50px;
+}
+.addon li{
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 25px; 
+  position: relative;
+}
+.addon li:before{
+  content: '';
+  background-image: url('https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_55.svg?v=1719395982');
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  left: -48px;
+  top: 0;
+}
+.product-left{
+  padding-left: 35px;
+  width: 25%;
+}
+.product-left p svg{
+  margin-right: 20px;
+}
+.product-left p{
+  color: #000;
+font-family: Ubuntu;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 123%; /* 22.14px */
+  margin: 11px 0 0 0;
+  display: flex;
+  align-items:center;
+}
+.product-right{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 740px;
+  padding-right: 70px;
+}
+.v_products{
+  width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+    background: #EEF0F0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 30px 20px;  
+}
+.compare-visio-options .button--addToCart span{
+  opacity: 0;
+}
+.compare-visio-options .button--addToCart{
+  position: relative;
+}
+.compare-visio-options .button--addToCart:before{
+  content: 'BUY NOW';
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: normal;
+}
+.product-block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-block.second{
+  margin-top: 40px;
+}
+.v_products .product_name, .v_products .main_price, .v_products p{
+      color: #000;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  margin:0;
+}
+.v_products .button--addToCart{
+      background: #1A4685;
+    color: #fff;
+    text-align: center;
+  margin-top: 17px;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150.412%;
+    width: 100%;
+    max-width: 173px;
+    height: 38px;
+}
+.accordion {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.accordion-header{
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+  height: 73px;
+  border: 1px solid #696969;
+  position:relative;
+}
+.accordion-header:before{
+  content: "";
+  position: absolute;
+  right: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  margin-left: 0;
+  margin-top: 0;
+  border-top: 3px solid;
+}
+.accordion-header:after{
+  content: '';
+  position: absolute;
+  right: 53px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 18px;
+  margin-left: 0;
+  margin-top: 0;
+  border-left: 3px solid;
+  transition: all .2s ease-in-out;
+}
+.accordion.active .accordion-header:after{
+  transform: translateY(-50%) rotate(90deg);
+}
+.accordion-header span{
+  height: 28px;
+}
+.accordion-header span:nth-child(1){
+  line-height: 28px;
+  width: 45%;
+}
+.accordion-header span:nth-child(2), .accordion-header span:nth-child(3){
+  width: calc(27.5% - 60px);
+  display: flex;
+  justify-content:center;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px 70px;
+}
+.table-accordion{
+  margin-top: 30px;
+}
+.accordion.active .accordion-header{
+  border-bottom: unset;
+}
+.accordion.active .accordion-content{
+  border-right: 1px solid rgb(105, 105, 105);
+  border-bottom: 1px solid rgb(105, 105, 105);
+  border-left: 1px solid rgb(105, 105, 105);
+}
+.controls {
+  margin-bottom: 10px;
+  position: relative;
+  top: -48px;
+  margin: 0;
+}
+.controls button{
+  background: unset;
+  border: unset;
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%;
+}
+
+.table_wrap tr:nth-child(even){
+  background: unset;
+  color: #000;
+}
+.table_wrap tr td{
+  padding: 6px;
+  background: #EEF0F0;
+}
+.table_wrap tr:hover{
+  background: unset;
+}
+.table_wrap tr td:nth-child(2){
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+}  
+.table_wrap tr td:nth-child(1){
+  width: 43.5%;
+  color: #000;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px 5px 10px 45px;
+  line-height: 123%;  
+}
+.table_wrap tr:not(:last-child){
+   border-bottom: 5px solid #fff; 
+}
+.table_wrap tr td:nth-child(2), .table_wrap tr td:nth-child(3){
+  width: 27.5%;
+  text-align:center;
+}
+.product-block.second .product-right .v_products:nth-child(1) .button--addToCart{
+  background: #05AA16;
+}
+/*Responsive*/
+
+@media screen and (max-width: 1500px){
+  .table-accordion{
+    padding: 0 20px;
+  }
+  .product-left{
+    width: 35%;
+  }
+  .product-right{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 900px){
+  .visio-product-box{
+    margin: 50px 0;
+  }
+  .v-product-box{
+    padding: 0 30px;
+  }
+  .product-box{
+    padding: 35px 20px 20px;
+  }
+  .visio-product-box .product_name{
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 10px;
+  }
+  .visio-product-box .main_price{
+        font-size: 42px;
+    line-height: 50px;
+  }
+  .visio-product-box .button--addToCart{
+    margin: 15px auto;
+  }
+  .v_products{
+    width: calc(50% - 10px);
+  }
+  .product-right{
+    padding-right: 20px;
+  }
+  .accordion-content{
+    padding: 10px 30px;
+  }
+  .product-left{
+    padding-left: 20px;
+  }
+  .product-left p, .accordion-header span:nth-child(1){
+    font-size: 16px;
+  }
+  .v_products .main_price{
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 767px){
+  
+  .v_content, .v_image{
+    width: 100%;
+  }
+  .v_content{
+    padding: 30px 20px;
+  }
+  .v_content_wrap h1{
+    font-size: 32px;
+  }
+  .visio-banner-wrapper{
+    flex-direction: column-reverse;
+  }
+  .product-box{
+    width: 100%;
+  }
+  .v-product-box{
+    padding: 0 20px;
+    gap: 30px;
+  }
+  .addon li:before{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -40px;
+    top: 0;
+    background-size: 100%;
+  }
+  .visio-product-box .main_price{
+      font-size: 52px;
+      line-height: 60px;
+      margin: 15px 0;
+    }
+    .product-left, .product-right{
+      width: 100%;
+      padding: 0 20px;
+      margin-top: 20px;
+    }
+    .compare-visio-options .button--addToCart:before{
+      font-size: 15px;
+    }
+    .v_products{
+      width: calc(50% - 5px);
+        padding: 20px 10px;
+    }
+    .controls{
+      top: 0;
+      margin: 50px 0 20px;
+    }
+    .table-accordion{
+      overflow-x: scroll;
+    }
+    .accordion{
+      width: 500px;
+    }
+  .accordion-header span:nth-child(1){
+    width: 70%;
+    font-size: 15px; 
+  }
+  .accordion-header{
+    padding: 10px 40px 10px 10px;
+    height: 55px;
+  }
+  .accordion-header span:nth-child(2), .accordion-header span:nth-child(3){
+    width: 15%;
+  }
+  .product-block.second{
+    margin: 0 0 40px;
+  }
+  .accordion-header:after{
+    right: 28px;
+  }
+  .accordion-header:before{
+    right: 20px;
+  }
+  .table_wrap tr td:nth-child(1){
+    padding: 10px 5px 10px 15px;
+    font-size: 12px;
+  }
+  .visio-banner{
+    margin-top: 30px;
+  }
+  
+}

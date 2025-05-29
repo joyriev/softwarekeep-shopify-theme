@@ -1,0 +1,622 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "topicons": {
+      "type": "product-top-icon",
+      "settings": {
+        "tpiconss": true
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {}
+    },
+    "page": {
+      "type": "shopify-us-product",
+      "blocks": {
+        "ppTitle": {
+          "type": "productPageTitle",
+          "settings": {
+            "noMargin": true,
+            "color": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "medium"
+          }
+        },
+        "85274946-6b03-41b3-87b7-e474f2f30fed": {
+          "type": "productPageReviewStars",
+          "settings": {
+            "noMargin": false
+          }
+        },
+        "ppPrice": {
+          "type": "productPagePrice",
+          "settings": {
+            "noMargin": false,
+            "color": "#1d924e",
+            "newPriceColor": "#1d924e",
+            "oldPriceColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "medium"
+          }
+        },
+        "ppATC": {
+          "type": "productPageATC",
+          "settings": {
+            "noMargin": false,
+            "stickyATC": "scroll"
+          }
+        }
+      },
+      "block_order": [
+        "ppTitle",
+        "85274946-6b03-41b3-87b7-e474f2f30fed",
+        "ppPrice",
+        "ppATC"
+      ],
+      "settings": {
+        "disable_sticky": false,
+        "main_prfeaturelist": "<li>\n            <div class=\"features-img\">\n              <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/pdp-devices-icon.svg\" alt=\"computer-mobile\" width=\"20\" height=\"20\">\n               <span>For PC, or Mac</span>\n            </div>\n           \n        </li>\n          <li>\n            <div class=\"features-img\">\n              <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/pdp-cloud-icon.svg\" alt=\"cloud\" width=\"20\" height=\"20\">\n               <span>Lifetime Warranty<span>\n            </span></span>\n</div>\n           \n          </li>\n          <li>\n             <div class=\"features-img\">\n              <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/pdp-user-icons.svg?v=1722513521\" alt=\"License one person\" width=\"20\" height=\"20\">\n               <span>For one person</span>\n             </div>\n           </li>",
+        "discount_text": "Save extra 12% Off with Code: GEEKDAY",
+        "view": "marketplace",
+        "layout": "max-width",
+        "galleryStyle": "default",
+        "galleryPosition": "left",
+        "autoZoom": false,
+        "autoChange": false,
+        "galleryImageFit": "contain",
+        "galleryImageGap": 16,
+        "productNavigation": false,
+        "productMainImageSize": "crop",
+        "imageSticky": false,
+        "imageStickyPosition": 100
+      }
+    },
+    "brand_logo_carousel_gQ6QN9": {
+      "type": "brand-logo-carousel",
+      "blocks": {
+        "logo_JFi3Rj": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/kelloggs-logo_monochrome-black.svg"
+          }
+        },
+        "logo_QcnMWq": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/lowes-logo_monochrome-black.svg"
+          }
+        },
+        "logo_Pa3W49": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/nasa-worm-logo_monochrome-black.svg"
+          }
+        },
+        "logo_KxxGHB": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/netflix-logo_monochrome-black.svg"
+          }
+        },
+        "logo_kcGQJY": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/pfizer-logo_monochrome-black.svg"
+          }
+        },
+        "logo_pM87EP": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "logoimage": "shopify://shop_images/qualcomm-logo_monochrome-black.svg"
+          }
+        },
+        "logo_Dpj9gB": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "logoimage": "shopify://shop_images/spotify-logo_monochrome-black.svg"
+          }
+        }
+      },
+      "block_order": [
+        "logo_JFi3Rj",
+        "logo_QcnMWq",
+        "logo_Pa3W49",
+        "logo_KxxGHB",
+        "logo_kcGQJY",
+        "logo_pM87EP",
+        "logo_Dpj9gB"
+      ],
+      "disabled": true,
+      "settings": {
+        "secbg": "#ffffff",
+        "margingap": 10,
+        "maxwidth": "",
+        "title": "SoftwareKeep is Trusted by"
+      }
+    },
+    "17b3c4da-6ec2-43f7-b402-382e47a862a0": {
+      "type": "section__icon-with-text",
+      "blocks": {
+        "8e234133-6f92-4889-acb0-7d76313eaa5a": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/cloud-computing.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Instant Digital Download",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#f5f5f5",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "06111a55-1b77-435d-908b-1434dba77499": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/guarantee_9e04d0fa-c00d-4474-957f-651e64b36347.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Lifetime Product Guarantee",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#f5f5f5",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "5bcae1da-9417-402e-9c0e-5614042328c4": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/new-year_1.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Year Round Service",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "#f5f5f5",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "4ce468bb-52ee-44e3-919e-6bd516b02e72": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/certified.svg",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Microsoft Certified Partner",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#191d21",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#191d21",
+            "home_guarantee_block_background_color": "#f5f5f5",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "8e234133-6f92-4889-acb0-7d76313eaa5a",
+        "06111a55-1b77-435d-908b-1434dba77499",
+        "5bcae1da-9417-402e-9c0e-5614042328c4",
+        "4ce468bb-52ee-44e3-919e-6bd516b02e72"
+      ],
+      "disabled": true,
+      "settings": {
+        "Slider_enbalemobile": true,
+        "home_guarantee_title": "",
+        "custom_id": "shop_us-prodct",
+        "home_guarantee_title_font_size": 40,
+        "home_guarantee_title_color": "#0067b8",
+        "home_guarantee_subtitle": "",
+        "home_guarantee_subtitle_font_size": 20,
+        "home_guarantee_subtitle_color": "#042338"
+      }
+    },
+    "trustpilot_reviews_TnKWpU": {
+      "type": "trustpilot-reviews",
+      "settings": {
+        "header_title": "What Customers Say About Us",
+        "trustsecbg": "#ffffff",
+        "tpmargingap": 40,
+        "pading_botm": 20
+      }
+    },
+    "desciption": {
+      "type": "description-products",
+      "settings": {
+        "descbg": "#fff",
+        "descbgx": ""
+      }
+    },
+    "home_comparison_content_QkEzm4": {
+      "type": "home-comparison-content",
+      "blocks": {
+        "comparison_item_Yra7JE": {
+          "type": "comparison_item",
+          "settings": {
+            "header": "Brand",
+            "logo": "shopify://shop_images/logo-keep.png",
+            "customer_service": "Big Box Retailers",
+            "price": "",
+            "service1": "",
+            "warranty": "",
+            "background_color": "#f5f5f5"
+          }
+        },
+        "comparison_item_qwjNVh": {
+          "type": "comparison_item",
+          "settings": {
+            "header": "Brand",
+            "customer_service": "",
+            "price": "",
+            "service1": "",
+            "warranty": "",
+            "background_color": "#f5f5f5"
+          }
+        },
+        "comparison_item_8RzwxC": {
+          "type": "comparison_item",
+          "settings": {
+            "header": "Brand",
+            "customer_service": "",
+            "price": "",
+            "service1": "",
+            "warranty": "",
+            "background_color": "#f5f5f5"
+          }
+        }
+      },
+      "block_order": [
+        "comparison_item_Yra7JE",
+        "comparison_item_qwjNVh",
+        "comparison_item_8RzwxC"
+      ],
+      "settings": {
+        "title": "What Makes SoftwareKeep Different?"
+      }
+    },
+    "shopify_us_make_different_X9WDht": {
+      "type": "shopify-us-make-different",
+      "blocks": {
+        "text_F9Rgaf": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/29.png",
+            "htext": "Complex & Overpriced",
+            "paratext": "High costs and complicated purchasing processes can be a headache."
+          }
+        },
+        "text_rijAHL": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/30.png",
+            "htext": "Limited Support",
+            "paratext": "Limited or no customer support can leave you stuck when you need help the most."
+          }
+        },
+        "text_KCrQbV": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/31.png",
+            "htext": "Risky Downloads",
+            "paratext": "Downloading software from unverified sources risks malware and security breaches."
+          }
+        },
+        "text_h8UqQw": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/32_d6f7e4ae-3435-45e0-98aa-b6b9cbded670.png",
+            "htext": "Slow & Inconvenient",
+            "paratext": "Waiting for physical media delivery can be slow and inconvenient."
+          }
+        },
+        "text_nKNY8X": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/33_0fd31616-01de-411c-ae7c-1e67745bcb67.png",
+            "htext": "Outdated Versions",
+            "paratext": "Buying from unreliable sources can leave you with outdated software versions."
+          }
+        },
+        "text_BBVzca": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/26_b1257240-0b1a-47f9-b358-866d10d53774.png",
+            "htext": "Affordable & Straightforward",
+            "paratext": "Get premium software at unbeatable prices with a smooth, user-friendly purchase experience."
+          }
+        },
+        "text_gmecHH": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/call_center_1.png",
+            "htext": "24/7 Expert Support",
+            "paratext": "Enjoy round-the-clock access to expert support, ready to assist you with any issues or questions."
+          }
+        },
+        "text_inTMFt": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/6.png",
+            "htext": "Secure Downloads",
+            "paratext": "All software from SoftwareKeep is 100% genuine and secure, ensuring peace of mind with every download."
+          }
+        },
+        "text_WmpDrm": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/8.png",
+            "htext": "Instant Access",
+            "paratext": "Purchase and download your software instantly, getting you up and running without delay."
+          }
+        },
+        "text_i8zzfd": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/10_5283b2ad-eec4-48c7-b094-f6f23b28beda.png",
+            "htext": "Up-to-Date Software",
+            "paratext": "Always get the latest versions and updates, ensuring you have the most current and efficient software."
+          }
+        }
+      },
+      "block_order": [
+        "text_F9Rgaf",
+        "text_rijAHL",
+        "text_KCrQbV",
+        "text_h8UqQw",
+        "text_nKNY8X",
+        "text_BBVzca",
+        "text_gmecHH",
+        "text_inTMFt",
+        "text_WmpDrm",
+        "text_i8zzfd"
+      ],
+      "disabled": true,
+      "settings": {
+        "secbg": "#ffffff",
+        "heading": "What makes SoftwareKeep different?",
+        "others": "Others",
+        "image": "shopify://shop_images/logo.svg"
+      }
+    },
+    "shopify-applications-included": {
+      "type": "shopify-applications-included",
+      "blocks": {
+        "image_WkBgXn": {
+          "type": "image",
+          "repeater": "{{ product.metafields.custom.select_list_icon.value }}",
+          "settings": {
+            "blocksecbg": "#ffffff",
+            "appicimage": "{{ block.repeater.select_icon_image.value }}",
+            "appinchtext": "{{ block.repeater.text.value }}",
+            "appincparatext": "{{ block.repeater.application_paragraph_text | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "image_WkBgXn"
+      ],
+      "settings": {
+        "secbg": "#ffffff",
+        "heading": "Applications Included"
+      }
+    },
+    "summarybenefits": {
+      "type": "summary-benefits",
+      "blocks": {
+        "text_mKAVzk": {
+          "type": "text",
+          "repeater": "{{ product.metafields.custom.summary_of_benefits.value }}",
+          "settings": {
+            "icon": "{{ block.repeater.icons.value }}",
+            "ques": "{{ block.repeater.heading_text.value }}",
+            "text": "{{ block.repeater.paragraph_text | metafield_tag }}"
+          }
+        },
+        "text_zCKHni": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_10.png",
+            "ques": "Powerful productivity apps",
+            "text": "<p>Office 2021 Home and Business includes several powerful applications designed to enhance productivity:</p><p><strong>Word</strong>: Create and edit documents with advanced formatting and collaboration tools.</p><p><strong>Exce</strong>l: Analyze and visualize data with powerful spreadsheet functions and charts.</p><p><strong>PowerPoint</strong>: Design engaging presentations with a variety of templates and multimedia options.</p><p><strong>Outlook</strong>: Manage your emails, calendar, contacts, and tasks efficiently in one place.</p>"
+          }
+        },
+        "text_b7J9nA": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_11.png",
+            "ques": "1 TB of cloud storage",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_bcpc3H": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_12.png",
+            "ques": "Secure photo and file storage",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_i6CBpQ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_13.png",
+            "ques": "Personal data and device protection",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_J3p7aB": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_14.png",
+            "ques": "Ad-free, secure email",
+            "text": "<p>Office 2021 Home and Business offers secure email through Outlook, which includes several advanced security features:</p><p><strong>Data Encryption:</strong> Protects your emails both in your mailbox and after they are sent.</p><p><strong>Phishing and Malware Protection:</strong> Automatically deactivates unsafe links that may contain phishing scams, viruses, or malware.</p><p><strong>Ransomware Detection and Recovery:</strong> Helps detect ransomware attacks and recover your important files stored in </p>"
+          }
+        },
+        "text_URGXp9": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_15.png",
+            "ques": "Advanced spelling, grammar and writing assistance",
+            "text": "<p>Office 2021 Home and Business includes advanced spelling, grammar, and writing assistance through Microsoft Editor. This tool helps you write with confidence by providing:<br/></p><p><strong>Spelling and Grammar Checks:</strong> Automatically detects and corrects spelling and grammar errors.</p><p><strong>Style Suggestions</strong>: Offers recommendations for clarity, conciseness, formality, and vocabulary enhancements.</p><p><strong>Real-time Feedback:</strong> Provides instant suggestions as you type, helping you improve your writing on the go.</p>"
+          }
+        },
+        "text_yBKtT6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_16.png",
+            "ques": "Video editor with premium filters and effects",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_RHJmm9": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_18.png",
+            "ques": "Publisher (PC only)",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_cetctn": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_17.png",
+            "ques": "Access (PC only)",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_4xLC6i": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_19.png",
+            "ques": "Publisher (PC only)",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_cPVbwm": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_20.png",
+            "ques": "60 minutes of Skype calls",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_BdV9n3": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_21.png",
+            "ques": "All-day video calling with Microsoft Teams",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_6MjKCC": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_22.png",
+            "ques": "Lifetime support",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        },
+        "text_QAX34L": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "shopify://shop_images/image_415_23.png",
+            "ques": "Applications are always up to date",
+            "text": "<p>Ideal for one person for use on multiple PCs, Macs, iPhones, iPads and Android phones and tablets. (iOS and Android require separate app download.)</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_mKAVzk",
+        "text_zCKHni",
+        "text_b7J9nA",
+        "text_bcpc3H",
+        "text_i6CBpQ",
+        "text_J3p7aB",
+        "text_URGXp9",
+        "text_yBKtT6",
+        "text_RHJmm9",
+        "text_cetctn",
+        "text_4xLC6i",
+        "text_cPVbwm",
+        "text_BdV9n3",
+        "text_6MjKCC",
+        "text_QAX34L"
+      ],
+      "settings": {
+        "secbg": "#ffffff",
+        "sheading": "Summary of Benefits"
+      }
+    },
+    "recommended": {
+      "type": "product-page__recommended",
+      "settings": {
+        "enabled": true,
+        "personalizedOffers": true,
+        "layout": "max-width",
+        "heading": "",
+        "subheading": "Recommended Products for You",
+        "subheadingPosition": "above",
+        "textAlignment": "center",
+        "defaultCollection": ""
+      }
+    }
+  },
+  "order": [
+    "topicons",
+    "breadcrumbs",
+    "page",
+    "brand_logo_carousel_gQ6QN9",
+    "17b3c4da-6ec2-43f7-b402-382e47a862a0",
+    "trustpilot_reviews_TnKWpU",
+    "desciption",
+    "home_comparison_content_QkEzm4",
+    "shopify_us_make_different_X9WDht",
+    "shopify-applications-included",
+    "summarybenefits",
+    "recommended"
+  ]
+}

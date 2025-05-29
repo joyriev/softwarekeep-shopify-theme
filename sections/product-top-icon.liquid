@@ -1,0 +1,49 @@
+<style>
+  @media only screen and (max-width: 768px) {
+    .abtest_icons {
+      display: none;
+    }
+  }
+  
+</style>
+  
+  {%- comment -%}
+   Mobile view new section calll
+  {%- endcomment -%}
+  <div class="abtest_icons">
+     <div class="max-width mbview_icon">
+       <div class="mview-icons-wraper">
+          <div class="mblist">
+           <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon__download.png?v=1718867038" alt="download" width="24" height="24">
+           <p>Instant Digital Download</p>
+          </div>
+         <div class="mblist">
+           <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon__twitter_verified_badge__1.png?v=1719469427" alt="download" width="24" height="24">
+           <p>Lifetime Product Guarantee</p>
+         </div>
+          <div class="mblist">
+           <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon__Event_schedule.png?v=1718867038" alt="download" width="24" height="24">
+           <p>Year Round Service</p>
+         </div>
+       </div>
+     </div>
+  </div>
+
+
+
+  {%- comment -%}
+  END Mobile view new section calll
+  {%- endcomment -%}
+  
+{% schema %}
+  {
+    "name": "topicons",
+    "settings": [
+          {
+            "type": "checkbox",
+            "id": "tpiconss",
+            "label": "Enable Top Icons"
+          }
+    ]
+  }
+{% endschema %}

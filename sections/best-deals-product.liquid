@@ -1,0 +1,611 @@
+{{ 'best-deals.css' | asset_url | stylesheet_tag: preload: true }}
+{% assign product = all_products[section.settings.product_deals] %}
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign featured_image = current_variant.featured_image | default: product.featured_image %}
+{% assign selectedProduct = product.selected_or_first_available_variant %}
+{% assign seconds = 30 | times: 24 | times: 60 | times: 60 %}
+{% assign promoDates = 'now' | date: '%s' | plus: seconds | date: '%Y-%m-%d' %}
+{% assign centsPrice = selectedProduct.price %}
+{% assign centsPriceIntValueSize = centsPrice | append: '' | size | minus: 2 %}
+<script type="application/ld+json">
+  {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "{{product.title |escape}}",
+        {% if product.featured_image != nil %}
+        "image": [
+          "https:{{product.featured_image | img_url: '960x960'}}",
+          "https:{{product.featured_image | img_url: '960x720'}}",
+          "https:{{product.featured_image | img_url: '960x540'}}"
+         ],
+        {% endif %}
+        "description": "{{ product.description | strip_html | replace: '"', "" | slice: 0, 250 }}",
+        "sku": "{{ product.sku }}",
+        "brand": {
+          "@type": "Brand",
+          "name": "{{product.vendor |escape}}"
+        },
+        "offers": {
+        "@type": "Offer",
+        "description": "New",
+        "priceCurrency": "{{ cart.currency.iso_code }}",
+        "price": "{{ selectedProduct.price | slice: 0, centsPriceIntValueSize }}.{{ selectedProduct.price | slice: -2, 2 }}",
+        "availability" : "https://schema.org/{% if product.available %}InStock{%else%}SoldOut{%endif%}",
+        "itemCondition": "https://schema.org/NewCondition",
+        "priceValidUntil": "{{ promoDates }}",
+        "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": {
+                "@type": "DefinedRegion",
+                "addressCountry": "{{ shop.address.country_code }}"
+            },
+            "shippingRate": {
+                "@type": "MonetaryAmount",
+                "value": 0,
+                "currency": "{{ cart.currency.iso_code }}"
+            },
+            "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 0,
+                    "maxValue": 1,
+                    "unitCode": "DAY"
+                },
+                "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": 0,
+                    "maxValue": 1,
+                    "unitCode": "DAY"
+                }
+            }
+        },
+        "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "{{ shop.address.country_code }}",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 30,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
+        },
+        "url": "{{ product.handle }}",
+        "seller": {
+            "@type": "Organization",
+            "name": "{{ shop.name }}"
+        }
+      },
+        "review": {
+         "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+         },
+         "author": {
+            "@type": "Person",
+            "name": "bill_wadsworth"
+        }
+       },
+      "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "200",
+            "bestRating": "5",
+            "worstRating": "1"
+       }
+  }
+</script>
+<div class="max-width deals-wrapper">
+  <div class="deals-left">
+    <div id="pro_{{section.id}}" class="img-wrpers">
+      <!-- Gallery Image call here -->
+      <div class=" dela_galrys">
+        {% render 'deal-gallery--default', product:product %}
+       </div>
+          {% if section.settings.review_texts != blank %}
+            <div class="review_btm">
+              <div class="name">
+                <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_57.png?v=1728047649" alt="review name">
+              </div>
+              <div class="content">
+                {{ section.settings.review_texts }}
+                <img src="https://softwarekeep.com/cdn/shop/files/ResellerRatings_2.png" alt="reseller-rating" width="435" height="30">
+              </div>
+           </div> 
+         {% endif %}
+    </div>
+
+  </div>
+
+  <!-- Product content -->
+  <div class="deals-right">
+    <div class="trust_pilot">
+      <div class="t_pilot">
+        {% if section.settings.reviews != blank %}
+          {{ section.settings.reviews | image_url: width: '435', height: '30' | image_tag }}
+        {% else %}
+          <img
+            src="https://cdn.shopify.com/s/files/1/0621/8733/9828/files/trust_pilot-badge.png?v=1711609477"
+            alt="trustpilot"
+          >
+        {% endif %}
+      </div>
+      {% if section.settings.reviewstext != blank %}
+        <div class="review_count">
+          <p>{{ section.settings.reviewstext }}</p>
+        </div>
+      {% endif %}
+    </div>
+    
+    <h1 data-sku="{{ product.selected_or_first_available_variant.sku }}">{{ section.settings.pro_title }} </h1>
+
+    <div id="lowStock" class="shipsby-xmas-2">
+      <div class="ring-container w-embed">
+        <div class="ringring"></div>
+        <div class="circle"></div>
+      </div>
+      
+       {% if section.settings.sub_dates != blank %}
+          <div id="order-message" class="order-by-chsristmas">
+            {{ section.settings.sub_dates }}
+          </div>
+       {% endif %}
+    </div>
+    
+    <div class="ilist_item">
+        <div class="pro_nametab">
+          <div class="mdeal_scroll">
+            <ul id="dealtab__{{ section.id }}" class="tabs_dels">
+              {% for block in section.blocks %}
+                 {% assign product = all_products[block.settings.productwindow] %}
+                 {% assign freeusb = all_products[block.settings.freegift1 ] %}
+                 {% assign freesupport = all_products[block.settings.freegift2 ] %}
+                 {% assign freevpn = all_products[block.settings.freegift3 ] %}
+                  <li class="ntab" data-id="tab-{{ block.id }}-{{ forloop.index }}">
+                     <noscript id="gallery-view">
+                        {% render 'deal-gallery--default', product: product, section: section %}
+                    </noscript>
+                    {% if block.settings.deals_nam != blank %}
+                     <p class="best_tags" style="background:{{ block.settings.bg_color }};">{{ block.settings.deals_nam }}</p>
+                    {% endif %}
+                    <a id="tname_{{ block.id }}"
+                      data-id="{{ product.first_available_variant.id }}"
+                      data-usb="{{ freeusb.first_available_variant.id }}"
+                      data-support="{{ freesupport.first_available_variant.id }}"
+                      data-vpn="{{ freevpn.first_available_variant.id }}"
+                      data-img="{{ product.featured_image | img_url:'master' }}"
+                      href="#tab-{{ block.id }}-{{ forloop.index }}"
+                      class="main-tab {% if forloop.index == 1 %}active{% endif %}"
+                    >
+                      {% if block.settings.tab_fetureimg != blank %}
+                       {{  block.settings.tab_fetureimg | image_url: width:'90', height:'90' | image_tag }}
+                        {% else %}
+                       {{ product.featured_image | image_url: width:'90', height:'90' | image_tag }}
+                     {% endif %}
+                      <div class="grid_pro-list">
+                        <div class="pnames">
+                        {% if block.settings.name1 != blank %}
+                          {{ block.settings.name1 }}
+                          {% else %}
+                          <p>{{ product.title }}</p>
+                        {% endif %}
+                      </div>
+                      </div>
+                      <div class="pric_wrapers">
+                        <div class="prices">
+                          <span class="dlpage_cp price--old jsPrice"><del>{{ product.compare_at_price | money_with_currency | strip_html }}</del></span>
+                          <span class="dlpage_price jsPrice">{{ product.price | money_with_currency | strip_html }}</span>
+                        </div>
+                        
+                        <div class="sav_percent">
+                          {% if product.compare_at_price_max  > 0 %}
+                            <span class="cp_pric">
+                             Save {{
+                                product.compare_at_price_max 
+                                | minus: product.price
+                                | times: 100
+                                | divided_by: product.compare_at_price_max
+                              }}
+                             %
+                           </span>
+                        {% endif %}
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+
+              {% endfor %}
+            </ul>
+          </div>
+
+
+          <!-- tab content -->
+
+          <div class="deal_pro-wraper">
+            
+              <!-- <div class="includes-wrap">
+                <div class="includes-line"></div>
+                  <p class="free_text">FREE Gifts With Your  Order</p>
+                <div class="includes-line"></div>
+              </div> -->
+            <div class="check-list">
+               {% if section.settings.contentlist != blank %}
+                 {{ section.settings.contentlist }}
+               {% endif %}
+            </div>
+           {% comment %}
+            {% for block in section.blocks %}
+              <div
+                id="tab-{{ block.id }}-{{ forloop.index }}"
+                class="dl_wrap"
+                {% unless forloop.first %}
+                  style="display:none;"
+                {% endunless %}
+               >
+              
+                {% if section.settings.esale != blank %}
+                 <p class="exclusive">{{ section.settings.esale }}</p>
+                {% endif %}
+                
+                <div class="free-gift-wrap" {% if block.settings.icon_enable == false %}style="display:none;"{% endif %}>
+                  
+                  <div class="gift-box">
+                     <span> Free <del>{{ block.settings.text11 }}</del></span>
+                    {% if block.settings.first_icon != blank %}
+                      {{ block.settings.first_icon | image_url: width: '167', height: '167' | image_tag }}
+                    {% else %}
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0621/8733/9828/files/Clip_path_group_1.png?v=1711689877"
+                        alt="{{ prdouct.title }}"
+                        width="90"
+                        height="90"
+                      >
+                    {% endif %}
+                    <p>{{ block.settings.text12 }}</p>
+                  </div>
+                  
+                  <div class="gift-box">
+                       <span> Free <del>{{ block.settings.text21 }}</del></span>
+                    {% if block.settings.second_icon != blank %}
+                      {{ block.settings.second_icon | image_url: width: '167', height: '167' | image_tag }}
+                    {% else %}
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0621/8733/9828/files/Clip_path_group_1.png?v=1711689877"
+                        alt=""
+                        width="90"
+                        height="90"
+                      >
+                    {% endif %}
+                    <p>{{ block.settings.text22 }}</p>
+                  </div>
+                  
+                  <div class="gift-box">
+                    <span> Free <del>{{ block.settings.text31 }}</del></span>
+                    {% if block.settings.third_icon != blank %}
+                      {{ block.settings.third_icon | image_url: width: '167', height: '167' | image_tag }}
+                    {% else %}
+                      <img src="https://cdn.shopify.com/s/files/1/0621/8733/9828/files/Clip_path_group_1.png?v=1711689877" alt="icons" >
+                    {% endif %}
+                    <p>{{ block.settings.text32 }}</p>
+                  </div>
+
+                  {% if block.settings.four_icon != blank %}
+                    <div class="gift-box">
+                      <span> Free <del>{{ block.settings.text41 }}</del></span>
+                      {{ block.settings.four_icon | image_url: width: '167', height: '167' | image_tag }}
+                      <p>{{ block.settings.text42 }}</p>
+                   </div>
+                 {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          {% endcomment %}
+          </div>
+  
+          <!-- end tab content -->
+        </div>
+        <!-- End Tab wraper div -->
+          {% for block in section.blocks limit:1 %}
+            {% assign product = all_products[block.settings.productwindow] %}
+            {% assign freeusb = all_products[block.settings.freegift1 ] %}
+            {% assign freesupport = all_products[block.settings.freegift2 ] %}
+            {% assign freevpn = all_products[block.settings.freegift3 ] %}
+            
+             {% assign var = product.first_available_variant %}
+            
+              {% form 'product', product, class:'lang_btns' %}
+                <input name="id" type="hidden" id="varid_hide" value="40466497962039">
+                 {% render 'deal-addto-cart-button', product: product, variant: var.id, quantity: 1, form: form %}
+              {% endform %}
+            
+         {% endfor %}
+
+          <div class="dirct_checkoutbtns" style="margin: 1px 0;cursor:pointer;">
+            <form method="post" action="/cart/add">
+              <input type="hidden" name="id" id="varid_hides" value="40466497962039">
+              <input type="hidden" name="return_to" value="/checkout">
+              <input min="1" type="number" id="quantity" name="quantity" value="1" style="display:none;">
+               <input id="checkout_page" type="submit" value="Buy Now" class="btn" style="visibility: hidden;">
+              <button class="btn direct_checkouts"> <i class="uil uil-lock"></i>CHECKOUT SECURELY & Save</button>
+            </form>
+          </div>
+      
+          {% if section.settings.mback != blank %}
+           <p class="enjoy_text">{{ section.settings.mback }}</p>
+         {% endif %}
+      
+          {% if additional_checkout_buttons and section.settings.paypalenable == true %}
+            <div class="additional-checkout-buttons">
+              {{ content_for_additional_checkout_buttons }}
+            </div>
+          {% endif %}
+      
+          <ul class="list list-payment" role="list">
+           {%- for type in shop.enabled_payment_types -%}
+             <li class="list-payment__item">
+              {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+             </li>
+           {%- endfor -%}
+         </ul> 
+    </div>
+  </div>
+</div>
+
+<script>
+   $(document).ready(function() {
+      $('#dealtab__{{ section.id }} a').click(function(e){
+        e.preventDefault();
+        var gal_info = $(this).closest("li").find("#gallery-view").html();
+        $(".dela_galrys").html(gal_info);
+        $(this).closest('.pro_nametab').find('.tabs_dels li a').removeClass('active');
+        $(this).closest('.pro_nametab').find('.dl_wrap').hide();
+        $(this).addClass('active');
+        var id = $(this).attr("href");
+        var img = $(this).attr('data-img')
+        let varId = $(this).attr("data-id")
+        $('#varid_hide').val(varId)
+         $('#varid_hides').val(varId);
+        $('.dela_galrys .fmain-imgs').attr('src', img);
+        var slectedvarId = $('.deal-pname.active').attr('data-id');
+
+
+      // Define free gift variant IDs
+      var freeGift1 = $(this).attr("data-usb");  // Replace with actual variant ID
+      var freeGift2 = $(this).attr("data-support");  // Replace with actual variant ID
+      var freeGift3 = $(this).attr("data-vpn");  // Replace with actual variant ID
+
+    // Create an array to store valid items (main product + gifts)
+     // var itemsToAdd = [
+     //  { id: $(this).attr("data-id"), quantity: 1 } // Main product
+     // ];
+
+    // Check if each free gift variant ID exists, and add it to the itemsToAdd array
+    // if (freeGift1) {
+    //   itemsToAdd.push({ id: freeGift1, quantity: 1 });
+    // }
+    // if (freeGift2) {
+    //   itemsToAdd.push({ id: freeGift2, quantity: 1 });
+    // }
+    // if (freeGift3) {
+    //   itemsToAdd.push({ id: freeGift3, quantity: 1 });
+    // }
+
+    // Dynamically construct the onclick function to add valid items to the cart
+    // $(this).closest(".deals-right").find(".button--addToCart").attr("onclick", 
+    //   "BoosterTheme.cart.addToCartJSON(event, {items: " + JSON.stringify(itemsToAdd) + "});"
+    // );
+        
+      $(this).closest(".deals-right").find(".button--addToCart").attr("onclick","BoosterTheme.cart.addToCartJSON(event, {items: [{id: "+$(this).attr("data-id")+", quantity: 1}]});")
+        
+        $(""+id).show();
+        return false;
+      
+      });
+  });
+
+    $("#checkout_trigr").click(function(){
+      $("#checkout_page").trigger("click");
+    });
+</script>
+
+{% schema %}
+{
+  "name": "BestDeals product",
+  "class": "bestdeals",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product_deals",
+      "label": "Select Product"
+    },
+    {
+     "type": "image_picker",
+     "id": "reviews",
+     "label": "Select Review Image"
+    },
+    {
+     "type": "html",
+     "id": "contentlist",
+     "label": "Content Feature List"
+    },
+    {
+      "type": "html",
+      "id": "pro_title",
+      "label": "Custom Product Title",
+      "default": "Save Up To 67% Today +4 FREE Gifts"
+    },
+    {
+      "type": "liquid",
+      "id": "sub_dates",
+      "label": "Enter Manually date and text"
+    },
+    {
+      "type": "html",
+      "id": "mback",
+      "label": "90-Day Money Back Guarantee",
+      "default": "Enjoy Softwarekeep Products Risk-Free with 90-Day Money Back Guarantee"
+    },
+  {
+      "type": "richtext",
+      "id": "review_texts",
+      "label": "Review Text",
+      "default": "<p>“The best customer service I have ever experienced online. I screwed some things up and Anne, Emir and especially Eric patiently helped me resolve the errors I had made. Can't say enough in favor of customer support. Prices of software were great, too.”</p>"
+    },
+    {
+     "type": "header",
+     "content": "Dynamic checkout Button PayPal/ Shoppay Enable"
+    },
+    {
+      "type": "checkbox",
+      "id": "paypalenable",
+      "label": "Button PayPal/ Shoppay Enable",
+      "default":true
+    }
+  ],
+
+ "blocks": [
+   {
+     "name": "tablist",
+     "type": "product",
+     "settings": [
+        {
+         "type": "image_picker",
+         "id": "tab_fetureimg",
+         "label": "Tab Feature Image"
+        },
+        {
+         "type": "header",
+         "content": "Select Product"
+        },
+        {
+          "type": "product",
+          "id": "productwindow",
+          "label": "Select Product"
+        },
+        {
+          "type": "text",
+          "id": "deals_nam",
+          "label": "Enter Deals name",
+          "default": "BEST DEALS"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Select Background Color of sale Tag",
+          "default": "#2789FF"
+        },
+        {
+          "type": "html",
+          "id": "name1",
+          "label": "Custom product Name"
+        },
+      {
+      "type": "header",
+      "content": "Save Four Icon"
+    },
+    {
+     "type": "checkbox",
+     "id": "icon_enable",
+     "label": "Icons Enable/Disable",
+      "default":false
+    },
+    {
+      "type": "product",
+      "id": "freegift1",
+      "label": "Select Gift free Product"
+    },
+    {
+     "type": "image_picker",
+     "id": "first_icon",
+     "label": "Select First Image (168x 168px)"
+    },
+    {
+      "type": "text",
+      "id": "text11",
+      "label": "Price",
+      "default": "Free $40.99"
+    },
+    {
+      "type": "text",
+      "id": "text12",
+      "label": "Sub Heading",
+      "default": "Costumer Support"
+    },
+     {
+     "type": "header",
+     "content": "Second Image"
+    },
+    {
+      "type": "product",
+      "id": "freegift2",
+      "label": "Select Second Gift free Product"
+    },
+    {
+     "type": "image_picker",
+     "id": "second_icon",
+     "label": "Select Second Image"
+    },
+    {
+      "type": "text",
+      "id": "text21",
+      "label": "Price",
+      "default": "Free $40.99"
+    },
+    {
+      "type": "text",
+      "id": "text22",
+      "label": "Sub Heading",
+      "default": "Costumer Support"
+    },
+           {
+     "type": "header",
+     "content": "Third Image"
+    },
+    {
+      "type": "product",
+      "id": "freegift3",
+      "label": "Select Three Gift free Product"
+    },
+    {
+     "type": "image_picker",
+     "id": "third_icon",
+     "label": "Select Third Image"
+    },
+    {
+      "type": "text",
+      "id": "text31",
+      "label": "Price",
+      "default": "Free $40.99"
+    },
+    {
+      "type": "text",
+      "id": "text32",
+      "label": "Sub Heading",
+      "default": "Costumer Support"
+    },
+    {
+     "type": "header",
+     "content": "Fourth Image"
+    },
+    {
+     "type": "image_picker",
+     "id": "four_icon",
+     "label": "Select Fourth Image"
+    },
+          {
+      "type": "text",
+      "id": "text41",
+      "label": "Price",
+      "default": "Free $40.99"
+    },
+    {
+      "type": "text",
+      "id": "text42",
+      "label": "Sub Heading",
+      "default": "Costumer Support"
+    }
+     ]
+   }
+  ]
+}
+{% endschema %}

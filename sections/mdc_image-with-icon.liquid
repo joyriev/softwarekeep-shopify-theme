@@ -1,0 +1,239 @@
+{% assign customID = section.settings.custom_id %}
+<div class="custom-max-width home-guarantees-container" id="{{customID}}">
+  <div class="h-g-c-heading">
+    <div class="h-g-c-h-title">
+      <span>{{ section.settings.home_guarantee_title }}</span>
+    </div>
+    <div class="h-g-c-h-subtitle">
+      <span>{{ section.settings.home_guarantee_subtitle }}</span>
+    </div>
+  </div>
+
+  <div class="h-g-c-body">
+    {% for block in section.blocks %}
+      <div
+        class="h-g-c-b-block"
+        style="background:{{ block.settings.home_guarantee_block_background_color }};"
+      >
+        <div {% if block.settings.tile_oneline %} class="on-line_titles" {% endif %}>
+        <div class="h-g-c-b-b-image">
+            {% render 'image', src: block.settings.home_guarantee_block_image, size: '50x', alt: alt %}
+   
+        </div>
+        <div class="h-g-c-b-b-title">
+          <span>{{ block.settings.home_guarantee_block_title }}</span>
+        </div>
+        </div>
+        <div class="h-g-c-b-b-subtitle">
+          <span
+            style="
+              font-size:{{ block.settings.home_guarantee_block_subtitle_font_size }}px;
+              color: {{ block.settings.home_guarantee_block_subtitle_text_color }};
+            "
+          >
+            {{- block.settings.home_guarantee_block_subtitle -}}
+          </span>
+        </div>
+        <div class="h-g-c-b-b-button">
+          <a href="{{- block.settings.home_guarantee_block_url -}}">
+            {{- block.settings.home_guarantee_block_button -}}
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% if section.settings.btn_text != "blank" %}
+    <a href="{{ section.settings.btn_url }}" class="green-btn">{{ section.settings.btn_text }}</a>
+  {% endif %}
+</div>
+
+{% style %}
+  :root {
+      --guarantee-title-font-size-var: {{ section.settings.home_guarantee_title_font_size }}px;
+      --guarantee-subtitle-font-size-var: {{ section.settings.home_guarantee_subtitle_font_size }}px;
+      --guarantee-title-color-var: {{ section.settings.home_guarantee_title_color }};
+      --guarantee-subtitle-color-var: {{ section.settings.home_guarantee_subtitle_color }};
+  }
+{% endstyle %}
+
+<!-- <script type="text/javascript">
+  $(document).ready(function() {
+    window.slickMount($('.h-g-c-body'), {
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      centerMode: true,
+      mobileFirst: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: "unslick"
+        }
+      ]
+    });
+  });
+</script> -->
+
+{% schema %}
+{
+  "name": "MDC_Icon With Text",
+  "class": "mdc_icon-with-text",
+  "settings": [
+    {
+      "type": "header",
+      "content": "name"
+    },
+    {
+      "type": "text",
+      "id": "home_guarantee_title",
+      "label": "title"
+    },
+    {
+      "type": "header",
+      "content": "Section ID"
+    },
+    {
+        "type": "text",
+        "id": "custom_id",
+        "label": "Add custom section ID"
+    },
+    {
+      "type": "range",
+      "id": "home_guarantee_title_font_size",
+      "min": 12,
+      "max": 72,
+      "step": 1,
+      "unit": "px",
+      "label": "font size",
+      "default": 40
+    },
+    {
+      "type": "color",
+      "id": "home_guarantee_title_color",
+      "label": "color",
+      "default": "#0067B8"
+    },
+    {
+      "type": "text",
+      "id": "home_guarantee_subtitle",
+      "label": "subtitle"
+    },
+    {
+      "type": "range",
+      "id": "home_guarantee_subtitle_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "font size",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "home_guarantee_subtitle_color",
+      "label": "color",
+      "default": "#042338"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "icon-with-text",
+      "type": "home_guarantee_block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "home_guarantee_block_image",
+          "label": "image"
+        },
+        {
+          "type": "header",
+          "content": "icon and title one line"
+        },
+        {
+          "type": "checkbox",
+          "id" : "tile_oneline",
+          "label": "Enable/Disable icon and title one line",
+          "default" :false
+        },
+        {
+          "type": "text",
+          "id": "home_guarantee_block_title",
+          "label": "title"
+        },
+        {
+          "type": "range",
+          "id": "home_guarantee_block_title_font_size",
+          "min": 12,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "font size",
+          "default": 20
+        },
+        {
+          "type": "color",
+          "id": "home_guarantee_block_title_text_color",
+          "label": "color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "richtext",
+          "id": "home_guarantee_block_subtitle",
+          "label": "subtitle"
+        },
+        {
+          "type": "range",
+          "id": "home_guarantee_block_subtitle_font_size",
+          "min": 12,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "font size",
+          "default": 18
+        },
+        {
+          "type": "color",
+          "id": "home_guarantee_block_subtitle_text_color",
+          "label": "color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "home_guarantee_block_background_color",
+          "label": "background color",
+          "default": "#61C98C"
+        },
+        {
+        "id": "home_guarantee_block_button",
+        "label": "Button text",
+        "type": "text",
+        "default": "Get this now!"
+    },
+    {
+        "id": "home_guarantee_block_url",
+        "type": "text",
+        "label": "Links to"
+    }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Content",
+      "name": "MDC_Icon With Text"
+      }
+  ]
+}
+{% endschema %}

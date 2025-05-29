@@ -1,0 +1,122 @@
+#counttimer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  gap: 6px;
+}
+#counttimer .counttimes {
+  display: flex;
+  padding: 6px 10px;
+  gap: 5px;
+  align-items: center;
+}
+#counttimer .main_times {
+  font-size: 18px;
+  font-weight: 700;
+}
+#counttimer .time-text {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #fff;
+}
+#counttimer span.dot_tim {
+  font-size: 20px;
+  font-weight: 600;
+}
+.avg-prodlist .sec_subheading{
+  margin-top: 10px;
+  font-size: 24px;
+}
+.avg-prodlist .m-tb {
+    margin-bottom: 60px;
+    margin-top: 35px;
+}
+.prod_container{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.prod_container .list{
+    display: flex;
+    flex-direction: column;
+    width: 33.33%
+}
+.prod_container .plistitm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.prod_container .plistitm a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+.prod_container .prod_plist{
+  display: flex;
+  flex-direction: column;
+  padding:0;
+}
+.prod_container .prod_plist li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin: 6px 0;
+}
+.prod_container .prod_plist li img{
+    width: 100%;
+}
+.prod_container .list .ptitles h4{
+  text-align: left;
+  line-height: 24px;
+  font-size: 20px;
+  color: #424242;
+  font-weight: 600;
+}
+.prod_container .list .ptitles h4 span{
+  display: flex;
+}
+.direct_checkout_btns .direct_checkout-btn {
+    background: #126337;
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 10px;
+    color: #fff;
+    padding: 14px 15px;
+    font-weight: 600;
+}
+ .plistitm .ptitles p{
+    font-size: 24px;
+    font-weight: 600;
+ }
+@media screen and (max-width: 768px) {
+  .prod_container {
+     flex-direction: column;
+    }
+   .plistitm .ptitles p {
+      font-size: 18px;
+    }
+   .avg-prodlist .m-tb {
+    margin-bottom: 15px;
+    }
+    .prod_container .list {
+      width: 100%;
+    }
+   .avg-prodlist {
+     padding: 0 20px;
+   }
+  .prod_container .prod_plist li img{
+     width: auto;
+  }
+  .avg-prodlist .sec_subheading {
+    font-size: 16px;
+    font-weight: 600;
+   }
+  .prod_container .prod_plist li .sells{
+     width: 46%
+   }
+}

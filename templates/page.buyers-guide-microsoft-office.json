@@ -1,0 +1,106 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "reatilsproducts": {
+      "type": "buyer-guide-retail-version",
+      "settings": {
+        "title": "Microsoft Office: Your Ultimate Productivity Suite",
+        "subtitle": "<p><em>Stay organized and productive wherever you are with Microsoft Office’s suite of tools designed to meet all your personal and business needs.</em></p>",
+        "retails_products": [
+          "microsoft-office-2024-student",
+          "microsoft-office-2024-student-for-mac",
+          "microsoft-office-2024-business",
+          "microsoft-office-2024-business-for-mac",
+          "microsoft-office-2021-home-and-student-pc",
+          "microsoft-office-2021-home-and-business-for-pc",
+          "microsoft-office-2021-professional"
+        ],
+        "openlv": [
+          "office-2021-professional-plus"
+        ]
+      }
+    },
+    "content": {
+      "type": "page",
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "editionproducts": {
+      "type": "edition-products",
+      "blocks": {
+        "products_UaLcjA": {
+          "type": "products",
+          "settings": {
+            "list_pro": "microsoft-office-2021-home-and-student-pc",
+            "heading": "Home & Student",
+            "small_text": "<p>Best for students and personal use, offering Word, Excel, and PowerPoint.</p>"
+          }
+        },
+        "products_YfFVtg": {
+          "type": "products",
+          "settings": {
+            "list_pro": "microsoft-office-2021-home-and-business-for-mac",
+            "heading": "Home & Business",
+            "small_text": "<p>Includes Word, Excel, PowerPoint, and Outlook, making it ideal for professionals.</p>"
+          }
+        },
+        "products_wiMtrX": {
+          "type": "products",
+          "settings": {
+            "list_pro": "microsoft-project-2021-professional",
+            "heading": "Professional",
+            "small_text": "<p>Comes with Word, Excel, PowerPoint, Outlook, Access, and Publisher, designed for businesses and advanced users.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "products_UaLcjA",
+        "products_YfFVtg",
+        "products_wiMtrX"
+      ],
+      "settings": {
+        "secheading": "Which Edition is Right for You?",
+        "subsheading": "Microsoft Office comes in various editions to meet different needs:"
+      }
+    },
+    "section_lookbook_rEM4Ff": {
+      "type": "section__lookbook",
+      "settings": {
+        "custom_id": "comb_inelogo",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "#comb_inelogo {\n    margin-top: 40px;\n}",
+        "height": 0,
+        "padding": 0,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "image": "shopify://shop_images/Group_34.png"
+      }
+    }
+  },
+  "order": [
+    "reatilsproducts",
+    "content",
+    "editionproducts",
+    "section_lookbook_rEM4Ff"
+  ]
+}

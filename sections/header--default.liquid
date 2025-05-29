@@ -1,0 +1,507 @@
+{%- if section.settings.layout == 'default' -%}
+{%- assign layout = settings.baseLayout -%}
+{%- else -%}
+{%- assign layout = section.settings.layout -%}
+{%- endif -%}
+
+{% assign root_url = routes.root_url %}
+{% assign search_url = root_url | append: 'search' %}
+{% if root_url != '/' %}
+    {% assign search_url = root_url | append: '/search' %}
+{% endif %}
+
+<style>
+    {% render 'header__common-css', section: section, layout: layout %}
+
+    .page__header {
+        min-height: max(var(--height), 4em);
+    }
+
+    @media screen and (min-width: 768px){
+        .header__element--width {
+            width: 100%;
+            max-width: var(--logoWidth);
+        }
+
+        .main__navigation > .nav__link__holder > .nav__link {
+            align-items: center;
+            min-height: max(var(--height), 4em);
+        }
+    }
+</style>
+
+<div data-search-container class="search__container--abs">
+    <div class="search__overlay" onclick="BoosterTheme.ELEMENTS.closeSearch(this)"></div>
+    <div class="search__container--wrapper">
+        <div class="h-reset search__title jkks">{{'general.search.heading' | t}} <span onclick="BoosterTheme.ELEMENTS.closeSearch(this)">{% render 'get-icon', icon: 'close' %}</span></div>
+        <form method="get" action="{{search_url}}">
+            <button type="submit" class="search__icon--submit" aria-label="Search">{% render 'get-icon', icon: 'search' %}</button>
+            <input autocomplete="off" placeholder="{{'general.search.placeholder' | t }}" name="q" onfocus="BoosterTheme.ELEMENTS.openSearch(this)" type="search" data-search>
+        </form>
+    </div>
+    <div class="search__results search__results--abs" data-search-suggest>
+    </div>
+</div>
+
+<header class="page__header page__header--desktop {% if template == "index" and section.settings.transparent %}page__header--transparent{% endif %} header--defult">
+    <div class="page__header--width  mobile_view-sec">
+        <div class="header__logo header__element--width">
+            {% render 'logo' with section as section %}
+        </div>
+        <nav class="main__navigation main__navigation--center main__navigation--{{section.settings.hoverStyle}} font__size--{{-section.settings.fontSize}}">
+            {% for link in linklists[section.settings.menuLinks].links %}
+                {% if link.links.size > 0 %}{% capture submenu %}{% render 'header--link-submenu' with link as link %}{% endcapture %}{% else %}{% assign submenu = '' %}{% endif %}
+                <span class="nav__link__holder {% if link.active or link.child_active %}nav__link--active{% endif %} {% if submenu contains 'nav__submenu--regular' %}nav__link__holder--regular{% endif %}">
+                    <a class="nav__link nav__link--{{section.settings.hoverStyle}}" href="{{link.url}}">{% render 'header--link-tag' with link.title as text %}</a>
+                    {{submenu}}
+                </span>
+            {% endfor %}
+        </nav>
+      
+        <div class="header__element--width header__utility">
+            {% render 'header__general--utility', showCart: section.settings.desktopCart %}
+        </div>
+      
+    </div>
+</header>
+
+<header class="page__header page__header--mobile hide-desktop {% if template == "index" and section.settings.transparent %}page__header--transparent{% endif %}">
+    <div class="page__header--width">
+        <label class="mobile-submenu-label" for="open-mobile-nav">
+            <i class="uil uil-bars"></i>
+        </label>
+        <div class="header__logo header__element--width">
+            {% render 'logo' with section as section %}
+        </div>
+        <input id="open-mobile-nav" type="checkbox" style="display: none">
+        <label for="open-mobile-nav" class="overlay overlay--nav"></label>
+        <nav class="mobile__navigation"> 
+          <div class="main-container_mobile-menu">
+        <div class="mobile_logo">
+          <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/logo_db4742de-56b3-4514-89b2-3594e64d6b44.png?v=1703153913" alt="mobile-logo" >
+        </div>
+        <ul class="mobile_link">
+          <li>
+            <span class="right-side-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                <g clip-path="url(#clip0_20_2)">
+                  <path d="M6.40736 6.26214C7.26767 6.26214 8.01263 5.95358 8.62131 5.3448C9.22999 4.73613 9.53854 3.99137 9.53854 3.13097C9.53854 2.27086 9.22999 1.52601 8.62121 0.917134C8.01243 0.308554 7.26757 0 6.40736 0C5.54696 0 4.8022 0.308554 4.19352 0.917233C3.58484 1.52591 3.27618 2.27077 3.27618 3.13097C3.27618 3.99137 3.58484 4.73623 4.19362 5.3449C4.8024 5.95348 5.54726 6.26214 6.40736 6.26214Z" fill="#607181"/>
+                  <path d="M11.5844 9.99635C11.5668 9.74304 11.5313 9.46671 11.4791 9.17492C11.4263 8.88095 11.3584 8.60304 11.277 8.34904C11.193 8.0865 11.0788 7.82724 10.9375 7.57879C10.7909 7.32092 10.6188 7.09637 10.4255 6.9116C10.2235 6.71829 9.97615 6.56287 9.69011 6.44951C9.40506 6.33674 9.08916 6.27961 8.75125 6.27961C8.61855 6.27961 8.4902 6.33406 8.24235 6.49543C8.08981 6.59491 7.91138 6.70996 7.71222 6.83721C7.54192 6.94571 7.31123 7.04738 7.02628 7.13942C6.74827 7.22937 6.466 7.275 6.18739 7.275C5.90879 7.275 5.62662 7.22937 5.34831 7.13942C5.06366 7.04747 4.83296 6.94581 4.66286 6.83731C4.46559 6.71125 4.28706 6.5962 4.13224 6.49533C3.88468 6.33396 3.75624 6.27951 3.62354 6.27951C3.28552 6.27951 2.96973 6.33674 2.68478 6.44961C2.39893 6.56277 2.15147 6.71819 1.94924 6.91169C1.75613 7.09657 1.58385 7.32102 1.43746 7.57879C1.29633 7.82724 1.18207 8.0864 1.09796 8.34914C1.01673 8.60314 0.948792 8.88095 0.896027 9.17492C0.843758 9.46632 0.80825 9.74274 0.790695 9.99664C0.773438 10.2454 0.764709 10.5036 0.764709 10.7643C0.764709 11.4429 0.980431 11.9923 1.40582 12.3974C1.82596 12.7972 2.38187 13.0001 3.0579 13.0001H9.31748C9.99351 13.0001 10.5492 12.7973 10.9695 12.3974C11.395 11.9926 11.6107 11.4431 11.6107 10.7642C11.6106 10.5023 11.6017 10.2439 11.5844 9.99635Z" fill="#607181"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_20_2">
+                    <rect width="13" height="13" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+                <a href="/account/login">Account</a>
+            </span>
+          </li>
+          <li>           
+            <span class="right-side-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+                <path d="M8.66667 9.64001H7.99507C7.92616 10.6808 7.05797 11.5067 6 11.5067C4.94203 11.5067 4.07384 10.6808 4.00493 9.64001H3.33333C1.49533 9.64001 0 11.1353 0 12.9733V13.4267C0 13.6476 0.179093 13.8267 0.4 13.8267H11.6C11.8209 13.8267 12 13.6476 12 13.4267V12.9733C12 11.1353 10.5047 9.64001 8.66667 9.64001Z" fill="#607181"/>
+                <path d="M2.53334 6.17333V4.57333C2.0915 4.57333 1.73334 4.93149 1.73334 5.37333C1.73334 5.81517 2.0915 6.17333 2.53334 6.17333Z" fill="#607181"/>
+                <path d="M7.0505 2.82385C7.19461 2.67971 7.42407 2.66702 7.58322 2.79433L8.80698 3.77334H9.46666V3.64001C9.46666 1.72542 7.91458 0.17334 5.99999 0.17334C4.08541 0.17334 2.53333 1.72542 2.53333 3.64001V3.77334H4.75826C5.61802 3.77334 6.44255 3.43179 7.0505 2.82385Z" fill="#607181"/>
+                <path d="M4.79999 9.29242V9.50666C4.79999 10.1694 5.33724 10.7067 5.99999 10.7067C6.66273 10.7067 7.19999 10.1694 7.19999 9.50666V9.29242C6.82588 9.43087 6.42164 9.50666 5.99999 9.50666C5.57833 9.50666 5.17409 9.4309 4.79999 9.29242Z" fill="#607181"/>
+                <path d="M5.86665 7.50668C5.86665 7.28577 6.04574 7.10668 6.26665 7.10668H8.44454C8.58729 6.78001 8.66665 6.41932 8.66665 6.04001V4.68559L7.35067 3.63281C6.62478 4.24169 5.71691 4.57335 4.75814 4.57335H3.33331V6.04001C3.33331 7.51276 4.52721 8.70668 5.99998 8.70668C6.74587 8.70668 7.42014 8.40031 7.90411 7.90668H6.26665C6.04574 7.90668 5.86665 7.72759 5.86665 7.50668Z" fill="#607181"/>
+                <path d="M9.46665 6.17333H9.86665V6.44C9.86665 6.8076 9.56758 7.10667 9.19998 7.10667H8.44454C8.31374 7.406 8.12961 7.67667 7.90411 7.90667H9.19998C10.0087 7.90667 10.6666 7.24872 10.6666 6.44V5.37333C10.6666 4.93149 10.3085 4.57333 9.86665 4.57333H9.46665V6.17333Z" fill="#607181"/>
+              </svg>
+                <a href="/pages/help-center">Help Center</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+            {% for link in linklists[section.settings.menuLinks].links %}
+                <span class="nav__link__holder">
+                    <a class="nav__link {% if link.active or link.child_active %}nav__link--active{% endif %}" href="{{link.url}}">{% render 'header--link-tag' with link.title as text %}</a><!--
+                    {% if link.links.size > 0 %}
+                        --><input type="checkbox" style="display: none" id="mobile-submenu-{{forloop.index}}"><!--
+                        --><label class="mobile__submenu__toggle" for="mobile-submenu-{{forloop.index}}"><i class="uil uil-plus"></i><i class="uil uil-minus"></i></label>
+                        {% render 'header--link-submenu--mobile', link: link, ix: forloop.index %}
+                    {% else %}
+                    -->
+                    {% endif %}
+                </span>
+            {% endfor %}
+
+<div class="mobile_footer_link">
+  <div class="mobile_nav_link">
+    <ul class="mobile_ul">
+      <li>
+          {%- if section.settings.softwarekeep != blank -%}
+            <a href="{{ section.settings.softwarekeep_link }}">
+              <p class="link">{{ section.settings.softwarekeep | escape }}</p>
+            </a>
+          {%- endif -%}
+        </li>
+      <li>
+         {%- if section.settings.reviews != blank -%}
+            <a href="{{ section.settings.reviews_link }}">
+              <p class="link">{{ section.settings.reviews | escape }}</p>
+            </a>
+          {%- endif -%}
+      </li>
+      <li>
+        {%- if section.settings.blogs != blank -%}
+            <a href="{{ section.settings.blogs_link }}">
+              <p class="link">{{ section.settings.blogs | escape }}</p>
+            </a>
+          {%- endif -%}
+      </li>
+    </ul>
+  </div>
+  <div class="mobile_contact">
+    <ul class="mobile_contact_nav">
+      <li>
+        <span class="mobile_contact_list">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+          <g clip-path="url(#clip0_86_209)">
+          <path d="M2.94155 6.55844H0.556641C0.249227 6.55844 0 6.80767 0 7.11508V13.0773C0 13.3847 0.249227 13.634 0.556641 13.634H2.94155C3.24896 13.634 3.49819 13.3847 3.49819 13.0773V7.11508C3.49819 6.80767 3.24896 6.55844 2.94155 6.55844Z" fill="#0092EA"/>
+          <path d="M13.3757 12.9982C13.6831 12.9982 13.9323 12.749 13.9323 12.4415V11.2095H13.9719C14.2793 11.2095 14.5285 10.9603 14.5285 10.6529C14.5285 10.3455 14.2793 10.0962 13.9719 10.0962H13.9323V7.07553C13.9323 6.85042 13.7967 6.64744 13.5887 6.56127C13.3808 6.4751 13.1414 6.52267 12.9821 6.68187C12.9821 6.68187 11.2442 8.41922 10.4202 9.24261C10.0501 9.6147 9.83789 10.1287 9.83789 10.6529C9.83789 10.9603 10.0871 11.2095 10.3945 11.2095H12.819V12.4415C12.819 12.749 13.0682 12.9982 13.3757 12.9982ZM11.148 10.0962C11.167 10.0728 11.1871 10.0503 11.2083 10.0289C11.6253 9.61225 12.2773 8.96054 12.819 8.41904V10.0962H11.148Z" fill="#0092EA"/>
+          <path d="M8.86389 12.4415C8.86389 12.1341 8.61466 11.8849 8.30724 11.8849H6.07968C6.09857 11.8615 6.11868 11.8389 6.13994 11.8176C6.96277 10.9953 8.70079 9.25786 8.70079 9.25786C8.80522 9.15347 8.86392 9.01186 8.86392 8.8642V8.5661C8.86392 7.43727 7.94558 6.51889 6.81675 6.51889C5.67719 6.51889 4.76953 7.44195 4.76953 8.56547V8.56607C4.76953 8.87348 5.01876 9.12241 5.32617 9.12241C5.63359 9.12241 5.88281 8.87289 5.88281 8.56547C5.88281 8.05481 6.29399 7.63217 6.81675 7.63217C7.33171 7.63217 7.75064 8.05114 7.75064 8.5661V8.63357C7.29928 9.08478 6.02268 10.3609 5.35182 11.0313C4.98172 11.4034 4.76953 11.9175 4.76953 12.4415C4.76953 12.749 5.01876 12.9982 5.32617 12.9982H8.30728C8.61466 12.9982 8.86389 12.749 8.86389 12.4415Z" fill="#0092EA"/>
+          <path d="M9.49968 1.11328C12.2935 1.11328 14.6476 3.03213 15.3133 5.62114C15.5377 5.50878 15.7906 5.44517 16.0582 5.44517H16.4164C15.663 2.32498 12.8479 0 9.49968 0C6.15141 0 3.33637 2.32498 2.58301 5.44517H2.94122C3.20882 5.44517 3.46168 5.50878 3.68612 5.62114C4.35179 3.03213 6.70586 1.11328 9.49968 1.11328Z" fill="#0092EA"/>
+          <path d="M15.2049 14.5119C14.6485 15.7946 13.3699 16.6943 11.885 16.6943H11.1578C10.9248 16.002 10.2699 15.5018 9.50009 15.5018C8.53565 15.5018 7.75098 16.2865 7.75098 17.2509C7.75098 18.2153 8.53562 19 9.50005 19C10.2699 19 10.9247 18.4998 11.1578 17.8076H11.8849C13.9056 17.8076 15.634 16.5338 16.3104 14.7473H16.0585C15.7468 14.7473 15.4549 14.6612 15.2049 14.5119Z" fill="#0092EA"/>
+          <path d="M18.4435 6.55844H16.0586C15.7512 6.55844 15.502 6.80767 15.502 7.11508V13.0773C15.502 13.3847 15.7512 13.634 16.0586 13.634H18.4435C18.7509 13.634 19.0001 13.3847 19.0001 13.0773V7.11508C19.0001 6.80767 18.7509 6.55844 18.4435 6.55844Z" fill="#0092EA"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_86_209">
+          <rect width="19" height="19" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          <p>24/7 Live Chat</p>
+        </span>
+      </li>
+      <li>  
+        <span class="mobile_contact_list">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+          <g clip-path="url(#clip0_86_222)">
+          <path d="M11.9569 8.53301C11.161 8.53301 10.3795 8.40853 9.63892 8.1638C9.27604 8.04003 8.82995 8.15357 8.60847 8.38104L7.14675 9.48448C5.45157 8.57959 4.40737 7.53573 3.51484 5.85328L4.58582 4.42965C4.86407 4.15177 4.96387 3.74586 4.84429 3.365C4.59851 2.62055 4.47366 1.83943 4.47366 1.04318C4.47369 0.467966 4.00573 0 3.43054 0H1.04315C0.467966 0 0 0.467966 0 1.04315C0 7.63625 5.36379 13 11.9569 13C12.5321 13 13 12.532 13 11.9569V9.57613C13 9.00098 12.532 8.53301 11.9569 8.53301Z" fill="#0092EA"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_86_222">
+          <rect width="13" height="13" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          <p>+1 877 315 1713</p>
+        </span>
+      </li>
+        <li>
+          <span class="mobile_contact_list">
+           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+          <path d="M7.00001 0C3.14021 0 1.88128e-05 2.76239 1.88128e-05 6.15789C1.88128e-05 7.34477 0.384085 8.49447 1.11255 9.48863C0.974651 10.9795 0.605051 12.0864 0.0683854 12.6107C-0.00254785 12.68 -0.0202812 12.7861 0.0245188 12.8736C0.0641854 12.9519 0.145852 13 0.233352 13C0.244085 13 0.254818 12.9993 0.265785 12.9977C0.360285 12.9847 2.55548 12.6759 4.14331 11.7801C5.04491 12.1356 6.00531 12.3158 7.00001 12.3158C10.8598 12.3158 14 9.5534 14 6.15789C14 2.76239 10.8598 0 7.00001 0ZM3.73335 7.07018C3.21861 7.07018 2.80002 6.66102 2.80002 6.15789C2.80002 5.65477 3.21861 5.24561 3.73335 5.24561C4.24808 5.24561 4.66668 5.65477 4.66668 6.15789C4.66668 6.66102 4.24808 7.07018 3.73335 7.07018ZM7.00001 7.07018C6.48528 7.07018 6.06668 6.66102 6.06668 6.15789C6.06668 5.65477 6.48528 5.24561 7.00001 5.24561C7.51474 5.24561 7.93334 5.65477 7.93334 6.15789C7.93334 6.66102 7.51474 7.07018 7.00001 7.07018ZM10.2667 7.07018C9.75194 7.07018 9.33334 6.66102 9.33334 6.15789C9.33334 5.65477 9.75194 5.24561 10.2667 5.24561C10.7814 5.24561 11.2 5.65477 11.2 6.15789C11.2 6.66102 10.7814 7.07018 10.2667 7.07018Z" fill="#0092EA"/>
+          </svg>
+           <p>+1 (360) 369 3220</p>
+          </span>
+        </li>
+    </ul>
+  </div>
+</div>
+
+                
+            <div class="mobile__navigation__footer">
+                {% render 'header__mobile--footer' %}
+            </div>
+        </nav>
+        <div class="header__utility">
+        {% render 'mobile-header__general--utility', mobile: true, showCart: section.settings.mobileCart  %}
+        </div>
+
+
+
+            
+    </div>
+            
+</header>
+
+<div class="custm_currcy">
+    <div class="abs-localization-country">
+        {%- form 'localization', class: 'localization-form' -%}
+          <div class="localization-form__select">
+            <select class="localization-selector link" aria-label="currency" id="localization-country" name="country_code">
+              {%- for country in localization.available_countries -%}
+                <option value="{{ country.iso_code }}" {%- if country.iso_code == localization.country.iso_code %} selected{% endif %} style="background:##efefef; color:#000;">
+                {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
+                </option>
+              {%- endfor -%}
+            </select>
+          </div>
+        {%- endform -%}
+  </div>
+</div>
+{% render 'header__common-js' with section as section %}
+{% schema %}
+{
+  "name": {
+    "en": "Header - Default"
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Help"
+    },
+    {
+      "type": "paragraph",
+      "content": "[Click here to follow an interactive Tutorial](https://vimeo.com/458159291)"
+    },
+    {
+        "type": "header",
+        "content": "Global header settings"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Section layout",
+      "options": [
+        {"value": "default", "label": "Global default"},
+        {"value": "boxed", "label": "Boxed"},
+        {"value": "stretchBg", "label": "Full width background"},
+        {"value": "stretchContent", "label": "Full width"}
+      ],
+      "default": "default"
+    },
+    {
+        "type": "range",
+        "label": "Height",
+        "id": "minHeight",
+        "min": 75,
+        "max": 150,
+        "step": 5,
+        "unit": "px",
+        "default": 75
+    },
+    {
+        "type": "range",
+        "label": "Border radius",
+        "id": "borderRadius",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "unit": "px",
+        "default": 0
+    },
+    {
+        "type": "checkbox",
+        "id": "shadow",
+        "label": "Enable shadow",
+        "default": false
+    },
+    {
+        "type": "link_list",
+        "id": "menuLinks",
+        "label": "Menu links"
+    },
+    {
+        "type": "checkbox",
+        "id": "megamenu",
+        "label": "Enable megamenu",
+        "default": true
+    },
+    {
+        "type": "range",
+        "label": "Logo width",
+        "id": "logoWidth",
+        "min": 50,
+        "max": 300,
+        "step": 5,
+        "unit": "px",
+        "default": 240
+    },
+    {
+        "type": "range",
+        "label": "Logo height",
+        "id": "logoHeight",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "unit": "px",
+        "default": 0,
+        "info": "Maximum logo height. If set to 0 (zero) it will take up as much space as needed."
+    },
+    {
+        "type": "checkbox",
+        "id": "sticky",
+        "label": "Make the header stick to top",
+        "default": true
+    },
+    {
+        "type": "range",
+        "label": "Content margin",
+        "id": "contentMargin",
+        "min": 0,
+        "max": 200,
+        "step": 5,
+        "unit": "px",
+        "default": 0
+    },
+    {
+        "type": "header",
+        "content": "Header buttons"
+    },
+    {
+        "type": "checkbox",
+        "id": "desktopCart",
+        "label": "Show Cart (desktop)",
+        "default": true
+    },
+    {
+        "type": "color",
+        "label": "Background color",
+        "default": "rgba(0,0,0,0)",
+        "id": "headerBg"
+    },
+    {
+        "type": "header",
+        "content": "Link style"
+    },
+    {
+        "type": "color",
+        "id": "linkColor",
+        "label": "Text color",
+        "default": "#727272"
+    },
+    {
+        "type": "color",
+        "id": "accentColor",
+        "label": "Active accent color",
+        "default": "#000000"
+    },
+    {
+      "type": "text",
+      "id": "softwarekeep",
+      "label": "Mobile label"
+    },
+    {
+      "type": "url",
+      "id": "softwarekeep_link",
+      "label": "Mobile link"
+    },
+    {
+      "type": "text",
+      "id": "reviews",
+      "label": "Mobile label"
+    },
+    {
+      "type": "url",
+      "id": "reviews_link",
+      "label": "Mobile link"
+    },
+    {
+      "type": "text",
+      "id": "blogs",
+      "label": "Mobile label"
+    },
+    {
+      "type": "url",
+      "id": "blogs_link",
+      "label": "Mobile link"
+    },
+    {
+        "type": "select",
+        "id": "hoverStyle",
+        "label": "Hover style",
+        "options": [
+            {"value": "fill", "label": "Fill"},
+            {"value": "underline", "label": "Underline"},
+            {"value": "opacity", "label": "Opacity"},
+            {"value": "strikethrough", "label": "Line through text"},
+            {"value": "dotBelow", "label": "Dot below"},
+            {"value": "dotAbove", "label": "Dot above"}
+        ],
+        "default": "underline"
+    },
+    {
+        "type": "color",
+        "id": "tagBgColor",
+        "label": "Tag color",
+        "default": "#000"
+    },
+    {
+        "type": "color",
+        "id": "tagTextColor",
+        "label": "Tag text color",
+        "default": "#FFF"
+    },
+    {
+        "id": "transparent",
+        "label": "Make the header transparent",
+        "type": "checkbox",
+        "default": false
+    },
+    {
+        "type": "color",
+        "id": "linkColorT",
+        "label": "Text color (transparent)",
+        "default": "#FFF"
+    },
+    {
+        "type": "color",
+        "id": "accentColorT",
+        "label": "Active accent color (transparent)",
+        "default": "#EFEFEF"
+    },
+    {
+        "id": "fontSize",
+        "type": "select",
+        "label": "Font size",
+        "options": [
+            {"value": "small", "label": "Small"},
+            {"value": "base", "label": "Base"},
+            {"value": "medium", "label": "Medium"},
+            {"value": "big", "label": "Big"}
+        ],
+        "default": "base"
+    },
+    {
+        "type": "checkbox",
+        "label": "Use a custom font family",
+        "id": "customFont",
+        "default": false
+    },
+    {
+        "id": "fontFamily",
+        "label": "Font Family",
+        "type": "font_picker",
+        "default": "work_sans_n6"
+    },
+    {
+        "type": "header",
+        "content": "Cart"
+    },
+    {
+        "type": "select",
+        "label": "Cart icon",
+        "id": "cartIcon",
+        "options": [
+            {"value": "shopping-bag", "label": "Bag"},
+            {"value": "shopping-cart", "label": "Cart"},
+            {"value": "shopping-basket", "label": "Basket"}
+        ],
+        "default": "shopping-basket"
+    },
+    {
+        "type": "header",
+        "content": "Mobile menu"
+    },
+    {
+        "type": "select",
+        "label": "Logo position (mobile)",
+        "options": [
+            {"value": "left", "label": "Left"},
+            {"value": "center", "label": "Center"},
+            {"value": "right", "label": "Right"}
+        ],
+        "default": "center",
+        "id": "mobileLogoPosition"
+    },
+    {
+        "type": "checkbox",
+        "label": "Show cart icon (mobile)",
+        "id": "mobileCart",
+        "default": true
+    }
+  ]
+}
+{% endschema %}

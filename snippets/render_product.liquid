@@ -1,0 +1,35 @@
+{% assign render_product = product %}
+<div class="s-bundle-product" data-product-id="{{ render_product.variants[0].id }}" data-product-price="{{ render_product.price | divided_by: 100 }}" data-handle="{{ render_product.handle }}">
+  <div class="s-bundle-product-image" data-image="{{ render_product.featured_image | img_url: 'master' }}">
+    <img src="{{ render_product.featured_image | img_url: 'master' }}">
+    {% if render_product.title contains 'Office 2024 Home & Student' or render_product.title contains 'Office 2021 Home & Student' or render_product.title contains 'Windows 11 Professional' or render_product.title contains 'Excel 2024' %}
+      <div class="s-hot-stuff">HOT STUFF 🔥</div>
+    {% endif %}
+  </div>
+  <div class="s-bundle-product-des">
+    <h3>{{ render_product.title }}</h3>
+    <div class="s-bundle-price">
+      {% if render_product.compare_at_price > render_product.price %}
+        <div class="s-bundle-prices">
+          <span class="discounted-price">{{ render_product.price | money }}</span>
+          <span class="original-price">{{ render_product.compare_at_price | money }}</span>                          
+        </div>
+        {% assign percentage = render_product.price | times: 100 | divided_by: render_product.compare_at_price %}
+        {% assign discount_percentage = 100 | minus: percentage  %}
+        <span class="s-bundle-price-off">{{ discount_percentage | round }}% off</span>
+      {% else %}
+        <span class="current-price">{{ render_product.price | money }}</span>
+      {% endif %}
+    </div>
+  </div>
+  <button class="add-to-bundle">Add +</button>
+  <!-- Quantity box (initially hidden) -->
+  <div class="quantity-box" style="display: none;">
+    <button class="quantity-decrease" data-product-id="{{ render_product.variants[0].id }}">-</button>
+    <div class="quantity-display" data-product-id="{{ render_product.variants[0].id }}">1</div>
+    <button class="quantity-increase" data-product-id="{{ render_product.variants[0].id }}">+</button>
+  </div>
+  <div class="s-bundle-product-guarantee">
+    <!-- Guarantee SVG or content -->
+  </div>
+</div>

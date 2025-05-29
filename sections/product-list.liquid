@@ -1,0 +1,202 @@
+<style>
+    #coll_discount-text {
+    background: transparent;
+    border: none;
+    border: 2px solid;
+    border-style: dashed;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+  /* popup csss */
+ .popupOverlay{
+    position: fixed;
+    z-index: 9;
+    padding-top: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000;
+    background-color: #0006;
+}
+.popupContainer {
+    width: 100%;
+    max-width: 465px;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0 20px 20px;
+    border: 1px solid #888;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+.papPopup_link {
+    background-color: #005a64;
+    border-color: #005a64;
+    color: #fff;
+    outline: 0;
+    padding: 10px 12px;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    max-width: 130px;
+    margin: 0 auto;
+}
+ .papPopup_link:hover {
+   color: #fff !important;
+ }
+.popupOverlay .epopupClose {
+    position: absolute;
+    cursor: pointer;
+    border: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    padding: 10px;
+    line-height: 14px;
+}
+.papPopup_container {
+    text-align: center;
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.papPopup_container #popup-title {
+    line-height: 28px;
+}
+  .paptext_discounts {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@media screen and (max-width: 767px) {
+ .paptext_discounts {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  } 
+  .popupContainer {
+    max-width: 400px;
+  }
+  .template--collection span.card__price.card__price--sale,
+  .template--collection\.best-seller .card__price.card__price--sale,
+  .template--collection\.microsoft-office .card__price.card__price--sale,
+  .template--collection\.windows .card__price.card__price--sale,
+  .template--collection\.windows10 .card__price.card__price--sale,
+  .template--collection\.window-11 .card__price.card__price--sale,
+  .template--collection\.microsoft-office-2010 .card__price.card__price--sale,
+  .template--collection\.microsoft-office-2019 .card__price.card__price--sale,
+  .template--collection\.microsoft-office-2013 .card__price.card__price--sale,
+  .template--collection\.microsoft-office-2016 .card__price.card__price--sale {
+    align-items: center;
+   }
+}
+</style>
+
+{% assign mobile = settings.cardMobile %}
+{% if section.settings.cardDesktop == "default" %}
+{% assign desktop = settings.cardDesktop %}
+{% else %}
+{% assign desktop = section.settings.cardDesktop %}
+{% endif %}
+
+{% assign discounttxt = section.settings.discount_text %}
+
+{% paginate collection.products by section.settings.cardsPerPage %}
+  {% for product in collection.products %}
+    {% unless product.tags contains 'featured' %}
+      <div class="center col-{{mobile}} col-md-{{desktop}} card--holder">
+        {% render 'product-card-default' with product as product, discounttext: discounttxt, enable_discount: section.settings.discount_enable, poptext: settings.pop_text %}
+      </div>
+    {%endunless%}
+  {% else %}
+    <h2 class="h-reset font__size--medium font__family--title col-12 product-list__empty">{{'general.search.no_matches' |t}}</h2>
+  {% endfor %}
+
+  {% assign sid = 'shopify-section-' | append: section.id %}
+  {% render 'pagination', paginate: paginate, section: sid %}
+{% endpaginate %}
+
+{% assign html = '' %}
+<noscript id="JSON-filters">
+{
+  "filters": {
+    {% for filter in collection.filters %}
+      "{{filter.label|escape}}": [
+        {% for f in filter.values %}
+          {
+            "active": {{f.active}},
+            "count": {{f.count}},
+            "label": {{f.label|json}},
+            "value": {{f.value|json}},
+            "urls": {
+              "remove": "{{f.url_to_remove}}",
+              "add": "{{f.url_to_add}}"
+            }  
+          }{% unless forloop.last %},{% endunless %}{% if f.active %}{% assign html = html | append: '<span data-filter-href="' | append: f.url_to_remove | append: '">Remove: ' | append: f.label | append: '</span>'%}{% endif %}
+        {% endfor %}
+      ]{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  },
+  "html": {{html | json}},
+  "count": {{collection.products_count}}
+}
+</noscript>
+
+{% schema %}
+  {
+    "name": "Product list",
+    "class": "row--product col-12 product__list top",
+    "settings": [
+        {
+          "type": "checkbox",
+          "id": "discount_enable",
+          "label": "Discount Message Display",
+          "info": "Discount Message Display Product Card"
+        },
+        {
+          "type": "html",
+          "id": "discount_text",
+          "label": "Discount Text"
+        },
+       {
+            "type": "header",
+            "content": "Help"
+        },
+        {
+        "type": "paragraph",
+        "content": "[Click here to follow an interactive Tutorial](https://vimeo.com/458187473)"
+        },
+        {
+        "type": "select",
+        "id": "cardDesktop",
+        "label": "How many cards per row (Desktop)",
+        "options": [
+          {"value": "default", "label": "Global default"},
+          {"value": "1-5", "label": "5"},
+          {"value": "3", "label": "4"},
+          {"value": "4", "label": "3"}
+        ],
+        "default": "default"
+      },
+      {
+        "type": "range",
+        "label": "How many cards per page",
+        "id": "cardsPerPage",
+        "default": 15,
+        "min": 3,
+        "max": 50,
+        "step": 1
+      }
+    ] 
+  }
+{% endschema%}

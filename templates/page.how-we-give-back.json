@@ -1,0 +1,611 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "height": 300,
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": "medium",
+        "contentColor": "rgba(0,0,0,0)",
+        "fillColor": "rgba(0,0,0,0)",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "content": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "e055ad10-3f23-4009-b079-78892b47fe76": {
+      "type": "section__image-text",
+      "blocks": {
+        "3bbc2e00-76a5-4db8-8d21-4b537c0c766b": {
+          "type": "title",
+          "settings": {
+            "fullWidth": false,
+            "content": "Each Purchase You Make Contributes To Making A Better <span class=\"blu\">World For All Of Us</span>",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "3bbc2e00-76a5-4db8-8d21-4b537c0c766b"
+      ],
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 5,
+        "backgroundColor": "#f2f5f7",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "imagePosition": "right",
+        "imageWidth": "4",
+        "image": "shopify://shop_images/banner.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "efc560a7-a5da-4e7d-bcd8-248f6c8298c8": {
+      "type": "section__heading",
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 40,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "heading": "<h1>We Are On A Mission To Build  A Better World</h1>",
+        "headingColor": "#000000",
+        "subheading": "We have been actively working with organizations for the betterment of our world. We spend a portion of every sale on this mission. You can feel good knowing that you’re helping create a better world for all by purchasing from us. Our key areas of focus are:",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "below",
+        "button_label": "",
+        "button_link": "",
+        "headingAlignment": "center"
+      }
+    },
+    "e15e7922-e7ab-4914-ab24-5ce05f7f5be7": {
+      "type": "section__image-text",
+      "blocks": {
+        "template--14807614881847__e15e7922-e7ab-4914-ab24-5ce05f7f5be7-title-1": {
+          "type": "title",
+          "settings": {
+            "fullWidth": false,
+            "content": "Helping Orphanages",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "template--14807614881847__e15e7922-e7ab-4914-ab24-5ce05f7f5be7-richText-1": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>We care about our future generations. For every purchase you make, a portion is donated to an orphanage in developing countries ( Thailand, Philippines, and India ). We provide the children with books, food, software, laptops and all other necessities for their development.</p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "small"
+          }
+        }
+      },
+      "block_order": [
+        "template--14807614881847__e15e7922-e7ab-4914-ab24-5ce05f7f5be7-title-1",
+        "template--14807614881847__e15e7922-e7ab-4914-ab24-5ce05f7f5be7-richText-1"
+      ],
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 5,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "imagePosition": "left",
+        "imageWidth": "4",
+        "image": "shopify://shop_images/kids.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "0aa9a39b-699e-4db2-978a-af2995146085": {
+      "type": "section__image-text",
+      "blocks": {
+        "73193f38-227d-4f8f-aa5c-88d1d28cea4f": {
+          "type": "title",
+          "settings": {
+            "fullWidth": false,
+            "content": "Protecting The Environment",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "fc894410-af78-4306-b6df-22f153e1b053": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>Each Quarter we actively work towards reducing our Carbon footprint. We even offset the email or sever Carbon footprints by planting trees. By 2025 our investments in environmental technology will lead us to a near carbon neutral business. Additionally, a portion of all proceeds goes towards replenishing natural rain forests.<br/><br/></p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "small"
+          }
+        }
+      },
+      "block_order": [
+        "73193f38-227d-4f8f-aa5c-88d1d28cea4f",
+        "fc894410-af78-4306-b6df-22f153e1b053"
+      ],
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 5,
+        "backgroundColor": "#f2f5f7",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "imagePosition": "right",
+        "imageWidth": "4",
+        "image": "shopify://shop_images/protect.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "44c91974-02cb-4e17-a5a3-d53f8dbbf671": {
+      "type": "section__image-text",
+      "blocks": {
+        "a59928de-b7df-49e1-bab2-d4d9f57d767f": {
+          "type": "title",
+          "settings": {
+            "fullWidth": false,
+            "content": "Rescuing Animals",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "8d4aa35c-185e-4540-9a86-6ee46ebf0741": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>Since we want to create a better world for everyone so we are actively participating in helping and rescuing homeless animals. We have sponsored these helpless animals for their care and support.</p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "small"
+          }
+        }
+      },
+      "block_order": [
+        "a59928de-b7df-49e1-bab2-d4d9f57d767f",
+        "8d4aa35c-185e-4540-9a86-6ee46ebf0741"
+      ],
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 5,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "imagePosition": "left",
+        "imageWidth": "4",
+        "image": "shopify://shop_images/animal.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "e780ddd2-3fad-43cf-ba93-d66241cbed35": {
+      "type": "section__columns",
+      "blocks": {
+        "0e87eef9-1683-4e5e-8971-a79182502ea1": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/jaago.png",
+            "imageSize": 100,
+            "heading": "",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "c153fc69-fc69-4f41-b651-bf2d6a47af4a": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/soi-dog.png",
+            "imageSize": 100,
+            "heading": "",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "19b0ca42-9b81-4e8d-80df-d4521c6fc8ce": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/care-corner.png",
+            "imageSize": 100,
+            "heading": "",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "c92822ca-1c29-41b3-805f-0d5f27a08f78": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/Foundation.png",
+            "imageSize": 100,
+            "heading": "",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        }
+      },
+      "block_order": [
+        "0e87eef9-1683-4e5e-8971-a79182502ea1",
+        "c153fc69-fc69-4f41-b651-bf2d6a47af4a",
+        "19b0ca42-9b81-4e8d-80df-d4521c6fc8ce",
+        "c92822ca-1c29-41b3-805f-0d5f27a08f78"
+      ],
+      "settings": {
+        "custom_id": "logo-sec",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "#f2f5f7",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "The Organizations We Are Working With",
+        "headingColor": "#000000",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 50,
+        "colGap": 20,
+        "textAlign": "center",
+        "contentAlign": "top",
+        "colCount": "col-md-3"
+      }
+    },
+    "e8711448-5360-424a-94f3-70ee0186ed16": {
+      "type": "section__slider--adaptive",
+      "blocks": {
+        "template--14817784758327__e8711448-5360-424a-94f3-70ee0186ed16-imageSlideAdaptive-1": {
+          "type": "imageSlideAdaptive",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "bottom",
+            "padding": 16,
+            "contentSpacing": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/image1_82bda1f5-86ff-4956-8423-d6173a11863d.png",
+            "backgroundPosition": "middle",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "slideURL": "",
+            "heading": "Christmas celebration at Corner care Foundation courtesy of SoftwareKeep",
+            "headingColor": "#000000",
+            "content": "<p>We celebrated Christmas with orphans at the Corner Care Orphanage Foundation Thailand. </p>",
+            "contentColor": "#000000",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "b48b4ac4-fb81-4d01-95bf-b8b20e2cfa76": {
+          "type": "imageSlideAdaptive",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "bottom",
+            "padding": 16,
+            "contentSpacing": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/image2.png",
+            "backgroundPosition": "middle",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "slideURL": "",
+            "heading": "We have sponsored Mattana the Dog from Soi Dog for her care and support",
+            "headingColor": "#000000",
+            "content": "<p>Now Mattana will receive all types of care and love from the purchases our customers have done in the past.</p>",
+            "contentColor": "#000000",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "1b78cb79-c1f4-4cca-9364-2cede4c3ce62": {
+          "type": "imageSlideAdaptive",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "bottom",
+            "padding": 16,
+            "contentSpacing": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/image3_38abbe10-5c66-4ccc-90b7-58c73c15b0a8.png",
+            "backgroundPosition": "middle",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "slideURL": "",
+            "heading": "Book donations for the libraries in Care Corner Orphanage Foundation",
+            "headingColor": "#000000",
+            "content": "<p>We invest in the education and knowledge of orphans for their bright future.</p>",
+            "contentColor": "#000000",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "fa839290-d7cb-416d-b8d4-502e247e9b97": {
+          "type": "imageSlideAdaptive",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "bottom",
+            "padding": 16,
+            "contentSpacing": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/image4_2676440d-c311-475f-bde8-0a11e1492ed0.png",
+            "backgroundPosition": "middle",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "slideURL": "",
+            "heading": "We have sponsored two children from the Jaago foundation",
+            "headingColor": "#000000",
+            "content": "<p>As a sponsored parent we will cover all their expenses from education to health.</p>",
+            "contentColor": "#000000",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "4eba0d7a-3116-4220-94cd-04a39066f3cf": {
+          "type": "imageSlideAdaptive",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "bottom",
+            "padding": 16,
+            "contentSpacing": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/image5_5fc93a98-afe7-49d9-9009-3775fe9ab9bf.png",
+            "backgroundPosition": "middle",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "slideURL": "",
+            "heading": "Coloring material Distribution at Care Corner Foundation in chiangmai",
+            "headingColor": "#000000",
+            "content": "<p>Even during the pandemic, we kept the students engaged by donating coloring materials to help keep their creative ability going despite the tough times.</p>",
+            "contentColor": "#000000",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        },
+        "16d8b5e4-6f4c-476e-bffe-e16eb866705e": {
+          "type": "imageSlideAdaptive",
+          "settings": {
+            "horizontalAlignment": "center",
+            "verticalAlignment": "bottom",
+            "padding": 16,
+            "contentSpacing": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "backgroundImage": "shopify://shop_images/image6_f5471159-6916-4dd4-a481-8bb8e600c1c8.png",
+            "backgroundPosition": "middle",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "slideURL": "",
+            "heading": "Distributed Food and Drinks to children in the Orphanage Foundation Thailand",
+            "headingColor": "#000000",
+            "content": "<p>We went to the Orphanage Foundation Thailand in Bangkok to give food and drinks to the kids and donated some money there.</p>",
+            "contentColor": "#000000",
+            "button1Text": "",
+            "button1Link": "",
+            "button1Style": "primary",
+            "button1Type": "default",
+            "button2Text": "",
+            "button2Link": "",
+            "button2Style": "secondary",
+            "button2Type": "default"
+          }
+        }
+      },
+      "block_order": [
+        "template--14817784758327__e8711448-5360-424a-94f3-70ee0186ed16-imageSlideAdaptive-1",
+        "b48b4ac4-fb81-4d01-95bf-b8b20e2cfa76",
+        "1b78cb79-c1f4-4cca-9364-2cede4c3ce62",
+        "fa839290-d7cb-416d-b8d4-502e247e9b97",
+        "4eba0d7a-3116-4220-94cd-04a39066f3cf",
+        "16d8b5e4-6f4c-476e-bffe-e16eb866705e"
+      ],
+      "settings": {
+        "custom_id": "slider_section",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "height": 0,
+        "contentColor": "rgba(0,0,0,0)",
+        "autoplay": false,
+        "slideSpeed": 5,
+        "animation": "none",
+        "delayAnimation": false
+      }
+    },
+    "54f4f8bb-7941-4a1c-be3d-f05ca7576f07": {
+      "type": "newsletter",
+      "settings": {
+        "newsletter_title": "",
+        "newsletter_text": "<p>Subscribe To Our Newsletter & Get Exclusive Deals.</p>",
+        "display_first_name": false,
+        "display_last_name": false,
+        "newsletter_section_text_align": "center"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "e055ad10-3f23-4009-b079-78892b47fe76",
+    "efc560a7-a5da-4e7d-bcd8-248f6c8298c8",
+    "e15e7922-e7ab-4914-ab24-5ce05f7f5be7",
+    "0aa9a39b-699e-4db2-978a-af2995146085",
+    "44c91974-02cb-4e17-a5a3-d53f8dbbf671",
+    "e780ddd2-3fad-43cf-ba93-d66241cbed35",
+    "e8711448-5360-424a-94f3-70ee0186ed16",
+    "54f4f8bb-7941-4a1c-be3d-f05ca7576f07"
+  ]
+}

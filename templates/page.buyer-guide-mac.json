@@ -1,0 +1,45 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "reatilsproducts": {
+      "type": "buyer-guide-retail-version",
+      "settings": {
+        "title": "Microsoft Office For Mac: Your Ultimate Productivity Suite",
+        "subtitle": "<p>Get the Best Deals on Microsoft Office for Mac: One-Time Purchase, Genuine Product Keys-24/7365 Support .</p>",
+        "retails_products": [
+          "microsoft-office-2024-student-for-mac",
+          "microsoft-office-2024-business-for-mac",
+          "microsoft-office-2021-home-and-student-for-mac",
+          "microsoft-office-2021-home-and-business-for-mac"
+        ],
+        "openlv": [
+          "microsoft-office-2019-home-and-student-for-mac",
+          "microsoft-office-2019-home-and-business-for-mac",
+          "microsoft-office-2016-home-student-mac-download",
+          "microsoft-office-2016-home-and-business-for-mac",
+          "microsoft-office-2011-home-and-business-for-mac",
+          "microsoft-office-2011-home-and-student-version-for-mac-download"
+        ]
+      }
+    },
+    "content": {
+      "type": "page",
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    }
+  },
+  "order": [
+    "reatilsproducts",
+    "content"
+  ]
+}

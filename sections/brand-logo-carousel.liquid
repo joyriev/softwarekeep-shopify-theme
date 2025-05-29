@@ -1,0 +1,81 @@
+{{ 'brand-logo-carousel.css' | asset_url | stylesheet_tag }}
+<div id="secbgg_{{ section.id }}">
+  <div class="{{ section.settings.maxwidth }}">
+     <div class="slide_crosl_wraps">
+       <div class="hhead-text">
+          {% if section.settings.title != blank %}
+            <p class="smal_heads">{{ section.settings.title }}</p>
+          {% endif %}
+       </div>
+       <div class="logo_listing">
+          {% for block in section.blocks %}
+            {% if block.settings.logoimage != blank %}
+              <div class="item">
+                  {% render 'ratio-image', image: block.settings.logoimage, mratio: '12', ratioType: 'col' %}
+              </div>
+              {% else %}
+              <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/TechCrunch_transparent.png?v=1710938912" width="150" height="100">
+            {% endif %}
+         {% endfor %}
+       </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  #secbgg_{{ section.id }}{
+     background: {{section.settings.secbg}};
+     margin: {{section.settings.margingap}}px 0;
+  }
+</style>
+{% schema %}
+  {
+    "name": "Brand Logo",
+    "class": "brand-logo-slide",
+     "settings": [
+       {
+        "type": "color",
+         "id": "secbg",
+         "label": "Section background Color",
+         "default": "#fff"
+       },
+      {
+        "type": "range",
+        "label": "Margin top and bottom",
+        "id": "margingap",
+        "unit": "px",
+        "min": 0,
+        "max": 50,
+        "default": 0,
+        "info": "Margin top and bottom section"
+      },
+      {
+        "type": "text",
+        "id": "maxwidth",
+        "label": "Enter Conatiner Max-width Class",
+        "info":"max-width"
+     },
+     {
+        "type": "text",
+        "id": "title",
+        "label": "Enter Heading",
+        "default":"Trusted By:"
+      }
+  ],
+   "blocks": [
+     {
+       "name": "Logo Crasoul",
+       "type": "logo",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "logoimage",
+           "label": "Select Logo Image"
+         }
+       ]
+     }
+  ],
+    "presets": [{"name": "Brand Logo"}]
+  }
+{% endschema %}

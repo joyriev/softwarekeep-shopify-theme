@@ -1,0 +1,115 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "height": 90,
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "fontSize": "big",
+        "contentColor": "#191d21",
+        "fillColor": "#f2f5f7",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "content": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "black_friday_texas_bundle_VMyeJR": {
+      "type": "black-friday-texas-bundle",
+      "blocks": {
+        "gift_a7VnMU": {
+          "type": "gift",
+          "settings": {
+            "product": "mcafee-internet-security-1-user-1-year-pc"
+          }
+        },
+        "gift_qHRUqQ": {
+          "type": "gift",
+          "settings": {
+            "product": "add-a-usb-software-backup"
+          }
+        },
+        "gift_kMN6rE": {
+          "type": "gift",
+          "settings": {
+            "product": "trend-micro-maximum-security-1year-3pc-2024"
+          }
+        },
+        "collection_VQ9t3m": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/microsoft-office.png",
+            "title": "Microsoft Office",
+            "collection": "microsoft-office-black-friday-deals"
+          }
+        },
+        "collection_x9YAF4": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/windows_9c7ae6d2-d63c-4e5e-801a-3860ec04bf2d.png",
+            "title": "Windows",
+            "collection": "microsoft-windows-black-friday-deals"
+          }
+        },
+        "collection_QXMTXL": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/office_apps_3.png",
+            "title": "Microsoft Apps",
+            "collection": "microsoft-apps-black-friday-deals"
+          }
+        },
+        "collection_bAHrLK": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/windows_1_a8c3f5ee-daab-4e08-87bd-ca0dda217810.png",
+            "title": "Windows Server",
+            "collection": "windows-server-deals"
+          }
+        }
+      },
+      "block_order": [
+        "gift_a7VnMU",
+        "gift_qHRUqQ",
+        "gift_kMN6rE",
+        "collection_VQ9t3m",
+        "collection_x9YAF4",
+        "collection_QXMTXL",
+        "collection_bAHrLK"
+      ],
+      "settings": {
+        "banner_image": "shopify://shop_images/TEXAS_USA_Banner_Selection-01.png",
+        "main_back": "shopify://shop_images/Background_4_1.png",
+        "title_desktop": "",
+        "title_mobile": "",
+        "subtitle": "",
+        "description": "",
+        "label": "Guaranteed Lowest Price Ever!",
+        "vpn": "truly-vpn"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "black_friday_texas_bundle_VMyeJR"
+  ]
+}

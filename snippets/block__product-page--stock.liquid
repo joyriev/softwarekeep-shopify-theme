@@ -1,0 +1,38 @@
+<div id="bd__{{ block.id }}" class="col-12 product__stock {% if block.settings.noMargin or noMargin %}margin__bottom--reduced1{%endif-%}" {{block.shopify_attributes}}>
+{% if product.available %}
+<span class="amount--text" id="left__{{ block.id }}">
+<span id="qtynum__{{ block.id }}"
+data-reduce="{{block.settings.reduce}}" 
+data-product="{{product.id}}" 
+data-stock-type="{{block.settings.stockLeft}}" 
+data-stock-left="{% unless block.settings.stockLeft == 'inventory' %}{{block.settings.stockLeft}}{%else%}{{product.first_available_variant.inventory_quantity | default: 5}}{%endunless%}">
+0</span>
+ {{'product_page.apps.in_stock' | t}}</span>
+<span class="amount"><span class="amount--left"></span></span>
+{% else %}
+<span class="amount--text">
+{{'product_page.apps.no_stock' | t}}</span>
+<span class="amount"><span class="amount--left" style="width: 2px;"></span></span>
+{% endif %}
+</div>
+
+  <style>
+    #bd__{{ block.id }}{
+      background: {{ block.settings.stockbg }};
+      border-radius: 50px;
+      padding: 8px 10px;
+    }
+    #left__{{ block.id }}{
+      color: {{block.settings.left_color}};
+      font-size: {{block.settings.stockfont_size}}px;
+    }
+    #qtynum__{{ block.id }}{
+      color: {{block.settings.quantity_color}};
+      font-size: {{block.settings.stockfont_size}}px;
+    }
+  </style>
+{% comment %}
+{% blockdef %}
+
+{% endblockdef %}
+{% endcomment %}

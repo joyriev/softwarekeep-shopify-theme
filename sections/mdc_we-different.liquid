@@ -1,0 +1,63 @@
+<div class="custom-max-width wdt_wrapper">
+  <h2><i class="fa_prepended fa fa-star" contenteditable="false" style="color: rgb(0, 122, 255);"></i> {{ section.settings.heading }}</h2>  
+  <div class="imagewrap">
+  {{ section.settings.image | image_url: width:'646', height:'637' | image_tag }}
+  </div>  
+</div>
+{% comment %}
+<div class="custom-max-width wdt_wrapper">
+  <h2 style="color: {{ section.settings.color }}"><i class="fa_prepended fa fa-star" contenteditable="false" style="color: rgb(0, 122, 255);"></i> {{ section.settings.heading }}</h2>
+  <div class="wdt_table_blocks">
+        <div class="main_list">  
+  {% for block in section.blocks %}
+    {% if block.type == 'main_list' %}
+        <p>{{ block.settings.list1 }}</p>
+      
+    {% endif %}
+  {% endfor %}
+     </div>
+   <div class="us_list">
+  <div class="thead">US</div>
+  {% for block in section.blocks %}  
+    {% if block.type == 'us_list' %}
+      <p>
+      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><path d="M 26.980469 5.9902344 A 1.0001 1.0001 0 0 0 26.292969 6.2929688 L 11 21.585938 L 4.7070312 15.292969 A 1.0001 1.0001 0 1 0 3.2929688 16.707031 L 10.292969 23.707031 A 1.0001 1.0001 0 0 0 11.707031 23.707031 L 27.707031 7.7070312 A 1.0001 1.0001 0 0 0 26.980469 5.9902344 z"/></svg>
+      {{ block.settings.list2 }}</p>
+    {% endif %}
+  {% endfor %}
+    </div>
+    <div class="other_list">
+       <div class="thead">Other Websites</div> 
+  {% for block in section.blocks %}  
+    {% if block.type == 'other_list' %}
+      <p>{{ block.settings.list3 }}</p>
+    {% endif %}
+  {% endfor %}
+   </div>   
+  </div>
+</div>
+{% endcomment %}
+
+{% schema %}
+  {
+    "name": "We Defferent Table",
+    "class": "we-defferent-table",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+    ],
+    "presets":[
+      {
+        "name": "We Defferent Table"
+      }
+    ]
+  }
+{% endschema %}

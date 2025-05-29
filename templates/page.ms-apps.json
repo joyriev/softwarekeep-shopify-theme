@@ -1,0 +1,669 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "topheader": {
+      "type": "deals-header",
+      "disabled": true,
+      "settings": {
+        "toptext": "🕐 SAVE 26% - Offer Ends Today!",
+        "botomtext": ""
+      }
+    },
+    "product": {
+      "type": "ms-apps-after-rockeet",
+      "blocks": {
+        "product_gjNErU": {
+          "type": "product",
+          "settings": {
+            "tabnme": "Word",
+            "tab_fetureimg": "shopify://shop_images/microsoft-software-microsoft-word-2021-for-mac-30770810454071.png",
+            "productwindow": "microsoft-word-2021",
+            "name1": "Word for Window",
+            "Productmac": "microsoft-word-2021-for-mac",
+            "name2": "Word for Mac"
+          }
+        },
+        "product_4aNLBG": {
+          "type": "product",
+          "settings": {
+            "tabnme": "Excel",
+            "tab_fetureimg": "shopify://shop_images/microsoft-software-microsoft-excel-2021-pc-30771222773815.png",
+            "productwindow": "microsoft-excel-2021",
+            "name1": "Excel PC",
+            "Productmac": "microsoft-excel-2021-for-mac",
+            "name2": "Excel Mac"
+          }
+        },
+        "product_KDwGKH": {
+          "type": "product",
+          "settings": {
+            "tabnme": "Power Point",
+            "tab_fetureimg": "shopify://shop_images/microsoft-software-microsoft-powerpoint-2021-for-mac-30770987925559.png",
+            "productwindow": "microsoft-powerpoint-2021",
+            "name1": "PowerPoint PC",
+            "Productmac": "microsoft-powerpoint-2021-for-mac",
+            "name2": "PowerPoint Mac"
+          }
+        },
+        "product_mbAriq": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "tabnme": "Outlook",
+            "productwindow": "microsoft-outlook-2021",
+            "name1": "Outlook PC",
+            "Productmac": "microsoft-outlook-2021-for-mac",
+            "name2": "Outlook Mac"
+          }
+        },
+        "product_4rmtFy": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "tabnme": "Publisher",
+            "productwindow": "publisher-2021",
+            "name1": "Publisher",
+            "Productmac": "",
+            "name2": ""
+          }
+        },
+        "product_4WaJGd": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "tabnme": "Access",
+            "productwindow": "microsft-access-2021",
+            "name1": "Access",
+            "Productmac": "",
+            "name2": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_gjNErU",
+        "product_4aNLBG",
+        "product_KDwGKH",
+        "product_mbAriq",
+        "product_4rmtFy",
+        "product_4WaJGd"
+      ],
+      "settings": {
+        "product_deals": "word-excel-ppt-access",
+        "reviews": "shopify://shop_images/ResellerRatings_1_eedd016d-de3f-4ecd-a47f-20bf42caa971.png",
+        "trusturl": "https://www.resellerratings.com/store/Softwarekeep_com",
+        "reviewstext": "",
+        "asseeon": "shopify://shop_images/trusted_by.png",
+        "content-list": "<ul>\n<li>One-time payment, no subscriptions</li>\n<li>Lifetime support at no extra cost</li>\n<li>      <div class=\"new-popcalls\">\n         <p class=\"make_diff\" id=\"newwhere\" style=\"margin: 5px;\"><span style=\"font-size:30px;\"></span><span style=\"text-decoration:underline;font-weight:600;\">WHAT MAKE US DIFFERENT</span></p>\n      </div>\n</li>\n</ul>",
+        "pro_title": "Save up to 52%  + On Microsoft Office 2021 Apps",
+        "sub_dates": "",
+        "esale": "<b>EXCLUSIVE SALE!</b> FREE Gifts With Your First Order",
+        "mback": "Enjoy Softwarekeep Products Risk-Free with 180-Day Money Back Guarantee",
+        "paypalenable": true
+      }
+    },
+    "trustpilot_reviews_GJyVqw": {
+      "type": "trustpilot-reviews",
+      "settings": {
+        "header_title": "What Customers Say About Us",
+        "trustsecbg": "#ffffff",
+        "tpmargingap": 0,
+        "pading_botm": 60
+      }
+    },
+    "section_icon_with_text_8axejx": {
+      "type": "section__icon-with-text",
+      "blocks": {
+        "home_guarantee_block_nxfhmz": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/1-03_72357ee6-1e8e-444f-a1cf-0619694ed03c.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Lifetime Warranty",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "rgba(0,0,0,0)",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "home_guarantee_block_ETzbr8": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/1-04_f192b44a-0b9d-4789-9e8c-526a9a8d7e60.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "Microsoft Certified Partner",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "rgba(0,0,0,0)",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "home_guarantee_block_FTMhjn": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/1-01_3919180d-25c3-4bce-9e07-df21acb44b81.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "180 - Day Refund Guarantee",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "rgba(0,0,0,0)",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "home_guarantee_block_hgBbx3": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/1-02_dc832366-9a06-49ec-a67e-bdc962f9264b.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "100% Genuine Products",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "rgba(0,0,0,0)",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        },
+        "home_guarantee_block_FLhHPm": {
+          "type": "home_guarantee_block",
+          "settings": {
+            "home_guarantee_block_image": "shopify://shop_images/1-05_5b53beef-9955-47cf-9b6d-118daf9e0bf4.png",
+            "tile_oneline": false,
+            "home_guarantee_block_title": "24/7 Customer Service",
+            "home_guarantee_block_title_font_size": 20,
+            "home_guarantee_block_title_text_color": "#ffffff",
+            "home_guarantee_block_subtitle": "",
+            "home_guarantee_block_subtitle_font_size": 18,
+            "home_guarantee_block_subtitle_text_color": "#ffffff",
+            "home_guarantee_block_background_color": "rgba(0,0,0,0)",
+            "home_guarantee_block_button": "",
+            "home_guarantee_block_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "home_guarantee_block_nxfhmz",
+        "home_guarantee_block_ETzbr8",
+        "home_guarantee_block_FTMhjn",
+        "home_guarantee_block_hgBbx3",
+        "home_guarantee_block_FLhHPm"
+      ],
+      "settings": {
+        "Slider_enbalemobile": true,
+        "home_guarantee_title": "",
+        "custom_id": "after-icons_rockt",
+        "home_guarantee_title_font_size": 40,
+        "home_guarantee_title_color": "#0067b8",
+        "home_guarantee_subtitle": "",
+        "home_guarantee_subtitle_font_size": 20,
+        "home_guarantee_subtitle_color": "#042338"
+      }
+    },
+    "shopify_udp_featurelist_KH6ihR": {
+      "type": "shopify-udp-featurelist",
+      "settings": {
+        "bgssec": "#fff",
+        "st_head": "Microsoft Word 2021 Highlights:",
+        "home_pro": "Buy Microsoft Word 2021: The ultimate word processing solution for both Mac and Windows users, designed for all your writing needs.\n<ul class=\"list-high-products\">\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/UserCircle.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span><b>Cross Platform:</b> Seamlessly works on both macOS and Windows operating systems.</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span><b>One-Time Purchase:</b>  Own Word 2021 for life with a single purchase.</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span><b>Sales &amp; Deals:</b> Get the best deals and save on your software purchase.</span>\n   </li>\n</ul>",
+        "bus_head": "Microsoft Excel 2021 Highlights:",
+        "business_pro": "Get Microsoft Excel 2021: The ultimate data management tool, perfect for handling complex calculations and data analysis on any platform.\n<ul class=\"list-high-products\">\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/UserCircle.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span><b>Cross Platform:</b> Fully optimized for both macOS and Windows operating system.</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span><b>One-Time Purchase:</b> Make a single purchase and own Excel 2021 forever, no subscriptions required.</span>\n   </li>\n   <li>\n      <div class=\"img\"><img alt=\"Cms pages\" title=\"Cms pages\" loading=\"lazy\" width=\"20\" height=\"20\" decoding=\"async\" data-nimg=\"1\" src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/CloudCheck.svg?v=1703751815\" style=\"color: transparent;\"></div>\n      <span><b>Unbeatable Deals:</b> Best license key deals guaranteed.</span>\n   </li>\n   \n</ul>",
+        "botm_para": ""
+      }
+    },
+    "afterrocketdownload": {
+      "type": "after-rocket-download",
+      "blocks": {
+        "image_WCUQmK": {
+          "type": "image",
+          "settings": {
+            "textsecbg": "#2963b5",
+            "htext": "Add product to cart",
+            "image": "shopify://shop_images/1_Add_to_Cart_SK.png",
+            "content": "bottom",
+            "paratext": "Use the quick browsing function to search for the software you need. Make your selection and add to your cart.",
+            "blink_count": true
+          }
+        },
+        "image_6K6gwa": {
+          "type": "image",
+          "settings": {
+            "textsecbg": "#2963b5",
+            "htext": "Unlock Extra Savings",
+            "image": "shopify://shop_images/2_Add_Code_to_Cart_SK.png",
+            "content": "bottom",
+            "paratext": "For extra savings, remember to check the homepage for any discount codes Often special promotions are running.",
+            "blink_count": true
+          }
+        },
+        "image_8TyDqY": {
+          "type": "image",
+          "settings": {
+            "textsecbg": "#2963b5",
+            "htext": "Instant download",
+            "image": "shopify://shop_images/3_Download_Now.png",
+            "content": "bottom",
+            "paratext": "No frustrating shipping delays, or queuing in a shop. Instead, get a download link in your email. Install and start using your product right away.",
+            "blink_count": true
+          }
+        }
+      },
+      "block_order": [
+        "image_WCUQmK",
+        "image_6K6gwa",
+        "image_8TyDqY"
+      ],
+      "disabled": true,
+      "settings": {
+        "htext": "We Have Made The Download Process Easy."
+      }
+    },
+    "shopify_us_make_different_TtrxbR": {
+      "type": "shopify-us-make-different",
+      "blocks": {
+        "text_qn8rhV": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/25.png",
+            "htext": "Complex & Overpriced",
+            "paratext": "High costs and complicated purchasing processes can be a headache."
+          }
+        },
+        "text_zPpaVL": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/3_1.png",
+            "htext": "Limited Support",
+            "paratext": "Limited or no customer support can leave you stuck when you need help the most."
+          }
+        },
+        "text_GKBLYC": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/5.png",
+            "htext": "Risky Downloads",
+            "paratext": "Downloading software from unverified sources risks malware and security breaches."
+          }
+        },
+        "text_QhqyiX": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/32_d6f7e4ae-3435-45e0-98aa-b6b9cbded670.png",
+            "htext": "Slow & Inconvenient",
+            "paratext": "Waiting for physical media delivery can be slow and inconvenient."
+          }
+        },
+        "text_FLfXYg": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#f7f7f7",
+            "image": "shopify://shop_images/33_0fd31616-01de-411c-ae7c-1e67745bcb67.png",
+            "htext": "Outdated Versions",
+            "paratext": "Buying from unreliable sources can leave you with outdated software versions."
+          }
+        },
+        "text_hnhyUQ": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/26.png",
+            "htext": "Affordable & Straightforward",
+            "paratext": "Get premium software at unbeatable prices with a smooth, user-friendly purchase experience."
+          }
+        },
+        "text_xkn34G": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/call_center_1.png",
+            "htext": "24/7 Expert Support",
+            "paratext": "Enjoy round-the-clock access to expert support, ready to assist you with any issues or questions."
+          }
+        },
+        "text_Qw6i8A": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/6.png",
+            "htext": "Secure Downloads",
+            "paratext": "All software from SoftwareKeep is 100% genuine and secure, ensuring peace of mind with every download."
+          }
+        },
+        "text_hQtTe9": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/8.png",
+            "htext": "Instant Access",
+            "paratext": "Purchase and download your software instantly, getting you up and running without delay."
+          }
+        },
+        "text_7EwmHB": {
+          "type": "text",
+          "settings": {
+            "blocksecbg": "#e5f6ea",
+            "image": "shopify://shop_images/10_5283b2ad-eec4-48c7-b094-f6f23b28beda.png",
+            "htext": "Up-to-Date Software",
+            "paratext": "Always get the latest versions and updates, ensuring you have the most current and efficient software."
+          }
+        }
+      },
+      "block_order": [
+        "text_qn8rhV",
+        "text_zPpaVL",
+        "text_GKBLYC",
+        "text_QhqyiX",
+        "text_FLfXYg",
+        "text_hnhyUQ",
+        "text_xkn34G",
+        "text_Qw6i8A",
+        "text_hQtTe9",
+        "text_7EwmHB"
+      ],
+      "custom_css": [],
+      "settings": {
+        "secbg": "#ffffff",
+        "heading": "What makes Softwarekeep different?",
+        "others": "Others",
+        "image": "shopify://shop_images/logo.svg"
+      }
+    },
+    "section_faq_d3DGJQ": {
+      "type": "section__faq",
+      "blocks": {
+        "accordion_cm4R8V": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>What Makes SoftwareKeep Different?</p>",
+            "answer": "#US1000236013"
+          }
+        },
+        "accordion_qHYJqz": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>How do I install my software?</p>",
+            "answer": "We will send you an email wit the specific instructions on how to install your software."
+          }
+        },
+        "accordion_r6fMMH": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Product Information</p>",
+            "answer": "<b>1. Microsoft Word: The Power of Document Creation</b>\n    <p>Microsoft Word is the leading word processing tool, offering everything from simple document creation to advanced formatting and collaboration features. It’s widely used for writing reports, letters, essays, and much more. The flexibility and comprehensive toolset make Word the best option for professional-grade documents.</p>\n\n    <b>Key Features of Microsoft Word:</b>\n    <ol>\n        <li><strong>User-Friendly Interface</strong>: Word’s clean and intuitive design makes it accessible to beginners while offering advanced features for experienced users.</li>\n        <li><strong>Templates and Formatting</strong>: Choose from a variety of built-in templates and formatting options to create polished documents effortlessly.</li>\n        <li><strong>Collaboration Tools</strong>: Real-time collaboration through OneDrive allows multiple users to edit and review documents together. Features like Track Changes and Comments simplify the review process.</li>\n        <li><strong>Editing and Proofing Tools</strong>: Enhanced grammar, punctuation, and style corrections through Microsoft Editor, along with translation features and word count tracking, make Word an all-in-one solution for document editing.</li>\n        <li><strong>Advanced Features</strong>: Insert images, tables, charts, and embedded objects like videos. Use footnotes, citations, and a Table of Contents for more complex documents.</li>\n    </ol>\n\n    <b>2. Microsoft Excel: Mastering Data and Numbers</b>\n    <p>Microsoft Excel is the undisputed leader in spreadsheet software, offering robust tools for managing data, performing calculations, and creating reports. Whether for business or personal use, Excel’s wide range of functions ensures data management is accurate and efficient.</p>\n\n    <b>Key Features of Microsoft Excel:</b>\n    <ol>\n        <li><strong>Formulas and Functions</strong>: Excel’s library of formulas includes everything from basic arithmetic to complex data analysis. Common functions like SUM, AVERAGE, and VLOOKUP streamline data processing.</li>\n        <li><strong>Data Visualization</strong>: Use Excel’s charting tools to turn raw data into visually engaging graphs, from bar charts to scatter plots. Conditional formatting highlights important trends in your data.</li>\n        <li><strong>Pivot Tables</strong>: Organize, summarize, and analyze large datasets with pivot tables, an essential feature for making sense of big data.</li>\n        <li><strong>Data Import and Export</strong>: Import data from external sources like CSV files, databases, and other spreadsheets. Export to various formats, including PDF, to share your work easily.</li>\n        <li><strong>Macros and Automation</strong>: Use Macros and VBA (Visual Basic for Applications) to automate repetitive tasks, saving time and reducing errors.</li>\n    </ol>\n\n    <b>3. Microsoft PowerPoint: Engaging Presentations Made Easy</b>\n    <p>Microsoft PowerPoint has long been the standard for creating presentations. Whether you need a dynamic sales pitch or an engaging educational slideshow, PowerPoint provides the tools to make your ideas come to life.</p>\n\n    <b>Key Features of Microsoft PowerPoint:</b>\n    <ol>\n        <li><strong>Templates and Themes</strong>: PowerPoint offers a wide selection of templates and themes to help users create visually appealing presentations with ease.</li>\n        <li><strong>Slide Master</strong>: This feature allows you to ensure consistency across your presentation by setting a unified design for fonts, colors, and logos.</li>\n        <li><strong>Animations and Transitions</strong>: Add excitement to your presentations with a variety of animation and transition effects to keep your audience engaged.</li>\n        <li><strong>Media Integration</strong>: Embed multimedia elements like videos, audio clips, and charts directly into your slides for a more interactive experience.</li>\n        <li><strong>Collaboration and Sharing</strong>: Work on presentations together through OneDrive’s cloud-based storage and share your final product easily via email or direct links.</li>\n    </ol>\n\n    <b>Why These Microsoft Office Apps Remain Essential</b>\n    <p>Word, Excel, and PowerPoint continue to be fundamental tools in offices, classrooms, and homes worldwide. Their unique functionalities allow users to create, analyze, and present with ease. As part of Microsoft 365, these apps are more powerful than ever, with cloud-based features that promote seamless collaboration and anywhere access.</p>"
+          }
+        },
+        "accordion_yFbdeF": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Benefits</p>",
+            "answer": "<b>Benefits of Using Microsoft Office Apps:</b>\n    <ol>\n        <li><strong>Integration</strong>: Word, Excel, and PowerPoint integrate smoothly, allowing users to pull data from one app to another easily.</li>\n        <li><strong>Cloud Access</strong>: Save and access files from anywhere with OneDrive, making remote work or studying more convenient.</li>\n        <li><strong>Constant Updates</strong>: Microsoft frequently updates these apps with new features and improvements, ensuring that users always have the best tools for productivity.</li>\n    </ol>"
+          }
+        },
+        "accordion_RVz8R9": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>System Requirements</p>",
+            "answer": "<body>\n    <b>System Requirements for Microsoft Word, Excel, and PowerPoint 2021</b>\n\n    <b>System Requirements for Windows</b>\n    <ol>\n        <li><strong>Operating System</strong>: Windows 10 or Windows 11 (64-bit versions only).</li>\n        <li><strong>Processor</strong>: 1.6 GHz or faster, 2-core processor.</li>\n        <li><strong>RAM</strong>:\n            <ol>\n                <li>4 GB for 64-bit systems.</li>\n                <li>2 GB for 32-bit systems.</li>\n            </ul>\n        </li>\n        <li><strong>Hard Disk Space</strong>: 4 GB of available hard disk space.</li>\n        <li><strong>Display</strong>: 1280 x 768 screen resolution or higher.</li>\n        <li><strong>Graphics</strong>: DirectX 9 or later with WDDM 2.0 or higher (for Windows 10) for graphics hardware acceleration.</li>\n        <li><strong>Internet</strong>: Internet access is required for download, activation, and updates.</li>\n    </ol>\n\n    <b>System Requirements for Mac</b>\n    <ol>\n        <li><strong>Operating System</strong>: macOS 11 (Big Sur) or later.</li>\n        <li><strong>Processor</strong>: Intel processor or Apple Silicon (M1 chip or later).</li>\n        <li><strong>RAM</strong>: 4 GB or more.</li>\n        <li><strong>Hard Disk Space</strong>: 10 GB of available hard disk space.</li>\n        <li><strong>Display</strong>: 1280 x 800 screen resolution or higher.</li>\n        <li><strong>Internet</strong>: Internet access is required for installation, activation, and updates.</li>\n    </ol>\n\n    <p>For both platforms, it's important to have the latest updates and service packs installed to ensure compatibility and optimal performance.</p>\n</body>"
+          }
+        },
+        "accordion_EENUCj": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>How do I download?</p>",
+            "answer": "As soon as we are able to successfully process your payment, you will receive a download link for your product and a Product Key from SoftwareKeep. This process is usually between 15-20 minutes. If your SoftwareKeep order is delayed longer than this, please refer to your SoftwareKeep account for the details of your purchase."
+          }
+        }
+      },
+      "block_order": [
+        "accordion_cm4R8V",
+        "accordion_qHYJqz",
+        "accordion_r6fMMH",
+        "accordion_yFbdeF",
+        "accordion_RVz8R9",
+        "accordion_EENUCj"
+      ],
+      "settings": {
+        "custom_id": "after-rockeet-accordion",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "textContent": ""
+      }
+    },
+    "section_image_text_bbg9Bt": {
+      "type": "section__image-text",
+      "blocks": {
+        "title_YyNCUr": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "<span style=\"color:#0167B8\">More costs</span>, \nmore problems",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "big"
+          }
+        },
+        "rich_text_KWRWxi": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>Feel like your <strong>software subscriptions are adding up too fast?</strong><br/><br/>Microsoft Office, Adobe Suite, antivirus programs, and more – they all pile on, <strong>causing your renewal fees to skyrocket.</strong></p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "title_YyNCUr",
+        "rich_text_KWRWxi"
+      ],
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "after-rock-imgtext",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "imagePosition": "right",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/Screenshot_2023-08-10_at_10.01_1.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "section_image_text_P4kinc": {
+      "type": "section__image-text",
+      "blocks": {
+        "title_KYeDbp": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "<span style=\"color:#0167B8\n\">Own your software </span>, save your money",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "big"
+          }
+        },
+        "rich_text_UkeP6y": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>With SoftwareKeep, one purchase secures you <strong>lifetime ownership - of fully legal and 100% genuine software.</strong> Say goodbye to never-ending renewals and unpredictable price increases. Save hundreds each year.<br/></p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "title_KYeDbp",
+        "rich_text_UkeP6y"
+      ],
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": false,
+        "height_range": 0,
+        "before_range": 0,
+        "after_range": 0,
+        "custom_id": "after-rock-imgtext",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "imagePosition": "left",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/New_Project_2.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "section_lookbook_jt3Jyc": {
+      "type": "section__lookbook",
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "stretchContent",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "Check out this section's heading",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "THIS IS A SUBHEADING",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "image": "shopify://shop_images/Group_136.png"
+      }
+    },
+    "section_lookbook_XCNdNC": {
+      "type": "section__lookbook",
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "image": "shopify://shop_images/Group_35.png"
+      }
+    }
+  },
+  "order": [
+    "topheader",
+    "product",
+    "trustpilot_reviews_GJyVqw",
+    "section_icon_with_text_8axejx",
+    "shopify_udp_featurelist_KH6ihR",
+    "afterrocketdownload",
+    "shopify_us_make_different_TtrxbR",
+    "section_faq_d3DGJQ",
+    "section_image_text_bbg9Bt",
+    "section_image_text_P4kinc",
+    "section_lookbook_jt3Jyc",
+    "section_lookbook_XCNdNC"
+  ]
+}

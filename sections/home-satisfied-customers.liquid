@@ -1,0 +1,144 @@
+<div id="home_satis__{{ section.id }}">
+  <div class="max-width">
+    <div class="home-scustom"> 
+      {% if section.settings.heading != blank %}
+       <h2 class="tp_heads">{{ section.settings.heading }}</h2>
+      {% endif %}
+      <div class="count_wraper">
+        <div class="list">
+          {% if section.settings.count1 != blank %}
+           <p class="num_count">{{ section.settings.count1 }} </p>
+          {% endif %}
+          <p class="short_para">Businesses rely on our Microsoft expertise to enhance their tech stack</p>
+        </div>
+          <div class="list">
+           {% if section.settings.count2 != blank %}
+             <p class="num_count">{{ section.settings.count2 }}</p>
+           {% endif %}
+           {% if section.settings.para_second != blank %}
+            <p class="short_para">{{ section.settings.para_second }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+#home_satis__{{ section.id }} {
+  background-image: url("{{ section.settings.iconImage | img_url:'master' }}");
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  width: 100%; 
+  height: 550px; 
+  margin-bottom: 30px;
+}
+.home-scustom {
+  padding-top: 78px;
+}
+.home-scustom .tp_heads{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0px;
+  color: #fff;
+  font-weight: 600;
+}
+.count_wraper .short_para {
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  max-width: 500px;
+}
+.count_wraper {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 12px;
+  align-items: center;
+}
+.num_count {
+  font-size: 121px;
+  margin: 0;
+  color: #fafafa;
+  text-align: center;
+  font-weight: 700;
+}
+@media screen and (max-width:1024px) {
+.count_wraper {
+   flex-direction: row;
+   gap: 30px;
+ }
+ .home-scustom .tp_heads {
+   font-size: 28px;
+ }
+ .count_wraper .short_para {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 10px 0;
+  max-width: 470px;
+}
+ .num_count {
+   font-size: 50px;
+   padding: 20px 0;
+ } 
+
+@media only screen and (max-width:767px) {
+  .count_wraper {
+    gap: 30px;
+    flex-direction: column;
+  }
+  .home-scustom {
+    padding-top: 45px;
+  }
+ .count_wraper .short_para {
+   font-size: 18px;
+   line-height: 24px;
+ }
+ .count_wraper {
+    padding-top: 0px;
+ }
+}
+</style>
+{% schema %}
+  {
+    "name": "Home Satisfied Customers",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "iconImage",
+            "label": "Select Section Background Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Top Heading",
+          "default": "When It Comes to Microsoft, Thousands Turn to Us!"
+        },
+        {
+          "type": "text",
+          "id": "count1",
+          "label": "Number Count",
+        },
+        {
+          "type": "textarea",
+          "id": "para_first",
+          "label": "Enter Short Content",
+        },
+        {
+          "type": "header",
+          "content": "SecondColumn"
+        },
+        {
+          "type": "text",
+          "id": "count2",
+          "label": "Number Count",
+        },
+        {
+          "type": "textarea",
+          "id": "para_second",
+          "label": "Enter Second Short Content",
+        }
+    ],
+    "presets": [{"name": "Home Satisfied Customers"}]
+  }
+{% endschema %}

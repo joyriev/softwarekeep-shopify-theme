@@ -1,0 +1,875 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "e08c43b5-8e51-49c1-a1ec-d1750809f1d7": {
+      "type": "section__content-text",
+      "blocks": {
+        "e5657773-8f93-476f-9738-da22250ff66d": {
+          "type": "imageText",
+          "settings": {
+            "displayFor": "display--both",
+            "layout": "stretchContent",
+            "nomargin": false,
+            "scopedCSS": "",
+            "height": 0,
+            "padding": 0,
+            "lineMargin": 17,
+            "backgroundColor": "#f4f4f4",
+            "contentColor": "rgba(0,0,0,0)",
+            "horizontalAlignment": "start",
+            "verticalAlignment": "middle",
+            "imagePosition": "right",
+            "imageWidth": "6",
+            "image": "shopify://shop_images/Office_Home_2024_Windows_11_Pro.gif",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "cyber_monday": "UNLOCK EPIC SAVINGS ON OFFICE & WINDOWS",
+            "heading": "<span>Up to 50% OFF Sitewide </span><br><span>Plus a Free VPN with Orders Over $150 with code GEEKDAY</span>",
+            "text": "",
+            "buttonText": "Browse Categories",
+            "url": "https://softwarekeep.com/collections/all",
+            "quiz_button_label": "Shop Our Best Sellers",
+            "quiz_button_link": "shopify://collections/best-sellers",
+            "wideButton": false,
+            "buttonType": "primary",
+            "buttonStyle": "default"
+          }
+        }
+      },
+      "block_order": [
+        "e5657773-8f93-476f-9738-da22250ff66d"
+      ],
+      "settings": {
+        "custom_id": "banner"
+      }
+    },
+    "brand_logo_carousel_ftWXHp": {
+      "type": "brand-logo-carousel",
+      "blocks": {
+        "logo_AdFDVU": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/kelloggs-logo_monochrome-black.svg"
+          }
+        },
+        "logo_VAtCWC": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/lowes-logo_monochrome-black.svg"
+          }
+        },
+        "logo_JQnk84": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/nasa-worm-logo_monochrome-black.svg"
+          }
+        },
+        "logo_e3xm6e": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/netflix-logo_monochrome-black.svg"
+          }
+        },
+        "logo_PdLD7T": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/pfizer-logo_monochrome-black.svg"
+          }
+        },
+        "logo_BYMwGY": {
+          "type": "logo",
+          "settings": {
+            "logoimage": "shopify://shop_images/spotify-logo_monochrome-black.svg"
+          }
+        }
+      },
+      "block_order": [
+        "logo_AdFDVU",
+        "logo_VAtCWC",
+        "logo_JQnk84",
+        "logo_e3xm6e",
+        "logo_PdLD7T",
+        "logo_BYMwGY"
+      ],
+      "settings": {
+        "secbg": "#ffffff",
+        "margingap": 0,
+        "maxwidth": "logc_list",
+        "title": "Softwarekeep is Trusted by"
+      }
+    },
+    "home_review_logo_T6jeDa": {
+      "type": "home-review-logo",
+      "settings": {
+        "review_img": "shopify://shop_images/Group_188.png",
+        "review_img1": "shopify://shop_images/Group_190.png",
+        "review_img2": "shopify://shop_images/ResellerRatings_1.png"
+      }
+    },
+    "home_comparison_content_GmhzzW": {
+      "type": "home-comparison-content",
+      "blocks": {
+        "comparison_item_XPrMqJ": {
+          "type": "comparison_item",
+          "settings": {
+            "header": "Brand",
+            "logo": "shopify://shop_images/logo-keep.svg",
+            "customer_service": "",
+            "price": "Best Value Guaranteed <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/1.gif?v=1730719797\" height=\"25px\" width=\"25px\" class=\"gif-image\"> 💰",
+            "service1": "LIVE Support <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/2.gif?v=1730719797\" height=\"25px\" width=\"25px\" class=\"gif-image\">🎉",
+            "warranty": "Product Warranty <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/3.gif?v=1730719797\" height=\"25px\" width=\"25px\" class=\"gif-image\">😊",
+            "background_color": "#f5f5f5"
+          }
+        },
+        "comparison_item_KqMHML": {
+          "type": "comparison_item",
+          "settings": {
+            "header": "Price",
+            "logo": "shopify://shop_images/icons8-microsoft-48.png",
+            "customer_service": "",
+            "price": "Expensive Monthly Subscriptions 💸😓",
+            "service1": "Limited 9-5 Hours ⏰😴",
+            "warranty": "No Warranty — You’re On Your Own 😟😢",
+            "background_color": "#f5f5f5"
+          }
+        },
+        "comparison_item_3NxALy": {
+          "type": "comparison_item",
+          "settings": {
+            "header": "Customer Service",
+            "customer_service": "Big Box Retailers",
+            "price": "Expensive Monthly Subscriptions 💸💔",
+            "service1": "Restricted 9-5 Support ⌛😢",
+            "warranty": "No Warranty — You’re On Your Own 📞❌",
+            "background_color": "#f5f5f5"
+          }
+        },
+        "comparison_item_qjjjcm": {
+          "type": "comparison_item",
+          "settings": {
+            "header": "Lifetime Warranty",
+            "customer_service": "Low Priced E-tailers",
+            "price": "High Price, Low Value 😤😡",
+            "service1": "No Dedicated Support ☎️",
+            "warranty": "No Warranty — You’re On Your Own 💀💔",
+            "background_color": "#f5f5f5"
+          }
+        }
+      },
+      "block_order": [
+        "comparison_item_XPrMqJ",
+        "comparison_item_KqMHML",
+        "comparison_item_3NxALy",
+        "comparison_item_qjjjcm"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Comparison Content"
+      }
+    },
+    "home_average_cheaper_RmypTQ": {
+      "type": "home-average-cheaper",
+      "blocks": {
+        "product_BhfBzF": {
+          "type": "product",
+          "settings": {
+            "prodlist": "microsoft-office-2024-student",
+            "prodname": "Microsoft Office 2024 <span>Home</span>",
+            "buynow_enable": true,
+            "tcolor": "#3183d5",
+            "regprice": "#7e7e7e",
+            "sellprice": "#046ab5",
+            "savprice": "#276327",
+            "bgscolor": "#f5f5f5"
+          }
+        },
+        "product_UiQPJT": {
+          "type": "product",
+          "settings": {
+            "prodlist": "microsoft-office-2021-home-and-student-pc",
+            "prodname": "Microsoft Office 2021 <span>Home &amp; Student</span>",
+            "buynow_enable": true,
+            "tcolor": "#e14f27",
+            "regprice": "#7e7e7e",
+            "sellprice": "#046ab5",
+            "savprice": "#276327",
+            "bgscolor": "#f5f5f5"
+          }
+        },
+        "product_PYrXET": {
+          "type": "product",
+          "settings": {
+            "prodlist": "windows-11-pro",
+            "prodname": "Microsoft Windows 11\n<span> Professional</span>",
+            "buynow_enable": true,
+            "tcolor": "#3183d5",
+            "regprice": "#7e7e7e",
+            "sellprice": "#046ab5",
+            "savprice": "#276327",
+            "bgscolor": "#f5f5f5"
+          }
+        }
+      },
+      "block_order": [
+        "product_BhfBzF",
+        "product_UiQPJT",
+        "product_PYrXET"
+      ],
+      "settings": {
+        "hheading": "Deals of the Week- Save Upto <span>50% + </span> on your Software.",
+        "thcolor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "timer": true,
+        "timer_hours": "12",
+        "timer_bg": "#e20b0b",
+        "text_color": "#ffffff"
+      }
+    },
+    "home_testimonials_GkrE39": {
+      "type": "home-testimonials",
+      "blocks": {
+        "text_7GHDhQ": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/Faces_Testimonials-02.png",
+            "test_text": "<p>SoftwareKeep consistently delivers top-tier customer service that sets them apart. Their unwavering dedication to customer satisfaction is something we experience every day, making them stand out.</p>",
+            "authorName": "MaxTech",
+            "authorsubtitle": "",
+            "authorImage": "shopify://shop_images/rating__logos.png"
+          }
+        },
+        "text_A4hVan": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/Faces_Testimonials-04.png",
+            "test_text": "<p>Partnering with SoftwareKeep saved us over $180,000 in licensing costs, while delivering exceptional technical support. Their customer service goes beyond expectations, no AI just humans.</p>",
+            "authorName": "TechTalk America",
+            "authorsubtitle": "",
+            "authorImage": "shopify://shop_images/LOGO_12234-04_8e1ba117-9a3d-43ee-9307-6cd9d4989ff3.png"
+          }
+        },
+        "text_8gUKQx": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/Faces_Testimonials-05.png",
+            "test_text": "<p>Switching to SoftwareKeep streamlined our licensing, saving us hundreds of thousands of dollars. Their strategic support has put us in a stronger position for future growth and acquisitions. Great team.</p>",
+            "authorName": "ThisBytesForYou",
+            "authorsubtitle": "",
+            "authorImage": "shopify://shop_images/LOGO_12234-05_77cba6ce-666f-4ceb-8de8-cb9aacf42412.png"
+          }
+        },
+        "text_taYMMN": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/Faces_Testimonials-03.png",
+            "test_text": "<p>SoftwareKeep’s combo deals and 24/7 expert service enabled us to scale efficiently, enhance our security, and achieve impressive ROI. They offer solutions that drive both immediate and long-term results.</p>",
+            "authorName": "Tech Source",
+            "authorsubtitle": "",
+            "authorImage": "shopify://shop_images/LOGO_1-02_1.png"
+          }
+        },
+        "text_4g98wB": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/Faces_Testimonials-01.png",
+            "test_text": "<p>As our business evolved, SoftwareKeep became an invaluable partner. Their personalized, expert 24/7 support outshines larger providers, helping us save costs while receiving far better service.</p>",
+            "authorName": "TechFlow",
+            "authorsubtitle": "",
+            "authorImage": "shopify://shop_images/LOGO_12234-05_77cba6ce-666f-4ceb-8de8-cb9aacf42412.png"
+          }
+        }
+      },
+      "block_order": [
+        "text_7GHDhQ",
+        "text_A4hVan",
+        "text_8gUKQx",
+        "text_taYMMN",
+        "text_4g98wB"
+      ],
+      "settings": {
+        "sec_bckground": "#f4f4f4"
+      }
+    },
+    "728e1874-ce42-4ae4-9115-e865ed0e68f7": {
+      "type": "section__featured-collection",
+      "settings": {
+        "slider_enable": true,
+        "custom_id": "collection",
+        "displayFor": "display--both",
+        "layout": "stretchBg",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 390,
+        "padding": 5,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "heading": "All Time Best Sellers",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "Our all-time best sellers loved by many customers and our staff.",
+        "subheadingColor": "#202020",
+        "subheadingPosition": "below",
+        "headingAlignment": "center",
+        "collection": "best-sellers",
+        "productCount": 9,
+        "showMore": false,
+        "showMoreText": "",
+        "showMoreAlignment": "center"
+      }
+    },
+    "home_why_choose_trtEqE": {
+      "type": "home-why-choose",
+      "blocks": {
+        "text_49hNpN": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/105px_x_105px-01.png",
+            "test_text": "Instant digital download",
+            "test_text_para": "<p>Get your product in 5 minutes or less.</p>"
+          }
+        },
+        "text_yDynFL": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/105px_x_105px-02.png",
+            "test_text": "Lifetime product guarantee",
+            "test_text_para": "<p>One time purchase, lifetime access - Hassle-free software ownership.</p>"
+          }
+        },
+        "text_PFiWik": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/105px_x_105px-03.png",
+            "test_text": "Exceptional 24/7 Costumer Service.",
+            "test_text_para": "<p>We offer exceptional 24/7 /365 customer service.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_49hNpN",
+        "text_yDynFL",
+        "text_PFiWik"
+      ],
+      "settings": {
+        "bgcolor": "",
+        "heading": "Why choose Softwarekeep?",
+        "subparas": "<p>We’re here to make software affordable, accessible, and backed by excellent customer service, all while maintaining the same quality you would expect from larger retailers. Choose SoftwareKeep for a better deal, transparency, and trusted Microsoft solutions.</p>"
+      }
+    },
+    "home_satisfied_customers_pk3VRB": {
+      "type": "home-satisfied-customers",
+      "settings": {
+        "iconImage": "shopify://shop_images/Background_3.png",
+        "heading": "Join Thousands Who Save on Microsoft Software with Lifetime Support!",
+        "count1": "7,000+",
+        "para_first": "Businesses rely on our Microsoft expertise to enhance their tech stack",
+        "count2": "800,000+",
+        "para_second": "Satisfied customers who trust our \nsoftware solutions."
+      }
+    },
+    "home_service_z8Qjeg": {
+      "type": "home-service",
+      "blocks": {
+        "text_cDBhn6": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/1_2_7433e617-915a-41f3-9643-aeb9a6287d01.png",
+            "test_text": "99 %",
+            "test_text_para": "<p>Stellar Customer Satisfaction </p>"
+          }
+        },
+        "text_miyq6b": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/9.png",
+            "test_text": "4 Min",
+            "test_text_para": "<p>Average first response time</p>"
+          }
+        },
+        "text_nWj3kP": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/3_1_f4cb76fc-1d36-426d-b47f-859cb156ff73.png",
+            "test_text": "10 x",
+            "test_text_para": "<p>Faster support than direct contact with Microsoft</p>"
+          }
+        },
+        "text_ADyz4f": {
+          "type": "text",
+          "settings": {
+            "iconImage": "shopify://shop_images/6_1.png",
+            "test_text": "100%",
+            "test_text_para": "<p>Tickets resolved in-house</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_cDBhn6",
+        "text_miyq6b",
+        "text_nWj3kP",
+        "text_ADyz4f"
+      ],
+      "settings": {
+        "pageheading": "Why Settle for Good When You Can Have Great?"
+      }
+    },
+    "trustpilot_reviews_m7GDgj": {
+      "type": "trustpilot-reviews",
+      "settings": {
+        "header_title": "What Customers Say About Us",
+        "trustsecbg": "#ffffff",
+        "tpmargingap": 0,
+        "pading_botm": 4
+      }
+    },
+    "4499674e-2cb7-463a-a61b-7778a904e48e": {
+      "type": "section__heading",
+      "disabled": true,
+      "settings": {
+        "custom_id": "heading",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "heading": "Download your software in seconds",
+        "headingColor": "#142432",
+        "subheading": "SoftwareKeep has made the process of software download easy.",
+        "subheadingColor": "#202020",
+        "headinghtml": "",
+        "subheadingPosition": "below",
+        "button_label": "",
+        "button_link": "",
+        "headingAlignment": "center"
+      }
+    },
+    "1d9a0d0f-d87f-4734-9e1d-8e0e7a2efc94": {
+      "type": "section__image-text",
+      "blocks": {
+        "template--14747686174775__1d9a0d0f-d87f-4734-9e1d-8e0e7a2efc94-title-1": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "fullWidth": true,
+            "content": "<h3 class=\"first_image\">1</h3> <br>Add product to cart",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "template--14747686174775__1d9a0d0f-d87f-4734-9e1d-8e0e7a2efc94-richText-1": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>Use the quick browsing function to search for the software you need. Make your selection and add to your cart.</p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        }
+      },
+      "block_order": [
+        "template--14747686174775__1d9a0d0f-d87f-4734-9e1d-8e0e7a2efc94-title-1",
+        "template--14747686174775__1d9a0d0f-d87f-4734-9e1d-8e0e7a2efc94-richText-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": true,
+        "height_range": 72,
+        "before_range": 64,
+        "after_range": 22,
+        "custom_id": "content-text-second",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "imagePosition": "left",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/Capture_1_1.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "6e28fb90-edf5-4a59-b607-8e0189487958": {
+      "type": "section__image-text",
+      "blocks": {
+        "template--14747686174775__6e28fb90-edf5-4a59-b607-8e0189487958-title-1": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "<h3 class=\"first_image\">2</h3> <br>Unlock Extra Savings",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "template--14747686174775__6e28fb90-edf5-4a59-b607-8e0189487958-richText-1": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>For extra savings, remember to check the homepage for any discount codes Often special promotions are running.</p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        }
+      },
+      "block_order": [
+        "template--14747686174775__6e28fb90-edf5-4a59-b607-8e0189487958-title-1",
+        "template--14747686174775__6e28fb90-edf5-4a59-b607-8e0189487958-richText-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": true,
+        "height_range": 100,
+        "before_range": 48,
+        "after_range": 46,
+        "custom_id": "content-text-second",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "imagePosition": "right",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/Capture_2_1.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "4ee20bf1-9bb4-4ed5-8287-6f9e29cc775d": {
+      "type": "section__image-text",
+      "blocks": {
+        "template--14747686174775__4ee20bf1-9bb4-4ed5-8287-6f9e29cc775d-title-1": {
+          "type": "title",
+          "settings": {
+            "fullWidth": true,
+            "content": "<h3 class=\"first_image\">3</h3> <br>Instant download",
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "title",
+            "fontSize": "medium"
+          }
+        },
+        "template--14747686174775__4ee20bf1-9bb4-4ed5-8287-6f9e29cc775d-richText-1": {
+          "type": "richText",
+          "settings": {
+            "fullWidth": true,
+            "maxBWidth": 100,
+            "content": "<p>No frustrating shipping delays, or queuing in a shop. Instead, get a download link in your email. Install and start using your product right away.</p>",
+            "detectLists": true,
+            "textColor": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "base"
+          }
+        }
+      },
+      "block_order": [
+        "template--14747686174775__4ee20bf1-9bb4-4ed5-8287-6f9e29cc775d-title-1",
+        "template--14747686174775__4ee20bf1-9bb4-4ed5-8287-6f9e29cc775d-richText-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "main-heading": "The SoftwareKeep Difference",
+        "dot_border": true,
+        "height_range": 100,
+        "before_range": 14,
+        "after_range": 65,
+        "custom_id": "content-text-second",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "imagePosition": "left",
+        "imageWidth": "6",
+        "image": "shopify://shop_images/Capture_3_2.png",
+        "image_url": "",
+        "imageOverlayOpacity": 0,
+        "imageOverlayColor": "#000000"
+      }
+    },
+    "379e6e19-590f-4b7c-8634-732b9ef86151": {
+      "type": "section__heading",
+      "disabled": true,
+      "settings": {
+        "custom_id": "heading-business",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "heading": "We take care of both Business and Individuals",
+        "headingColor": "#142432",
+        "subheading": "At SoftwareKeep, we’re powered by experience and driven by values to deliver an outstanding experience to business and individuals alike.",
+        "subheadingColor": "#202020",
+        "headinghtml": "",
+        "subheadingPosition": "below",
+        "button_label": "",
+        "button_link": "",
+        "headingAlignment": "center"
+      }
+    },
+    "83eab4e5-3f4b-4c78-9a4f-b33eea52aa07": {
+      "type": "section__content-text",
+      "blocks": {
+        "ceed4742-bc75-4d8c-a010-68e6e813f893": {
+          "type": "imageText",
+          "settings": {
+            "displayFor": "display--both",
+            "layout": "default",
+            "nomargin": false,
+            "scopedCSS": "",
+            "height": 0,
+            "padding": 0,
+            "lineMargin": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "contentColor": "rgba(0,0,0,0)",
+            "horizontalAlignment": "start",
+            "verticalAlignment": "middle",
+            "imagePosition": "left",
+            "imageWidth": "6",
+            "image": "shopify://shop_images/Capture_6_1.png",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "cyber_monday": "- Cyber Monday Sale is Now Live! -",
+            "heading": "We Provide Customized Solutions for Corporates &amp; Government",
+            "text": "<p>Are you interested in a customized solution? If YES, please speak to one of our corporate account specialists and we’ll deliver a solution that best fits your needs.</p>",
+            "buttonText": "Get a quotation",
+            "url": "https://msofficesoftware.typeform.com/to/niAsJ50o?typeform-source=softwarekeep.com",
+            "quiz_button_label": "",
+            "quiz_button_link": "",
+            "wideButton": false,
+            "buttonType": "primary",
+            "buttonStyle": "text"
+          }
+        },
+        "cfd65674-a41a-474c-b587-e985fd1edeee": {
+          "type": "imageText",
+          "settings": {
+            "displayFor": "display--both",
+            "layout": "default",
+            "nomargin": false,
+            "scopedCSS": "div#s--cfd65674-a41a-474c-b587-e985fd1edeee {\n    margin-bottom: 60px;\n}",
+            "height": 0,
+            "padding": 0,
+            "lineMargin": 12,
+            "backgroundColor": "rgba(0,0,0,0)",
+            "contentColor": "rgba(0,0,0,0)",
+            "horizontalAlignment": "center",
+            "verticalAlignment": "middle",
+            "imagePosition": "right",
+            "imageWidth": "6",
+            "image": "shopify://shop_images/Capture_7_1.png",
+            "overlayOpacity": 0,
+            "overlayColor": "#000000",
+            "cyber_monday": "- Cyber Monday Sale is Now Live! -",
+            "heading": "Personal shopping assistance",
+            "text": "<p>Our IT experts are on standby if you need any assistance get in touch via</p>",
+            "buttonText": "Live Chat",
+            "url": "javascript:zE.activate();",
+            "quiz_button_label": "",
+            "quiz_button_link": "",
+            "wideButton": false,
+            "buttonType": "primary",
+            "buttonStyle": "text"
+          }
+        }
+      },
+      "block_order": [
+        "ceed4742-bc75-4d8c-a010-68e6e813f893",
+        "cfd65674-a41a-474c-b587-e985fd1edeee"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_id": "content-text"
+      }
+    },
+    "section_logolist_NHChhB": {
+      "type": "section__logolist",
+      "blocks": {
+        "logo_list_logo_FVkng4": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/BloomBerg.png",
+            "logoLink": ""
+          }
+        },
+        "logo_list_logo_K8hJJ4": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/Mashable_transparent.png",
+            "logoLink": ""
+          }
+        },
+        "logo_list_logo_iVGhJ9": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/TechCrunch_transparent.png",
+            "logoLink": ""
+          }
+        },
+        "logo_list_logo_7PNhje": {
+          "type": "logoListLogo",
+          "settings": {
+            "logo": "shopify://shop_images/Forbes_transparent.png",
+            "logoLink": ""
+          }
+        },
+        "logo_list_logo_WDQC83": {
+          "type": "logoListLogo",
+          "disabled": true,
+          "settings": {
+            "logo": "shopify://shop_images/WikiHow_transparent.png",
+            "logoLink": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_list_logo_FVkng4",
+        "logo_list_logo_K8hJJ4",
+        "logo_list_logo_iVGhJ9",
+        "logo_list_logo_7PNhje",
+        "logo_list_logo_WDQC83"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "As Seen On:",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "hover": "none"
+      }
+    },
+    "52c907b9-3865-4be6-b62b-687dc88e23d7": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "newsletter_title": "",
+        "newsletter_text": "<p>Join & Get Early Access to Exclusive Discounts</p>",
+        "display_first_name": false,
+        "display_last_name": false,
+        "newsletter_section_text_align": "center"
+      }
+    },
+    "home_comparison_content_LKDK7X": {
+      "type": "home-comparison-content",
+      "disabled": true,
+      "settings": {
+        "title": "Comparison Content"
+      }
+    }
+  },
+  "order": [
+    "e08c43b5-8e51-49c1-a1ec-d1750809f1d7",
+    "brand_logo_carousel_ftWXHp",
+    "home_review_logo_T6jeDa",
+    "home_comparison_content_GmhzzW",
+    "home_average_cheaper_RmypTQ",
+    "home_testimonials_GkrE39",
+    "728e1874-ce42-4ae4-9115-e865ed0e68f7",
+    "home_why_choose_trtEqE",
+    "home_satisfied_customers_pk3VRB",
+    "home_service_z8Qjeg",
+    "trustpilot_reviews_m7GDgj",
+    "4499674e-2cb7-463a-a61b-7778a904e48e",
+    "1d9a0d0f-d87f-4734-9e1d-8e0e7a2efc94",
+    "6e28fb90-edf5-4a59-b607-8e0189487958",
+    "4ee20bf1-9bb4-4ed5-8287-6f9e29cc775d",
+    "379e6e19-590f-4b7c-8634-732b9ef86151",
+    "83eab4e5-3f4b-4c78-9a4f-b33eea52aa07",
+    "section_logolist_NHChhB",
+    "52c907b9-3865-4be6-b62b-687dc88e23d7",
+    "home_comparison_content_LKDK7X"
+  ]
+}

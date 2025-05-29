@@ -1,0 +1,167 @@
+ <div class="comparison-container">
+   {% if section.settings.heading != blank %}
+   <h2>{{ section.settings.heading }}</h2>
+    {% endif %}
+   {% if section.settings.copy != blank %}
+   <p class="copy-text">{{ section.settings.copy }}</p>
+   {% endif %}
+   <div class="comparison-table_wrap">
+        <table class="comparison-table">
+            <tr>
+                <td></td>
+                <td>  
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_4.png?v=1718874527" alt="SoftwareKeep Logo"> 
+                        <p class="below-logo">Lifetime software licenses</p>
+                        <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_48098546.png?v=1718874527" alt="SoftwareKeep Logo">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_423.png?v=1720087037" alt="SoftwareKeep Logo"> 
+                    </div>
+                </td>
+            </tr>
+        <tr>
+            <td>Payment Model</td>
+            <td class="highlight">One-time purchase</td>
+            <td>Subscription-based</td>
+        </tr>
+        <tr>
+            <td>Cost</td>
+            <td class="highlight">Fixed cost, no recurring fees</td>
+            <td>Ongoing monthly or annual fees</td>
+        </tr>
+        <tr>
+            <td>Ownership</td>
+            <td class="highlight">Lifetime license</td>
+            <td>Rented software; Until you stop paying the bill!</td>
+        </tr>
+        <tr>
+            <td>Access</td>
+            <td class="highlight">Full access to installed applications</td>
+            <td>Access dependent on subscription status</td>
+        </tr>
+        <tr>
+            <td>Internet Dependency</td>
+            <td class="highlight">Works offline</td>
+            <td>Requires regular internet access for updates and some features</td>
+        </tr>
+        <tr>
+            <td>Updates</td>
+            <td class="highlight">Receives essential updates only</td>
+            <td>Regular feature and security updates</td>
+        </tr>
+        <tr>
+            <td>Lifetime 24/7 support</td>
+            <td class="highlight">Included</td>
+            <td>Not included</td>
+        </tr>
+        <tr>
+            <td>Privacy</td>
+            <td class="highlight">Data stored locally</td>
+            <td>Data often stored in the cloud</td>
+        </tr>
+        <tr>
+            <td>Full control over data</td>
+            <td class="highlight">Full control over data</td>
+            <td>Shared control with Microsoft</td>
+        </tr>
+        <tr>
+            <td>Long-Term Value</td>
+            <td class="highlight">Cost-effective over time</td>
+            <td>Higher cumulative cost</td>
+        </tr>
+            
+            <tr>
+                <td></td>
+                <td>
+    {% assign product = all_products[section.settings.product] %}
+ <div class="abs-action table-cta">
+    {% assign var = product.first_available_variant %}
+    {% if product.available %}
+      {% form 'product', product %}
+        <input name="id" type="hidden" value="{{ var.id }}">
+        {% render 'ms-365-comparison-button', variant: var.id, quantity: 1, price: product.price %}
+      {% endform %}
+    {% else %}
+      {% render 'sold-out-button', disabled: 'disabled' %}
+    {% endif %}
+  </div>
+                  
+                </td>
+                <td>
+              {% assign product = all_products[section.settings.product_second] %}
+             <div class="abs-action table-cta">
+                {% assign var = product.first_available_variant %}
+                {% if product.available %}
+                  {% form 'product', product %}
+                    <input name="id" type="hidden" value="{{ var.id }}">
+                    {% render 'ms-365-comparison-button', variant: var.id, quantity: 1, price: product.price, title: product.title %}
+                  {% endform %}
+                {% else %}
+                  {% render 'sold-out-button', disabled: 'disabled' %}
+                {% endif %}
+              </div>    
+                </td>
+            </tr>          
+        </table>
+  {% comment %}
+   <div class="mobile-table">  
+     <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_48098629-1.png?v=1718948714" alt="SoftwareKeep Logo">
+     <div class="abs-action table-cta">
+    {% assign var = product.first_available_variant %}
+    {% if product.available %}
+      {% form 'product', product %}
+        <input name="id" type="hidden" value="{{ var.id }}">
+        {% render 'custom-add-to-cart-button', variant: var.id, quantity: 1, price: product.price %}
+      {% endform %}
+    {% else %}
+      {% render 'sold-out-button', disabled: 'disabled' %}
+    {% endif %}
+       <p class="text-onetime">One-time purchase</p>
+  </div>
+   </div>
+     {% endcomment %}
+   </div>
+    </div>
+{% schema %}
+{
+  "name": "MS Comparison 365",
+  "class": "ms-comparison comparison-365",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Secure the Office 2021 Home & Business & Trend Micro Maximum Security bundle today."
+    },
+    {
+      "type": "text",
+      "id": "copy",
+      "label": "Copy Text",
+      "default":"Make the no-brainer move you'll be thanking yourself for."
+    }, 
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Add First Product"
+    },
+    {
+      "type": "product",
+      "id": "product_second",
+      "label": "Add Second Product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MS Comparison 365"
+      }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,133 @@
+<div
+  class="product__atc {% if block.settings.noMargin or noMargin %}margin__bottom--reduced{%endif-%}"
+  {{ block.shopify_attributes }}
+>
+  {% if product.available %}
+    <input
+      style="display: none;"
+      name="id"
+      data-bstr-variant-input="{{product.id}}"
+      value="{{product.selected_or_first_available_variant.id}}"
+    >
+    <div class="quantity--input">
+      <button
+        class="quantity--input__button quantity--input__incr"
+        onclick="BoosterTheme.cart.quantityHandler(event, false, false)"
+      >
+        -
+      </button>
+      <input
+        {% if product.selected_or_first_available_variant.inventory_policy != 'continue' %}
+          max="{{ product.selected_or_first_available_variant.inventory_quantity }}"
+        {% endif %}
+        class="quantity--input__input"
+        value="1"
+        data-qty-input
+        type="number"
+        name="quantity"
+        min="1"
+        aria-label="Quantity input"
+      >
+      <!--  -->
+      <button
+        class="quantity--input__button quantity--input__decr"
+        onclick="BoosterTheme.cart.quantityHandler(event, true, false)"
+      >
+        +
+      </button>
+    </div>
+
+    {% render 'add-to-cart-button', type: 'secondary', price: product.price %}
+    <div class="instant">
+      <p>Instant Checkout</p>
+    </div>
+    {% if settings.dynamicCheckout %}
+      <div data-dynamic-button="{{product.id}}" class="col-12 no-gap checkout--dynamic">
+        {{ form | payment_button }}
+
+        {% comment %}
+          {% if additional_checkout_buttons %}
+            {{ content_for_additional_checkout_buttons }}
+          {% endif %}
+        {% endcomment %}
+      </div>
+    {% endif %}
+  {% else %}
+    {% render 'sold-out-button', disabled: 'disabled' %}
+  {% endif %}
+
+  <div class="payment-section">
+    <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-info.svg?v=1706852733" alt="Mail Message">
+    <p>An electronic code will be emailed to you 15-30 minutes after checkout.</p>
+  </div>
+
+  <div class="klarna-container" part="osm-container">
+    <div class="badge-container">
+      <div class="klarna-badge" part="osm-badge-container">
+        <svg
+          part="osm-badge"
+          role="img"
+          aria-label="osm-klarna-title"
+          width="72px"
+          height="30px"
+          viewBox="0 0 72 30"
+          version="2.0"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title id="osm-klarna-title">Klarna badge</title><g clip-path="url(#clip0_2057_5571)">
+            <path d="M0 14.9997C0 8.89581 0 5.84389 1.49751 3.67034C2.08348 2.81984 2.81984 2.08348 3.67034 1.49751C5.84389 0 8.89581 0 14.9997 0H56.2931C62.3965 0 65.4488 0 67.6222 1.49751C68.4729 2.08348 69.2094 2.81984 69.7951 3.67034C71.2926 5.84389 71.2926 8.89581 71.2926 14.9997C71.2926 21.1035 71.2926 24.1555 69.7951 26.329C69.2094 27.1795 68.4729 27.9159 67.6222 28.5018C65.4488 29.9994 62.3965 29.9994 56.2931 29.9994H14.9997C8.89581 29.9994 5.84389 29.9994 3.67034 28.5018C2.81984 27.9159 2.08348 27.1795 1.49751 26.329C0 24.1555 0 21.1035 0 14.9997Z" fill="#FFA8CD"></path><path d="M57.4468 19.163C56.203 19.163 55.2335 18.1345 55.2335 16.8855C55.2335 15.6365 56.203 14.6079 57.4468 14.6079C58.6906 14.6079 59.6601 15.6365 59.6601 16.8855C59.6601 18.1345 58.6906 19.163 57.4468 19.163ZM56.8246 21.5692C57.8857 21.5692 59.2394 21.1651 59.9897 19.5855L60.0626 19.6223C59.7335 20.4855 59.7335 20.9998 59.7335 21.1284V21.3304H62.4039V12.4405H59.7335V12.6426C59.7335 12.7712 59.7335 13.2855 60.0626 14.1487L59.9897 14.1855C59.2394 12.6059 57.8857 12.2018 56.8246 12.2018C54.2823 12.2018 52.4897 14.2222 52.4897 16.8855C52.4897 19.5488 54.2823 21.5692 56.8246 21.5692ZM47.8432 12.2018C46.6358 12.2018 45.6846 12.6242 44.9163 14.1855L44.8432 14.1487C45.1724 13.2855 45.1724 12.7712 45.1724 12.6426V12.4405H42.5017V21.3304H45.2456V16.6467C45.2456 15.4161 45.959 14.6446 47.1114 14.6446C48.2639 14.6446 48.8309 15.3059 48.8309 16.6283V21.3304H51.5749V15.6732C51.5749 13.6528 50.0015 12.2018 47.8432 12.2018ZM38.5322 14.1855L38.459 14.1487C38.7882 13.2855 38.7882 12.7712 38.7882 12.6426V12.4405H36.1175V21.3304H38.8614L38.8797 17.0508C38.8797 15.8018 39.5382 15.0487 40.6175 15.0487C40.9102 15.0487 41.148 15.0855 41.4224 15.159V12.4405C40.2151 12.1834 39.1358 12.6426 38.5322 14.1855ZM29.8066 19.163C28.5626 19.163 27.5931 18.1345 27.5931 16.8855C27.5931 15.6365 28.5626 14.6079 29.8066 14.6079C31.0504 14.6079 32.02 15.6365 32.02 16.8855C32.02 18.1345 31.0504 19.163 29.8066 19.163ZM29.1846 21.5692C30.2456 21.5692 31.5992 21.1651 32.3492 19.5855L32.4224 19.6223C32.0931 20.4855 32.0931 20.9998 32.0931 21.1284V21.3304H34.7638V12.4405H32.0931V12.6426C32.0931 12.7712 32.0931 13.2855 32.4224 14.1487L32.3492 14.1855C31.5992 12.6059 30.2456 12.2018 29.1846 12.2018C26.6419 12.2018 24.8492 14.2222 24.8492 16.8855C24.8492 19.5488 26.6419 21.5692 29.1846 21.5692ZM21.026 21.3304H23.77V8.47314H21.026V21.3304ZM19.0138 8.47314H16.215C16.215 10.7691 14.8065 12.8262 12.6663 14.2957L11.8248 14.8834V8.47314H8.91626V21.3304H11.8248V14.9569L16.6358 21.3304H20.1846L15.5565 15.2324C17.6602 13.7079 19.0321 11.3385 19.0138 8.47314Z" fill="#0B051D"></path></g><defs><clipPath id="clip0_2057_5571"><rect width="71.33" height="30" fill="white"></rect></clipPath></defs>
+        </svg>
+      </div>
+    </div>
+    <div class="klarna-text-wrapper">
+      <p part="osm-message" class="klarna-text">
+        4 interest-free payments of $34.99. <button part="osm-cta" class="klarna-link">Learn More</button>
+      </p>
+    </div>
+  </div>
+
+</div>
+
+{% if block.settings.stickyATC == 'scroll' %}
+  <script>
+    document.addEventListener('booster:initialized', (e)=>{
+        let bt = event.detail.BoosterTheme
+        let sticky = document.querySelector('.sticky--mobile:not([data-bstr-initd])')
+        if(!sticky) return
+        sticky.dataset.bstrInitd = "true"
+        document.addEventListener('scroll', debounce(()=>{
+            if(window.innerWidth > 768) return
+            let patc = document.querySelector('.product__atc')
+            if(!patc) return
+            if(patc.offsetTop + patc.clientHeight < window.scrollY){
+                sticky.classList.remove('hide')
+            } else {
+                sticky.classList.add('hide')
+                sticky.classList.add('sticky--closed')
+            }
+        }, 150))
+    })
+  </script>
+{% elsif block.settings.stickyATC == 'always' %}
+  <style>
+    @media screen and (max-width: 767px){
+        .sticky--mobile {
+            display: block !important;
+        }
+    }
+  </style>
+{% endif %}
+    
+<!-- <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      var stickyAddToCart = document.getElementById("ProductSubmitButton-Sticky");
+      var originalAddToCart = document.getElementById("defult_template-pdp");
+      window.addEventListener("scroll", function() {
+          if ($(document).scrollTop() >= 800) {
+              stickyAddToCart.style.display = "block";
+          } else {
+              stickyAddToCart.style.display = "none";
+          }
+      });
+  });
+</script> -->

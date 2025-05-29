@@ -1,0 +1,243 @@
+<div class="main-form-wrapper layout__boxed">
+  {% assign bgimage = section.settings.bg_image | image_url %}
+  <div class="form-content-wrapper">
+    <img src="{{ bgimage }}" alt="bg-image" height="100%" width="100%"/>
+    <div class="all_content">
+    <h2>{{ section.settings.heading }}</h2>
+    <div class="copy-text">
+      {{ section.settings.copy }}
+    </div>
+    </div>
+  </div>
+<div class="row max-width unflex contact__form">
+{% form 'contact' %} 
+    {% if form.posted_successfully? %}
+        <style>
+        .contact__form h2 {
+            margin-bottom: 24px;
+        }
+
+        .contact__form {
+            text-align: center;
+        }
+        </style>
+        <h2 class="h-reset">{{'contact.page.success' | t}}</h2>
+    {% endif %}
+    {{ form.errors | default_errors }}
+    {% unless form.posted_successfully? %}
+        {% for block in section.blocks %}
+            <div class="contact__block">
+                {% render 'get-block', block: block, i: forloop.index %}
+            </div>
+        {% endfor %}
+        <div class="contact__block">
+        {% assign submitText = 'contact.buttons.submit' | t %}
+        {% render 'custom-submit-button', text: submitText, type: 'primary' %}
+        </div> 
+    {% else %}
+    {% assign btc = 'contact.buttons.back_to_contact' | t %}
+    {% render 'button', type: 'primary', text: btc, url: page.url, class: 'contact__back' %}
+    {% endunless %}
+{% endform %}
+</div>
+</div>
+{% schema %}
+{
+    "name": "Custom Contact Form",
+    "class": "custom-contact-form",
+    "settings": [
+      {
+          "type" : "header",
+          "content": "Instructions"
+      },
+      {
+          "type": "paragraph",
+          "content": "Fields marked with * MUST be included in order for the form to work."
+      },
+      {
+          "type": "paragraph",
+          "content": "Placeholder is the text that will be shown as an example input."
+      },
+      {
+          "type": "paragraph",
+          "content": "If a field is set as required, customers won't be able to submit the form without filling the input."
+      },
+      {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Tailored Quotes for Maximum Savings"
+      },
+      {
+          "type": "richtext",
+          "id": "copy",
+          "label": "Copy Text"
+      },
+      {
+          "type": "image_picker",
+          "id": "bg_image",
+          "label": "Background Image"
+      }
+      
+    ],
+    "blocks": [
+        {
+            "type": "contactFormEmail",
+            "name": "Sender email field (*)",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "name",
+                    "label": "Field name",
+                    "default": "Input title"
+                },
+                {
+                    "type": "text",
+                    "id": "placeholder",
+                    "label": "Placeholder",
+                    "default": "Example input"
+                }
+            ]
+        },
+        {
+            "type": "contactFormText",
+            "name": "Text field",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "required",
+                    "label": "This field is required",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "name",
+                    "label": "Field name",
+                    "default": "Input title"
+                },
+                {
+                    "type": "text",
+                    "id": "placeholder",
+                    "label": "Placeholder",
+                    "default": "Example input"
+                },
+                {
+                    "type": "select",
+                    "id": "type",
+                    "label": "Field type",
+                    "options": [
+                        {"value": "text", "label": "Text"},
+                        {"value": "date", "label": "Date"},
+                        {"value": "email", "label": "E-mail"},
+                        {"value": "number", "label": "Number"},
+                        {"value": "tel", "label": "Phone"}
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "contactFormTextarea",
+            "name": "Textarea field",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "name",
+                    "label": "Field name",
+                    "default": "Input title"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "required",
+                    "label": "This field is required",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "placeholder",
+                    "label": "Placeholder",
+                    "default": "Example input"
+                }
+            ]
+        },
+        {
+            "type": "contactFormRadio",
+            "name": "Radio button field",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "required",
+                    "label": "This field is required",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "name",
+                    "label": "Field name",
+                    "default": "Input title"
+                },
+                {
+                    "type": "textarea",
+                    "id": "options",
+                    "label": "Options",
+                    "default": "Option 1, Option 2, Option 3",
+                    "info": "Comma separated options."
+                }
+            ]
+        },
+        {
+            "type": "contactFormDropdown",
+            "name": "Dropdown field",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "required",
+                    "label": "This field is required",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "name",
+                    "label": "Field name",
+                    "default": "Input title"
+                },
+                {
+                    "type": "textarea",
+                    "id": "options",
+                    "label": "Options",
+                    "default": "Option 1, Option 2, Option 3",
+                    "info": "Comma separated options."
+                }
+            ]
+        },
+        {
+            "type": "contactFormCheckbox",
+            "name": "Checkbox field",
+            "settings": [
+                {
+                    "type": "checkbox",
+                    "id": "required",
+                    "label": "This field is required",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "name",
+                    "label": "Field name",
+                    "default": "Input title"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "checked",
+                    "label": "Checked by default",
+                    "default": false
+                }
+            ]
+        }
+    ],
+    "presets":[
+      {
+        "name": "Custom Contact Form"
+      }
+    ]
+}
+{% endschema %}

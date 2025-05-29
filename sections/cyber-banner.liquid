@@ -1,0 +1,69 @@
+<style>
+.cyber-banner-section {
+  background-image: url({{section.settings.back_image | img_url: 'master'}});
+  background-size: cover;
+  background-position: center;
+}
+.cyber-banner {
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cyber-banner h1 {
+    color: #fff;    
+}
+.cyber-banner a {
+    display: block;
+    background-color: #FFED4D;
+    padding: 20px 40px;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+}
+
+</style>
+
+<div class="cyber-banner">
+  <h1>{{ section.settings.title }}</h1>
+  <a href="{{ section.settings.btn_link }}">{{ section.settings.btn_text }}</a>
+</div>
+
+{% schema %}
+  {
+    "name": "Cyber banner",
+    "class": "cyber-banner-section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "back_image",
+        "label": "Background image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button text"
+      },
+      {
+        "type": "url",
+        "id": "btn_link",
+        "label": "Button link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Cyber banner"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,157 @@
+{% assign percentoff = product.compare_at_price | minus:  product.price   | times: 100  | divided_by: product.compare_at_price %}
+
+<div id="myModal_wish" class="modal outside_closed" style='display:none;'>
+<!-- Modal content -->
+<div class="modal-content">
+  <div class="pop_wrapers">
+    <div class="close_sec">
+      <span id="wish_close" class="closes"><i class="uil uil-times"></i><span>Close</span></span>
+    </div>
+    <div class="content_wper">
+      <div class="content_scroll">
+        <h3>There's a Reason Our Prices Are Low</h3>
+        <p>It's not like we have access to a special deal from Microsoft.</p>
+        <p>Like how a car manufacturer builds a car and uses a dealer to sell it, Microsoft develops Microsoft Office and uses retail partners to sell it.</p>
+        <p>Best Buy isn't interested in selling Microsoft Office at a low price. They have many stores, many employees, and massive overheads. </p>
+        <p>To get Best Buy to sell Microsoft Office, Microsoft has to offer them a discount of 34% to 40%.</p>
+        <p>Microsoft is willing to pay for this because once Microsoft launched Microsoft Office 2021, every extra unit sold <b>didn't cost them anything</b>.</p>
+        <p>Once Taylor releases her new album, she has to make <b>0 effort</b> for every new sale.</p>
+        <p>Coming back to Best Buy.</p>
+        <p>Because Microsoft offers such a good deal to Best Buy, they are, by law, required to offer that to all resellers.</p>
+        <p>Including Software Keep.</p>
+      </div>
+    </div>
+ </div>
+</div>
+<!-- Modal content -->
+</div>
+
+<!--whythis popup Start Modal content -->
+<div id="wythismyModal" class="whymodal outside_closed" style='display:none;'>
+  <div class="modal-content">
+    <div class="pop_wrapers">
+      <div class="close_sec">
+        <span id="why_close" class="closes"><i class="uil uil-times"></i> <span>Close</span></span>
+      </div>
+      <div class="content_wper">
+        <div class="content_scroll">
+          <h3>We Had a Choice</h3>
+          <p>One option was to do what Best Buy does: keep around {% if product.compare_at_price > 0 %}{{ percentoff }}% {{ 'general.tags.off' | t }}{% endif %} for ourselves and sell it to you at retail.</p>
+          <p>But this is silly because we don't have the overheads that Best Buy has. That means we can pass some of those savings to you while maintaining a healthy, equitable business.</p>
+          <p>So that's what we did. It's why you're seeing a          
+            {% if product.compare_at_price > 0 %}{{ percentoff }}% {{ 'general.tags.off' | t }}{% endif %} discount today.</p>
+        </div>
+      </div>
+   </div>
+  </div>
+</div>
+<!-- End why this Modal content -->
+
+<!-- NewHere what make us different popup Start Modal content -->
+<div id="newhereModal" class="whymodal outside_closed" style='display:none;'>
+  <div class="modal-content">
+    <div class="pop_wrapers">
+      <div class="close_sec">
+        <span id="newhere_close" class="closes"><i class="uil uil-times"></i> <span>Close</span></span>
+       </div>
+      <div class="content_wper">
+        <div class="content_scroll">
+          <h3>There's a Reason Our Prices Are Low</h3>
+          <p>It's not like we have access to a special deal from Microsoft.</p>
+          <p>Like how a car manufacturer builds a car and uses a dealer to sell it, Microsoft develops Microsoft Office and uses retail partners to sell it.</p>
+          <p>Best Buy isn't interested in selling Microsoft Office at a low price. They have many stores, many employees, and massive overheads. </p>
+          <p>To get Best Buy to sell Microsoft Office, Microsoft has to offer them a discount of 34% to 40%.</p>
+          <p>Microsoft is willing to pay for this because once Microsoft launched Microsoft Office 2021, every extra unit sold <b>didn't cost them anything</b>.</p>
+          <p>Once Taylor releases her new album, she has to make <b>0 effort</b> for every new sale.</p>
+          <p>Coming back to Best Buy.</p>
+          <p>Because Microsoft offers such a good deal to Best Buy, they are, by law, required to offer that to all resellers.</p>
+          <p>Including Software Keep.</p>
+          
+          <h3>We Had a Choice</h3>
+          <p>One option was to do what Best Buy does: keep around 40% for ourselves and sell it to you at retail.</p>
+          <p>But this is silly because we don't have the overheads that Best Buy has. That means we can pass some of those savings to you while maintaining a healthy, equitable business.</p>
+          <p>So that's what we did. It's why you're seeing a  {% if product.compare_at_price > 0 %}{{ percentoff }}% {{ 'general.tags.off' | t }}{% endif %} discount today.</p>
+          
+          <h3>Be Mindful</h3>
+          <p>It's one thing for a company like SoftwareKeep to offer a  {% if product.compare_at_price > 0 %}{{ percentoff }}% {{ 'general.tags.off' | t }}{% endif %} discount. It's entirely different to buy from a site. that sells a licensed version for $50 (or sometimes even lower).</p>
+          <p>Microsoft has spent years and billions of dollars building its brand. They would never allow a reseller to sell their Microsoft Office for a price that low.</p>
+        </div>
+      </div>
+   </div>
+  </div>
+</div>
+<!-- End NewHere Modal content -->
+
+ <!-- Collection page pop up show -->
+ {% if settings.pop_text != blank %}
+    <div id="dispop_model" class="popupOverlay outside_closed" style="display:none;">
+       <div class="popupContainer">
+          {{ settings.pop_text }}
+       </div>
+    </div>
+
+   <script>
+    $(document).ready(function(){
+        $('.discount_pops').click(function(event){
+          event.preventDefault();
+          $('#dispop_model').show();
+        });
+        $('.epopupClose').click(function(){
+         $('#dispop_model').hide();
+        });
+      // Closed outside popup
+      $(".outside_closed").click(function(event ){
+         $("#dispop_model").hide();
+       });
+     });
+   </script>
+{% endif %}
+<!-- Collection page pop up show -->
+
+<script>
+$(document).ready(function(){
+  $('.gothere_badge').click(function(event){
+    event.preventDefault();
+    $('#myModal_wish').show();
+  });
+  $('#wish_close').click(function(){
+   $('#myModal_wish').hide();
+  });
+});
+</script>
+
+<script>
+$('#why_pop p').click(function(e){
+  e.preventDefault();
+    $('#wythismyModal').show();
+  });
+  $('#why_close').click(function(){
+   $('#wythismyModal').hide();
+  });
+
+// New here popup start make_diff
+  $('.new-popcall #newwhere').click(function(e){
+    e.preventDefault();
+    $('#newhereModal').show();
+  });
+  $('#newhere_close').click(function(){
+   $('#newhereModal').hide();
+  });
+
+
+  // New here popup start make_diff
+  $('.new-popcalls .make_diff').click(function(e){
+    e.preventDefault();
+    $('.whymodal').show();
+  });
+  $('#newhere_close').click(function(){
+   $('#newhereModal').hide();
+  });
+  
+  
+// Closed outside popup
+$(".outside_closed").click(function(event ){
+  $(".outside_closed").hide();
+});
+  
+</script>

@@ -1,0 +1,459 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "height": 300,
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": "medium",
+        "contentColor": "rgba(0,0,0,0)",
+        "fillColor": "rgba(0,0,0,0)",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "content": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "0d64554e-4acf-4ab0-bbd8-6431a9f2843d": {
+      "type": "section__heading",
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 25,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "heading": "Affiliate Program Join us Today",
+        "headingColor": "#1266cc",
+        "subheading": "Exciting Affiliate Opportunities with SoftwareKeep: Join Now and Earn 10% Commission on Every Sale!",
+        "subheadingColor": "#04a3ff",
+        "subheadingPosition": "below",
+        "button_label": "",
+        "button_link": "",
+        "headingAlignment": "center"
+      }
+    },
+    "c35aa92b-16b5-4349-98b7-cfd780afcd7c": {
+      "type": "section__columns",
+      "blocks": {
+        "f21dbeab-b49f-4043-a17f-825ce8c87cc8": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/banner_1.png",
+            "imageSize": 100,
+            "heading": "",
+            "content": "",
+            "buttonText": "Join Us for Free",
+            "buttonURL": "https://docs.google.com/forms/d/e/1FAIpQLSdRahBOVF_cC6TnhBGJtlrM-sEhpBGWHnI8vd3rVEj-BOSQ9g/viewform",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "filled"
+          }
+        }
+      },
+      "block_order": [
+        "f21dbeab-b49f-4043-a17f-825ce8c87cc8"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 240,
+        "colGap": 20,
+        "textAlign": "center",
+        "contentAlign": "top",
+        "colCount": "col-md-min"
+      }
+    },
+    "42f95842-66c2-475c-8d7b-def62feee2b1": {
+      "type": "section__columns",
+      "blocks": {
+        "325f074d-ffd0-49b1-8bfa-e371feac0e07": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/signup.png",
+            "imageSize": 100,
+            "heading": "<h4>Sign Up</h4>",
+            "content": "<p><a href=\"https://docs.google.com/forms/d/e/1FAIpQLSdRahBOVF_cC6TnhBGJtlrM-sEhpBGWHnI8vd3rVEj-BOSQ9g/viewform\" target=\"_blank\" title=\"https://docs.google.com/forms/d/e/1FAIpQLSdRahBOVF_cC6TnhBGJtlrM-sEhpBGWHnI8vd3rVEj-BOSQ9g/viewform\">Click here to sign up with our Google Form.</a></p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "text"
+          }
+        },
+        "a156a974-962e-4c09-89c2-901e9b4ca153": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/promote.png",
+            "imageSize": 100,
+            "heading": "<h4>Promote</h4>",
+            "content": "<p>Send us the visitors, and we will take care of the rest.</p><p></p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "text"
+          }
+        },
+        "ed813703-a0c6-4e5d-933d-92e5f9d05507": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/earn.png",
+            "imageSize": 100,
+            "heading": "<h4>Earn</h4>",
+            "content": "<p>Earn up to 10% when your visitors make a purchase.</p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "text"
+          }
+        }
+      },
+      "block_order": [
+        "325f074d-ffd0-49b1-8bfa-e371feac0e07",
+        "a156a974-962e-4c09-89c2-901e9b4ca153",
+        "ed813703-a0c6-4e5d-933d-92e5f9d05507"
+      ],
+      "settings": {
+        "custom_id": "aff-logo",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 230,
+        "padding": 5,
+        "lineMargin": 24,
+        "backgroundColor": "#e8f4fe",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "Becoming successful with us is as easy as 1-2-3",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 310,
+        "colGap": 20,
+        "textAlign": "center",
+        "contentAlign": "top",
+        "colCount": "col-md-4"
+      }
+    },
+    "66db9235-cd2b-46ae-8d32-54c2c25942fc": {
+      "type": "section__columns",
+      "blocks": {
+        "70e487a3-cda1-4afc-b21a-e03aa86fef6b": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/trusted_by_google.png",
+            "imageSize": 100,
+            "heading": "<p>Google Trusted Store.</p>",
+            "content": "<p>SoftwareKeep is a Google Trusted Store with Over 200K+ clients served with the highest customer satisfaction ratings!</p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "text"
+          }
+        },
+        "c87df1b5-3dde-4fae-b728-32232fa06b1c": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/customer_support.png",
+            "imageSize": 100,
+            "heading": "<p>24/7 Customer Support.</p>",
+            "content": "<p>Get round-the-clock support with our 24/7 live chat, email, and call services.</p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "text"
+          }
+        },
+        "9528f966-3490-443a-bfd5-20bdd6972d32": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/high_conversion_rate.png",
+            "imageSize": 100,
+            "heading": "<p>High Conversion rates</p>",
+            "content": "<p>Experience our exceptional high conversion rate and boost your profits.</p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "text"
+          }
+        },
+        "8d2a8b26-8cb4-44a7-b94e-d4f23dab5cb5": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/high_avarage_order.png",
+            "imageSize": 100,
+            "heading": "<p>High Average Order</p>",
+            "content": "<p>Enjoy a hefty commission with our high average order value of over $200!</p>",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "primary",
+            "buttonType": "text"
+          }
+        }
+      },
+      "block_order": [
+        "70e487a3-cda1-4afc-b21a-e03aa86fef6b",
+        "c87df1b5-3dde-4fae-b728-32232fa06b1c",
+        "9528f966-3490-443a-bfd5-20bdd6972d32",
+        "8d2a8b26-8cb4-44a7-b94e-d4f23dab5cb5"
+      ],
+      "custom_css": [
+        "h2 {font-size: 35px;}"
+      ],
+      "settings": {
+        "custom_id": "aff-lo",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 270,
+        "padding": 5,
+        "lineMargin": 31,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "start",
+        "verticalAlignment": "middle",
+        "heading": "Why Join SoftwareKeep Affiliate?",
+        "headingColor": "#1266cc",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 310,
+        "colGap": 20,
+        "textAlign": "start",
+        "contentAlign": "top",
+        "colCount": "col-md-6"
+      }
+    },
+    "530b233a-85c4-4d7b-b63a-669bd656cfd9": {
+      "type": "section__columns",
+      "blocks": {
+        "73446cd0-c5d5-49eb-9294-2c09934225c2": {
+          "type": "columnVideo",
+          "settings": {
+            "video": "https://youtu.be/-nDM_tHsMQk",
+            "videoSize": 100,
+            "heading": "",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "7a878f93-060b-425b-bbb9-f39cb66ea576": {
+          "type": "columnVideo",
+          "settings": {
+            "video": "https://youtu.be/waCxjf5FqcU",
+            "videoSize": 100,
+            "heading": "",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        }
+      },
+      "block_order": [
+        "73446cd0-c5d5-49eb-9294-2c09934225c2",
+        "7a878f93-060b-425b-bbb9-f39cb66ea576"
+      ],
+      "settings": {
+        "custom_id": "youtube-vid",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "Videos",
+        "headingColor": "#04a3ff",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 0,
+        "colGap": 25,
+        "textAlign": "center",
+        "contentAlign": "top",
+        "colCount": "col-md-6"
+      }
+    },
+    "e8aa628d-23ae-4b64-a156-2d14ba27ceac": {
+      "type": "section__faq",
+      "blocks": {
+        "bb372da5-69a6-4bd2-9bd8-f8530bef40b5": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>What is Affiliate Marketing?</p>",
+            "answer": "Affiliate marketing is a performance-based marketing strategy where affiliates promote products or services and earn a commission for every sale made through their unique affiliate link. Affiliate marketing aims to promote products and services to a large audience and earn a commission for every sale made through your unique link. It is a great way to earn money online, as you can promote products and services to your audience and earn a commission for every sale."
+          }
+        },
+        "c139747b-f443-4f4d-a5b8-f617a5302274": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Why Choose SoftwareKeep's Affiliate Program?</p>",
+            "answer": "SoftwareKeep's affiliate program is one of the best in the industry, offering a generous 10% commission on every sale made through your unique affiliate link. In addition to the high commission rate, SoftwareKeep's affiliate program offers unique features such as a wide range of software products, a dedicated affiliate support team, and a range of tools and resources to help you promote our products and drive more sales."
+          }
+        },
+        "fb8ed3b1-58ed-4098-a71d-0fe7f91797b7": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How to Sign Up for SoftwareKeep's Affiliate Program</p>",
+            "answer": "<div><p>Signing up for SoftwareKeep's affiliate program is easy. All you need to do is follow these simple steps:</p><ul class=\"abs-affiliate-program-faq-numeric-list\"><li>Visit the SoftwareKeep affiliate page</li><li>Fill out the affiliate application form</li><li>Wait for approval from the SoftwareKeep team</li></ul><p>Once you have been approved, you will receive a unique affiliate link that you can use to promote our products and services. The approval process usually takes a few days, and you will receive an email notification once approved.</p><p>Many of our associates comprise technology bloggers and e-commerce websites equipped with blogs or channels that attract a substantial following. They aspire to derive value from the content they create. Typically, our affiliates create blog posts or videos and embed a unique link to our website within their content. Visitors who click on this link are redirected to our website, where we employ our expertise to convert them into customers. Consequently, our affiliates earn a commission for each sale made through their referral link. Since our affiliates are adept at generating an audience, we excel at selling software, which results in a mutually beneficial situation for both parties.</p></div>"
+          }
+        },
+        "7cfa3fa3-76b1-40ad-ac04-5e54cdc565d8": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How do I Get Paid?</p>",
+            "answer": "When you send a visitor to SoftwareKeep through your special tracking link, and that visitor makes a purchase on our site you will receive a 10% commission from that sale!\n\nSome terms and conditions apply. Please check our full policy.\n\nWe handle all payments. When you register your account, you will need to provide valid banking information for your commissions to be paid out. You can setup your payout schedule within your account, and there is a minimum of $50 in earned commissions to receive a payout."
+          }
+        },
+        "a96bc2de-0243-4021-a7d8-2cd718c06440": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How Much do I get Paid?</p>",
+            "answer": "We offer a competitive compensation of 10% for every qualified sale you send us. There is no limit on how much you can earn."
+          }
+        }
+      },
+      "block_order": [
+        "bb372da5-69a6-4bd2-9bd8-f8530bef40b5",
+        "c139747b-f443-4f4d-a5b8-f617a5302274",
+        "fb8ed3b1-58ed-4098-a71d-0fe7f91797b7",
+        "7cfa3fa3-76b1-40ad-ac04-5e54cdc565d8",
+        "a96bc2de-0243-4021-a7d8-2cd718c06440"
+      ],
+      "settings": {
+        "custom_id": "affiliate__faq",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "FAQ",
+        "headingColor": "#1266cc",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "textContent": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "0d64554e-4acf-4ab0-bbd8-6431a9f2843d",
+    "c35aa92b-16b5-4349-98b7-cfd780afcd7c",
+    "42f95842-66c2-475c-8d7b-def62feee2b1",
+    "66db9235-cd2b-46ae-8d32-54c2c25942fc",
+    "530b233a-85c4-4d7b-b63a-669bd656cfd9",
+    "e8aa628d-23ae-4b64-a156-2d14ba27ceac"
+  ]
+}

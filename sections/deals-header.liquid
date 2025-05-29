@@ -1,0 +1,75 @@
+<div class="deals_top-wraper">
+    <div class="tP_msg">
+      <p>{{ section.settings.toptext }}</p>
+    </div>
+   <div class="dl_count">
+      <div data-countdown data-ct-key="{{product.id}}" class="countdowns dlpage-count">
+        <!-- <div class="bg">
+        <span class="countdown__holder"><span class="days">00</span></span>
+        </div> -->
+       <div class="bg">
+        <span class="countdown__holder"><span class="hours">00</span>
+          <span style="
+          letter-spacing: 0;
+          text-transform: uppercase;
+          font-size: 0.6rem;
+          line-height: 1;
+          padding-bottom: 2px;
+       ">HRS</span>
+        </span>
+        </div>
+        <div class="bg" style="background: transparent;color: #fff;">
+         <span class="countdown__holder">:</span>
+        </div>
+       <div class="bg">
+        <span class="countdown__holder"><span class="minutes">00</span>
+          <span style="
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    line-height: 1;
+    padding-bottom: 2px;
+">MIN</span></span>
+        </div>
+       <div class="bg" style="background: transparent;color: #fff;">
+        <span class="countdown__holder">:</span>
+        </div>
+       <div class="bg">
+        <span class="countdown__holder"><span class="seconds">00</span><span style="
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    line-height: 1;
+    padding-bottom: 2px;
+">SEC</span></span>
+        </div>
+     </div>
+   </div>
+</div>
+
+{% if section.settings.botomtext != blank %}
+  <div class="btm_text">
+    <p>{{ section.settings.botomtext }}</p>
+  </div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Deals Header",
+    "settings": [
+      
+      {
+        "type": "text",
+        "id": "toptext",
+        "label": "Top Header Meassage",
+        "default": "SAVE UP TO 67% WITH TRULY OFFICE + 4 FREE GIFTS"
+      },
+      {
+        "type": "html",
+        "id": "botomtext",
+        "label": "Bottom Text",
+        "default": "<span> #1 ALTERNATIVE</span> TO MICROSOFT OFFICE"
+      }
+    ]
+  }
+{% endschema %}

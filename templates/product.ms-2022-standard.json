@@ -1,0 +1,257 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "topicons": {
+      "type": "product-top-icon",
+      "settings": {
+        "tpiconss": false
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "page": {
+      "type": "ms-2022-standard",
+      "blocks": {
+        "ppTitle": {
+          "type": "productPageTitle",
+          "settings": {
+            "noMargin": true,
+            "color": "rgba(0,0,0,0)",
+            "fontFamily": "base",
+            "fontSize": "medium"
+          }
+        },
+        "ppPrice": {
+          "type": "productPagePrice",
+          "settings": {
+            "noMargin": false,
+            "color": "#1d924e",
+            "newPriceColor": "#1d924e",
+            "oldPriceColor": "#595959",
+            "fontFamily": "base",
+            "fontSize": "medium"
+          }
+        },
+        "ppATC": {
+          "type": "productPageATC",
+          "settings": {
+            "noMargin": false,
+            "stickyATC": "scroll"
+          }
+        }
+      },
+      "block_order": [
+        "ppTitle",
+        "ppPrice",
+        "ppATC"
+      ],
+      "settings": {
+        "disable_sticky": false,
+        "view": "default",
+        "layout": "max-width",
+        "galleryStyle": "default",
+        "galleryPosition": "left",
+        "autoZoom": true,
+        "autoChange": true,
+        "galleryImageFit": "cover",
+        "galleryImageGap": 16,
+        "productNavigation": false,
+        "productMainImageSize": "crop",
+        "imageSticky": true,
+        "imageStickyPosition": 100
+      }
+    },
+    "bundleproductdescription": {
+      "type": "bundle-product-description",
+      "settings": {
+        "secid": "",
+        "desc_heading": "",
+        "custom_liquid": ""
+      }
+    },
+    "f1009b21-4bbe-42e3-9fea-64630eee6147": {
+      "type": "section__faq",
+      "blocks": {
+        "50e8bf0b-3202-4d8b-b644-83babb5087fe": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How long does it take to receive my SoftwareKeep order?</p>",
+            "answer": "As soon as we are able to successfully process your payment, you will receive a download link for your product and a Product Key from SoftwareKeep. This process is usually between 15-20 minutes. If your SoftwareKeep order is delayed longer than this, please refer to your SoftwareKeep account for the details of your purchase."
+          }
+        },
+        "90ce5404-68ea-4aeb-a654-eabc29887090": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How can I be certain that my copy of Microsoft Office is genuine?</p>",
+            "answer": "SoftwareKeep is a proud Microsoft Certified Partner, and as such, all our software products are 100% legitimate and authentic. In addition, any software you purchase from SoftwareKeep is covered by our hassle-free money-back guarantee. We encourage all our SoftwareKeep customers to register their specific Microsoft Office Product key via Microsoft online activation to ensure verification and tracking of their authentic software products."
+          }
+        },
+        "cb791651-6d47-48d6-a8ba-25b825cddfab": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>How long does a genuine software license from SoftwareKeep last?</p>",
+            "answer": "The license for any product purchased from SoftwareKeep is a lifetime (perpetual) license. You may be required to purchase a new license with a new version of the product. In some cases, you might be eligible for an upgrade license from SoftwareKeep that will allow you to upgrade at a discount price."
+          }
+        },
+        "8d6959d0-2758-4040-8cfb-b5ff1cc49850": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Can I buy a single-use license software and install on multiple computers?</p>",
+            "answer": "The software licenses sold by SoftwareKeep are intended for installation and activation on one computer only, unless otherwise specified for that particular product. Retail and OEM software licenses we provide are designed and licensed for use on a single computer. Installing a single-use license from SoftwareKeep on multiple computers is not permitted under the license terms and conditions."
+          }
+        },
+        "7b28ddcb-09a4-4e25-92f1-be5960c65b30": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>What is a digital download and how does it work?</p>",
+            "answer": "A digital download is an electronic version of your software product, giving you access to download and use your new software immediately. This means that a physical CD or DVD disc is not included with your purchase. The software install program is downloaded through cloud-based storage."
+          }
+        },
+        "ce0cb108-36f4-4e65-ab62-17dfe2eba284": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "question": "<p>What are retail software products?</p>",
+            "answer": "Softwarekeep Retail software products are the same physical items you would purchase at your local software stores. They are packaged for retail sale and usually include the original box, physical CD or DVD disk(s), a manual, the paper license agreement, and an Activation Key/Code. Similar to OEM software, a Retail Product is licensed for use on one computer only."
+          }
+        },
+        "bcfd3300-9f6b-4d48-bcf8-ea4bfe756f66": {
+          "type": "accordion",
+          "settings": {
+            "question": "<p>Can I update my software over the Internet? (not needed as there's no update after 2021)</p>",
+            "answer": "Since these are genuine Microsoft products, you will be able to obtain regular updates from Microsoft using an Internet connection."
+          }
+        }
+      },
+      "block_order": [
+        "50e8bf0b-3202-4d8b-b644-83babb5087fe",
+        "90ce5404-68ea-4aeb-a654-eabc29887090",
+        "cb791651-6d47-48d6-a8ba-25b825cddfab",
+        "8d6959d0-2758-4040-8cfb-b5ff1cc49850",
+        "7b28ddcb-09a4-4e25-92f1-be5960c65b30",
+        "ce0cb108-36f4-4e65-ab62-17dfe2eba284",
+        "bcfd3300-9f6b-4d48-bcf8-ea4bfe756f66"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_id": "faq_section",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 12,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "maxContentWidth": 100,
+        "heading": "Frequently asked questions",
+        "headingColor": "#191d21",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "textContent": ""
+      }
+    },
+    "upsell": {
+      "type": "api__upsell--inline",
+      "blocks": {
+        "a25bb15f-ba83-4bce-a950-ef84e05e7c20": {
+          "type": "productSpecific",
+          "disabled": true,
+          "settings": {
+            "handle": "microsoft-office-2019-home-and-student",
+            "upsellProduct1": "microsoft-office-2019-home-and-student-for-mac",
+            "upsellProduct2": "",
+            "upsellProduct3": "",
+            "heading": "",
+            "subheading": ""
+          }
+        },
+        "1a4b9efd-632a-4590-848d-143cadf54c9c": {
+          "type": "priceSpecific",
+          "disabled": true,
+          "settings": {
+            "conditionType": "mt",
+            "condition": "4",
+            "upsellProduct1": "microsoft-windows-10-home-edition-64-bit",
+            "upsellProduct2": "",
+            "upsellProduct3": "",
+            "heading": "Bundle and save 10%",
+            "subheading": ""
+          }
+        },
+        "bc417c44-cf20-4719-a8fb-7645e17d2c7c": {
+          "type": "collectionSpecific",
+          "disabled": true,
+          "settings": {
+            "handle": "",
+            "upsellProduct1": "",
+            "upsellProduct2": "",
+            "upsellProduct3": "",
+            "heading": "",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "a25bb15f-ba83-4bce-a950-ef84e05e7c20",
+        "1a4b9efd-632a-4590-848d-143cadf54c9c",
+        "bc417c44-cf20-4719-a8fb-7645e17d2c7c"
+      ],
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "recommended": {
+      "type": "product-page__recommended",
+      "settings": {
+        "enabled": true,
+        "personalizedOffers": true,
+        "layout": "max-width",
+        "heading": "",
+        "subheading": "Recommended Products for You",
+        "subheadingPosition": "above",
+        "textAlignment": "center",
+        "defaultCollection": ""
+      }
+    },
+    "171955495738938507": {
+      "type": "apps",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "topicons",
+    "breadcrumbs",
+    "page",
+    "bundleproductdescription",
+    "f1009b21-4bbe-42e3-9fea-64630eee6147",
+    "upsell",
+    "recommended",
+    "171955495738938507"
+  ]
+}

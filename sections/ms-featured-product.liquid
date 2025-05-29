@@ -1,0 +1,58 @@
+<div class="featured-product-wrap">
+  <div class="fp_image">
+    {{ section.settings.image | image_url: width:'413', height:'300' | image_tag }}
+  </div>
+  <div class="fp_content">
+    <h3>{{ section.settings.heading }}</h3>
+    <p>{{ section.settings.copy }}</p>
+    {% assign product = all_products[section.settings.product] %}
+
+ <div class="abs-action">
+    {% assign var = product.first_available_variant %}
+    {% if product.available %}
+      {% form 'product', product %}
+        <input name="id" type="hidden" value="{{ var.id }}">
+        {% render 'custom-add-to-cart-button', variant: var.id, quantity: 1, price: product.price %}
+      {% endform %}
+    {% else %}
+      {% render 'sold-out-button', disabled: 'disabled' %}
+    {% endif %}
+  </div>
+    
+  </div>
+</div>
+{% schema %}
+{
+  "name": "MS Featured Product",
+  "class": "ms-featured-product",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Secure the Office 2021 Home & Business & Trend Micro Maximum Security bundle today."
+    },
+    {
+      "type": "text",
+      "id": "copy",
+      "label": "Copy Text",
+      "default":"Make the no-brainer move you'll be thanking yourself for."
+    }, 
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Add Product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MS Featured Product"
+      }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,39 @@
+<div class="logos_wrap max-width">
+  {% for block in section.blocks %}
+    <div class="logo_list">
+    {{ block.settings.img | image_url: width:'40', height:'40' | image_tag }}
+    <p>{{ block.settings.text }}</p>
+    </div>
+  {% endfor %}
+</div>
+{% schema %}
+{
+  "name": "Rumble Logo",
+  "class": "rumble-logo",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "Logo",
+      "name": "Add Logo",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rumble Logo"
+    }
+  ]
+}
+{% endschema %}

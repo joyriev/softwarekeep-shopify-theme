@@ -1,0 +1,284 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "banner--page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "height": 300,
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "fontSize": "medium",
+        "contentColor": "rgba(0,0,0,0)",
+        "fillColor": "rgba(0,0,0,0)",
+        "overlayOpacity": 0,
+        "overlayColor": "#000000"
+      }
+    },
+    "content": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "layout": "default",
+        "enableShortcodes": false
+      }
+    },
+    "cf8aac23-f6dd-436d-91d2-712985141fdc": {
+      "type": "section__heading",
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "heading": "How to uninstall your Download",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "button_label": "",
+        "button_link": "",
+        "headingAlignment": "center"
+      }
+    },
+    "ca3dd96a-90c9-493c-a414-25f754918c3e": {
+      "type": "section__columns",
+      "blocks": {
+        "0255e2e9-5c90-489e-b4a9-b9c14558c1db": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/mac_uninstall_step1.png",
+            "imageSize": 100,
+            "heading": "<h4>Step 1:</h4><p>Click on Finder icon.</p>",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "b3321ab7-3209-4506-b48f-e59c87056381": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/mac_uninstall_step2.png",
+            "imageSize": 100,
+            "heading": "<h4>Step 2:</h4><p>Click on Application folder.</p>",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "52e57d4d-796f-4675-96f7-9be340003fb0": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/mac_uninstall_step3.png",
+            "imageSize": 100,
+            "heading": "<h4>Step 3:</h4><p>Drag the Microsoft Office folder to Trash.</p>",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "87f4b2f3-59e4-4075-92db-49400eda2654": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/mac_uninstall_step4_1.png",
+            "imageSize": 100,
+            "heading": "<h4>Step 4:</h4><p>Remove preference and license files and Office folder. Open library folder and move all com.microsoft files to trash.</p>",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "5479ddc3-2aab-46b6-b455-a5ee2d3ee5dd": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/mac_uninstall_step4.png",
+            "imageSize": 100,
+            "heading": "<h4>Step 5:</h4><p>If there’s anything in Trash you want to keep, be sure to make a copy before you continue. Click Finder &gt; Empty Trash.</p>",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        }
+      },
+      "block_order": [
+        "0255e2e9-5c90-489e-b4a9-b9c14558c1db",
+        "b3321ab7-3209-4506-b48f-e59c87056381",
+        "52e57d4d-796f-4675-96f7-9be340003fb0",
+        "87f4b2f3-59e4-4075-92db-49400eda2654",
+        "5479ddc3-2aab-46b6-b455-a5ee2d3ee5dd"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 48,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "MAC",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 160,
+        "colGap": 90,
+        "textAlign": "center",
+        "contentAlign": "top",
+        "colCount": "col-md-4"
+      }
+    },
+    "a601f09a-0676-42a0-a232-d5595836c995": {
+      "type": "section__columns",
+      "blocks": {
+        "f71f2954-0c0a-4aaa-867b-20c7aa5d42ea": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/windows_uninstall_step1.png",
+            "imageSize": 100,
+            "heading": "<h4>Step 1:</h4><p>Open Programs and Features by clicking the Start button.</p>",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "ea7776d0-1082-430a-852b-f8a1b25b214e": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/windows_uninstall_step2.png",
+            "imageSize": 100,
+            "heading": "<h4>Step 2:</h4><p>Click on Control Panel.</p>",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "4f17fdbc-69c0-4e92-a3ce-a2f3f86bc2f3": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/windows_uninstall_step3.png",
+            "imageSize": 100,
+            "heading": "<h4>Step 3:</h4><p>After click on Programs option.</p>",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        },
+        "c25f3fe2-2b3b-408d-ac13-253717a92850": {
+          "type": "columnImage",
+          "settings": {
+            "image": "shopify://shop_images/windows_uninstall_step4.png",
+            "imageSize": 100,
+            "heading": "<h4>Step 4:</h4><p>And then, Click on Programs and Features and follow the Microsoft Office steps to uninstall.</p>",
+            "content": "",
+            "buttonText": "",
+            "buttonURL": "",
+            "openTab": false,
+            "buttonStyle": "secondary",
+            "buttonType": "filled"
+          }
+        }
+      },
+      "block_order": [
+        "f71f2954-0c0a-4aaa-867b-20c7aa5d42ea",
+        "ea7776d0-1082-430a-852b-f8a1b25b214e",
+        "4f17fdbc-69c0-4e92-a3ce-a2f3f86bc2f3",
+        "c25f3fe2-2b3b-408d-ac13-253717a92850"
+      ],
+      "settings": {
+        "custom_id": "",
+        "displayFor": "display--both",
+        "layout": "default",
+        "nomargin": false,
+        "scopedCSS": "",
+        "height": 0,
+        "padding": 0,
+        "lineMargin": 48,
+        "backgroundColor": "rgba(0,0,0,0)",
+        "backgroundPosition": "middle",
+        "backgroundFilter": "none",
+        "backdropIntensity": 50,
+        "parallax": false,
+        "backgroundPattern": false,
+        "overlayOpacity": 0,
+        "overlayColor": "#000000",
+        "contentColor": "rgba(0,0,0,0)",
+        "horizontalAlignment": "center",
+        "verticalAlignment": "middle",
+        "heading": "",
+        "headingColor": "rgba(0,0,0,0)",
+        "subheading": "Windows",
+        "subheadingColor": "rgba(0,0,0,0)",
+        "subheadingPosition": "above",
+        "headingAlignment": "center",
+        "colHeight": 160,
+        "colGap": 90,
+        "textAlign": "center",
+        "contentAlign": "top",
+        "colCount": "col-md-4"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "content",
+    "cf8aac23-f6dd-436d-91d2-712985141fdc",
+    "ca3dd96a-90c9-493c-a414-25f754918c3e",
+    "a601f09a-0676-42a0-a232-d5595836c995"
+  ]
+}

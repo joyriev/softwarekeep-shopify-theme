@@ -1,0 +1,54 @@
+<!-- /templates/customers/login.liquid -->
+{% section 'banner--login' %}
+<div class="login_content_container">
+  <div class="login_main_container">
+    <div class="login-image">
+      <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/login-banner.png?v=1706154113">
+      <div class="image-text">
+        <p class="login_text">Are you member of SoftwareKeep Family?</p>
+        <a class="login-link" href="/account/register"
+          >If not, no worries. Create your account and get 5% Off entire store.</a
+        >
+      </div>
+    </div>
+    <div class="customer__form">
+      <div class="form_image_logo">
+        <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/logo-keep.svg?v=1706156672">
+      </div>
+      {% form 'customer_login' %}
+        {{ form.errors | default_errors }}
+
+        {% assign login = 'customer_area.forms.login' | t %}
+
+        <label for="customer_email">{{ 'customer_area.forms.email' | t }}</label>
+        <input type="email" name="customer[email]">
+
+        <label for="customer_password">{{ 'customer_area.forms.password' | t }}</label>
+        <input type="password" name="customer[password]">
+        <label style="display: inline-block;" class="button--notice" for="recover">
+          {{- 'customer_area.forms.forgot_password' | t -}}
+        </label>
+        {% render 'submit-button', text: login, type: 'primary', class: 'button--submit' %}
+      {% endform %}
+
+      {% form 'recover_customer_password' %}
+        {{ form.errors | default_errors }}
+
+        <input type="checkbox" id="recover">
+        <!--
+          <label style="display: inline-block;" class="button--notice" for="recover">
+            {{- 'customer_area.forms.forgot_password' | t -}}
+          </label>
+        -->
+        <a style="display: inline-block;" href="{{routes.account_register_url}}" class="button--notice">
+          {{- 'customer_area.forms.register_here' | t -}}
+        </a>
+        <div class="recover__password">
+          <label for="customer_email">{{ 'customer_area.forms.email' | t }}</label>
+          <input type="email" name="email">
+          <input class="button button--primary button--filled button--primary__filled" type="submit" value="Submit">
+        </div>
+      {% endform %}
+    </div>
+  </div>
+</div>

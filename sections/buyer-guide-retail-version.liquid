@@ -1,0 +1,130 @@
+{{ 'buyer-guide-retail-version.css' | asset_url | stylesheet_tag }}
+
+<div class="max-width">
+  <div class="col-12 column center buyers_headingsec">
+    <div class="section__heading--heading">
+      {% if section.settings.title != blank %}
+       <h2 class="h-reset font__family--title buyers_heading" data-title="{{ page.title }}">{{ section.settings.title }}</h2>
+      {% endif %}
+      {% if section.settings.subtitle != blank %}
+        {{ section.settings.subtitle }}
+      {% endif %}
+    </div>
+</div>
+
+  <div class="main_list-pro">
+   <h3><strong>Latest versions</strong> –</h3>
+    <div class="retils_version">
+        <div class="lists">
+            <div class="title">
+               <h4 class="mrgin-zero">Edition</h4>
+            </div>
+            <div class="software_icons-list">
+              <h4 class="mrgin-zero">What's Included</h4>
+            </div>
+              <div class="buy-btns"></div>
+         </div>
+      
+         {% for product in section.settings.retails_products %}
+             <div class="lists">
+                <div class="pro-title">
+                  <a href="{{ product.url }}" class="link_title">{{ product.title }}</a>
+                </div>
+                 <div class="software_icons-list">
+                   {% for data in product.metafields.custom.select_list_icon.value %}
+                     <img src="{{ data.select_icon_image | file_url }}" loading="lazy" alt="" class="program-icon" width="25" height="25">
+                    {% endfor %}
+                 </div>
+                  <div class="buy-btns">
+                    {% assign var = product.first_available_variant %}
+                    {% if product.available %}
+                        {% form 'product', product, class:'lang_btns' %}
+                          <input name="id" type="hidden" value="{{var.id}}">
+                          {% render 'add-to-cart-button', variant: var.id, quantity: 1, price: product.price %}
+                        {% endform %}
+                           {% else %}
+                        {% render 'sold-out-button', disabled: 'disabled' %}
+                    {% endif %}
+                  </div>
+              </div>
+           {% endfor %}
+      </div>         
+
+       <div class="openlc-pro">
+           <h3><strong><u>Old Versions</u></strong> –</h3>
+              <div class="retils_version">
+                  <div class="lists">
+                      <div class="title">
+                         <h4 class="mrgin-zero">Edition</h4>
+                      </div>
+                      <div class="software_icons-list">
+                        <h4 class="mrgin-zero">What's Included</h4>
+                      </div>
+                        <div class="buy-btns"></div>
+                   </div>
+                
+                   {% for product in section.settings.openlv %}
+                       <div class="lists">
+                          <div class="pro-title">
+                            <a href="{{ product.url }}" class="link_title">{{ product.title }}</a>
+                          </div>
+                           <div class="software_icons-list">
+                             {% for data in product.metafields.custom.select_list_icon.value %}
+                               <img src="{{ data.select_icon_image | file_url }}" loading="lazy" alt="" class="program-icon" width="25" height="25">
+                              {% endfor %}
+                           </div>
+                            <div class="buy-btns">
+                              {% assign var = product.first_available_variant %}
+                              {% if product.available %}
+                                  {% form 'product', product, class:'lang_btns' %}
+                                    <input name="id" type="hidden" value="{{var.id}}">
+                                    {% render 'add-to-cart-button', variant: var.id, quantity: 1, price: product.price %}
+                                  {% endform %}
+                                     {% else %}
+                                  {% render 'sold-out-button', disabled: 'disabled' %}
+                     
+                              {% endif %}
+                            </div>
+                        </div>
+                     {% endfor %}
+                </div>   
+           </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Retail Products",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Headings"
+      },
+      {
+        "type": "richtext",
+        "id": "subtitle",
+        "label": "Sub Headings",
+        "default":"<p>Stay organized and productive wherever you are with Microsoft Office’s suite of tools designed to meet all your personal and business needs.</p>"
+      },
+      {
+        "type": "header",
+        "content": "Retail versions"
+      },
+      {
+       "type": "product_list",
+       "id": "retails_products",
+       "label": "Retail versions Products"
+     },
+      {
+        "type": "header",
+        "content": "Open License Versions"
+      },
+    {
+       "type": "product_list",
+       "id": "openlv",
+       "label": "Select License Versions Products"
+     }
+    ]
+  }
+{% endschema %}

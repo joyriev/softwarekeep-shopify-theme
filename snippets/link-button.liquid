@@ -1,0 +1,32 @@
+{%- assign settingsProp = type | append: 'ButtonStyle' -%}
+{% if buttonType != 'default' and buttonType %}
+  {% assign buttonType = buttonType %}
+{% else %}
+  {%- assign buttonType = settings[settingsProp] %}
+{% endif %}
+{% if tag != 'button' %}
+  <a
+    {{ style }}
+    class="button button--{{-type}} button--{{-buttonType}}  button--{{-type-}}__{{-buttonType}} {{class-}}"
+    {{ disabled }}
+    {{ custom }}
+    href="/collections/microsoft-office"
+  >
+    {{- text -}}
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9" fill="none">
+      <path d="M5 4.50001C5 4.66131 4.93998 4.82259 4.82018 4.94557L1.0486 8.81537C0.808678 9.06154 0.419689 9.06154 0.179867 8.81537C-0.0599556 8.5693 -0.0599557 8.17026 0.179867 7.92407L3.51717 4.50001L0.179983 1.07594C-0.0598394 0.829771 -0.0598394 0.430768 0.179983 0.184717C0.419806 -0.0615721 0.808794 -0.0615721 1.04871 0.184717L4.8203 4.05446C4.94011 4.1775 5 4.33878 5 4.50001Z" fill="#0067B8"/>
+    </svg> -->
+  </a>
+{% else %}
+  <button
+    {{ style }}
+    class="button button--{{-type}} button--{{-buttonType}}  button--{{-type-}}__{{-buttonType}} {{class-}}"
+    {{ disabled }}
+    {{ custom }}
+  >
+    {{- text -}}
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9" fill="none">
+      <path d="M5 4.50001C5 4.66131 4.93998 4.82259 4.82018 4.94557L1.0486 8.81537C0.808678 9.06154 0.419689 9.06154 0.179867 8.81537C-0.0599556 8.5693 -0.0599557 8.17026 0.179867 7.92407L3.51717 4.50001L0.179983 1.07594C-0.0598394 0.829771 -0.0598394 0.430768 0.179983 0.184717C0.419806 -0.0615721 0.808794 -0.0615721 1.04871 0.184717L4.8203 4.05446C4.94011 4.1775 5 4.33878 5 4.50001Z" fill="#0067B8"/>
+    </svg> -->
+  </button>
+{% endif %}

@@ -1,0 +1,122 @@
+ <div class="comparison-container">
+   <h2>{{ section.settings.heading }}</h2>
+   <p class="copy-text">{{ section.settings.copy }}</p>
+   <div class="comparison-table_wrap">
+        <table class="comparison-table">
+            <tr>
+                <td></td>
+                <td>  
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_4.png?v=1718874527" alt="SoftwareKeep Logo"> 
+                        <p class="below-logo">Lifetime software licenses</p>
+                        <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_48098546.png?v=1718874527" alt="SoftwareKeep Logo">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/image_422.png?v=1718874527" alt="SoftwareKeep Logo"> 
+                        <p class="below-logo">Monthly money drain</p>
+                        <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_48098547.png?v=1718874527" alt="SoftwareKeep Logo">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Free antivirus license for maximum security</td>
+                <td>Included</td>
+                <td>Forget it</td>
+            </tr>
+            <tr>
+                <td>Purchase type</td>
+                <td>One-time payment</td>
+                <td>Monthly subscription</td>
+            </tr>
+            <tr>
+                <td>License duration</td>
+                <td>Lifetime</td>
+                <td>Until you stop paying the bill</td>
+            </tr>
+            <tr>
+                <td>Lifetime 24/7 support</td>
+                <td>Available</td>
+                <td>Not Available</td>
+            </tr>
+            <tr>
+                <td>Price Comparison</td>
+                <td>$174.99</td>
+                <td>$249.99</td>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td>
+    {% assign product = all_products[section.settings.product] %}
+ <div class="abs-action table-cta">
+    {% assign var = product.first_available_variant %}
+    {% if product.available %}
+      {% form 'product', product %}
+        <input name="id" type="hidden" value="{{ var.id }}">
+        {% render 'custom-add-to-cart-button', variant: var.id, quantity: 1, price: product.price %}
+      {% endform %}
+    {% else %}
+      {% render 'sold-out-button', disabled: 'disabled' %}
+    {% endif %}
+  </div>
+                  
+                </td>
+                <td></td>
+            </tr>          
+        </table>
+  {% comment %}
+   <div class="mobile-table">  
+     <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_48098629-1.png?v=1718948714" alt="SoftwareKeep Logo">
+     <div class="abs-action table-cta">
+    {% assign var = product.first_available_variant %}
+    {% if product.available %}
+      {% form 'product', product %}
+        <input name="id" type="hidden" value="{{ var.id }}">
+        {% render 'custom-add-to-cart-button', variant: var.id, quantity: 1, price: product.price %}
+      {% endform %}
+    {% else %}
+      {% render 'sold-out-button', disabled: 'disabled' %}
+    {% endif %}
+       <p class="text-onetime">One-time purchase</p>
+  </div>
+   </div>
+     {% endcomment %}
+   </div>
+    </div>
+{% schema %}
+{
+  "name": "MS Comparison",
+  "class": "ms-comparison",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Secure the Office 2021 Home & Business & Trend Micro Maximum Security bundle today."
+    },
+    {
+      "type": "text",
+      "id": "copy",
+      "label": "Copy Text",
+      "default":"Make the no-brainer move you'll be thanking yourself for."
+    }, 
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Add Product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "MS Comparison"
+      }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,2237 @@
+.compare__content-wrap {
+    max-width: var(--maxwidth);
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    margin-bottom: 55px;
+    z-index: 1;
+}
+ img.tab-content-img {
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+ .on-line_titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .home-guarantees-container .h-g-c-body .h-g-c-b-block .h-g-c-b-b-image {
+    width: 25%;
+    height: auto;
+    max-width: 100%;
+}
+
+ .home-guarantees-container .h-g-c-body .h-g-c-b-block .h-g-c-b-b-image img {
+    width: 40px;
+    height: 41px;
+    max-width: 100%;
+}
+
+ .home-guarantees-container .h-g-c-body .h-g-c-b-block {
+    display: block;
+}
+
+ .home-guarantees-container .h-g-c-body .h-g-c-b-block .h-g-c-b-b-title span {
+    font-size: 16px;
+}
+
+.compare__content-wrap .product_wrap {
+    display: flex;
+}
+
+.title-productivity p {
+    margin-bottom: 35px;
+}
+
+.page-microsoft-office-2021-comparison {
+    margin: 40px 0;
+}
+
+.page-microsoft-office-2021-comparison .page-width-lp {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-microsoft-office-2021-comparison .title-stars {
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.page-microsoft-office-2021-comparison .title-stars span {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    margin: 50px 0 15px;
+}
+
+.page-microsoft-office-2021-comparison .title-stars span img {
+    margin-right: 10px;
+}
+
+.microsoft-windows-servers .page-microsoft-office-2021-comparison .bg-tabs-products {
+    margin-bottom: 60px;
+}
+
+.page-microsoft-office-2021-comparison, .page-microsoft-office-2021-comparison h1 {
+    margin: 0;
+}
+
+.page-microsoft-office-2021-comparison h1 {
+    font-family: Ubuntu;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52.8px;
+    text-align: center;
+    color: #062A30;
+}
+
+.page-microsoft-office-2021-comparison > .page-width-lp {
+    padding: 35px 20px 48px;
+}
+
+.shopify-section .section__row {
+    padding: 0;
+    background: #F5F5F5;
+}
+
+.check-extra {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 32px auto;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.check-extra p svg {
+    margin-right: 5px;
+}
+
+.check-extra p {
+    margin: 0;
+    width: auto;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24.08px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+p.abs-selected-os {
+    text-align: left;
+}
+
+span.text-onetime {
+    font-size: 14px;
+}
+
+.page-microsoft-office-2021-comparison .bg-tabs-products .page-width-lp {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-microsoft-office-2021-comparison .bg-tabs-products .tabs-content {
+    display: flex;
+     gap: 15px;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product:first-child {
+    border-color: rgba(3, 106, 181, 0.25);
+}
+
+.title-tabs-applications p {
+    text-align: center;
+    color: #475467;
+}
+
+.title-tabs-applications {
+    margin: auto;
+    max-width: 700px;
+}
+
+.title-tabs-applications h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.microsoft-windows-servers .compare__content-wrap .product_wrap {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: auto;
+    max-width: 1050px;
+    gap: 65px;
+    padding: 0 0 20px;
+}
+
+.microsoft-windows-servers .compare__content-wrap .product_wrap h4 {
+    height: 41px;
+}
+
+.microsoft-windows-servers .compare-table {
+    width: 100%;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tabs-content
+  .tab-content-product {
+    margin-bottom: 40px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+span.actual_price {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .info-tabs-products .prices-info-products {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0;
+    align-items: center;
+}
+
+.prices-info-products {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.learn_more {
+    text-align: center;
+}
+
+button.button.button--addToCart.button--primary.button--icon.button--text.button--primary__text {
+    background: #0067b8;
+    color: white;
+    width: 100%;
+}
+
+.abs-action small {
+    display: none;
+}
+
+a.link-table-compare {
+    text-align: center !important;
+    max-width: 100%;
+    padding: 32px;
+}
+
+.compare__content-wrap .product_wrap {
+    display: flex;
+    margin: auto;
+    max-width: 1050px;
+    gap: 65px;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.actual_price small {
+    text-decoration: line-through;
+}
+
+td.title-options-table-compare.title-options-table-compare-includes {
+    display: flex;
+    gap: 20px;
+}
+
+.page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product {
+    width: 30%;
+    background: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+    padding: 47px 32px 25px;
+    position: relative;
+    z-index: 2;
+    border-top: 10px solid;
+}
+
+.microsoft-office-2021-products .bg-tabs-products .tab-content-product {
+    width: calc(33.33% - 8px);
+    background: #fff;
+    box-shadow: 0 0 12px #0000000a;
+    padding: 47px 0 0;
+    position: relative;
+    z-index: 2;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-tabs-products
+  .list-includes-products
+  .office-apps {
+    flex-flow: row wrap;
+}
+
+.office-apps {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 30px;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-tabs-products
+  .list-includes-products
+  .office-apps
+  li {
+    margin-bottom: 10px;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-tabs-products
+  .list-includes-products
+  li {
+    margin: 0 10px 0 0;
+}
+
+.office-apps li.word span {
+    border-color: #2150a9;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product:first-child {
+    border-color: #036ab540;
+}
+
+.list-includes-products li {
+    list-style: none;
+}
+
+.tab-content li {
+    list-style: none;
+}
+
+.template--page\ span.icon img {
+    height: 26px;
+    width: 25px;
+}
+
+.office-apps li .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 37px;
+    height: 37px;
+    border: 1px solid;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-tabs-products
+  p {
+    display: block;
+    margin: 0 0 30px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #062a30;
+    text-align: left;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-tabs-products
+  strong {
+    display: block;
+    margin: 0 0 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #062a30;
+    text-align: left;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-tabs-products
+  .list-high-products {
+    margin: 0 0 55px;
+    padding-left: 0;
+    text-align: left;
+    max-height: 160px;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-tabs-products
+  .list-high-products
+  li {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #18191f;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-tabs-products
+  .list-high-products
+  li
+  .img {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    width: 20px;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-name-tabs-products {
+    display: flex;
+    gap: 10px;
+    height: 210px;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.microsoft-windows-servers .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-name-tabs-products .name-apps-tabs-products {
+    margin-left: 138px;
+    position: absolute;
+    right: 0;
+    padding-left: 30px;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .info-tabs-products {
+    padding-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .info-tabs-products
+  .prices-info-products {
+    display: flex;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .info-tabs-products
+  .prices-info-products
+  .price {
+    width: 190px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 26px;
+    color: #1d924e;
+    text-align: left;
+}
+
+.tag-discount {
+    padding: 4px;
+    height: 25px;
+    background: #B30000;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 13px;
+    color: #fff;
+}
+
+.page-microsoft-office-2021-comparison .abs-action {
+    margin: 30px 0 0;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-tabs-products
+  .list-high-products
+  li
+  .img {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    width: 20px;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-tabs-products
+  .list-high-products
+  li
+  span {
+    width: calc(100% - 25px);
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .info-tabs-products
+  .prices-info-products
+  .price
+  small {
+    display: block;
+    margin: 5px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through;
+    color: #575757;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .info-tabs-products
+  .prices-info-products
+  .price.comp_pric {
+    display: block;
+    margin: 5px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through;
+    color: #7f7f7f;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-name-tabs-products
+  .name-apps-tabs-products
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-tabs-products
+  h4 {
+    display: block;
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 33px;
+    color: #101828;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-name-tabs-products
+  .name-apps-tabs-products
+  h4
+  .abs-title-link {
+    color: #101828;
+    text-decoration: none;
+}
+
+.page-microsoft-office-2021-comparison
+  .bg-tabs-products
+  .tab-content-product
+  .text-name-tabs-products
+  .name-apps-tabs-products
+  h4
+  .abs-version {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.page-microsoft-office-2021-comparison .abs-action button:hover {
+    background-color: #0046bd;
+}
+
+.template--page\ button.button.button--addToCart {
+    border-radius: 50px;
+    background: #126337 !important;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.page-microsoft-office-2021-comparison .abs-action button {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #126337 !important;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.page-microsoft-office-2021-comparison .abs-action button :nth-child(2) {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.page-microsoft-office-2021-comparison .abs-action button small {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+}
+
+.page-microsoft-office-2021-comparison .abs-choose-os ul {
+    display: flex;
+    align-items: center;
+    margin: 8px 0 30px;
+    padding: 0;
+}
+
+.page-microsoft-office-2021-comparison .abs-choose-os ul li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 72px;
+    margin-right: 20px;
+    border: 1px solid #e8e8e9;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.page-microsoft-office-2021-comparison .abs-choose-os ul li input {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 0;
+    bottom: 0;
+    width: 14px;
+    height: 14px;
+    opacity: 0;
+    height: 0;
+}
+
+.page-microsoft-office-2021-comparison
+  .abs-choose-os
+  ul
+  li
+  input:checked
+  + label {
+    border: 1px solid #046ab5;
+    box-shadow: 0 6px 5px rgba(4, 106, 181, 0.35);
+    border-radius: 10px;
+}
+
+.page-microsoft-office-2021-comparison .abs-choose-os ul li label {
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba(24, 25, 31, 0.8);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.page-microsoft-office-2021-comparison .abs-choose-os ul li .img {
+    width: 100%;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.template--page\
+  .home-guarantees-container
+  .h-g-c-body
+  .h-g-c-b-block {
+    padding: 0;
+}
+
+@media (min-width: 1024px) {
+    .compare__content-wrap {
+        position: sticky !important;
+        top: 75px;
+        background-color: #fff;
+        box-shadow: 0 2px 2px rgb(0 0 0 / 3%);
+    }
+}
+
+.compare-products {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 90px;
+    max-width: 1050px;
+}
+
+.template--page\ .h-g-c-b-block {
+    width: 286px !important;
+}
+
+.template--page\ .home-guarantees-container {
+    background: #f2f5f7 !important;
+    height: auto;
+    margin-top: 0;
+}
+
+.template--page\ .home-guarantees-container .h-g-c-body {
+    margin-top: 0;
+}
+
+#s--template--14795820367927__a05d5ff3-abd5-4c03-af99-40096dd56824 .accordion {
+    max-width: 100% !important;
+}
+
+label.accordion__item {
+    border: 1px solid #e9edf5;
+}
+
+span.accordion__item--title p,
+.accordion__item--title {
+    color: #000 !important;
+    font-size: 19px;
+}
+
+#shopify-section-template--14795820367927__content {
+    margin-bottom: -143px;
+}
+
+ul.tabs li {
+    list-style: none;
+}
+
+.learn_more {
+    margin-top: 12px;
+}
+
+a.link-table-compare {
+    padding: 0px 32px;
+}
+
+@media (max-width: 767px) {
+    .microsoft-windows-servers .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-name-tabs-products {
+        padding-top: 20px!important;
+    }
+     .trust__pilotreview {
+       padding-top: 20px;
+     }
+    .page-microsoft-office-2021-comparison .bg-tabs-products .tabs-content {
+      flex-direction: column;
+    }
+    .compare__content-wrap{
+      padding: 0 20px;
+    }
+    .microsoft-windows-servers .compare__content-wrap .product_wrap {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        max-width: 90%;
+        margin-top: 50px;
+    }
+
+    .microsoft-windows-servers .compare__content-wrap .product_wrap h4 {
+        text-align: center;
+    }
+
+    .microsoft-windows-servers .compare__content-wrap .product_wrap .abs-action {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .microsoft-windows-servers .faqs-section {
+        padding: 0 20px;
+    }
+
+    .microsoft-windows-servers .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-name-tabs-products .name-apps-tabs-products {
+        margin-left: 0;
+        position: unset;
+        right: 0;
+        padding-left: 0;
+        text-align: center;
+        width: 100%;
+        max-width: unset;
+        margin-top: 20px;
+    }
+
+    .microsoft-windows-servers .page-microsoft-office-2021-comparison .bg-tabs-products {
+        margin-bottom: 40px;
+    }
+
+    .page-microsoft-office-2021-comparison
+    .bg-tabs-products
+    .tab-content-product
+    .text-name-tabs-products {
+        height: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .page-microsoft-office-2021-comparison
+    .bg-tabs-products
+    .tab-content-product {
+        width: 100%;
+        padding: 0 0px;
+    }
+
+    .page-microsoft-office-2021-comparison
+    .bg-tabs-products
+    .tab-content-product
+    .text-name-tabs-products
+    .name-apps-tabs-products {
+        max-width: 262px;
+        margin-left: 22px;
+        text-align: left;
+    }
+
+    .page-microsoft-office-2021-comparison.microsoft-windows-products
+    .bg-tabs-products
+    .tab-content-product
+    .text-name-tabs-products
+    .name-apps-tabs-products {
+        max-width: unset;
+    }
+
+    .page-microsoft-office-2021-comparison
+    .bg-tabs-products
+    .tab-content-product
+    .text-name-tabs-products {
+        display: block;
+        padding-bottom: 139px;
+    }
+
+    .page-microsoft-office-2021-comparison .title-stars span {
+        display: block;
+    }
+
+    .template--page\ .product-toggle-os-selector {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bg-container-tabs {
+        display: block !important;
+    }
+
+    .title-tabs-applications p {
+        padding: 0 10px;
+    }
+
+    .compare__content-wrap {
+        margin-bottom: 34px;
+    }
+
+    td,
+  th {
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+
+
+/* =======Amit by microsoft-office-2021-products.csss============= */
+
+.page-microsoft-office-2021-comparison>.page-width-lp {
+    padding-top: 20px;
+}
+
+.microsoft-office-2021-products .bg-tabs-products .page-width-lp {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.microsoft-office-2021-products .head-content .tab-heading {
+    line-height: 60px;
+}
+
+.microsoft-office-2021-products .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .info-tabs-products .prices-info-products .price {
+    font-size: 30px!important;
+}
+
+.microsoft-office-2021-products button.button.button--addToCart.button--primary.button--icon.button--text.button--primary__text {
+    border-radius: 50px!important;
+}
+
+.microsoft-office-2021-products .bg-tabs-products .tab-content-product .text-name-tabs-products .name-apps-tabs-products {
+    max-width: unset;
+    margin-left: unset;
+}
+
+.microsoft-office-2021-products .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-name-tabs-products .name-apps-tabs-products h4 .abs-title-link {
+    font-family: Ubuntu;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 28.6px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #DE552A;
+}
+
+.microsoft-office-2021-products .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product:nth-child(3) .text-name-tabs-products .name-apps-tabs-products h4 .abs-title-link {
+    color: #036AB5;
+}
+
+.microsoft-office-2021-products .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-name-tabs-products {
+    align-items: flex-start;
+}
+
+.microsoft-office-2021-products .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.microsoft-office-2021-products .bg-tabs-products .tab-content-product .info-tabs-products {
+    padding: 25px 0 40px 0;
+}
+
+.microsoft-office-2021-products .bg-tabs-products .tab-content-product .text-name-tabs-products .name-apps-tabs-products h4 .abs-title-link span {
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.microsoft-office-2021-products .office-apps li .icon {
+    height: 27px;
+    width: 27px;
+}
+
+.microsoft-office-2021-products .bg-tabs-products .tab-content-product .text-name-tabs-products {
+/*margin-right: 20px;
+  margin-bottom: 20px;
+    margin-left: 20px;
+  padding-bottom:0;*/
+}
+
+.microsoft-office-2021-products .product-img-box {
+    max-height: 120px;
+    max-width: 120px;
+}
+
+.microsoft-office-2021-products .tab_content_wrapper {
+    padding: 0;
+}
+
+.microsoft-office-2021-products .bg-tabs-products .tab-content-product .info-tabs-products .prices-info-products .price small {
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+}
+
+span.text-onetime {
+    position: relative;
+    top: 15px;
+}
+
+.microsoft-office-2021-products .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .info-tabs-products .prices-info-products .price {
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    color: #000;
+    margin: 0;
+}
+
+.microsoft-office-2021-products .toggle-os--selected-info .icon_selected p {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    text-align: left;
+    margin: 0;
+}
+
+span.conditional_icon_one h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+ul.mac_window_icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 0;
+    margin: 20px 0 0;
+    justify-content: center;
+}
+
+ul.mac_window_icon li {
+    max-width: 98px;
+    height: 70px;
+    display: flex;
+}
+
+ul.office-apps {
+    padding-left: 0;
+}
+
+.page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-tabs-products .list-includes-products li {
+    margin-left: 10px;
+}
+
+.page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-tabs-products h4 {
+    text-align: left;
+}
+
+.text-name-tabs-products > a {
+    width: 50%;
+}
+
+.page-microsoft-office-2021-comparison .mac, .window {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+ul.mac_window_icon li .icon_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.mac_window_icon li p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.microsoft-office-2021-products .tag-discount {
+    font-family: Ubuntu;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25.5px;
+    text-align: left;
+    background: unset;
+    color: #E10000;
+    text-transform: capitalize;
+}
+
+span.text-onetime {
+    color: #000;
+}
+
+.head-content .tab-heading {
+    font-family: Ubuntu;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 41.8px;
+    text-align: center;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.head-content .subtext {
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;
+    margin: 15px 0 0;
+    border-top: 1px solid #fff;
+    padding-top: 15px;
+    color: #FFFFFF;
+}
+
+.best-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.best-content ul li {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-left: 35px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.best-content ul li .green {
+    color: #1D924E;
+    display: block;
+}
+
+.best-content ul li:last-of-type {
+    border-bottom: unset;
+}
+
+.best-content ul li:before {
+    content: '1x';
+    position: absolute;
+    left: 0;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #036AB5;
+}
+
+.microsoft-office-2021-products .bestseller-tab .product-img-box {
+    width: 100%;
+    height: 100%;
+    max-width: unset;
+    max-height: unset;
+}
+
+.microsoft-office-2021-products .page-microsoft-office-2021-comparison .bg-tabs-products .bestseller-tab.tab-content-product {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: -50px;
+    border: 5px solid #036AB5;
+}
+
+.tab-content-product.bestseller-tab:before {
+    content: '';
+    background-image: url('https://cdn.shopify.com/s/files/1/0090/2125/9831/files/11bg.png?v=1718856451');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.tab-content-product.bestseller-tab h5 {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin: 10px 0 15px;
+}
+
+.bestseller-tab .prices-info-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 0;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.bestseller-tab .prices-info-products .green-bg {
+    width: 100%;
+    display: block;
+    background: #1D924E;
+}
+
+.bestseller-tab .prices-info-products .green-bg p {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 5px;
+}
+
+.bestseller-tab .prices-info-products .green-bg p small {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.bs_price_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.bs_price_wrapper > div {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bs_price_wrapper > div span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+}
+
+.bs_price_wrapper > .right-price, .bs_price_wrapper > .right-price span {
+    color: #E10000;
+}
+
+.bs_price_wrapper > .left-price {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border-right: 1px solid #000;
+}
+
+.bs_price_wrapper > .right-price {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+
+.counter-box .grey-box {
+    display: flex;
+    background: #F5F5F5;
+    padding: 15px;
+    border-radius: 8px;
+    justify-content: space-between;
+}
+
+.counter-box .grey-box p.high-rick:after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background: #000;
+    right: -8px;
+}
+
+.counter-box .grey-box p {
+    font-family: Ubuntu;
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    margin: 0;
+}
+
+.high-rick span {
+    color: #E10000;
+}
+
+.bestseller-tab .list-high-products {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bestseller-tab .list-high-products li span {
+    text-align: left;
+}
+
+.page-microsoft-office-2021-comparison .bg-tabs-products {
+    margin-bottom: 0px!important;
+}
+
+.bestseller-tab .list-high-products li {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 0 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #18191f;
+}
+
+.bestseller-tab .list-high-products li .img {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    width: 20px;
+}
+
+.purchase {
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    margin: 0 0 20px;
+    padding: 20px;
+}
+
+.ms-digital_wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mas_main_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1055px;
+    margin: 40px auto 50px;
+}
+
+.digital-image {
+    width: calc(35% - 40px)
+}
+
+.ms-digital_wrap h2 {
+    font-family: Ubuntu;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: center;
+    color: #062A30;
+    margin: 0;
+    max-width: 1090px;
+    margin: 0 auto;
+}
+
+.digtal-html {
+    width: calc(65% - 40px);
+}
+
+.digtal-html .html-content:not(:last-child) {
+    margin-bottom: 65px;
+}
+
+.html-content h3 {
+    font-family: Ubuntu;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30.8px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin: 0;
+}
+
+.html-content h4 {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin: 0;
+    color: #DE552A;
+}
+
+.html-copy {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin: 31px 0 0;
+}
+
+.html-ul {
+    list-style: disc;
+    padding: 0;
+    padding-left: 20px;
+    margin: 24px 0 0;
+}
+
+.html-ul li {
+    padding: 5px 0;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.image-with-accordion {
+    background: #F2FBFF;
+}
+
+.ia-image {
+    width: calc(58% - 30px);
+}
+
+.ia-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-width: 510px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.ia_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0 0;
+}
+
+.ia-image {
+    width: calc(58% - 30px);
+}
+
+.accordion-container {
+    max-width: 500px;
+    width: calc(42% - 30px);
+    padding: 60px 0;
+}
+
+.acc_wrap {
+    padding: 18px 20px;
+    background: #fff;
+}
+
+.acc_wrap:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.acc-head {
+    margin: 0;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    cursor: pointer;
+}
+
+.acc-head:after {
+    content: '';
+    background-image: url('https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Vector_9.png?v=1718868041');
+    width: 15px;
+    height: 9px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.acc-head:before {
+    content: '';
+}
+
+.acc-head.active:after {
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.acc-head img {
+    margin-right: 15px;
+}
+
+.acc-text p {
+    margin: 0;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-top: 14px;
+    color: #062A30;
+}
+
+.ms-featured-product {
+    background: #F5F5F5;
+    padding: 25px 0;
+    margin-bottom: 25px;
+}
+
+.featured-product-wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.fp_content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.fp_content h3 {
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: center;
+    color: #062A30;
+    margin: 0;
+}
+
+.fp_content p {
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: center;
+    color: #062A30;
+    margin: 24px 0;
+}
+
+.fp_content .abs-action {
+    max-width: 315px;
+    margin: 0 auto;
+}
+
+.fp_content button.button--addToCart {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.38px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.fp_content button.button--addToCart small {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18.38px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.ms-comparison {
+    background: #F5F5F5;
+    padding: 75px 0;
+}
+
+.comparison-container h2 {
+    font-family: Ubuntu;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: center;
+    color: #062A30;
+    margin: 0;
+    max-width: 747px;
+    margin: 0 auto;
+}
+
+.comparison-container h2+p {
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.comparison-table {
+    border: unset;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    margin: 90px auto 0;
+    position: relative;
+}
+
+.comparison-table tr {
+    background: unset;
+    border-bottom: 3px solid transparent;
+}
+
+.comparison-table tr td {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: center;
+    padding: 35px 16px;
+    color: #000;
+    border-right: 3px solid transparent;
+}
+
+.comparison-table tr td:nth-child(1) {
+    background: #ECECEC;
+    text-align: left;
+    font-weight: 700;
+}
+
+.comparison-table tr:nth-child(1) td:nth-child(2) > div:before {
+    content: '';
+    background-image: url('https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_48098568.png?v=1718881820');
+    width: 94px;
+    height: 94px;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    right: 34%;
+    top: -50px;
+}
+
+.below-logo {
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: center;
+}
+
+.comparison-table tr td:nth-child(2) {
+    color: #1D924E;
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    text-align: center;
+    width: 370px;
+}
+
+.comparison-table tr td:nth-child(2), .comparison-table tr td:nth-child(3) {
+    background: #fff;
+}
+
+.comparison-table tr:nth-child(1) td:nth-child(1) {
+    background: unset;
+    width: 248px;
+}
+
+.comparison-table tr:last-child td:nth-child(1), .comparison-table tr:last-child td:nth-child(3) {
+    background: unset;
+}
+
+.comparison-table tr:nth-last-child(2) {
+    border-bottom: unset;
+}
+
+.abs-action.table-cta button {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.38px;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: uppercase;
+    height: 56px;
+}
+
+.abs-action.table-cta button span {
+    margin: 0 10px;
+}
+
+.abs-action.table-cta button small {
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18.38px;
+    letter-spacing: 0.08em;
+    text-align: center;
+}
+
+.image-with-text-section {
+    margin-top: 50px;
+}
+
+.image-with-text-section .layout__stretchBg {
+    max-width: 1200px;
+}
+
+.faqs-section #myDIV {
+    max-width: 1200px;
+}
+
+.section_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-guarantees-container {
+    background: #F5F5F5;
+    margin-top: 80px;
+}
+
+.ms-newsletter-section .main-container-form {
+    background: #F2F5F7;
+    padding: 50px;
+    height: unset;
+}
+
+.ms-newsletter-section {
+    margin-top: 3px;
+}
+
+.ms-left-content h5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.17px;
+    text-align: left;
+    margin: 0;
+}
+
+.ms-left-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    margin: 0;
+    color: #000;
+}
+
+.ms-left-content .newsletter-text {
+    padding: 8px 0 0 0;
+}
+
+.ms-left-content {
+    max-width: 430px;
+}
+
+form#contact_form {
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+form#contact_form .contact_email {
+    border: 1px solid #26262640;
+    padding: 0px 30px 0 20px;
+}
+
+form#contact_form .action_button {
+    background: #0461B5;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.6px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+}
+
+form#contact_form p {
+    display: none!important;
+}
+
+form#contact_form .contact_email, form#contact_form .action_button {
+    width: 100%;
+    height: 56px;
+    border-radius: unset;
+    max-width: 320px;
+}
+
+.mobile-table {
+    display: none;
+}
+
+.image-with-text-section .tximage__txt .s__block--button .button {
+    border-radius: 50px!important;
+}
+
+.conditional_icon_one img {
+    margin: 0 !important;
+}
+/*Responsive*/
+
+
+@media screen and (max-width: 767px) {
+    .page-microsoft-office-2021-comparison h1 {
+        font-family: Ubuntu;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33px;
+        text-align: center;
+    }
+
+    .title-productivity p {
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: center;
+    }
+
+    .check-extra {
+        flex-wrap: wrap;
+        max-width: 200px;
+        width: 100%;
+        margin: 20px auto;
+        justify-content: center;
+    }
+
+    .check-extra p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .page-microsoft-office-2021-comparison>.page-width-lp {
+        padding-bottom: 10px;
+    }
+
+    .tabs-content .tab-content-product {
+        order: 2;
+    }
+
+    .tabs-content .tab-content-product.bestseller-tab {
+        order: 1;
+    }
+
+    .microsoft-office-2021-products .page-microsoft-office-2021-comparison .bg-tabs-products .bestseller-tab.tab-content-product {
+        margin-top: 0;
+    }
+
+    .page-microsoft-office-2021-comparison .bg-tabs-products .tabs-content .tab-content-product {
+        margin-bottom: 20px;
+    }
+
+    .microsoft-office-2021-products .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-name-tabs-products {
+        display: flex;
+    }
+
+    .microsoft-office-2021-products .bg-tabs-products .tab-content-product .text-name-tabs-products .name-apps-tabs-products h4 .abs-title-link span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .microsoft-office-2021-products .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-name-tabs-products .name-apps-tabs-products h4 .abs-title-link {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-name-tabs-products {
+        padding-bottom: 0!important;
+    }
+
+    .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .info-tabs-products .prices-info-products {
+        justify-content: flex-start;
+    }
+
+    ul.mac_window_icon li p {
+        font-family: Ubuntu;
+        font-size: 11.88px;
+        font-weight: 700;
+        line-height: 19.01px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-tabs-products .list-includes-products li {
+        margin: 0;
+    }
+
+    .page-microsoft-office-2021-comparison .bg-tabs-products {
+        margin-bottom: 40px!important;
+    }
+
+    .ms-digital_wrap h2 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 30.8px;
+        text-align: center;
+    }
+
+    .digtal-html .html-content {
+        position: relative;
+    }
+
+    .digtal-html {
+        width: 100%;
+    }
+
+    .mas_main_container {
+        padding: 0 20px;
+    }
+
+    .digtal-html .html-content:nth-child(1):before {
+        content: '';
+        background-image: url('https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Rectangle_1107-1.png?v=1718945242');
+        width: 100px;
+        height: 122px;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+
+    .digtal-html .html-content:nth-child(2):before {
+        content: '';
+        background-image: url('https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Rectangle_1107_2.png?v=1718945242');
+        width: 100px;
+        height: 122px;
+        left: 0;
+        top: 0;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+
+    .digtal-html .html-content:nth-child(1):after {
+        content: '';
+        background-image: url('https://cdn.shopify.com/s/files/1/0090/2125/9831/files/Group_48098620.png?v=1718946015');
+        width: 100%;
+        height: 45px;
+        left: 50%;
+        bottom: -70px;
+        position: absolute;
+        background-repeat: no-repeat;
+        transform: translateX(-50%);
+        background-size: 100%;
+    }
+
+    .digital-image {
+        display: none;
+    }
+
+    .html-content h3 {
+        max-width: 210px;
+        margin-left: auto;
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 22.4px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+
+    .html-content h4 {
+        max-width: 210px;
+        margin-left: auto;
+        font-family: Ubuntu;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26.4px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+
+    .html-copy {
+        margin: 15px 0 0;
+        max-width: 210px;
+        margin-left: auto;
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+
+    .html-ul {
+        margin-top: 35px;
+    }
+
+    .digtal-html .html-content:not(:last-child) {
+        margin-bottom: 100px;
+    }
+
+    .accordion-container {
+        padding: 20px 20px 40px;
+        width: 100%;
+    }
+
+    .acc-head {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .acc-text p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+
+    .acc_wrap {
+        padding: 18px 30px 18px 20px;
+    }
+
+    .acc-head img {
+        height: 20px;
+        width: 20px;
+        margin-top: 4px;
+    }
+
+    .ia-image img {
+        max-width: 300px;
+    }
+
+    .acc-head:after {
+        right: -16px;
+    }
+
+    .ia-image {
+        width: 100%;
+        margin-top: 20px;
+        display: none;
+    }
+
+    .featured-product-wrap {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    .fp_content h3 {
+        font-family: Ubuntu;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .fp_content p {
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: center;
+    }
+
+    .bg-container-tabs .container-tabs {
+        width: 100%;
+    }
+
+    ul.tabs li {
+        padding: 15px 5px;
+        font-size: 12px;
+    }
+
+    .tabcontents ul li {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .tab-link.active:after {
+        width: 8px;
+        height: 10px;
+        right: -15px;
+    }
+
+    ul.tabs {
+        justify-content: space-between;
+    }
+
+    .bg-container-tabs {
+        padding: 0 20px;
+    }
+
+    .title-tabs-applications h3, .comparison-container h2 {
+        font-family: Ubuntu;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 30.8px;
+        text-align: center;
+    }
+
+    .title-tabs-applications p, .comparison-container h2+p {
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        letter-spacing: 0.01em;
+        text-align: center;
+        color: #062A30;
+    }
+
+    .title-tabs-applications {
+       margin-top: 5px;
+       padding: 0 20px;
+    }
+  /* .comparison-table_wrap .comparison-table{
+    display: none;
+  } */
+    .mobile-table {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    .mobile-table .abs-action.table-cta {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ms-comparison {
+        padding: 40px 0 20px;
+    }
+
+    .image-with-text-section .layout__stretchBg {
+        padding: 0;
+    }
+
+    .image-with-text-section .tximage__image img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .image-with-text-section .tximage__txt h2 {
+        text-align: center;
+        font-size: 26px !important;
+    }
+
+    .image-with-text-section .tximage__txt .s__block--richText {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .image-with-text-section .tximage__txt .s__block--button .button, .image-with-text-section .s__block--html a {
+        margin: 0 auto;
+    }
+
+    span.accordion__item--title p {
+        margin: 5px 0;
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .faqs-section #myDIV {
+        padding: 0 20px;
+    }
+
+    ul.mac_window_icon {
+        justify-content: center;
+        padding: 0!important;
+        gap: 10px;
+      width:100%;
+    }
+
+    ul.mac_window_icon li {
+        max-width: unset !important;
+        width: 50% !important;
+    }
+
+    #s--slide-mobile .h-g-c-b-block {
+        padding: 0;
+        width: 100%!important;
+    }
+
+    .comparison-table tr:nth-child(1) td:nth-child(1) {
+        width: unset;
+    }
+
+    .comparison-table tr td:nth-child(2) {
+        width: unset;
+    }
+
+    .comparison-table tr td {
+        width: 33.33%;
+        font-size: 12px!important;
+        line-height: 18px!important;
+        padding: 10px;
+    }
+
+    .comparison-table {
+        width: 700px;
+    }
+
+    .comparison-table tr td:nth-child(2), .comparison-table tr td:nth-child(3) {
+        width: 30%;
+    }
+
+    .comparison-table tr td:nth-child(1) {
+        width: 20%;
+    }
+
+    .comparison-table_wrap {
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .abs-action.table-cta button span {
+        font-size: 12px;
+        margin: 0;
+        margin-right: 5px;
+    }
+
+    .abs-action.table-cta button small {
+        font-size: 10px;
+    }
+
+    .microsoft-office-2021-products .abs-action.table-cta button.button.button--addToCart.button--primary.button--icon.button--text.button--primary__text {
+        height: 46px;
+    }
+
+    .comparison-table tr:nth-child(1) td:nth-child(2)>div:before {
+        width: 54px;
+        height: 54px;
+        top: -25px;
+    }
+}
+ @media only screen and (min-width:767px) and (max-width:1024px)  {
+   .page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product {
+      width: 30%;
+   }
+   .page-microsoft-office-2021-comparison .abs-action button :nth-child(2) {
+    font-size: 18px;
+    padding: 15px 5px;
+   }
+ }

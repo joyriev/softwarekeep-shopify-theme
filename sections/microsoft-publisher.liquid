@@ -1,0 +1,370 @@
+{{ 'microsoft-publisher.css' | asset_url | stylesheet_tag }}
+
+<style>
+.page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-tabs-products p.discount-text {
+    background: #f5f5f5;
+    padding: 6px 12px;
+    color: #28A745;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: fit-content !important;
+    border-radius: 4px;
+}
+.page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-tabs-products p.discount-text .discount-text-price {
+    color: #FFA500;
+}
+.page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-tabs-products p.discount-text .discount-text-code {
+    color: #ff0000;
+}
+  
+.page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-tabs-products .list-high-products {
+    margin-bottom: 40px;
+}
+
+.bg-tabs-products .text-name-tabs-products .product-img-box img {
+  display: block;
+  width: 90px;
+  height: auto;
+  max-width: unset;
+}
+
+.page-microsoft-office-2021-comparison .bg-tabs-products .tab-content-product .text-name-tabs-products {
+  display: flex !important;
+  height: 120px;
+}  
+.page-microsoft-office-2021-comparison .bg-tabs-products .tabs-content .tab-content-product {
+  padding-top: 47px;
+}
+
+.prices-info-products span.tag-discount {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #00662b;
+  padding: 5px 9px;
+  height: 25px;
+  background: #cbf3dc;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+</style>
+ 
+{%  assign product = all_products['microsoft-office-2021-home-and-student-pc'] %}
+ 
+<div class="col-12 unflex section__row layout__content center">
+  <!--div container for ResellerRatings mini seal Widget -->
+    <div class="reseler-reviw max-width">
+    <a aria-label="resellerratings" href="https://www.resellerratings.com/store/Softwarekeep_com" target="_blank">
+      <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/softwarekeep_reseller_ratings.png?v=1733683626" alt="reseller rating" width="350" height="90">
+     </a>
+   </div>
+<!--End ResellerRatings mini seal Widget -->
+  
+  <div class="page-microsoft-office-2021-comparison  {{ page.template_suffix }}">
+    <div class="page-width-lp">
+      <div class="title-productivity">
+        <h1>{{ page.title }}</h1>
+        {% if section.settings.subtitle != blank %}
+          <p>{{ section.settings.subtitle }}</p>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- --- product block section --- -->
+    <div class="bg-tabs-products">
+      <div class="page-width-lp">
+        <div class="tabs-content">
+          {% for block in section.blocks %}
+            {% assign product = all_products[block.settings.product_block] %}
+            <div class="tab-content-product abs-active">
+              {% if forloop.index == 2 %}
+                <img class="tab-content-img" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/customer-choice.png?v=1731675933" alt="customer choice" width="230" height="46">
+              {% endif %}
+              <div class="text-tabs-products">
+                <div class="text-name-tabs-products">
+                  <div>
+                    <a href="{{ product.url }}" aria-label="product link">
+                      <div class="product-img-box">
+                        {{ product.featured_image | image_url: width: '150', height: '150' | image_tag }}
+                      </div>
+                    </a>
+                  </div>
+                  <div class="name-apps-tabs-products">
+                    <h4>{{ product.title }}</h4>
+                    <div class="list-includes-products">
+                      {% if product.tags contains 'office_student' %}
+                        <ul class="office-apps">
+                          <li class="word">
+                            <span class="icon">
+                              <img alt="Icons Apps" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/word_1.svg?v=1703752182" style="color: transparent;">
+                            </span>
+                          </li>
+                          <li class="excel">
+                            <span class="icon">
+                              <img alt="Icons Apps" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/excel_1.svg?v=1703752206" style="color: transparent;"></span>
+                          </li>
+                          <li class="powerpoint">
+                            <span class="icon">
+                              <img alt="Icons Apps" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/powerpoint_1.svg" style="color: transparent;">
+                            </span>
+                          </li>
+                        </ul>
+                      {% endif %}
+                      {% if product.tags contains 'office_business' %}
+                        <ul class="office-apps">
+                          <li class="word">
+                            <span class="icon">
+                              <img alt="Icons Apps" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/word_1.svg?v=1703752182" style="color: transparent;">
+                            </span>
+                          </li>
+                          <li class="excel">
+                            <span class="icon">
+                              <img alt="Icons Apps" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/excel_1.svg?v=1703752206" style="color: transparent;">
+                            </span>
+                          </li>
+                          <li class="excel">
+                            <span class="icon">
+                              <img alt="Icons Apps" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/outlook_1.svg"  style="color: transparent;">
+                            </span>
+                          </li>
+                          <li class="powerpoint">
+                            <span class="icon">
+                              <img alt="Icons Apps" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/powerpoint_1.svg" style="color: transparent;">
+                            </span>
+                          </li>
+                        </ul>
+                      {% endif %}
+                      {% if product.tags contains 'office_professional' %}
+                        <ul class="office-apps">
+                          <li class="word">
+                            <span class="icon">
+                              <img alt="Icons Apps" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/word_1.svg?v=1703752182" style="color: transparent;"></span>
+                          </li>
+                          <li class="excel">
+                            <span class="icon">
+                              <img alt="Icons Apps" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/excel_1.svg?v=1703752206" style="color: transparent;">
+                            </span>
+                          </li>
+                          <li class="excel">
+                            <span class="icon">
+                              <img alt="Icons Apps" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/outlook_1.svg" style="color: transparent;"></span>
+                          </li>
+                          <li class="powerpoint">
+                            <span class="icon">
+                              <img alt="Icons Apps" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/powerpoint_1.svg" style="color: transparent;">
+                            </span>
+                          </li>
+                          <li class="powerpoint">
+                            <span class="icon">
+                              <img alt="Icons Apps" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/access_1.svg?v=1703757646" style="color: transparent;">
+                            </span>
+                          </li>
+                          <li class="powerpoint">
+                            <span class="icon">
+                              <img alt="Icons Apps" loading="lazy" width="23" height="23" src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/publisher_1.svg" style="color: transparent;">
+                            </span>
+                          </li>
+                        </ul>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+                {% if block.settings.content != blank %}
+                  <p class="content-para">{{ block.settings.content }}</p>
+                {% endif %}
+                {% if block.settings.titles != blank %}
+                  <strong>{{ block.settings.titles }}</strong>
+                {% endif %}
+                {% if block.settings.html_content != blank %}
+                  {{ block.settings.html_content }}
+                {% endif %}
+
+                <p class="discount-text-black" style="display: block !important">
+                  Save Extra
+                  <span class="discount-text-red">{{ product.price | divided_by: 100 | times: 12 | money }}</span>
+                  with code:
+                  <span class="discount-text-red">LOVE12</span>
+                </p>
+              </div>
+
+              <div class="info-tabs-products">
+                <div class="prices-info-products">
+                  <span class="price jsPrice">
+                    {{- product.price | money_with_currency | strip_html}}
+                  </span>
+                  {%- if product.compare_at_price > 0 -%}
+                  <span class="price comp_pric jsPrice">
+                    <small>{{ product.compare_at_price | money_with_currency | strip_html }}</small>
+                  </span>
+                    <span class="tag-discount">
+                      Save:
+                      {{-
+                        product.compare_at_price
+                        | minus: product.price
+                        | times: 100.0
+                        | divided_by: product.compare_at_price
+                        | round
+                      -}}
+                      %
+                    </span>
+                  {%- endif %}
+                </div>
+
+                {% if product.metafields.custom.link_of_pc != blank %}
+                  <div class="sector">
+                    <div class="product-toggle-os-selector">
+                      <div class="toggle-os--selected-info">
+                        <div class="icon_selected">
+                          <p><strong>Select Operating System:</strong></p>
+                        </div>
+
+                        <div class="conditional_icon_img">
+                          {% if product.title contains 'PC' or product.handle contains 'pc' %}
+                            <span class="conditional_icon_one">
+                              <h4>Window</h4>
+                              <img
+                                class="windows_icon"
+                                src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/box_windows.png?v=1706086795"
+                                width="60px"
+                                alt="window icon"
+                                height="60px"
+                            ></span>
+                          {% else %}
+                            <span class="conditional_icon">
+                              <h4>Mac</h4>
+                              <img
+                                width="60px"
+                                height="60px"
+                                class="apple_icon"
+                                src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/box_mac.png?v=1706086795"
+                           alt="window icon"  ></span>
+                          {% endif %}
+                        </div>
+                      </div>
+
+                    {% assign product_rec_1 = all_products[product.metafields.custom.link_of_pc] %}
+                      {% if product_rec_1 != blank %}
+                      <ul class="mac_window_icon">
+                        {% assign product_rec_1_url = product_rec_1.url %}
+
+                        <li class="window {% if product_rec_1_url == product.url %}active{% endif %}">
+                          <a href="{{ product_rec_1_url }} ">
+                            <div class="img-box-system">
+                              <img   src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-windows-system.png?v=1703165738" alt="Window icon" width="21" height="21" style="color: transparent;">
+                            </div>
+                            <p>Windows (PC)</p>
+                          </a>
+                        </li>
+
+                        {% assign product_rec_2 = all_products[product.metafields.custom.link_of_mac] %}
+                        {% assign product_rec_2_url = product_rec_2.url %}
+                        {% if product.title != 'Microsoft Office 2021 Professional for PC' %}
+                          <li class="mac {% if product_rec_2_url == product.url %}active{% endif %}">
+                            <a href="{{ product_rec_2_url }}">
+                              <div class="img-box-system">
+                                <img  src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/icon-apple-system.png?v=1703165737" alt="Mac" loading="lazy" width="23" height="23" style="color: transparent;">
+                              </div>
+                              <p>Mac</p>
+                            </a>
+                          </li>
+                        {% endif %}
+                      </ul>
+                      {% endif %}
+                    </div>
+                  </div>
+                {% endif %}
+
+                <div class="abs-action">
+                  {% assign var = product.first_available_variant %}
+                  {% if product.available %}
+                    {% form 'product', product %}
+                      <input name="id" type="hidden" value="{{ var.id }}">
+                      {% render 'custom-add-to-cart-button', variant: var.id, quantity: 1, price: product.price %}
+                    {% endform %}
+                  {% else %}
+                    {% render 'sold-out-button', disabled: 'disabled' %}
+                  {% endif %}
+                </div>
+                <span class="text-onetime">One-time purchase</span>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <!-- Product section end -->
+    </div>
+  </div>
+</div>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script> -->
+<script>
+  $(".product_tile_color_holder ul li input").change(function(){
+    let vTitle = $(this).attr("data-title")
+    let vImgs = $(this).attr("data-img")
+    $(this).closest(".tab-content-product").find(".vtile").text(vTitle);
+    $(this).closest(".tab-content-product").find(".varimgs").attr('src', vImgs);
+    $(this).parents(".abs-selected-os").find('.vtile').text(vTitle);
+    console.log(vTitle);
+    $(this).closest(".tab-content-product").find(".shopify-product-form .button--addToCart").attr("onclick","BoosterTheme.cart.addToCartJSON(event, {items: [{id: "+$(this).attr("var-id")+", quantity: 1}]});")
+  })
+</script>
+
+{% schema %}
+{
+  "name": "Office-2021-products",
+  "settings": [
+      {
+        "type": "checkbox",
+        "label": "Disable Sticky addToCart Button",
+        "id": "disable_sticky",
+        "info": "If enabled, it show on scrolling page",
+        "default": false
+      },
+      {
+      "type": "text",
+      "id": "title",
+      "label": "Heading Text"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Sub Heading"
+    }
+  ],
+  "max_blocks": 4,
+    "blocks": [
+       {
+         "name": "product",
+         "type": "product",
+         "settings": [
+           {
+             "type": "product",
+             "id": "product_block",
+             "label": "Select Product"
+           },
+            {
+                "type": "richtext",
+                "id": "content",
+                "label": "Content Paragrapgh",
+                "default": "<h6>This is for your text</h6>"
+            },
+            {
+              "type": "text",
+              "id": "titles",
+              "label": "Heading Text"
+            },
+            {
+              "type": "html",
+              "id": "html_content",
+              "label": "Content"
+          }
+         ]
+       }
+    ]
+}
+{% endschema %}

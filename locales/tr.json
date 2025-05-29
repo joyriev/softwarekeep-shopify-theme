@@ -1,0 +1,2565 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "shopify": {
+    "sentence": {
+      "words_connector": ",",
+      "two_words_connector": "Ve",
+      "last_word_connector": ", Ve"
+    },
+    "pagination": {
+      "previous": "Öncesi",
+      "next": "Sonraki"
+    },
+    "links": {
+      "powered_by_shopify": "Shopify tarafından desteklenmektedir",
+      "learn_more": "Daha fazla bilgi edin"
+    },
+    "feed": {
+      "more": "Daha"
+    },
+    "attributes": {
+      "email": "e-posta",
+      "password": "şifre",
+      "password_confirmation": "Şifre onayı",
+      "first_name": "ilk adı",
+      "last_name": "soy isim",
+      "body": "vücut",
+      "signature": "Adres"
+    },
+    "addresses": {
+      "zip_code": "Posta kodu",
+      "postal_code": "Posta Kodu",
+      "postcode": "Posta kodu",
+      "pincode": "Pin kodu",
+      "region": "Bölge",
+      "prefecture": "idari bölge",
+      "province": "Vilayet",
+      "state": "Durum",
+      "state_and_territory": "Eyalet/bölge",
+      "county": "ilçe",
+      "emirate": "Emirlik",
+      "governorate": "Valilik",
+      "confirm": "Bu adresi silmek istediğinizden emin misiniz?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Öne Çıkanlar",
+        "best_selling": "En iyi satış",
+        "az": "Alfabetik olarak A'dan Z'ye",
+        "za": "Alfabetik olarak Z-A",
+        "price_ascending": "Fiyat, düşükten yükseğe",
+        "price_descending": "Fiyat pahalıdan ucuza",
+        "date_ascending": "Tarih, eskiden yeniye",
+        "date_descending": "Tarih, yeniden eskiye"
+      }
+    },
+    "errors": {
+      "blank": "boş olamaz",
+      "blocked_address": "Bu konum desteklenmiyor.",
+      "credit_card_session_expired": "Kredi kartı yetkilendirmesinin süresi doldu, lütfen ödeme bilgilerinizi tekrar girin. Kartınızdan ücret alınmadı.",
+      "empty": "boş olamaz",
+      "invalid_email": "Geçerli bir e-posta adresi olmalı",
+      "discount_disabled": "Bu indirim devre dışı bırakıldı",
+      "discount_expired": "Bu indirim artık geçerli değil",
+      "discount_limit_reached": "Bu indirim kullanım sınırına ulaştı",
+      "discount_not_found": "Girilen kodla eşleşen geçerli bir indirim bulunamadı",
+      "customer_already_used_once_per_customer_discount_notice": "Bu indirim kullanım sınırına ulaştı",
+      "gift_card_already_applied": "Kod, ödeme işleminize zaten uygulandı",
+      "gift_card_code_invalid": "Kod geçersiz",
+      "gift_card_currency_mismatch": "Hediye kartınız %{gift_card_currency} cinsinden. %{checkout_currency} içinde yeniden basılması için bizimle iletişime geçin.",
+      "gift_card_depleted": "Bu hediye kartında hiç para kalmadı",
+      "gift_card_disabled": "Hediye kartı devre dışı bırakıldı",
+      "gift_card_expired": "Hediye kartının süresi doldu",
+      "invalid": "geçersizdir",
+      "bad_domain": "geçersiz bir alan adı içeriyor",
+      "taken": "zaten alındı",
+      "contains_html_tags": "HTML etiketleri içeremez",
+      "too_short": "çok kısa (minimum %{count} karakter)",
+      "too_long": "çok uzun (maksimum %{count} karakter)",
+      "password_mismatch": "sağlanan şifreyle eşleşmelidir",
+      "contains_spaces": "boşluklarla başlar veya biter.",
+      "email_domain_invalid": "sağlayıcı desteklenmiyor",
+      "invalid_for_country": "%{country} için geçerli değil",
+      "invalid_for_country_and_province": "%{province} ve %{country} için geçerli değil",
+      "invalid_province_in_country": "%{country} içinde geçerli bir il değil",
+      "invalid_state_in_country": "%{country} içinde geçerli bir durum değil",
+      "invalid_region_in_country": "%{country} içinde geçerli bir bölge değil",
+      "less_than_or_equal_to": "%{count}'dan küçük veya ona eşit olmalıdır",
+      "not_supported": "desteklenmiyor",
+      "full_name_required": "Bir ad ve soyadı girin",
+      "invalid_for_card_type": "geçerli değil",
+      "invalid_type": "Üzgünüz, bu tür kartları kabul etmiyoruz",
+      "invalid_format": "biçim geçerli değil",
+      "expired": "tarihi geçti",
+      "invalid_start_date_or_issue_number_for_debit": "geçerli bir başlangıç ​​tarihi veya yayın numarası gerekli",
+      "invalid_expiry_year": "geçerli bir son kullanma yılı değil",
+      "reset_password_html": "Bu e-posta adresi zaten bir hesapla ilişkilendirilmiş. Bu hesap size aitse <a href=\"/account/login#recover\">şifrenizi sıfırlayabilirsiniz</a>",
+      "verify_email": "%{customer_email} adresine bir e-posta gönderdik, lütfen e-posta adresinizi doğrulamak için verilen bağlantıya tıklayın.",
+      "product_not_available": "ürün bu müşteri için yayınlanmadı.",
+      "shop_404": {
+        "title": "Bir E-Ticaret Web Sitesi Oluşturun ve Çevrimiçi Satış Yapın! Shopify'dan E-ticaret Yazılımı",
+        "heros": {
+          "store_unavailable": "Üzgünüz, bu mağaza şu anda kullanılamıyor.",
+          "store_not_exist": "Bu mağaza mevcut değil.",
+          "no_storefront": "Bu mağazanın henüz bir web sitesi yok."
+        },
+        "links": {
+          "explore_other_stores": "Diğer mağazaları keşfedin",
+          "start_free_trial": "Ücretsiz denemeyi başlatın"
+        },
+        "owner_ctas": {
+          "header": "Mağaza sahibi misiniz?",
+          "fix_domain": "Yeni web adresinizin kurulumunu tamamlayın, %{domain_settings_link} adresine gidin. “Alan adı bağla”ya tıklayın ve şunu girin: %{domain}.<br>Mağazanıza girişte sorun yaşıyorsanız %{forgot_your_store_link} sayfasını deneyin.",
+          "fix_domain_link_text": "alan adı ayarlarınız",
+          "forgot_your_store_link_text": "mağazanı unuttum",
+          "add_storefront": "%{admin_link}'ınıza Çevrimiçi Mağaza kanalını ekleyerek web sitenizi kurabilirsiniz. Mağazanıza girmekte sorun yaşıyorsanız %{forgot_your_store_link} sayfasını deneyin.",
+          "admin_link_text": "yönetici"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Şahsen satmak",
+            "caption": "İster başlangıç ​​aşamasında olun ister ölçeğinizi büyütün, perakende mağazanızı işletmek için ihtiyaç duyduğunuz özellikleri edinin.",
+            "link_text": "Deneme sürümüne başla"
+          },
+          "open_a_store": {
+            "header": "Yeni bir Shopify mağazası açın",
+            "caption": "3 günlük ücretsiz denemeyi başlatın, ardından sonraki 3 ay boyunca ayda 1 ABD doları karşılığında devam edin.",
+            "link_text": "Şimdi kayıt ol"
+          },
+          "editions": {
+            "header": "Shopify Sürümlerine göz atın",
+            "caption": "100'den fazla ürün güncellemesiyle ticarette hayal ettiğinizden daha üretken, yaratıcı ve güçlü olabilirsiniz.",
+            "link_text": "En son Sürümleri keşfedin"
+          },
+          "store_owner": {
+            "header": "Mağaza sahibi misiniz?",
+            "caption": "Mağazanıza girişte sorun mu yaşıyorsunuz? %{forgot_your_store_link} özelliğini deneyin. Mağazanızı yeniden etkinleştirmek istiyorsanız %{shopify_support_link} ile iletişime geçin.",
+            "shopify_support_link_text": "Shopify desteği"
+          }
+        }
+      }
+    },
+    "notices": {
+      "customer": {
+        "password_reset_error": "Şifre sıfırlama hatası",
+        "no_account_found": "Bu e-postaya ait hesap bulunamadı.",
+        "invalid_credentials": "Yanlış eposta adresi veya şifre.",
+        "denylisted_reset_password": "Mevcut şifreniz güvenli olmadığından hesabınıza erişilemedi. Şifrenizi güncellemek için bir e-posta alacaksınız.",
+        "signup_disabled": "Müşteri hesabı oluşturma devre dışı bırakıldı."
+      },
+      "address": {
+        "updated": "Adres başarıyla güncellendi.",
+        "error_updating": "Adres güncellenirken hata oluştu",
+        "created": "Adres başarıyla oluşturuldu",
+        "error_creating": "Adres oluşturulurken hata oluştu.",
+        "deleted": "Adres başarıyla silindi",
+        "error_deleting": "Adres silinirken hata oluştu."
+      },
+      "line_item": {
+        "item_status": {
+          "add_variant": "%{delta} eklendi",
+          "increment_item": "%{delta} eklendi",
+          "decrement_item": "%{total} / %{delta} kaldırıldı",
+          "decrement_fulfilled_line_item": "%{total} / %{delta} döndürüldü",
+          "decrement_return_line_item": "%{delta} geri dönüşten kaldırıldı"
+        }
+      },
+      "order": {
+        "not_available": "Bu sipariş mevcut değil",
+        "financial_status": {
+          "authorized": "Yetkili",
+          "pending": "Askıda olması",
+          "paid": "Paralı",
+          "unpaid": "ödenmemiş",
+          "voided": "Geçersiz kılındı",
+          "partially_paid": "Kısmen ödenmiş",
+          "partially_refunded": "Kısmen iade edildi",
+          "refunded": "Geri ödeme yapıldı",
+          "expired": "Günü geçmiş"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Yerine getirilmiştir",
+          "complete": "Tamamlamak",
+          "partial": "Kısmi",
+          "unfulfilled": "Gerçekleştirilmedi",
+          "restocked": "Yeniden stoklandı"
+        },
+        "transaction_status": {
+          "success": "Başarı",
+          "pending": "Askıda olması",
+          "failure": "Arıza",
+          "error": "Hata"
+        },
+        "cancel_reason": {
+          "declined": "Ödeme Reddedildi",
+          "inventory": "Öğeler kullanılamıyor",
+          "fraud": "Sahte sipariş",
+          "customer": "Müşteri siparişi değiştirdi/iptal etti",
+          "staff": "Personel hatası",
+          "other": "Diğer"
+        },
+        "cash_on_delivery": "Teslimatta Nakit Ödeme (COD)"
+      },
+      "storefront": {
+        "invalid_password": "Şifre hatalı, lütfen tekrar deneyin."
+      },
+      "tags": {
+        "add_articles": "Aramayı %{tag} etiketine sahip makaleleri kapsayacak şekilde daraltın",
+        "add_products": "Seçimi %{tag} etiketiyle eşleşen ürünlerle daralt",
+        "remove_articles": "Aramayı %{tag} olarak etiketlenmeyen makaleleri kapsayacak şekilde genişlet",
+        "remove_products": "%{tag} etiketini kaldır"
+      },
+      "cart": {
+        "only_n_items_available": "Sepete yalnızca %{count} %{name} ekleyebilirsiniz.",
+        "too_many_items_in_cart": "Sepete daha fazla %{name} ekleyemezsiniz.",
+        "less_than_minimum": "Bu öğenin minimum %{min} değeri var.",
+        "more_than_maximum": "Bu öğenin maksimum %{max} değeri var."
+      }
+    },
+    "email_marketing": {
+      "subscribed": {
+        "confirmation": "Posta listemize abone olduğunuz için teşekkür ederiz.",
+        "disclaimer": "İstediğiniz zaman abonelikten çıkabilirsiniz.",
+        "unsubscribe": "Abonelikten çık"
+      },
+      "unsubscribed": {
+        "confirmation": "Posta listemizden çıktınız.",
+        "disclaimer": "Bizden artık pazarlama güncellemesi almayacaksınız. İstediğiniz zaman tekrar abone olabilirsiniz.",
+        "preview": "Müşterilerin abonelikten çıktıklarında ne göreceklerini önizliyorsunuz."
+      },
+      "open_tracking": {
+        "opt_in": {
+          "opted_in_html": "<b>E-postayla açık izlemeyi etkinleştirdiniz.</b>",
+          "visibility": "E-posta açılma oranları isimsiz olarak rapor edilecektir. Yalnızca toplu e-posta açılma oranının bir parçası olarak bir e-postayı açıp açmadığınızı göreceğiz.",
+          "opt_out_html": "Bu bilgiyi paylaşmak istemiyorsanız, e-posta açma takibini <a style='text-decoration:underline;' href='%{link}'>devre dışı bırakabilirsiniz</a>.",
+          "preview_bar": "Müşterilerin e-postayla açık izlemeyi tercih ettiklerinde ne göreceklerini önizliyorsunuz."
+        },
+        "opt_out": {
+          "opted_out_html": "<b>E-posta açma takibini devre dışı bıraktınız.</b>",
+          "visibility": "E-postalarınızı açıp açmadığınızı görmeyeceğiz.",
+          "opt_in_html": "Açık izlemeyi e-postayla göndermeyi <a style='text-decoration:underline;' href='%{link}'>etkinleştirin</a>.",
+          "preview_bar": "Müşterilerin e-posta açma takibini devre dışı bıraktıklarında ne göreceklerini önizliyorsunuz."
+        },
+        "no_longer_track": {
+          "status_html": "<b>Artık açılan e-postaları takip etmiyoruz.</b>",
+          "privacy_policy": "Bu e-posta gönderildikten sonra gizlilik politikamızı güncelledik ve artık açılmaları takip etmiyoruz."
+        },
+        "track": {
+          "status_html": "<b>E-posta açılma takibi bildirildi.</b>",
+          "visibility": "Toplam e-posta açılma oranının bir parçası olarak yalnızca e-postayı açıp açmadığınızı göreceğiz."
+        },
+        "updated_policy": {
+          "status_html": "<b>E-posta açılma takibi bildirildi.</b>",
+          "visibility": "Politikamızı güncelledik ve artık e-postaları takip etme özelliği açılıyor. E-posta açılma oranları isimsiz olarak rapor edilecektir. Toplam e-posta açılma oranının bir parçası olarak yalnızca bir e-postayı açıp açmadığınızı göreceğiz.",
+          "opt_out_html": "Bu bilgiyi paylaşmak istemiyorsanız <a style='text-decoration:underline;' href='%{link}'>abonelikten çıkabilirsiniz.</a>"
+        }
+      }
+    },
+    "filters": {
+      "availability": {
+        "value": {
+          "in_stock": "Stokta var",
+          "out_of_stock": "Stoklar tükendi"
+        }
+      },
+      "boolean": {
+        "true_label": "Evet",
+        "false_label": "HAYIR"
+      }
+    },
+    "search": {
+      "sorting": {
+        "relevance": "Alaka düzeyi",
+        "price_ascending": "Fiyat, düşükten yükseğe",
+        "price_descending": "Fiyat pahalıdan ucuza"
+      }
+    },
+    "page_titles": {
+      "blog_or_article_with_error": "Hata - %{title}",
+      "products": "Ürünler",
+      "shopping_cart": "Alışveriş Sepetiniz",
+      "account": "Hesap",
+      "create_account": "Hesap oluşturmak",
+      "reset_account": "Hesabı Sıfırla",
+      "addresses": "Adresler",
+      "order": "Sipariş %{name}",
+      "search": "Aramak",
+      "search_results": {
+        "one": "Arama: \"%{terms}\" için %{count} sonuç bulundu",
+        "other": "Arama: \"%{terms}\" için %{count} sonuç bulundu"
+      },
+      "collections": "Koleksiyonlar",
+      "not_found": "404 Bulunamadı",
+      "challenge": "Meydan okumak",
+      "checkpoint": "Kontrol noktası"
+    },
+    "challenge": {
+      "message": "Devam etmek için robot olmadığınızı bize bildirin.",
+      "error": "Cevabınız doğru değildi, lütfen tekrar deneyin.",
+      "submit_button_text": "Göndermek"
+    },
+    "checkpoint": {
+      "message": "Devam etmek için Captcha'yı çözün",
+      "error": "Captcha doğrulaması başarısız oldu",
+      "submit_button_text": "Göndermek"
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "one_hour": "Genellikle 1 saatte hazır",
+        "two_hours": "Genellikle 2 saatte hazır",
+        "four_hours": "Genellikle 4 saatte hazır",
+        "twenty_four_hours": "Genellikle 24 saat içinde hazır",
+        "two_to_four_days": "Genellikle 2-4 gün içinde hazır",
+        "five_or_more_days": "Genellikle 5+ gün içinde hazır olur",
+        "zero_to_two_hours": "Genellikle 2 saatte hazır",
+        "two_to_four_hours": "Genellikle 4 saatte hazır",
+        "immediately": "Şimdi teslim almaya hazır",
+        "next_day": "Ertesi gün teslim alınmaya hazır"
+      }
+    },
+    "checkout": {
+      "address_management": {
+        "confirm_address_deletion": "{{address}} adresini silmek istediğinizden emin misiniz?"
+      },
+      "general": {
+        "page_title": "Çıkış yapmak",
+        "error_page_title": "Hata",
+        "skip_to_content": "İçeriğe atla",
+        "breadcrumb": "Ekmek kırıntısı",
+        "continue_button_label": "Devam etmek",
+        "complete_purchase_button_label": "Siparişi tamamla",
+        "pay_now_button_label": "Şimdi öde",
+        "authenticate_purchase_button_label": "Ödemeyi doğrula",
+        "edit_link_label": "Düzenlemek",
+        "all_rights_reserved": "Tüm hakları saklıdır %{shop_name}",
+        "print_policies_link_label": "Yazdır",
+        "cart": "Araba",
+        "close_modal_label": "Kapalı",
+        "close_notice_label": "Kapalı",
+        "expand_notice_label": "Daha fazla göster",
+        "continue_to_shipping_method": "Gönderim yapmaya devam edin",
+        "continue_to_payment_method": "Ödeme devam",
+        "continue_to_review": "Siparişi inceleyin",
+        "back_to_cart": "Sepete dön",
+        "back_to_contact_information": "Bilgiye geri dön",
+        "back_to_shipping_method": "Gönderime geri dön",
+        "back_to_payment_method": "Ödemeye geri dön",
+        "choose_shipping_method": "Bir gönderim yöntemi seçin",
+        "choose_payment_method": "Bir ödeme yöntemi seçin",
+        "choose_billing_address": "fatura adresi seçin",
+        "contact_us_html": "Daha fazla bilgi için bizimle iletişime geçin",
+        "autocomplete_title": "Öneriler",
+        "autocomplete_single_item": "1 ürün mevcut",
+        "autocomplete_multi_item": "{{number}} öğe mevcut",
+        "autocomplete_selection": "{{number}} / {{total}}",
+        "autocomplete_close": "Önerileri kapat",
+        "forwarding_indicator": {
+          "new_window": "Yeni bir pencerede açılır.",
+          "external": "Harici web sitesini açar.",
+          "external_and_new_window": "Harici web sitesini yeni bir pencerede açar."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - Ödeme"
+        },
+        "tooltip_accessibility_label": "Daha fazla bilgi",
+        "errors": {
+          "only_empty_terms_accepted": "Bu politika yalnızca boş koşulları kabul eder.",
+          "session_identifier_not_unique_error": "Siparişinizle ilgili bir sorun oluştu. Lütfen tekrar kontrol etmeyi deneyin.",
+          "line_item_limit_reached": "Maksimum satır öğesi sayısına ulaşıldı.",
+          "session_is_already_finished": "Bu ödeme oturumu zaten tamamlandı.",
+          "merchandise": {
+            "only_value_constraint": "Ürün girişinde yalnızca kesin değerlere izin verilir.",
+            "merchandise_not_found": "Ürün bulunamadı.",
+            "merchandise_variant_not_found": "Ürün çeşidi bulunamadı.",
+            "merchandise_not_applicable": "Ürün çeşidi satın alınamaz.",
+            "bundle_products_not_supported_for_b2b": "Paketlenmiş ürünler bu konum için B2B siparişlerine eklenemez.",
+            "gift_card_quantity_mismatch": "Hediye kartı kodlarını belirtirken satır öğesi miktarı ile hediye kartı kodlarının sayısı eşleşmelidir.",
+            "gift_card_not_supported": "Bu ödemede hediye kartları desteklenmiyor.",
+            "gift_card_not_unique": "Bu ödemede {{code}} kodlu hediye kartı birden fazla kez kullanılıyor. Kodlar karşılaştırmadan önce biçimlendirilir.",
+            "gift_card_used": "Hediye kartı kodu {{code}} zaten bir hediye kartına atanmış. Kodlar karşılaştırmadan önce biçimlendirilir.",
+            "gift_card_invalid": "Hediye kartı kodu {{code}} geçersiz.",
+            "gift_card_code_changed": "Hediye kartı kodu {{proposed_code}}, biçimlendirme kurallarına uymak için {{formatted_code}} olarak değiştirildi.",
+            "gift_card_with_attributes_not_supported": "Özel özelliklere sahip hediye kartları bu ödemede desteklenmiyor.",
+            "gift_card_with_components_not_supported": "Bu ödemede bileşen içeren hediye kartları desteklenmiyor.",
+            "selling_plan_mismatch": "Abonelik güncellendi.",
+            "selling_plan_not_supported": "Abonelikler desteklenmiyor.",
+            "selling_plan_not_supported_b2b": "B2B ödeme için abonelikler desteklenmez.",
+            "price_mismatch": "Bu ürün için önceden önerilen fiyat geçersizdi ve güncellendi.",
+            "inventory_not_found": "Bu ürün için envanter bulunamadı.",
+            "product_not_published": "Ürün yayınlanmadı.",
+            "duplicated_stable_id": "Bu ürün serisi başka bir seriyle aynı kararlı kimliğe sahiptir.",
+            "minimum_quantity_not_met": "Bu ürünün miktarı gereken minimum {{min}} miktarını karşılamıyor.",
+            "maximum_quantity_exceeded": "Bu ürünün miktarı izin verilen maksimum {{max}} miktarını karşılamıyor.",
+            "quantity_increment_not_met": "Bu ürüne {{increment}} miktar artışı uygulanmalıdır.",
+            "quantity_rules_not_met": "Geçersiz miktarda ürün.",
+            "bundle_requires_components": "Bu paket ürününün hiçbir bileşeni yoktur.",
+            "title_too_long": "Ürün başlığı çok uzun.",
+            "title_empty": "Ürün başlığı boş."
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "Şirket yetkilisinin şirkete erişimi yok.",
+            "customer_account_required": "Devam etmek için müşterinin oturum açması gerekir.",
+            "contact_info_does_not_match_customer_account": "Belirtilen müşteri bilgileri, oturum açmış müşteri hesabıyla eşleşmelidir.",
+            "phone_number_does_not_match_expected_pattern": "Belirtilen telefon numarası beklenen modelle eşleşmiyor.",
+            "email_required": "Ürün abonelik kullanılarak satın alındığında bir e-posta gereklidir.",
+            "email_domain_is_invalid": "Belirtilen bu etki alanı çözümlenemiyor.",
+            "missing_contact_method": "Geçerli bir iletişim yöntemi eksik.",
+            "checkout_completion_target_is_missing": "Ödeme tamamlama hedefi eksik.",
+            "invalid_customer_profile": "Geçersiz bir müşteri profili sağlandı.",
+            "customer_profile_access_restricted": "Checkout'un müşteri profiline erişim izni yok.",
+            "checkout_completion_target_is_invalid_proc": "Geçersiz ödeme tamamlama hedefi."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "Sepette yalnızca bir teslimat hattı bulunmalıdır.",
+            "wrong_number_of_delivery_lines": "Her ürün grubu için bir teslimat hattı belirlenmelidir.",
+            "external_delivery_promise_error": "Harici teslimat vaadi getirme hatası.",
+            "options_instructions_invalid": "Belirtilen talimatlar beklenen modelle eşleşmiyor.",
+            "destination_address_required": "Devam etmek için bir hedef adres gereklidir.",
+            "pickup_points_unavailable": "Teslim alma noktaları şu anda kullanılamıyor.",
+            "local_pickup_delivery_line_detail_changed": "Devam etmek için mevcut yerel teslim alma teslimat stratejisinin değiştirilmesi gerekiyor.",
+            "local_pickup_no_delivery_strategy_available": "Mevcut yerel teslim alma teslimat stratejisi bulunamadı.",
+            "origin_location_id_required": "PERAKENDE teslimat yöntemi istendiğinde menşe konum kimliği gereklidir.",
+            "invalid_origin_location_id": "Kaynak konum kimliğiyle eşleşen bir Konum bulunamadı.",
+            "origin_location_id_not_allowed": "İstenen teslimat yöntemleri, kaynak konum kimliğini desteklemiyor.",
+            "auto_fulfill_not_allowed": "Bu oturum, yerine getirme davranışını geçersiz kılma yetkisine sahip değil.",
+            "auto_fulfill_required": "PERAKENDE teslimat yöntemi istendiğinde otomatik yerine getirme gereklidir.",
+            "prefetch_shipping_rates_used": "Önceden getirilen kargo ücretleri hiçbir zaman ücretleri döndürmemelidir.",
+            "fulfillment_constraints_not_satisfied": "Bir veya daha fazla yerine getirme kısıtlaması karşılanmadı.",
+            "must_fulfill_from_constraint_not_satisfied": "Öğeler gerekli konumlardan karşılanamadığı için yerine getirme kısıtlamaları karşılanmıyor.",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "Öğeler aynı konumdan karşılanamadığı için yerine getirme kısıtlamaları karşılanmaz.",
+            "delivery_strategy_conditions_not_satisfied": "Bu konum için teslimat stratejileri mevcut ancak koşulları karşılanmıyor.",
+            "out_of_stock_at_origin_location": "Menşe konumunda stok yok.",
+            "invalid_signature": "Geçersiz indirim imzası."
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "B2B mağazalarda indirime izin verilmez.",
+            "custom_discount_not_honoured": "Sağlanan özel indirim yerine getirilmedi.",
+            "unsupported_expectation": "Sağlanan indirim satırı politikanın yorumlayamadığı bir beklenti içeriyordu.",
+            "additional_requested_discount_code_discarded": "Talep edilen ek kod indirimi iptal edildi.",
+            "allocations_mismatch": "Beklenen indirim tahsisi, gerçek indirim tahsisiyle eşleşmiyor.",
+            "discount_code_not_honoured": "İndirim kodu uygulanmadı."
+          },
+          "tax": {
+            "new_tax_must_be_accepted": "Devam etmek için satıcı teklifindeki yeni vergi satırının kabul edilmesi gerekir.",
+            "unresolvable_tax_terms": "Önerilen şartlar, mevcut müzakere bağlamı göz önüne alındığında çözümlenemez.",
+            "delivery_price_is_abstract": "İlgili teslim fiyatı soyuttur.",
+            "tax_inclusivity_mismatch": "Somut totalTaxAndDutyAmount veya totalAmountIncludedInTarget değeriyle yeniden pazarlık yapın.",
+            "tax_exemption_not_supported": "Mevcut müzakere oturumunda vergi muafiyetleri desteklenmiyor.",
+            "delivery_tax_exemption_not_supported": "Teslimat hatlarına yönelik vergi muafiyetleri şu anda desteklenmemektedir.",
+            "proposed_allocations_required": "'Önerilen tahsisler' alanı eksik.",
+            "merchandise_terms_must_be_defined": "Ürün şartları tanımlanmalıdır.",
+            "delivery_terms_must_be_defined": "Teslimat koşulları tanımlanmalıdır.",
+            "merchandise_discount_terms_must_be_defined": "Ürün indirim koşulları tanımlanmalıdır.",
+            "delivery_discount_terms_must_be_defined": "Teslimat indirimi şartları tanımlanmalıdır.",
+            "allocated_required": "'Ayrılan' alan eksik.",
+            "value_required": "'Değer' alanı eksik.",
+            "line_splits_not_supported": "'Ürün satırları' alanı, satıcı teklifinde her biri tek bir satır bileşenine sahip olacak şekilde bölünmelidir."
+          },
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "B2B mağazalarında manuel ödemelere izin verilmemektedir.",
+            "positive_amount_expected": "Ödenecek tutar 0'dan büyük olmalıdır.",
+            "total_amount_mismatch": "Ödenecek toplam, ödeme tutarının toplamıyla eşleşmiyor.",
+            "subscription_terms_not_accepted": "Abonelik koşulları kabul edilmedi.",
+            "missing_session_id": "Kredi kartı oturum bilgileri eksik.",
+            "gateway_not_supported": "Ödeme ağ geçidi, ödeme yönteminin saklanmasını desteklemez.",
+            "credit_card_last_name_required": "'soyadı' sıfır olamaz.",
+            "credit_card_update_failed": "Kredi kartı güncellemesi başarısız oldu.",
+            "installments_amount_invalid": "Taksitli işlem için geçersiz tutar.",
+            "installments_test_mode_not_allowed": "Test moduna izin verilmiyor.",
+            "installments_gift_card_not_allowed": "Taksitli hediye kartlarının kullanımına izin verilmemektedir.",
+            "installments_unsupported_currency": "Taksitler bu para birimini desteklemiyor.",
+            "installments_unsupported_shipping": "Taksitli gönderim bu adrese gönderimi desteklememektedir.",
+            "installments_unsupported_billing": "Taksitler bu fatura adresini desteklemiyor.",
+            "installments_unsupported_subscriptions": "Taksitli abonelikler desteklenmez.",
+            "installments_ineligible_line_item": "Bu satın alma işlemindeki bir satır öğesi için taksitler devre dışı bırakıldı.",
+            "shop_cash_not_allowed": "Shop Pay olmadan Shop Cash'e izin verilmez.",
+            "shop_cash_unsupported_checkout_source": "Shop Cash bu ödemeyi desteklemiyor.",
+            "shop_cash_gift_card_not_allowed": "Shop Cash, hediye kartlarının satın alınmasına izin vermez.",
+            "shop_cash_not_enabled": "Bu mağaza için Shop Cash etkin değil.",
+            "shop_cash_unsupported_subscriptions": "Shop Cash abonelikleri desteklemez.",
+            "shop_cash_unsupported_shipping": "Shop Cash, gönderimi olmayan ürünleri desteklemez.",
+            "invalid_address_type": "Sağlanan adres türü bu ödeme yöntemi için geçersiz.",
+            "missing_retail_attributions": "Manuel olarak girilen kredi kartı ödemeleri için perakende ilişkilendirmeleri gereklidir.",
+            "unexpected_retail_attributions": "Kredi kartıyla ödeme için beklenmedik bir şekilde perakende satış atıfları sağlandı.",
+            "invalid_card_source": "Bu oturumun bu kart kaynağını kullanma izni yok.",
+            "wallet_content_missing": "Cüzdan içeriği eksik.",
+            "payment_instrument_not_found": "Ödeme yöntemi bulunamadı",
+            "unauthorized_capture_method": "Ödeme yakalama yönteminin yapılandırılmasına izin verilmiyor.",
+            "saved_payment_methods_not_allowed": "Kaydedilen ödeme yöntemlerine izin verilmiyor.",
+            "saved_payment_methods_not_enabled": "Bu mağaza için kayıtlı ödeme yöntemleri etkin değil.",
+            "saved_payment_methods_cvv_verification_disabled": "Seçilen ödeme yöntemi, bu mağaza için etkin olmayan CVV doğrulamasını gerektiriyor. Farklı bir ödeme yöntemi seçin.",
+            "store_credit_not_enabled": "Bu mağaza için mağaza kredisi etkin değil.",
+            "store_credit_account_not_found": "Mağaza kredisi hesabı bulunamadı.",
+            "store_credit_account_mismatch": "Mağaza kredisi hesabı alıcı kimliğiyle eşleşmiyor.",
+            "store_credit_mismatched_currency": "Mağaza kredisi hesabının para birimi, ödeme para birimiyle eşleşmiyor.",
+            "store_credit_insufficient_funds": "Mağaza kredi hesabında yeterli bakiye yok.",
+            "store_credit_buying_gift_card": "Hediye kartı satın almak için mağaza kredisini kullanamazsınız.",
+            "gift_cards_not_allowed_for_b2b": "B2B mağazalarında hediye kartlarına izin verilmemektedir.",
+            "method_required": "Bir ödeme yöntemi önerilmelidir.",
+            "paypal_express_address_invalid": "PayPal geçersiz bir adres döndürdü.",
+            "shop_cash_unsupported_currency": "Shop Cash bu para birimini desteklemiyor.",
+            "market_manager_blocks_wallet_payments": "Ödeme yöntemi pazar yöneticisi tarafından desteklenmiyor."
+          },
+          "tip": {
+            "not_accepted_by_shop": "Mağaza bahşiş kabul etmiyor.",
+            "only_one_tip_line_allowed": "Çoklu ipucu satırları desteklenmez.",
+            "tips_not_allowed_for_b2b": "B2B mağazalarında bahşişlere izin verilmez.",
+            "currency_change_reset": "Para birimi değişikliği nedeniyle ipucu sıfırlandı.",
+            "tips_not_allowed_for_deferred_purchase_options": "Ertelenmiş satın alma seçenekleri için ipuçları henüz desteklenmemektedir."
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "Bu taslak sipariş mevcut mağazada mevcut değil.",
+            "staff_member_not_exist": "Bu personel mevcut mağazada mevcut değildir.",
+            "location_not_exist": "Bu konum mevcut mağazada mevcut değil.",
+            "point_of_sale_device_not_exist": "Bu satış noktası cihazı mevcut mağazada mevcut değil.",
+            "unresolvable_target_merchandise_lines": "Önerilen satış ilişkilendirmeleri, mevcut pazarlık bağlamı göz önüne alındığında çözümlenemez."
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "Alıcınızın teklifi, pazarlık konusu olmayan terimler içermelidir.",
+            "invalid_signature": "{{target_terms}} imzası geçersiz."
+          },
+          "inventory": {
+            "missing_quantity_value": "Alıcının stok satırlarında miktar alanı eksik.",
+            "changing_behavior_not_allowed": "Bu istemcinin envanter davranışını değiştirme izni yok.",
+            "only_one_inventory_behavior_allowed": "Şu anda ödeme başına yalnızca bir envanter davranışına izin verilmektedir."
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "Bu ödemede görevlerin reddedilmesine izin verilmiyor."
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "Bu ödeme için perakende satış ilişkilendirmesine izin verilmiyor.",
+            "retail_attribution_required": "Bu ödeme için perakende ilişkilendirmesi gereklidir."
+          },
+          "captcha": {
+            "metadata_missing": "Bu ödeme için bir captcha'nın doldurulması gerekiyor.",
+            "metadata_mismatch": "Sağlanan captcha sağlayıcısı ve türü beklenen değerlerle eşleşmiyor.",
+            "token_missing": "Bu ödemeyi tamamlamak için bir captcha belirtecinin sağlanması gerekir."
+          }
+        },
+        "dates": {
+          "months": {
+            "september": "Eylül",
+            "october": "Ekim",
+            "november": "Kasım",
+            "december": "Aralık"
+          }
+        },
+        "datepicker": {
+          "show_previous_month": "Önceki ayı göster, {{month}} {{year}}",
+          "show_next_month": "Gelecek ayı göster, {{month}} {{year}}",
+          "range_start": "Aralık başlangıcı",
+          "in_range": "Menzilde",
+          "range_end": "Aralık sonu"
+        },
+        "list_formatter": {
+          "and": {
+            "wordConnector": "{{previousWords}}, {{anotherWord}}",
+            "lastWordConnector": "{{previousWords}} ve {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} ve {{secondWord}}"
+          },
+          "or": {
+            "wordConnector": "{{previousWords}}, {{anotherWord}}",
+            "lastWordConnector": "{{previousWords}} veya {{lastWord}}",
+            "twoWordConnector": "{{firstWord}} veya {{secondWord}}"
+          },
+          "narrow": {
+            "wordConnector": "{{previousWords}}, {{anotherWord}}",
+            "lastWordConnector": "{{previousWords}}, {{lastWord}}",
+            "twoWordConnector": "{{firstWord}}, {{secondWord}}"
+          }
+        },
+        "map": {
+          "cluster_title": {
+            "one": "{{number}} işaretleyici kümesi",
+            "other": "{{number}} işaretleyici kümesi"
+          }
+        }
+      },
+      "contact": {
+        "title": "Bilgi",
+        "address_title": "Adres",
+        "shipping_used_as_billing_notice": "Bu aynı zamanda bu sipariş için fatura adresiniz olarak da kullanılacaktır.",
+        "delivery_option_title": "Teslimat Yöntemi",
+        "contact_method_title": "Temas etmek",
+        "email_label": "E-posta",
+        "email_placeholder": "E-posta",
+        "email_or_phone_label": "E-posta veya cep telefonu numarası",
+        "email_or_phone_placeholder": "E-posta veya cep telefonu numarası",
+        "stored_addresses_label": "Kayıtlı adresler",
+        "new_address_label": "Yeni bir adres kullan",
+        "first_name_label": "İlk adı",
+        "optional_first_name_label": "Ad (isteğe bağlı)",
+        "last_name_label": "Soy isim",
+        "company_label": "Şirket",
+        "company_attention_label": "Şirket/İlgi",
+        "optional_company_attention_label": "Şirket/Dikkat (isteğe bağlı)",
+        "optional_company_label": "Şirket (isteğe bağlı)",
+        "address1_label": "Adres",
+        "address2_label": "Daire, süit vb.",
+        "optional_address2_label": "Apartman dairesi, süit vb. (isteğe bağlı)",
+        "city_label": "Şehir",
+        "country_label": "Ülke/Bölge",
+        "country_code": "Ülke/Bölge kodu",
+        "province_label": "Vilayet",
+        "province_placeholder": "Vilayet",
+        "county_label": "ilçe",
+        "county_placeholder": "ilçe",
+        "state_label": "Durum",
+        "state_placeholder": "Durum"
+      },
+      "delivery_options": {
+        "retail_method_definition": "Perakende nakliye",
+        "none_method_definition": "Nakliye yok",
+        "subscription_pickup_information": "Bu teslimat yöntemi, bu siparişteki tüm öğelere ve bu aboneliğe ilişkin gelecekteki tüm siparişlere uygulanacaktır."
+      },
+      "customer_account": {
+        "not_user_label": "%{first_name} değil mi?",
+        "have_an_account_label": "Hesabınız var mı?",
+        "sign_in_link_label": "Giriş yapmak",
+        "sign_out_link_label": "Çıkış Yap",
+        "save_my_information_label": "Bir dahaki sefere bu bilgiyi kaydet",
+        "invalid_address": "Seçilen adres geçersiz. %{update_address_link} veya farklı bir adres seçin.",
+        "incomplete_address": "Seçilen adres eksik. %{update_address_link} veya farklı bir adres seçin.",
+        "rollup_label": "Hesap",
+        "invalid_shipping_method_summary": "Mevcut gönderim yöntemlerini görüntülemek için geçerli bir gönderim adresi seçin"
+      },
+      "stock": {
+        "page_title": "Envanter sorunları",
+        "title": "Stoklar tükendi",
+        "items_unavailable_notice": "Bazı öğeler artık mevcut değil.",
+        "product_column_header": "Ürünler",
+        "quantity_column_header": "Miktar",
+        "price_column_header": "Fiyat",
+        "status_column_header": "Durum",
+        "removed_from_cart_notice": "Sepetten kaldırıldı",
+        "sold_out_label": "Hepsi satıldı",
+        "reduced_label": "Azaltılmış",
+        "reduced_with_quantity_label": "Yalnızca %{quantity_available} kaldı",
+        "remove_from_cart_button_label": "Sepetten kaldır",
+        "continue_shopping_button_label": "Devam etmek",
+        "go_back_to_cart_button_label": "Sepetime geri dön",
+        "remove": "Kaldırmak",
+        "return_to_store_label": "Mağazaya dön",
+        "continue_cta_label": "Ödemeye devam et",
+        "item_label": {
+          "one": "{{count}} öğe",
+          "other": "{{count}} öğe"
+        },
+        "empty_cart_label": "Sepetiniz boş",
+        "quantity_update": {
+          "page_title": "Miktar güncellemesi",
+          "title": "Miktar güncellemesi",
+          "description": "Bu ürünler için mevcut adetler değişti ve sepetinizde güncellendi."
+        },
+        "unpurchasable_product": {
+          "title": "Satın alınamayan ürün",
+          "header": "Sepetinizden bazı ürünler kaldırıldı",
+          "message": "Bu ürünler B2B siparişleri için mevcut değildir.",
+          "status_column_header": "Müsait değil"
+        },
+        "unpurchasable_product_generic": {
+          "title": "Satın alınamayan ürün",
+          "header": "Sepetinizden bazı ürünler kaldırıldı",
+          "message": "Bu öğeler mevcut değil.",
+          "status_column_header": "Müsait değil"
+        },
+        "unshippable_product": {
+          "title": "Teslimat mevcut değil",
+          "header": {
+            "one": "%{count} öğesi için teslimat mevcut değil",
+            "other": "%{count} öğe için teslimat mevcut değil"
+          },
+          "message": {
+            "one": "Adresinize uygun teslimat yöntemi bulunmadığından bu ürün sepetinizden kaldırılacaktır.",
+            "other": "Adresinize uygun teslimat yöntemi bulunmadığından bu ürünler sepetinizden kaldırılacaktır."
+          },
+          "status_column_header": "Teslimat yok"
+        },
+        "price_update": {
+          "title": "Fiyat güncellemesi"
+        }
+      },
+      "order_summary": {
+        "cart_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> indirim kodu sepetinizdeki ürünler için geçerli değil",
+        "discount_requires_customer_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> indirim kodunu uygulamak için gönderim bilgilerinizi girin",
+        "customer_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> indirim kodu şu anda kullanımınıza sunulmuyor",
+        "shipping_information_does_not_meet_discount_requirements_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> indirim kodu teslimat adresiniz için mevcut değil",
+        "customer_already_used_once_per_customer_discount_notice": "<strong style=\"text-transform:uppercase\">%{code}</strong> indirim kodu zaten kullanıldı",
+        "subtotal_label": "ara toplam",
+        "shipping_label": "Nakliye",
+        "pickup_label": "Toplamak",
+        "no_pickup_location": "Bu sipariş için teslim alma işlemi yapılamıyor. Başka bir teslimat yöntemi seçin.",
+        "tip_label": "Uç",
+        "calculating_shipping": "Hesaplanıyor…",
+        "calculating": "Hesaplanıyor…",
+        "shipping_default_value": "Teslimat adresini girin",
+        "shipping_discount_title": "Kargo İndirimi",
+        "shipping_pending_value": "—",
+        "shipping_pending_message": "Henüz uygun değil",
+        "shipping_policy_link": "Kargo ücretleri",
+        "taxes_label": "Vergiler",
+        "estimated_taxes_label": "Tahmini vergiler",
+        "information_estimated_taxes_label": "Vergiler (tahmini)",
+        "estimated_taxes_finalization_tooltip_content": "Nihai vergi ve toplam tutar, siparişinizi verdikten sonra e-posta veya mesaj yoluyla onaylanacaktır.",
+        "order_total_label": "sipariş toplamı",
+        "total_savings": "Toplam tasarruf",
+        "total_label": "Toplam",
+        "total_outstanding_label": "Ödenecek miktar",
+        "partial_total_label": "Toplam",
+        "free_total_label": "Özgür",
+        "paid_label": "Paralı",
+        "payment_due_label": "Ödeme zamanı",
+        "vat_label_html": "Vergilere %{amount} dahil",
+        "duties_included_label": "Toplam tutara, teslimatta hiçbir ek ücret alınmadan geçerli tüm vergiler ve gümrük vergileri dahildir",
+        "discount_and_gift_card_savings_notice": "İndirimlerde %{discount_amount} ve hediye kartlarında %{gift_card_amount}'den sonra",
+        "discount_savings_notice": "İndirimlerde %{discount_amount} sonrasında",
+        "gift_card_savings_notice": "Hediye kartlarında %{gift_card_amount}'dan sonra",
+        "cost_table_title": "Maliyet özeti",
+        "description_label": "Tanım",
+        "price_label": "Fiyat",
+        "price_per_item": {
+          "accessibility_label": "Öğe başına %{price}",
+          "label": "%{price}/adet"
+        },
+        "quantity_label": "Miktar",
+        "product_change_label": "Değiştirmek",
+        "product_image_label": "Ürün resmi",
+        "scroll_order_summary": "Daha fazla öğe için kaydırın",
+        "expand_order_summary_short": "Göstermek",
+        "collapse_order_summary_short": "Saklamak",
+        "expand_order_summary": "Sipariş özetini göster",
+        "collapse_order_summary": "Sipariş özetini gizle",
+        "original_price": "Orijinal fiyat",
+        "sale_price": "Satış ücreti",
+        "total_updated_label": "Toplam fiyat güncellendi:"
+      },
+      "shipping": {
+        "title": "Teslimat",
+        "delivery_title": "Teslimat",
+        "shipping_method_title": "Nakliye Yöntemi",
+        "shipping_method_one_time_purchase_group_title": "Tek seferlik SATIN ALMA",
+        "shipping_method_subscription_group_title": "Abonelik",
+        "subscription_shipping": "Abonelik gönderimi",
+        "subscription_local_delivery": "Abonelik yerel teslimatı",
+        "subscription_pickup": "Abonelik alımı",
+        "waiting_on_rate_notice": "Mevcut gönderim ücretleri alınıyor…",
+        "waiting_on_pickup_location_notice": "Teslim alma yerleri kullanılabilir hale geliyor…",
+        "no_rates_for_cart_or_destination_notice": "Sepetiniz veya adresiniz için gönderim yöntemi mevcut değil",
+        "no_pickup_location_notice": "Ürünlerinizden en az biri teslim alınamıyor",
+        "no_rates_for_country_notice": "Bu adres için nakliye ücreti bulunamadı.",
+        "no_rates_contact_notice": "Daha fazla bilgi için bizimle iletişime geçin",
+        "free_rate_label": "Özgür",
+        "cheapest_rate_label": "En ucuz",
+        "please_enter_your_shipping_information_notice": "Lütfen gönderim bilgilerinizi giriniz.",
+        "estimated_delivery_date": {
+          "one": "%{count} iş günü",
+          "other": "%{count} iş günü"
+        },
+        "estimated_delivery_date_range": "%{minimum} ila %{maximum} iş günü",
+        "delivery_date_range": "%{min_time}–%{max_time}",
+        "estimated_delivery_time": "Tahmini teslimat %{time}",
+        "estimated_delivery_time_range": "Tahmini teslimat %{min_time}–%{max_time}",
+        "delivery_today": "Aynı gün teslimat %{time}",
+        "delivery_tomorrow": "Ertesi gün teslimat %{time}",
+        "two_day_delivery": "2 günde teslimat %{time}",
+        "delivery": "Teslimat %{time}",
+        "arrives_time": "%{time}'a varıyor",
+        "arrives_time_range": "%{min_time}–%{max_time}'e ulaşır",
+        "estimated_time": "Tahmini %{time}",
+        "estimated_time_range": "Tahmini %{min_time}–%{max_time}",
+        "shipping_line_phone_label": "Cep telefonu numarası (gerekli)",
+        "shipping_line_phone": "Kuryeniz sizinle iletişime geçmek için bu numarayı kullanabilir.",
+        "shipping_line_delivery_phone_label": "cep telefonu numarası",
+        "shipping_line_delivery_phone": "Teslimatınızla ilgili güncellemeler için sizinle iletişime geçilebilir.",
+        "split_cart_merchandise_quantity_label_standard": "%{quantity} öğe",
+        "split_cart_merchandise_quantity_label_additional": "+%{quantity} daha fazla",
+        "split_cart_merchandise_shipment_number": "Gönderim %{number} / %{total}",
+        "split_cart_ships_now": "Şimdi gönderiliyor",
+        "split_cart_ships_later": "Daha sonra gönderilir",
+        "split_cart_ships_date": "%{date} gönderilir",
+        "split_cart_shipped_by_amazon_prime": "Amazon Prime tarafından gönderildi",
+        "split_cart_shipped_by_shop": "%{shop_name} tarafından gönderildi",
+        "split_cart_multiple_shipment_label": "Çoklu gönderiler",
+        "split_cart_shipping_label": "Yöntem",
+        "split_cart_multiple_shipment_quantity_label": "%{quantity} gönderi",
+        "split_cart_multiple_shipment_notice": "Siparişiniz birden fazla gönderiyle ulaşacaktır",
+        "merchandise_quantity_label_inline_primary": "Miktar: %{quantity}",
+        "merchandise_quantity_label_inline": "%{merchandise_title} ×%{quantity}",
+        "optional_shipping_line_delivery_instructions_label": "Teslimat talimatları (isteğe bağlı)",
+        "add_delivery_instructions": "Teslimat talimatlarını ekleyin",
+        "edit": "Düzenlemek",
+        "delete": "Silmek",
+        "address_more": "Bu adres için daha fazla işlem",
+        "address_edit": "Adresi düzelt",
+        "address_delete": "Adresi sil",
+        "address_confirm": "Bu adresi hesabınızdan silmek istediğinizden emin misiniz?",
+        "address_form": {
+          "add_address": "Adres Ekle",
+          "save": "Kaydetmek",
+          "cancel": "İptal etmek",
+          "generic_error": "Adresiniz kaydedilirken bir sorun oluştu. Lütfen tekrar deneyin.",
+          "one_time_address_subtitle": "Bu sipariş için tek seferlik bir adres kullanın"
+        },
+        "different_shipping_method_summary": "Mevcut gönderim yöntemlerini görüntülemek için farklı bir gönderim adresi girin",
+        "invalid_shipping_method_summary": "Mevcut gönderim yöntemlerini görüntülemek için geçerli bir gönderim adresi girin",
+        "method_summary": {
+          "incomplete_address_entered": "Mevcut gönderim yöntemlerini görüntülemek için tam gönderim adresini girin",
+          "incomplete_address_selected": "Mevcut gönderim yöntemlerini görüntülemek için tam gönderim adresini seçin"
+        },
+        "local_pickup": {
+          "search_address": "Adres ara",
+          "rollup_title": "Teslim alma konumu"
+        },
+        "missing_shipping_address": "Gönderim adresi eksik"
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "Ek Bilgiler"
+        }
+      },
+      "payment": {
+        "amazon_payments_label": "Amazon Ödemesi",
+        "amazon_payments_login_hint": "Amazon ile giriş yapmanız istenecektir.",
+        "amazon_payments_logout": "Amazon Pay'den çıkış yapın",
+        "amazon_payments_failed_mfa_challenge": "Seçilen ödeme yöntemi kullanılamadı. Farklı bir yöntem seçin veya bankanızla ya da kartınızı veren kuruluşla iletişime geçin.",
+        "amazon_payments_abandoned_mfa_challenge": "Ödemeniz tamamlanamadı. Farklı bir ödeme yöntemi deneyin veya bankanızla ya da kartınızı veren kuruluşla iletişime geçin.",
+        "amazon_payments_could_not_enqueue_authorize": "Ödemeniz işlenirken bir sorun oluştu. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "title": "Ödeme",
+        "amount_left_to_pay_label": "Ödeme vadesi:",
+        "discount_button_action_label": "İndirim Kodunu Uygula",
+        "gift_card_code_label": "Hediye kartı kodu",
+        "apply_gift_card_button_label": "Uygula",
+        "gift_card_balance_label": "Denge:",
+        "supported_card_brands_more_label": "ve dahası…",
+        "detected_card_brand": "Algılanan kart markası: {brand}",
+        "credit_card_vaulting_sign_in_banner_title": "Kredi kartınızı kaydedin",
+        "credit_card_vaulting_sign_in_banner_info": "Gelecekteki satın alımlarınız için kredi kartınızı kaydetmek için giriş yapın veya bir hesap oluşturun.",
+        "credit_card_vaulting_sign_in_banner_button_label": "Giriş yapmak",
+        "ftd_vault_credit_card_label": "Daha hızlı ödeme için bu kredi kartını hesabıma kaydet",
+        "card_number_label": "Kart numarası",
+        "card_number_placeholder": "Kart numarası",
+        "card_pay_with": "İle ödemek:",
+        "card_security_notice": "Tüm işlemler güvenli ve şifrelidir.",
+        "card_security_vault_notice": "Gelecekteki ödemeler için bilgilerinize ihtiyacımız var. Tüm işlemler güvenli ve şifrelidir.",
+        "card_information_notice": "Tüm işlemler güvenli ve şifrelidir. Kredi kartı bilgileri kesinlikle saklanmaz.",
+        "name_on_card_label": "Karttaki isim",
+        "name_on_card_placeholder": "Karttaki isim",
+        "card_nickname_label": "takma ad (isteğe bağlı)",
+        "card_expired": "Günü geçmiş",
+        "card_expiry_label": "Son kullanma tarihi (AA / YY)",
+        "card_expiry_placeholder": "Son kullanma tarihi (AA / YY)",
+        "no_method_error": "Bu mağaza şu anda ödeme kabul edemiyor.",
+        "not_configured_error": "Bu mağaza şu anda ödeme kabul edemiyor.",
+        "missing_credit_card_error": "Ödemeyi tamamlamak için kart bilgilerinizi girin",
+        "billing_address_not_supported_for_payment_method_error": "Bu ödeme yöntemi, fatura adresiniz ve para biriminiz için kullanılamıyor. Lütfen farklı bir ödeme yöntemi deneyin.",
+        "generic_incorrect_card_info": "Ödeme bilgileriniz doğrulanamadı. Kart bilgilerinizi kontrol edip tekrar deneyin.",
+        "sofort_label": "Sofort banka havalesi",
+        "paypal_label": "PayPal",
+        "shop_pay_installments_label": "Alışveriş Ödeme Taksitleri",
+        "paypal_modal": {
+          "order_contains_subscriptions": "Abonelik",
+          "order_contains_fixed_selling_plans": "Toplam tutara vergiler, gönderim bedeli, ertelenmiş masraflar ve bazı indirimler dahil olmayabilir. Bugün ödenmesi gereken tutarı ödemeye devam edin."
+        },
+        "klarna_label": "Klarna",
+        "klarna_pay_later_label": "Daha sonra Klarna ile ödeyin",
+        "klarna_pay_now_label": "Şimdi Klarna ile öde",
+        "bancontact_label": "İletişimi yasakla",
+        "giropay_label": "Giropay",
+        "multibanco_label": "Multibanco",
+        "eps_label": "eps-Überweisung",
+        "klarna_slice_it_label": "Klarna ile Finans",
+        "ideal_label": "ideal",
+        "bank_picker_label": "Banka",
+        "afterpay_label": "Sonradan ödeme",
+        "cashapppay_label": "Nakit Uygulama Ödemesi",
+        "purchase_options_card_update_agreement_label_html": "Ödeme yönteminizi güncelleyerek, bu mağazanın <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">iptal politikası</a> uyarınca yinelenen veya ertelenmiş satın alma işlemleri için ödeme yetkisi vermiş olursunuz.",
+        "subscription_card_update_agreement_label": "Ödeme yöntemini değiştirmek aboneliğinizi ve gelecekte yinelenen ödemelerinizi güncelleyecektir.",
+        "subscription_agreement_label": "Sepetinizdeki bir veya daha fazla ürün, ertelenmiş veya abonelik satın alma işlemidir. Ödemenize devam ederek, ödeme işlemi bitene veya siz iptal edene kadar ödeme yönteminizden bu sayfada listelenen fiyat ve sıklıkta otomatik olarak ücretlendirileceğini kabul etmiş olursunuz. Tüm iptaller %{cancelled}'a tabidir.",
+        "subscription_agreement_cancelled": "iptal politikası",
+        "subscription_heading": "Abonelik sözleşmesi",
+        "subscription_agreement_label_html": "Aboneliği kabul ettiğimi anlıyorum. Bitene veya bitene kadar listelenen fiyat ve sıklıkta yenilenecektir.\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">iptal edildi</a>.",
+        "purchase_options_agreement_label": "Sepetinizdeki bir veya daha fazla ürün, ertelenmiş veya yinelenen bir satın alma işlemidir. Ödemenize devam ederek, ödeme işlemi bitene veya siz iptal edene kadar ödeme yönteminizden bu sayfada listelenen fiyat ve sıklıkta otomatik olarak ücretlendirileceğini kabul etmiş olursunuz. Tüm iptaller %{cancellation_policy_label}'a tabidir.",
+        "purchase_options_agreement_label_html": "Sepetimdeki bir veya daha fazla ürünün ertelenmiş veya yinelenen bir satın alma işlemi olduğunu anlıyorum. Devam ederek şunu kabul ediyorum:\n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">iptal politikası</a>\nve tarafıma, ödeme yöntemim tarafıma bildirilinceye kadar bu sayfada listelenen fiyatlar, sıklık ve tarihler üzerinden ücretlendirme yapmanıza izin veriyorum.\nSipariş yerine getirilir veya izin veriliyorsa iptal ederim.",
+        "purchase_options_agreement_label_wallets": "Ödemenize devam ederek bu sayfada listelenen gelecekteki ücretleri ve iptal politikasını kabul etmiş olursunuz.",
+        "change_currency_section_description": "Bir para birimi seçeneği seçin",
+        "no_real_orders_dev_store": "Bu mağaza gerçek siparişleri veya gerçek ödemeleri kabul edemez.",
+        "waiting_on_payment_methods": "Kullanılabilir ödeme yöntemleri alınıyor...",
+        "apple_pay_payment_error": "Ödemeniz tamamlanamadı. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "taxes_not_included": "Vergiler dahil değildir",
+        "no_taxes_banner_content": "Bu siparişten vergi alınmayacaktır. Ödemeyi aldıktan sonra artık vergi eklenemez.",
+        "paypal": {
+          "connect": "PayPal hesabınızı bağlamak için tıklayın"
+        },
+        "apple": {
+          "connect": "Apple Pay hesabınızı bağlamak için tıklayın",
+          "not_available": "Apple Pay bu tarayıcıda kullanılamıyor. Apple Pay hesabınızı bağlamak için bir Apple cihazında Safari kullanmanız gerekir."
+        },
+        "google": {
+          "connect": "Google Pay hesabınıza bağlanmak için tıklayın",
+          "error_authorizing": "Ödeme yetkisi verilirken hata oluştu"
+        },
+        "account_connected": "Hesap Bağlandı.",
+        "mor_disclaimer_html": "Aşağıya tıklayarak ve siparişinizi tamamlayarak ürünlerinizi kayıtlı satıcı olarak Global-e'den satın almayı kabul etmiş olursunuz.\nbu işlem için Global-e'nin <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">Şartlar ve Koşulları</a> uyarınca\nve <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">Gizlilik Politikası</a>. Global-e uluslararası bir şirkettir\n%{shop_name} için sipariş karşılama hizmeti sağlayıcısı",
+        "pending_payment": {
+          "due_notice": "%{amount_due} tutarındaki ödemeniz %{due_date} tarihinde yapılacak.",
+          "multibanco": {
+            "instruction_html": "Ödemenizi aşağıdaki bilgileri kullanarak Multibanco'dan veya online olarak gerçekleştirin. Sorularınız veya ödeme ayrıntılarını güncellemek için %{contact_us}.",
+            "entity": "Varlık",
+            "reference": "Referans",
+            "amount": "Miktar",
+            "find_nearest_atm": "En Yakın ATM'yi Bul"
+          }
+        },
+        "edit_credit_card_modal": {
+          "title": "Kartı düzenle",
+          "done": "Tamamlamak",
+          "cancel": "İptal etmek",
+          "description": "Kartınızın yalnızca fatura adresini değiştirebilirsiniz.",
+          "fields": {
+            "default": "Varsayılan olarak ayarla",
+            "card_number": "Kart numarası",
+            "expiry": "Son kullanma tarihi",
+            "security_code": "Güvenlik Kodu",
+            "name": "Karttaki isim",
+            "billing": "ya fatura edilecek"
+          }
+        },
+        "expired_cards_info": {
+          "one": "Hesabınızda görüntüleyip düzenleyebileceğiniz %{count} süresi dolmuş kart var.",
+          "other": "Hesabınızda görüntüleyip düzenleyebileceğiniz %{count} süresi dolmuş kart var."
+        },
+        "local_payment_method_receiver_notice": "Siparişinizi verdikten sonra ödeme detayları tarafınıza iletilecektir. Ödemeyi {{dueDays}} gün içinde ATM'den veya çevrimiçi olarak yapın.",
+        "order_edit_banner_title": "{{amount_owed}} tutarında ödeme yapılması gerekiyor",
+        "order_edit_banner_subtitle": "{{order_number}} siparişiniz güncellendi. Bu değişiklikleri inceleyin ve ardından siparişinizi onaylamak için ödeme yapın.",
+        "order_edit_banner_items_added": {
+          "one": "Katma",
+          "other": "%{count} eklendi"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "Kaldırıldı",
+          "with_quantities": "{{delta}} / {{quantity}} kaldırıldı"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "İade",
+          "with_quantities": "{{quantity}} / {{delta}} döndürüldü"
+        },
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "İadeden kaldırıldı",
+          "with_quantities": "{{delta}} dönüşten kaldırıldı"
+        },
+        "order_edit_banner_single_item_added": "Katma",
+        "order_edit_banner_multiple_items_added": "{{amount}} eklendi",
+        "order_edit_banner_single_item_removed": "Kaldırıldı",
+        "order_edit_banner_multiple_items_removed": "{{amount}} kaldırıldı",
+        "order_edit_banner_single_item_returned": "İade",
+        "order_edit_banner_multiple_items_returned": "{{amount}} geri döndü",
+        "order_edit_banner_single_item_return_line_item_removed": "İadeden kaldırıldı",
+        "order_edit_banner_multiple_items_return_line_item_removed": "{{amount}} dönüşten kaldırıldı",
+        "order_edit_banner_updated_order_label": "Güncellenmiş sipariş",
+        "gift_card_wrapper": {
+          "heading": "Hediye kartı",
+          "apply_gift_card_label": "Hediye kartı uygula",
+          "apply_another_gift_card_label": "Başka bir hediye kartı uygula",
+          "gift_card_label": "Hediye kartı %{identifier}",
+          "payment_tag": "Hediye kartı",
+          "add_label": "Hediye kartı ekle",
+          "manage_label": "Hediye kartlarını yönet"
+        },
+        "gift_card_store_credit": {
+          "add_label": "Hediye kartı veya mağaza kredisi ekleyin",
+          "manage_label": "Hediye kartlarını veya mağaza kredisini yönetin"
+        },
+        "custom_onsite_payment_method_modal": {
+          "title": "Özel Yerinde Ödeme Onayı"
+        },
+        "markets_pro_disclaimer_label": "Aşağıya tıklayarak ve siparişinizi tamamlayarak, ürününüzü/öğelerinizi bu işlem için kayıtlı satıcı olarak Global-e'den, Global-e'nin %{markets_pro_terms} ve %{privacy_policy} üzerinden satın almayı kabul edersiniz. Global-e, %{shop_name} için uluslararası bir sipariş karşılama hizmeti sağlayıcısıdır",
+        "markets_pro_disclaimer_terms_and_conditions": "Şartlar ve koşullar",
+        "markets_pro_disclaimer_privacy_policy": "Gizlilik Politikası",
+        "markets_pro_disclaimer_terms_and_conditions_title": "Kayıtlı Satıcı Hüküm ve Koşulları",
+        "markets_pro_disclaimer_privacy_policy_title": "Kayıtlı Satıcı Gizlilik Politikası",
+        "purchase_order_number": {
+          "title": "PO Numarası",
+          "label": "PO numarası (isteğe bağlı)"
+        },
+        "alternative_payment_currency_total_notice": "Not: Sizden %{amount_due} ücret alınacaktır.",
+        "pay_in_installments_split_pay_short": "%{amount} tutarında 4 ödeme"
+      },
+      "field_errors": {
+        "address_address2_contains_mathematical_symbols": "İkinci adres satırı matematiksel semboller içeremez",
+        "address_city_blank": "Bir şehir girin",
+        "address_city_too_long": "Şehir çok uzun (maksimum 255 karakter)",
+        "address_city_contains_emojis": "Şehir emoji içeremez",
+        "address_city_contains_html_tags": "Şehir HTML etiketleri içeremez.",
+        "address_city_contains_mathematical_symbols": "Şehir matematiksel semboller içeremez",
+        "address_country_blank": "Bir ülke/bölge seçin",
+        "address_country_not_supported": "Bu ülkeye veya bölgeye gönderim yapmıyoruz. Yeni bir teslimat adresi girin ve tekrar deneyin.",
+        "address_province_blank": "Bir eyalet / il seçin",
+        "address_province_invalid": "Geçerli bir eyalet/il seçin",
+        "address_company_blank": "Bir şirket adı girin",
+        "address_company_too_long": "Şirket adı çok uzun (maksimum 255 karakter)",
+        "address_company_contains_emojis": "Şirket emoji içeremez",
+        "address_company_contains_html_tags": "Şirket HTML etiketleri içeremez.",
+        "address_company_contains_mathematical_symbols": "Şirket matematiksel semboller içeremez",
+        "address_phone_blank": "Geçerli bir telefon numarası girin",
+        "address_phone_contains_emojis": "Telefon numarası emoji içeremez",
+        "address_phone_invalid": "Geçerli bir telefon numarası girin",
+        "address_zip_blank": "Posta kodunu / posta kodunu girin",
+        "address_zip_too_long": "Posta kodu/posta kodu çok uzun (maksimum 255 karakter)",
+        "address_zip_not_supported": "Bu konum desteklenmiyor.",
+        "address_zip_invalid_for_country": "%{country} için geçerli bir ZIP / posta kodu girin",
+        "address_zip_invalid_for_province": "%{province} için geçerli bir ZIP / posta kodu girin",
+        "address_zip_invalid_for_country_and_province": "%{province}, %{country} için geçerli bir ZIP / posta kodu girin",
+        "address_zip_contains_emojis": "Posta kodu/posta kodu emoji içeremez",
+        "address_zip_contains_mathematical_symbols": "Posta kodu/posta kodu matematiksel semboller içeremez",
+        "address_generic_blank": "gerekli alan",
+        "address_generic_invalid": "Geçersiz Girdi",
+        "address_generic_error": "Alan hatası",
+        "credit_card_name_blank": "Adınızı tam olarak kartınızda yazıldığı şekliyle girin",
+        "credit_card_name_invalid": "Adınızı tam olarak kartınızda yazıldığı şekliyle girin",
+        "credit_card_number_invalid": "Geçerli bir kart numarası girin",
+        "credit_card_expiry_invalid": "Geçerli bir son kullanma tarihi girin",
+        "credit_card_month_invalid": "Geçerli bir son kullanma ayı girin",
+        "credit_card_year_invalid": "Geçerli bir son kullanma yılı girin",
+        "credit_card_start_invalid": "Geçerli bir kart başlangıç ​​tarihi girin",
+        "credit_card_start_month_invalid": "Geçerli bir kart başlangıç ​​ayı girin",
+        "credit_card_start_year_invalid": "Geçerli bir kart başlangıç ​​yılı girin",
+        "credit_card_number_blank": "Bir kart numarası girin",
+        "credit_card_verification_value_blank": "Kartınızdaki CVV'yi veya güvenlik kodunu girin",
+        "delivery_line_detail_changed": "Bazı teslimat detayları değişmiş olabilir. Gönderim yönteminizi doğrulayıp tekrar deneyin.",
+        "delivery_zone_not_found": "Belirtilen bölge belirtilen ülkede bulunamadı.",
+        "reduction_code_code_not_found": "Geçerli bir indirim kodu veya hediye kartı girin",
+        "reduction_code_discount_not_found": "Geçerli bir indirim kodu girin",
+        "reduction_code_gift_card_code_invalid": "Geçerli bir hediye kartı girin",
+        "reduction_code_gift_card_unusable": "Başka bir hediye kartı satın almak için hediye kartını kullanamazsınız",
+        "reduction_code_gift_cards_not_supported_with_deferred_purchase_options": "Hediye kartları, ertelenmiş satın alma seçenekleriyle desteklenmez.",
+        "shipping_line_phone_blank": "Bu teslimat yöntemini kullanmak için bir telefon numarası girin",
+        "shipping_line_phone_invalid": "Geçerli bir telefon numarası girin",
+        "tips_invalid_tip_amount": "%{amount} değerinden daha az bir ipucu girin",
+        "gift_card_already_applied": "Bu hediye kartı siparişinize zaten uygulandı",
+        "gift_card_disabled": "Bu hediye kartı artık mevcut değil",
+        "gift_card_expired": "Bu hediye kartının süresi doldu",
+        "gift_card_depleted": "Bu hediye kartında bakiye kalmadı",
+        "gift_card_currency_mismatch": "Bu siparişte yalnızca %{checkout_currency} cinsinden hediye kartları kullanılabilir",
+        "gift_cards_not_supported_with_deferred_purchase_options": "Hediye kartları, ertelenmiş satın alma seçenekleriyle desteklenmez.",
+        "gift_card_buying_gift_card": "Başka bir hediye kartı satın almak için hediye kartını kullanamazsınız",
+        "payment_gateway_needs_paid_plan_error": "Bu ödeme yöntemi şu anda mağazada kullanılamıyor",
+        "payment_gateway_not_in_test_mode": "siparişleri test edecek şekilde ayarlanmadı. Bu mağaza gerçek siparişleri veya gerçek ödemeleri kabul edemez.",
+        "payment_gateway_incompatible_with_multi_currency": "Bu ödemeyi yerel para biriminizde tamamlamak için kredi kartıyla ödeme yapmanız gerekir.",
+        "payment_gateway_unsupported_for_subscriptions": "Bu ödeme yöntemi abonelik siparişleri için kullanılamaz.",
+        "payment_gateway_unsupported_for_deferred_purchase_options": "Bu ödeme yöntemi, ertelenmiş satın alma seçenekleri için kullanılamaz.",
+        "payment_gateway_unsupported_for_country": "Bu ödeme yöntemi gönderimin yapıldığı ülke için mevcut değildir.",
+        "payment_gateway_unsupported_for_development_store_html": "Test siparişi vermek için bir test ödeme ağ geçidi kullanmanız gerekir. <a href=\"%{docs_link}\">Geliştirme mağazalarındaki siparişleri test etme</a> hakkında daha fazla bilgi edinin.",
+        "payment_gateway_unsupported_for_order_above_maximum_orders_html": "Bu ödeme işlemcisiyle geliştirme mağazası siparişleri sınırına ulaştınız. Başka bir sipariş vermek için bir test ödeme ağ geçidi kullanmanız gerekir. <a href=\"%{docs_link}\">Geliştirme mağazalarındaki siparişleri test etme</a> hakkında daha fazla bilgi edinin.",
+        "purchase_options_agreement_blank": "Satın alma işleminize devam etmek için ertelenmiş veya yinelenen satın alma koşullarını kabul edin.",
+        "physical_gift_card_invalid_quantity": "Fiziksel hediye kartı satır öğelerinin, hediye kartı kodlarının sayısıyla eşleşen bir miktarı olması gerekir.",
+        "physical_gift_card_duplicate_code": "Fiziksel hediye kartı satır öğesi yinelenen kod içeriyor.",
+        "physical_gift_card_invalid_code": "Fiziksel hediye kartı kodu geçersiz.",
+        "email_blank": "Bir e-posta girin",
+        "phone_blank": "Telefon numarası girin",
+        "address_country_invalid": "Listeden bir ülke/bölge seçin",
+        "address_zip_invalid": "Geçerli bir ZIP / posta kodu girin",
+        "gift_card_invalid": "Hediye kartı \"••••%{last_four_characters}\" artık geçerli değil",
+        "vaulting_agreement_blank": "Devam etmek için yeni kredi kartınızı kaydetmeniz gerekiyor çünkü bu siparişin ödemesi daha sonraki bir tarihte gerçekleştirilecektir.",
+        "sms_marketing_phone_invalid": "Geçerli bir telefon numarası girin",
+        "address_suggestion_did_you_mean_html": "%{html} mı demek istediniz?"
+      },
+      "store_credit_errors": {
+        "generic_error": "Mağaza kredinizle ilgili bir sorun oluştu. Tekrar deneyin veya sayfayı yeniden yükleyin."
+      },
+      "redeemable_errors": {
+        "gift_card": {
+          "duplicate": "Hediye kartı siparişinize zaten uygulandı",
+          "insufficient_funds": "Bu hediye kartında bakiye kalmadı",
+          "expired": "Bu hediye kartının süresi doldu",
+          "not_available": "Bu hediye kartı artık mevcut değil",
+          "invalid": "Geçerli bir hediye kartı girin",
+          "currency_mismatch": "Yalnızca %{shop_currency} cinsinden hediye kartları kabul edilir",
+          "generic": "Hediye kartı ödeme sayfasına eklenemedi",
+          "throttle_limit_exceeded": "Maksimum deneme sayısını aştınız. Daha sonra tekrar deneyin."
+        }
+      },
+      "payment_errors": {
+        "amount_too_small": "Minimum ödeme tutarı 0,50 USD'den yüksek olmalıdır. Lütfen daha yüksek bir tutarla tekrar deneyin.",
+        "method_not_available": "İstenilen ödeme yöntemi kullanılamıyor.",
+        "available_methods_updated": "Mevcut ödeme yöntemleri güncellendi.",
+        "generic_error": "Ödemeniz işlenirken bir sorun oluştu. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "rejected_transaction": "Ödemeniz reddedildi. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "credit_card_processing": "Ödemeniz teknik nedenlerden dolayı işlenemiyor. Birkaç dakika sonra tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "checkout_amount_changed": "Ödeme sırasında ödenmesi gereken tutar değiştiği için ödemeniz işlenemedi. Lütfen siparişinizi kontrol edip tekrar deneyin.",
+        "deferred_payment_not_allowed": "Ertelenmiş ödemelere izin verilmez. Lütfen siparişinizi kontrol edip tekrar deneyin.",
+        "deferred_payment_required": "Bu sipariş ertelenmiş bir ödeme gerektiriyor. Lütfen siparişinizi kontrol edip tekrar deneyin.",
+        "deferred_amount_changed": "Ertelenen ödeme tutarı değiştiğinden ödemeniz işleme koyulamadı. Lütfen siparişinizi kontrol edip tekrar deneyin.",
+        "deferred_date_changed": "Ertelenen ödeme tarihi değiştiği için ödemeniz işleme alınamadı. Lütfen siparişinizi kontrol edip tekrar deneyin.",
+        "order_total_changed": "Sipariş toplamınız değiştiği için ödemeniz işleme alınamadı. Sipariş toplamınızı kontrol edip tekrar deneyin.",
+        "payment_processing": "Ödemeniz teknik nedenlerden dolayı işlenemiyor. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "payment_processing_no_retry": "Ödemeniz teknik nedenlerden dolayı işlenemiyor. Lütfen farklı bir ödeme yöntemi deneyin.",
+        "paypal_zero_amount": "%{amount} siparişleri için PayPal'ı kullanamazsınız. Siparişinizin doğru olduğunu onaylayın ve PayPal olmadan ödeme yapın.",
+        "paypal_invalid_token": "PayPal mevcut değildi. Tekrar deneyin veya farklı bir ödeme seçeneği kullanın.",
+        "pay_later_failed": "Daha sonra öde ile ödemeniz işlenirken bir hata oluştu. Başka bir ödeme yöntemi seçip tekrar deneyin.",
+        "three_d_secure_failed": "Ödemeniz doğrulanamadı. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "three_d_secure_failed_duplicate": "Kredi kartının 3D Secure kimlik doğrulaması başarısız oldu çünkü bir başkası zaten devam ediyor.",
+        "three_d_secure_throttled": "Çok fazla deneme; tekrar denemeden önce lütfen bekleyin",
+        "subscription_agreement_blank": "Abonelik satın almak için ödeme ayrıntılarınızın kaydedilmesi gerekir. Devam etmek için siparişinizdeki abonelik öğelerini kabul ettiğinizi veya kaldırdığınızı onaylayın.",
+        "insufficient_funds": "Yetersiz bakiye nedeniyle ödemeniz reddedildi. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "multiple_deferred_payment_not_allowed": "Talep başına yalnızca bir ertelenmiş ödemeye izin verilir. Lütfen isteğinizi kontrol edip tekrar deneyin.",
+        "shipping_must_match_billing": "Fatura adresi teslimat adresiyle eşleşmelidir. Lütfen farklı bir ödeme yöntemi kullanın.",
+        "decision_rule_block": "Ödemeniz işlenirken bir sorun oluştu. Lütfen mağaza sahibiyle iletişime geçin.",
+        "pick_up_card": "Kartınız reddedildi. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "cannot_verify": "Ödeme bilgileriniz doğrulanamadı. Kart bilgilerinizi kontrol edip tekrar deneyin.",
+        "invalid_number": "Geçerli bir kart numarası girin",
+        "invalid_expiry_date": "Geçerli bir son kullanma tarihi girin",
+        "invalid_cvc": "Geçerli bir güvenlik kodu girin",
+        "expired_card": "Kartınızın kullanım süresi doldu. Farklı bir ödeme yöntemi kullanın.",
+        "card_declined": "Kartınız reddedildi. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "processing_error": "Ödemeniz işlenirken bir sorun oluştu. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "processing_error_checkout_as_guest": "Ödemeniz işlenirken bir sorun oluştu. Farklı bir ödeme yöntemiyle veya {{checkout_as_guest_link}} ile tekrar deneyin.",
+        "selected_payment_method": "Seçtiğiniz ödeme yöntemiyle ilgili bir sorun oluştu ve sizden herhangi bir ödeme alınmadı. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "payment_method_billing_address": "Seçtiğiniz ödeme yönteminin fatura adresiyle ilgili bir sorun oluştu ve sizden herhangi bir ödeme alınmadı. Adresi kontrol edip tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "call_issuer": "Kartınız reddedildi. Daha fazla bilgi için farklı bir ödeme yöntemi kullanın veya bankanızla iletişime geçin.",
+        "test_mode_live_card": "Bu mağaza gerçek siparişleri veya gerçek ödemeleri kabul edemez.",
+        "transient_error": "Ödemeniz işleme koyulurken bir sorun oluştu. Bu sayfayı yenilemeyi deneyin veya internet bağlantınızı kontrol edin.",
+        "missing_shipping_address": "Gönderim adresiniz eksik olduğundan ödemeniz işleme koyulamadı. Bir gönderim adresi ekleyin ve tekrar deneyin.",
+        "invalid_shipping_address": "Gönderim adresinizi bulamadığımız için ödemeniz işleme koyulamadı. Gönderim adresinizi kontrol edip tekrar deneyin.",
+        "successful_offsite_with_gift_card_error": "Hediye kartı ödemeniz işlenirken bir sorun oluştu. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+        "development_store_order_limit_reached": "Bu ödeme işlemcisiyle geliştirme mağazası siparişleri sınırına ulaştınız. Başka bir sipariş vermek için bir test ödeme ağ geçidi kullanmanız gerekir. %{development_store_order_testing_docs_link} hakkında daha fazla bilgi edinin.",
+        "development_store_with_order_limit": "Test siparişi vermek için bir test ödeme ağ geçidi kullanmanız gerekir. %{development_store_order_testing_docs_link} hakkında daha fazla bilgi edinin.",
+        "development_store_order_testing_docs_link": "Geliştirme mağazalarındaki siparişleri test etme"
+      },
+      "shipping_errors": {
+        "shipping_method": "Siparişinizin kargo seçenekleri değişti. Seçiminizi gözden geçirin ve tekrar deneyin.",
+        "shipping_method_not_available": "Sepetiniz güncellendiğinden eklediğiniz ürünler adresinize gönderilemiyor. Siparişinizi tamamlamak için ürünleri çıkarın.",
+        "shipping_method_not_available_generic": {
+          "one": "Siparişiniz seçilen adrese gönderilemiyor. Doğru olduğundan emin olmak için adresinizi inceleyip tekrar deneyin veya farklı bir adres seçin.",
+          "other": "Sepetinizdeki bazı ürünler girdiğiniz adrese gönderilemiyor. Doğru olduğundan emin olmak için adresinizi inceleyip tekrar deneyin veya farklı bir adres seçin."
+        },
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "Sepetteki ürünler gönderime hak kazanmak için gereken fiyat veya ağırlık gereksinimlerini karşılamıyor. Sepetinizi güncelleyin ve tekrar deneyin.",
+        "shipping_method_not_available_updated": {
+          "one": "Eklediğiniz ürün konumunuza gönderilmiyor. Kontrol etmek için çıkarın veya mağazayla iletişime geçin.",
+          "other": "Eklediğiniz bir veya daha fazla öğe konumunuza gönderilmiyor. Kontrol etmek için bunları kaldırın veya mağazayla iletişime geçin."
+        },
+        "payment_method_not_supported": "%{country} için bu ödeme yöntemini kullanamazsınız. Bu ülkeye gönderim yapmak için lütfen farklı bir ödeme yöntemi kullanın.",
+        "empty_state": "Mevcut gönderim yöntemlerini görüntülemek için gönderim adresinizi girin.",
+        "title": "Nakliye mevcut değil"
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "Hızlı ödeme",
+        "or": "VEYA",
+        "show_more_options": "Daha fazla seçenek göster",
+        "hide_more_options": "Daha fazla seçeneği gizle"
+      },
+      "post_purchase": {
+        "page_title": "Satış sonrası",
+        "title": "Satış sonrası",
+        "escape_confirmation": "Siparişiniz için ödeme yaptınız.",
+        "escape_action": "Sipariş onayını görüntüleyin ›",
+        "components": {
+          "close": "Kapalı",
+          "expand": "Daha fazla göster",
+          "processing": "İşleme…",
+          "submit": "Göndermek"
+        }
+      },
+      "processing": {
+        "redirecting_page_title": "Yönlendiriliyor…",
+        "redirecting_title": "Yönlendiriliyor…",
+        "redirecting_notice": "Sizi yönlendirirken bekleyin.",
+        "complete_your_purchase_title": "Satın alma işleminizi tamamlayın",
+        "continue_to_payment_gateway_notice": "Ödeme bilgilerinizi eklemek için ödemeye devam edin.",
+        "continue_to_payment_gateway_button_label": "Ödeme devam",
+        "complete_your_purchase_title_error": "Ödeme bilgilerinizi düzeltin",
+        "continue_to_payment_gateway_notice_error": "Ödeme bilgileriniz doğrulanamadı.",
+        "continue_to_payment_gateway_button_label_error": "Ödeme bilgilerini güncelle",
+        "page_title": "Sipariş işleniyor",
+        "title": "Sipariş işleniyor",
+        "your_order_has_been_received_title": "Siparişiniz için teşekkürler",
+        "you_will_receive_confirmation": "Şu anda çok fazla sipariş alıyoruz. Yakında e-posta veya metin yoluyla onay alacaksınız. Eğer bir saat içinde elinize ulaşmazsa bize bildirin.",
+        "you_will_not_be_charged": "Henüz sizden ödeme alınmayacaktır",
+        "wait": {
+          "short": "Siparişiniz işleniyor.",
+          "medium": {
+            "one": "Siparişiniz işleniyor. Tahmini bekleme süresi %{count} dakikadır.",
+            "other": "Siparişiniz işleniyor. Tahmini bekleme süresi %{count} dakikadır."
+          },
+          "long": "Siparişiniz işleme alınır alınmaz bir e-posta alacaksınız. Şu anda yoğun bir sipariş var.",
+          "no_auto_refresh_html": "Otomatik olarak yönlendirilmezseniz %{link}.",
+          "refresh_this_page": "bu sayfayı yenile"
+        },
+        "action_required": "Eylem Gerekli"
+      },
+      "failed_payment": {
+        "page_title": "Ödeme işlenemedi",
+        "title": "Ödeme işlenemedi",
+        "payment_not_processed_title": "Ödemeniz işlenemedi",
+        "payment_not_processed_text": "Sizden herhangi bir ücret alınmadı. Satın alma işleminizi tamamlamak için sepetinize dönün.",
+        "return_to_cart_button_label": "Sepete dön"
+      },
+      "payment_gateway": {
+        "credit_card_label": "Kredi kartı",
+        "bank_deposit_label": "Mevduat hesabı",
+        "cash_on_delivery_label": "Teslimatta Nakit Ödeme (COD)",
+        "money_order_label": "Para düzeni",
+        "debit_card_label": "Banka kartı",
+        "deferred_payment_label": "Ödeme yöntemini daha sonra seçin",
+        "fixed_payment_label": "Ödemeniz {{dueDate}} tarihinde yapılacak.",
+        "generic_payment_terms": "{{translatedName}} şartlarındasınız. Ödemeniz {{dueDate}} tarihinde yapılacak.",
+        "login_prompt": {
+          "no_access": {
+            "message": "Kayıtlı ödeme yöntemlerini eklemek veya kullanmak için bu konuma erişimi olan bir hesaba {{logIn}}.",
+            "link": "Giriş yapmak"
+          }
+        },
+        "direct_payment_terms": "{{translatedName}} şartlarındasınız. {{dueDate}} tarihinde kartınızdan ödeme alınacaktır.",
+        "fixed_direct_payment_terms": "{{dueDate}} tarihinde kartınızdan ödeme alınacaktır.",
+        "order_due_on_fulfillment_choose_later": "Siparişiniz yerine getirildikten sonra ödemeniz yapılacaktır.",
+        "order_due_on_fulfillment_payment": "Siparişiniz yerine getirildikten sonra kartınızdan ödeme alınacaktır.",
+        "draft_order_payment_due_later_no_terms": "Siparişiniz onaylandıktan sonra ödemeniz yapılacaktır.",
+        "draft_order_payment_due_later_no_terms_payment_selected": "Siparişiniz onaylandıktan sonra kartınızdan ödeme alınacaktır.",
+        "draft_order_payment_due_later_terms": "Siparişiniz onaylandıktan sonra {{translatedName}} şartlarda olacaksınız.",
+        "draft_order_payment_due_on_fulfillment": "Siparişiniz onaylanıp yerine getirildikten sonra ödemeniz yapılacaktır."
+      },
+      "thank_you": {
+        "title": "Satın aldığınız için teşekkür ederiz!",
+        "confirmation_email_sent_text": "%{email} adresine bir onay e-postası gönderildi",
+        "return_to_store_link_label": "Alışverişe devam",
+        "print_link_label": "Makbuzu yazdır",
+        "payment_information_title": "Ödeme bilgileri",
+        "shipping_information_title": "Nakliye Bilgisi",
+        "page_title": "Teşekkür ederiz %{display_name}!",
+        "page_title_no_name": "Teşekkür ederim!",
+        "purchase_order_number_title": "PO numarası #%{purchase_order_number}",
+        "cancelled_page_title": "Sipariş iptal edildi",
+        "failed_pending_payment_page_title": "Ödemenizle ilgili bir sorun var",
+        "customer_information_title": "Sipariş detayları",
+        "contact_information_title": "İletişim bilgileri",
+        "billing_address_title": "Fatura Adresi",
+        "company_location_title": "Konum",
+        "shipping_address_title": "Gönderi Adresi",
+        "shipping_address_map_title": "Gönderim adresinin kesin noktasını gösteren Google haritası: %{address}",
+        "payment_method_title": "Ödeme yöntemi",
+        "shipping_method_title": "Nakliye Yöntemi",
+        "tracking_number": "Takip numarası:",
+        "company_tracking_number": "%{company} takip numarası:",
+        "estimated_arrival": "Tahmini Teslim Tarihi:",
+        "estimated_delivery": "Mevcut teslimat tahmini:",
+        "re-order": "Aynı öğeleri yeniden sipariş edin",
+        "confirmed": "Onaylanmış",
+        "gift_card_confirmation_by_text": "Mesajı almadıysanız mesajı tekrar gönderin veya bizimle iletişime geçin.",
+        "gift_card_confirmation_by_email": "Eğer e-postayı almadıysanız, e-postayı tekrar gönderin veya bizimle iletişime geçin.",
+        "gift_card_title": "Hediye Kartları",
+        "resend_gift_cards": "Hediye kartlarını yeniden gönder",
+        "thank_you_title": "Siparişiniz onaylandı",
+        "thank_you_title_payment": "Ödemeniz onaylandı",
+        "thank_you_title_review": "Siparişiniz incelenmek üzere gönderildi",
+        "thank_you_title_payments_app_pending_default": "Ödemeniz işleniyor",
+        "thank_you_title_payments_app_pending_buyer_action_required": "Siparişiniz alındı",
+        "thank_you_title_payments_app_failed_pending_payment": "Ödemeniz işlenemedi",
+        "thank_you_confirmed_order_with_email": "Kısa süre içinde sipariş numaranızı içeren bir onay e-postası alacaksınız.",
+        "thank_you_confirmed_order_with_phone": "Kısa süre içinde sipariş numaranızı içeren bir onay metni alacaksınız.",
+        "thank_you_confirmed_order_with_email_and_phone": "Kısa süre içinde sipariş numaranızı içeren bir onay e-postası alacaksınız.",
+        "thank_you_confirmed_order_with_email_payment": "%{date} siparişiniz için ödeme yaptınız.",
+        "thank_you_confirmed_order_with_phone_payment": "%{date} siparişiniz için ödeme yaptınız.",
+        "thank_you_confirmed_order_with_email_and_phone_payment": "%{date} siparişiniz için ödeme yaptınız.",
+        "thank_you_confirmed_order_with_email_pick_up": "Siparişiniz teslim alınmaya hazır olduğunda bir e-posta alacaksınız.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Siparişiniz teslim alınmaya hazır olduğunda bir kısa mesaj alacaksınız.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Siparişiniz teslim alınmaya hazır olduğunda bir e-posta alacaksınız.",
+        "thank_you_confirmed_order_with_missing": "Sipariş onayını almak için e-posta veya telefon yoluyla bizimle iletişime geçin.",
+        "thank_you_confirmed_order_with_missing_payment": "Sipariş onayını almak için e-posta veya telefon yoluyla bizimle iletişime geçin.",
+        "thank_you_confirmed_order_with_missing_pick_up": "Sipariş onayını almak için e-posta veya telefon yoluyla bizimle iletişime geçin.",
+        "thank_you_confirmed_order_with_draft": "Daha fazla bilgiye ihtiyacımız olursa veya siparişiniz onaylandığında sizi bilgilendireceğiz.",
+        "thank_you_confirmed_order_with_draft_payment": "Daha fazla bilgiye ihtiyacımız olursa veya siparişiniz onaylandığında sizi bilgilendireceğiz.",
+        "thank_you_confirmed_order_with_draft_pick_up": "Daha fazla bilgiye ihtiyacımız olursa veya siparişiniz onaylandığında sizi bilgilendireceğiz.",
+        "thank_you_payments_app_failed_pending_payment": "Siparişiniz için sizden ücret alınmadı. Siparişinizi incelemek ve tekrar ödeme yapmak için sepetinize dönün.",
+        "thank_you_payments_app_failed_pending_payment_payment": "Siparişiniz için sizden ücret alınmadı. Siparişinizi incelemek ve tekrar ödeme yapmak için sepetinize dönün.",
+        "thank_you_payments_app_failed_pending_payment_pick_up": "Siparişiniz için sizden ücret alınmadı. Siparişinizi incelemek ve tekrar ödeme yapmak için sepetinize dönün.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "Ödemenizi tamamladıktan sonra bir onay e-postası alacaksınız. Shop uygulamasını kullanarak siparişinizi takip edin.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email": "Ödemenizi tamamladıktan sonra bir onay e-postası alacaksınız. Shop uygulamasını kullanarak siparişinizi takip edin.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "Ödemenizi tamamladıktan sonra bir onay e-postası alacaksınız. Shop uygulamasını kullanarak siparişinizi takip edin.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "Ödemenizi tamamladıktan sonra bir onay e-postası alacaksınız. Shop uygulamasını kullanarak siparişinizi takip edin.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone": "Ödemenizi tamamladıktan sonra bir onay metni alacaksınız. Shop uygulamasını kullanarak siparişinizi takip edin.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "Ödemenizi tamamladıktan sonra bir onay metni alacaksınız. Shop uygulamasını kullanarak siparişinizi takip edin.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "Ödemenizi tamamladıktan sonra bir onay metni alacaksınız. Shop uygulamasını kullanarak siparişinizi takip edin.",
+        "order_status_payments_app_failed_pending_payment": "Siparişiniz için sizden ücret alınmadı. Siparişinizi incelemek ve tekrar ödeme yapmak için sepetinize dönün.",
+        "order_status_payments_app_failed_pending_payment_payment": "Siparişiniz için sizden ücret alınmadı. Siparişinizi incelemek ve tekrar ödeme yapmak için sepetinize dönün.",
+        "order_status_payments_app_failed_pending_payment_pick_up": "Siparişiniz için sizden ücret alınmadı. Siparişinizi incelemek ve tekrar ödeme yapmak için sepetinize dönün.",
+        "order_status_confirmed_order_local": "Siparişinizi teslimata hazır hale getiriyoruz.",
+        "order_status_confirmed_order_local_pick_up": "Siparişinizi hazırlıyoruz.",
+        "order_status_confirmed_order_local_payment": "Siparişinizi hazırlıyoruz.",
+        "order_status_updates_with_email": "Gönderim ve teslimat güncellemelerini e-postayla alacaksınız.",
+        "order_status_updates_with_phone": "Gönderim ve teslimat güncellemelerini kısa mesajla alabilirsiniz.",
+        "order_status_updates_with_email_and_phone": "Gönderim ve teslimat güncellemelerini e-postayla alacaksınız.",
+        "order_status_updates_with_missing": "Gönderim güncellemelerini nasıl almak istediğinizi seçin.",
+        "order_status_confirmed_with_installments_payment_return": "Lütfen dikkatinizi tekrar satış temsilcisine verin.",
+        "order_status_confirmed_with_installments_payment_confirm": "Kısa süre içinde sipariş numaranızı ve taksit planınızın ayrıntılarını içeren bir onay e-postası alacaksınız.",
+        "confirmed_title": "Siparişiniz onaylandı",
+        "confirmed_description": "Siparişinizi kabul ettik, hazırlanıyoruz. Gönderi durumunuzla ilgili güncellemeler için bu sayfaya geri dönün.",
+        "ready_for_pickup_title": "Siparişiniz teslim alınmaya hazır",
+        "ready_for_pickup_description": "Siparişiniz teslim alınmaya hazır. Lütfen siparişinizi teslim alırken sipariş onayınızı yanınızda getiriniz.",
+        "ready_for_delivery_title": "Siparişiniz teslimata hazır",
+        "ready_for_delivery_description": "Siparişinizi hazırladık.",
+        "order_updates_title": "sipariş güncellemeleri",
+        "shop_phone_description": "Siparişinizi takip etmenize yardımcı olacak Shop uygulamasının bağlantısını içeren bir kısa mesaj alacaksınız.",
+        "order_updates_description_html": "Güncellemeler %{customer_contact} adresine gönderilecek",
+        "order_updates_current_step_prefix": "Geçerli adım:",
+        "order_updates_past_step_prefix": "Geçmiş adım:",
+        "order_updates_upcoming_step_prefix": "Yaklaşan adım:",
+        "in_transit": "Yolunda",
+        "in_transit_title": "Siparişiniz yolda",
+        "in_transit_description": "İlerleme durumuyla ilgili güncellemeler alacaksınız.",
+        "in_transit_description_days": "Siparişinizi önümüzdeki %{number} gün içinde alacaksınız.",
+        "in_transit_description_today": "Siparişinizi bugün almalısınız.",
+        "in_transit_description_tomorrow": "Siparişinizi ertesi gün teslim almalısınız.",
+        "no_tracking_number": "Bu siparişin takip numarası yok.",
+        "out_for_delivery": "dağıtıma çıkmış",
+        "out_for_delivery_title": "Siparişiniz teslimata çıktı",
+        "out_for_delivery_description_html": "Siparişiniz yolda ve bugün ulaşması gerekiyor. Önümüzdeki 2 gün içinde teslim edilmezse %{contact_us}.",
+        "out_for_delivery_local_title": "Siparişiniz teslimata çıktı",
+        "out_for_delivery_local_description_html": "Siparişiniz yakında gelecektir.",
+        "attempted_delivery": "Teslim edilmeye çalışıldı",
+        "attempted_delivery_title": "Siparişiniz teslim edilmeye çalışıldı",
+        "attempted_delivery_description_html": "Siparişiniz teslim edilmeye çalışıldı ancak başarısız oldu. Başka bir teslimat denemesi düzenlemek için %{contact_us}.",
+        "attempted_delivery_local_title": "Teslimatı kaçırdım",
+        "attempted_delivery_local_description_html": "Siparişinizi teslim edemedik. Başka bir teslimat planlamak için %{contact_us}.",
+        "delivered": "Teslim edilmiş",
+        "delivered_title": "Siparişiniz teslim edildi",
+        "qr_code": {
+          "send_link_to_phone": "Veya telefonunuza bir bağlantı gönderin",
+          "title": "Telefonunuzda takip edin"
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "Telefonunuzla tarayın"
+          },
+          "sms": {
+            "title": "Veya telefonunuza bir bağlantı gönderin"
+          }
+        },
+        "view_business_customer_account": "Hesabı görüntüle",
+        "breadcrumbs_submitted": "Gönderilen",
+        "breadcrumbs_in_review": "İncelemede",
+        "breadcrumbs_confirmed": "Onaylanmış",
+        "missing_shipping_address_banner": {
+          "title": "Siparişin teslimat adresi yok",
+          "text_html": "Adresinizi eklemek için %{contact_us}",
+          "contact_us": "Bize Ulaşın"
+        },
+        "first_payment_complete": "İlk ödeme tamamlandı",
+        "in_store_purchase": "Mağaza içi satın alma",
+        "location_title": "Konum",
+        "thank_you_ready_for_picked_up": "Siparişiniz %{address} tarihinde teslim alındı.",
+        "ready_for_delivery": "Teslimata hazır",
+        "order_updates_subscribe_to_email_notifications_failed": "Bu e-postayı güncellemeler için saklayamayız. Lütfen tekrar deneyin veya başka bir e-posta kullanın.",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "Girdiğiniz e-posta zaten mevcut.",
+        "subscriptions_management": {
+          "title": "Abonelik",
+          "description": "Aboneliklerinizi görüntülemek ve yönetmek için hesabınıza devam edin.",
+          "button_label": "Aboneliğinizi Yönetin"
+        },
+        "manage_order_label": "Siparişinizi yönetin",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "Birkaç dakika içinde hediye kartınızı içeren bir mesaj alacaksınız.",
+          "other": "Birkaç dakika içinde hediye kartlarınızı içeren bir mesaj alacaksınız."
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "Birkaç dakika içinde hediye kartınızı içeren bir e-posta alacaksınız.",
+          "other": "Birkaç dakika içinde hediye kartlarınızı içeren bir e-posta alacaksınız."
+        },
+        "gift_card_email_title": {
+          "one": "Hediye kartı e-postayla gönderildi",
+          "other": "Hediye kartları e-postayla gönderildi"
+        },
+        "gift_card_text_title": {
+          "one": "Hediye kartı kısa mesajla gönderildi",
+          "other": "Hediye kartları kısa mesajla gönderildi"
+        },
+        "resend_gift_cards_by_email": "Elektronik postayı tekrar gönder",
+        "resend_gift_cards_by_text": "Kısa mesajı yeniden gönder",
+        "gift_card_resent_confirmation": {
+          "one": "Hediye kartı yeniden gönderildi.",
+          "other": "Hediye kartları yeniden gönderildi."
+        },
+        "gift_card_resend_failure": {
+          "one": "Hediye kartınız yeniden gönderilirken bir sorun oluştu. Tekrar deneyin veya bizimle iletişime geçin.",
+          "other": "Hediye kartlarınız yeniden gönderilirken bir sorun oluştu. Tekrar deneyin veya bizimle iletişime geçin."
+        }
+      },
+      "vaulted": {
+        "change_button": "Değiştirmek"
+      },
+      "review": {
+        "title": "Gözden geçirmek",
+        "review_title": "İncele ve öde",
+        "checkout_as_guest": "Misafir olarak ödeme yap",
+        "checkout_a_different_way": "Farklı bir şekilde ödeme yapın",
+        "blocks": {
+          "contact_method_title": "Temas etmek",
+          "billing_address_title": "Faturalandırma",
+          "shipping_address_title": "Alıcı",
+          "shipping_method_title": "Nakliye Yöntemi",
+          "payment_method_title": "Ödeme yöntemi",
+          "change_link_label": "Değiştirmek",
+          "change_contact_method_link_label": "İletişim bilgilerini değiştir",
+          "change_billing_address_link_label": "Fatura adresini değiştir",
+          "change_shipping_address_link_label": "nakliye adresini değiştir"
+        }
+      },
+      "order_payment_collection": {
+        "order_updated_on": "Siparişiniz %{last_edited_at} tarihinde güncellendi.",
+        "order_review_and_pay": "Siparişiniz güncellendi. Siparişinizi onaylamak için inceleyin ve ödeme yapın.",
+        "pay_now": "Şimdi öde"
+      },
+      "change_currency": {
+        "currency_button_label": "%{currency} (%{currency_symbol})",
+        "credit_card_will_be_charged_html": "Kredi kartınızdan %{amount} ödeme alınacak",
+        "payment_total_label": "Ödeme toplamı",
+        "conversion_rate": "1 %{from_currency_code} = %{rate} %{to_currency_code}",
+        "change_currency_link": "%{currency_name} olarak değiştir",
+        "card_provider_fx_charges_warning": "Kart sağlayıcınız %{currency_code} işlemlerde ücret alabilir.",
+        "currency_not_supported_by_shop": "Seçtiğiniz para birimi artık kullanılamıyor. Tüm fiyatlar artık %{currency_code} cinsindendir."
+      },
+      "change_country": {
+        "cart_updated_based_on_country": "Sepetiniz gönderim yaptığınız ülkeye göre güncellendi.",
+        "cart_and_currency_updated_based_on_country": "Sepetiniz ve para biriminiz gönderim yaptığınız ülkeye göre güncellendi."
+      },
+      "change_cart_localization": {
+        "verify_shipping_address": "Ülkeniz/bölgeniz güncellendi. Ödeme işlemine devam etmek için teslimat adresinizi girin."
+      },
+      "tips": {
+        "title": "İpucu ekle",
+        "description": "%{shop_name} adresinde takıma desteğinizi gösterin",
+        "presets_description": "Bir bahşiş yüzdesi seçin",
+        "custom_label": "Özel ipucu",
+        "add_tip": "İpucu ekle",
+        "update_tip": "İpucunu güncelle",
+        "message": "Teşekkür ederiz, minnettarız.",
+        "preset_label": "%{tip_percent}%",
+        "no_tip_label": "Hiçbiri"
+      },
+      "open_graph_meta_tag": {
+        "title_with_products": {
+          "zero": "%{product_name} satın al",
+          "one": "%{product_name} ve %{count} diğer ürünü satın alın",
+          "other": "%{product_name} ve %{count} diğer öğeleri satın alın"
+        }
+      },
+      "subscriptions": {
+        "recurring_total_intervals": {
+          "day": {
+            "one": "gün",
+            "other": "%{count} gün"
+          },
+          "week": {
+            "one": "hafta",
+            "other": "%{count} hafta"
+          },
+          "month": {
+            "one": "ay",
+            "other": "%{count} ay"
+          },
+          "year": {
+            "one": "yıl",
+            "other": "%{count} yıl"
+          }
+        },
+        "recurring_totals": "%{total_price} her %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "İlk ödeme %{total_price_with_discount}, ardından %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "İlk ödeme %{total_price}",
+            "other": "İlk %{count} ödemelerin her biri %{total_price}"
+          },
+          "following_cycles": ", ardından her %{interval}'de %{total_price}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": ", ardından %{total_price}'de %{count} ödemesi",
+            "other": ", ardından her biri %{total_price} tutarında %{count} ödemesi"
+          }
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "Ödeme metodları",
+        "title": "Ödeme metodları",
+        "update_card_button_label": "Güncelleme kartı",
+        "delete_customer_mandate": {
+          "generic_error": "İsteğiniz işlenirken bir sorun oluştu.",
+          "success_message": "Ödeme yönteminiz başarıyla silindi"
+        }
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "Çok fazla deneme",
+          "description": "Lütfen birkaç dakika içinde tekrar deneyin"
+        },
+        "line_to_check_out": "Ödeme yapmak için sıradasınız",
+        "cart_summary_heading": "Sepetiniz",
+        "merchandise": {
+          "available": "Mevcut"
+        }
+      },
+      "pickup_point": {
+        "geolocation": {
+          "shared_location_button": "Konumumu kullan",
+          "errors": {
+            "unsuported_by_browser": "Coğrafi konumun alınması tarayıcınız tarafından desteklenmiyor. Tekrar deneyin veya farklı bir tarayıcı kullanın.",
+            "permission_not_allowed": "Konumunuzu paylaşmaya izin verin.",
+            "permission_denied": "Konumunuz alınamadı. Tekrar deneyin."
+          }
+        }
+      },
+      "error_page": {
+        "terminal": {
+          "title": "Ödememizde bir sorun oluştu",
+          "message": "Bu sayfayı yenileyin veya birkaç dakika sonra tekrar deneyin",
+          "action": {
+            "cta": "Sayfayı yenile"
+          },
+          "request_id": "İstek Kimliği: {{requestId}}"
+        }
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Sepete dön",
+        "return_to_cart_to_update_quantities": "Miktarları güncellemek için %{return_to_cart_link_text}",
+        "subscription_changed": "Aboneliklerinizden biri değişti.",
+        "company_location_changed": "Sepetiniz güncellendi. Siparişinizi göndermeden önce inceleyin.",
+        "company_location_changed_product_removed": "Bazı ürünler bu lokasyonda mevcut olmadığından sepetiniz güncellendi. Siparişinizi göndermeden önce inceleyin.",
+        "violations_title": "{{violation}} eksik veya geçersiz",
+        "individual_violations_title": {
+          "DeliveryViolations": "Gönderi Adresi",
+          "PaymentViolations": "Fatura Adresi",
+          "OtherViolations": "Sipariş Bilgisi",
+          "UnhandledViolations": "Sipariş Bilgisi"
+        },
+        "all_violations_content": "Bu bilgiyi güncellemek ve siparişinizi tamamlamak için bizi arayın veya {{emailLink}}:",
+        "all_violations_email_link": "e-posta",
+        "editable_shipping_address_violations_message_title": "Siparişinizi tamamlamak için bu bilgileri ekleyin:",
+        "editable_shipping_address_violations_message_footer": "Bu konumun adresini kalıcı olarak güncellemek için {{emailLink}}.",
+        "editable_shipping_address_violations_email_link": "bize Ulaşın",
+        "shipping_address_incomplete_title": "Gönderim adresi eksik",
+        "calculating_shipping": "Gönderim hala hesaplanıyor. Birkaç saniye sonra tekrar deneyin. Sizden herhangi bir ücret alınmadı.",
+        "calculating_taxes": "Vergiler hâlâ hesaplanıyor. Birkaç saniye sonra tekrar deneyin. Sizden herhangi bir ücret alınmadı."
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "Gözden geçirmek",
+          "link_label": "{{partnerDisplayName}} Şartlar ve Koşullar"
+        }
+      },
+      "online_store_chat": {
+        "title": "Sorunuz mu var? bizle sohbet et"
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "%{address}'e yakın stoklu %{count} mağazası var",
+          "other": "%{address}'e yakın stoklu %{count} mağaza var"
+        },
+        "toggle_location": "Konumumu değiştir",
+        "or": "VEYA",
+        "cancel": "İptal etmek",
+        "your_location": "konumunuz",
+        "search_button": "Mağaza bul",
+        "no_stores_found": "Mağaza bulunamadı",
+        "could_not_resolve_address": "Adresiniz bulunamadı. Tekrar deneyin veya farklı bir adres kullanın",
+        "paginator": {
+          "accessibility_label": "Yerel teslim alma sayfalandırması",
+          "previous": "Önceki sayfa",
+          "next": "Sonraki Sayfa",
+          "label": {
+            "one": "%{first} - %{last} / %{count} mağazası",
+            "other": "%{first} - %{last} / %{count} mağaza"
+          }
+        },
+        "reveal_more_label": {
+          "one": "%{count} konum daha göster",
+          "other": "%{count} konum daha göster"
+        }
+      },
+      "captcha": {
+        "title": "Devam etmek için CAPTCHA'yı tamamlayın",
+        "errors": {
+          "not_solved": "Devam etmek için CAPTCHA'yı tamamlayın"
+        }
+      },
+      "discount_errors": {
+        "generic_error": "İndirim kodunuz artık mevcut olmadığından siparişiniz işleme alınamadı. Sipariş toplamınızı gözden geçirin ve tekrar deneyin."
+      },
+      "shop_pay_external": {
+        "errors": {
+          "problem_loading": "Shop Pay yüklenirken bir sorun oluştu",
+          "try_again_later": "Bağlantınızı kontrol edin veya bu pencereyi kapatıp birkaç dakika sonra tekrar deneyin.",
+          "checkout_has_expired": "Ödemenizin süresi doldu. Bu pencereyi kapatın ve {{shopName}}'dan tekrar çıkış yapmayı deneyin."
+        },
+        "return_to_store": "{{shopName}}'a dön"
+      },
+      "wallets": {
+        "return_to_store": "Mağazaya dön",
+        "redirect_hint": "{{walletName}} ile giriş yapmanız istenecektir.",
+        "logged_in": "{{email}}'a bağlanıldı",
+        "shipping_line_label": "Nakliye",
+        "connect_shipping_methods": "{{method1}} ve {{method2}}",
+        "payment_in_progress_title": "Ödeme devam ediyor",
+        "payment_in_progress_body": "Ödemeniz işleniyor. Siparişiniz kısa sürede tamamlanacaktır.",
+        "call_to_action": "{{walletName}} ile öde",
+        "redirection_notice": "\"{{buttonLabel}}\" seçeneğine tıkladıktan sonra, satın alma işleminizi güvenli bir şekilde tamamlamak için {{walletName}} adresine yönlendirileceksiniz.",
+        "errors": {
+          "unavailable": {
+            "title": "{{walletName}} mevcut değil",
+            "description": "{{walletName}} mevcut değildi. Farklı bir ödeme yöntemi kullanın veya daha sonra tekrar deneyin.",
+            "instructions": "{{walletName}} ile ilgili bir sorun vardı. Tekrar denemek veya farklı bir yönteme göz atmak için mağazaya dönün."
+          },
+          "generic": "{{walletName}} ile ilgili bir sorun vardı. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+          "terminal": "{{walletName}} ile ilgili bir sorun vardı. Lütfen farklı bir ödeme yöntemi kullanın.",
+          "detour": {
+            "stock_problems": "Bazı öğeler artık mevcut değil. {{walletName}}'ı kapatın ve tekrar deneyin.",
+            "price_change": "Bazı ürünlerin fiyatları değişti. Siparişinizi gözden geçirmek ve tekrar denemek için {{walletName}}'ı kapatın.",
+            "queue": "Ödeme yapmak için sıraya alındınız. Devam etmek için {{walletName}}'ı kapatın."
+          },
+          "unsupported": {
+            "address": "Satıcı bu adrese teslimat yapamaz",
+            "postal_code": "Bu konum desteklenmiyor"
+          },
+          "outdated": {
+            "shipping_method": "Siparişinizin kargo seçenekleri değişti. Seçiminizi gözden geçirin."
+          },
+          "invalid": {
+            "shipping_address": "Geçerli bir teslimat adresi girin",
+            "billing_address": "Geçerli bir fatura adresi girin",
+            "shipping_option": "Geçerli bir gönderim seçeneği seçin",
+            "email": "Geçerli bir e-posta giriniz",
+            "zone": "Geçerli bir eyalet/il girin",
+            "postal_code": "Geçerli bir ZIP / posta kodu girin",
+            "reduction_code": "Geçerli bir indirim kodu veya hediye kartı girin",
+            "billing_must_match_shipping": "Gönderim adresiyle eşleşmelidir"
+          },
+          "missing": {
+            "first_name": "Bir ad girin",
+            "last_name": "Bir soyadı girin",
+            "address1": "Bir adres girin",
+            "address2": "Bir daireye, süite vb. girin.",
+            "city": "Bir şehir girin",
+            "province": "Bir eyalet / il seçin",
+            "country": "Bir ülke/bölge seçin",
+            "zip": "Posta kodunu / posta kodunu girin",
+            "phone": "Telefon numarası girin"
+          },
+          "formatting": {
+            "name_contains_emojis": "Adınızdan emojiyi silin",
+            "postal_code_contains_emoji": "Emojiyi posta kodunuzdan silin",
+            "first_name_too_long": "Ad çok fazla harf içeriyor",
+            "last_name_too_long": "Soyadı çok fazla harf içeriyor"
+          },
+          "select_different_shipping_address_to_resolve_errors": "Gönderim adresiniz geçersiz. Farklı bir adres seçin veya yeni bir adres kullanın."
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "Notun boyutunu 5000 veya daha az karaktere düşürün."
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "Hediye kartı fiyatı 0'dan büyük olmalıdır.",
+            "subtotal_limit_reached": "Satır öğelerinin maksimum değerine ulaşıldı."
+          }
+        }
+      }
+    }
+  },
+  "general": {
+    "404": {
+      "title": "Bulunamadı",
+      "subtext_html": "Aradığınız sayfa mevcut değil",
+      "backToProducts": "Ürünlere geri dön",
+      "backHome": "Eve dön"
+    },
+    "newsletter_form": {
+      "confirmation": "Abone olduğunuz için teşekkür ederiz!"
+    },
+    "buttons": {
+      "buy_now": "Şimdi al",
+      "add_to_cart": "Sepete ekle",
+      "add_to_cart_selection": "Seçim yap",
+      "add_to_cart_loading": "Sepete ekleniyor...",
+      "view_cart": "Sepeti görüntüle",
+      "sold_out": "Hepsi satıldı",
+      "inline_upsell": "Anlaşmayı kabul et",
+      "continue": "Alışverişe devam",
+      "checkout": "Çıkış yapmak",
+      "update_cart": "Sepeti Güncelle",
+      "product_page_next": "Sonraki Ürün",
+      "product_page_previous": "Önceki Ürün",
+      "show_more": "Daha fazla göster",
+      "submit": "Göndermek"
+    },
+    "tags": {
+      "tags": "Etiketler",
+      "sale": "satış",
+      "free": "özgür",
+      "off": "KAPALI"
+    },
+    "search": {
+      "heading": "İhtiyacınız olan her şeyi bulun",
+      "placeholder": "Aramak",
+      "no_matches": "Kriterlerinize uygun ürün yok"
+    },
+    "countdown": {
+      "days": "günler",
+      "hours": "saat",
+      "minutes": "dakika",
+      "seconds": "saniye"
+    }
+  },
+  "customer_accounts": {
+    "enable_javascript": "Hesabınızı görüntülemek için tarayıcı ayarlarınızda JavaScript'i etkinleştirin veya başka bir tarayıcıyla oturum açın.",
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "Hesabı Gizle menüsü",
+        "label": "Hesap",
+        "show_accessibility_label": "Hesap menüsünü göster",
+        "nav_accessibility_label": "Hesapta gezinme",
+        "open_menu_accessibility_label": "Hesap navigasyonunu aç",
+        "close_menu_accessibility_label": "Hesap gezinmesini kapat",
+        "loading_message": "Hesapta gezinme yükleniyor"
+      },
+      "action_menu_accessibility_label": "Daha fazla hareket",
+      "close_menu_accessibility_label": "Ana gezinmeyi kapat",
+      "contact_email_subject": "{{shopName}} çevrimiçi mağazasından iletişim kurun",
+      "contact_link": "Bize Ulaşın",
+      "delete_confirmation": {
+        "cancel": "İptal etmek",
+        "delete": "Silmek"
+      },
+      "dismiss_toast": "Azletmek",
+      "document_title": "{{sectionName}} - {{shopName}} - Hesap",
+      "generic_accessibility_label": "{{label}}: {{value}}",
+      "go_to_store_link": "Mağazaya git",
+      "loading_message": "Yükleniyor",
+      "log_out_link": "Çıkış Yap",
+      "logout_overlay_label": "Oturumunuz kapatılıyor...",
+      "nav_label_accessibility_label": "Ana yönlendirici",
+      "navigation_accessibility_message": "{{sectionName}} konumuna gittiniz",
+      "open_menu_accessibility_label": "Ana navigasyonu aç",
+      "orders_link_label": "Emirler",
+      "shop_logo_accessibility_label": "{{shopName}} logosu",
+      "subscriptions_link_label": "Abonelikler",
+      "settings_link": "Ayarlar"
+    },
+    "account_information": {
+      "loading_accessibility_message": "Hesap bilgileri yükleniyor",
+      "loading_finished_accessibility_message": "Hesap bilgileri yüklendi",
+      "profile_card": {
+        "cancel": "İptal etmek",
+        "cancel_accessibility_label": "Profili düzenlemeyi iptal et",
+        "edit": "Düzenlemek",
+        "edit_accessibility_label": "Profili Düzenle",
+        "email_help_text": "Giriş için kullanılan e-posta değiştirilemez",
+        "first_name": "İlk adı",
+        "last_name": "Soy isim",
+        "no_name_provided_accessibility_label": "İsim eklenmedi",
+        "phone_number_help_text": "Giriş için kullanılan telefon numarası değiştirilemez",
+        "save": "Kaydetmek",
+        "save_accessibility_label": "Profili kaydet",
+        "title": "Profil"
+      },
+      "profile_update_confirmation_message": "Profil güncellendi",
+      "title": "Profil",
+      "people": {
+        "pagination": {
+          "load_more": "Daha fazla yükle",
+          "load_more_accessibility_label": "Daha fazla kişi yükle",
+          "loading_accessibility_label": "Kişiler yükleniyor"
+        }
+      },
+      "add_button": "Eklemek"
+    },
+    "orders": {
+      "list_layout_accessibility_label": "Düzen seçenekleri",
+      "list_title": "Emirler",
+      "order_list": {
+        "column_headers": {
+          "order": "Emir",
+          "items": "Öğeler",
+          "total": "Toplam"
+        },
+        "order_status_and_message": "{{orderStatus}} - {{message}}",
+        "delivered": "{{date}} teslim edildi",
+        "empty_state_order_source_description": "Burada yalnızca {{email}} tarafından verilen siparişler gösterilecektir.",
+        "empty_state_subtitle": "Sipariş vermek için mağazaya gidin.",
+        "empty_state_title": "Henüz sipariş yok",
+        "empty_state_title_for_pending_orders": "Bekleyen sipariş yok",
+        "estimated_shortform": "Avustralya, Brezilya ve Kuzey Amerika ülkelerinin kullandığı saat uygulaması. {{date}}",
+        "estimated_delivery": "Tahmini teslimat {{date}}",
+        "one_images_accessibility_label": "Sipariş şunları içerir: {{lineItemName1}}",
+        "two_images_accessibility_label": "Sıra {{lineItemName1}}, {{lineItemName2}}'i içerir",
+        "three_images_accessibility_label": "Sıralama şunları içerir: {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}}",
+        "four_images_accessibility_label": "Sıralama şunları içerir: {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}}, {{lineItemName4}}",
+        "more_than_three_products_accessibility_label": "Sipariş {{lineItemName1}}, {{lineItemName2}} ve {{numberOfAdditionalProducts}} ürünü daha içeriyor",
+        "more_than_four_products_accessibility_label": "Sipariş {{lineItemName1}}, {{lineItemName2}}, {{lineItemName3}} ve {{numberOfAdditionalProducts}} ürünü daha içeriyor",
+        "plus_more": "+{{numberOfAdditionalProducts}}",
+        "plus_more_products": "+{{numberOfAdditionalProducts}} ürünler",
+        "carousel": {
+          "one_products_accessibility_label": "Sipariş {{lineItemName1}} miktarı {{lineItemQuantity1}} içerir",
+          "two_products_accessibility_label": "Sipariş şunları içerir: {{lineItemName1}} miktar {{lineItemQuantity1}}, {{lineItemName2}} miktar {{lineItemQuantity2}}",
+          "three_products_accessibility_label": "Sipariş şunları içerir: {{lineItemName1}} miktar {{lineItemQuantity1}}, {{lineItemName2}} miktar {{lineItemQuantity2}}, {{lineItemName3}} miktar {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "Sipariş şunları içerir: {{lineItemName1}} miktar {{lineItemQuantity1}}, {{lineItemName2}} miktar {{lineItemQuantity2}}, {{lineItemName3}} miktar {{lineItemQuantity3}}, {{lineItemName4}} miktar {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "Sipariş şunları içerir: {{lineItemName1}} miktar {{lineItemQuantity1}}, {{lineItemName2}} miktar {{lineItemQuantity2}}, {{lineItemName3}} miktar {{lineItemQuantity3}}, {{lineItemName4}} miktar {{lineItemQuantity4}}, {{lineItemName5}} miktar {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "Sipariş şunları içerir: {{lineItemName1}} miktar {{lineItemQuantity1}}, {{lineItemName2}} miktar {{lineItemQuantity2}}, {{lineItemName3}} miktar {{lineItemQuantity3}}, {{lineItemName4}} miktar {{lineItemQuantity4}}, {{lineItemName5}} miktar {{lineItemQuantity5}}, {{lineItemName6}} miktar {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "Sipariş şunları içerir: {{lineItemName1}} miktar {{lineItemQuantity1}}, {{lineItemName2}} miktar {{lineItemQuantity2}}, {{lineItemName3}} miktar {{lineItemQuantity3}}, {{lineItemName4}} miktar {{lineItemQuantity4}}, {{lineItemName5}} miktar {{lineItemQuantity5}}, {{lineItemName6}} miktar {{lineItemQuantity6}} ve Daha",
+          "view_order_details": "sipariş detaylarını incele",
+          "previous": "Öncesi",
+          "next": "Sonraki"
+        },
+        "items": {
+          "one": "{{count}} öğe",
+          "other": "{{count}} öğe"
+        },
+        "list_view": "Liste görünümünü göster",
+        "no_filtered_results_description": "Siparişlerinizi görmek için filtreleri kaldırın veya ayarlayın",
+        "no_filtered_results_title": "Filtrelenmiş sonuç yok",
+        "order_link": "Siparişi görüntüle {{name}}",
+        "order_number": "{{name}} siparişi ver",
+        "orders_title": "Onaylanmış",
+        "pagination": {
+          "nav_accessibility_label": "Siparişler gezinme düğmeleri",
+          "next": "Sonraki",
+          "next_accessibility_label": "Sonraki siparişler",
+          "previous": "Önceki",
+          "previous_accessibility_label": "Önceki siparişler",
+          "load_more": "Daha fazla yükle",
+          "load_more_accessibility_label": "Daha fazla sipariş yükle"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "Ayrıntılar için siparişi görüntüleyin",
+            "estimated_delivery": "Tahmini teslimat {{date}}",
+            "last_updated": "Son güncelleme {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Avustralya, Brezilya ve Kuzey Amerika ülkelerinin kullandığı saat uygulaması. teslimat {{date}}",
+            "last_updated": "{{date}}"
+          }
+        },
+        "payment_status": {
+          "list_view": {
+            "overdue": "Gecikmiş ödeme",
+            "due": "Ödeme zamanı {{date}}",
+            "due_today": "Ödeme bugün yapılacak",
+            "due_without_date": "Ödeme zamanı",
+            "due_on_fulfillment": "Yerine getirilmesinde ödenmesi gereken ödeme",
+            "pay_to_confirm": "Onaylamak için ödeme yapın",
+            "payment_not_due": "Ödeme henüz vadesi gelmedi"
+          },
+          "table_view": {
+            "overdue": "vadesi geçmiş",
+            "due": "Vadesi {{date}}",
+            "due_today": "Bugün süresi doluyor",
+            "paid": "Paralı",
+            "due_without_date": "Vadesi dolmuş",
+            "due_on_fulfillment": "Yerine getirilmesiyle vadesi gelen",
+            "pay_to_confirm": "Onaylamak için ödeme yapın",
+            "payment_not_due": "Henüz vadesi gelmedi"
+          }
+        },
+        "sort_by": "Sıralama ölçütü: {{option}}",
+        "sort_hide_options_accessibility_label": "Onaylanan siparişler için sıralama seçeneklerini gizleyin.",
+        "sort_show_options_accessibility_label": "Onaylanan siparişler için sıralama seçeneklerini göster.",
+        "sort_currently_sorted_by_accessibility_label": "Şu anda sıralama şu şekilde: {{option}}",
+        "sort_title": "Düzenlemek",
+        "sort": {
+          "date": {
+            "newest": "En yeniden en eskiye",
+            "oldest": "En eskiden en yeniye"
+          },
+          "location": {
+            "ascending": "Konum (A'dan Z'ye)",
+            "descending": "Konum (Z-A)"
+          },
+          "order_number": {
+            "ascending": "Sipariş numarası (düşükten yükseğe)",
+            "descending": "Sipariş numarası (yüksekten düşüğe)"
+          },
+          "order_total": {
+            "ascending": "Sipariş toplamı (düşükten yükseğe)",
+            "descending": "Sipariş toplamı (yüksekten düşüğe)"
+          }
+        },
+        "filter_title": "Filtre",
+        "filter": {
+          "clear_section": "Bölümü temizle",
+          "clear_all": "Hepsini temizle",
+          "apply": "Uygula",
+          "date": {
+            "start_date": "Başlangıç ​​tarihi",
+            "end_date": "Bitiş tarihi",
+            "title": "Sipariş tarihi",
+            "today": "Bugün",
+            "last_7_days": "Son 7 gün",
+            "last_30_days": "Son 30 gün",
+            "last_90_days": "Son 90 gün",
+            "last_365_days": "Son 12 ay",
+            "custom": "Gelenek"
+          }
+        },
+        "table_view": "Tablo görünümünü göster",
+        "show_order_actions_accessibility_label": "{{name}} siparişi için sipariş eylemlerini göster"
+      },
+      "order_status": {
+        "attempted_delivery_label": "Teslim edilmeye çalışıldı",
+        "attempted_delivery_description": "Teslimat girişimi başarısız oldu.",
+        "attempted_to_deliver_label": "Teslim edilmeye çalışıldı",
+        "confirmed_description": "Siparişinizi aldık.",
+        "on_its_way_description": "Bu sevkiyat yolda.",
+        "out_for_delivery_description": "Bu gönderi teslimata çıktı.",
+        "preparing_for_shipping_label": "Gönderim için hazırlanıyor",
+        "preparing_for_shipping_description": "Bu ürünler nakliye için hazırlanıyor.",
+        "ready_for_pickup_label": "Almak için hazır",
+        "ready_for_pickup_description": "Bu öğeler teslim alınmaya hazır. Lütfen siparişinizi teslim alırken sipariş onayınızı yanınızda getiriniz.",
+        "ready_for_pickup_location": "Siparişiniz bulunduğunuz yerden teslim alınmaya hazır",
+        "picked_up_label": "Aldı",
+        "picked_up_description": "Bu eşyalar toplandı.",
+        "canceled_description": "Siparişiniz {{date}} tarihinde iptal edildi.",
+        "canceled_label": "İptal edildi",
+        "canceled_title": "Siparişiniz iptal edildi",
+        "come_back": "Gönderi durumunuzla ilgili güncellemeler için bu sayfaya geri dönün.",
+        "company_tracking_number": "{{company}} takip numarası:",
+        "confirmed_label": "Onaylanmış",
+        "confirmed_title": "Siparişiniz onaylandı",
+        "confirmed_description_pickup": "Siparişiniz teslim alınmaya hazır olduğunda bir e-posta alacaksınız.",
+        "confirmed_description_digital": "Siparişiniz hazır olduğunda bir e-posta alacaksınız.",
+        "confirmed_description_gift_card_text": "Siparişiniz hazır olduğunda bir mesaj alacaksınız.",
+        "delivered_description": "Bu gönderi teslim edildi.",
+        "delivered_label": "Teslim edilmiş",
+        "delivered_title": "Gönderiniz teslim edildi",
+        "delivered_description_digital": "Siparişiniz tamamlandı.",
+        "delivered_description_gift_card": {
+          "one": "Hediye kartı e-postayla gönderildi.",
+          "other": "Hediye kartları e-postayla gönderildi."
+        },
+        "delivered_description_gift_card_text": {
+          "one": "Hediye kartı kısa mesajla gönderildi.",
+          "other": "Hediye kartları kısa mesajla gönderildi."
+        },
+        "gift_card_label": {
+          "one": "Hediye kartı",
+          "other": "Hediye Kartları"
+        },
+        "gift_card_resend": {
+          "one": "Elektronik postayı tekrar gönder",
+          "other": "E-postaları yeniden gönder"
+        },
+        "gift_card_resend_text": {
+          "one": "Metni yeniden gönder",
+          "other": "Metinleri yeniden gönder"
+        },
+        "gift_resend_success": {
+          "one": "Hediye kartı yeniden gönderimi",
+          "other": "Hediye kartları yeniden gönderildi"
+        },
+        "gift_resend_failure": {
+          "one": "Hediye kartınız yeniden gönderilirken bir sorun oluştu. Tekrar deneyin veya bizimle iletişime geçin.",
+          "other": "Hediye kartlarınız yeniden gönderilirken bir sorun oluştu. Tekrar deneyin veya bizimle iletişime geçin."
+        },
+        "gift_card_resend_description": {
+          "one": "Alınmadıysa e-postayı yeniden gönderin veya",
+          "other": "Alınmadıysa e-postaları yeniden gönderin veya"
+        },
+        "gift_card_resend_description_text": {
+          "one": "Alınmadıysa metni yeniden gönderin veya",
+          "other": "Alınmadıysa, metinleri yeniden gönderin veya"
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "Hediye kartı ayrı bir e-postayla gönderilecektir.",
+          "other": "Her hediye kartı ayrı bir e-postayla gönderilecektir."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "Hediye kartı ayrı bir metin olarak gönderilecektir.",
+          "other": "Her hediye kartı ayrı bir metin halinde gönderilecektir."
+        },
+        "estimated_delivery": "Tahmini teslimat {{date}}",
+        "in_review_description": "Daha fazla bilgiye ihtiyacımız olursa veya siparişiniz onaylandığında sizi bilgilendireceğiz.",
+        "in_review_label": "İncelemede",
+        "in_review_title": "Siparişiniz inceleniyor",
+        "last_updated": "Son güncelleme {{date}}",
+        "multiple_shipments_label": "Çoklu gönderiler",
+        "no_tracking_number": "Bu gönderiye ait takip numarası bulunmamaktadır.",
+        "on_its_way_label": "Yolunda",
+        "on_its_way_title": "Gönderiniz yolda",
+        "out_for_delivery_label": "dağıtıma çıkmış",
+        "out_for_delivery_title": "Gönderiniz teslimata çıktı",
+        "resume_tracking": "Takibe devam et",
+        "submitted_label": "Gönderilen",
+        "submitted_description": "Sipariş ve ödeme ayrıntılarını inceleyin.",
+        "there_was_a_problem_label": "Bir problem vardı",
+        "track_shipment": "Gönderi takibi",
+        "request_return": "İade iste",
+        "view_order_for_details": "Ayrıntılar için siparişi görüntüleyin",
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "Prime ile Satın Al siparişini takip edin ve yönetin",
+            "new_window_disclaimer": "(yeni bir pencere açar)"
+          }
+        }
+      },
+      "status_mark_as_delivered": "Teslim edildi olarak işaretle",
+      "status_title": "Sipariş durumu",
+      "buy_again": "Tekrar satın al",
+      "buy_again_accessibility_label": "{{orderId}} siparişi için tekrar satın alın",
+      "manage": "Üstesinden gelmek",
+      "manage_accessiblity_label": "Siparişi yönet {{orderId}}",
+      "group_title_label": "Parçası: {{groupTitle}}",
+      "havent_received_your_delivery": "Teslimatınızı almadınız mı?",
+      "didnt_pick_up_order": "Siparişinizi almadınız mı?",
+      "if_you_didnt_receive_this": "Eğer bunu almadıysanız,",
+      "if_not_received": {
+        "one": "Eğer alınmadıysa,",
+        "other": "Eğer alınmamışlarsa,"
+      },
+      "let_us_know": "Bilmemize izin ver",
+      "contact_us": "bize Ulaşın."
+    },
+    "order_details": {
+      "shipment_timeline": {
+        "expand_events_label": "Detayları göster",
+        "expand_events_accessibility_label": "Sipariş gönderi ayrıntılarını göster",
+        "hide_events_label": "Detayları gizle",
+        "hide_events_accessibility_label": "Sipariş gönderi ayrıntılarını gizle"
+      },
+      "addresses_section_title": "Faturalandırma ve gönderim",
+      "order_details": "Sipariş detayları",
+      "order_details_skeleton_accessibility_label": "Tüm sipariş ayrıntılarını görüntülemek için oturum açın.",
+      "billing_address": "Fatura Adresi",
+      "card_ending_with": "{{lastDigits}} ile biten",
+      "contact": "Temas etmek",
+      "contact_information": "İletişim bilgileri",
+      "company": "Şirket",
+      "fully_refunded_label": "İADE EDİLDİ",
+      "group_title_label": "Parçası: {{groupTitle}}",
+      "discount": "İndirim",
+      "hide_items": "Öğeleri gizle",
+      "loading": "Sipariş ayrıntıları yükleniyor",
+      "loading_finished_accessibility_message": "Sipariş ayrıntıları yüklendi",
+      "location": "Konum",
+      "image_gallery": {
+        "product_name_and_quantity": "{{productName}} miktar {{quantity}}",
+        "next": "Sonraki öğeleri göster",
+        "previous": "Önceki öğeleri göster"
+      },
+      "mobile_summary_toggle_button": {
+        "open": "Sipariş özetini göster",
+        "closed": "Sipariş özetini gizle"
+      },
+      "no_data": "Hiçbiri",
+      "no_data_provided": "-",
+      "no_data_provided_accessibility_label": "{{fieldName}} boş",
+      "not_applicable": "Yok",
+      "paid_amount": "Paralı",
+      "partially_refunded_label": "KISMEN İADE EDİLDİ",
+      "payment": {
+        "status_in_review": "İnceleme sonrasında ödenmesi gereken ödeme",
+        "status_unpaid": "{{date}} tarihinde ödenmesi gereken ödeme",
+        "title": "Ödeme",
+        "card_payment_details": "{{lastDigits}} - {{formattedTransactionAmount}} ile biten",
+        "gift_card_payment_details": "{{lastDigits}} - {{formattedTransactionAmount}} ile biten",
+        "store_credit_payment_details": "Mağaza kredisi - {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "Shop Pay taksitleriyle ödendi",
+          "view_schedule": "Programı görüntüle"
+        },
+        "manual_payment_methods": {
+          "money_order": "Havale - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "Kapıda Ödeme (COD) - {{formattedTransactionAmount}}",
+          "bank_deposit": "Banka Mevduatı - {{formattedTransactionAmount}}",
+          "manual": "Kılavuz - {{formattedTransactionAmount}}"
+        },
+        "transactions": {
+          "show_all": "Hepsini Göster ↓",
+          "show_less": "Daha az göster"
+        }
+      },
+      "paid_with_shop_pay_installments_card": {
+        "paid_with_shop_pay_installments": "Shop Pay Taksitleriyle Ödendi",
+        "description": "Shop uygulamasındaki hatırlatıcılarla ödeme planınızı takip edin.",
+        "payment_reminders_button": "Ödeme hatırlatıcıları alın",
+        "desktop_qr_code_content": {
+          "title": "Hatırlatıcıları tarayın",
+          "description": "Shop ile taksitlerinizin hatırlatıcılarını alın."
+        }
+      },
+      "refunded_amount": "Geri ödeme yapıldı",
+      "request_return_failed": "İsteğiniz işlenirken bir sorun oluştu. Lütfen tekrar deneyin.",
+      "remaining_amount": "Geriye kalan",
+      "marketing_section_title": "Haberler ve teklifler",
+      "marketing_description": "Pazarlama e-postaları alacaksınız. İstediğiniz zaman abonelikten çıkabilirsiniz.",
+      "marketing_checkbox_label": "Haberler ve teklifler için bana e-posta gönderin",
+      "marketing_checkmark_label": "E-posta haberlerini ve tekliflerini almak için abone oldunuz",
+      "returns": {
+        "expand_events_label": "Detayları göster",
+        "hide_events_label": "Detayları gizle",
+        "ineligible_return_message": "Bu siparişteki hiçbir ürün iadeye uygun değildir.",
+        "ineligible_return_message_when_returned": "Bu siparişteki hiçbir ek ürün iadeye uygun değildir.",
+        "print_shipping_label": "Baskı nakliye etiketi",
+        "return_and_refund_modal_header": "Geri ödeme politikası",
+        "tracking_number": "Takip numarası:"
+      },
+      "shipping": {
+        "address": "Gönderi Adresi",
+        "address_map_marker": "Gönderi Adresi"
+      },
+      "fees": {
+        "return_shipping_fee": "İade gönderimi"
+      }
+    },
+    "addresses": {
+      "add_button": "Adres Ekle",
+      "add_button_text": "Eklemek",
+      "add_button_accessibility_label": "Adres Ekle",
+      "back_button": "Geri",
+      "back_button_accessibility_label": "Düzenleme adresine dön {{address}}",
+      "add_address_banner": "Ödeme sırasında kullanılacak adresleri ekleyin",
+      "no_addresses_banner": "Adres eklenmedi",
+      "address_deleted_notification": "Adres silindi",
+      "cancel_adding_address_accessibility_label": "Adres eklemeyi iptal et",
+      "cancel_deletion_button": "İptal etmek",
+      "cancel_deletion_button_accessibility_label": "{{address}} silmeyi iptal et",
+      "default_address": {
+        "title": "Varsayılan adres",
+        "title_accessibility_label": "Varsayılan adres: {{address}}"
+      },
+      "delete_button": "Silmek",
+      "delete_button_accessibility_label": "{{address}}'ı sil",
+      "delete_confirmation_button": "Adresi sil",
+      "delete_confirmation_button_accessibility_label": "{{address}}'ı sil",
+      "delete_confirmation_message": "Adres silinsin mi? Mevcut siparişler etkilenmez.",
+      "delete_confirmation_title": "Adres silinsin mi?",
+      "delete_confirmation_description": "Mevcut siparişler etkilenmez.",
+      "edit_button": "Düzenlemek",
+      "edit_button_accessibility_label": "{{address}}'ı düzenle",
+      "edit_section_accessibility_label": "{{address}}'ı düzenle",
+      "edit_modal_title": {
+        "default": "Adresi düzelt",
+        "billing": "Fatura adresini düzenle",
+        "shipping": "Gönderim adresini düzenle"
+      },
+      "loading_accessibility_message": "Adres yükleniyor",
+      "loading_addresses_accessibility_message": "Adresler yükleniyor",
+      "loading_billing_accessibility_message": "Fatura adresi yükleniyor",
+      "loading_finished_accessibility_message": "Yeni adres sayfası yüklendi",
+      "loading_shipping_accessibility_message": "Teslimat adresi yükleniyor",
+      "pagination": {
+        "load_more": "Daha fazla yükle",
+        "load_more_accessibility_label": "Daha fazla adres yükle"
+      },
+      "save_new_address_accessibility_label": "Adresi kaydet",
+      "title": "Adresler",
+      "billing_address_dropdown_placeholder": "Fatura Adresi"
+    },
+    "address_form": {
+      "attention": "Dikkat",
+      "attention_company": "Şirket/ilgi",
+      "attention_help_text": "Bir kişinin veya bölümün adı",
+      "auto_complete_close_accessibility_label": "Önerileri kapat",
+      "auto_complete_title": "Öneriler",
+      "billing_address": "Fatura adresi olarak kullan",
+      "cancel": "İptal etmek",
+      "cancel_accessibility_label": "{{address}} adresini düzenlemeyi iptal et",
+      "creation_success_notification": "Adres eklendi",
+      "default_address": "Bu benim varsayılan adresim",
+      "default_address_creation_success_notification": "Varsayılan adres eklendi",
+      "default_address_update_success_notification": "Varsayılan adres güncellendi",
+      "loading_add_form_accessibility_message": "Yeni adres formu yükleniyor"
+    },
+    "B2B": {
+      "location_selection": {
+        "selection_cancel_button": "İptal etmek",
+        "selection_confirmation_button": "Konum seç",
+        "title": "Hangi konum için satın alıyorsunuz?",
+        "clear_search": "Aramayı Temizle",
+        "try_new_search": "Yeni bir arama yapmayı deneyin"
+      },
+      "addresses": {
+        "add_billing_address_button": "Fatura adresi ekle",
+        "add_billing_address_section_accessibility_label": "Fatura adresi ekle",
+        "add_shipping_address_button": "Gönderim adresi ekle",
+        "add_shipping_address_section_accessibility_label": "Gönderim adresi ekle",
+        "billing_address_card_title": "Fatura Adresi",
+        "cancel_adding_billing_address_accessibility_label": "Fatura adresi eklemeyi iptal et",
+        "cancel_adding_shipping_address_accessibility_label": "Gönderim adresi eklemeyi iptal et",
+        "save_new_billing_address_accessibility_label": "Fatura adresini kaydet",
+        "save_new_shipping_address_accessibility_label": "Gönderim adresini kaydet",
+        "shipping_address_card_title": "Gönderi Adresi"
+      },
+      "orders": {
+        "draft_order_list": {
+          "hide_all": "Hepsini sakla",
+          "show_all": "Hepsini Göster ↓",
+          "hide_all_accessibility_label": "İncelemedeki tüm siparişleri gizle",
+          "show_all_accessibility_label": "Tüm siparişleri incelemede göster",
+          "show_all_orders_in_review": "Tüm siparişleri incelemede göster",
+          "show_less_orders_in_review": "İncelemede daha az sipariş göster",
+          "title": "Askıda olması",
+          "pending_tab_accessibility_label": {
+            "no_pending_orders": "Bekleyen siparişiniz yok",
+            "pending_orders": {
+              "one": "Bekleyen {{count}} siparişiniz var",
+              "other": "Bekleyen {{count}} siparişiniz var"
+            },
+            "more_than_pagination_length": "{{count}} adetten fazla bekleyen siparişiniz var"
+          },
+          "pending_orders_count_more_than_pagination_length": "{{count}}+",
+          "pagination": {
+            "nav_accessibility_label": "İnceleme gezinme düğmelerindeki siparişler"
+          }
+        },
+        "order_list_column_headers_location": "Konum",
+        "order_list_column_headers_contact": "Temas etmek",
+        "removed_company_contact_tooltip": "Şirketten çıkarıldı"
+      },
+      "draft_order_details": {
+        "draft_order_subtitle": "{{draftOrderName}} siparişinden {{date}} onaylandı",
+        "loading": "Sipariş ayrıntıları yükleniyor",
+        "loading_finished_accessibility_message": "Sipariş ayrıntıları yüklendi",
+        "payment_status": {
+          "pending": {
+            "banner_overdue": {
+              "one": "Ödemenizin vadesi {{count}} gün gecikti",
+              "other": "Ödemenizin vadesi {{count}} gün gecikti"
+            },
+            "banner_due": {
+              "one": "Ödemenizin {{count}} gün içinde yapılması gerekiyor",
+              "other": "Ödemenizin {{count}} gün içinde yapılması gerekiyor"
+            },
+            "banner_due_today": "Ödemenizin bugün yapılması gerekiyor",
+            "title": "Ödeme zamanı",
+            "title_with_date": "Ödeme zamanı {{date}}",
+            "title_due_on_receipt": "Ödeme henüz vadesi gelmedi",
+            "title_due_on_fulfillment": "Yerine getirilmesinde ödenmesi gereken ödeme",
+            "description_overdue": "Ödemeniz gecikti.",
+            "description_partially_paid": "Bu sipariş kısmen ödendi. Kalan bakiyeniz var.",
+            "description_authorized": "Ödeme yönteminizden vade tarihinde ödeme alınacaktır veya şimdi ödeyebilirsiniz.",
+            "description_waiting_for_manual_payment": "Ödeme alındığında sipariş ödendi olarak işaretlenecektir.",
+            "description_due_on_receipt": "Ödeme zamanı geldiğinde bir fatura alacaksınız.",
+            "description_due_on_receipt_partially_paid": "Bu sipariş kısmen ödendi. Kalan bakiyeniz var. Ödeme zamanı geldiğinde bir fatura alacaksınız.",
+            "description_due_on_fulfillment": "Ödeme, bu siparişteki tüm öğeler yerine getirildikten sonra yapılacaktır."
+          }
+        }
+      }
+    },
+    "errors": {
+      "load_orders_error": {
+        "description": "Tekrar deneyin veya daha sonra tekrar gelin.",
+        "retry_button": "Yeniden dene"
+      },
+      "load_paypal_error": {
+        "description": "PayPal yüklenirken bir sorun oluştu. Lütfen tekrar deneyin."
+      },
+      "logout_everywhere": {
+        "description": "Oturumu kapatma sırasında bir şeyler ters gitti. Lütfen tekrar deneyin."
+      },
+      "no_access": {
+        "back_to_authentication_link": "Farklı bir hesaba giriş yapın",
+        "description": "{{shopName}} ile B2B müşterisi olarak kayıtlı değilsiniz",
+        "title": "Erişim yok"
+      },
+      "no_access_to_locations": {
+        "description": "Hiçbir konuma erişiminiz yok"
+      },
+      "not_found": {
+        "description": "URL'yi kontrol edin veya birkaç dakika sonra tekrar deneyin.",
+        "title": "Bu sayfa yüklenirken bir sorun oluştu"
+      },
+      "order_not_found": {
+        "description": "Bu sipariş mevcut değil veya onu görüntüleme izniniz yok.",
+        "title": "Sipariş bulunamadı"
+      },
+      "profile_update_error": {
+        "description": "Profiliniz güncellenirken bir sorun oluştu. Bu sayfayı yenilemeyi deneyin veya internet bağlantınızı kontrol edin."
+      },
+      "retry_action_label": "Yeniden dene",
+      "load_extension_error": {
+        "title": "Hata",
+        "description": "Bu sayfayı yenileyin veya birkaç dakika sonra tekrar deneyin.",
+        "refresh_button": "Sayfayı yenile"
+      }
+    },
+    "payment_methods": {
+      "title": "Ödeme metodları",
+      "add_payment_method_button": "Ödeme yöntemi ekle",
+      "add_payment_method_banner": "Daha hızlı ödeme veya ön provizyonlu hizmetler için ödeme yöntemi ekleyin",
+      "no_payment_methods_banner": "Hiçbir ödeme yöntemi eklenmedi",
+      "edit_payment_method_button_accessibility_label": "{{lastDigits}} ile biten {{paymentMethodName}}'ı düzenleyin",
+      "edit_payment_method_brand_button_accessibility_label": "{{paymentMethodName}}'ı düzenle",
+      "delete_payment_method_button": "Silmek",
+      "delete_payment_method_button_accessibility_label": "{{paymentMethodName}}'ı sil",
+      "back_button": "Geri",
+      "back_button_accessibility_label": "{{paymentMethodStepTitle}}'a geri dön",
+      "default": "Varsayılan",
+      "generic_card": "Kart",
+      "expiration_warning_button_accessibility_label": "{{lastDigits}} ile biten {{paymentMethodName}} için son kullanma uyarısını göster",
+      "expires_soon": "Bu kartın süresi yakında doluyor",
+      "expired": "Bu kartın son kullanım tarihi geçmiş",
+      "card_update_consent": "Bu ödeme yöntemi gelecekteki satın alma işlemleri için kaydedilecek.",
+      "digital_wallet_title": "Dijital Cüzdan",
+      "credit_or_debit_card_title": "Kredi veya banka kartı",
+      "google_pay": {
+        "loading": "Google Pay yükleniyor",
+        "errors": {
+          "generic": "Google Pay'le ilgili bir sorun oluştu. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+          "missing_billing_address": "Google Pay, fatura adresi gerektirir. Lütfen hesabınıza bir tane ekleyin."
+        }
+      },
+      "apple_pay": {
+        "loading": "Apple Pay Yükleniyor",
+        "errors": {
+          "generic": "Apple Pay'de bir sorun oluştu. Tekrar deneyin veya farklı bir ödeme yöntemi kullanın.",
+          "not_available": "Apple Pay bu cihazda kullanılamıyor.",
+          "missing_billing_address": "Apple Pay bir fatura adresi gerektirir. Lütfen hesabınıza bir tane ekleyin."
+        }
+      },
+      "payment_details": {
+        "title": "Ödeme yöntemi ayrıntıları",
+        "credit_card_details_accessibility_label": "{{lastDigits}} ile biten",
+        "billing_title": "Fatura Adresi",
+        "card_info_title": "Kart bilgisi",
+        "credit_card_details": "{{creditCardBrand}} •••• {{lastDigits}}",
+        "payment_method_expiring_on": "{{expiryDate}} tarihinde sona eriyor",
+        "payment_method_expired_on": "{{expiryDate}} tarihinde sona erdi",
+        "preauthorized_payments": "Önceden yetkilendirilmiş ödemeler"
+      },
+      "payment_delete": {
+        "warning_message_with_replacement": {
+          "with_subscriptions": "Bu ödeme yönteminin silinmesi, önceden yetkilendirilen ödemeleri etkileyecektir. Yaklaşan siparişleri almaya devam etmek için bunu alternatif bir ödeme yöntemiyle değiştirin."
+        },
+        "warning_message_without_replacement": {
+          "with_pending_orders_and_subscriptions": "Bu ödeme yönteminin silinmesi, önceden yetkilendirilen ödemeleri etkileyecektir. Mevcut siparişlerdeki ödenmemiş bakiyeler için bu ödeme yönteminden ücret alınmaya devam edilecektir ancak yaklaşan abonelik siparişlerini almayacaksınız. Abonelik siparişlerini almaya devam etmek için alternatif bir ödeme yöntemi ekleyin.",
+          "with_pending_orders": "Bu ödeme yöntemini sildiğinizde hesabınızdan kaldırılacak ve artık gelecekteki satın alma işlemleri için kullanılamayacaktır. Mevcut siparişlerdeki ödenmemiş bakiyeler için yine de ücret alınacaktır.",
+          "with_subscriptions": "Bu ödeme yönteminin silinmesi, önceden yetkilendirilen ödemeleri etkileyecektir. Yaklaşan siparişleri almaya devam etmek için alternatif bir ödeme yöntemi ekleyin."
+        },
+        "payment_method_selector_placeholder": "Yeni bir ödeme yöntemi seçin (isteğe bağlı)",
+        "payment_method_selector_no_alternative_payment": "Değiştirme yöntemi yok",
+        "replace_method_with_new_method_description": "{{currentPaymentMethodName}}'ınız silinecek ve {{newPaymentMethodName}}'inizle değiştirilecektir.",
+        "error_when_deleting": "Özür dileriz ancak bir şeyler ters gitti ve bu ödeme yöntemini silemedik. Lütfen daha sonra tekrar deneyin ya da sayfayı yenileyin.",
+        "delete_and_replace_button": "Sil ve değiştir",
+        "delete_and_replace_button_accessibility_label": "{{currentPaymentMethodName}}'ı silin ve {{newPaymentMethodName}} ile değiştirin.",
+        "deleted_successfully": "Ödeme yöntemi başarıyla silindi.",
+        "loading_available_payment_methods_accessibility_label": "Mevcut ödeme yöntemleri yükleniyor"
+      },
+      "add_payment_method": {
+        "title": "Ödeme yöntemi ekle",
+        "payment_method_added_confirmation": "Ödeme yöntemi eklendi",
+        "billing_address": {
+          "title": "Fatura Adresi",
+          "add_billing_address_button": "Yeni ekle",
+          "add_billing_address_button_accessibility_label": "Yeni fatura adresi ekle",
+          "choose_billing_address_from_list_button": "Listeden seç",
+          "choose_billing_address_from_list_button_accessibility_label": "Listeden bir fatura adresi seçin",
+          "missing_billing_address_error_message": "Lütfen bir fatura adresi belirtin",
+          "default_checkbox": "Varsayılan ödeme yöntemi olarak ayarla"
+        }
+      }
+    },
+    "payment_method_brands": {
+      "visa": "Vize",
+      "mastercard": "MasterCard",
+      "americanexpress": "American Express",
+      "discover": "Keşfetmek",
+      "dinersclub": "Yemek klübü",
+      "jcb": "JCB",
+      "elo": "elo",
+      "visaelectron": "Vize elektron",
+      "maestro": "Maestro",
+      "forbrugsforeningen": "Forbrugsforeningen",
+      "dankort": "Dankort",
+      "hipercard": "Hiperkart",
+      "unionpay": "UnionPay",
+      "laser": "Lazer",
+      "shoppay": "Alışveriş Ödemesi",
+      "applepay": "Apple Pay",
+      "googlepay": "Google Pay",
+      "paypal": "PayPal"
+    },
+    "shop_policies": {
+      "legal_notice": "Yasal Uyarı",
+      "privacy_policy": "Gizlilik Politikası",
+      "refund_policy": "Geri ödeme politikası",
+      "shipping_policy": "Nakliye politikası",
+      "subscription_policy": "Abonelik politikası",
+      "terms_of_sale": "Satış şartları",
+      "terms_of_service": "Kullanım Şartları"
+    },
+    "ui_components": {
+      "closeNotification": "Kapalı",
+      "expandNotification": "Daha fazla göster",
+      "closeModal": "Kapalı",
+      "submit": "Göndermek",
+      "processing": "İşleme…",
+      "increase": "{{type}} değerini artır",
+      "decrease": "{{type}}'ı azalt",
+      "minimumReached": "Minimum {{value}} değerine ulaşıldı",
+      "maximumReached": "Maksimum {{value}} değerine ulaşıldı",
+      "january": "Ocak",
+      "february": "Şubat",
+      "march": "Mart",
+      "april": "Nisan",
+      "may": "Mayıs",
+      "june": "Haziran",
+      "july": "Temmuz",
+      "august": "Ağustos",
+      "september": "Eylül",
+      "october": "Ekim",
+      "november": "Kasım",
+      "december": "Aralık",
+      "monday": "Pazartesi",
+      "tuesday": "Salı",
+      "wednesday": "Çarşamba",
+      "thursday": "Perşembe",
+      "friday": "Cuma",
+      "saturday": "Cumartesi",
+      "sunday": "Pazar",
+      "mondayAbbreviation": "Ay",
+      "tuesdayAbbreviation": "Salı",
+      "wednesdayAbbreviation": "Biz",
+      "thursdayAbbreviation": "Bu",
+      "fridayAbbreviation": "Fr",
+      "saturdayAbbreviation": "Sa",
+      "sundayAbbreviation": "Su",
+      "showNextMonth": "Gelecek ayı göster, {{month}} {{year}}",
+      "showPreviousMonth": "Önceki ayı göster, {{month}} {{year}}",
+      "rangeStart": "Aralık başlangıcı",
+      "inRange": "Menzilde",
+      "rangeEnd": "Aralık sonu",
+      "autocompleteOptionsAvailable": {
+        "one": "{{count}} öğe mevcut",
+        "other": "{{count}} öğe mevcut"
+      },
+      "removeItem": "{{label}}'ı kaldır",
+      "removeTag": "Etiketi kaldır",
+      "month": {
+        "one": "ay",
+        "other": "aylar"
+      }
+    },
+    "profile_preview_bar": {
+      "customize_button": "Özelleştirmek",
+      "hide_bar": "Saklı bar",
+      "navigate_to_admin": "Yönetici'ye gidin",
+      "close_preview": "Önizlemeyi kapat",
+      "previewing": "Önizleme yapıyorsunuz:",
+      "saved_at": "{{date}}, {{time}} konumunda kaydedildi",
+      "viewing": "Şunu görüntülüyorsunuz:",
+      "not_available": "Profil verileri mevcut değil",
+      "actions_button": "Hareketler"
+    },
+    "settings": {
+      "title": "Ayarlar",
+      "loading_accessibility_message": "Ayarlar sayfası yükleniyor",
+      "log_out_everywhere": {
+        "title": "Her yerden çıkış yap",
+        "description": "Bir cihazınızı kaybettiyseniz veya güvenlikle ilgili endişeleriniz varsa hesabınızın güvenliğini sağlamak için her yerden çıkış yapın.",
+        "button": "Her yerden çıkış yap",
+        "warning_message": "Bu cihazda da oturumunuz kapatılacak."
+      }
+    }
+  },
+  "i18n": {
+    "language": "Dil",
+    "currency": "Para birimi"
+  },
+  "collection_page": {
+    "sidebar": {
+      "all_products": "Tüm ürünler",
+      "back_to_all": "Tüm ürünlere geri dön"
+    }
+  },
+  "product_page": {
+    "page": {
+      "product_description": "Ürün Açıklaması"
+    },
+    "apps": {
+      "in_stock": "STOKTA KALDI",
+      "no_stock": "STOKTA HİÇBİR KALMADI",
+      "watching": "Bu öğeyi izliyorum.",
+      "cart": "bu ürünü sepetinde bulundurun."
+    },
+    "card": {
+      "from": "itibaren"
+    }
+  },
+  "contact": {
+    "page": {
+      "success": "İletişiminiz için teşekkür ederiz."
+    },
+    "buttons": {
+      "submit": "Göndermek",
+      "back_to_contact": "İletişim formuna geri dön"
+    }
+  },
+  "navigation": {
+    "breadcrumbs": {
+      "home": "Ev",
+      "collections": "Koleksiyonlar",
+      "cart": "Araba"
+    },
+    "buttons": {
+      "prev": "Önceki",
+      "next": "Sonraki",
+      "load_more": "Daha fazla yükle",
+      "sign_in": "Giriş yapmak",
+      "sign_up": "Kayıt olmak",
+      "log_out": "Çıkış Yap",
+      "back_to_shop": "Mağazaya geri dön"
+    }
+  },
+  "upsell": {
+    "added": "Ürün sepete eklendi!",
+    "in_cart": "Sepetinizde %itemCount% var.",
+    "total": "Toplam %toplam% şeklindedir"
+  },
+  "recently_bought": {
+    "purchased": "%name% satın alındı:",
+    "ago": "%time% dakika önce.",
+    "someone": "Birisi"
+  },
+  "customer_area": {
+    "account": {
+      "order_num": "Sipariş no.",
+      "date": "Tarih",
+      "payment": "Ödeme",
+      "full": "Yerine Getirme",
+      "total": "Sipariş toplamı",
+      "tracking": "Takip",
+      "status": "Durum",
+      "no_orders": "Henüz sipariş vermediniz.",
+      "phone": "Telefon",
+      "address": "Adres",
+      "default_addy": "Varsayılan adres",
+      "no_addy": "Adres bulunamadı.",
+      "edit_addy": "Adresleri düzenle",
+      "success_addy": "Adres başarıyla eklendi.",
+      "update_addy": "Adres başarıyla güncellendi.",
+      "first_name": "İlk adı",
+      "last_name": "Soy isim"
+    },
+    "forms": {
+      "email": "Kullanıcı adı (E-posta)",
+      "login": "Giriş yapmak",
+      "register": "Bir hesap oluşturun",
+      "register_here": "Yeni müşteri? Hesabını oluştur.",
+      "password": "Şifre",
+      "confirm_password": "Şifre onayı",
+      "forgot_password": "Parolanızı mı unuttunuz?",
+      "already_member": "Zaten bir üye misiniz? Oturum açın",
+      "reset_password": "Şifreyi yenile",
+      "activate": "Aktif hesap",
+      "decline": "Daveti reddet",
+      "sign_in_title": "hesabınıza giriş yapın",
+      "sign_up_title": "Bir hesap oluşturun",
+      "newsletter_success": "Abone olduğunuz için teşekkür ederiz"
+    }
+  }
+}

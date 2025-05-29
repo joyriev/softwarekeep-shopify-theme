@@ -1,0 +1,95 @@
+<div class="max-width after_adpage">
+   <div class="download_text">
+     {% if section.settings.htext != blank %}
+      <h3>{{ section.settings.htext }}</h3>
+     {% endif %}
+   </div>
+    <div class="step_download">
+      {% for block in section.blocks %}
+        {% capture content_text%}
+           <p class="subpare">{{ block.settings.paratext }}</p>
+          {% endcapture %}
+         
+       <div class="list_img">
+         <p class="step_name">
+           {% if block.settings.blink_count == true %}
+            <span class="steps">{{ forloop.index }}</span>
+          {% endif %}
+            {{ block.settings.htext }}
+         </p>
+          {% unless block.settings.content == 'bottom'%}
+              {{ content_text }}
+          {% endunless %}
+          {% if block.settings.image != blank %}
+           {{ block.settings.image | image_url: width:'363', height:'436' | image_tag }}
+           {% else %}
+           <img src="https://cdn.shopify.com/s/files/1/0090/2125/9831/files/1_Add_to_Cart_SK_1.png?v=1722584773" alt="step-1">
+         {% endif %}
+        {% if block.settings.content == 'bottom' %}
+           {{ content_text }}
+         {% endif %}
+       </div>
+     {% endfor %}
+      
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "After Rocket Download",
+    "settings": [
+        {
+           "type": "html",
+           "id": "htext",
+           "label": "Heading",
+          "default": "How do I download?"
+        }
+    ],
+    "blocks": [
+     {
+       "name": "download",
+       "type": "image",
+       "settings": [
+         {
+          "type": "color",
+           "id": "textsecbg",
+           "label": "Number Color",
+           "default": "#2963B5"
+         },
+        {
+           "type": "html",
+           "id": "htext",
+           "label": "Heading"
+         },
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         },
+         {
+            "type": "select",
+            "id": "content",
+            "label": "Content Show Below image and above",
+            "options": [
+              {"value": "bottom", "label": "Bottom"},
+              {"value": "top", "label": "Top"}
+            ],
+            "default": "bottom"
+          },
+         {
+           "type": "inline_richtext",
+           "id": "paratext",
+           "label": "Smaal Paragrapgh Text",
+           "default": "Use the quick browsing function to search for the software you need. Make your selection and add to your cart."
+         },
+        {
+           "type": "checkbox",
+           "id": "blink_count",
+           "label": "Enable Blink count number",
+          "default": true
+         },
+       ]
+     }
+  ],
+  }
+{% endschema %}
