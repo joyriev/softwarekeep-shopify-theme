@@ -67,7 +67,7 @@
     "disableSOSwatch": true,
     "disabledSwatchStyle": "hide",
     "colorSwatches": "",
-    "cartStyle": "none",
+    "cartStyle": "sidebar",
     "quickBuy": false,
     "ajaxType": "form",
     "cartAction": "minicart",
