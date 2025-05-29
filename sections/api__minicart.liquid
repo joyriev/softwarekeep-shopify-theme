@@ -39,13 +39,13 @@
             <div class="lineitm_prices">
               <span class="minicart__price">
                 <span class="jsPrice">{{ item.price | money | strip_html }}</span> 
-                {%- if item.original_line_price != item.line_price -%}
+                {% comment %} {%- if item.original_line_price != item.line_price -%}
                   <div>
                     (<s class="jsPrice">{{ item.original_line_price | money | strip_html }}</s>
                     <span class="jsPrice">{{- item.line_price | money | strip_html -}}</span>)
                   </div>
                 {%- endif -%}
-                {%- for discount in item.discounts -%}{{ discount.title }}{%- endfor -%}
+                {%- for discount in item.discounts -%}{{ discount.title }}{%- endfor -%} {% endcomment %}
               </span>
             </div>
           
