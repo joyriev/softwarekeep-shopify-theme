@@ -38,7 +38,7 @@
           <div class="main_wrapp">
             <div class="lineitm_prices">
               <span class="minicart__price">
-                <span class="jsPrice">{{ item.price | money | strip_html }}</span> 
+                <span class="jsPrice">{{ item.original_line_price | money | strip_html }}</span> 
                 {% comment %} {%- if item.original_line_price != item.line_price -%}
                   <div>
                     (<s class="jsPrice">{{ item.original_line_price | money | strip_html }}</s>
