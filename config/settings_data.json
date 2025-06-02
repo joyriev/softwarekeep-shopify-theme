@@ -505,11 +505,6 @@
         "disabled": false,
         "settings": {}
       },
-      "5746972944742151934": {
-        "type": "shopify://apps/smart-shopping-cart/blocks/sidecart/46ea881b-1796-4666-99b6-760f24c65937",
-        "disabled": false,
-        "settings": {}
-      },
       "45135510166488240000": {
         "type": "shopify://apps/gdpr-cookie-consent/blocks/banner/58c0baa2-6cc1-480c-9ea6-38d6d559556a",
         "disabled": false,
