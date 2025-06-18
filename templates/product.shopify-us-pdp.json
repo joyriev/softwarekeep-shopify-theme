@@ -65,7 +65,7 @@
       "settings": {
         "disable_sticky": false,
         "main_prfeaturelist": "<li>\n            <div class=\"features-img\">\n              <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/pdp-devices-icon.svg\" alt=\"computer-mobile\" width=\"20\" height=\"20\">\n               <span>For PC, or Mac</span>\n            </div>\n           \n        </li>\n          <li>\n            <div class=\"features-img\">\n              <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/pdp-cloud-icon.svg\" alt=\"cloud\" width=\"20\" height=\"20\">\n               <span>Lifetime Warranty<span>\n            </span></span>\n</div>\n           \n          </li>\n          <li>\n             <div class=\"features-img\">\n              <img src=\"https://cdn.shopify.com/s/files/1/0090/2125/9831/files/pdp-user-icons.svg?v=1722513521\" alt=\"License one person\" width=\"20\" height=\"20\">\n               <span>For one person</span>\n             </div>\n           </li>",
-        "discount_text": "Save extra 12% Off with Code: CLIMB12",
+        "discount_text": "Save extra 15% Off with Code: FATHER15",
         "view": "marketplace",
         "layout": "max-width",
         "galleryStyle": "default",
