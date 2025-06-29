@@ -5,93 +5,102 @@
 {% assign centsPrice = selectedProduct.price %}
 {% assign centsPriceIntValueSize = centsPrice | append: '' | size | minus: 2 %}
 <script type="application/ld+json">
-  {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "{{product.title |escape}}",
-        {% if product.featured_image != nil %}
-        "image": [
-          "https:{{product.featured_image | img_url: '960x960'}}",
-          "https:{{product.featured_image | img_url: '960x720'}}",
-          "https:{{product.featured_image | img_url: '960x540'}}"
-         ],
-        {% endif %}
-        "description": "{{ product.description | strip_html | replace: '"', "" | slice: 0, 250 }}",
-        "sku": "{{ product.sku }}",
-        "brand": {
-          "@type": "Brand",
-          "name": "{{product.vendor |escape}}"
-        },
-        "offers": {
-        "@type": "Offer",
-        "priceCurrency": "{{ cart.currency.iso_code }}",
-        "price": "{{ selectedProduct.price | slice: 0, centsPriceIntValueSize }}.{{ selectedProduct.price | slice: -2, 2 }}",
-        "availability" : "https://schema.org/{% if product.available %}InStock{%else%}SoldOut{%endif%}",
-        "itemCondition": "https://schema.org/NewCondition",
-        "priceValidUntil": "{{ promoDate }}",
-        "shippingDetails": {
-            "@type": "OfferShippingDetails",
-            "shippingDestination": {
-                "@type": "DefinedRegion",
-                "addressCountry": "{{ shop.address.country_code }}"
-            },
-            "shippingRate": {
-                "@type": "MonetaryAmount",
-                "value": 0,
-                "currency": "{{ cart.currency.iso_code }}"
-            },
-            "deliveryTime": {
-                "@type": "ShippingDeliveryTime",
-                "handlingTime": {
-                    "@type": "QuantitativeValue",
-                    "minValue": 0,
-                    "maxValue": 1,
-                    "unitCode": "DAY"
-                },
-                "transitTime": {
-                    "@type": "QuantitativeValue",
-                    "minValue": 0,
-                    "maxValue": 1,
-                    "unitCode": "DAY"
-                }
-            }
-        },
-        "hasMerchantReturnPolicy": {
-            "@type": "MerchantReturnPolicy",
-            "applicableCountry": "{{ shop.address.country_code }}",
-            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-            "merchantReturnDays": 30,
-            "returnMethod": "https://schema.org/ReturnByMail",
-            "returnFees": "https://schema.org/FreeReturn",
-            "refundType": "https://schema.org/FullRefund"
-        },
-        "url": "{{ product.handle }}",
-        "seller": {
-            "@type": "Organization",
-            "name": "{{ shop.name }}"
-        }
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": "{{ product.title | escape }}",
+  {% if product.featured_image != nil %}
+  "image": [
+    "https:{{ product.featured_image | img_url: '960x960' }}",
+    "https:{{ product.featured_image | img_url: '960x720' }}",
+    "https:{{ product.featured_image | img_url: '960x540' }}"
+  ],
+  {% endif %}
+  "description": "{{ product.description | strip_html | replace: '\"', '' | slice: 0, 250 }}",
+  "sku": "{{ product.sku }}",
+  "brand": {
+    "@type": "Brand",
+    "name": "{{ product.vendor | escape }}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "{{ cart.currency.iso_code }}",
+    "price": "{{ selectedProduct.price | slice: 0, centsPriceIntValueSize }}.{{ selectedProduct.price | slice: -2, 2 }}",
+    "availability": "https://schema.org/{% if product.available %}InStock{% else %}SoldOut{% endif %}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "priceValidUntil": "{{ promoDate }}",
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "{{ shop.address.country_code }}"
       },
-        "review": {
-         "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-         },
-         "author": {
-            "@type": "Person",
-            "name": "bill_wadsworth"
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": 0,
+        "currency": "{{ cart.currency.iso_code }}"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 1,
+          "unitCode": "DAY"
         }
-       },
-      "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "6819",
-            "bestRating": "5",
-            "worstRating": "1"
-       }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "{{ shop.address.country_code }}",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 30,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn",
+      "refundType": "https://schema.org/FullRefund"
+    },
+    "url": "{{ shop.url }}/products/{{ product.handle }}",
+    "seller": {
+      "@type": "Organization",
+      "name": "{{ shop.name }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ shop.address.street }}",
+        "addressLocality": "{{ shop.address.city }}",
+        "addressRegion": "{{ shop.address.province_code }}",
+        "postalCode": "{{ shop.address.zip }}",
+        "addressCountry": "{{ shop.address.country_code }}"
+      }
+    }
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "bill_wadsworth"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "6819",
+    "bestRating": "5",
+    "worstRating": "1"
   }
+}
 </script>
+
 
 {% assign current_variant = product.selected_or_first_available_variant %}
 {% assign featured_image = product.featured_image %}
