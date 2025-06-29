@@ -66,6 +66,18 @@
       "refundType": "https://schema.org/FullRefund"
     },
     "url": "{{ shop.url }}/products/{{ product.handle }}",
+    "seller": {
+      "@type": "Organization",
+      "name": "{{ shop.name }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1591 McKenzie Way",
+        "addressLocality": "Point Roberts",
+        "addressRegion": "Washington",
+        "postalCode": "98281",
+        "addressCountry": "United State"
+      }
+    }
   },
   "review": {
     "@type": "Review",
