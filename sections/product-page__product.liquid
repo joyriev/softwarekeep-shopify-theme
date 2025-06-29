@@ -66,28 +66,6 @@
       "refundType": "https://schema.org/FullRefund"
     },
     "url": "{{ shop.url }}/products/{{ product.handle }}",
-    "seller": {
-      "@type": "Organization",
-      "name": "{{ shop.name }}",
-      "address": {
-        "@type": "PostalAddress",
-        {% if shop.address.street != blank %}
-        "streetAddress": {{ shop.address.street | json }},
-        {% endif %}
-        {% if shop.address.city != blank %}
-        "addressLocality": {{ shop.address.city | json }},
-        {% endif %}
-        {% if shop.address.province_code != blank %}
-        "addressRegion": {{ shop.address.province_code | json }},
-        {% endif %}
-        {% if shop.address.zip != blank %}
-        "postalCode": {{ shop.address.zip | json }},
-        {% endif %}
-        {% if shop.address.country_code != blank %}
-        "addressCountry": {{ shop.address.country_code | json }}
-        {% endif %}
-      }
-    }
   },
   "review": {
     "@type": "Review",
