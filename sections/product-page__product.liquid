@@ -68,14 +68,14 @@
     "url": "{{ shop.url }}/products/{{ product.handle }}",
     "seller": {
       "@type": "Organization",
-      "name": "{{ shop.name }}",
+      "name": {{ shop.name | json }},
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "1591 McKenzie Way",
-        "addressLocality": "Point Roberts",
-        "addressRegion": "Washington",
-        "postalCode": "98281",
-        "addressCountry": "United State"
+        "streetAddress": {{ shop.address.street | json }},
+        "addressLocality": {{ shop.address.city | json }},
+        "addressRegion": {{ shop.address.province_code | json }},
+        "postalCode": {{ shop.address.zip | json }},
+        "addressCountry": {{ shop.address.country_code | json }}
       }
     }
   },
