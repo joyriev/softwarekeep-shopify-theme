@@ -344,6 +344,7 @@
         },
         "text_PFiWik": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "iconImage": "shopify://shop_images/105px_x_105px-03.png",
             "test_text": "Exceptional 24/7 Costumer Service.",
