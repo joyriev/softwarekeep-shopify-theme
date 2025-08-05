@@ -194,8 +194,8 @@
         "product_UiQPJT": {
           "type": "product",
           "settings": {
-            "prodlist": "microsoft-office-2021-home-and-student-pc",
-            "prodname": "Microsoft Office 2021 <span>Home &amp; Student</span>",
+            "prodlist": "pdf-reader-windows",
+            "prodname": "PDF Reader <span>Professional </span>",
             "buynow_enable": true,
             "tcolor": "#e14f27",
             "regprice": "#7e7e7e",
@@ -207,8 +207,8 @@
         "product_PYrXET": {
           "type": "product",
           "settings": {
-            "prodlist": "windows-11-pro",
-            "prodname": "Microsoft Windows 11\n<span> Professional</span>",
+            "prodlist": "office-suite-business-extra",
+            "prodname": "Office Suite\n<span> Business</span>",
             "buynow_enable": true,
             "tcolor": "#3183d5",
             "regprice": "#7e7e7e",
