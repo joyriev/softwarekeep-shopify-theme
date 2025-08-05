@@ -350,6 +350,7 @@
       "block_order": [
         "liquid_block_B3UYPf"
       ],
+      "disabled": true,
       "settings": {
         "custom_id": "",
         "displayFor": "display--both",
