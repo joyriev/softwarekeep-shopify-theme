@@ -456,14 +456,6 @@
             "question": "<p>What are retail software products?</p>",
             "answer": "Softwarekeep Retail software products are the same physical items you would purchase at your local software stores. They are packaged for retail sale and usually include the original box, physical CD or DVD disk(s), a manual, the paper license agreement, and an Activation Key/Code. Similar to OEM software, a Retail Product is licensed for use on one computer only."
           }
-        },
-        "bcfd3300-9f6b-4d48-bcf8-ea4bfe756f66": {
-          "type": "accordion",
-          "disabled": true,
-          "settings": {
-            "question": "<p>Can I update my software over the Internet? (not needed as there's no update after 2021)</p>",
-            "answer": "Since these are genuine Microsoft products, you will be able to obtain regular updates from Microsoft using an Internet connection."
-          }
         }
       },
       "block_order": [
@@ -472,8 +464,7 @@
         "cb791651-6d47-48d6-a8ba-25b825cddfab",
         "8d6959d0-2758-4040-8cfb-b5ff1cc49850",
         "7b28ddcb-09a4-4e25-92f1-be5960c65b30",
-        "ce0cb108-36f4-4e65-ab62-17dfe2eba284",
-        "bcfd3300-9f6b-4d48-bcf8-ea4bfe756f66"
+        "ce0cb108-36f4-4e65-ab62-17dfe2eba284"
       ],
       "settings": {
         "custom_id": "faq_section",
