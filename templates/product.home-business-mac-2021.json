@@ -174,6 +174,7 @@
         "f5640691-1d8e-402d-9a90-4efa6202b856"
       ],
       "settings": {
+        "disable_sticky": false,
         "view": "marketplace",
         "layout": "max-width",
         "galleryStyle": "default",
@@ -241,6 +242,7 @@
         },
         "4ce468bb-52ee-44e3-919e-6bd516b02e72": {
           "type": "home_guarantee_block",
+          "disabled": true,
           "settings": {
             "home_guarantee_block_image": "shopify://shop_images/certified.svg",
             "tile_oneline": false,
@@ -322,8 +324,12 @@
     },
     "trustpilot_reviews_GziNz4": {
       "type": "trustpilot-reviews",
+      "disabled": true,
       "settings": {
-        "header_title": "What Customers Think"
+        "header_title": "What Customers Think",
+        "trustsecbg": "#ffffff",
+        "tpmargingap": 0,
+        "pading_botm": 60
       }
     },
     "0852396a-917e-423d-ad1d-41419fb83f6d": {
@@ -419,8 +425,8 @@
         "90ce5404-68ea-4aeb-a654-eabc29887090": {
           "type": "accordion",
           "settings": {
-            "question": "<p>How can I be certain that my copy of Microsoft Office is genuine?</p>",
-            "answer": "SoftwareKeep is a proud Microsoft Certified Partner, and as such, all our software products are 100% legitimate and authentic. In addition, any software you purchase from SoftwareKeep is covered by our hassle-free money-back guarantee. We encourage all our SoftwareKeep customers to register their specific Microsoft Office Product key via Microsoft online activation to ensure verification and tracking of their authentic software products."
+            "question": "<p>How can I be certain that my copy of Office is genuine?</p>",
+            "answer": "At SoftwareKeep, we’re committed to providing only 100% genuine and authentic software. Every product you purchase from us is backed by our hassle-free money-back guarantee, giving you peace of mind with every order. For added security and product tracking, we recommend registering your software license through the official online activation process."
           }
         },
         "cb791651-6d47-48d6-a8ba-25b825cddfab": {
@@ -515,6 +521,7 @@
         "f2da6cea-c207-4ae5-8308-325aacd71c01"
       ],
       "settings": {
+        "acc-content": "",
         "custom_id": "",
         "displayFor": "display--both",
         "layout": "default",
@@ -622,6 +629,7 @@
         "95698769-adce-4263-ba97-691b9b266a9c"
       ],
       "settings": {
+        "acc-content": "",
         "custom_id": "",
         "displayFor": "display--both",
         "layout": "default",
