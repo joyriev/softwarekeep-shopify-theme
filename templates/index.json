@@ -360,16 +360,16 @@
       "settings": {
         "bgcolor": "",
         "heading": "Why choose Softwarekeep?",
-        "subparas": "<p>We’re here to make software affordable, accessible, and backed by excellent customer service, all while maintaining the same quality you would expect from larger retailers. Choose SoftwareKeep for a better deal, transparency, and trusted Microsoft solutions.</p>"
+        "subparas": "<p>We’re here to make software affordable, accessible, and backed by excellent customer service, all while maintaining the same quality you would expect from larger retailers. Choose SoftwareKeep for a better deal, transparency, and trusted Software solutions.</p>"
       }
     },
     "home_satisfied_customers_pk3VRB": {
       "type": "home-satisfied-customers",
       "settings": {
         "iconImage": "shopify://shop_images/Background_3.png",
-        "heading": "Join Thousands Who Save on Microsoft Software with Lifetime Support!",
+        "heading": "Join Thousands Who Save on Software Solution with Lifetime Support!",
         "count1": "7,000+",
-        "para_first": "Businesses rely on our Microsoft expertise to enhance their tech stack",
+        "para_first": "Businesses rely on our Software expertise to enhance their tech stack",
         "count2": "800,000+",
         "para_second": "Satisfied customers who trust our \nsoftware solutions."
       }
@@ -398,7 +398,7 @@
           "settings": {
             "iconImage": "shopify://shop_images/3_1_f4cb76fc-1d36-426d-b47f-859cb156ff73.png",
             "test_text": "10 x",
-            "test_text_para": "<p>Faster support than direct contact with Microsoft</p>"
+            "test_text_para": "<p>Faster and dedicated support </p>"
           }
         },
         "text_ADyz4f": {
@@ -422,6 +422,7 @@
     },
     "trustpilot_reviews_m7GDgj": {
       "type": "trustpilot-reviews",
+      "disabled": true,
       "settings": {
         "header_title": "What Customers Say About Us",
         "trustsecbg": "#ffffff",
