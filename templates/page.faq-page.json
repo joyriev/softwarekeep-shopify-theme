@@ -100,6 +100,7 @@
         },
         "accordion_UYkGFy": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "question": "<h4>Is Windows Vista upgradable to Windows 7, 8 or 10?</h4>",
             "answer": "Absolutely, it is possible to upgrade Windows Vista to a more recent Microsoft Windows edition. However, this process will require a \"Clean\" or \"Parallel Installation\", followed by selecting the Custom-Install process. Please refer to your machine\"s hardware specification for more information on installation."
@@ -121,6 +122,7 @@
         },
         "accordion_kBqj7e": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "question": "<h4>Can I exchange the software I purchased for a higher edition if I have changed my mind or need something different (i.e. from Home &amp; Student to Home &amp; Business)?</h4>",
             "answer": "We follow our company's Return Policy strictly to avoid possibly invalidating the product key for your software."
@@ -142,6 +144,7 @@
         },
         "accordion_LigUBw": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "question": "<h4>What do I need to provide?</h4>",
             "answer": "You'll need to provide: The URL of the competitor's offer you'd like us to beat. The competitor's sale price."
@@ -149,6 +152,7 @@
         },
         "accordion_KLwjHK": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "question": "<h4>How Digital Downloads Work?</h4>",
             "answer": "Step 1: Search for the desired product. \nStep 2: Select the software you need.\nStep 3: Proceed to cart as a quest or create an account. Step 4: Receive your software in minutes in your email. Final Step: Download and Install your purchased software."
@@ -156,6 +160,7 @@
         },
         "accordion_QB7z44": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "question": "<h4>How to uninstall your Download?</h4>",
             "answer": "Mac: \nStep 1: Click on Finder icon, \nStep 2: Click on Application folder, \nStep 3: Drag the Microsoft Office folder to Trash., Step 4: Remove preference and license files and Office folder and Open library folder and move all com.microsoft files to trash, \nStep 5: Empty thrash, If there’s anything in Trash you want to keep, be sure to make a copy before you continue, Click Finder > Empty Trash. \nWindows: \nStep 1: Open Programs and Features by clicking the Start button, \nStep 2: Click on Control Panel, \nStep 3: After click on Programs option, \nStep 4: And then, Click on Programs and Features and follow the Microsoft Office steps to uninstall."
