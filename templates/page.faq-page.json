@@ -130,6 +130,7 @@
         },
         "accordion_HVUwT8": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "question": "<h4>How do I request a price match from SoftwareKeep?</h4>",
             "answer": "When making a purchase, price match requests from SoftwareKeep are handled via Chat or Email. Please send us the URL link of the lower price that is still in effect that you want us to price match. SoftwareKeep will then review and verify the price match request and the authenticity of the competitor's products."
