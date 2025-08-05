@@ -459,6 +459,7 @@
         },
         "bcfd3300-9f6b-4d48-bcf8-ea4bfe756f66": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "question": "<p>Can I update my software over the Internet? (not needed as there's no update after 2021)</p>",
             "answer": "Since these are genuine Microsoft products, you will be able to obtain regular updates from Microsoft using an Internet connection."
