@@ -92,9 +92,16 @@
     "recentlyBoughtBorderRadius": 10,
     "upsell_heading": "You May Also Like",
     "drawerupsell_products": [
-      "windows-11-home",
       "add-a-usb-software-backup",
-      "premium-software-protection"
+      "premium-software-protection",
+      "adaware-personal-security-1-year-1-pc",
+      "aomei-backupper-professional-lifetime",
+      "office-suite-business",
+      "ashampoo-winoptimizer-26",
+      "truly-max-family-mac",
+      "truly-max-family",
+      "truly-max-personal-for-mac",
+      "truly-max-personal"
     ],
     "freeShippingAmount": "0",
     "messenger": false,
@@ -502,11 +509,6 @@
       },
       "9431293036029666034": {
         "type": "shopify://apps/veeper-stop-coupon-leaks/blocks/app-embed/701f59c5-5a05-41c0-ad15-29147f0a6331",
-        "disabled": false,
-        "settings": {}
-      },
-      "45135510166488240000": {
-        "type": "shopify://apps/gdpr-cookie-consent/blocks/banner/58c0baa2-6cc1-480c-9ea6-38d6d559556a",
         "disabled": false,
         "settings": {}
       }
