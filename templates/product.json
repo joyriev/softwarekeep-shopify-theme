@@ -174,6 +174,7 @@
         "f5640691-1d8e-402d-9a90-4efa6202b856"
       ],
       "settings": {
+        "disable_sticky": false,
         "view": "marketplace",
         "layout": "max-width",
         "galleryStyle": "default",
@@ -241,6 +242,7 @@
         },
         "4ce468bb-52ee-44e3-919e-6bd516b02e72": {
           "type": "home_guarantee_block",
+          "disabled": true,
           "settings": {
             "home_guarantee_block_image": "shopify://shop_images/certified.svg",
             "tile_oneline": false,
@@ -281,8 +283,12 @@
     },
     "trustpilot_reviews_4WTpc6": {
       "type": "trustpilot-reviews",
+      "disabled": true,
       "settings": {
-        "header_title": "What Customers Say About Us:"
+        "header_title": "What Customers Say About Us:",
+        "trustsecbg": "#ffffff",
+        "tpmargingap": 0,
+        "pading_botm": 60
       }
     },
     "f1009b21-4bbe-42e3-9fea-64630eee6147": {
