@@ -304,8 +304,8 @@
         "90ce5404-68ea-4aeb-a654-eabc29887090": {
           "type": "accordion",
           "settings": {
-            "question": "<p>How can I be certain that my copy of Microsoft Office is genuine?</p>",
-            "answer": "SoftwareKeep is a proud Microsoft Certified Partner, and as such, all our software products are 100% legitimate and authentic. In addition, any software you purchase from SoftwareKeep is covered by our hassle-free money-back guarantee. We encourage all our SoftwareKeep customers to register their specific Microsoft Office Product key via Microsoft online activation to ensure verification and tracking of their authentic software products."
+            "question": "<p>How can I be certain that my copy of Office is genuine?</p>",
+            "answer": "At SoftwareKeep, we’re committed to providing only 100% genuine and authentic software. Every product you purchase from us is backed by our hassle-free money-back guarantee, giving you peace of mind with every order. For added security and product tracking, we recommend registering your software license through the official online activation process."
           }
         },
         "cb791651-6d47-48d6-a8ba-25b825cddfab": {
@@ -338,6 +338,7 @@
         },
         "bcfd3300-9f6b-4d48-bcf8-ea4bfe756f66": {
           "type": "accordion",
+          "disabled": true,
           "settings": {
             "question": "<p>Can I update my software over the Internet? (not needed as there's no update after 2021)</p>",
             "answer": "Since these are genuine Microsoft products, you will be able to obtain regular updates from Microsoft using an Internet connection."
