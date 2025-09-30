@@ -253,12 +253,24 @@
         "textAlignment": "center",
         "defaultCollection": ""
       }
+    },
+    "scent_main_product_kVJejm": {
+      "type": "scent-main-product",
+      "name": "Scent Main Product",
+      "settings": {}
+    },
+    "scent_product_presentation_BxTtY4": {
+      "type": "scent-product-presentation",
+      "name": "Product Presentation",
+      "settings": {}
     }
   },
   "order": [
     "breadcrumbs",
     "page",
     "upsell",
-    "recommended"
+    "recommended",
+    "scent_main_product_kVJejm",
+    "scent_product_presentation_BxTtY4"
   ]
 }
