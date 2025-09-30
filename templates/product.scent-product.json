@@ -11,6 +11,7 @@
   "sections": {
     "breadcrumbs": {
       "type": "breadcrumbs",
+      "disabled": true,
       "settings": {}
     },
     "page": {
@@ -173,6 +174,7 @@
         "7850a57d-73f7-4dbc-82bd-ea4e3bef52bf",
         "f5640691-1d8e-402d-9a90-4efa6202b856"
       ],
+      "disabled": true,
       "settings": {
         "disable_sticky": false,
         "view": "marketplace",
@@ -187,201 +189,6 @@
         "productMainImageSize": "crop",
         "imageSticky": false,
         "imageStickyPosition": 100
-      }
-    },
-    "17b3c4da-6ec2-43f7-b402-382e47a862a0": {
-      "type": "section__icon-with-text",
-      "blocks": {
-        "8e234133-6f92-4889-acb0-7d76313eaa5a": {
-          "type": "home_guarantee_block",
-          "settings": {
-            "home_guarantee_block_image": "shopify://shop_images/cloud-computing.png",
-            "tile_oneline": false,
-            "home_guarantee_block_title": "Instant Digital Download",
-            "home_guarantee_block_title_font_size": 20,
-            "home_guarantee_block_title_text_color": "#191d21",
-            "home_guarantee_block_subtitle": "",
-            "home_guarantee_block_subtitle_font_size": 18,
-            "home_guarantee_block_subtitle_text_color": "#ffffff",
-            "home_guarantee_block_background_color": "#f5f5f5",
-            "home_guarantee_block_button": "",
-            "home_guarantee_block_url": ""
-          }
-        },
-        "06111a55-1b77-435d-908b-1434dba77499": {
-          "type": "home_guarantee_block",
-          "settings": {
-            "home_guarantee_block_image": "shopify://shop_images/guarantee_9e04d0fa-c00d-4474-957f-651e64b36347.png",
-            "tile_oneline": false,
-            "home_guarantee_block_title": "Lifetime Product Guarantee",
-            "home_guarantee_block_title_font_size": 20,
-            "home_guarantee_block_title_text_color": "#191d21",
-            "home_guarantee_block_subtitle": "",
-            "home_guarantee_block_subtitle_font_size": 18,
-            "home_guarantee_block_subtitle_text_color": "#ffffff",
-            "home_guarantee_block_background_color": "#f5f5f5",
-            "home_guarantee_block_button": "",
-            "home_guarantee_block_url": ""
-          }
-        },
-        "5bcae1da-9417-402e-9c0e-5614042328c4": {
-          "type": "home_guarantee_block",
-          "settings": {
-            "home_guarantee_block_image": "shopify://shop_images/new-year_1.png",
-            "tile_oneline": false,
-            "home_guarantee_block_title": "Year Round Service",
-            "home_guarantee_block_title_font_size": 20,
-            "home_guarantee_block_title_text_color": "#191d21",
-            "home_guarantee_block_subtitle": "",
-            "home_guarantee_block_subtitle_font_size": 18,
-            "home_guarantee_block_subtitle_text_color": "#ffffff",
-            "home_guarantee_block_background_color": "#f5f5f5",
-            "home_guarantee_block_button": "",
-            "home_guarantee_block_url": ""
-          }
-        },
-        "4ce468bb-52ee-44e3-919e-6bd516b02e72": {
-          "type": "home_guarantee_block",
-          "disabled": true,
-          "settings": {
-            "home_guarantee_block_image": "shopify://shop_images/certified.svg",
-            "tile_oneline": false,
-            "home_guarantee_block_title": "Microsoft Certified Partner",
-            "home_guarantee_block_title_font_size": 20,
-            "home_guarantee_block_title_text_color": "#191d21",
-            "home_guarantee_block_subtitle": "",
-            "home_guarantee_block_subtitle_font_size": 18,
-            "home_guarantee_block_subtitle_text_color": "#191d21",
-            "home_guarantee_block_background_color": "#f5f5f5",
-            "home_guarantee_block_button": "",
-            "home_guarantee_block_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "8e234133-6f92-4889-acb0-7d76313eaa5a",
-        "06111a55-1b77-435d-908b-1434dba77499",
-        "5bcae1da-9417-402e-9c0e-5614042328c4",
-        "4ce468bb-52ee-44e3-919e-6bd516b02e72"
-      ],
-      "settings": {
-        "Slider_enbalemobile": true,
-        "home_guarantee_title": "",
-        "custom_id": "",
-        "home_guarantee_title_font_size": 40,
-        "home_guarantee_title_color": "#0067b8",
-        "home_guarantee_subtitle": "",
-        "home_guarantee_subtitle_font_size": 20,
-        "home_guarantee_subtitle_color": "#042338"
-      }
-    },
-    "0852396a-917e-423d-ad1d-41419fb83f6d": {
-      "type": "accordian",
-      "settings": {
-        "home_guarantee_title": ""
-      }
-    },
-    "trustpilot_reviews_4WTpc6": {
-      "type": "trustpilot-reviews",
-      "disabled": true,
-      "settings": {
-        "header_title": "What Customers Say About Us:",
-        "trustsecbg": "#ffffff",
-        "tpmargingap": 0,
-        "pading_botm": 60
-      }
-    },
-    "f1009b21-4bbe-42e3-9fea-64630eee6147": {
-      "type": "section__faq",
-      "blocks": {
-        "50e8bf0b-3202-4d8b-b644-83babb5087fe": {
-          "type": "accordion",
-          "settings": {
-            "question": "<p>How long does it take to receive my SoftwareKeep order?</p>",
-            "answer": "As soon as we are able to successfully process your payment, you will receive a download link for your product and a Product Key from SoftwareKeep. This process is usually between 15-20 minutes. If your SoftwareKeep order is delayed longer than this, please refer to your SoftwareKeep account for the details of your purchase."
-          }
-        },
-        "90ce5404-68ea-4aeb-a654-eabc29887090": {
-          "type": "accordion",
-          "settings": {
-            "question": "<p>How can I be certain that my copy of Office is genuine?</p>",
-            "answer": "At SoftwareKeep, we’re committed to providing only 100% genuine and authentic software. Every product you purchase from us is backed by our hassle-free money-back guarantee, giving you peace of mind with every order. For added security and product tracking, we recommend registering your software license through the official online activation process."
-          }
-        },
-        "cb791651-6d47-48d6-a8ba-25b825cddfab": {
-          "type": "accordion",
-          "settings": {
-            "question": "<p>How long does a genuine software license from SoftwareKeep last?</p>",
-            "answer": "The license for any product purchased from SoftwareKeep is a lifetime (perpetual) license. You may be required to purchase a new license with a new version of the product. In some cases, you might be eligible for an upgrade license from SoftwareKeep that will allow you to upgrade at a discount price."
-          }
-        },
-        "8d6959d0-2758-4040-8cfb-b5ff1cc49850": {
-          "type": "accordion",
-          "settings": {
-            "question": "<p>Can I buy a single-use license software and install on multiple computers?</p>",
-            "answer": "The software licenses sold by SoftwareKeep are intended for installation and activation on one computer only, unless otherwise specified for that particular product. Retail and OEM software licenses we provide are designed and licensed for use on a single computer. Installing a single-use license from SoftwareKeep on multiple computers is not permitted under the license terms and conditions."
-          }
-        },
-        "7b28ddcb-09a4-4e25-92f1-be5960c65b30": {
-          "type": "accordion",
-          "settings": {
-            "question": "<p>What is a digital download and how does it work?</p>",
-            "answer": "A digital download is an electronic version of your software product, giving you access to download and use your new software immediately. This means that a physical CD or DVD disc is not included with your purchase. The software install program is downloaded through cloud-based storage."
-          }
-        },
-        "ce0cb108-36f4-4e65-ab62-17dfe2eba284": {
-          "type": "accordion",
-          "settings": {
-            "question": "<p>What are retail software products?</p>",
-            "answer": "Softwarekeep Retail software products are the same physical items you would purchase at your local software stores. They are packaged for retail sale and usually include the original box, physical CD or DVD disk(s), a manual, the paper license agreement, and an Activation Key/Code. Similar to OEM software, a Retail Product is licensed for use on one computer only."
-          }
-        },
-        "bcfd3300-9f6b-4d48-bcf8-ea4bfe756f66": {
-          "type": "accordion",
-          "disabled": true,
-          "settings": {
-            "question": "<p>Can I update my software over the Internet? (not needed as there's no update after 2021)</p>",
-            "answer": "Since these are genuine Microsoft products, you will be able to obtain regular updates from Microsoft using an Internet connection."
-          }
-        }
-      },
-      "block_order": [
-        "50e8bf0b-3202-4d8b-b644-83babb5087fe",
-        "90ce5404-68ea-4aeb-a654-eabc29887090",
-        "cb791651-6d47-48d6-a8ba-25b825cddfab",
-        "8d6959d0-2758-4040-8cfb-b5ff1cc49850",
-        "7b28ddcb-09a4-4e25-92f1-be5960c65b30",
-        "ce0cb108-36f4-4e65-ab62-17dfe2eba284",
-        "bcfd3300-9f6b-4d48-bcf8-ea4bfe756f66"
-      ],
-      "settings": {
-        "custom_id": "faq_section",
-        "displayFor": "display--both",
-        "layout": "default",
-        "nomargin": false,
-        "scopedCSS": "",
-        "height": 0,
-        "padding": 0,
-        "lineMargin": 12,
-        "backgroundColor": "rgba(0,0,0,0)",
-        "backgroundPosition": "middle",
-        "backgroundFilter": "none",
-        "backdropIntensity": 50,
-        "parallax": false,
-        "backgroundPattern": false,
-        "overlayOpacity": 0,
-        "overlayColor": "#000000",
-        "contentColor": "rgba(0,0,0,0)",
-        "horizontalAlignment": "center",
-        "verticalAlignment": "middle",
-        "maxContentWidth": 100,
-        "heading": "Frequently asked questions",
-        "headingColor": "#191d21",
-        "subheading": "",
-        "subheadingColor": "rgba(0,0,0,0)",
-        "subheadingPosition": "above",
-        "headingAlignment": "center",
-        "textContent": ""
       }
     },
     "upsell": {
@@ -435,6 +242,7 @@
     },
     "recommended": {
       "type": "product-page__recommended",
+      "disabled": true,
       "settings": {
         "enabled": true,
         "personalizedOffers": true,
@@ -450,10 +258,6 @@
   "order": [
     "breadcrumbs",
     "page",
-    "17b3c4da-6ec2-43f7-b402-382e47a862a0",
-    "0852396a-917e-423d-ad1d-41419fb83f6d",
-    "trustpilot_reviews_4WTpc6",
-    "f1009b21-4bbe-42e3-9fea-64630eee6147",
     "upsell",
     "recommended"
   ]
