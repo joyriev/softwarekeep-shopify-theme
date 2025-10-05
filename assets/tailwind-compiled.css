@@ -515,6 +515,10 @@
   max-width: 1280px;
 }
 
+.max-w-\[1248px\] {
+  max-width: 1248px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1633,6 +1637,11 @@
 .focus\:border-sky-600:focus {
   --tw-border-opacity: 1;
   border-color: rgb(2 132 199 / var(--tw-border-opacity, 1));
+}
+
+.focus\:border-sky-700:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(3 105 161 / var(--tw-border-opacity, 1));
 }
 
 .focus\:outline-none:focus {

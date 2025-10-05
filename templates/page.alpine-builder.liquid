@@ -6,7 +6,7 @@
 </style>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-<div class="mx-auto max-w-screen-xl px-4 py-8 md:py-10">
+<div class="mx-auto max-w-[1248px] w-full px-4 py-8 md:py-10">
   {% comment %} Bundle Heading {% endcomment %}
   <div class="text-center pb-8 md:pb-12 border-0 border-b border-solid border-gray-200">
     <h1 class="font-bold text-4xl md:text-6xl my-0 leading-snug">Designer Scents For 90% Less.</h1>
@@ -129,15 +129,43 @@
               class="px-4 py-2 rounded font-semibold border border-solid cursor-pointer bg-white border-gray-200">Women's</button>
           </div>
           <!-- Search -->
-          <div class="relative">
-            <input
-              type="text"
-              x-model="$store.bundleBuilder.searchText"
-              placeholder="Find your perfume"
-              class="w-full p-2.5 pl-10 h-10 bg-gray-100 rounded border-0 border-solid focus:border-2 focus:border-sky-600 focus:outline-none focus:ring-0">
-            <span class="absolute top-2.5 left-2.5 size-5">
-              <svg fill="none" class="icon icon-search" viewBox="0 0 18 19"><path fill="currentColor" fill-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 1 1 2.85 3.5a5.784 5.784 0 0 1 8.18 8.18m.26 1.12a6.78 6.78 0 1 1 .72-.7l5.4 5.4a.5.5 0 1 1-.71.7z" clip-rule="evenodd"></path></svg>
-            </span>
+          <div class="[display:grid] grid-cols-2 gap-4">
+            <select x-model="$store.bundleBuilder.selectedBrand" class="bg-white border border-gray-300 text-gray-900 text-sm rounded focus:border-2 focus:border-sky-700 block w-full p-2.5 h-10 focus:outline-none focus:ring-0">
+              <option selected value="">Shop By Brand</option>
+              <option value="Creed">Creed</option>
+              <option value="Dior">Dior</option>
+              <option value="Maison Francis Kurkdjian">Maison Francis Kurkdjian</option>
+              <option value="Tom Ford">Tom Ford</option>
+              <option value="Chanel">Chanel</option>
+              <option value="Armani">Armani</option>
+              <option value="Louis Vuitton">Louis Vuitton</option>
+              <option value="Jean Paul Gaultier">Jean Paul Gaultier</option>
+              <option value="Xerjoff">Xerjoff</option>
+              <option value="Versace">Versace</option>
+              <option value="Paco Rabanne">Paco Rabanne</option>
+              <option value="Valentino">Valentino</option>
+              <option value="YSL">YSL</option>
+              <option value="Prada">Prada</option>
+              <option value="Carolina Herrera">Carolina Herrera</option>
+              <option value="Giorgio Armani">Giorgio Armani</option>
+              <option value="Initio">Initio</option>
+              <option value="Hermes">Hermes</option>
+              <option value="Montale">Montale</option>
+              <option value="Kilian">Kilian</option>
+              <option value="Issey Miyake">Issey Miyake</option>
+              <option value="Lancôme">Lancôme</option>
+              <option value="Parfums de Marly">Parfums de Marly</option>
+            </select>
+            <div class="relative">
+              <input
+                type="text"
+                x-model="$store.bundleBuilder.searchText"
+                placeholder="Find your perfume"
+                class="w-full p-2.5 pl-10 h-10 bg-gray-100 rounded border-0 border-solid focus:border-2 focus:border-sky-600 focus:outline-none focus:ring-0">
+              <span class="absolute top-2.5 left-2.5 size-5">
+                <svg fill="none" class="icon icon-search" viewBox="0 0 18 19"><path fill="currentColor" fill-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 1 1 2.85 3.5a5.784 5.784 0 0 1 8.18 8.18m.26 1.12a6.78 6.78 0 1 1 .72-.7l5.4 5.4a.5.5 0 1 1-.71.7z" clip-rule="evenodd"></path></svg>
+              </span>
+            </div>
           </div>
         </div>
         <div class="[display:grid] grid-cols-2 md:grid-cols-3 gap-4">
@@ -244,7 +272,7 @@
       <button
         @click="$store.bundleBuilder.showMobileCart = true"
         class="w-full py-3 px-7 text-xl rounded-full font-bold border-0 cursor-pointer transition-colors flex justify-between items-center"
-        :class="$store.bundleBuilder.selectedProductsLength < $store.bundleBuilder.bundleLength ? 'cursor-not-allowed bg-gray-200 text-gray-800' : 'bg-sky-700 text-white'">
+        :class="$store.bundleBuilder.selectedProductsLength < $store.bundleBuilder.bundleLength ? 'cursor-not-allowed bg-gray-200 text-gray-800' : 'bg-sky-700 text-white [&_span]:text-white'">
         <span>Review Bundle</span>
         <div class="text-base px-2 py-1 rounded bg-black/10">
           <span x-text="$store.bundleBuilder.selectedProductsLength">0</span>
@@ -259,7 +287,7 @@
       class="md:hidden fixed h-screen w-screen z-[999999] left-0 top-0 bg-white p-6 pb-14 flex flex-col gap-6">
       <div class="flex justify-between items-center border-0 border-b border-solid border-gray-200 pb-4">
         <h2 class="text-base font-bold tracking-tight my-0" x-text="$store.bundleBuilder.selectedProductsLength + ' Scents in your bundle'"></h2>
-        <button @click="$store.bundleBuilder.showMobileCart = false" class="text-gray-800 font-bold py-2 px-3 bg-white border border-solid border-gray-200 rounded-full cursor-pointer">Keep Shopping</button>
+        <button @click="$store.bundleBuilder.showMobileCart = false" class="text-gray-700 font-bold py-2 px-3 bg-white border border-solid border-gray-200 rounded-full cursor-pointer text-sm uppercase">Keep Shopping</button>
       </div>
       <div class="bg-gray-200 rounded-full relative">
         <div
@@ -269,7 +297,7 @@
         <div class="absolute -top-1 left-0 w-full flex justify-between px-2">
           <template x-for="i in $store.bundleBuilder.bundleLength">
             <span
-              class="w-6 h-6 flex items-center justify-center text-sky-700 border-2 border-solid text-xs font-bold rounded-full"
+              class="w-6 h-6 flex items-center justify-center border-2 border-solid text-xs font-bold rounded-full"
               x-text="i"
               :class="$store.bundleBuilder.selectedProductsLength >= i ? 'bg-gray-800 text-white border-gray-800' : (i > $store.bundleBuilder.paidProductsLength ? 'bg-white text-gray-800 border-sky-600' : 'bg-white text-gray-800 border-gray-200')"></span>
           </template>
@@ -364,7 +392,7 @@
           {
             id: {{ bundle_product.id }},
             name: "{{ bundle_product.title }}",
-            image: "{{ bundle_product.featured_image | image_url }}",
+            image: "{{ bundle_product.featured_image | image_url: width: 300 }}",
             nuta: "{{ bundle_product.metafields.custom.nuta }}",
             tags: {{ bundle_product.tags | json }},
             variants: {
