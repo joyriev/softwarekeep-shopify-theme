@@ -244,7 +244,7 @@
               "horizontalAlignment": "start",
               "verticalAlignment": "middle",
               "heading": "Address",
-              "text": "<p>1591 McKenzie Way, Point<br/>Roberts, WA 98281, United States</p><p>+1 888 851 6548</p><p>sales@softwarekeep.com</p>"
+              "text": "<p>1591 McKenzie Way, Point<br/>Roberts, WA 98281, United States</p><p>sales@softwarekeep.com</p>"
             }
           },
           "63f79a72-b881-4357-9de2-f528b984d4c3": {
@@ -490,28 +490,6 @@
         }
       }
     },
-    "content_for_index": [],
-    "blocks": {
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      },
-      "10312807297210203588": {
-        "type": "shopify://apps/aftersell/blocks/utm-triggers/509ec35d-0632-4dfc-a105-fa799cd9d149",
-        "disabled": false,
-        "settings": {}
-      },
-      "10840395464443086010": {
-        "type": "shopify://apps/alia/blocks/customer-app-frame/51f1d398-3e41-44da-b81e-defd5804b292",
-        "disabled": false,
-        "settings": {}
-      },
-      "9431293036029666034": {
-        "type": "shopify://apps/veeper-stop-coupon-leaks/blocks/app-embed/701f59c5-5a05-41c0-ad15-29147f0a6331",
-        "disabled": false,
-        "settings": {}
-      }
-    }
+    "content_for_index": []
   }
 }
